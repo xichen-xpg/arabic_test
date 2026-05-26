@@ -1056,7 +1056,7 @@
         elements.feedback.className = "feedback success";
         elements.entry.hidden = false;
         [...elements.choices.children].forEach((choice) => {
-          choice.disabled = true;
+          choice.disabled = false;
           if (choice.textContent === current.rom) choice.classList.add("correct");
         });
         elements.arabicInput.focus();
