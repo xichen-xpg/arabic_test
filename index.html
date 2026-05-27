@@ -78,33 +78,6 @@
       color: var(--muted);
     }
 
-    .scoreboard {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .stat {
-      min-width: 82px;
-      padding: 10px 12px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.84);
-      box-shadow: 0 8px 22px rgba(31, 50, 71, 0.08);
-      text-align: center;
-    }
-
-    .stat b {
-      display: block;
-      font-size: 20px;
-    }
-
-    .stat span {
-      color: var(--muted);
-      font-size: 12px;
-    }
-
     .layout {
       display: grid;
       grid-template-columns: minmax(0, 1fr) 360px;
@@ -519,9 +492,6 @@
         flex-direction: column;
       }
 
-      .scoreboard {
-        justify-content: flex-start;
-      }
     }
 
     @media (max-width: 640px) {
@@ -546,11 +516,6 @@
       <div class="title">
         <h1>阿拉伯语餐厅复习</h1>
         <p>看中文选发音，选对后输入阿语。提示会给出下一个阿语字符和 Arabic 101 键盘按键。</p>
-      </div>
-      <div class="scoreboard">
-        <div class="stat"><b id="score">0</b><span>得分</span></div>
-        <div class="stat"><b id="streak">0</b><span>连对</span></div>
-        <div class="stat"><b id="doneCount">0</b><span>完成</span></div>
       </div>
     </section>
 
@@ -998,9 +963,6 @@
     };
 
     const elements = {
-      score: document.querySelector("#score"),
-      streak: document.querySelector("#streak"),
-      doneCount: document.querySelector("#doneCount"),
       categoryTag: document.querySelector("#categoryTag"),
       categorySelect: document.querySelector("#categorySelect"),
       batchSelect: document.querySelector("#batchSelect"),
@@ -1031,9 +993,7 @@
     let draggedPieceIndex = null;
     const completedByGroup = {};
     const placedByGroup = {};
-    let score = 0;
-    let streak = 0;
-    let doneCount = 0;
+    const puzzleStorageKey = "arabicPuzzleProgress:fixed-nine:v2";
 
     function shuffle(items) {
       return [...items].sort(() => Math.random() - 0.5);
@@ -1224,12 +1184,12 @@
         completed: Object.fromEntries(Object.entries(completedByGroup).map(([key, set]) => [key, [...set]])),
         placed: Object.fromEntries(Object.entries(placedByGroup).map(([key, set]) => [key, [...set]]))
       };
-      localStorage.setItem("arabicPuzzleProgress", JSON.stringify(data));
+      localStorage.setItem(puzzleStorageKey, JSON.stringify(data));
     }
 
     function loadPuzzleProgress() {
       try {
-        const data = JSON.parse(localStorage.getItem("arabicPuzzleProgress") || "{}");
+        const data = JSON.parse(localStorage.getItem(puzzleStorageKey) || "{}");
         Object.entries(data.completed || {}).forEach(([key, indexes]) => {
           completedByGroup[key] = new Set(indexes.filter((index) => index >= 0 && index < 9));
         });
@@ -1237,7 +1197,7 @@
           placedByGroup[key] = new Set(indexes.filter((index) => index >= 0 && index < 9));
         });
       } catch {
-        localStorage.removeItem("arabicPuzzleProgress");
+        localStorage.removeItem(puzzleStorageKey);
       }
     }
 
@@ -1390,8 +1350,6 @@
 
       button.classList.add("wrong");
       button.disabled = true;
-      streak = 0;
-      elements.streak.textContent = streak;
       elements.feedback.textContent = "发音不对，再选一次。";
       elements.feedback.className = "feedback error";
     }
@@ -1446,12 +1404,6 @@
         savePuzzleProgress();
         renderPuzzle();
       }
-      score += hintEnabled ? 3 : 5;
-        streak += 1;
-        doneCount += 1;
-        elements.score.textContent = score;
-        elements.streak.textContent = streak;
-        elements.doneCount.textContent = doneCount;
         elements.feedback.textContent = "输入正确。";
         elements.feedback.className = "feedback success";
         elements.nextButton.disabled = false;
@@ -1460,6 +1412,7 @@
         elements.nextChar.textContent = "-";
         renderKeyHint("");
         elements.nextPronunciation.textContent = "-";
+        speakArabic(current.ar);
     }
 
     function toggleHint() {
