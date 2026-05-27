@@ -360,6 +360,109 @@
       overflow: hidden;
     }
 
+    .side-stack {
+      display: grid;
+      gap: 18px;
+    }
+
+    .puzzle {
+      padding: 14px;
+    }
+
+    .puzzle-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .puzzle-header h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .puzzle-board {
+      position: relative;
+      display: grid;
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      overflow: hidden;
+      border: 2px solid #344054;
+      border-radius: 8px;
+      background: #dbe5ef;
+    }
+
+    .puzzle-board::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: var(--puzzle-image);
+      background-size: cover;
+      background-position: center;
+      opacity: 0.16;
+    }
+
+    .puzzle-cell {
+      position: relative;
+      z-index: 1;
+      border: 1px dashed rgba(52, 64, 84, 0.28);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .puzzle-cell.ready {
+      outline: 3px solid rgba(15, 118, 110, 0.35);
+      outline-offset: -3px;
+    }
+
+    .puzzle-piece {
+      position: relative;
+      width: 54px;
+      aspect-ratio: 1;
+      border: 2px solid #344054;
+      border-radius: 7px;
+      background-image: var(--puzzle-image);
+      background-repeat: no-repeat;
+      box-shadow: 0 4px 10px rgba(16, 24, 40, 0.18);
+      cursor: grab;
+      overflow: hidden;
+    }
+
+    .puzzle-piece:active {
+      cursor: grabbing;
+    }
+
+    .puzzle-piece.locked {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: auto;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      cursor: default;
+    }
+
+    .piece-tray {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(54px, 1fr));
+      gap: 8px;
+      min-height: 72px;
+      max-height: 178px;
+      margin-top: 12px;
+      padding: 10px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+
+    .puzzle-note {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
     .source-header {
       display: flex;
       align-items: center;
@@ -437,6 +540,9 @@
             <option value="source:restaurant">餐厅题库</option>
             <option value="source:best-friend">Best Friend 题库</option>
           </select>
+          <select id="batchSelect" class="select" aria-label="题目组">
+            <option value="0">第 1 组</option>
+          </select>
         </div>
 
         <div class="question">
@@ -472,14 +578,26 @@
         <p id="feedback" class="feedback" aria-live="polite"></p>
       </div>
 
-      <aside class="panel source">
-        <div class="source-header">
-          <h2>词句来源</h2>
-          <span class="tag">restaurant.png</span>
-        </div>
-        <img src="restaurant.png" alt="International Kitchen 阿拉伯语复习词句表">
-        <img src="best_friend.png" alt="My Best Friend 阿语复习纸">
-      </aside>
+      <div class="side-stack">
+        <section class="panel puzzle" aria-label="拼图小游戏">
+          <div class="puzzle-header">
+            <h2>拼图画布</h2>
+            <span id="puzzleProgress" class="tag">0/0</span>
+          </div>
+          <div id="puzzleBoard" class="puzzle-board"></div>
+          <div id="pieceTray" class="piece-tray" aria-label="已解锁拼图碎片"></div>
+          <p id="puzzleStatus" class="puzzle-note">完成题目解锁拼图碎片。</p>
+        </section>
+
+        <aside class="panel source">
+          <div class="source-header">
+            <h2>词句来源</h2>
+            <span id="sourceTag" class="tag">restaurant.png</span>
+          </div>
+          <img src="restaurant.png" alt="International Kitchen 阿拉伯语复习词句表">
+          <img src="best_friend.png" alt="My Best Friend 阿语复习纸">
+        </aside>
+      </div>
     </section>
   </main>
 
@@ -664,7 +782,21 @@
       { category: "Best Friend - 常用句子", zh: "你喜欢什么颜色？", ar: "ما لونك المفضل؟", rom: "ma lawnuka al-mufaddal" }
     ].map((item) => ({ ...item, source: "best-friend" }));
 
-    const allQuestions = [...questions, ...bestFriendQuestions];
+    const allQuestions = [...questions, ...bestFriendQuestions].map((item, index) => ({
+      ...item,
+      id: `${item.source}-${index}`
+    }));
+
+    const sourceConfig = {
+      restaurant: {
+        label: "餐厅题库",
+        image: "restaurant.png"
+      },
+      "best-friend": {
+        label: "Best Friend 题库",
+        image: "best_friend.png"
+      }
+    };
 
     const arabicKeyMap = {
       "ذ": "`",
@@ -847,6 +979,7 @@
       doneCount: document.querySelector("#doneCount"),
       categoryTag: document.querySelector("#categoryTag"),
       categorySelect: document.querySelector("#categorySelect"),
+      batchSelect: document.querySelector("#batchSelect"),
       chinesePrompt: document.querySelector("#chinesePrompt"),
       choices: document.querySelector("#choices"),
       entry: document.querySelector("#entry"),
@@ -857,7 +990,12 @@
       nextButton: document.querySelector("#nextButton"),
       nextChar: document.querySelector("#nextChar"),
       nextKey: document.querySelector("#nextKey"),
-      nextPronunciation: document.querySelector("#nextPronunciation")
+      nextPronunciation: document.querySelector("#nextPronunciation"),
+      puzzleBoard: document.querySelector("#puzzleBoard"),
+      pieceTray: document.querySelector("#pieceTray"),
+      puzzleProgress: document.querySelector("#puzzleProgress"),
+      puzzleStatus: document.querySelector("#puzzleStatus"),
+      sourceTag: document.querySelector("#sourceTag")
     };
 
     let pool = [];
@@ -866,6 +1004,9 @@
     let hintEnabled = false;
     let completedCurrent = false;
     let currentAudio = null;
+    let draggedPieceIndex = null;
+    const completedByGroup = {};
+    const placedByGroup = {};
     let score = 0;
     let streak = 0;
     let doneCount = 0;
@@ -989,14 +1130,174 @@
       updateLiveInput();
     }
 
-    function fillCategories() {
+    function activeSource() {
+      return elements.categorySelect.value === "source:best-friend" ? "best-friend" : "restaurant";
+    }
+
+    function sourceQuestions(source) {
+      return allQuestions.filter((item) => item.source === source);
+    }
+
+    function fullBatchCount(source) {
+      return Math.max(1, Math.floor(sourceQuestions(source).length / 9));
+    }
+
+    function activeBatch() {
+      return Number(elements.batchSelect.value || 0);
+    }
+
+    function progressKey(source = activeSource(), batch = activeBatch()) {
+      return `${source}:${batch}`;
+    }
+
+    function completedSet(key = progressKey()) {
+      completedByGroup[key] ||= new Set();
+      return completedByGroup[key];
+    }
+
+    function placedSet(key = progressKey()) {
+      placedByGroup[key] ||= new Set();
+      return placedByGroup[key];
+    }
+
+    function fillBatchOptions() {
+      const source = activeSource();
+      const count = fullBatchCount(source);
+      const current = Math.min(activeBatch(), count - 1);
+      elements.batchSelect.replaceChildren();
+      for (let index = 0; index < count; index += 1) {
+        const option = document.createElement("option");
+        option.value = String(index);
+        option.textContent = `第 ${index + 1} 组`;
+        elements.batchSelect.append(option);
+      }
+      elements.batchSelect.value = String(current);
     }
 
     function activeQuestions() {
-      const category = elements.categorySelect.value;
-      if (category === "source:restaurant") return allQuestions.filter((item) => item.source === "restaurant");
-      if (category === "source:best-friend") return allQuestions.filter((item) => item.source === "best-friend");
-      return allQuestions.filter((item) => item.source === "restaurant");
+      const source = activeSource();
+      const start = activeBatch() * 9;
+      return sourceQuestions(source).slice(start, start + 9);
+    }
+
+    function sourcePieceIndex(question) {
+      return activeQuestions().findIndex((item) => item.id === question.id);
+    }
+
+    function pieceStyle(index, cols, rows) {
+      const col = index % cols;
+      const row = Math.floor(index / cols);
+      const x = cols === 1 ? 0 : (col / (cols - 1)) * 100;
+      const y = rows === 1 ? 0 : (row / (rows - 1)) * 100;
+      return {
+        backgroundSize: `${cols * 100}% ${rows * 100}%`,
+        backgroundPosition: `${x}% ${y}%`
+      };
+    }
+
+    function savePuzzleProgress() {
+      const data = {
+        completed: Object.fromEntries(Object.entries(completedByGroup).map(([key, set]) => [key, [...set]])),
+        placed: Object.fromEntries(Object.entries(placedByGroup).map(([key, set]) => [key, [...set]]))
+      };
+      localStorage.setItem("arabicPuzzleProgress", JSON.stringify(data));
+    }
+
+    function loadPuzzleProgress() {
+      try {
+        const data = JSON.parse(localStorage.getItem("arabicPuzzleProgress") || "{}");
+        Object.entries(data.completed || {}).forEach(([key, indexes]) => {
+          completedByGroup[key] = new Set(indexes.filter((index) => index >= 0 && index < 9));
+        });
+        Object.entries(data.placed || {}).forEach(([key, indexes]) => {
+          placedByGroup[key] = new Set(indexes.filter((index) => index >= 0 && index < 9));
+        });
+      } catch {
+        localStorage.removeItem("arabicPuzzleProgress");
+      }
+    }
+
+    function createPuzzlePiece(source, index, dims, locked = false) {
+      const piece = document.createElement("div");
+      piece.className = locked ? "puzzle-piece locked" : "puzzle-piece";
+      piece.dataset.index = String(index);
+      piece.style.setProperty("--puzzle-image", `url("${sourceConfig[source].image}")`);
+      const style = pieceStyle(index, dims.cols, dims.rows);
+      piece.style.backgroundSize = style.backgroundSize;
+      piece.style.backgroundPosition = style.backgroundPosition;
+      if (!locked) {
+        piece.draggable = true;
+        piece.title = "拖到拼图画布里对应的位置";
+        piece.addEventListener("dragstart", () => {
+          draggedPieceIndex = index;
+        });
+        piece.addEventListener("dragend", () => {
+          draggedPieceIndex = null;
+        });
+      }
+      return piece;
+    }
+
+    function renderPuzzle() {
+      const source = activeSource();
+      const items = activeQuestions();
+      const dims = { cols: 3, rows: 3 };
+      const completed = completedSet();
+      const placed = placedSet();
+
+      elements.sourceTag.textContent = sourceConfig[source].image;
+      elements.puzzleBoard.style.setProperty("--puzzle-image", `url("${sourceConfig[source].image}")`);
+      elements.puzzleBoard.style.gridTemplateColumns = `repeat(${dims.cols}, 1fr)`;
+      elements.puzzleBoard.style.gridTemplateRows = `repeat(${dims.rows}, 1fr)`;
+      elements.puzzleBoard.replaceChildren();
+      elements.pieceTray.replaceChildren();
+
+      Array.from({ length: 9 }).forEach((_, index) => {
+        const cell = document.createElement("div");
+        cell.className = "puzzle-cell";
+        cell.dataset.index = String(index);
+        cell.addEventListener("dragover", (event) => {
+          if (draggedPieceIndex === index) {
+            event.preventDefault();
+            cell.classList.add("ready");
+          }
+        });
+        cell.addEventListener("dragleave", () => {
+          cell.classList.remove("ready");
+        });
+        cell.addEventListener("drop", (event) => {
+          event.preventDefault();
+          cell.classList.remove("ready");
+          if (draggedPieceIndex !== index || !completed.has(index)) {
+            elements.puzzleStatus.textContent = "这块不属于这里，换一个位置试试。";
+            return;
+          }
+          placed.add(index);
+          savePuzzleProgress();
+          renderPuzzle();
+        });
+
+        if (placed.has(index)) {
+          cell.append(createPuzzlePiece(source, index, dims, true));
+        }
+        elements.puzzleBoard.append(cell);
+      });
+
+      [...completed]
+        .filter((index) => !placed.has(index))
+        .sort((a, b) => a - b)
+        .forEach((index) => {
+          elements.pieceTray.append(createPuzzlePiece(source, index, dims));
+        });
+
+      elements.puzzleProgress.textContent = `${completed.size}/9`;
+      if (placed.size === 9) {
+        elements.puzzleStatus.textContent = "拼图完成！";
+      } else if (completed.size === 9) {
+        elements.puzzleStatus.textContent = "所有碎片已解锁，可以完成拼图了。";
+      } else {
+        elements.puzzleStatus.textContent = `完成本组未做过的题目来解锁碎片，还剩 ${9 - completed.size} 块。`;
+      }
     }
 
     function drawQuestion() {
@@ -1115,6 +1416,12 @@
 
     function completeQuestion() {
       completedCurrent = true;
+      const pieceIndex = sourcePieceIndex(current);
+      if (pieceIndex >= 0 && !completedSet().has(pieceIndex)) {
+        completedSet().add(pieceIndex);
+        savePuzzleProgress();
+        renderPuzzle();
+      }
       score += hintEnabled ? 3 : 5;
         streak += 1;
         doneCount += 1;
@@ -1157,6 +1464,13 @@
 
     elements.categorySelect.addEventListener("change", () => {
       pool = [];
+      fillBatchOptions();
+      renderPuzzle();
+      drawQuestion();
+    });
+    elements.batchSelect.addEventListener("change", () => {
+      pool = [];
+      renderPuzzle();
       drawQuestion();
     });
     elements.hintButton.addEventListener("click", toggleHint);
@@ -1183,7 +1497,9 @@
       }
     });
 
-    fillCategories();
+    loadPuzzleProgress();
+    fillBatchOptions();
+    renderPuzzle();
     drawQuestion();
   </script>
 </body>
