@@ -3,21 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>阿拉伯语餐厅复习</title>
+  <title>Arabic Game Hub</title>
   <style>
     :root {
-      color-scheme: light;
       --ink: #17202a;
       --muted: #667085;
       --line: #d7dee8;
-      --surface: #ffffff;
-      --soft: #f4f7fb;
+      --surface: rgba(255, 255, 255, 0.9);
       --accent: #0f766e;
-      --accent-strong: #0b5f59;
-      --danger: #b42318;
-      --success: #157347;
-      --warning: #b86e00;
-      --gold: #f0b429;
+      --accent-soft: #e7f6f3;
     }
 
     * {
@@ -28,1451 +22,189 @@
       margin: 0;
       min-height: 100vh;
       background:
-        radial-gradient(circle at 15% 8%, rgba(255, 207, 90, 0.34), transparent 28%),
-        radial-gradient(circle at 88% 14%, rgba(136, 199, 255, 0.38), transparent 30%),
+        radial-gradient(circle at 12% 10%, rgba(255, 207, 90, 0.34), transparent 28%),
+        radial-gradient(circle at 90% 12%, rgba(136, 199, 255, 0.36), transparent 30%),
         linear-gradient(135deg, #fff8e8 0%, #eef8ff 48%, #f7efff 100%);
       color: var(--ink);
       font-family: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
     }
 
-    button,
-    input,
-    select {
-      font: inherit;
-    }
-
-    button {
-      border: 0;
-      cursor: pointer;
-    }
-
-    button:disabled {
-      cursor: not-allowed;
-      opacity: 0.55;
-    }
-
-    .app {
-      max-width: 1240px;
+    .shell {
+      max-width: 1280px;
       margin: 0 auto;
-      padding: 24px;
+      padding: 20px;
     }
 
     .topbar {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: space-between;
       gap: 16px;
-      margin-bottom: 18px;
+      margin-bottom: 14px;
     }
 
-    .title h1 {
+    h1 {
       margin: 0;
-      font-size: 34px;
-      line-height: 1.15;
+      font-size: 30px;
       color: #17324d;
-      text-shadow: 0 2px 0 rgba(255, 255, 255, 0.75);
     }
 
-    .title p {
+    .subtitle {
       margin: 6px 0 0;
       color: var(--muted);
+      font-weight: 600;
     }
 
-    .layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 360px;
-      gap: 18px;
-      align-items: start;
-    }
-
-    .panel {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.9);
-      box-shadow: 0 14px 36px rgba(31, 50, 71, 0.11);
-      backdrop-filter: blur(10px);
-    }
-
-    .game {
-      padding: 24px;
-      border-top: 5px solid #55c56b;
-    }
-
-    .meta-row {
+    .game-tabs {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-
-    .tag {
-      display: inline-flex;
-      align-items: center;
-      min-height: 30px;
-      padding: 5px 10px;
-      border-radius: 999px;
-      background: #e7f6f3;
-      color: var(--accent-strong);
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    .select {
-      min-height: 34px;
-      border: 1px solid var(--line);
-      border-radius: 7px;
-      background: #fff;
-      color: var(--ink);
-      padding: 5px 8px;
-    }
-
-    .question {
-      padding: 18px;
-      border: 2px solid #bad0df;
-      border-radius: 8px;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,.9), rgba(248,251,254,.9)),
-        radial-gradient(circle at 96% 12%, rgba(255, 207, 90, .28), transparent 24%);
-      margin-bottom: 18px;
-    }
-
-    .question-label {
-      margin: 0 0 8px;
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    .chinese {
-      margin: 0;
-      font-size: 42px;
-      line-height: 1.2;
-      font-weight: 800;
-    }
-
-    .choices {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-      margin-bottom: 18px;
-    }
-
-    .choice {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      min-height: 58px;
-      padding: 12px 14px;
-      border: 2px solid var(--line);
-      border-radius: 8px;
-      background: #fff;
-      color: var(--ink);
-      text-align: left;
-      font-weight: 700;
-      box-shadow: 0 5px 12px rgba(31, 50, 71, 0.06);
-      transition: transform .14s ease, box-shadow .14s ease, border-color .14s ease;
-    }
-
-    .choice:hover:not(:disabled) {
-      border-color: var(--accent);
-      background: #f3fbf9;
-      box-shadow: 0 9px 20px rgba(15, 118, 110, 0.12);
-      transform: translateY(-1px);
-    }
-
-    .choice.correct {
-      border-color: #9bd7b1;
-      background: #ecfdf3;
-      color: var(--success);
-    }
-
-    .choice.wrong {
-      border-color: #f2a8a1;
-      background: #fff3f2;
-      color: var(--danger);
-    }
-
-    .entry {
-      display: grid;
-      gap: 12px;
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
-    }
-
-    .entry[hidden] {
-      display: none;
-    }
-
-    .arabic-input {
-      width: 100%;
-      min-height: 58px;
-      padding: 10px 14px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      direction: rtl;
-      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-      font-size: 30px;
-      line-height: 1.25;
-      text-align: right;
-    }
-
-    .arabic-input:focus {
-      outline: 3px solid rgba(15, 118, 110, 0.18);
-      border-color: var(--accent);
-    }
-
-    .actions {
-      display: flex;
+      gap: 8px;
       flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
     }
 
-    .primary,
-    .secondary,
-    .ghost {
-      min-height: 40px;
-      padding: 9px 14px;
-      border-radius: 7px;
-      font-weight: 800;
-    }
-
-    .primary {
-      background: var(--accent);
-      color: #fff;
-    }
-
-    .primary:hover:not(:disabled) {
-      background: var(--accent-strong);
-    }
-
-    .secondary {
-      border: 1px solid #d4a017;
-      background: #fff8e6;
-      color: #7a4c00;
-    }
-
-    .secondary.active {
-      border-color: var(--accent);
-      background: #e7f6f3;
-      color: var(--accent-strong);
-    }
-
-    .ghost {
+    .tab {
+      min-height: 38px;
+      padding: 8px 12px;
       border: 1px solid var(--line);
+      border-radius: 8px;
       background: #fff;
       color: var(--ink);
+      font-weight: 800;
+      cursor: pointer;
     }
 
-    .feedback {
-      min-height: 26px;
-      color: var(--muted);
-      font-weight: 700;
+    .tab.active {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: #0b5f59;
     }
 
-    .feedback.success {
-      color: var(--success);
-    }
-
-    .feedback.error {
-      color: var(--danger);
-    }
-
-    .hint-box {
+    .metrics {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 10px;
+      margin-bottom: 14px;
     }
 
-    .hint-item {
-      min-height: 82px;
-      padding: 12px;
+    .metric {
+      min-height: 64px;
+      padding: 10px 12px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: var(--soft);
+      background: var(--surface);
+      box-shadow: 0 8px 22px rgba(31, 50, 71, 0.08);
     }
 
-    .hint-item span {
+    .metric span {
       display: block;
-      margin-bottom: 6px;
       color: var(--muted);
       font-size: 12px;
       font-weight: 800;
     }
 
-    .hint-value {
-      font-size: 24px;
-      font-weight: 900;
-      overflow-wrap: anywhere;
-    }
-
-    .keycap {
-      display: inline-grid;
-      gap: 2px;
-      min-width: 58px;
-      min-height: 48px;
-      place-items: center;
-      padding: 6px 10px;
-      border: 2px solid #344054;
-      border-bottom-width: 5px;
-      border-radius: 7px;
-      background: #ffffff;
-      color: #101828;
-      font-family: Consolas, "Courier New", monospace;
-      line-height: 1;
-      box-shadow: 0 2px 0 rgba(16, 24, 40, 0.12);
-    }
-
-    .keycap .key-main {
-      font-size: 24px;
-      font-weight: 900;
-    }
-
-    .keycap .key-label {
-      color: var(--muted);
-      font-size: 10px;
-      font-family: "Segoe UI", Arial, sans-serif;
-      font-weight: 800;
-      text-transform: uppercase;
-    }
-
-    .arabic-value {
-      direction: rtl;
-      text-align: right;
-      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-    }
-
-    .side-stack {
-      display: grid;
-      gap: 18px;
-    }
-
-    .puzzle {
-      padding: 14px;
-    }
-
-    .puzzle-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 12px;
-    }
-
-    .puzzle-header h2 {
-      margin: 0;
-      font-size: 18px;
-    }
-
-    .puzzle-board {
-      position: relative;
-      display: grid;
-      width: 100%;
-      aspect-ratio: 1 / 1;
+    .metric b {
+      display: block;
+      margin-top: 4px;
+      font-size: 20px;
       overflow: hidden;
-      border: 2px solid #344054;
-      border-radius: 8px;
-      background: #dbe5ef;
-      box-shadow: inset 0 0 0 5px rgba(255,255,255,.5);
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
-    .puzzle-cell {
-      position: relative;
-      z-index: 1;
-      border: 1px dashed rgba(52, 64, 84, 0.28);
-      background: rgba(255, 255, 255, 0.2);
-    }
-
-    .puzzle-cell.ready {
-      outline: 3px solid rgba(15, 118, 110, 0.35);
-      outline-offset: -3px;
-    }
-
-    .puzzle-piece {
-      position: relative;
-      width: 54px;
-      aspect-ratio: 1;
-      border: 2px solid #344054;
-      border-radius: 7px;
-      background-image: var(--puzzle-image);
-      background-repeat: no-repeat;
-      box-shadow: 0 4px 10px rgba(16, 24, 40, 0.18);
-      cursor: grab;
+    .frame-wrap {
       overflow: hidden;
-    }
-
-    .puzzle-piece:hover {
-      transform: translateY(-1px) rotate(-1deg);
-    }
-
-    .puzzle-piece:active {
-      cursor: grabbing;
-    }
-
-    .puzzle-piece.locked {
-      width: 100%;
-      height: 100%;
-      aspect-ratio: auto;
-      border: 0;
-      border-radius: 0;
-      box-shadow: none;
-      cursor: default;
-      transform: none;
-    }
-
-    .piece-tray {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(54px, 1fr));
-      gap: 8px;
-      min-height: 72px;
-      max-height: 178px;
-      margin-top: 12px;
-      padding: 10px;
-      overflow: auto;
       border: 1px solid var(--line);
-      border-radius: 8px;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,.78), rgba(244,247,251,.92));
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 16px 40px rgba(31, 50, 71, 0.14);
     }
 
-    .puzzle-note {
-      margin: 10px 0 0;
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 700;
+    iframe {
+      display: block;
+      width: 100%;
+      height: min(1120px, calc(100vh - 180px));
+      min-height: 760px;
+      border: 0;
+      background: #fff;
     }
 
-    @media (max-width: 900px) {
-      .app {
-        padding: 16px;
-      }
-
-      .layout {
-        grid-template-columns: 1fr;
-      }
-
+    @media (max-width: 760px) {
       .topbar {
         align-items: flex-start;
         flex-direction: column;
       }
 
-    }
-
-    @media (max-width: 640px) {
-      .choices,
-      .hint-box {
-        grid-template-columns: 1fr;
+      .metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .chinese {
-        font-size: 34px;
-      }
-
-      .game {
-        padding: 16px;
+      iframe {
+        height: 1000px;
       }
     }
   </style>
 </head>
 <body>
-  <main class="app">
-    <section class="topbar" aria-label="游戏信息">
-      <div class="title">
-        <h1>阿拉伯语餐厅复习</h1>
-        <p>看中文选发音，选对后输入阿语。提示会给出下一个阿语字符和 Arabic 101 键盘按键。</p>
+  <main class="shell">
+    <section class="topbar">
+      <div>
+        <h1>Arabic Game Hub</h1>
+        <p class="subtitle">主页负责加载游戏组件，并接收游戏上报的学习指标。</p>
       </div>
+      <nav class="game-tabs" aria-label="游戏列表">
+        <button class="tab active" type="button" data-game="arabic-test">阿语拼图测试</button>
+      </nav>
     </section>
 
-    <section class="layout">
-      <div class="panel game">
-        <div class="meta-row">
-          <span id="categoryTag" class="tag">基础问候</span>
-          <select id="categorySelect" class="select" aria-label="题库分类">
-            <option value="source:restaurant">餐厅题库</option>
-            <option value="source:best-friend">Best Friend 题库</option>
-          </select>
-          <select id="batchSelect" class="select" aria-label="题目组">
-            <option value="0">第 1 组</option>
-          </select>
-        </div>
+    <section class="metrics" aria-label="阿语测试指标">
+      <div class="metric"><span>游戏</span><b id="metricGame">arabic-test</b></div>
+      <div class="metric"><span>题库</span><b id="metricSource">-</b></div>
+      <div class="metric"><span>题目组</span><b id="metricBatch">-</b></div>
+      <div class="metric"><span>拼图</span><b id="metricPuzzle">0/16</b></div>
+    </section>
 
-        <div class="question">
-          <p class="question-label">中文</p>
-          <p id="chinesePrompt" class="chinese">你好</p>
-        </div>
-
-        <div id="choices" class="choices" aria-label="发音选项"></div>
-
-        <div id="entry" class="entry" hidden>
-          <input id="arabicInput" class="arabic-input" dir="rtl" lang="ar" autocomplete="off" spellcheck="false" aria-label="阿语输入">
-          <div class="actions">
-            <button id="checkButton" class="primary" type="button">检查输入</button>
-            <button id="hintButton" class="secondary" type="button" aria-pressed="false">提示：关</button>
-            <button id="nextButton" class="ghost" type="button" disabled>下一题</button>
-          </div>
-          <div class="hint-box" aria-live="polite">
-            <div class="hint-item">
-              <span>下一个字符</span>
-              <div id="nextChar" class="hint-value arabic-value">-</div>
-            </div>
-            <div class="hint-item">
-              <span>键盘按键</span>
-              <div id="nextKey" class="hint-value">-</div>
-            </div>
-            <div class="hint-item">
-              <span>字符读音</span>
-              <div id="nextPronunciation" class="hint-value">-</div>
-            </div>
-          </div>
-        </div>
-
-        <p id="feedback" class="feedback" aria-live="polite"></p>
-      </div>
-
-      <div class="side-stack">
-        <section class="panel puzzle" aria-label="拼图小游戏">
-          <div class="puzzle-header">
-            <h2>拼图画布</h2>
-            <span id="puzzleProgress" class="tag">0/0</span>
-          </div>
-          <div id="puzzleBoard" class="puzzle-board"></div>
-          <div id="pieceTray" class="piece-tray" aria-label="已解锁拼图碎片"></div>
-          <p id="puzzleStatus" class="puzzle-note">完成题目解锁拼图碎片。</p>
-        </section>
-
-      </div>
+    <section class="frame-wrap">
+      <iframe id="gameFrame" title="当前游戏" src="games/arabic-test.html"></iframe>
     </section>
   </main>
 
   <script>
-    const questions = [
-      { category: "基础问候", zh: "你好", ar: "مرحبا", rom: "marhaban" },
-      { category: "基础问候", zh: "欢迎光临", ar: "أهلا وسهلا", rom: "ahlan wa sahlan" },
-      { category: "基础问候", zh: "再见", ar: "مع السلامة", rom: "ma'a as-salamah" },
-      { category: "基础问候", zh: "谢谢光临", ar: "شكرا لزيارتكم", rom: "shukran liziyaratikum" },
-      { category: "基础问候", zh: "谢谢", ar: "شكرا", rom: "shukran" },
-
-      { category: "餐厅常用句子", zh: "菜单上有什么？", ar: "ماذا يوجد في القائمة؟", rom: "madha yujad fi al-qa'imah" },
-      { category: "餐厅常用句子", zh: "你想点什么？", ar: "ماذا تريد أن تطلب؟", rom: "madha turid an tatlub" },
-      { category: "餐厅常用句子", zh: "你最推荐什么？", ar: "ماذا توصي؟", rom: "madha tusi" },
-      { category: "餐厅常用句子", zh: "我想要……", ar: "أريد", rom: "urid" },
-      { category: "餐厅常用句子", zh: "请给我……", ar: "من فضلك أعطني", rom: "min fadlik a'tini" },
-      { category: "餐厅常用句子", zh: "这个很好吃", ar: "هذا لذيذ", rom: "hadha ladhidh" },
-      { category: "餐厅常用句子", zh: "我喜欢这个", ar: "أنا أحب هذا", rom: "ana uhibb hadha" },
-
-      { category: "食物味道形容词", zh: "好吃", ar: "لذيذ", rom: "ladhidh" },
-      { category: "食物味道形容词", zh: "辣", ar: "حار", rom: "har" },
-      { category: "食物味道形容词", zh: "甜", ar: "حلو", rom: "hilw" },
-      { category: "食物味道形容词", zh: "咸", ar: "مالح", rom: "malih" },
-      { category: "食物味道形容词", zh: "热", ar: "ساخن", rom: "sakhin" },
-      { category: "食物味道形容词", zh: "冷", ar: "بارد", rom: "barid" },
-
-      { category: "国家和对应美食", zh: "阿拉伯", ar: "عربي", rom: "arabi" },
-      { category: "国家和对应美食", zh: "中国", ar: "الصين", rom: "as-sin" },
-      { category: "国家和对应美食", zh: "意大利", ar: "إيطاليا", rom: "italiya" },
-      { category: "国家和对应美食", zh: "印度", ar: "الهند", rom: "al-hind" },
-      { category: "国家和对应美食", zh: "美国", ar: "أمريكا", rom: "amrika" },
-      { category: "国家和对应美食", zh: "日本", ar: "اليابان", rom: "al-yaban" },
-      { category: "国家和对应美食", zh: "法国", ar: "فرنسا", rom: "faransa" },
-      { category: "国家和对应美食", zh: "加拿大", ar: "كندا", rom: "kanada" },
-      { category: "国家和对应美食", zh: "墨西哥", ar: "المكسيك", rom: "al-maksik" },
-
-      { category: "美食重点词汇", zh: "鱼", ar: "سمك", rom: "samak" },
-      { category: "美食重点词汇", zh: "grilled fish 烤鱼", ar: "سمك مشوي", rom: "samak mashwi" },
-      { category: "美食重点词汇", zh: "牛肉", ar: "لحم بقري", rom: "lahm baqari" },
-      { category: "美食重点词汇", zh: "鸡肉", ar: "دجاج", rom: "dajaj" },
-      { category: "美食重点词汇", zh: "米饭", ar: "أرز", rom: "aruzz" },
-      { category: "美食重点词汇", zh: "坚果饭", ar: "أرز بالمكسرات", rom: "aruzz bil-mukassirat" },
-      { category: "美食重点词汇", zh: "kebab", ar: "كباب", rom: "kabab" },
-      { category: "美食重点词汇", zh: "饺子", ar: "زلابية", rom: "zalabiyah" },
-      { category: "美食重点词汇", zh: "披萨", ar: "بيتزا", rom: "bitza" },
-      { category: "美食重点词汇", zh: "意大利面", ar: "باستا", rom: "basta" },
-      { category: "美食重点词汇", zh: "黄油鸡", ar: "دجاج بالزبدة", rom: "dajaj biz-zubdah" },
-      { category: "美食重点词汇", zh: "印度甩饼", ar: "خبز نان", rom: "khubz nan" },
-      { category: "美食重点词汇", zh: "炸鸡", ar: "دجاج مقلي", rom: "dajaj maqli" },
-      { category: "美食重点词汇", zh: "薯条", ar: "بطاطس مقلية", rom: "batatis maqliyyah" },
-      { category: "美食重点词汇", zh: "汉堡", ar: "هامبرغر", rom: "hambargahr" },
-      { category: "美食重点词汇", zh: "关东煮", ar: "أودن", rom: "udin" },
-      { category: "美食重点词汇", zh: "牛排", ar: "شريحة لحم", rom: "sharihat lahm" },
-      { category: "美食重点词汇", zh: "waffle", ar: "وافل", rom: "wafil" },
-      { category: "美食重点词汇", zh: "taco", ar: "تاكو", rom: "taku" },
-
-      { category: "额外高频词", zh: "水", ar: "ماء", rom: "ma'" },
-      { category: "额外高频词", zh: "果汁", ar: "عصير", rom: "asir" },
-      { category: "额外高频词", zh: "大", ar: "كبير", rom: "kabir" },
-      { category: "额外高频词", zh: "小", ar: "صغير", rom: "saghir" },
-      { category: "额外高频词", zh: "我", ar: "أنا", rom: "ana" },
-      { category: "额外高频词", zh: "你", ar: "أنت", rom: "anta" },
-      { category: "额外高频词", zh: "他", ar: "هو", rom: "huwa" },
-      { category: "额外高频词", zh: "她", ar: "هي", rom: "hiya" },
-      { category: "额外高频词", zh: "我们", ar: "نحن", rom: "nahnu" },
-      { category: "额外高频词", zh: "他们（男）", ar: "هم", rom: "hum" },
-      { category: "额外高频词", zh: "她们（女）", ar: "هن", rom: "hunna" }
-    ].map((item) => ({ ...item, source: "restaurant" }));
-
-    const bestFriendQuestions = [
-      { category: "Best Friend - 人称代词", zh: "我", ar: "أنا", rom: "ana" },
-      { category: "Best Friend - 人称代词", zh: "你（男）", ar: "أنت", rom: "anta" },
-      { category: "Best Friend - 人称代词", zh: "你（女）", ar: "أنت", rom: "anti" },
-      { category: "Best Friend - 人称代词", zh: "他", ar: "هو", rom: "huwa" },
-      { category: "Best Friend - 人称代词", zh: "她", ar: "هي", rom: "hiya" },
-      { category: "Best Friend - 人称代词", zh: "我们", ar: "نحن", rom: "nahnu" },
-      { category: "Best Friend - 人称代词", zh: "你们", ar: "أنتم", rom: "antum" },
-      { category: "Best Friend - 人称代词", zh: "他们", ar: "هم", rom: "hum" },
-
-      { category: "Best Friend - 人物", zh: "男孩", ar: "ولد", rom: "walad" },
-      { category: "Best Friend - 人物", zh: "女孩", ar: "بنت", rom: "bint" },
-      { category: "Best Friend - 人物", zh: "朋友", ar: "صديق", rom: "sadeeq" },
-      { category: "Best Friend - 人物", zh: "女朋友/女性朋友", ar: "صديقة", rom: "sadeeqa" },
-      { category: "Best Friend - 人物", zh: "最好的朋友", ar: "أفضل صديق", rom: "afdal sadeeq" },
-      { category: "Best Friend - 人物", zh: "close friend", ar: "صديق مقرب", rom: "sadeeq muqarrab" },
-
-      { category: "Best Friend - 外貌", zh: "高", ar: "طويل", rom: "taweel" },
-      { category: "Best Friend - 外貌", zh: "矮", ar: "قصير", rom: "qaseer" },
-      { category: "Best Friend - 外貌", zh: "胖", ar: "سمين", rom: "sameen" },
-      { category: "Best Friend - 外貌", zh: "瘦", ar: "نحيف", rom: "naheef" },
-      { category: "Best Friend - 外貌", zh: "漂亮", ar: "جميلة", rom: "jameela" },
-      { category: "Best Friend - 外貌", zh: "帅", ar: "وسيم", rom: "waseem" },
-      { category: "Best Friend - 外貌", zh: "大眼睛", ar: "عيون كبيرة", rom: "uyoon kabeera" },
-      { category: "Best Friend - 外貌", zh: "小眼睛", ar: "عيون صغيرة", rom: "uyoon sagheera" },
-
-      { category: "Best Friend - 头发颜色", zh: "金发", ar: "شعر أشقر", rom: "sha'r ashqar" },
-      { category: "Best Friend - 头发颜色", zh: "黑发", ar: "شعر أسود", rom: "sha'r aswad" },
-      { category: "Best Friend - 头发颜色", zh: "棕发", ar: "شعر بني", rom: "sha'r bunni" },
-
-      { category: "Best Friend - 性格与情绪", zh: "聪明", ar: "ذكي", rom: "dhaki" },
-      { category: "Best Friend - 性格与情绪", zh: "聪明（女）", ar: "ذكية", rom: "dhakiyya" },
-      { category: "Best Friend - 性格与情绪", zh: "友好", ar: "ودود", rom: "wadood" },
-      { category: "Best Friend - 性格与情绪", zh: "有趣", ar: "ممتع", rom: "mumti" },
-      { category: "Best Friend - 性格与情绪", zh: "高兴", ar: "سعيد", rom: "sa'eed" },
-      { category: "Best Friend - 性格与情绪", zh: "悲伤", ar: "حزين", rom: "hazeen" },
-      { category: "Best Friend - 性格与情绪", zh: "惊讶", ar: "متفاجئ", rom: "mutafaji" },
-      { category: "Best Friend - 性格与情绪", zh: "生气", ar: "غاضب", rom: "ghadib" },
-      { category: "Best Friend - 性格与情绪", zh: "害怕", ar: "خائف", rom: "khaa'if" },
-
-      { category: "Best Friend - 介词", zh: "在里面 = in", ar: "في", rom: "fee" },
-      { category: "Best Friend - 介词", zh: "在上面 = on", ar: "على", rom: "ala" },
-      { category: "Best Friend - 介词", zh: "在下面 = below", ar: "تحت", rom: "taht" },
-      { category: "Best Friend - 介词", zh: "在外面 = outside", ar: "خارج", rom: "kharij" },
-      { category: "Best Friend - 介词", zh: "旁边", ar: "بجانب", rom: "bijanib" },
-      { category: "Best Friend - 介词", zh: "前面", ar: "أمام", rom: "amam" },
-      { category: "Best Friend - 介词", zh: "后面", ar: "خلف", rom: "khalf" },
-
-      { category: "Best Friend - 天气", zh: "晴天", ar: "مشمس", rom: "mushmis" },
-      { category: "Best Friend - 天气", zh: "下雨", ar: "ممطر", rom: "mumtir" },
-      { category: "Best Friend - 天气", zh: "刮风", ar: "عاصف", rom: "asif" },
-      { category: "Best Friend - 天气", zh: "下雪", ar: "مثلج", rom: "muthlij" },
-      { category: "Best Friend - 天气", zh: "有雾", ar: "ضبابي", rom: "dhababi" },
-      { category: "Best Friend - 天气", zh: "今天天气很好。", ar: "الطقس جميل اليوم", rom: "al-taqs jameel al-yawm" },
-
-      { category: "Best Friend - 月份", zh: "一月", ar: "يناير", rom: "yanayir" },
-      { category: "Best Friend - 月份", zh: "二月", ar: "فبراير", rom: "fibrayir" },
-      { category: "Best Friend - 月份", zh: "三月", ar: "مارس", rom: "maris" },
-      { category: "Best Friend - 月份", zh: "四月", ar: "أبريل", rom: "abril" },
-      { category: "Best Friend - 月份", zh: "五月", ar: "مايو", rom: "mayu" },
-      { category: "Best Friend - 月份", zh: "六月", ar: "يونيو", rom: "yunyu" },
-      { category: "Best Friend - 月份", zh: "七月", ar: "يوليو", rom: "yulyu" },
-      { category: "Best Friend - 月份", zh: "八月", ar: "أغسطس", rom: "agustus" },
-      { category: "Best Friend - 月份", zh: "九月", ar: "سبتمبر", rom: "sibtambar" },
-      { category: "Best Friend - 月份", zh: "十月", ar: "أكتوبر", rom: "uktubar" },
-      { category: "Best Friend - 月份", zh: "十一月", ar: "نوفمبر", rom: "nufambar" },
-      { category: "Best Friend - 月份", zh: "十二月", ar: "ديسمبر", rom: "disambar" },
-
-      { category: "Best Friend - 动作", zh: "跑", ar: "يجري", rom: "yajri" },
-      { category: "Best Friend - 动作", zh: "跳", ar: "يقفز", rom: "yaqfiz" },
-      { category: "Best Friend - 动作", zh: "玩", ar: "يلعب", rom: "yal'ab" },
-      { category: "Best Friend - 动作", zh: "踢足球", ar: "يلعب كرة القدم", rom: "yal'ab kurat al-qadam" },
-      { category: "Best Friend - 动作", zh: "读书", ar: "يقرأ", rom: "yaqra" },
-      { category: "Best Friend - 动作", zh: "画画", ar: "يرسم", rom: "yarsum" },
-      { category: "Best Friend - 动作", zh: "游泳", ar: "يسبح", rom: "yasbah" },
-
-      { category: "Best Friend - 喜欢", zh: "喜欢", ar: "يحب", rom: "yuhibb" },
-      { category: "Best Friend - 喜欢", zh: "我喜欢蓝色。", ar: "أنا أحب اللون الأزرق", rom: "ana uhibb al-lawn al-azraq" },
-      { category: "Best Friend - 喜欢", zh: "她喜欢踢足球。", ar: "هي تحب كرة القدم", rom: "hiya tuhibb kurat al-qadam" },
-
-      { category: "Best Friend - 颜色", zh: "红色", ar: "أحمر", rom: "ahmar" },
-      { category: "Best Friend - 颜色", zh: "蓝色", ar: "أزرق", rom: "azraq" },
-      { category: "Best Friend - 颜色", zh: "绿色", ar: "أخضر", rom: "akhdar" },
-      { category: "Best Friend - 颜色", zh: "黄色", ar: "أصفر", rom: "asfar" },
-      { category: "Best Friend - 颜色", zh: "黑色", ar: "أسود", rom: "aswad" },
-      { category: "Best Friend - 颜色", zh: "白色", ar: "أبيض", rom: "abyad" },
-
-      { category: "Best Friend - 国家", zh: "中国", ar: "الصين", rom: "as-seen" },
-      { category: "Best Friend - 国家", zh: "美国", ar: "أمريكا", rom: "amreeka" },
-      { category: "Best Friend - 国家", zh: "日本", ar: "اليابان", rom: "al-yaban" },
-      { category: "Best Friend - 国家", zh: "印度", ar: "الهند", rom: "al-hind" },
-      { category: "Best Friend - 国家", zh: "法国", ar: "فرنسا", rom: "faransa" },
-      { category: "Best Friend - 国家", zh: "加拿大", ar: "كندا", rom: "kanada" },
-      { category: "Best Friend - 国家", zh: "我来自中国。", ar: "أنا من الصين", rom: "ana min as-seen" },
-
-      { category: "Best Friend - 疑问词", zh: "谁 = who", ar: "من", rom: "man" },
-      { category: "Best Friend - 疑问词", zh: "什么 = what", ar: "ماذا", rom: "madha" },
-      { category: "Best Friend - 疑问词", zh: "什么 = what", ar: "ما", rom: "ma" },
-      { category: "Best Friend - 疑问词", zh: "哪里 = where", ar: "أين", rom: "ayna" },
-      { category: "Best Friend - 疑问词", zh: "什么时候 = when", ar: "متى", rom: "mata" },
-      { category: "Best Friend - 疑问词", zh: "为什么 = why", ar: "لماذا", rom: "limadha" },
-      { category: "Best Friend - 疑问词", zh: "怎么样 = how", ar: "كيف", rom: "kayf" },
-
-      { category: "Best Friend - 常用句子", zh: "这是我最好的朋友。", ar: "هذا صديقي المفضل", rom: "hadha sadeeqi al-mufaddal" },
-      { category: "Best Friend - 常用句子", zh: "她很聪明。", ar: "هي ذكية جدا", rom: "hiya dhakiyya jiddan" },
-      { category: "Best Friend - 常用句子", zh: "他很高。", ar: "هو طويل", rom: "huwa taweel" },
-      { category: "Best Friend - 常用句子", zh: "她有黑色头发。", ar: "لديها شعر أسود", rom: "ladayha sha'r aswad" },
-      { category: "Best Friend - 常用句子", zh: "我们一起玩。", ar: "نحن نلعب معا", rom: "nahnu nal'ab ma'an" },
-      { category: "Best Friend - 常用句子", zh: "你最好的朋友是谁？", ar: "من هو أفضل صديق لك؟", rom: "man huwa afdal sadeeq laka" },
-      { category: "Best Friend - 常用句子", zh: "她叫什么名字？", ar: "ما اسمها؟", rom: "ma ismuha" },
-      { category: "Best Friend - 常用句子", zh: "她几岁？", ar: "كم عمرها؟", rom: "kam umruha" },
-      { category: "Best Friend - 常用句子", zh: "她什么时候生日？", ar: "متى عيد ميلادها؟", rom: "mata eed meeladiha" },
-      { category: "Best Friend - 常用句子", zh: "你喜欢什么颜色？", ar: "ما لونك المفضل؟", rom: "ma lawnuka al-mufaddal" }
-    ].map((item) => ({ ...item, source: "best-friend" }));
-
-    const allQuestions = [...questions, ...bestFriendQuestions].map((item, index) => ({
-      ...item,
-      id: `${item.source}-${index}`
-    }));
-
-    const sourceConfig = {
-      restaurant: {
-        label: "餐厅题库",
-        puzzleImages: []
-      },
-      "best-friend": {
-        label: "Best Friend 题库",
-        puzzleImages: []
+    const games = {
+      "arabic-test": {
+        title: "阿语拼图测试",
+        src: "games/arabic-test.html"
       }
     };
 
-    const puzzleImageCandidates = Array.from({ length: 21 }, (_, index) => `${index}.png`);
-    const availablePuzzleImages = [];
-    const puzzleSize = 16;
-    const puzzleGrid = 4;
+    const frame = document.querySelector("#gameFrame");
+    const metricGame = document.querySelector("#metricGame");
+    const metricSource = document.querySelector("#metricSource");
+    const metricBatch = document.querySelector("#metricBatch");
+    const metricPuzzle = document.querySelector("#metricPuzzle");
 
-    const arabicKeyMap = {
-      "ذ": "`",
-      "ض": "Q",
-      "ص": "W",
-      "ث": "E",
-      "ق": "R",
-      "ف": "T",
-      "غ": "Y",
-      "ع": "U",
-      "ه": "I",
-      "خ": "O",
-      "ح": "P",
-      "ج": "[",
-      "د": "]",
-      "ش": "A",
-      "س": "S",
-      "ي": "D",
-      "ب": "F",
-      "ل": "G",
-      "ا": "H",
-      "ت": "J",
-      "ن": "K",
-      "م": "L",
-      "ك": ";",
-      "ط": "'",
-      "ئ": "Z",
-      "ء": "X",
-      "ؤ": "C",
-      "ر": "V",
-      "لا": "B",
-      "ى": "N",
-      "ة": "M",
-      "و": ",",
-      "ز": ".",
-      "ظ": "/",
-      " ": "Space",
-      "؟": "Shift + /",
-      "،": "Shift + K",
-      "؛": "Shift + ;",
-      "َ": "Shift + Q",
-      "ً": "Shift + W",
-      "ُ": "Shift + E",
-      "ٌ": "Shift + R",
-      "إ": "Shift + Y",
-      "أ": "Shift + H",
-      "آ": "Shift + N",
-      "ّ": "Shift + `",
-      "-": "-",
-      "'": "'"
-    };
+    document.querySelectorAll(".tab").forEach((button) => {
+      button.addEventListener("click", () => {
+        const game = games[button.dataset.game];
+        if (!game) return;
 
-    const arabicPronunciationMap = {
-      "ا": "a",
-      "أ": "a",
-      "إ": "i",
-      "آ": "aa",
-      "ب": "b",
-      "ت": "t",
-      "ث": "th",
-      "ج": "j",
-      "ح": "h",
-      "خ": "kh",
-      "د": "d",
-      "ذ": "dh",
-      "ر": "r",
-      "ز": "z",
-      "س": "s",
-      "ش": "sh",
-      "ص": "s",
-      "ض": "d",
-      "ط": "t",
-      "ظ": "z",
-      "ع": "a",
-      "غ": "gh",
-      "ف": "f",
-      "ق": "q",
-      "ك": "k",
-      "ل": "l",
-      "م": "m",
-      "ن": "n",
-      "ه": "h",
-      "و": "w",
-      "ؤ": "w",
-      "ي": "y",
-      "ى": "a",
-      "ئ": "y",
-      "ء": "hamza",
-      "ة": "a",
-      "لا": "la",
-      " ": "space",
-      "؟": "question mark",
-      "،": "comma",
-      "؛": "semicolon",
-      "-": "dash",
-      "'": "apostrophe"
-    };
-
-    const arabicSoundMap = {
-      "ا": "أَلْ",
-      "أ": "أَ",
-      "إ": "إِ",
-      "آ": "آ",
-      "ب": "بَ",
-      "ت": "تَ",
-      "ث": "ثَ",
-      "ج": "جَ",
-      "ح": "حَ",
-      "خ": "خَ",
-      "د": "دَ",
-      "ذ": "ذَ",
-      "ر": "رَ",
-      "ز": "زَ",
-      "س": "سَ",
-      "ش": "شَ",
-      "ص": "صَ",
-      "ض": "ضَ",
-      "ط": "طَ",
-      "ظ": "ظَ",
-      "ع": "عَ",
-      "غ": "غَ",
-      "ف": "فَ",
-      "ق": "قَ",
-      "ك": "كَ",
-      "ل": "لَ",
-      "م": "مَ",
-      "ن": "نَ",
-      "ه": "هَ",
-      "و": "وَ",
-      "ؤ": "ؤَ",
-      "ي": "يَ",
-      "ى": "ى",
-      "ئ": "ئَ",
-      "ء": "ءَ",
-      "ة": "ةَ",
-      "لا": "لا"
-    };
-
-    const arabicCodeMap = {
-      Backquote: ["ذ", "ّ"],
-      KeyQ: ["ض", "َ"],
-      KeyW: ["ص", "ً"],
-      KeyE: ["ث", "ُ"],
-      KeyR: ["ق", "ٌ"],
-      KeyT: ["ف", "لإ"],
-      KeyY: ["غ", "إ"],
-      KeyU: ["ع", "‘"],
-      KeyI: ["ه", "÷"],
-      KeyO: ["خ", "×"],
-      KeyP: ["ح", "؛"],
-      BracketLeft: ["ج", "<"],
-      BracketRight: ["د", ">"],
-      KeyA: ["ش", "ِ"],
-      KeyS: ["س", "ٍ"],
-      KeyD: ["ي", "]"],
-      KeyF: ["ب", "["],
-      KeyG: ["ل", "لأ"],
-      KeyH: ["ا", "أ"],
-      KeyJ: ["ت", "ـ"],
-      KeyK: ["ن", "،"],
-      KeyL: ["م", "/"],
-      Semicolon: ["ك", ":"],
-      Quote: ["ط", "\""],
-      KeyZ: ["ئ", "~"],
-      KeyX: ["ء", "ْ"],
-      KeyC: ["ؤ", "}"],
-      KeyV: ["ر", "{"],
-      KeyB: ["لا", "لآ"],
-      KeyN: ["ى", "آ"],
-      KeyM: ["ة", "'"],
-      Comma: ["و", ","],
-      Period: ["ز", "."],
-      Slash: ["ظ", "؟"],
-      Space: [" ", " "]
-    };
-
-    const elements = {
-      categoryTag: document.querySelector("#categoryTag"),
-      categorySelect: document.querySelector("#categorySelect"),
-      batchSelect: document.querySelector("#batchSelect"),
-      chinesePrompt: document.querySelector("#chinesePrompt"),
-      choices: document.querySelector("#choices"),
-      entry: document.querySelector("#entry"),
-      arabicInput: document.querySelector("#arabicInput"),
-      feedback: document.querySelector("#feedback"),
-      checkButton: document.querySelector("#checkButton"),
-      hintButton: document.querySelector("#hintButton"),
-      nextButton: document.querySelector("#nextButton"),
-      nextChar: document.querySelector("#nextChar"),
-      nextKey: document.querySelector("#nextKey"),
-      nextPronunciation: document.querySelector("#nextPronunciation"),
-      puzzleBoard: document.querySelector("#puzzleBoard"),
-      pieceTray: document.querySelector("#pieceTray"),
-      puzzleProgress: document.querySelector("#puzzleProgress"),
-      puzzleStatus: document.querySelector("#puzzleStatus")
-    };
-
-    let pool = [];
-    let current = null;
-    let selectedCorrect = false;
-    let hintEnabled = false;
-    let completedCurrent = false;
-    let currentAudio = null;
-    let draggedPieceIndex = null;
-    const trayOrderByGroup = {};
-    const completedByGroup = {};
-    const placedByGroup = {};
-
-    function shuffle(items) {
-      return [...items].sort(() => Math.random() - 0.5);
-    }
-
-    function normalizeAnswer(value) {
-      return value
-        .trim()
-        .replace(/[ـ\u064B-\u0652]/g, "")
-        .replace(/\s+/g, " ");
-    }
-
-    function normalizeLive(value) {
-      return value.replace(/[ـ\u064B-\u0652]/g, "");
-    }
-
-    function displayChar(char) {
-      if (char === " ") return "空格";
-      return char || "-";
-    }
-
-    function keyForChar(char) {
-      return arabicKeyMap[char] || char || "-";
-    }
-
-    function keyLabelFor(key) {
-      const labels = {
-        "'": "Quote",
-        "`": "Backquote",
-        ",": "Comma",
-        ".": "Period",
-        "/": "Slash",
-        ";": "Semicolon",
-        "[": "Left bracket",
-        "]": "Right bracket",
-        "Shift + /": "Shift + Slash",
-        "Shift + K": "Shift + K",
-        "Shift + ;": "Shift + Semicolon",
-        "Space": "Spacebar"
-      };
-      return labels[key] || "";
-    }
-
-    function renderKeyHint(char) {
-      elements.nextKey.replaceChildren();
-
-      const key = keyForChar(char);
-      if (key === "-") {
-        elements.nextKey.textContent = "-";
-        return;
-      }
-
-      const keycap = document.createElement("span");
-      keycap.className = "keycap";
-
-      const main = document.createElement("span");
-      main.className = "key-main";
-      main.textContent = key;
-      keycap.append(main);
-
-      const labelText = keyLabelFor(key);
-      if (labelText) {
-        const label = document.createElement("span");
-        label.className = "key-label";
-        label.textContent = labelText;
-        keycap.append(label);
-      }
-
-      elements.nextKey.append(keycap);
-    }
-
-    function pronunciationForChar(char) {
-      return arabicPronunciationMap[char] || char || "-";
-    }
-
-    function speakArabic(text) {
-      if (!text.trim()) return;
-
-      const url = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ar&q=${encodeURIComponent(text)}`;
-      if (currentAudio) {
-        currentAudio.pause();
-        currentAudio = null;
-      }
-      const audio = new Audio(url);
-      currentAudio = audio;
-      audio.play().catch(() => speakArabicWithBrowserVoice(text));
-    }
-
-    function speakArabicWithBrowserVoice(text) {
-      if (!("speechSynthesis" in window)) {
-        elements.feedback.textContent = "当前浏览器不支持语音播放。";
-        elements.feedback.className = "feedback error";
-        return;
-      }
-
-      window.speechSynthesis.cancel();
-      const voices = window.speechSynthesis.getVoices();
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = "ar-SA";
-      utterance.voice = voices.find((voice) => voice.lang.toLowerCase().startsWith("ar")) || null;
-      utterance.rate = 0.8;
-      utterance.volume = 1;
-      window.speechSynthesis.speak(utterance);
-    }
-
-    function speakKeySound(text) {
-      const sound = arabicSoundMap[text];
-      if (!sound || sound === "-") return;
-      speakArabic(sound);
-    }
-
-    function insertAtCursor(input, text) {
-      const start = input.selectionStart ?? input.value.length;
-      const end = input.selectionEnd ?? input.value.length;
-      input.value = `${input.value.slice(0, start)}${text}${input.value.slice(end)}`;
-      const nextPosition = start + text.length;
-      input.setSelectionRange(nextPosition, nextPosition);
-      updateLiveInput();
-    }
-
-    function activeSource() {
-      return elements.categorySelect.value === "source:best-friend" ? "best-friend" : "restaurant";
-    }
-
-    function sourceQuestions(source) {
-      return allQuestions.filter((item) => item.source === source);
-    }
-
-    function fullBatchCount(source) {
-      return Math.max(1, Math.floor(sourceQuestions(source).length / puzzleSize));
-    }
-
-    function activeBatch() {
-      return Number(elements.batchSelect.value || 0);
-    }
-
-    function progressKey(source = activeSource(), batch = activeBatch()) {
-      return `${source}:${batch}`;
-    }
-
-    function completedSet(key = progressKey()) {
-      completedByGroup[key] ||= new Set();
-      return completedByGroup[key];
-    }
-
-    function placedMap(key = progressKey()) {
-      placedByGroup[key] ||= {};
-      return placedByGroup[key];
-    }
-
-    function fillBatchOptions() {
-      const source = activeSource();
-      const count = fullBatchCount(source);
-      const current = Math.min(activeBatch(), count - 1);
-      elements.batchSelect.replaceChildren();
-      for (let index = 0; index < count; index += 1) {
-        const option = document.createElement("option");
-        option.value = String(index);
-        option.textContent = `第 ${index + 1} 组`;
-        elements.batchSelect.append(option);
-      }
-      elements.batchSelect.value = String(current);
-    }
-
-    function activeQuestions() {
-      const source = activeSource();
-      const start = activeBatch() * puzzleSize;
-      return sourceQuestions(source).slice(start, start + puzzleSize);
-    }
-
-    function sourcePieceIndex(question) {
-      return activeQuestions().findIndex((item) => item.id === question.id);
-    }
-
-    function activePuzzleImage(source = activeSource(), batch = activeBatch()) {
-      const discoveredImages = availablePuzzleImages.filter(Boolean);
-      const images = sourceConfig[source].puzzleImages.length ? sourceConfig[source].puzzleImages : discoveredImages;
-      if (!images.length) return "0.png";
-      return images[batch % images.length];
-    }
-
-    function cropImageToSquareDataUrl(image) {
-      const side = Math.min(image.naturalWidth, image.naturalHeight);
-      const sx = Math.floor((image.naturalWidth - side) / 2);
-      const sy = Math.floor((image.naturalHeight - side) / 2);
-      const canvas = document.createElement("canvas");
-      canvas.width = side;
-      canvas.height = side;
-      const ctx = canvas.getContext("2d");
-      ctx.drawImage(image, sx, sy, side, side, 0, 0, side, side);
-      return canvas.toDataURL("image/png");
-    }
-
-    function discoverPuzzleImages() {
-      puzzleImageCandidates.forEach((src, index) => {
-        const image = new Image();
-        image.onload = () => {
-          availablePuzzleImages[index] = cropImageToSquareDataUrl(image);
-          renderPuzzle();
-        };
-        image.src = src;
+        document.querySelectorAll(".tab").forEach((tab) => tab.classList.remove("active"));
+        button.classList.add("active");
+        frame.src = game.src;
+        metricGame.textContent = button.dataset.game;
+        metricSource.textContent = "-";
+        metricBatch.textContent = "-";
+        metricPuzzle.textContent = "0/16";
       });
-    }
-
-    function trayOrder(key = progressKey()) {
-      trayOrderByGroup[key] ||= shuffle(Array.from({ length: puzzleSize }, (_, index) => index));
-      return trayOrderByGroup[key];
-    }
-
-    function pieceStyle(index, cols, rows) {
-      const col = index % cols;
-      const row = Math.floor(index / cols);
-      const x = cols === 1 ? 0 : (col / (cols - 1)) * 100;
-      const y = rows === 1 ? 0 : (row / (rows - 1)) * 100;
-      return {
-        backgroundSize: `${cols * 100}% ${rows * 100}%`,
-        backgroundPosition: `${x}% ${y}%`
-      };
-    }
-
-    function createPuzzlePiece(source, index, dims, locked = false) {
-      const piece = document.createElement("div");
-      piece.className = locked ? "puzzle-piece locked" : "puzzle-piece";
-      piece.dataset.index = String(index);
-      piece.style.setProperty("--puzzle-image", `url("${activePuzzleImage(source)}")`);
-      const style = pieceStyle(index, dims.cols, dims.rows);
-      piece.style.backgroundSize = style.backgroundSize;
-      piece.style.backgroundPosition = style.backgroundPosition;
-      piece.draggable = true;
-      piece.title = "拖到拼图画布的任意空格";
-      piece.addEventListener("dragstart", () => {
-        draggedPieceIndex = index;
-      });
-      piece.addEventListener("dragend", () => {
-        draggedPieceIndex = null;
-      });
-      return piece;
-    }
-
-    function renderPuzzle() {
-      const source = activeSource();
-      const items = activeQuestions();
-      const dims = { cols: puzzleGrid, rows: puzzleGrid };
-      const completed = completedSet();
-      const placed = placedMap();
-      const placedPieces = new Set(Object.values(placed).map(Number));
-
-      elements.puzzleBoard.style.setProperty("--puzzle-image", `url("${activePuzzleImage(source)}")`);
-      elements.puzzleBoard.style.gridTemplateColumns = `repeat(${dims.cols}, 1fr)`;
-      elements.puzzleBoard.style.gridTemplateRows = `repeat(${dims.rows}, 1fr)`;
-      elements.puzzleBoard.replaceChildren();
-      elements.pieceTray.replaceChildren();
-      elements.pieceTray.ondragover = (event) => {
-        if (draggedPieceIndex !== null && completed.has(draggedPieceIndex)) {
-          event.preventDefault();
-        }
-      };
-      elements.pieceTray.ondrop = (event) => {
-        event.preventDefault();
-        if (draggedPieceIndex === null) return;
-        Object.keys(placed).forEach((cellIndex) => {
-          if (Number(placed[cellIndex]) === draggedPieceIndex) {
-            delete placed[cellIndex];
-          }
-        });
-        elements.puzzleStatus.textContent = "碎片已放回待拼区。";
-        renderPuzzle();
-      };
-
-      Array.from({ length: puzzleSize }).forEach((_, index) => {
-        const cell = document.createElement("div");
-        cell.className = "puzzle-cell";
-        cell.dataset.index = String(index);
-        cell.addEventListener("dragover", (event) => {
-          if (draggedPieceIndex !== null && completed.has(draggedPieceIndex)) {
-            event.preventDefault();
-            cell.classList.add("ready");
-          }
-        });
-        cell.addEventListener("dragleave", () => {
-          cell.classList.remove("ready");
-        });
-        cell.addEventListener("drop", (event) => {
-          event.preventDefault();
-          cell.classList.remove("ready");
-          if (draggedPieceIndex === null || !completed.has(draggedPieceIndex)) {
-            return;
-          }
-          if (placed[index] !== undefined && Number(placed[index]) !== draggedPieceIndex) {
-            elements.puzzleStatus.textContent = "这个格子已经有碎片了，换一个空格试试。";
-            return;
-          }
-          Object.keys(placed).forEach((cellIndex) => {
-            if (Number(placed[cellIndex]) === draggedPieceIndex) {
-              delete placed[cellIndex];
-            }
-          });
-          placed[index] = draggedPieceIndex;
-          renderPuzzle();
-        });
-
-        if (placed[index] !== undefined) {
-          cell.append(createPuzzlePiece(source, Number(placed[index]), dims, true));
-        }
-        elements.puzzleBoard.append(cell);
-      });
-
-      [...completed]
-        .filter((index) => !placedPieces.has(index))
-        .sort((a, b) => trayOrder().indexOf(a) - trayOrder().indexOf(b))
-        .forEach((index) => {
-          elements.pieceTray.append(createPuzzlePiece(source, index, dims));
-        });
-
-      elements.puzzleProgress.textContent = `${completed.size}/${puzzleSize}`;
-      if (Object.keys(placed).length === puzzleSize) {
-        elements.puzzleStatus.textContent = "拼图完成！";
-      } else if (completed.size === puzzleSize) {
-        elements.puzzleStatus.textContent = "所有碎片已解锁，可以完成拼图了。";
-      } else {
-        elements.puzzleStatus.textContent = `完成本组未做过的题目来解锁碎片，还剩 ${puzzleSize - completed.size} 块。`;
-      }
-    }
-
-    function drawQuestion() {
-      const available = activeQuestions();
-      if (!pool.length || !pool.some((item) => available.includes(item))) {
-        pool = shuffle(available);
-      }
-
-      current = pool.pop();
-      selectedCorrect = false;
-      hintEnabled = false;
-      completedCurrent = false;
-
-      elements.categoryTag.textContent = current.category;
-      elements.chinesePrompt.textContent = current.zh;
-      elements.entry.hidden = true;
-      elements.arabicInput.value = "";
-      elements.feedback.textContent = "请选择正确的阿语发音。";
-      elements.feedback.className = "feedback";
-      elements.nextButton.disabled = true;
-      elements.hintButton.disabled = false;
-      elements.hintButton.classList.remove("active");
-      elements.hintButton.setAttribute("aria-pressed", "false");
-      elements.hintButton.textContent = "提示：关";
-      elements.checkButton.disabled = false;
-      updateLiveInput();
-      renderChoices();
-    }
-
-    function renderChoices() {
-      const wrongOptions = shuffle(allQuestions.filter((item) => item.rom !== current.rom))
-        .slice(0, 3)
-        .map((item) => ({ rom: item.rom, ar: item.ar }));
-      const options = shuffle([{ rom: current.rom, ar: current.ar }, ...wrongOptions]);
-
-      elements.choices.replaceChildren();
-      options.forEach((option) => {
-        const button = document.createElement("button");
-        button.type = "button";
-        button.className = "choice";
-        button.textContent = option.rom;
-        button.addEventListener("click", () => {
-          speakArabic(option.ar);
-          choosePronunciation(button, option.rom);
-        });
-        elements.choices.append(button);
-      });
-    }
-
-    function choosePronunciation(button, option) {
-      if (selectedCorrect) return;
-
-      if (option === current.rom) {
-        selectedCorrect = true;
-        button.classList.add("correct");
-        elements.feedback.textContent = "发音正确。现在输入对应的阿拉伯语。";
-        elements.feedback.className = "feedback success";
-        elements.entry.hidden = false;
-        [...elements.choices.children].forEach((choice) => {
-          choice.disabled = false;
-          if (choice.textContent === current.rom) choice.classList.add("correct");
-        });
-        elements.arabicInput.focus();
-        return;
-      }
-
-      button.classList.add("wrong");
-      button.disabled = true;
-      elements.feedback.textContent = "发音不对，再选一次。";
-      elements.feedback.className = "feedback error";
-    }
-
-    function liveState() {
-      const typed = normalizeLive(elements.arabicInput.value);
-      const answer = normalizeLive(current ? current.ar : "");
-      return {
-        typed,
-        answer,
-        matchesPrefix: answer.startsWith(typed),
-        isComplete: typed === answer
-      };
-    }
-
-    function updateLiveInput() {
-      if (!current) return;
-
-      const state = liveState();
-
-      if (!hintEnabled) {
-        elements.nextChar.textContent = "-";
-        renderKeyHint("");
-        elements.nextPronunciation.textContent = "-";
-      } else if (!state.matchesPrefix) {
-        elements.nextChar.textContent = "输入错误";
-        renderKeyHint("");
-        elements.nextPronunciation.textContent = "-";
-        elements.feedback.textContent = "当前输入有误，改正确后才会继续提示下一个字符。";
-        elements.feedback.className = "feedback error";
-      } else {
-        const next = state.answer[state.typed.length] || "";
-        elements.nextChar.textContent = displayChar(next);
-        renderKeyHint(next);
-        elements.nextPronunciation.textContent = pronunciationForChar(next);
-        if (!state.isComplete) {
-          elements.feedback.textContent = "提示已打开，会跟随你的输入显示下一个字符。";
-          elements.feedback.className = "feedback";
-        }
-      }
-
-      if (state.isComplete && !completedCurrent) {
-        completeQuestion();
-      }
-    }
-
-    function completeQuestion() {
-      completedCurrent = true;
-      const pieceIndex = sourcePieceIndex(current);
-      if (pieceIndex >= 0 && !completedSet().has(pieceIndex)) {
-        completedSet().add(pieceIndex);
-        renderPuzzle();
-      }
-        elements.feedback.textContent = "输入正确。";
-        elements.feedback.className = "feedback success";
-        elements.nextButton.disabled = false;
-        elements.checkButton.disabled = true;
-        elements.hintButton.disabled = true;
-        elements.nextChar.textContent = "-";
-        renderKeyHint("");
-        elements.nextPronunciation.textContent = "-";
-        speakArabic(current.ar);
-    }
-
-    function toggleHint() {
-      if (!current || completedCurrent) return;
-
-      hintEnabled = !hintEnabled;
-      elements.hintButton.classList.toggle("active", hintEnabled);
-      elements.hintButton.setAttribute("aria-pressed", String(hintEnabled));
-      elements.hintButton.textContent = hintEnabled ? "提示：开" : "提示：关";
-      updateLiveInput();
-    }
-
-    function checkInput() {
-      if (!selectedCorrect || !current || completedCurrent) return;
-
-      const typed = normalizeAnswer(elements.arabicInput.value);
-      const answer = normalizeAnswer(current.ar);
-      if (typed === answer) {
-        completeQuestion();
-        return;
-      }
-
-      elements.feedback.textContent = "输入还不对，可以继续修改或使用提示。";
-      elements.feedback.className = "feedback error";
-    }
-
-    elements.categorySelect.addEventListener("change", () => {
-      pool = [];
-      fillBatchOptions();
-      renderPuzzle();
-      drawQuestion();
-    });
-    elements.batchSelect.addEventListener("change", () => {
-      pool = [];
-      renderPuzzle();
-      drawQuestion();
-    });
-    elements.hintButton.addEventListener("click", toggleHint);
-    elements.checkButton.addEventListener("click", checkInput);
-    elements.nextButton.addEventListener("click", drawQuestion);
-    elements.arabicInput.addEventListener("input", updateLiveInput);
-    elements.arabicInput.addEventListener("keydown", (event) => {
-      if (event.key === "Enter") {
-        event.preventDefault();
-        checkInput();
-        return;
-      }
-
-      if (event.ctrlKey || event.metaKey || event.altKey) {
-        return;
-      }
-
-      const mapped = arabicCodeMap[event.code];
-      if (mapped) {
-        event.preventDefault();
-        const arabicText = mapped[event.shiftKey ? 1 : 0];
-        insertAtCursor(elements.arabicInput, arabicText);
-        speakKeySound(arabicText);
-      }
     });
 
-    localStorage.removeItem("arabicPuzzleProgress");
-    localStorage.removeItem("arabicPuzzleProgress:fixed-nine:v2");
-    discoverPuzzleImages();
-    fillBatchOptions();
-    renderPuzzle();
-    drawQuestion();
+    window.addEventListener("message", (event) => {
+      if (event.data?.type !== "arabic-test:metrics") return;
+
+      const metrics = event.data.payload;
+      metricGame.textContent = metrics.game;
+      metricSource.textContent = metrics.source === "best-friend" ? "Best Friend" : "餐厅";
+      metricBatch.textContent = `第 ${metrics.batch + 1} 组`;
+      metricPuzzle.textContent = `${metrics.puzzleUnlocked}/${metrics.puzzleTotal}`;
+    });
   </script>
 </body>
 </html>
