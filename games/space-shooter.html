@@ -343,6 +343,21 @@
       }
     }
 
+    function roundedRect(x, y, width, height, radius) {
+      const r = Math.min(radius, width / 2, height / 2);
+      ctx.beginPath();
+      ctx.moveTo(x + r, y);
+      ctx.lineTo(x + width - r, y);
+      ctx.quadraticCurveTo(x + width, y, x + width, y + r);
+      ctx.lineTo(x + width, y + height - r);
+      ctx.quadraticCurveTo(x + width, y + height, x + width - r, y + height);
+      ctx.lineTo(x + r, y + height);
+      ctx.quadraticCurveTo(x, y + height, x, y + height - r);
+      ctx.lineTo(x, y + r);
+      ctx.quadraticCurveTo(x, y, x + r, y);
+      ctx.closePath();
+    }
+
     function update(dt) {
       const rect = canvas.getBoundingClientRect();
       if (keys.has("ArrowLeft")) player.x -= player.speed * dt;
@@ -546,8 +561,7 @@
         ctx.shadowColor = enemy.w > 30 ? "#ff7b8e" : "#ffcf5a";
         ctx.shadowBlur = 10;
         ctx.fillStyle = enemy.w > 30 ? "#9e273d" : "#8f6b22";
-        ctx.beginPath();
-        ctx.roundRect(-enemy.w / 2, -enemy.h / 2, enemy.w, enemy.h, 6);
+        roundedRect(-enemy.w / 2, -enemy.h / 2, enemy.w, enemy.h, 6);
         ctx.fill();
         ctx.shadowBlur = 0;
         ctx.strokeStyle = "#e7edf4";
