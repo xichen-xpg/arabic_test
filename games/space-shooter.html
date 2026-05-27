@@ -95,6 +95,10 @@
       background: rgba(3, 10, 20, .42);
     }
 
+    .overlay[hidden] {
+      display: none;
+    }
+
     .modal {
       width: min(440px, 100%);
       padding: 22px;
@@ -135,7 +139,7 @@
     <section class="hud">
       <div class="stat-row">
         <div class="stat"><span>分数</span><b id="score">0</b></div>
-        <div class="stat"><span>生命</span><b id="lives">3</b></div>
+        <div class="stat"><span>生命</span><b id="lives">1</b></div>
         <div class="stat"><span>火力</span><b id="power">1</b></div>
         <div class="stat"><span>阿语能量</span><b id="arabicPower">0/16</b></div>
       </div>
@@ -168,13 +172,14 @@
     let particles = [];
     let stars = [];
     let score = 0;
-    let lives = 3;
+    let lives = 1;
     let power = 1;
     let running = false;
     let lastTime = 0;
     let enemyTimer = 0;
     let arabicUnlocked = 0;
     let arabicTotal = 16;
+    const completedArabicTokens = new Set();
 
     function resize() {
       const rect = canvas.getBoundingClientRect();
@@ -203,7 +208,7 @@
       enemyBullets = [];
       particles = [];
       score = 0;
-      lives = 3;
+      lives = 1 + completedArabicTokens.size;
       enemyTimer = 0;
       updatePowerFromArabic();
       syncHud();
@@ -446,8 +451,15 @@
 
     window.addEventListener("message", (event) => {
       if (event.data?.type !== "hub:arabic-metrics") return;
-      arabicUnlocked = event.data.payload.puzzleUnlocked || 0;
-      arabicTotal = event.data.payload.puzzleTotal || 16;
+      const payload = event.data.payload || {};
+      const tokens = Array.isArray(payload.completedTokens) ? payload.completedTokens : [];
+      const newTokens = tokens.filter((token) => !completedArabicTokens.has(token));
+      newTokens.forEach((token) => completedArabicTokens.add(token));
+      if (newTokens.length) {
+        lives += newTokens.length;
+      }
+      arabicUnlocked = completedArabicTokens.size || payload.completedQuestions || payload.puzzleUnlocked || 0;
+      arabicTotal = payload.totalQuestions || payload.puzzleTotal || 16;
       updatePowerFromArabic();
       syncHud();
     });

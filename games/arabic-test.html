@@ -346,7 +346,7 @@
     }
 
     .side-stack {
-      display: grid;
+      display: none;
       gap: 18px;
     }
 
@@ -744,10 +744,7 @@
       }
     };
 
-    const puzzleImageCandidates = Array.from({ length: 21 }, (_, index) => `${index}.png`);
-    const availablePuzzleImages = [];
-    const puzzleSize = 16;
-    const puzzleGrid = 4;
+    const batchSize = 16;
 
     const arabicKeyMap = {
       "ذ": "`",
@@ -938,11 +935,7 @@
       nextButton: document.querySelector("#nextButton"),
       nextChar: document.querySelector("#nextChar"),
       nextKey: document.querySelector("#nextKey"),
-      nextPronunciation: document.querySelector("#nextPronunciation"),
-      puzzleBoard: document.querySelector("#puzzleBoard"),
-      pieceTray: document.querySelector("#pieceTray"),
-      puzzleProgress: document.querySelector("#puzzleProgress"),
-      puzzleStatus: document.querySelector("#puzzleStatus")
+      nextPronunciation: document.querySelector("#nextPronunciation")
     };
 
     let pool = [];
@@ -951,14 +944,12 @@
     let hintEnabled = false;
     let completedCurrent = false;
     let currentAudio = null;
-    let draggedPieceIndex = null;
-    const trayOrderByGroup = {};
     const completedByGroup = {};
-    const placedByGroup = {};
 
     function emitMetrics(eventName = "metrics") {
       const completed = completedSet();
-      const placed = placedMap();
+      const total = activeQuestions().length;
+      const completedTokens = [...completed].map((index) => `${progressKey()}:${index}`);
       window.parent.postMessage({
         type: "arabic-test:metrics",
         payload: {
@@ -966,9 +957,9 @@
           event: eventName,
           source: activeSource(),
           batch: activeBatch(),
-          puzzleUnlocked: completed.size,
-          puzzlePlaced: Object.keys(placed).length,
-          puzzleTotal: puzzleSize,
+          completedQuestions: completed.size,
+          completedTokens,
+          totalQuestions: total,
           currentQuestion: current ? {
             id: current.id,
             category: current.category,
@@ -1107,7 +1098,7 @@
     }
 
     function fullBatchCount(source) {
-      return Math.max(1, Math.floor(sourceQuestions(source).length / puzzleSize));
+      return Math.max(1, Math.floor(sourceQuestions(source).length / batchSize));
     }
 
     function activeBatch() {
@@ -1124,8 +1115,7 @@
     }
 
     function placedMap(key = progressKey()) {
-      placedByGroup[key] ||= {};
-      return placedByGroup[key];
+      return {};
     }
 
     function fillBatchOptions() {
@@ -1144,8 +1134,8 @@
 
     function activeQuestions() {
       const source = activeSource();
-      const start = activeBatch() * puzzleSize;
-      return sourceQuestions(source).slice(start, start + puzzleSize);
+      const start = activeBatch() * batchSize;
+      return sourceQuestions(source).slice(start, start + batchSize);
     }
 
     function sourcePieceIndex(question) {
@@ -1422,7 +1412,6 @@
       const pieceIndex = sourcePieceIndex(current);
       if (pieceIndex >= 0 && !completedSet().has(pieceIndex)) {
         completedSet().add(pieceIndex);
-        renderPuzzle();
       }
         elements.feedback.textContent = "输入正确。";
         elements.feedback.className = "feedback success";
@@ -1463,13 +1452,11 @@
     elements.categorySelect.addEventListener("change", () => {
       pool = [];
       fillBatchOptions();
-      renderPuzzle();
       drawQuestion();
       emitMetrics("source-changed");
     });
     elements.batchSelect.addEventListener("change", () => {
       pool = [];
-      renderPuzzle();
       drawQuestion();
       emitMetrics("batch-changed");
     });
@@ -1497,11 +1484,7 @@
       }
     });
 
-    localStorage.removeItem("arabicPuzzleProgress");
-    localStorage.removeItem("arabicPuzzleProgress:fixed-nine:v2");
-    discoverPuzzleImages();
     fillBatchOptions();
-    renderPuzzle();
     drawQuestion();
     emitMetrics("ready");
   </script>
