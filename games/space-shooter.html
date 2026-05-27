@@ -139,7 +139,7 @@
     <section class="hud">
       <div class="stat-row">
         <div class="stat"><span>分数</span><b id="score">0</b></div>
-        <div class="stat"><span>生命</span><b id="lives">1</b></div>
+        <div class="stat"><span>生命</span><b id="lives">0</b></div>
         <div class="stat"><span>火力</span><b id="power">1</b></div>
         <div class="stat"><span>阿语能量</span><b id="arabicPower">0/16</b></div>
       </div>
@@ -172,7 +172,7 @@
     let particles = [];
     let stars = [];
     let score = 0;
-    let lives = 1;
+    let lives = 0;
     let power = 1;
     let running = false;
     let lastTime = 0;
@@ -211,7 +211,6 @@
       enemyBullets = [];
       particles = [];
       score = 0;
-      lives = 1 + completedArabicTokens.size;
       enemyTimer = 0;
       updatePowerFromArabic();
       syncHud();
@@ -222,6 +221,15 @@
       livesEl.textContent = lives;
       powerEl.textContent = power;
       arabicPowerEl.textContent = `${arabicUnlocked}/${arabicTotal}`;
+      startButton.disabled = !running && lives <= 0;
+    }
+
+    function setOverlay(title, text, buttonText) {
+      overlay.querySelector("h1").textContent = title;
+      overlay.querySelector("p").textContent = text;
+      startButton.textContent = buttonText;
+      startButton.disabled = lives <= 0;
+      overlay.hidden = false;
     }
 
     function updatePowerFromArabic() {
@@ -295,17 +303,16 @@
 
     function shoot() {
       if (player.cooldown > 0) return;
-      const offsets = {
-        1: [0],
-        2: [-9, 9],
-        3: [-14, 0, 14],
-        4: [-18, -6, 6, 18]
-      }[power];
-      offsets.forEach((offset, index) => {
+      const shotCount = Math.max(power, Math.min(7, lives));
+      const spacing = Math.min(24, 9 + lives * 1.5);
+      const center = (shotCount - 1) / 2;
+
+      Array.from({ length: shotCount }).forEach((_, index) => {
+        const offset = (index - center) * spacing;
         bullets.push({
           x: player.x + offset,
           y: player.y - 24,
-          vx: offset * 2.2,
+          vx: offset * 2,
           vy: -620,
           r: 4,
           damage: 1
@@ -430,10 +437,7 @@
           if (lives <= 0) {
             running = false;
             stopMusic();
-            overlay.hidden = false;
-            overlay.querySelector("h1").textContent = "游戏结束";
-            overlay.querySelector("p").textContent = `最终得分：${score}。继续完成右侧阿语测试可以提升火力。`;
-            startButton.textContent = "重新开始";
+            setOverlay("游戏结束", `最终得分：${score}。完成右侧阿语题目获得生命后才能继续。`, "需要生命");
           }
         }
       });
@@ -636,12 +640,20 @@
       arabicTotal = payload.totalQuestions || payload.puzzleTotal || 16;
       updatePowerFromArabic();
       syncHud();
+      if (!running && lives > 0 && !overlay.hidden) {
+        setOverlay("星际雷电", `当前生命：${lives}。按开始进入游戏。`, "开始游戏");
+      }
     });
 
     startButton.addEventListener("click", () => {
+      if (lives <= 0) {
+        setOverlay("需要生命", "先完成右侧阿语题目获得生命，生命大于 0 才能开始游戏。", "需要生命");
+        return;
+      }
       reset();
       running = true;
       overlay.hidden = true;
+      startButton.disabled = false;
       startMusic();
       lastTime = performance.now();
     });
@@ -649,6 +661,7 @@
     window.addEventListener("resize", resize);
     resize();
     reset();
+    setOverlay("需要生命", "先完成右侧阿语题目获得生命，生命大于 0 才能开始游戏。", "需要生命");
     requestAnimationFrame(loop);
   </script>
 </body>
