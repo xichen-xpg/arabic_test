@@ -735,13 +735,16 @@
     const sourceConfig = {
       restaurant: {
         label: "餐厅题库",
-        puzzleImages: ["0.png", "1.png", "2.png", "3.png"]
+        puzzleImages: []
       },
       "best-friend": {
         label: "Best Friend 题库",
-        puzzleImages: ["0.png", "1.png", "2.png", "3.png"]
+        puzzleImages: []
       }
     };
+
+    const puzzleImageCandidates = Array.from({ length: 21 }, (_, index) => `${index}.png`);
+    const availablePuzzleImages = [];
 
     const arabicKeyMap = {
       "ذ": "`",
@@ -946,6 +949,7 @@
     let completedCurrent = false;
     let currentAudio = null;
     let draggedPieceIndex = null;
+    const trayOrderByGroup = {};
     const completedByGroup = {};
     const placedByGroup = {};
 
@@ -1123,8 +1127,38 @@
     }
 
     function activePuzzleImage(source = activeSource(), batch = activeBatch()) {
-      const images = sourceConfig[source].puzzleImages;
+      const discoveredImages = availablePuzzleImages.filter(Boolean);
+      const images = sourceConfig[source].puzzleImages.length ? sourceConfig[source].puzzleImages : discoveredImages;
+      if (!images.length) return "0.png";
       return images[batch % images.length];
+    }
+
+    function cropImageToSquareDataUrl(image) {
+      const side = Math.min(image.naturalWidth, image.naturalHeight);
+      const sx = Math.floor((image.naturalWidth - side) / 2);
+      const sy = Math.floor((image.naturalHeight - side) / 2);
+      const canvas = document.createElement("canvas");
+      canvas.width = side;
+      canvas.height = side;
+      const ctx = canvas.getContext("2d");
+      ctx.drawImage(image, sx, sy, side, side, 0, 0, side, side);
+      return canvas.toDataURL("image/png");
+    }
+
+    function discoverPuzzleImages() {
+      puzzleImageCandidates.forEach((src, index) => {
+        const image = new Image();
+        image.onload = () => {
+          availablePuzzleImages[index] = cropImageToSquareDataUrl(image);
+          renderPuzzle();
+        };
+        image.src = src;
+      });
+    }
+
+    function trayOrder(key = progressKey()) {
+      trayOrderByGroup[key] ||= shuffle(Array.from({ length: 9 }, (_, index) => index));
+      return trayOrderByGroup[key];
     }
 
     function pieceStyle(index, cols, rows) {
@@ -1170,6 +1204,22 @@
       elements.puzzleBoard.style.gridTemplateRows = `repeat(${dims.rows}, 1fr)`;
       elements.puzzleBoard.replaceChildren();
       elements.pieceTray.replaceChildren();
+      elements.pieceTray.ondragover = (event) => {
+        if (draggedPieceIndex !== null && completed.has(draggedPieceIndex)) {
+          event.preventDefault();
+        }
+      };
+      elements.pieceTray.ondrop = (event) => {
+        event.preventDefault();
+        if (draggedPieceIndex === null) return;
+        Object.keys(placed).forEach((cellIndex) => {
+          if (Number(placed[cellIndex]) === draggedPieceIndex) {
+            delete placed[cellIndex];
+          }
+        });
+        elements.puzzleStatus.textContent = "碎片已放回待拼区。";
+        renderPuzzle();
+      };
 
       Array.from({ length: 9 }).forEach((_, index) => {
         const cell = document.createElement("div");
@@ -1211,7 +1261,7 @@
 
       [...completed]
         .filter((index) => !placedPieces.has(index))
-        .sort((a, b) => a - b)
+        .sort((a, b) => trayOrder().indexOf(a) - trayOrder().indexOf(b))
         .forEach((index) => {
           elements.pieceTray.append(createPuzzlePiece(source, index, dims));
         });
@@ -1417,6 +1467,7 @@
 
     localStorage.removeItem("arabicPuzzleProgress");
     localStorage.removeItem("arabicPuzzleProgress:fixed-nine:v2");
+    discoverPuzzleImages();
     fillBatchOptions();
     renderPuzzle();
     drawQuestion();
