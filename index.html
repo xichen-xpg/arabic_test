@@ -745,6 +745,8 @@
 
     const puzzleImageCandidates = Array.from({ length: 21 }, (_, index) => `${index}.png`);
     const availablePuzzleImages = [];
+    const puzzleSize = 16;
+    const puzzleGrid = 4;
 
     const arabicKeyMap = {
       "ذ": "`",
@@ -1081,7 +1083,7 @@
     }
 
     function fullBatchCount(source) {
-      return Math.max(1, Math.floor(sourceQuestions(source).length / 9));
+      return Math.max(1, Math.floor(sourceQuestions(source).length / puzzleSize));
     }
 
     function activeBatch() {
@@ -1118,8 +1120,8 @@
 
     function activeQuestions() {
       const source = activeSource();
-      const start = activeBatch() * 9;
-      return sourceQuestions(source).slice(start, start + 9);
+      const start = activeBatch() * puzzleSize;
+      return sourceQuestions(source).slice(start, start + puzzleSize);
     }
 
     function sourcePieceIndex(question) {
@@ -1157,7 +1159,7 @@
     }
 
     function trayOrder(key = progressKey()) {
-      trayOrderByGroup[key] ||= shuffle(Array.from({ length: 9 }, (_, index) => index));
+      trayOrderByGroup[key] ||= shuffle(Array.from({ length: puzzleSize }, (_, index) => index));
       return trayOrderByGroup[key];
     }
 
@@ -1194,7 +1196,7 @@
     function renderPuzzle() {
       const source = activeSource();
       const items = activeQuestions();
-      const dims = { cols: 3, rows: 3 };
+      const dims = { cols: puzzleGrid, rows: puzzleGrid };
       const completed = completedSet();
       const placed = placedMap();
       const placedPieces = new Set(Object.values(placed).map(Number));
@@ -1221,7 +1223,7 @@
         renderPuzzle();
       };
 
-      Array.from({ length: 9 }).forEach((_, index) => {
+      Array.from({ length: puzzleSize }).forEach((_, index) => {
         const cell = document.createElement("div");
         cell.className = "puzzle-cell";
         cell.dataset.index = String(index);
@@ -1266,13 +1268,13 @@
           elements.pieceTray.append(createPuzzlePiece(source, index, dims));
         });
 
-      elements.puzzleProgress.textContent = `${completed.size}/9`;
-      if (Object.keys(placed).length === 9) {
+      elements.puzzleProgress.textContent = `${completed.size}/${puzzleSize}`;
+      if (Object.keys(placed).length === puzzleSize) {
         elements.puzzleStatus.textContent = "拼图完成！";
-      } else if (completed.size === 9) {
+      } else if (completed.size === puzzleSize) {
         elements.puzzleStatus.textContent = "所有碎片已解锁，可以完成拼图了。";
       } else {
-        elements.puzzleStatus.textContent = `完成本组未做过的题目来解锁碎片，还剩 ${9 - completed.size} 块。`;
+        elements.puzzleStatus.textContent = `完成本组未做过的题目来解锁碎片，还剩 ${puzzleSize - completed.size} 块。`;
       }
     }
 
