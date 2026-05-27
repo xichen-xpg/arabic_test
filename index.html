@@ -344,10 +344,6 @@
       font-family: "Segoe UI", Tahoma, Arial, sans-serif;
     }
 
-    .source {
-      overflow: hidden;
-    }
-
     .side-stack {
       display: grid;
       gap: 18px;
@@ -380,16 +376,6 @@
       border-radius: 8px;
       background: #dbe5ef;
       box-shadow: inset 0 0 0 5px rgba(255,255,255,.5);
-    }
-
-    .puzzle-board::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image: var(--puzzle-image);
-      background-size: cover;
-      background-position: center;
-      opacity: 0.16;
     }
 
     .puzzle-cell {
@@ -456,26 +442,6 @@
       color: var(--muted);
       font-size: 13px;
       font-weight: 700;
-    }
-
-    .source-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      padding: 14px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .source-header h2 {
-      margin: 0;
-      font-size: 18px;
-    }
-
-    .source img {
-      display: block;
-      width: 100%;
-      height: auto;
     }
 
     @media (max-width: 900px) {
@@ -576,14 +542,6 @@
           <p id="puzzleStatus" class="puzzle-note">完成题目解锁拼图碎片。</p>
         </section>
 
-        <aside class="panel source">
-          <div class="source-header">
-            <h2>词句来源</h2>
-            <span id="sourceTag" class="tag">restaurant.png</span>
-          </div>
-          <img src="restaurant.png" alt="International Kitchen 阿拉伯语复习词句表">
-          <img src="best_friend.png" alt="My Best Friend 阿语复习纸">
-        </aside>
       </div>
     </section>
   </main>
@@ -777,13 +735,11 @@
     const sourceConfig = {
       restaurant: {
         label: "餐厅题库",
-        image: "puzzle-restaurant.svg",
-        sourceImage: "restaurant.png"
+        puzzleImages: ["0.png", "1.png", "2.png", "3.png"]
       },
       "best-friend": {
         label: "Best Friend 题库",
-        image: "puzzle-bestfriend.svg",
-        sourceImage: "best_friend.png"
+        puzzleImages: ["0.png", "1.png", "2.png", "3.png"]
       }
     };
 
@@ -980,8 +936,7 @@
       puzzleBoard: document.querySelector("#puzzleBoard"),
       pieceTray: document.querySelector("#pieceTray"),
       puzzleProgress: document.querySelector("#puzzleProgress"),
-      puzzleStatus: document.querySelector("#puzzleStatus"),
-      sourceTag: document.querySelector("#sourceTag")
+      puzzleStatus: document.querySelector("#puzzleStatus")
     };
 
     let pool = [];
@@ -993,7 +948,6 @@
     let draggedPieceIndex = null;
     const completedByGroup = {};
     const placedByGroup = {};
-    const puzzleStorageKey = "arabicPuzzleProgress:fixed-nine:v2";
 
     function shuffle(items) {
       return [...items].sort(() => Math.random() - 0.5);
@@ -1139,8 +1093,8 @@
       return completedByGroup[key];
     }
 
-    function placedSet(key = progressKey()) {
-      placedByGroup[key] ||= new Set();
+    function placedMap(key = progressKey()) {
+      placedByGroup[key] ||= {};
       return placedByGroup[key];
     }
 
@@ -1168,6 +1122,11 @@
       return activeQuestions().findIndex((item) => item.id === question.id);
     }
 
+    function activePuzzleImage(source = activeSource(), batch = activeBatch()) {
+      const images = sourceConfig[source].puzzleImages;
+      return images[batch % images.length];
+    }
+
     function pieceStyle(index, cols, rows) {
       const col = index % cols;
       const row = Math.floor(index / cols);
@@ -1179,46 +1138,22 @@
       };
     }
 
-    function savePuzzleProgress() {
-      const data = {
-        completed: Object.fromEntries(Object.entries(completedByGroup).map(([key, set]) => [key, [...set]])),
-        placed: Object.fromEntries(Object.entries(placedByGroup).map(([key, set]) => [key, [...set]]))
-      };
-      localStorage.setItem(puzzleStorageKey, JSON.stringify(data));
-    }
-
-    function loadPuzzleProgress() {
-      try {
-        const data = JSON.parse(localStorage.getItem(puzzleStorageKey) || "{}");
-        Object.entries(data.completed || {}).forEach(([key, indexes]) => {
-          completedByGroup[key] = new Set(indexes.filter((index) => index >= 0 && index < 9));
-        });
-        Object.entries(data.placed || {}).forEach(([key, indexes]) => {
-          placedByGroup[key] = new Set(indexes.filter((index) => index >= 0 && index < 9));
-        });
-      } catch {
-        localStorage.removeItem(puzzleStorageKey);
-      }
-    }
-
     function createPuzzlePiece(source, index, dims, locked = false) {
       const piece = document.createElement("div");
       piece.className = locked ? "puzzle-piece locked" : "puzzle-piece";
       piece.dataset.index = String(index);
-      piece.style.setProperty("--puzzle-image", `url("${sourceConfig[source].image}")`);
+      piece.style.setProperty("--puzzle-image", `url("${activePuzzleImage(source)}")`);
       const style = pieceStyle(index, dims.cols, dims.rows);
       piece.style.backgroundSize = style.backgroundSize;
       piece.style.backgroundPosition = style.backgroundPosition;
-      if (!locked) {
-        piece.draggable = true;
-        piece.title = "拖到拼图画布里对应的位置";
-        piece.addEventListener("dragstart", () => {
-          draggedPieceIndex = index;
-        });
-        piece.addEventListener("dragend", () => {
-          draggedPieceIndex = null;
-        });
-      }
+      piece.draggable = true;
+      piece.title = "拖到拼图画布的任意空格";
+      piece.addEventListener("dragstart", () => {
+        draggedPieceIndex = index;
+      });
+      piece.addEventListener("dragend", () => {
+        draggedPieceIndex = null;
+      });
       return piece;
     }
 
@@ -1227,10 +1162,10 @@
       const items = activeQuestions();
       const dims = { cols: 3, rows: 3 };
       const completed = completedSet();
-      const placed = placedSet();
+      const placed = placedMap();
+      const placedPieces = new Set(Object.values(placed).map(Number));
 
-      elements.sourceTag.textContent = sourceConfig[source].sourceImage;
-      elements.puzzleBoard.style.setProperty("--puzzle-image", `url("${sourceConfig[source].image}")`);
+      elements.puzzleBoard.style.setProperty("--puzzle-image", `url("${activePuzzleImage(source)}")`);
       elements.puzzleBoard.style.gridTemplateColumns = `repeat(${dims.cols}, 1fr)`;
       elements.puzzleBoard.style.gridTemplateRows = `repeat(${dims.rows}, 1fr)`;
       elements.puzzleBoard.replaceChildren();
@@ -1241,7 +1176,7 @@
         cell.className = "puzzle-cell";
         cell.dataset.index = String(index);
         cell.addEventListener("dragover", (event) => {
-          if (draggedPieceIndex === index) {
+          if (draggedPieceIndex !== null && completed.has(draggedPieceIndex)) {
             event.preventDefault();
             cell.classList.add("ready");
           }
@@ -1252,30 +1187,37 @@
         cell.addEventListener("drop", (event) => {
           event.preventDefault();
           cell.classList.remove("ready");
-          if (draggedPieceIndex !== index || !completed.has(index)) {
-            elements.puzzleStatus.textContent = "这块不属于这里，换一个位置试试。";
+          if (draggedPieceIndex === null || !completed.has(draggedPieceIndex)) {
             return;
           }
-          placed.add(index);
-          savePuzzleProgress();
+          if (placed[index] !== undefined && Number(placed[index]) !== draggedPieceIndex) {
+            elements.puzzleStatus.textContent = "这个格子已经有碎片了，换一个空格试试。";
+            return;
+          }
+          Object.keys(placed).forEach((cellIndex) => {
+            if (Number(placed[cellIndex]) === draggedPieceIndex) {
+              delete placed[cellIndex];
+            }
+          });
+          placed[index] = draggedPieceIndex;
           renderPuzzle();
         });
 
-        if (placed.has(index)) {
-          cell.append(createPuzzlePiece(source, index, dims, true));
+        if (placed[index] !== undefined) {
+          cell.append(createPuzzlePiece(source, Number(placed[index]), dims, true));
         }
         elements.puzzleBoard.append(cell);
       });
 
       [...completed]
-        .filter((index) => !placed.has(index))
+        .filter((index) => !placedPieces.has(index))
         .sort((a, b) => a - b)
         .forEach((index) => {
           elements.pieceTray.append(createPuzzlePiece(source, index, dims));
         });
 
       elements.puzzleProgress.textContent = `${completed.size}/9`;
-      if (placed.size === 9) {
+      if (Object.keys(placed).length === 9) {
         elements.puzzleStatus.textContent = "拼图完成！";
       } else if (completed.size === 9) {
         elements.puzzleStatus.textContent = "所有碎片已解锁，可以完成拼图了。";
@@ -1401,7 +1343,6 @@
       const pieceIndex = sourcePieceIndex(current);
       if (pieceIndex >= 0 && !completedSet().has(pieceIndex)) {
         completedSet().add(pieceIndex);
-        savePuzzleProgress();
         renderPuzzle();
       }
         elements.feedback.textContent = "输入正确。";
@@ -1474,7 +1415,8 @@
       }
     });
 
-    loadPuzzleProgress();
+    localStorage.removeItem("arabicPuzzleProgress");
+    localStorage.removeItem("arabicPuzzleProgress:fixed-nine:v2");
     fillBatchOptions();
     renderPuzzle();
     drawQuestion();
