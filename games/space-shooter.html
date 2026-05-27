@@ -24,9 +24,9 @@
       height: 100vh;
       min-height: 680px;
       background:
-        radial-gradient(circle at 20% 12%, rgba(84, 199, 255, .28), transparent 22%),
-        radial-gradient(circle at 78% 18%, rgba(255, 207, 90, .16), transparent 20%),
-        linear-gradient(180deg, #061221 0%, #0b2544 58%, #12345a 100%);
+        radial-gradient(circle at 50% 44%, rgba(48, 145, 255, .22), transparent 24%),
+        radial-gradient(circle at 20% 12%, rgba(84, 199, 255, .18), transparent 18%),
+        linear-gradient(180deg, #020611 0%, #06111f 52%, #0b1c32 100%);
     }
 
     canvas {
@@ -179,6 +179,9 @@
     let enemyTimer = 0;
     let arabicUnlocked = 0;
     let arabicTotal = 16;
+    let audioContext = null;
+    let musicTimer = null;
+    let musicStep = 0;
     const completedArabicTokens = new Set();
 
     function resize() {
@@ -225,6 +228,71 @@
       power = Math.max(1, Math.min(4, 1 + Math.floor(arabicUnlocked / 4)));
     }
 
+    function ensureAudio() {
+      if (!audioContext) {
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (audioContext.state === "suspended") {
+        audioContext.resume();
+      }
+      return audioContext;
+    }
+
+    function playTone(frequency, duration, type = "square", volume = .08, slide = 0) {
+      const audio = ensureAudio();
+      const now = audio.currentTime;
+      const oscillator = audio.createOscillator();
+      const gain = audio.createGain();
+      oscillator.type = type;
+      oscillator.frequency.setValueAtTime(frequency, now);
+      if (slide) {
+        oscillator.frequency.exponentialRampToValueAtTime(Math.max(32, frequency + slide), now + duration);
+      }
+      gain.gain.setValueAtTime(0.001, now);
+      gain.gain.exponentialRampToValueAtTime(volume, now + .01);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + duration);
+      oscillator.connect(gain).connect(audio.destination);
+      oscillator.start(now);
+      oscillator.stop(now + duration + .03);
+    }
+
+    function playShotSound() {
+      playTone(920, .055, "square", .045, 520);
+    }
+
+    function playHitSound() {
+      playTone(160, .18, "sawtooth", .12, -90);
+      setTimeout(() => playTone(92, .22, "square", .08, -40), 35);
+    }
+
+    function startMusic() {
+      ensureAudio();
+      if (musicTimer) return;
+      const bass = [110, 110, 146.83, 110, 164.81, 146.83, 98, 110];
+      const lead = [440, 523.25, 659.25, 523.25, 392, 493.88, 587.33, 493.88];
+      const tick = () => {
+        if (!running) {
+          musicTimer = null;
+          return;
+        }
+        const index = musicStep % bass.length;
+        playTone(bass[index], .12, "triangle", .045);
+        if (musicStep % 2 === 0) {
+          playTone(lead[index], .08, "square", .025);
+        }
+        musicStep += 1;
+        musicTimer = setTimeout(tick, 150);
+      };
+      tick();
+    }
+
+    function stopMusic() {
+      if (musicTimer) {
+        clearTimeout(musicTimer);
+        musicTimer = null;
+      }
+    }
+
     function shoot() {
       if (player.cooldown > 0) return;
       const offsets = {
@@ -244,6 +312,7 @@
         });
       });
       player.cooldown = Math.max(.11, .23 - power * .025);
+      playShotSound();
     }
 
     function spawnEnemy(width) {
@@ -341,9 +410,11 @@
         if ((bullet.x - player.x) ** 2 + (bullet.y - player.y) ** 2 < (bullet.r + 16) ** 2) {
           bullet.dead = true;
           lives -= 1;
+          playHitSound();
           explode(player.x, player.y, "#ff7b8e");
           if (lives <= 0) {
             running = false;
+            stopMusic();
             overlay.hidden = false;
             overlay.querySelector("h1").textContent = "游戏结束";
             overlay.querySelector("p").textContent = `最终得分：${score}。继续完成右侧阿语测试可以提升火力。`;
@@ -365,7 +436,17 @@
     function drawShip(x, y) {
       ctx.save();
       ctx.translate(x, y);
-      ctx.fillStyle = "#20c997";
+      const flame = 12 + Math.sin(performance.now() / 70) * 4;
+      ctx.fillStyle = "rgba(255, 120, 28, .92)";
+      ctx.beginPath();
+      ctx.moveTo(-7, 20);
+      ctx.lineTo(0, 20 + flame);
+      ctx.lineTo(7, 20);
+      ctx.closePath();
+      ctx.fill();
+      ctx.shadowColor = "#3cf2ff";
+      ctx.shadowBlur = 14;
+      ctx.fillStyle = "#2ee7ff";
       ctx.beginPath();
       ctx.moveTo(0, -28);
       ctx.lineTo(20, 24);
@@ -373,18 +454,69 @@
       ctx.lineTo(-20, 24);
       ctx.closePath();
       ctx.fill();
+      ctx.shadowBlur = 0;
+      ctx.fillStyle = "#14315d";
+      ctx.fillRect(-13, 2, 26, 13);
       ctx.fillStyle = "#e8f7ff";
       ctx.beginPath();
       ctx.ellipse(0, -6, 7, 12, 0, 0, Math.PI * 2);
       ctx.fill();
-      ctx.fillStyle = "#ffcf5a";
-      ctx.fillRect(-5, 20, 10, 13);
+      ctx.restore();
+    }
+
+    function drawStation(rect) {
+      const t = performance.now() / 1000;
+      ctx.save();
+      ctx.globalAlpha = .92;
+      ctx.translate(rect.width / 2, 92 + Math.sin(t) * 6);
+      ctx.rotate(-.2);
+
+      const bodyGradient = ctx.createLinearGradient(-220, 0, 220, 0);
+      bodyGradient.addColorStop(0, "#33465b");
+      bodyGradient.addColorStop(.5, "#aeb8c0");
+      bodyGradient.addColorStop(1, "#263848");
+      ctx.fillStyle = bodyGradient;
+      ctx.fillRect(-210, -34, 420, 68);
+      ctx.strokeStyle = "rgba(255,255,255,.32)";
+      ctx.lineWidth = 2;
+      for (let x = -190; x <= 190; x += 38) {
+        ctx.beginPath();
+        ctx.moveTo(x, -34);
+        ctx.lineTo(x + 16, 34);
+        ctx.stroke();
+      }
+      ctx.fillStyle = "#121923";
+      ctx.beginPath();
+      ctx.arc(0, 0, 56, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.strokeStyle = "#aeb8c0";
+      ctx.lineWidth = 10;
+      ctx.stroke();
+      ctx.fillStyle = "#32d7ff";
+      ctx.beginPath();
+      ctx.arc(0, 0, 18 + Math.sin(t * 4) * 2, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+
+      ctx.save();
+      ctx.translate(rect.width * .16, rect.height - 92);
+      ctx.rotate(.25);
+      ctx.fillStyle = "#2f4357";
+      ctx.fillRect(-180, -22, 360, 44);
+      ctx.strokeStyle = "rgba(224, 235, 244, .3)";
+      for (let x = -160; x <= 160; x += 42) {
+        ctx.beginPath();
+        ctx.moveTo(x, -22);
+        ctx.lineTo(x - 12, 22);
+        ctx.stroke();
+      }
       ctx.restore();
     }
 
     function render() {
       const rect = canvas.getBoundingClientRect();
       ctx.clearRect(0, 0, rect.width, rect.height);
+      drawStation(rect);
       stars.forEach((star) => {
         ctx.fillStyle = "rgba(232, 247, 255, .85)";
         ctx.beginPath();
@@ -393,7 +525,16 @@
       });
 
       bullets.forEach((bullet) => {
-        ctx.fillStyle = "#74e0ff";
+        ctx.strokeStyle = "rgba(255, 214, 91, .92)";
+        ctx.lineWidth = 3;
+        ctx.shadowColor = "#ffcf5a";
+        ctx.shadowBlur = 12;
+        ctx.beginPath();
+        ctx.moveTo(bullet.x, bullet.y + 14);
+        ctx.lineTo(bullet.x, bullet.y - 14);
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+        ctx.fillStyle = "#fff2a6";
         ctx.beginPath();
         ctx.arc(bullet.x, bullet.y, bullet.r, 0, Math.PI * 2);
         ctx.fill();
@@ -402,17 +543,36 @@
       enemies.forEach((enemy) => {
         ctx.save();
         ctx.translate(enemy.x, enemy.y);
-        ctx.fillStyle = enemy.w > 30 ? "#ff7b8e" : "#ffcf5a";
+        ctx.shadowColor = enemy.w > 30 ? "#ff7b8e" : "#ffcf5a";
+        ctx.shadowBlur = 10;
+        ctx.fillStyle = enemy.w > 30 ? "#9e273d" : "#8f6b22";
         ctx.beginPath();
-        ctx.roundRect(-enemy.w / 2, -enemy.h / 2, enemy.w, enemy.h, 8);
+        ctx.roundRect(-enemy.w / 2, -enemy.h / 2, enemy.w, enemy.h, 6);
         ctx.fill();
-        ctx.fillStyle = "#061221";
-        ctx.fillRect(-enemy.w / 4, -4, enemy.w / 2, 8);
+        ctx.shadowBlur = 0;
+        ctx.strokeStyle = "#e7edf4";
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.fillStyle = "#111722";
+        ctx.fillRect(-enemy.w / 3, -5, enemy.w * 2 / 3, 10);
+        ctx.fillStyle = "#ffcf5a";
+        ctx.beginPath();
+        ctx.arc(0, 0, 4, 0, Math.PI * 2);
+        ctx.fill();
         ctx.restore();
       });
 
       enemyBullets.forEach((bullet) => {
-        ctx.fillStyle = "#ff7b8e";
+        ctx.strokeStyle = "rgba(255, 149, 58, .92)";
+        ctx.lineWidth = 4;
+        ctx.shadowColor = "#ff7b3a";
+        ctx.shadowBlur = 10;
+        ctx.beginPath();
+        ctx.moveTo(bullet.x, bullet.y - 16);
+        ctx.lineTo(bullet.x, bullet.y + 16);
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+        ctx.fillStyle = "#ffe0a3";
         ctx.beginPath();
         ctx.arc(bullet.x, bullet.y, bullet.r, 0, Math.PI * 2);
         ctx.fill();
@@ -468,6 +628,7 @@
       reset();
       running = true;
       overlay.hidden = true;
+      startMusic();
       lastTime = performance.now();
     });
 
