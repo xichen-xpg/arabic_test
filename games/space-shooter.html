@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>星际雷电</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow: hidden;
+      background: #061221;
+      color: #e8f7ff;
+      font-family: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+    }
+
+    .game {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      min-height: 680px;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(84, 199, 255, .28), transparent 22%),
+        radial-gradient(circle at 78% 18%, rgba(255, 207, 90, .16), transparent 20%),
+        linear-gradient(180deg, #061221 0%, #0b2544 58%, #12345a 100%);
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .hud {
+      position: absolute;
+      inset: 14px 14px auto 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      pointer-events: none;
+    }
+
+    .stat-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      min-width: 86px;
+      padding: 8px 10px;
+      border: 1px solid rgba(186, 208, 223, .28);
+      border-radius: 8px;
+      background: rgba(6, 18, 33, .72);
+      box-shadow: 0 8px 22px rgba(0, 0, 0, .22);
+    }
+
+    .stat span {
+      display: block;
+      color: #99b9c9;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .stat b {
+      display: block;
+      margin-top: 2px;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .help {
+      max-width: 360px;
+      padding: 9px 12px;
+      border: 1px solid rgba(186, 208, 223, .28);
+      border-radius: 8px;
+      background: rgba(6, 18, 33, .72);
+      color: #c9e6f2;
+      font-size: 13px;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+      background: rgba(3, 10, 20, .42);
+    }
+
+    .modal {
+      width: min(440px, 100%);
+      padding: 22px;
+      border: 1px solid rgba(186, 208, 223, .32);
+      border-radius: 10px;
+      background: rgba(8, 27, 48, .92);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, .36);
+      text-align: center;
+    }
+
+    .modal h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+    }
+
+    .modal p {
+      margin: 0 0 16px;
+      color: #b9d6e4;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+
+    button {
+      min-height: 42px;
+      padding: 10px 16px;
+      border: 0;
+      border-radius: 8px;
+      background: #20c997;
+      color: #062014;
+      font-weight: 900;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main class="game">
+    <canvas id="gameCanvas"></canvas>
+    <section class="hud">
+      <div class="stat-row">
+        <div class="stat"><span>分数</span><b id="score">0</b></div>
+        <div class="stat"><span>生命</span><b id="lives">3</b></div>
+        <div class="stat"><span>火力</span><b id="power">1</b></div>
+        <div class="stat"><span>阿语能量</span><b id="arabicPower">0/16</b></div>
+      </div>
+      <div class="help">方向键移动，空格发射。阿语测试解锁越多，火力越强。</div>
+    </section>
+    <section id="overlay" class="overlay">
+      <div class="modal">
+        <h1>星际雷电</h1>
+        <p>躲避敌人子弹，按空格发射。右侧阿语测试的拼图进度会提升你的火力。</p>
+        <button id="startButton" type="button">开始游戏</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const canvas = document.querySelector("#gameCanvas");
+    const ctx = canvas.getContext("2d");
+    const scoreEl = document.querySelector("#score");
+    const livesEl = document.querySelector("#lives");
+    const powerEl = document.querySelector("#power");
+    const arabicPowerEl = document.querySelector("#arabicPower");
+    const overlay = document.querySelector("#overlay");
+    const startButton = document.querySelector("#startButton");
+
+    const keys = new Set();
+    const player = { x: 0, y: 0, w: 34, h: 44, speed: 360, cooldown: 0 };
+    let bullets = [];
+    let enemies = [];
+    let enemyBullets = [];
+    let particles = [];
+    let stars = [];
+    let score = 0;
+    let lives = 3;
+    let power = 1;
+    let running = false;
+    let lastTime = 0;
+    let enemyTimer = 0;
+    let arabicUnlocked = 0;
+    let arabicTotal = 16;
+
+    function resize() {
+      const rect = canvas.getBoundingClientRect();
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = Math.floor(rect.width * dpr);
+      canvas.height = Math.floor(rect.height * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      if (!stars.length) {
+        stars = Array.from({ length: 120 }, () => ({
+          x: Math.random() * rect.width,
+          y: Math.random() * rect.height,
+          r: Math.random() * 1.8 + .4,
+          s: Math.random() * 80 + 30
+        }));
+      }
+      player.x = Math.min(Math.max(player.x || rect.width / 2, 24), rect.width - 24);
+      player.y = Math.min(player.y || rect.height - 84, rect.height - 40);
+    }
+
+    function reset() {
+      const rect = canvas.getBoundingClientRect();
+      player.x = rect.width / 2;
+      player.y = rect.height - 86;
+      bullets = [];
+      enemies = [];
+      enemyBullets = [];
+      particles = [];
+      score = 0;
+      lives = 3;
+      enemyTimer = 0;
+      updatePowerFromArabic();
+      syncHud();
+    }
+
+    function syncHud() {
+      scoreEl.textContent = score;
+      livesEl.textContent = lives;
+      powerEl.textContent = power;
+      arabicPowerEl.textContent = `${arabicUnlocked}/${arabicTotal}`;
+    }
+
+    function updatePowerFromArabic() {
+      power = Math.max(1, Math.min(4, 1 + Math.floor(arabicUnlocked / 4)));
+    }
+
+    function shoot() {
+      if (player.cooldown > 0) return;
+      const offsets = {
+        1: [0],
+        2: [-9, 9],
+        3: [-14, 0, 14],
+        4: [-18, -6, 6, 18]
+      }[power];
+      offsets.forEach((offset, index) => {
+        bullets.push({
+          x: player.x + offset,
+          y: player.y - 24,
+          vx: offset * 2.2,
+          vy: -620,
+          r: 4,
+          damage: 1
+        });
+      });
+      player.cooldown = Math.max(.11, .23 - power * .025);
+    }
+
+    function spawnEnemy(width) {
+      const size = Math.random() < .22 ? 38 : 28;
+      enemies.push({
+        x: Math.random() * (width - 80) + 40,
+        y: -40,
+        w: size,
+        h: size,
+        hp: size > 30 ? 3 : 2,
+        speed: Math.random() * 70 + 85,
+        phase: Math.random() * Math.PI * 2,
+        shot: Math.random() * .8 + .4
+      });
+    }
+
+    function hitCircleRect(circle, rect) {
+      const cx = Math.max(rect.x - rect.w / 2, Math.min(circle.x, rect.x + rect.w / 2));
+      const cy = Math.max(rect.y - rect.h / 2, Math.min(circle.y, rect.y + rect.h / 2));
+      return (circle.x - cx) ** 2 + (circle.y - cy) ** 2 <= circle.r ** 2;
+    }
+
+    function explode(x, y, color = "#ffcf5a") {
+      for (let i = 0; i < 14; i += 1) {
+        const a = Math.random() * Math.PI * 2;
+        const s = Math.random() * 150 + 70;
+        particles.push({ x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s, life: .45, color });
+      }
+    }
+
+    function update(dt) {
+      const rect = canvas.getBoundingClientRect();
+      if (keys.has("ArrowLeft")) player.x -= player.speed * dt;
+      if (keys.has("ArrowRight")) player.x += player.speed * dt;
+      if (keys.has("ArrowUp")) player.y -= player.speed * dt;
+      if (keys.has("ArrowDown")) player.y += player.speed * dt;
+      player.x = Math.max(22, Math.min(rect.width - 22, player.x));
+      player.y = Math.max(46, Math.min(rect.height - 28, player.y));
+      player.cooldown = Math.max(0, player.cooldown - dt);
+      if (keys.has("Space")) shoot();
+
+      stars.forEach((star) => {
+        star.y += star.s * dt;
+        if (star.y > rect.height) {
+          star.y = 0;
+          star.x = Math.random() * rect.width;
+        }
+      });
+
+      enemyTimer -= dt;
+      if (enemyTimer <= 0) {
+        spawnEnemy(rect.width);
+        enemyTimer = Math.max(.28, .92 - score / 4200);
+      }
+
+      bullets.forEach((bullet) => {
+        bullet.x += bullet.vx * dt;
+        bullet.y += bullet.vy * dt;
+      });
+      bullets = bullets.filter((bullet) => bullet.y > -30 && bullet.x > -30 && bullet.x < rect.width + 30);
+
+      enemies.forEach((enemy) => {
+        enemy.y += enemy.speed * dt;
+        enemy.x += Math.sin(performance.now() / 420 + enemy.phase) * 42 * dt;
+        enemy.shot -= dt;
+        if (enemy.shot <= 0 && enemy.y > 40) {
+          enemyBullets.push({ x: enemy.x, y: enemy.y + enemy.h / 2, vx: 0, vy: 230, r: 5 });
+          enemy.shot = Math.random() * 1.2 + .75;
+        }
+      });
+
+      enemyBullets.forEach((bullet) => {
+        bullet.x += bullet.vx * dt;
+        bullet.y += bullet.vy * dt;
+      });
+      enemyBullets = enemyBullets.filter((bullet) => bullet.y < rect.height + 30);
+
+      bullets.forEach((bullet) => {
+        enemies.forEach((enemy) => {
+          if (enemy.hp > 0 && hitCircleRect(bullet, enemy)) {
+            bullet.dead = true;
+            enemy.hp -= bullet.damage;
+            explode(bullet.x, bullet.y, "#74e0ff");
+            if (enemy.hp <= 0) {
+              score += enemy.w > 30 ? 180 : 100;
+              explode(enemy.x, enemy.y);
+            }
+          }
+        });
+      });
+      bullets = bullets.filter((bullet) => !bullet.dead);
+      enemies = enemies.filter((enemy) => enemy.hp > 0 && enemy.y < rect.height + 60);
+
+      enemyBullets.forEach((bullet) => {
+        if ((bullet.x - player.x) ** 2 + (bullet.y - player.y) ** 2 < (bullet.r + 16) ** 2) {
+          bullet.dead = true;
+          lives -= 1;
+          explode(player.x, player.y, "#ff7b8e");
+          if (lives <= 0) {
+            running = false;
+            overlay.hidden = false;
+            overlay.querySelector("h1").textContent = "游戏结束";
+            overlay.querySelector("p").textContent = `最终得分：${score}。继续完成右侧阿语测试可以提升火力。`;
+            startButton.textContent = "重新开始";
+          }
+        }
+      });
+      enemyBullets = enemyBullets.filter((bullet) => !bullet.dead);
+
+      particles.forEach((p) => {
+        p.x += p.vx * dt;
+        p.y += p.vy * dt;
+        p.life -= dt;
+      });
+      particles = particles.filter((p) => p.life > 0);
+      syncHud();
+    }
+
+    function drawShip(x, y) {
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.fillStyle = "#20c997";
+      ctx.beginPath();
+      ctx.moveTo(0, -28);
+      ctx.lineTo(20, 24);
+      ctx.lineTo(0, 12);
+      ctx.lineTo(-20, 24);
+      ctx.closePath();
+      ctx.fill();
+      ctx.fillStyle = "#e8f7ff";
+      ctx.beginPath();
+      ctx.ellipse(0, -6, 7, 12, 0, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = "#ffcf5a";
+      ctx.fillRect(-5, 20, 10, 13);
+      ctx.restore();
+    }
+
+    function render() {
+      const rect = canvas.getBoundingClientRect();
+      ctx.clearRect(0, 0, rect.width, rect.height);
+      stars.forEach((star) => {
+        ctx.fillStyle = "rgba(232, 247, 255, .85)";
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
+        ctx.fill();
+      });
+
+      bullets.forEach((bullet) => {
+        ctx.fillStyle = "#74e0ff";
+        ctx.beginPath();
+        ctx.arc(bullet.x, bullet.y, bullet.r, 0, Math.PI * 2);
+        ctx.fill();
+      });
+
+      enemies.forEach((enemy) => {
+        ctx.save();
+        ctx.translate(enemy.x, enemy.y);
+        ctx.fillStyle = enemy.w > 30 ? "#ff7b8e" : "#ffcf5a";
+        ctx.beginPath();
+        ctx.roundRect(-enemy.w / 2, -enemy.h / 2, enemy.w, enemy.h, 8);
+        ctx.fill();
+        ctx.fillStyle = "#061221";
+        ctx.fillRect(-enemy.w / 4, -4, enemy.w / 2, 8);
+        ctx.restore();
+      });
+
+      enemyBullets.forEach((bullet) => {
+        ctx.fillStyle = "#ff7b8e";
+        ctx.beginPath();
+        ctx.arc(bullet.x, bullet.y, bullet.r, 0, Math.PI * 2);
+        ctx.fill();
+      });
+
+      particles.forEach((p) => {
+        ctx.globalAlpha = Math.max(0, p.life / .45);
+        ctx.fillStyle = p.color;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, 3, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.globalAlpha = 1;
+      });
+
+      drawShip(player.x, player.y);
+    }
+
+    function loop(time) {
+      const dt = Math.min(.033, (time - lastTime) / 1000 || 0);
+      lastTime = time;
+      if (running) update(dt);
+      render();
+      requestAnimationFrame(loop);
+    }
+
+    window.addEventListener("keydown", (event) => {
+      if (["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Space"].includes(event.code)) {
+        event.preventDefault();
+        keys.add(event.code);
+      }
+    });
+
+    window.addEventListener("keyup", (event) => {
+      keys.delete(event.code);
+    });
+
+    window.addEventListener("message", (event) => {
+      if (event.data?.type !== "hub:arabic-metrics") return;
+      arabicUnlocked = event.data.payload.puzzleUnlocked || 0;
+      arabicTotal = event.data.payload.puzzleTotal || 16;
+      updatePowerFromArabic();
+      syncHud();
+    });
+
+    startButton.addEventListener("click", () => {
+      reset();
+      running = true;
+      overlay.hidden = true;
+      lastTime = performance.now();
+    });
+
+    window.addEventListener("resize", resize);
+    resize();
+    reset();
+    requestAnimationFrame(loop);
+  </script>
+</body>
+</html>
