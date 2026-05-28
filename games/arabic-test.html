@@ -1045,6 +1045,7 @@
     let completionSpeechTimer = null;
     let lastValidInput = "";
     const completionSpeechDelay = 200;
+    const finalKeySpeechDelay = 80;
     const preloadedSpeech = new Map();
     const preloadedKeyAudio = new Map();
     const completedByGroup = {};
@@ -1304,8 +1305,8 @@
 
     function speakKeySound(text) {
       const sound = arabicSoundMap[text];
-      if (!sound || sound === "-") return;
-      playKeyAudio(text).catch(() => speakArabic(sound));
+      if (!sound || sound === "-") return Promise.resolve();
+      return playKeyAudio(text).catch(() => speakArabic(sound));
     }
 
     function insertAtCursor(input, text) {
@@ -1585,7 +1586,9 @@
             return;
           }
           insertAtCursor(elements.arabicInput, letter);
-          if (!completedCurrent) {
+          if (completedCurrent) {
+            scheduleCompletionSpeech(current, speakKeySound(letter));
+          } else {
             speakKeySound(letter);
           }
           elements.arabicInput.focus();
@@ -1675,14 +1678,14 @@
         emitMetrics("question-completed");
     }
 
-    function scheduleCompletionSpeech(question) {
+    function scheduleCompletionSpeech(question, beforeSpeech = Promise.resolve()) {
       if (completionSpeechTimer) {
         clearTimeout(completionSpeechTimer);
       }
       completionSpeechTimer = setTimeout(() => {
         completionSpeechTimer = null;
         if (current?.id === question.id && completedCurrent) {
-          speakArabic(question.ar).then(() => {
+          beforeSpeech.then(() => new Promise((resolve) => setTimeout(resolve, finalKeySpeechDelay))).then(() => speakArabic(question.ar)).then(() => {
             if (current?.id === question.id && completedCurrent) {
               elements.nextButton.disabled = false;
             }
@@ -1729,7 +1732,9 @@
           return;
         }
         insertAtCursor(elements.arabicInput, arabicText);
-        if (!completedCurrent) {
+        if (completedCurrent) {
+          scheduleCompletionSpeech(current, speakKeySound(arabicText));
+        } else {
           speakKeySound(arabicText);
         }
       }
