@@ -1360,7 +1360,7 @@
     function speakKeySound(text) {
       const sound = arabicSoundMap[text];
       if (!sound || sound === "-") return Promise.resolve();
-      return playKeyAudio(text).catch(() => speakArabic(sound));
+      return playKeyAudio(text).catch(() => Promise.resolve());
     }
 
     function insertAtCursor(input, text) {
