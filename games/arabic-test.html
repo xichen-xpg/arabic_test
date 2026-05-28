@@ -1165,17 +1165,23 @@
       return arabicPronunciationMap[char] || char || "-";
     }
 
-    function speakArabic(text) {
-      if (!text.trim()) return;
+    function normalizeArabicForSpeech(text) {
+      if ([...text].length <= 2) return text;
+      return text.replace(/ة/g, "ه");
+    }
 
-      const url = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ar&q=${encodeURIComponent(text)}`;
+    function speakArabic(text) {
+      const speechText = normalizeArabicForSpeech(text);
+      if (!speechText.trim()) return;
+
+      const url = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ar&q=${encodeURIComponent(speechText)}`;
       if (currentAudio) {
         currentAudio.pause();
         currentAudio = null;
       }
       const audio = new Audio(url);
       currentAudio = audio;
-      audio.play().catch(() => speakArabicWithBrowserVoice(text));
+      audio.play().catch(() => speakArabicWithBrowserVoice(speechText));
     }
 
     function speakArabicWithBrowserVoice(text) {
