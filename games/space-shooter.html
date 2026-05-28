@@ -196,6 +196,7 @@
     let boss = null;
     let particles = [];
     let stars = [];
+    let upgradeFlash = 0;
     let score = 0;
     let lives = 0;
     let power = 1;
@@ -204,6 +205,7 @@
     let activePlayTime = 0;
     let abilityHeld = false;
     let playerInvulnerable = 0;
+    let powerMultiplier = 1;
     let lastTime = 0;
     let enemyTimer = 0;
     let smallEnemyScore = 0;
@@ -242,6 +244,7 @@
       enemyBullets = [];
       boss = null;
       particles = [];
+      upgradeFlash = 0;
       score = 0;
       enemyTimer = 0;
       smallEnemyScore = 0;
@@ -255,7 +258,7 @@
     function syncHud() {
       scoreEl.textContent = score;
       livesEl.textContent = lives;
-      powerEl.textContent = abilityHeld ? "HOLD" : power;
+      powerEl.textContent = abilityHeld ? "HOLD" : `${power} x${powerMultiplier}`;
       arabicPowerEl.textContent = `${arabicUnlocked}/${arabicTotal}`;
       startButton.disabled = !running && lives <= 0;
       pauseButton.disabled = !running;
@@ -276,6 +279,8 @@
 
     function updatePowerFromArabic() {
       power = Math.max(1, Math.min(4, 1 + Math.floor(arabicUnlocked / 4)));
+      const groupsCleared = Math.floor(arabicUnlocked / Math.max(1, arabicTotal));
+      powerMultiplier = 2 ** Math.min(4, groupsCleared);
     }
 
     function ensureAudio() {
@@ -313,6 +318,31 @@
     function playHitSound() {
       playTone(160, .18, "sawtooth", .12, -90);
       setTimeout(() => playTone(92, .22, "square", .08, -40), 35);
+    }
+
+    function playUpgradeSound() {
+      [523.25, 659.25, 783.99, 1046.5].forEach((frequency, index) => {
+        setTimeout(() => playTone(frequency, .12, "triangle", .09, 80), index * 85);
+      });
+    }
+
+    function triggerUpgradeEffect() {
+      upgradeFlash = .9;
+      playUpgradeSound();
+      for (let i = 0; i < 34; i += 1) {
+        const angle = Math.random() * Math.PI * 2;
+        const speed = Math.random() * 220 + 130;
+        particles.push({
+          x: player.x,
+          y: player.y,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed,
+          life: .75,
+          maxLife: .75,
+          size: Math.random() * 3 + 2,
+          color: i % 2 ? "#7cf7ff" : "#ffdf6e"
+        });
+      }
     }
 
     function startMusic() {
@@ -357,9 +387,9 @@
 
     function shoot() {
       if (player.cooldown > 0) return;
-      const effectivePower = abilityHeld ? 1 : power;
-      const shotCount = abilityHeld ? 1 : Math.max(effectivePower, Math.min(7, lives));
-      const spacing = abilityHeld ? 0 : Math.min(24, 9 + lives * 1.5);
+      const effectivePower = abilityHeld ? 1 : power * powerMultiplier;
+      const shotCount = abilityHeld ? 1 : Math.max(effectivePower, Math.min(14, lives * powerMultiplier));
+      const spacing = abilityHeld ? 0 : Math.min(34, (9 + lives * 1.5) * powerMultiplier);
       const center = (shotCount - 1) / 2;
 
       Array.from({ length: shotCount }).forEach((_, index) => {
@@ -370,10 +400,10 @@
           vx: offset * 2,
           vy: -620,
           r: 4,
-          damage: 1
+          damage: powerMultiplier
         });
       });
-      player.cooldown = Math.max(.11, .23 - effectivePower * .025);
+      player.cooldown = Math.max(.07, .23 - Math.min(effectivePower, 8) * .025);
       playShotSound();
     }
 
@@ -391,19 +421,25 @@
       });
     }
 
+    function bossScoreTarget() {
+      return bossLevel * 1000;
+    }
+
     function spawnBoss(width) {
-      const bossHp = bossLevel * 1000;
+      const bossStrength = powerMultiplier;
+      const bossHp = bossLevel * 1000 * bossStrength;
       boss = {
         x: width / 2,
         y: -80,
-        w: Math.min(210, width * .45),
-        h: 94,
+        w: Math.min(240, width * .45 + bossStrength * 6),
+        h: Math.min(118, 94 + bossStrength * 3),
         hp: bossHp,
         maxHp: bossHp,
+        strength: bossStrength,
         phase: Math.random() * Math.PI * 2,
         shot: .5
       };
-      smallEnemyScore -= 1000;
+      smallEnemyScore -= bossScoreTarget();
       enemies = [];
       enemyBullets = [];
     }
@@ -471,6 +507,7 @@
       player.y = Math.max(46, Math.min(rect.height - 28, player.y));
       player.cooldown = Math.max(0, player.cooldown - dt);
       playerInvulnerable = Math.max(0, playerInvulnerable - dt);
+      upgradeFlash = Math.max(0, upgradeFlash - dt);
       if (keys.has("Space")) shoot();
 
       stars.forEach((star) => {
@@ -482,7 +519,7 @@
       });
 
       enemyTimer -= dt;
-      if (!boss && smallEnemyScore >= 1000) {
+      if (!boss && smallEnemyScore >= bossScoreTarget()) {
         spawnBoss(rect.width);
       }
       if (!boss && enemyTimer <= 0) {
@@ -511,10 +548,13 @@
         boss.x = rect.width / 2 + Math.sin(performance.now() / 520 + boss.phase) * Math.min(150, rect.width * .22);
         boss.shot -= dt;
         if (boss.shot <= 0 && boss.y > 50) {
-          [-80, -40, 0, 40, 80].forEach((vx) => {
-            enemyBullets.push({ x: boss.x, y: boss.y + boss.h / 2, vx, vy: 245, r: 5 });
+          const laneCount = Math.min(13, 5 + Math.floor(Math.log2(boss.strength)) * 2);
+          const center = (laneCount - 1) / 2;
+          Array.from({ length: laneCount }).forEach((_, index) => {
+            const vx = (index - center) * 40;
+            enemyBullets.push({ x: boss.x, y: boss.y + boss.h / 2, vx, vy: 245 + boss.strength * 12, r: 5 });
           });
-          boss.shot = Math.max(.32, .82 - bossLevel / 8);
+          boss.shot = Math.max(.22, .82 - bossLevel / 8 - Math.log2(boss.strength) * .08);
         }
       }
 
@@ -749,13 +789,34 @@
       });
 
       particles.forEach((p) => {
-        ctx.globalAlpha = Math.max(0, p.life / .45);
+        const maxLife = p.maxLife || .45;
+        ctx.globalAlpha = Math.max(0, p.life / maxLife);
         ctx.fillStyle = p.color;
         ctx.beginPath();
-        ctx.arc(p.x, p.y, 3, 0, Math.PI * 2);
+        ctx.arc(p.x, p.y, p.size || 3, 0, Math.PI * 2);
         ctx.fill();
         ctx.globalAlpha = 1;
       });
+
+      if (upgradeFlash > 0) {
+        const progress = 1 - upgradeFlash / .9;
+        ctx.save();
+        ctx.translate(player.x, player.y);
+        ctx.globalAlpha = upgradeFlash / .9;
+        ctx.strokeStyle = "#7cf7ff";
+        ctx.lineWidth = 3;
+        [28, 52, 76].forEach((radius, index) => {
+          ctx.beginPath();
+          ctx.arc(0, 0, radius + progress * 34 + index * 7, 0, Math.PI * 2);
+          ctx.stroke();
+        });
+        ctx.fillStyle = "rgba(255, 223, 110, .18)";
+        ctx.beginPath();
+        ctx.arc(0, 0, 72 + progress * 44, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+        ctx.globalAlpha = 1;
+      }
 
       drawShip(player.x, player.y);
     }
@@ -796,9 +857,13 @@
           activePlayTime = 0;
         }
       }
+      const previousMultiplier = powerMultiplier;
       arabicUnlocked = completedArabicTokens.size || payload.completedQuestions || payload.puzzleUnlocked || 0;
       arabicTotal = payload.totalQuestions || payload.puzzleTotal || 16;
       updatePowerFromArabic();
+      if (newTokens.length && powerMultiplier > previousMultiplier) {
+        triggerUpgradeEffect();
+      }
       syncHud();
       if (!running && lives > 0 && !overlay.hidden) {
         setOverlay("星际雷电", `当前生命：${lives}。按开始进入游戏。`, "开始游戏");
