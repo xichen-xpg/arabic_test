@@ -1167,7 +1167,7 @@
 
     function normalizeArabicForSpeech(text) {
       if ([...text].length <= 2) return text;
-      return text.replace(/ة/g, "ه");
+      return text.replace(/ة(?=\s|$|؟)/g, "ا");
     }
 
     function speakArabic(text) {
