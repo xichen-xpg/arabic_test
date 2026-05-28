@@ -1048,10 +1048,7 @@
     const finalKeySpeechDelay = 80;
     const keyAudioVersion = "2";
     const preloadedSpeech = new Map();
-    const keyAudioBuffers = new Map();
-    const keyAudioLoads = new Map();
-    let keyAudioContext = null;
-    let keyAudioOutput = null;
+    const keyAudioElements = new Map();
     const completedByGroup = {};
 
     function emitMetrics(eventName = "metrics") {
@@ -1206,78 +1203,33 @@
       return arabicSoundMap[char] ? `../assets/audio/letters/${audioKey(char)}.mp3?v=${keyAudioVersion}` : "";
     }
 
-    function ensureKeyAudioContext() {
-      if (!keyAudioContext) {
-        keyAudioContext = new (window.AudioContext || window.webkitAudioContext)();
-      }
-      return keyAudioContext;
-    }
-
-    function ensureKeyAudioOutput(audio) {
-      if (!keyAudioOutput) {
-        keyAudioOutput = audio.createGain();
-        keyAudioOutput.gain.value = 1;
-        keyAudioOutput.connect(audio.destination);
-      }
-      return keyAudioOutput;
-    }
-
     function preloadKeyAudio(char) {
       const path = keyAudioPath(char);
       if (!path) return Promise.resolve();
-      if (keyAudioBuffers.has(path)) return Promise.resolve(keyAudioBuffers.get(path));
-      if (keyAudioLoads.has(path)) return keyAudioLoads.get(path);
+      if (keyAudioElements.has(path)) return Promise.resolve(keyAudioElements.get(path));
 
-      const load = fetch(path)
-        .then((response) => {
-          if (!response.ok) throw new Error(`Audio ${response.status}`);
-          return response.arrayBuffer();
-        })
-        .then((data) => ensureKeyAudioContext().decodeAudioData(data))
-        .then((buffer) => {
-          keyAudioBuffers.set(path, buffer);
-          return buffer;
-        })
-        .finally(() => {
-          keyAudioLoads.delete(path);
-        });
-      keyAudioLoads.set(path, load);
-      return load;
+      const audio = new Audio(path);
+      audio.preload = "auto";
+      keyAudioElements.set(path, audio);
+      audio.load();
+      return Promise.resolve(audio);
     }
 
     function playKeyAudio(char) {
       const path = keyAudioPath(char);
       if (!path) return Promise.reject();
 
-      const playBuffer = (buffer) => {
-        const audio = ensureKeyAudioContext();
-        const output = ensureKeyAudioOutput(audio);
-        return new Promise((resolve, reject) => {
-          const source = audio.createBufferSource();
-          source.buffer = buffer;
-          source.connect(output);
-          source.onended = () => {
-            source.disconnect();
-            resolve();
-          };
-          const start = () => {
-            source.start(0);
-          };
-          if (audio.state === "suspended") {
-            audio.resume().then(start).catch(reject);
-          } else {
-            start();
-          }
-        });
-      };
-
-      const buffer = keyAudioBuffers.get(path);
-      if (buffer) return playBuffer(buffer);
-
       preloadKeyAudio(char);
-      const load = keyAudioLoads.get(path);
-      if (!load) return Promise.reject();
-      return load.then(playBuffer);
+      const cached = keyAudioElements.get(path);
+      if (!cached) return Promise.reject();
+
+      const audio = cached.cloneNode();
+      audio.currentTime = 0;
+      return new Promise((resolve, reject) => {
+        audio.addEventListener("ended", resolve, { once: true });
+        audio.addEventListener("error", reject, { once: true });
+        audio.play().catch(reject);
+      });
     }
 
     function preloadCurrentQuestionAudio() {
@@ -1365,7 +1317,10 @@
     function speakKeySound(text) {
       const sound = arabicSoundMap[text];
       if (!sound || sound === "-") return Promise.resolve();
-      return playKeyAudio(text).catch(() => Promise.resolve());
+      return playKeyAudio(text).catch((error) => {
+        console.warn("Local key audio failed", text, keyAudioPath(text), error);
+        return Promise.resolve();
+      });
     }
 
     function insertAtCursor(input, text) {
@@ -1660,7 +1615,6 @@
       if (selectedCorrect) return;
 
       if (option === current.rom) {
-        ensureKeyAudioContext().resume();
         selectedCorrect = true;
         button.classList.add("correct");
         elements.feedback.textContent = "";
