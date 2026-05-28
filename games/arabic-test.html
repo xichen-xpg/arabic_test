@@ -1192,6 +1192,18 @@
       audio.load();
     }
 
+    function preloadCurrentQuestionAudio() {
+      if (!current) return;
+
+      preloadArabic(current.ar);
+      [...new Set(inputChars(current.ar))].forEach((char) => {
+        const sound = arabicSoundMap[char];
+        if (sound && sound !== "-") {
+          preloadArabic(sound);
+        }
+      });
+    }
+
     function speakArabic(text) {
       const speechText = normalizeArabicForSpeech(text);
       if (!speechText.trim()) return Promise.resolve();
@@ -1474,6 +1486,7 @@
       elements.hintButton.classList.add("active");
       elements.hintButton.setAttribute("aria-pressed", "true");
       elements.checkButton.disabled = true;
+      preloadCurrentQuestionAudio();
       updateLiveInput();
       renderChoices();
       renderSoftKeyboard();
