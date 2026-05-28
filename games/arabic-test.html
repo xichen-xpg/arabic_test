@@ -994,7 +994,26 @@
     }
 
     function keyForChar(char) {
-      return arabicKeyMap[char] || char || "-";
+      if (arabicKeyMap[char]) return arabicKeyMap[char];
+
+      const match = Object.entries(arabicCodeMap).find(([, values]) => values.includes(char));
+      if (!match) return char || "-";
+
+      const [code, values] = match;
+      const shifted = values[1] === char;
+      const labels = {
+        Backquote: "`",
+        BracketLeft: "[",
+        BracketRight: "]",
+        Semicolon: ";",
+        Quote: "'",
+        Comma: ",",
+        Period: ".",
+        Slash: "/",
+        Space: "Space"
+      };
+      const key = labels[code] || code.replace(/^Key/, "");
+      return shifted ? `Shift + ${key}` : key;
     }
 
     function keyLabelFor(key) {

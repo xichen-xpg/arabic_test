@@ -127,11 +127,36 @@
       background: #ffcf5a;
       color: #2a1d00;
     }
+
+    .boss-meter {
+      position: absolute;
+      top: 66px;
+      left: 50%;
+      width: min(560px, calc(100% - 48px));
+      height: 16px;
+      overflow: hidden;
+      transform: translateX(-50%);
+      border: 2px solid rgba(255, 230, 160, .9);
+      border-radius: 999px;
+      background: rgba(40, 8, 16, .8);
+      box-shadow: 0 0 20px rgba(255, 80, 80, .3);
+    }
+
+    .boss-meter[hidden] {
+      display: none;
+    }
+
+    .boss-meter-fill {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, #ffcf5a, #ff5448);
+    }
   </style>
 </head>
 <body>
   <main class="game">
     <canvas id="gameCanvas"></canvas>
+    <div id="bossMeter" class="boss-meter" hidden><div id="bossMeterFill" class="boss-meter-fill"></div></div>
     <section class="hud">
       <div class="stat-row">
         <div class="stat"><span>分数</span><b id="score">0</b></div>
@@ -160,12 +185,15 @@
     const overlay = document.querySelector("#overlay");
     const startButton = document.querySelector("#startButton");
     const pauseButton = document.querySelector("#pauseButton");
+    const bossMeter = document.querySelector("#bossMeter");
+    const bossMeterFill = document.querySelector("#bossMeterFill");
 
     const keys = new Set();
     const player = { x: 0, y: 0, w: 34, h: 44, speed: 360, cooldown: 0 };
     let bullets = [];
     let enemies = [];
     let enemyBullets = [];
+    let boss = null;
     let particles = [];
     let stars = [];
     let score = 0;
@@ -175,6 +203,7 @@
     let paused = false;
     let lastTime = 0;
     let enemyTimer = 0;
+    let nextBossScore = 1000;
     let arabicUnlocked = 0;
     let arabicTotal = 16;
     let audioContext = null;
@@ -207,9 +236,11 @@
       bullets = [];
       enemies = [];
       enemyBullets = [];
+      boss = null;
       particles = [];
       score = 0;
       enemyTimer = 0;
+      nextBossScore = 1000;
       updatePowerFromArabic();
       syncHud();
     }
@@ -222,6 +253,10 @@
       startButton.disabled = !running && lives <= 0;
       pauseButton.disabled = !running;
       pauseButton.textContent = paused ? "继续" : "暂停";
+      bossMeter.hidden = !boss;
+      if (boss) {
+        bossMeterFill.style.width = `${Math.max(0, boss.hp / boss.maxHp) * 100}%`;
+      }
     }
 
     function setOverlay(title, text, buttonText) {
@@ -348,6 +383,21 @@
       });
     }
 
+    function spawnBoss(width) {
+      boss = {
+        x: width / 2,
+        y: -80,
+        w: Math.min(210, width * .45),
+        h: 94,
+        hp: 36 + Math.floor(nextBossScore / 250),
+        maxHp: 36 + Math.floor(nextBossScore / 250),
+        phase: Math.random() * Math.PI * 2,
+        shot: .5
+      };
+      enemies = [];
+      enemyBullets = [];
+    }
+
     function hitCircleRect(circle, rect) {
       const cx = Math.max(rect.x - rect.w / 2, Math.min(circle.x, rect.x + rect.w / 2));
       const cy = Math.max(rect.y - rect.h / 2, Math.min(circle.y, rect.y + rect.h / 2));
@@ -397,7 +447,10 @@
       });
 
       enemyTimer -= dt;
-      if (enemyTimer <= 0) {
+      if (!boss && score >= nextBossScore) {
+        spawnBoss(rect.width);
+      }
+      if (!boss && enemyTimer <= 0) {
         spawnEnemy(rect.width);
         enemyTimer = Math.max(.28, .92 - score / 4200);
       }
@@ -418,6 +471,18 @@
         }
       });
 
+      if (boss) {
+        boss.y = Math.min(104, boss.y + 72 * dt);
+        boss.x = rect.width / 2 + Math.sin(performance.now() / 520 + boss.phase) * Math.min(150, rect.width * .22);
+        boss.shot -= dt;
+        if (boss.shot <= 0 && boss.y > 50) {
+          [-80, -40, 0, 40, 80].forEach((vx) => {
+            enemyBullets.push({ x: boss.x, y: boss.y + boss.h / 2, vx, vy: 245, r: 5 });
+          });
+          boss.shot = Math.max(.32, .82 - nextBossScore / 8000);
+        }
+      }
+
       enemyBullets.forEach((bullet) => {
         bullet.x += bullet.vx * dt;
         bullet.y += bullet.vy * dt;
@@ -436,6 +501,17 @@
             }
           }
         });
+        if (boss && hitCircleRect(bullet, boss)) {
+          bullet.dead = true;
+          boss.hp -= bullet.damage;
+          explode(bullet.x, bullet.y, "#ffcf5a");
+          if (boss.hp <= 0) {
+            score += 500;
+            explode(boss.x, boss.y, "#ff5448");
+            boss = null;
+            nextBossScore += 1000;
+          }
+        }
       });
       bullets = bullets.filter((bullet) => !bullet.dead);
       enemies = enemies.filter((enemy) => enemy.hp > 0 && enemy.y < rect.height + 60);
@@ -592,6 +668,29 @@
         ctx.fill();
         ctx.restore();
       });
+
+      if (boss) {
+        ctx.save();
+        ctx.translate(boss.x, boss.y);
+        ctx.shadowColor = "#ff5448";
+        ctx.shadowBlur = 22;
+        ctx.fillStyle = "#661b2a";
+        roundedRect(-boss.w / 2, -boss.h / 2, boss.w, boss.h, 16);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+        ctx.strokeStyle = "#ffe6a0";
+        ctx.lineWidth = 3;
+        ctx.stroke();
+        ctx.fillStyle = "#101828";
+        ctx.fillRect(-boss.w * .34, -12, boss.w * .68, 24);
+        ctx.fillStyle = "#ffcf5a";
+        [-.26, 0, .26].forEach((ratio) => {
+          ctx.beginPath();
+          ctx.arc(boss.w * ratio, 0, 8, 0, Math.PI * 2);
+          ctx.fill();
+        });
+        ctx.restore();
+      }
 
       enemyBullets.forEach((bullet) => {
         ctx.strokeStyle = "rgba(255, 149, 58, .92)";
