@@ -310,6 +310,12 @@
       line-height: 1;
     }
 
+    .soft-key.space {
+      grid-column: span 7;
+      font-size: 15px;
+      letter-spacing: 0;
+    }
+
     .soft-key:hover:not(:disabled) {
       border-color: var(--accent);
       background: #e7f6f3;
@@ -371,6 +377,8 @@
       direction: rtl;
       text-align: right;
       font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      font-size: 22px;
+      line-height: 1;
     }
 
     .side-stack {
@@ -998,7 +1006,8 @@
       "ا", "ب", "ت", "ث", "ج", "ح", "خ",
       "د", "ذ", "ر", "ز", "س", "ش", "ص",
       "ض", "ط", "ظ", "ع", "غ", "ف", "ق",
-      "ك", "ل", "م", "ن", "ه", "و", "ي"
+      "ك", "ل", "م", "ن", "ه", "و", "ي",
+      " "
     ];
 
     const elements = {
@@ -1459,17 +1468,27 @@
         const button = document.createElement("button");
         button.type = "button";
         button.className = "soft-key";
-        button.textContent = letter;
+        if (letter === " ") {
+          button.classList.add("space");
+          button.textContent = "Space";
+        } else {
+          button.textContent = letter;
+        }
         button.disabled = !selectedCorrect || completedCurrent;
+        button.addEventListener("pointerdown", (event) => {
+          event.preventDefault();
+        });
         button.addEventListener("click", () => {
           if (!selectedCorrect || completedCurrent) return;
           const expected = nextInputChar(current.ar, elements.arabicInput.value);
           if (letter !== expected) {
             updateLiveInput();
+            elements.arabicInput.focus();
             return;
           }
           insertAtCursor(elements.arabicInput, letter);
           speakKeySound(letter);
+          elements.arabicInput.focus();
         });
         elements.softKeyboard.append(button);
       });
