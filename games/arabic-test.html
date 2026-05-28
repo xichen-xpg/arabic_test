@@ -1050,6 +1050,7 @@
     const keyAudioBuffers = new Map();
     const keyAudioLoads = new Map();
     let keyAudioContext = null;
+    let keyAudioOutput = null;
     const completedByGroup = {};
 
     function emitMetrics(eventName = "metrics") {
@@ -1211,6 +1212,15 @@
       return keyAudioContext;
     }
 
+    function ensureKeyAudioOutput(audio) {
+      if (!keyAudioOutput) {
+        keyAudioOutput = audio.createGain();
+        keyAudioOutput.gain.value = 1;
+        keyAudioOutput.connect(audio.destination);
+      }
+      return keyAudioOutput;
+    }
+
     function preloadKeyAudio(char) {
       const path = keyAudioPath(char);
       if (!path || keyAudioBuffers.has(path) || keyAudioLoads.has(path)) return;
@@ -1237,16 +1247,24 @@
 
       const playBuffer = (buffer) => {
         const audio = ensureKeyAudioContext();
-        const source = audio.createBufferSource();
-        source.buffer = buffer;
-        source.connect(audio.destination);
-        if (audio.state === "suspended") {
-          return audio.resume().then(() => {
+        const output = ensureKeyAudioOutput(audio);
+        return new Promise((resolve, reject) => {
+          const source = audio.createBufferSource();
+          source.buffer = buffer;
+          source.connect(output);
+          source.onended = () => {
+            source.disconnect();
+            resolve();
+          };
+          const start = () => {
             source.start(0);
-          });
-        }
-        source.start(0);
-        return Promise.resolve();
+          };
+          if (audio.state === "suspended") {
+            audio.resume().then(start).catch(reject);
+          } else {
+            start();
+          }
+        });
       };
 
       const buffer = keyAudioBuffers.get(path);
