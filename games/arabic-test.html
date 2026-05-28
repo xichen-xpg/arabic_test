@@ -196,6 +196,19 @@
       color: var(--danger);
     }
 
+    .choice-rom {
+      overflow-wrap: anywhere;
+    }
+
+    .choice-arabic {
+      direction: rtl;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      font-size: 24px;
+      line-height: 1;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
     .entry {
       display: grid;
       gap: 12px;
@@ -1464,7 +1477,15 @@
         const button = document.createElement("button");
         button.type = "button";
         button.className = "choice";
-        button.textContent = option.rom;
+        const rom = document.createElement("span");
+        rom.className = "choice-rom";
+        rom.textContent = option.rom;
+        const arabic = document.createElement("span");
+        arabic.className = "choice-arabic";
+        arabic.lang = "ar";
+        arabic.dir = "rtl";
+        arabic.textContent = option.ar;
+        button.append(rom, arabic);
         button.addEventListener("click", () => {
           speakArabic(option.correct ? current.ar : option.ar);
           choosePronunciation(button, option.rom);
