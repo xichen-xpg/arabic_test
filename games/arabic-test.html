@@ -542,9 +542,6 @@
             <option value="source:restaurant">餐厅题库</option>
             <option value="source:best-friend">Best Friend 题库</option>
           </select>
-          <select id="batchSelect" class="select" aria-label="题目组">
-            <option value="0">第 1 组</option>
-          </select>
         </div>
 
         <div class="question">
@@ -793,8 +790,6 @@
       }
     };
 
-    const batchSize = 16;
-
     const arabicKeyMap = {
       "ذ": "`",
       "ض": "Q",
@@ -1026,7 +1021,6 @@
     const elements = {
       categoryTag: document.querySelector("#categoryTag"),
       categorySelect: document.querySelector("#categorySelect"),
-      batchSelect: document.querySelector("#batchSelect"),
       chinesePrompt: document.querySelector("#chinesePrompt"),
       choices: document.querySelector("#choices"),
       entry: document.querySelector("#entry"),
@@ -1062,7 +1056,6 @@
           game: "arabic-test",
           event: eventName,
           source: activeSource(),
-          batch: activeBatch(),
           completedQuestions: completed.size,
           completedTokens,
           totalQuestions: total,
@@ -1265,16 +1258,8 @@
       return allQuestions.filter((item) => item.source === source);
     }
 
-    function fullBatchCount(source) {
-      return Math.max(1, Math.floor(sourceQuestions(source).length / batchSize));
-    }
-
-    function activeBatch() {
-      return Number(elements.batchSelect.value || 0);
-    }
-
-    function progressKey(source = activeSource(), batch = activeBatch()) {
-      return `${source}:${batch}`;
+    function progressKey(source = activeSource()) {
+      return source;
     }
 
     function completedSet(key = progressKey()) {
@@ -1286,35 +1271,19 @@
       return {};
     }
 
-    function fillBatchOptions() {
-      const source = activeSource();
-      const count = fullBatchCount(source);
-      const current = Math.min(activeBatch(), count - 1);
-      elements.batchSelect.replaceChildren();
-      for (let index = 0; index < count; index += 1) {
-        const option = document.createElement("option");
-        option.value = String(index);
-        option.textContent = `第 ${index + 1} 组`;
-        elements.batchSelect.append(option);
-      }
-      elements.batchSelect.value = String(current);
-    }
-
     function activeQuestions() {
-      const source = activeSource();
-      const start = activeBatch() * batchSize;
-      return sourceQuestions(source).slice(start, start + batchSize);
+      return sourceQuestions(activeSource());
     }
 
     function sourcePieceIndex(question) {
       return activeQuestions().findIndex((item) => item.id === question.id);
     }
 
-    function activePuzzleImage(source = activeSource(), batch = activeBatch()) {
+    function activePuzzleImage(source = activeSource()) {
       const discoveredImages = availablePuzzleImages.filter(Boolean);
       const images = sourceConfig[source].puzzleImages.length ? sourceConfig[source].puzzleImages : discoveredImages;
       if (!images.length) return "0.png";
-      return images[batch % images.length];
+      return images[0];
     }
 
     function cropImageToSquareDataUrl(image) {
@@ -1662,14 +1631,8 @@
 
     elements.categorySelect.addEventListener("change", () => {
       pool = [];
-      fillBatchOptions();
       drawQuestion();
       emitMetrics("source-changed");
-    });
-    elements.batchSelect.addEventListener("change", () => {
-      pool = [];
-      drawQuestion();
-      emitMetrics("batch-changed");
     });
     elements.hintButton.addEventListener("click", toggleHint);
     elements.checkButton.addEventListener("click", checkInput);
@@ -1700,7 +1663,6 @@
       }
     });
 
-    fillBatchOptions();
     drawQuestion();
     emitMetrics("ready");
   </script>
