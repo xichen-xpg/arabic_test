@@ -201,9 +201,12 @@
     let power = 1;
     let running = false;
     let paused = false;
+    let activePlayTime = 0;
+    let abilityHeld = false;
     let lastTime = 0;
     let enemyTimer = 0;
-    let nextBossScore = 1000;
+    let smallEnemyScore = 0;
+    let bossLevel = 1;
     let arabicUnlocked = 0;
     let arabicTotal = 16;
     let audioContext = null;
@@ -240,7 +243,9 @@
       particles = [];
       score = 0;
       enemyTimer = 0;
-      nextBossScore = 1000;
+      smallEnemyScore = 0;
+      bossLevel = 1;
+      activePlayTime = 0;
       updatePowerFromArabic();
       syncHud();
     }
@@ -248,7 +253,7 @@
     function syncHud() {
       scoreEl.textContent = score;
       livesEl.textContent = lives;
-      powerEl.textContent = power;
+      powerEl.textContent = abilityHeld ? "HOLD" : power;
       arabicPowerEl.textContent = `${arabicUnlocked}/${arabicTotal}`;
       startButton.disabled = !running && lives <= 0;
       pauseButton.disabled = !running;
@@ -350,8 +355,9 @@
 
     function shoot() {
       if (player.cooldown > 0) return;
-      const shotCount = Math.max(power, Math.min(7, lives));
-      const spacing = Math.min(24, 9 + lives * 1.5);
+      const effectivePower = abilityHeld ? 1 : power;
+      const shotCount = abilityHeld ? 1 : Math.max(effectivePower, Math.min(7, lives));
+      const spacing = abilityHeld ? 0 : Math.min(24, 9 + lives * 1.5);
       const center = (shotCount - 1) / 2;
 
       Array.from({ length: shotCount }).forEach((_, index) => {
@@ -365,7 +371,7 @@
           damage: 1
         });
       });
-      player.cooldown = Math.max(.11, .23 - power * .025);
+      player.cooldown = Math.max(.11, .23 - effectivePower * .025);
       playShotSound();
     }
 
@@ -384,16 +390,18 @@
     }
 
     function spawnBoss(width) {
+      const bossHp = bossLevel * 1000;
       boss = {
         x: width / 2,
         y: -80,
         w: Math.min(210, width * .45),
         h: 94,
-        hp: 36 + Math.floor(nextBossScore / 250),
-        maxHp: 36 + Math.floor(nextBossScore / 250),
+        hp: bossHp,
+        maxHp: bossHp,
         phase: Math.random() * Math.PI * 2,
         shot: .5
       };
+      smallEnemyScore -= 1000;
       enemies = [];
       enemyBullets = [];
     }
@@ -429,6 +437,10 @@
 
     function update(dt) {
       const rect = canvas.getBoundingClientRect();
+      activePlayTime += dt;
+      if (!abilityHeld && activePlayTime >= 180) {
+        abilityHeld = true;
+      }
       if (keys.has("ArrowLeft")) player.x -= player.speed * dt;
       if (keys.has("ArrowRight")) player.x += player.speed * dt;
       if (keys.has("ArrowUp")) player.y -= player.speed * dt;
@@ -447,7 +459,7 @@
       });
 
       enemyTimer -= dt;
-      if (!boss && score >= nextBossScore) {
+      if (!boss && smallEnemyScore >= 1000) {
         spawnBoss(rect.width);
       }
       if (!boss && enemyTimer <= 0) {
@@ -479,7 +491,7 @@
           [-80, -40, 0, 40, 80].forEach((vx) => {
             enemyBullets.push({ x: boss.x, y: boss.y + boss.h / 2, vx, vy: 245, r: 5 });
           });
-          boss.shot = Math.max(.32, .82 - nextBossScore / 8000);
+          boss.shot = Math.max(.32, .82 - bossLevel / 8);
         }
       }
 
@@ -496,7 +508,9 @@
             enemy.hp -= bullet.damage;
             explode(bullet.x, bullet.y, "#74e0ff");
             if (enemy.hp <= 0) {
-              score += enemy.w > 30 ? 180 : 100;
+              const points = enemy.w > 30 ? 180 : 100;
+              score += points;
+              smallEnemyScore += points;
               explode(enemy.x, enemy.y);
             }
           }
@@ -509,7 +523,7 @@
             score += 500;
             explode(boss.x, boss.y, "#ff5448");
             boss = null;
-            nextBossScore += 1000;
+            bossLevel += 1;
           }
         }
       });
@@ -751,6 +765,10 @@
       newTokens.forEach((token) => completedArabicTokens.add(token));
       if (newTokens.length) {
         lives += newTokens.length;
+        if (abilityHeld) {
+          abilityHeld = false;
+          activePlayTime = 0;
+        }
       }
       arabicUnlocked = completedArabicTokens.size || payload.completedQuestions || payload.puzzleUnlocked || 0;
       arabicTotal = payload.totalQuestions || payload.puzzleTotal || 16;
