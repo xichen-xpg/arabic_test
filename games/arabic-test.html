@@ -1587,7 +1587,9 @@
             return;
           }
           insertAtCursor(elements.arabicInput, letter);
-          speakKeySound(letter);
+          if (!completedCurrent) {
+            speakKeySound(letter);
+          }
           elements.arabicInput.focus();
         });
         elements.softKeyboard.append(button);
@@ -1729,7 +1731,9 @@
           return;
         }
         insertAtCursor(elements.arabicInput, arabicText);
-        speakKeySound(arabicText);
+        if (!completedCurrent) {
+          speakKeySound(arabicText);
+        }
       }
     });
 
