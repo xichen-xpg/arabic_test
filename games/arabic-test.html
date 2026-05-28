@@ -1047,6 +1047,7 @@
     let hintEnabled = false;
     let completedCurrent = false;
     let currentAudio = null;
+    let currentSpeechFinish = null;
     let completionSpeechTimer = null;
     let lastValidInput = "";
     const completedByGroup = {};
@@ -1184,23 +1185,47 @@
 
     function speakArabic(text) {
       const speechText = normalizeArabicForSpeech(text);
-      if (!speechText.trim()) return;
+      if (!speechText.trim()) return Promise.resolve();
 
       const url = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ar&q=${encodeURIComponent(speechText)}`;
       if (currentAudio) {
         currentAudio.pause();
         currentAudio = null;
       }
+      if (currentSpeechFinish) {
+        currentSpeechFinish();
+      }
       const audio = new Audio(url);
       currentAudio = audio;
-      audio.play().catch(() => speakArabicWithBrowserVoice(speechText));
+      return new Promise((resolve) => {
+        let settled = false;
+        const fallbackTimer = setTimeout(() => finish(), 8000);
+        const finish = () => {
+          if (settled) return;
+          settled = true;
+          clearTimeout(fallbackTimer);
+          if (currentAudio === audio) {
+            currentAudio = null;
+          }
+          if (currentSpeechFinish === finish) {
+            currentSpeechFinish = null;
+          }
+          resolve();
+        };
+        currentSpeechFinish = finish;
+        audio.addEventListener("ended", finish, { once: true });
+        audio.addEventListener("error", () => {
+          speakArabicWithBrowserVoice(speechText).then(finish);
+        }, { once: true });
+        audio.play().catch(() => speakArabicWithBrowserVoice(speechText).then(finish));
+      });
     }
 
     function speakArabicWithBrowserVoice(text) {
       if (!("speechSynthesis" in window)) {
         elements.feedback.textContent = "当前浏览器不支持语音播放。";
         elements.feedback.className = "feedback error";
-        return;
+        return Promise.resolve();
       }
 
       window.speechSynthesis.cancel();
@@ -1210,7 +1235,11 @@
       utterance.voice = voices.find((voice) => voice.lang.toLowerCase().startsWith("ar")) || null;
       utterance.rate = 0.8;
       utterance.volume = 1;
-      window.speechSynthesis.speak(utterance);
+      return new Promise((resolve) => {
+        utterance.onend = resolve;
+        utterance.onerror = resolve;
+        window.speechSynthesis.speak(utterance);
+      });
     }
 
     function speakKeySound(text) {
@@ -1596,7 +1625,7 @@
       }
         elements.feedback.textContent = "";
         elements.feedback.className = "feedback success";
-        elements.nextButton.disabled = false;
+        elements.nextButton.disabled = true;
         elements.checkButton.disabled = true;
         elements.hintButton.disabled = true;
         elements.nextChar.textContent = "-";
@@ -1614,7 +1643,11 @@
       completionSpeechTimer = setTimeout(() => {
         completionSpeechTimer = null;
         if (current?.id === question.id && completedCurrent) {
-          speakArabic(question.ar);
+          speakArabic(question.ar).then(() => {
+            if (current?.id === question.id && completedCurrent) {
+              elements.nextButton.disabled = false;
+            }
+          });
         }
       }, 1000);
     }
