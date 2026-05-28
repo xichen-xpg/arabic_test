@@ -1047,7 +1047,9 @@
     const completionSpeechDelay = 200;
     const finalKeySpeechDelay = 80;
     const preloadedSpeech = new Map();
-    const preloadedKeyAudio = new Map();
+    const keyAudioBuffers = new Map();
+    const keyAudioLoads = new Map();
+    let keyAudioContext = null;
     const completedByGroup = {};
 
     function emitMetrics(eventName = "metrics") {
@@ -1202,25 +1204,58 @@
       return arabicSoundMap[char] ? `../assets/audio/letters/${audioKey(char)}.mp3` : "";
     }
 
+    function ensureKeyAudioContext() {
+      if (!keyAudioContext) {
+        keyAudioContext = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      return keyAudioContext;
+    }
+
     function preloadKeyAudio(char) {
       const path = keyAudioPath(char);
-      if (!path || preloadedKeyAudio.has(path)) return;
+      if (!path || keyAudioBuffers.has(path) || keyAudioLoads.has(path)) return;
 
-      const audio = new Audio(path);
-      audio.preload = "auto";
-      preloadedKeyAudio.set(path, audio);
-      audio.load();
+      const load = fetch(path)
+        .then((response) => {
+          if (!response.ok) throw new Error(`Audio ${response.status}`);
+          return response.arrayBuffer();
+        })
+        .then((data) => ensureKeyAudioContext().decodeAudioData(data))
+        .then((buffer) => {
+          keyAudioBuffers.set(path, buffer);
+          return buffer;
+        })
+        .finally(() => {
+          keyAudioLoads.delete(path);
+        });
+      keyAudioLoads.set(path, load);
     }
 
     function playKeyAudio(char) {
       const path = keyAudioPath(char);
       if (!path) return Promise.reject();
 
-      const audio = preloadedKeyAudio.get(path) || new Audio(path);
-      preloadedKeyAudio.set(path, audio);
-      audio.pause();
-      audio.currentTime = 0;
-      return audio.play();
+      const playBuffer = (buffer) => {
+        const audio = ensureKeyAudioContext();
+        const source = audio.createBufferSource();
+        source.buffer = buffer;
+        source.connect(audio.destination);
+        if (audio.state === "suspended") {
+          return audio.resume().then(() => {
+            source.start(0);
+          });
+        }
+        source.start(0);
+        return Promise.resolve();
+      };
+
+      const buffer = keyAudioBuffers.get(path);
+      if (buffer) return playBuffer(buffer);
+
+      preloadKeyAudio(char);
+      const load = keyAudioLoads.get(path);
+      if (!load) return Promise.reject();
+      return load.then(playBuffer);
     }
 
     function preloadCurrentQuestionAudio() {
