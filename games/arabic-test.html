@@ -1204,6 +1204,15 @@
       });
     }
 
+    function preloadSoftKeyboardAudio() {
+      softKeyboardLetters.forEach((char) => {
+        const sound = arabicSoundMap[char];
+        if (sound && sound !== "-") {
+          preloadArabic(sound);
+        }
+      });
+    }
+
     function speakArabic(text) {
       const speechText = normalizeArabicForSpeech(text);
       if (!speechText.trim()) return Promise.resolve();
@@ -1693,6 +1702,7 @@
       }
     });
 
+    preloadSoftKeyboardAudio();
     drawQuestion();
     emitMetrics("ready");
   </script>
