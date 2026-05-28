@@ -1196,7 +1196,10 @@
     }
 
     function audioKey(text) {
-      return [...text].map((char) => `u${char.codePointAt(0).toString(16).padStart(4, "0")}`).join("-");
+      return [...text].map((char) => {
+        const codePoint = char.codePointAt(0) === 0x0649 ? 0x0627 : char.codePointAt(0);
+        return `u${codePoint.toString(16).padStart(4, "0")}`;
+      }).join("-");
     }
 
     function keyAudioPath(char) {
