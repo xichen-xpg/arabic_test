@@ -1654,6 +1654,7 @@
       if (selectedCorrect) return;
 
       if (option === current.rom) {
+        ensureKeyAudioContext().resume();
         selectedCorrect = true;
         button.classList.add("correct");
         elements.feedback.textContent = "";
