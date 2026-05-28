@@ -1044,6 +1044,8 @@
     let currentSpeechFinish = null;
     let completionSpeechTimer = null;
     let lastValidInput = "";
+    const completionSpeechDelay = 200;
+    const preloadedSpeech = new Map();
     const completedByGroup = {};
 
     function emitMetrics(eventName = "metrics") {
@@ -1176,11 +1178,25 @@
       return text.replace(/ة(?=\s|$|؟)/g, "ا");
     }
 
+    function speechUrl(text) {
+      return `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ar&q=${encodeURIComponent(text)}`;
+    }
+
+    function preloadArabic(text) {
+      const speechText = normalizeArabicForSpeech(text);
+      if (!speechText.trim() || preloadedSpeech.has(speechText)) return;
+
+      const audio = new Audio(speechUrl(speechText));
+      audio.preload = "auto";
+      preloadedSpeech.set(speechText, audio);
+      audio.load();
+    }
+
     function speakArabic(text) {
       const speechText = normalizeArabicForSpeech(text);
       if (!speechText.trim()) return Promise.resolve();
 
-      const url = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ar&q=${encodeURIComponent(speechText)}`;
+      const url = speechUrl(speechText);
       if (currentAudio) {
         currentAudio.pause();
         currentAudio = null;
@@ -1472,6 +1488,7 @@
 
       elements.choices.replaceChildren();
       options.forEach((option) => {
+        preloadArabic(option.ar);
         const button = document.createElement("button");
         button.type = "button";
         button.className = "choice";
@@ -1618,7 +1635,7 @@
             }
           });
         }
-      }, 1000);
+      }, completionSpeechDelay);
     }
 
     function toggleHint() {
