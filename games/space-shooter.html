@@ -74,18 +74,6 @@
       font-size: 18px;
     }
 
-    .help {
-      max-width: 360px;
-      padding: 9px 12px;
-      border: 1px solid rgba(186, 208, 223, .28);
-      border-radius: 8px;
-      background: rgba(6, 18, 33, .72);
-      color: #c9e6f2;
-      font-size: 13px;
-      font-weight: 700;
-      text-align: right;
-    }
-
     .overlay {
       position: absolute;
       inset: 0;
@@ -131,6 +119,14 @@
       font-weight: 900;
       cursor: pointer;
     }
+
+    .pause-button {
+      pointer-events: auto;
+      min-height: 36px;
+      padding: 8px 12px;
+      background: #ffcf5a;
+      color: #2a1d00;
+    }
   </style>
 </head>
 <body>
@@ -143,7 +139,7 @@
         <div class="stat"><span>火力</span><b id="power">1</b></div>
         <div class="stat"><span>阿语能量</span><b id="arabicPower">0/16</b></div>
       </div>
-      <div class="help">方向键移动，空格发射。阿语测试解锁越多，火力越强。</div>
+      <button id="pauseButton" class="pause-button" type="button" disabled>暂停</button>
     </section>
     <section id="overlay" class="overlay">
       <div class="modal">
@@ -163,6 +159,7 @@
     const arabicPowerEl = document.querySelector("#arabicPower");
     const overlay = document.querySelector("#overlay");
     const startButton = document.querySelector("#startButton");
+    const pauseButton = document.querySelector("#pauseButton");
 
     const keys = new Set();
     const player = { x: 0, y: 0, w: 34, h: 44, speed: 360, cooldown: 0 };
@@ -175,6 +172,7 @@
     let lives = 0;
     let power = 1;
     let running = false;
+    let paused = false;
     let lastTime = 0;
     let enemyTimer = 0;
     let arabicUnlocked = 0;
@@ -222,6 +220,8 @@
       powerEl.textContent = power;
       arabicPowerEl.textContent = `${arabicUnlocked}/${arabicTotal}`;
       startButton.disabled = !running && lives <= 0;
+      pauseButton.disabled = !running;
+      pauseButton.textContent = paused ? "继续" : "暂停";
     }
 
     function setOverlay(title, text, buttonText) {
@@ -299,6 +299,18 @@
         clearTimeout(musicTimer);
         musicTimer = null;
       }
+    }
+
+    function togglePause() {
+      if (!running) return;
+      paused = !paused;
+      if (paused) {
+        stopMusic();
+      } else {
+        lastTime = performance.now();
+        startMusic();
+      }
+      syncHud();
     }
 
     function shoot() {
@@ -436,6 +448,7 @@
           explode(player.x, player.y, "#ff7b8e");
           if (lives <= 0) {
             running = false;
+            paused = false;
             stopMusic();
             setOverlay("游戏结束", `最终得分：${score}。完成右侧阿语题目获得生命后才能继续。`, "需要生命");
           }
@@ -611,7 +624,7 @@
     function loop(time) {
       const dt = Math.min(.033, (time - lastTime) / 1000 || 0);
       lastTime = time;
-      if (running) update(dt);
+      if (running && !paused) update(dt);
       render();
       requestAnimationFrame(loop);
     }
@@ -620,6 +633,10 @@
       if (["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Space"].includes(event.code)) {
         event.preventDefault();
         keys.add(event.code);
+      }
+      if (event.code === "KeyP") {
+        event.preventDefault();
+        togglePause();
       }
     });
 
@@ -652,11 +669,14 @@
       }
       reset();
       running = true;
+      paused = false;
       overlay.hidden = true;
       startButton.disabled = false;
       startMusic();
       lastTime = performance.now();
     });
+
+    pauseButton.addEventListener("click", togglePause);
 
     window.addEventListener("resize", resize);
     resize();

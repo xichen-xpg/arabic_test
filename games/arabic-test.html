@@ -55,11 +55,11 @@
     .app {
       max-width: 1240px;
       margin: 0 auto;
-      padding: 24px;
+      padding: 10px;
     }
 
     .topbar {
-      display: flex;
+      display: none;
       align-items: center;
       justify-content: space-between;
       gap: 16px;
@@ -87,16 +87,16 @@
     }
 
     .panel {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.9);
-      box-shadow: 0 14px 36px rgba(31, 50, 71, 0.11);
-      backdrop-filter: blur(10px);
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      backdrop-filter: none;
     }
 
     .game {
-      padding: 24px;
-      border-top: 5px solid #55c56b;
+      padding: 0;
+      border-top: 0;
     }
 
     .meta-row {
@@ -104,7 +104,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 12px;
-      margin-bottom: 16px;
+      margin-bottom: 10px;
     }
 
     .tag {
@@ -119,6 +119,10 @@
       font-weight: 700;
     }
 
+    #categoryTag {
+      display: none;
+    }
+
     .select {
       min-height: 34px;
       border: 1px solid var(--line);
@@ -129,25 +133,22 @@
     }
 
     .question {
-      padding: 18px;
+      padding: 10px 12px;
       border: 2px solid #bad0df;
       border-radius: 8px;
       background:
         linear-gradient(180deg, rgba(255,255,255,.9), rgba(248,251,254,.9)),
         radial-gradient(circle at 96% 12%, rgba(255, 207, 90, .28), transparent 24%);
-      margin-bottom: 18px;
+      margin-bottom: 10px;
     }
 
     .question-label {
-      margin: 0 0 8px;
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 700;
+      display: none;
     }
 
     .chinese {
       margin: 0;
-      font-size: 42px;
+      font-size: 30px;
       line-height: 1.2;
       font-weight: 800;
     }
@@ -155,8 +156,8 @@
     .choices {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-      margin-bottom: 18px;
+      gap: 8px;
+      margin-bottom: 10px;
     }
 
     .choice {
@@ -164,8 +165,8 @@
       align-items: center;
       justify-content: space-between;
       gap: 10px;
-      min-height: 58px;
-      padding: 12px 14px;
+      min-height: 44px;
+      padding: 8px 10px;
       border: 2px solid var(--line);
       border-radius: 8px;
       background: #fff;
@@ -198,8 +199,8 @@
     .entry {
       display: grid;
       gap: 12px;
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
+      padding-top: 0;
+      border-top: 0;
     }
 
     .entry[hidden] {
@@ -208,13 +209,13 @@
 
     .arabic-input {
       width: 100%;
-      min-height: 58px;
-      padding: 10px 14px;
+      min-height: 48px;
+      padding: 8px 12px;
       border: 1px solid var(--line);
       border-radius: 8px;
       direction: rtl;
       font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-      font-size: 30px;
+      font-size: 26px;
       line-height: 1.25;
       text-align: right;
     }
@@ -229,6 +230,11 @@
       flex-wrap: wrap;
       gap: 10px;
       align-items: center;
+    }
+
+    #checkButton,
+    #hintButton {
+      display: none;
     }
 
     .primary,
@@ -268,7 +274,7 @@
     }
 
     .feedback {
-      min-height: 26px;
+      display: none;
       color: var(--muted);
       font-weight: 700;
     }
@@ -283,28 +289,24 @@
 
     .hint-box {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
     }
 
     .hint-item {
-      min-height: 82px;
-      padding: 12px;
+      min-height: 66px;
+      padding: 8px;
       border: 1px solid var(--line);
       border-radius: 8px;
       background: var(--soft);
     }
 
     .hint-item span {
-      display: block;
-      margin-bottom: 6px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 800;
+      display: none;
     }
 
     .hint-value {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 900;
       overflow-wrap: anywhere;
     }
@@ -313,9 +315,9 @@
       display: inline-grid;
       gap: 2px;
       min-width: 58px;
-      min-height: 48px;
+      min-height: 42px;
       place-items: center;
-      padding: 6px 10px;
+      padding: 5px 8px;
       border: 2px solid #344054;
       border-bottom-width: 5px;
       border-radius: 7px;
@@ -327,7 +329,7 @@
     }
 
     .keycap .key-main {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 900;
     }
 
@@ -944,6 +946,7 @@
     let hintEnabled = false;
     let completedCurrent = false;
     let currentAudio = null;
+    let lastValidInput = "";
     const completedByGroup = {};
 
     function emitMetrics(eventName = "metrics") {
@@ -1302,21 +1305,21 @@
 
       current = pool.pop();
       selectedCorrect = false;
-      hintEnabled = false;
+      hintEnabled = true;
       completedCurrent = false;
+      lastValidInput = "";
 
       elements.categoryTag.textContent = current.category;
       elements.chinesePrompt.textContent = current.zh;
       elements.entry.hidden = true;
       elements.arabicInput.value = "";
-      elements.feedback.textContent = "请选择正确的阿语发音。";
+      elements.feedback.textContent = "";
       elements.feedback.className = "feedback";
       elements.nextButton.disabled = true;
-      elements.hintButton.disabled = false;
-      elements.hintButton.classList.remove("active");
-      elements.hintButton.setAttribute("aria-pressed", "false");
-      elements.hintButton.textContent = "提示：关";
-      elements.checkButton.disabled = false;
+      elements.hintButton.disabled = true;
+      elements.hintButton.classList.add("active");
+      elements.hintButton.setAttribute("aria-pressed", "true");
+      elements.checkButton.disabled = true;
       updateLiveInput();
       renderChoices();
       emitMetrics("question-loaded");
@@ -1348,7 +1351,7 @@
       if (option === current.rom) {
         selectedCorrect = true;
         button.classList.add("correct");
-        elements.feedback.textContent = "发音正确。现在输入对应的阿拉伯语。";
+        elements.feedback.textContent = "";
         elements.feedback.className = "feedback success";
         elements.entry.hidden = false;
         [...elements.choices.children].forEach((choice) => {
@@ -1361,7 +1364,7 @@
 
       button.classList.add("wrong");
       button.disabled = true;
-      elements.feedback.textContent = "发音不对，再选一次。";
+      elements.feedback.textContent = "";
       elements.feedback.className = "feedback error";
     }
 
@@ -1379,27 +1382,23 @@
     function updateLiveInput() {
       if (!current) return;
 
+      const rawValue = elements.arabicInput.value;
+      const rawAnswer = current.ar;
+      if (!rawAnswer.startsWith(rawValue)) {
+        elements.arabicInput.value = lastValidInput;
+      } else {
+        lastValidInput = rawValue;
+      }
+
       const state = liveState();
 
-      if (!hintEnabled) {
-        elements.nextChar.textContent = "-";
-        renderKeyHint("");
-        elements.nextPronunciation.textContent = "-";
-      } else if (!state.matchesPrefix) {
-        elements.nextChar.textContent = "输入错误";
-        renderKeyHint("");
-        elements.nextPronunciation.textContent = "-";
-        elements.feedback.textContent = "当前输入有误，改正确后才会继续提示下一个字符。";
-        elements.feedback.className = "feedback error";
-      } else {
-        const next = state.answer[state.typed.length] || "";
-        elements.nextChar.textContent = displayChar(next);
-        renderKeyHint(next);
-        elements.nextPronunciation.textContent = pronunciationForChar(next);
-        if (!state.isComplete) {
-          elements.feedback.textContent = "提示已打开，会跟随你的输入显示下一个字符。";
-          elements.feedback.className = "feedback";
-        }
+      const next = state.answer[state.typed.length] || "";
+      elements.nextChar.textContent = displayChar(next);
+      renderKeyHint(next);
+      elements.nextPronunciation.textContent = pronunciationForChar(next);
+      if (!state.isComplete) {
+        elements.feedback.textContent = "";
+        elements.feedback.className = "feedback";
       }
 
       if (state.isComplete && !completedCurrent) {
@@ -1413,7 +1412,7 @@
       if (pieceIndex >= 0 && !completedSet().has(pieceIndex)) {
         completedSet().add(pieceIndex);
       }
-        elements.feedback.textContent = "输入正确。";
+        elements.feedback.textContent = "";
         elements.feedback.className = "feedback success";
         elements.nextButton.disabled = false;
         elements.checkButton.disabled = true;
@@ -1426,27 +1425,11 @@
     }
 
     function toggleHint() {
-      if (!current || completedCurrent) return;
-
-      hintEnabled = !hintEnabled;
-      elements.hintButton.classList.toggle("active", hintEnabled);
-      elements.hintButton.setAttribute("aria-pressed", String(hintEnabled));
-      elements.hintButton.textContent = hintEnabled ? "提示：开" : "提示：关";
       updateLiveInput();
     }
 
     function checkInput() {
-      if (!selectedCorrect || !current || completedCurrent) return;
-
-      const typed = normalizeAnswer(elements.arabicInput.value);
-      const answer = normalizeAnswer(current.ar);
-      if (typed === answer) {
-        completeQuestion();
-        return;
-      }
-
-      elements.feedback.textContent = "输入还不对，可以继续修改或使用提示。";
-      elements.feedback.className = "feedback error";
+      updateLiveInput();
     }
 
     elements.categorySelect.addEventListener("change", () => {
@@ -1467,7 +1450,7 @@
     elements.arabicInput.addEventListener("keydown", (event) => {
       if (event.key === "Enter") {
         event.preventDefault();
-        checkInput();
+        if (completedCurrent) drawQuestion();
         return;
       }
 
@@ -1479,6 +1462,11 @@
       if (mapped) {
         event.preventDefault();
         const arabicText = mapped[event.shiftKey ? 1 : 0];
+        const expected = current ? current.ar[elements.arabicInput.value.length] : "";
+        if (arabicText !== expected) {
+          updateLiveInput();
+          return;
+        }
         insertAtCursor(elements.arabicInput, arabicText);
         speakKeySound(arabicText);
       }
