@@ -1224,7 +1224,9 @@
 
     function preloadKeyAudio(char) {
       const path = keyAudioPath(char);
-      if (!path || keyAudioBuffers.has(path) || keyAudioLoads.has(path)) return;
+      if (!path) return Promise.resolve();
+      if (keyAudioBuffers.has(path)) return Promise.resolve(keyAudioBuffers.get(path));
+      if (keyAudioLoads.has(path)) return keyAudioLoads.get(path);
 
       const load = fetch(path)
         .then((response) => {
@@ -1240,6 +1242,7 @@
           keyAudioLoads.delete(path);
         });
       keyAudioLoads.set(path, load);
+      return load;
     }
 
     function playKeyAudio(char) {
@@ -1278,15 +1281,17 @@
     }
 
     function preloadCurrentQuestionAudio() {
-      if (!current) return;
+      if (!current) return Promise.resolve();
 
       preloadArabic(current.ar);
-      [...new Set(inputChars(current.ar))].forEach((char) => {
+      const loads = [...new Set(inputChars(current.ar))].map((char) => {
         const sound = arabicSoundMap[char];
         if (sound && sound !== "-") {
-          preloadKeyAudio(char);
+          return preloadKeyAudio(char);
         }
+        return Promise.resolve();
       });
+      return Promise.allSettled(loads);
     }
 
     function preloadSoftKeyboardAudio() {
@@ -1661,6 +1666,7 @@
         elements.feedback.textContent = "";
         elements.feedback.className = "feedback success";
         elements.entry.hidden = false;
+        elements.arabicInput.disabled = false;
         [...elements.choices.children].forEach((choice) => {
           choice.disabled = false;
           if (choice.textContent === current.rom) choice.classList.add("correct");
