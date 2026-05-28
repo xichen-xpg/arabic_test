@@ -1215,7 +1215,10 @@
       const path = keyAudioPath(char);
       if (!path) return Promise.reject();
 
-      const audio = new Audio(path);
+      const audio = preloadedKeyAudio.get(path) || new Audio(path);
+      preloadedKeyAudio.set(path, audio);
+      audio.pause();
+      audio.currentTime = 0;
       return audio.play();
     }
 
