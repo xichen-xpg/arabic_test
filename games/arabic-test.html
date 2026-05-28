@@ -1445,8 +1445,8 @@
     function renderChoices() {
       const wrongOptions = shuffle(allQuestions.filter((item) => item.rom !== current.rom))
         .slice(0, 3)
-        .map((item) => ({ rom: item.rom, ar: item.ar }));
-      const options = shuffle([{ rom: current.rom, ar: current.ar }, ...wrongOptions]);
+        .map((item) => ({ rom: item.rom, ar: item.ar, correct: false }));
+      const options = shuffle([{ rom: current.rom, ar: current.ar, correct: true }, ...wrongOptions]);
 
       elements.choices.replaceChildren();
       options.forEach((option) => {
@@ -1455,7 +1455,7 @@
         button.className = "choice";
         button.textContent = option.rom;
         button.addEventListener("click", () => {
-          speakArabic(option.ar);
+          speakArabic(option.correct ? current.ar : option.ar);
           choosePronunciation(button, option.rom);
         });
         elements.choices.append(button);
