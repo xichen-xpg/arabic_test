@@ -799,6 +799,50 @@
       "'": "'"
     };
 
+    const arabicKeyboardFallbackMap = {
+      "ذ": "`",
+      "ض": "Q",
+      "ص": "W",
+      "ث": "E",
+      "ق": "R",
+      "ف": "T",
+      "غ": "Y",
+      "ع": "U",
+      "ه": "I",
+      "خ": "O",
+      "ح": "P",
+      "ج": "[",
+      "د": "]",
+      "ش": "A",
+      "س": "S",
+      "ي": "D",
+      "ب": "F",
+      "ل": "G",
+      "ا": "H",
+      "ت": "J",
+      "ن": "K",
+      "م": "L",
+      "ك": ";",
+      "ط": "'",
+      "ئ": "Z",
+      "ء": "X",
+      "ؤ": "C",
+      "ر": "V",
+      "لا": "B",
+      "ى": "N",
+      "ة": "M",
+      "و": ",",
+      "ز": ".",
+      "ظ": "/",
+      "؟": "Shift + /",
+      "،": "Shift + K",
+      "؛": "Shift + ;",
+      "أ": "Shift + H",
+      "إ": "Shift + Y",
+      "آ": "Shift + N",
+      " ": "Space"
+    };
+
     const arabicPronunciationMap = {
       "ا": "a",
       "أ": "a",
@@ -988,12 +1032,21 @@
       return value.replace(/[ـ\u064B-\u0652]/g, "");
     }
 
+    function inputChars(value) {
+      return Array.from(normalizeLive(value));
+    }
+
+    function nextInputChar(answer, typed) {
+      return inputChars(answer)[inputChars(typed).length] || "";
+    }
+
     function displayChar(char) {
       if (char === " ") return "空格";
       return char || "-";
     }
 
     function keyForChar(char) {
+      if (arabicKeyboardFallbackMap[char]) return arabicKeyboardFallbackMap[char];
       if (arabicKeyMap[char]) return arabicKeyMap[char];
 
       const match = Object.entries(arabicCodeMap).find(([, values]) => values.includes(char));
@@ -1038,7 +1091,7 @@
       elements.nextKey.replaceChildren();
 
       const key = keyForChar(char);
-      if (key === "-") {
+      if (key === "-" || key === char) {
         elements.nextKey.textContent = "-";
         return;
       }
@@ -1411,7 +1464,7 @@
 
       const state = liveState();
 
-      const next = state.answer[state.typed.length] || "";
+      const next = nextInputChar(current.ar, elements.arabicInput.value);
       elements.nextChar.textContent = displayChar(next);
       renderKeyHint(next);
       elements.nextPronunciation.textContent = pronunciationForChar(next);
