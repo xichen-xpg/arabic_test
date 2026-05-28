@@ -293,6 +293,32 @@
       gap: 8px;
     }
 
+    .soft-keyboard {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 6px;
+    }
+
+    .soft-key {
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fff;
+      color: var(--ink);
+      font-size: 22px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .soft-key:hover:not(:disabled) {
+      border-color: var(--accent);
+      background: #e7f6f3;
+    }
+
+    .soft-key:disabled {
+      opacity: .42;
+    }
+
     .hint-item {
       min-height: 66px;
       padding: 8px;
@@ -529,6 +555,7 @@
               <div id="nextPronunciation" class="hint-value">-</div>
             </div>
           </div>
+          <div id="softKeyboard" class="soft-keyboard" aria-label="Arabic soft keyboard"></div>
         </div>
 
         <p id="feedback" class="feedback" aria-live="polite"></p>
@@ -967,6 +994,13 @@
       Space: [" ", " "]
     };
 
+    const softKeyboardLetters = [
+      "ا", "ب", "ت", "ث", "ج", "ح", "خ",
+      "د", "ذ", "ر", "ز", "س", "ش", "ص",
+      "ض", "ط", "ظ", "ع", "غ", "ف", "ق",
+      "ك", "ل", "م", "ن", "ه", "و", "ي"
+    ];
+
     const elements = {
       categoryTag: document.querySelector("#categoryTag"),
       categorySelect: document.querySelector("#categorySelect"),
@@ -981,7 +1015,8 @@
       nextButton: document.querySelector("#nextButton"),
       nextChar: document.querySelector("#nextChar"),
       nextKey: document.querySelector("#nextKey"),
-      nextPronunciation: document.querySelector("#nextPronunciation")
+      nextPronunciation: document.querySelector("#nextPronunciation"),
+      softKeyboard: document.querySelector("#softKeyboard")
     };
 
     let pool = [];
@@ -1394,6 +1429,7 @@
       elements.checkButton.disabled = true;
       updateLiveInput();
       renderChoices();
+      renderSoftKeyboard();
       emitMetrics("question-loaded");
     }
 
@@ -1417,6 +1453,28 @@
       });
     }
 
+    function renderSoftKeyboard() {
+      elements.softKeyboard.replaceChildren();
+      softKeyboardLetters.forEach((letter) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "soft-key";
+        button.textContent = letter;
+        button.disabled = !selectedCorrect || completedCurrent;
+        button.addEventListener("click", () => {
+          if (!selectedCorrect || completedCurrent) return;
+          const expected = nextInputChar(current.ar, elements.arabicInput.value);
+          if (letter !== expected) {
+            updateLiveInput();
+            return;
+          }
+          insertAtCursor(elements.arabicInput, letter);
+          speakKeySound(letter);
+        });
+        elements.softKeyboard.append(button);
+      });
+    }
+
     function choosePronunciation(button, option) {
       if (selectedCorrect) return;
 
@@ -1431,6 +1489,7 @@
           if (choice.textContent === current.rom) choice.classList.add("correct");
         });
         elements.arabicInput.focus();
+        renderSoftKeyboard();
         return;
       }
 
@@ -1493,6 +1552,7 @@
         renderKeyHint("");
         elements.nextPronunciation.textContent = "-";
         speakArabic(current.ar);
+        renderSoftKeyboard();
         emitMetrics("question-completed");
     }
 
