@@ -498,8 +498,7 @@
     }
 
     @media (max-width: 640px) {
-      .choices,
-      .hint-box {
+      .choices {
         grid-template-columns: 1fr;
       }
 
@@ -549,6 +548,7 @@
             <button id="hintButton" class="secondary" type="button" aria-pressed="false">提示：关</button>
             <button id="nextButton" class="ghost" type="button" disabled>下一题</button>
           </div>
+          <div id="softKeyboard" class="soft-keyboard" aria-label="Arabic soft keyboard"></div>
           <div class="hint-box" aria-live="polite">
             <div class="hint-item">
               <span>下一个字符</span>
@@ -563,7 +563,6 @@
               <div id="nextPronunciation" class="hint-value">-</div>
             </div>
           </div>
-          <div id="softKeyboard" class="soft-keyboard" aria-label="Arabic soft keyboard"></div>
         </div>
 
         <p id="feedback" class="feedback" aria-live="polite"></p>
