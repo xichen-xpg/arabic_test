@@ -1046,6 +1046,7 @@
     let lastValidInput = "";
     const completionSpeechDelay = 200;
     const finalKeySpeechDelay = 80;
+    const keyAudioVersion = "2";
     const preloadedSpeech = new Map();
     const keyAudioBuffers = new Map();
     const keyAudioLoads = new Map();
@@ -1202,7 +1203,7 @@
     }
 
     function keyAudioPath(char) {
-      return arabicSoundMap[char] ? `../assets/audio/letters/${audioKey(char)}.mp3` : "";
+      return arabicSoundMap[char] ? `../assets/audio/letters/${audioKey(char)}.mp3?v=${keyAudioVersion}` : "";
     }
 
     function ensureKeyAudioContext() {
@@ -1221,31 +1222,6 @@
       return keyAudioOutput;
     }
 
-    function trimAudioBuffer(buffer) {
-      const sampleRate = buffer.sampleRate;
-      const threshold = 0.012;
-      let start = 0;
-      let end = buffer.length - 1;
-
-      const channelData = Array.from({ length: buffer.numberOfChannels }, (_, index) => buffer.getChannelData(index));
-      while (start < end && channelData.every((data) => Math.abs(data[start]) < threshold)) {
-        start += 1;
-      }
-      while (end > start && channelData.every((data) => Math.abs(data[end]) < threshold)) {
-        end -= 1;
-      }
-
-      const leadIn = Math.floor(sampleRate * 0.012);
-      const trimStart = Math.max(0, start - leadIn);
-      const frameCount = Math.max(1, end - trimStart + 1);
-      const audio = ensureKeyAudioContext();
-      const trimmed = audio.createBuffer(buffer.numberOfChannels, frameCount, sampleRate);
-      channelData.forEach((data, channel) => {
-        trimmed.copyToChannel(data.subarray(trimStart, trimStart + frameCount), channel);
-      });
-      return trimmed;
-    }
-
     function preloadKeyAudio(char) {
       const path = keyAudioPath(char);
       if (!path || keyAudioBuffers.has(path) || keyAudioLoads.has(path)) return;
@@ -1256,7 +1232,6 @@
           return response.arrayBuffer();
         })
         .then((data) => ensureKeyAudioContext().decodeAudioData(data))
-        .then(trimAudioBuffer)
         .then((buffer) => {
           keyAudioBuffers.set(path, buffer);
           return buffer;
