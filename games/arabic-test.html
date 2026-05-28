@@ -1046,6 +1046,7 @@
     let lastValidInput = "";
     const completionSpeechDelay = 200;
     const preloadedSpeech = new Map();
+    const preloadedKeyAudio = new Map();
     const completedByGroup = {};
 
     function emitMetrics(eventName = "metrics") {
@@ -1192,6 +1193,32 @@
       audio.load();
     }
 
+    function audioKey(text) {
+      return [...text].map((char) => `u${char.codePointAt(0).toString(16).padStart(4, "0")}`).join("-");
+    }
+
+    function keyAudioPath(char) {
+      return arabicSoundMap[char] ? `../assets/audio/letters/${audioKey(char)}.mp3` : "";
+    }
+
+    function preloadKeyAudio(char) {
+      const path = keyAudioPath(char);
+      if (!path || preloadedKeyAudio.has(path)) return;
+
+      const audio = new Audio(path);
+      audio.preload = "auto";
+      preloadedKeyAudio.set(path, audio);
+      audio.load();
+    }
+
+    function playKeyAudio(char) {
+      const path = keyAudioPath(char);
+      if (!path) return Promise.reject();
+
+      const audio = new Audio(path);
+      return audio.play();
+    }
+
     function preloadCurrentQuestionAudio() {
       if (!current) return;
 
@@ -1199,6 +1226,7 @@
       [...new Set(inputChars(current.ar))].forEach((char) => {
         const sound = arabicSoundMap[char];
         if (sound && sound !== "-") {
+          preloadKeyAudio(char);
           preloadArabic(sound);
         }
       });
@@ -1208,7 +1236,7 @@
       softKeyboardLetters.forEach((char) => {
         const sound = arabicSoundMap[char];
         if (sound && sound !== "-") {
-          preloadArabic(sound);
+          preloadKeyAudio(char);
         }
       });
     }
@@ -1275,7 +1303,7 @@
     function speakKeySound(text) {
       const sound = arabicSoundMap[text];
       if (!sound || sound === "-") return;
-      speakArabic(sound);
+      playKeyAudio(text).catch(() => speakArabic(sound));
     }
 
     function insertAtCursor(input, text) {
