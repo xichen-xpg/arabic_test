@@ -203,6 +203,7 @@
     let paused = false;
     let activePlayTime = 0;
     let abilityHeld = false;
+    let playerInvulnerable = 0;
     let lastTime = 0;
     let enemyTimer = 0;
     let smallEnemyScore = 0;
@@ -246,6 +247,7 @@
       smallEnemyScore = 0;
       bossLevel = 1;
       activePlayTime = 0;
+      playerInvulnerable = 0;
       updatePowerFromArabic();
       syncHud();
     }
@@ -412,6 +414,26 @@
       return (circle.x - cx) ** 2 + (circle.y - cy) ** 2 <= circle.r ** 2;
     }
 
+    function hitRectRect(a, b) {
+      return Math.abs(a.x - b.x) * 2 < a.w + b.w && Math.abs(a.y - b.y) * 2 < a.h + b.h;
+    }
+
+    function damagePlayer() {
+      if (playerInvulnerable > 0) return false;
+
+      lives -= 1;
+      playerInvulnerable = .9;
+      playHitSound();
+      explode(player.x, player.y, "#ff7b8e");
+      if (lives <= 0) {
+        running = false;
+        paused = false;
+        stopMusic();
+        setOverlay("游戏结束", `最终得分：${score}。完成右侧阿语题目可以获得生命。`, "需要生命");
+      }
+      return true;
+    }
+
     function explode(x, y, color = "#ffcf5a") {
       for (let i = 0; i < 14; i += 1) {
         const a = Math.random() * Math.PI * 2;
@@ -448,6 +470,7 @@
       player.x = Math.max(22, Math.min(rect.width - 22, player.x));
       player.y = Math.max(46, Math.min(rect.height - 28, player.y));
       player.cooldown = Math.max(0, player.cooldown - dt);
+      playerInvulnerable = Math.max(0, playerInvulnerable - dt);
       if (keys.has("Space")) shoot();
 
       stars.forEach((star) => {
@@ -528,20 +551,23 @@
         }
       });
       bullets = bullets.filter((bullet) => !bullet.dead);
+
+      enemies.forEach((enemy) => {
+        if (enemy.hp > 0 && hitRectRect(player, enemy)) {
+          enemy.hp = 0;
+          explode(enemy.x, enemy.y);
+          damagePlayer();
+        }
+      });
+      if (boss && hitRectRect(player, boss)) {
+        damagePlayer();
+      }
       enemies = enemies.filter((enemy) => enemy.hp > 0 && enemy.y < rect.height + 60);
 
       enemyBullets.forEach((bullet) => {
         if ((bullet.x - player.x) ** 2 + (bullet.y - player.y) ** 2 < (bullet.r + 16) ** 2) {
           bullet.dead = true;
-          lives -= 1;
-          playHitSound();
-          explode(player.x, player.y, "#ff7b8e");
-          if (lives <= 0) {
-            running = false;
-            paused = false;
-            stopMusic();
-            setOverlay("游戏结束", `最终得分：${score}。完成右侧阿语题目获得生命后才能继续。`, "需要生命");
-          }
+          damagePlayer();
         }
       });
       enemyBullets = enemyBullets.filter((bullet) => !bullet.dead);
