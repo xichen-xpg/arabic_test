@@ -254,6 +254,21 @@ span.check {
   cursor: pointer;
 }
 
+
+#game-version-badge {
+  position: absolute;
+  left: 10px;
+  bottom: 8px;
+  z-index: 6;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 900;
+  pointer-events: none;
+}
 #game-canvas {
   display: block;
   margin-left: auto;
