@@ -22,35 +22,16 @@
       padding: 10px;
     }
 
-    .game-bar {
-      height: 42px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 10px;
-    }
-
-    .game-select {
-      min-width: 180px;
-      height: 34px;
-      border: 1px solid rgba(215, 222, 232, .75);
-      border-radius: 8px;
-      padding: 0 12px;
-      background: #fff;
-      color: #0b1220;
-      font: 700 15px/1 "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
-    }
-
     .layout {
       display: grid;
-      grid-template-columns: minmax(520px, 1fr) 390px;
+      grid-template-columns: minmax(500px, 1fr) 430px;
       gap: 10px;
-      min-height: calc(100vh - 72px);
+      min-height: calc(100vh - 20px);
     }
 
     .pane {
       min-width: 0;
-      min-height: calc(100vh - 72px);
+      min-height: calc(100vh - 20px);
       overflow: hidden;
       border: 1px solid rgba(215, 222, 232, .75);
       border-radius: 10px;
@@ -60,7 +41,7 @@
     iframe {
       display: block;
       width: 100%;
-      height: calc(100vh - 72px);
+      height: calc(100vh - 20px);
       min-height: 620px;
       border: 0;
       background: #fff;
@@ -88,12 +69,6 @@
 </head>
 <body>
   <main class="shell">
-    <div class="game-bar">
-      <select id="gameSelect" class="game-select" aria-label="选择游戏">
-        <option value="games/space-shooter.html">雷电</option>
-        <option value="https://gorisanson.github.io/pikachu-volleyball/zh/">Pikachu</option>
-      </select>
-    </div>
     <section class="layout">
       <section class="pane">
         <iframe id="mainGameFrame" title="game" src="games/space-shooter.html"></iframe>
@@ -106,7 +81,6 @@
 
   <script>
     const mainGameFrame = document.querySelector("#mainGameFrame");
-    const gameSelect = document.querySelector("#gameSelect");
     let latestArabicMetrics = null;
 
     function forwardArabicMetrics() {
@@ -118,15 +92,18 @@
     }
 
     window.addEventListener("message", (event) => {
-      if (event.data?.type !== "arabic-test:metrics") return;
-      latestArabicMetrics = event.data.payload;
-      forwardArabicMetrics();
+      if (event.data?.type === "arabic-test:metrics") {
+        latestArabicMetrics = event.data.payload;
+        forwardArabicMetrics();
+        return;
+      }
+
+      if (event.data?.type === "hub:select-game") {
+        mainGameFrame.src = event.data.payload?.src || "games/space-shooter.html";
+      }
     });
 
     mainGameFrame.addEventListener("load", forwardArabicMetrics);
-    gameSelect.addEventListener("change", () => {
-      mainGameFrame.src = gameSelect.value;
-    });
   </script>
 </body>
 </html>

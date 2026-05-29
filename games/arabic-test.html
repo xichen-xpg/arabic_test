@@ -102,7 +102,7 @@
     .meta-row {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
       gap: 12px;
       margin-bottom: 10px;
     }
@@ -124,12 +124,18 @@
     }
 
     .select {
+      flex: 1 1 0;
+      min-width: 0;
       min-height: 34px;
       border: 1px solid var(--line);
       border-radius: 7px;
       background: #fff;
       color: var(--ink);
       padding: 5px 8px;
+    }
+
+    .game-select {
+      flex: 0 0 132px;
     }
 
     .question {
@@ -541,6 +547,10 @@
           <select id="categorySelect" class="select" aria-label="题库分类">
             <option value="source:restaurant">餐厅题库</option>
             <option value="source:best-friend">Best Friend 题库</option>
+          </select>
+          <select id="gameSelect" class="select game-select" aria-label="选择游戏">
+            <option value="games/space-shooter.html">雷电</option>
+            <option value="https://gorisanson.github.io/pikachu-volleyball/zh/">Pikachu</option>
           </select>
         </div>
 
@@ -1021,6 +1031,7 @@
     const elements = {
       categoryTag: document.querySelector("#categoryTag"),
       categorySelect: document.querySelector("#categorySelect"),
+      gameSelect: document.querySelector("#gameSelect"),
       chinesePrompt: document.querySelector("#chinesePrompt"),
       choices: document.querySelector("#choices"),
       entry: document.querySelector("#entry"),
@@ -1724,6 +1735,14 @@
       pool = [];
       drawQuestion();
       emitMetrics("source-changed");
+    });
+    elements.gameSelect.addEventListener("change", () => {
+      window.parent.postMessage({
+        type: "hub:select-game",
+        payload: {
+          src: elements.gameSelect.value
+        }
+      }, "*");
     });
     elements.hintButton.addEventListener("click", toggleHint);
     elements.checkButton.addEventListener("click", checkInput);
