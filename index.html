@@ -84,7 +84,7 @@
     let latestArabicMetrics = null;
     const gameSourceMap = {
       shooter: "games/space-shooter.html",
-      pikachu: "games/pikachu-volleyball/zh/?v=20260529b"
+      pikachu: "games/pikachu-volleyball/zh/?v=20260529c"
     };
 
     function forwardArabicMetrics() {
@@ -110,7 +110,11 @@
       }
     });
 
-    mainGameFrame.addEventListener("load", forwardArabicMetrics);
+    mainGameFrame.addEventListener("load", () => {
+      forwardArabicMetrics();
+      window.setTimeout(forwardArabicMetrics, 600);
+      window.setTimeout(forwardArabicMetrics, 1600);
+    });
   </script>
 </body>
 </html>

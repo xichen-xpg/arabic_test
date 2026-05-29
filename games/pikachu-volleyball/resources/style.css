@@ -227,7 +227,7 @@ span.check {
   top: 8px;
   z-index: 5;
   transform: translateX(-50%);
-  max-width: calc(100% - 24px);
+  max-width: calc(100% - 120px);
   padding: 8px 14px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.86);
@@ -236,6 +236,22 @@ span.check {
   font-weight: 900;
   text-align: center;
   pointer-events: none;
+}
+
+#arabic-gate-toggle {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  z-index: 6;
+  min-width: 72px;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(35, 38, 41, 0.92);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
 }
 
 #game-canvas {
