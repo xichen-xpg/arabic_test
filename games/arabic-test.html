@@ -554,7 +554,7 @@
           </select>
           <select id="gameSelect" class="select game-select" aria-label="选择游戏">
             <option value="games/space-shooter.html">雷电</option>
-            <option value="games/pikachu-volleyball/zh/?v=20260529c">Pikachu</option>
+            <option value="games/pikachu-volleyball/zh/?v=20260529d">Pikachu</option>
           </select>
         </div>
 
@@ -1748,6 +1748,25 @@
         }
       }, "*");
     });
+    const pikachuControlCodes = new Set([
+      "ArrowLeft",
+      "ArrowRight",
+      "ArrowUp",
+      "ArrowDown",
+      "Enter"
+    ]);
+    function forwardPikachuControl(event, isDown) {
+      if (!pikachuControlCodes.has(event.code)) return;
+      window.parent.postMessage({
+        type: "hub:pikachu-key",
+        payload: {
+          code: event.code,
+          isDown
+        }
+      }, "*");
+    }
+    window.addEventListener("keydown", (event) => forwardPikachuControl(event, true));
+    window.addEventListener("keyup", (event) => forwardPikachuControl(event, false));
     elements.hintButton.addEventListener("click", toggleHint);
     elements.checkButton.addEventListener("click", checkInput);
     elements.nextButton.addEventListener("click", drawQuestion);

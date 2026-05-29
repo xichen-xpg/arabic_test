@@ -84,8 +84,15 @@
     let latestArabicMetrics = null;
     const gameSourceMap = {
       shooter: "games/space-shooter.html",
-      pikachu: "games/pikachu-volleyball/zh/?v=20260529c"
+      pikachu: "games/pikachu-volleyball/zh/?v=20260529d"
     };
+    const pikachuControlCodes = new Set([
+      "ArrowLeft",
+      "ArrowRight",
+      "ArrowUp",
+      "ArrowDown",
+      "Enter"
+    ]);
 
     function forwardArabicMetrics() {
       if (!latestArabicMetrics) return;
@@ -96,6 +103,11 @@
     }
 
     window.addEventListener("message", (event) => {
+      if (event.data?.type === "hub:pikachu-key") {
+        forwardPikachuKey(event.data.payload);
+        return;
+      }
+
       if (event.data?.type === "arabic-test:metrics") {
         latestArabicMetrics = event.data.payload;
         forwardArabicMetrics();
@@ -115,6 +127,29 @@
       window.setTimeout(forwardArabicMetrics, 600);
       window.setTimeout(forwardArabicMetrics, 1600);
     });
+
+    function isPikachuActive() {
+      return mainGameFrame.src.toLowerCase().includes("pikachu-volleyball");
+    }
+
+    function forwardPikachuKey(payload) {
+      if (!isPikachuActive() || !pikachuControlCodes.has(payload?.code)) return;
+      mainGameFrame.contentWindow?.postMessage({
+        type: "hub:pikachu-key",
+        payload
+      }, "*");
+    }
+
+    function handlePikachuControl(event, isDown) {
+      if (!pikachuControlCodes.has(event.code)) return;
+      forwardPikachuKey({
+        code: event.code,
+        isDown
+      });
+    }
+
+    window.addEventListener("keydown", (event) => handlePikachuControl(event, true));
+    window.addEventListener("keyup", (event) => handlePikachuControl(event, false));
   </script>
 </body>
 </html>
