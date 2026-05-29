@@ -82,6 +82,10 @@
   <script>
     const mainGameFrame = document.querySelector("#mainGameFrame");
     let latestArabicMetrics = null;
+    const gameSourceMap = {
+      shooter: "games/space-shooter.html",
+      pikachu: "games/pikachu.html?v=20260529a"
+    };
 
     function forwardArabicMetrics() {
       if (!latestArabicMetrics) return;
@@ -99,7 +103,10 @@
       }
 
       if (event.data?.type === "hub:select-game") {
-        mainGameFrame.src = event.data.payload?.src || "games/space-shooter.html";
+        const requested = event.data.payload?.src || "";
+        mainGameFrame.src = requested.toLowerCase().includes("pikachu")
+          ? gameSourceMap.pikachu
+          : gameSourceMap.shooter;
       }
     });
 
