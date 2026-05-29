@@ -145,7 +145,7 @@ a:active {
   text-align: left;
 }
 #menu-bar {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
