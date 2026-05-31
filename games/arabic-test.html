@@ -169,7 +169,7 @@
     .choice {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       gap: 10px;
       min-height: 44px;
       padding: 8px 10px;
@@ -203,7 +203,16 @@
     }
 
     .choice-rom {
+      display: none;
       overflow-wrap: anywhere;
+    }
+
+    .choice.show-rom {
+      justify-content: space-between;
+    }
+
+    .choice.show-rom .choice-rom {
+      display: inline;
     }
 
     .choice-arabic {
@@ -1576,6 +1585,7 @@
         const button = document.createElement("button");
         button.type = "button";
         button.className = "choice";
+        button.dataset.correct = option.correct ? "true" : "false";
         const rom = document.createElement("span");
         rom.className = "choice-rom";
         rom.textContent = option.rom;
@@ -1587,7 +1597,7 @@
         button.append(rom, arabic);
         button.addEventListener("click", () => {
           speakArabic(option.correct ? current.ar : option.ar);
-          choosePronunciation(button, option.rom);
+          choosePronunciation(button, option);
         });
         elements.choices.append(button);
       });
@@ -1632,16 +1642,20 @@
     function choosePronunciation(button, option) {
       if (selectedCorrect) return;
 
-      if (option === current.rom) {
+      if (option.correct) {
         selectedCorrect = true;
         button.classList.add("correct");
+        button.classList.add("show-rom");
         elements.feedback.textContent = "";
         elements.feedback.className = "feedback success";
         elements.entry.hidden = false;
         elements.arabicInput.disabled = false;
         [...elements.choices.children].forEach((choice) => {
           choice.disabled = false;
-          if (choice.textContent === current.rom) choice.classList.add("correct");
+          if (choice.dataset.correct === "true") {
+            choice.classList.add("correct");
+            choice.classList.add("show-rom");
+          }
         });
         elements.arabicInput.focus();
         renderSoftKeyboard();
