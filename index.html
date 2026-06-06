@@ -134,7 +134,6 @@
     let nfs2Timer = null;
     let nfs2Window = null;
     const nfs2RewardSeconds = 60;
-    const nfs2WrapperUrl = "games/nfs2-wrapper.html";
     const nfs2Channel = "BroadcastChannel" in window
       ? new BroadcastChannel("nfs2-reward")
       : null;
@@ -182,7 +181,7 @@
 
     function openNfs2Tab() {
       if (!nfs2Window || nfs2Window.closed) {
-        nfs2Window = window.open(nfs2WrapperUrl, "nfs2RewardTab");
+        nfs2Window = window.open(gameSourceMap.nfs2, "nfs2RewardTab");
       } else {
         nfs2Window.focus();
       }
