@@ -77,6 +77,7 @@ function setOverlayVisible(visible) {
 
 function handleRewardCommand(message) {
   if (message?.type !== "nfs2-reward") return;
+  console.info("[NFS2 Reward]", message.action, message.reason || "", message.seconds || "");
 
   if (message.action === "lock") {
     clickControl("lock");
