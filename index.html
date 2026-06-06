@@ -195,6 +195,7 @@
         action,
         ...details
       };
+      window.postMessage(message, "*");
       nfs2Channel?.postMessage(message);
       if (nfs2Window && !nfs2Window.closed) {
         nfs2Window.postMessage(message, "*");
