@@ -201,6 +201,13 @@
       }
     }
 
+    function sendNfs2CommandWithRetries(action, details = {}) {
+      sendNfs2Command(action, details);
+      [800, 2000, 5000].forEach((delay) => {
+        window.setTimeout(() => sendNfs2Command(action, details), delay);
+      });
+    }
+
     function lockNfs2(reason = "时间到了") {
       stopNfs2Timer();
       nfs2RemainingSeconds = 0;
@@ -261,6 +268,8 @@
             "浏览器拦截了新标签页",
             "请允许弹出窗口后，再重新选择极品飞车2。"
           );
+        } else {
+          sendNfs2CommandWithRetries("lock", { reason: "需要先完成阿语题" });
         }
         return;
       }
