@@ -1879,6 +1879,12 @@
       emitMetrics("source-changed");
     });
     elements.gameSelect.addEventListener("change", () => {
+      if (elements.gameSelect.value.includes("retroonline.net") && window.parent === window) {
+        elements.gameSelect.value = "games/space-shooter.html";
+        elements.feedback.textContent = "请从 index.html 打开，极品飞车2需要外层页面控制倒计时。";
+        elements.feedback.className = "feedback error";
+        return;
+      }
       window.parent.postMessage({
         type: "hub:select-game",
         payload: {
