@@ -133,14 +133,16 @@
     let nfs2RemainingSeconds = 0;
     let nfs2Timer = null;
     let nfs2Window = null;
+    let sharedLifeSpent = 0;
+    const sharedCompletedTokens = new Set();
     const nfs2RewardSeconds = 60;
     const nfs2Channel = "BroadcastChannel" in window
       ? new BroadcastChannel("nfs2-reward")
       : null;
     const gameSourceMap = {
       shooter: "games/space-shooter.html",
-      pikachu: "games/pikachu-volleyball/zh/index.html?v=20260529v",
-      nfs2: "https://retroonline.net/Windows/Need%20for%20Speed%20II%20SE"
+      pikachu: "games/pikachu-volleyball/zh/index.html?v=20260614life",
+      nfs2: "need_for_speed/Need%20for%20Speed%20II%20SE%20-%20Play%20in%20Browser%20for%20Free%20-%20Retro%20Online.html"
     };
     const pikachuControlCodes = new Set([
       "ArrowLeft",
@@ -156,6 +158,25 @@
         type: "hub:arabic-metrics",
         payload: latestArabicMetrics
       }, "*");
+    }
+
+    function sharedLives() {
+      return Math.max(0, sharedCompletedTokens.size - sharedLifeSpent);
+    }
+
+    function syncSharedLifeMetrics(payload = latestArabicMetrics || {}) {
+      const completedTokens = Array.isArray(payload.completedTokens) ? payload.completedTokens : [];
+      completedTokens.forEach((token) => sharedCompletedTokens.add(token));
+      const totalQuestions = Number(payload.totalQuestions || 0);
+      const completedQuestions = Number(payload.completedQuestions || 0);
+      latestArabicMetrics = {
+        ...payload,
+        completedTokens: [...sharedCompletedTokens],
+        lives: sharedLives(),
+        sharedLives: sharedLives(),
+        sourceCompleted: totalQuestions > 0 && completedQuestions >= totalQuestions
+      };
+      return latestArabicMetrics;
     }
 
     function isNfs2Source(src = activeGameSource) {
@@ -286,11 +307,19 @@
       }
 
       if (event.data?.type === "arabic-test:metrics") {
-        latestArabicMetrics = event.data.payload;
+        latestArabicMetrics = syncSharedLifeMetrics(event.data.payload);
         forwardArabicMetrics();
         if (latestArabicMetrics.event === "question-completed") {
           unlockNfs2();
         }
+        return;
+      }
+
+      if (event.data?.type === "game:life-spent") {
+        const amount = Math.max(1, Number(event.data.payload?.amount || 1));
+        sharedLifeSpent = Math.min(sharedCompletedTokens.size, sharedLifeSpent + amount);
+        syncSharedLifeMetrics();
+        forwardArabicMetrics();
         return;
       }
 

@@ -563,8 +563,8 @@
           </select>
           <select id="gameSelect" class="select game-select" aria-label="选择游戏">
             <option value="games/space-shooter.html">雷电</option>
-            <option value="games/pikachu-volleyball/zh/index.html?v=20260529v">Pikachu</option>
-            <option value="https://retroonline.net/Windows/Need%20for%20Speed%20II%20SE">极品飞车2</option>
+            <option value="games/pikachu-volleyball/zh/index.html?v=20260614life">Pikachu</option>
+            <option value="need_for_speed/Need%20for%20Speed%20II%20SE%20-%20Play%20in%20Browser%20for%20Free%20-%20Retro%20Online.html">极品飞车2</option>
           </select>
         </div>
 
@@ -1212,6 +1212,7 @@
           completedQuestions: completed.size,
           completedTokens,
           totalQuestions: total,
+          sourceCompleted: total > 0 && completed.size >= total,
           currentQuestion: current ? {
             id: current.id,
             category: current.category,
@@ -1879,7 +1880,7 @@
       emitMetrics("source-changed");
     });
     elements.gameSelect.addEventListener("change", () => {
-      if (elements.gameSelect.value.includes("retroonline.net") && window.parent === window) {
+      if (elements.gameSelect.value.includes("Need%20for%20Speed%20II%20SE") && window.parent === window) {
         elements.gameSelect.value = "games/space-shooter.html";
         elements.feedback.textContent = "请从 index.html 打开，极品飞车2需要外层页面控制倒计时。";
         elements.feedback.className = "feedback error";

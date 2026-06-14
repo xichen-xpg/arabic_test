@@ -212,6 +212,7 @@
     let bossLevel = 1;
     let arabicUnlocked = 0;
     let arabicTotal = 16;
+    let sourceCompleted = false;
     let audioContext = null;
     let musicTimer = null;
     let musicStep = 0;
@@ -458,6 +459,10 @@
       if (playerInvulnerable > 0) return false;
 
       lives -= 1;
+      window.parent.postMessage({
+        type: "game:life-spent",
+        payload: { game: "space-shooter", amount: 1 }
+      }, "*");
       playerInvulnerable = .9;
       playHitSound();
       explode(player.x, player.y, "#ff7b8e");
@@ -496,7 +501,7 @@
     function update(dt) {
       const rect = canvas.getBoundingClientRect();
       activePlayTime += dt;
-      if (!abilityHeld && activePlayTime >= 180) {
+      if (!sourceCompleted && !abilityHeld && activePlayTime >= 180) {
         abilityHeld = true;
       }
       if (keys.has("ArrowLeft")) player.x -= player.speed * dt;
@@ -850,8 +855,16 @@
       const tokens = Array.isArray(payload.completedTokens) ? payload.completedTokens : [];
       const newTokens = tokens.filter((token) => !completedArabicTokens.has(token));
       newTokens.forEach((token) => completedArabicTokens.add(token));
-      if (newTokens.length) {
+      if (Number.isFinite(Number(payload.lives))) {
+        lives = Math.max(0, Number(payload.lives));
+      } else if (newTokens.length) {
         lives += newTokens.length;
+      }
+      sourceCompleted = Boolean(payload.sourceCompleted);
+      if (sourceCompleted && abilityHeld) {
+        abilityHeld = false;
+        activePlayTime = 0;
+      } else if (newTokens.length) {
         if (abilityHeld) {
           abilityHeld = false;
           activePlayTime = 0;
