@@ -638,12 +638,7 @@
       { category: "餐厅方位介词", zh: "在旁边 = next to", ar: "بجانب", rom: "bijanib" },
       { category: "餐厅方位介词", zh: "在里面 = in", ar: "في", rom: "fi" },
       { category: "餐厅方位介词", zh: "在外面 = outside", ar: "خارج", rom: "kharij" },
-      { category: "餐厅方位句子", zh: "我在餐厅吃饭。", ar: "أنا آكل في المطعم", rom: "ana akul fi al-mat'am" },
-      { category: "餐厅方位句子", zh: "我在餐厅外面吃饭。", ar: "أنا آكل خارج المطعم", rom: "ana akul kharij al-mat'am" },
-      { category: "餐厅方位句子", zh: "我在桌子旁边吃饭。", ar: "أنا آكل بجانب الطاولة", rom: "ana akul bijanib at-tawilah" },
-      { category: "餐厅方位句子", zh: "盘子在桌子上面。", ar: "الصحن على الطاولة", rom: "as-sahn ala at-tawilah" },
-      { category: "餐厅方位句子", zh: "桌子在椅子之间。", ar: "الطاولة بين الكراسي", rom: "at-tawilah bayna al-karasi" },
-
+      
       { category: "食物味道形容词", zh: "好吃", ar: "لذيذ", rom: "ladhidh" },
       { category: "食物味道形容词", zh: "辣", ar: "حار", rom: "har" },
       { category: "食物味道形容词", zh: "甜", ar: "حلو", rom: "hilw" },
@@ -684,14 +679,7 @@
       { category: "额外高频词", zh: "水", ar: "ماء", rom: "ma'" },
       { category: "额外高频词", zh: "果汁", ar: "عصير", rom: "asir" },
       { category: "额外高频词", zh: "大", ar: "كبير", rom: "kabir" },
-      { category: "额外高频词", zh: "小", ar: "صغير", rom: "saghir" },
-      { category: "额外高频词", zh: "我", ar: "أنا", rom: "ana" },
-      { category: "额外高频词", zh: "你", ar: "أنت", rom: "anta" },
-      { category: "额外高频词", zh: "他", ar: "هو", rom: "huwa" },
-      { category: "额外高频词", zh: "她", ar: "هي", rom: "hiya" },
-      { category: "额外高频词", zh: "我们", ar: "نحن", rom: "nahnu" },
-      { category: "额外高频词", zh: "他们（男）", ar: "هم", rom: "hum" },
-      { category: "额外高频词", zh: "她们（女）", ar: "هن", rom: "hunna" }
+      { category: "额外高频词", zh: "小", ar: "صغير", rom: "saghir" }
     ].map((item) => ({ ...item, source: "restaurant" }));
 
     const bestFriendQuestions = [
@@ -710,8 +698,6 @@
       { category: "Best Friend - 人物", zh: "女朋友/女性朋友", ar: "صديقة", rom: "sadeeqa" },
       { category: "Best Friend - 人物", zh: "最好的朋友", ar: "أفضل صديق", rom: "afdal sadeeq" },
       { category: "Best Friend - 人物", zh: "close friend", ar: "صديق مقرب", rom: "sadeeq muqarrab" },
-      { category: "Best Friend - 人物", zh: "我的男朋友/男性朋友", ar: "صديقي", rom: "sadeeqi" },
-      { category: "Best Friend - 人物", zh: "我的女朋友/女性朋友", ar: "صديقتي", rom: "sadeeqati" },
       { category: "Best Friend - 人物", zh: "老师", ar: "معلم", rom: "muallim" },
       { category: "Best Friend - 人物", zh: "学生", ar: "طالب", rom: "talib" },
 
@@ -754,7 +740,6 @@
       { category: "Best Friend - 性格与情绪", zh: "生气", ar: "غاضب", rom: "ghadib" },
       { category: "Best Friend - 性格与情绪", zh: "害怕", ar: "خائف", rom: "khaa'if" },
       { category: "Best Friend - 性格与情绪", zh: "担心", ar: "قلق", rom: "qaliq" },
-      { category: "Best Friend - 性格与情绪", zh: "伤心", ar: "حزين", rom: "hazeen" },
       { category: "Best Friend - 性格与情绪", zh: "焦虑", ar: "متوتر", rom: "mutawattir" },
       { category: "Best Friend - 性格与情绪", zh: "震惊", ar: "مصدوم", rom: "masdum" },
       { category: "Best Friend - 性格与情绪", zh: "兴奋", ar: "متحمس", rom: "mutahammas" },
@@ -764,28 +749,17 @@
       { category: "Best Friend - 价值观", zh: "创新", ar: "ابتكار", rom: "ibtikar" },
       { category: "Best Friend - 价值观", zh: "合作", ar: "تعاون", rom: "taawun" },
 
-      { category: "Best Friend - 介词", zh: "在里面 = in", ar: "في", rom: "fee" },
-      { category: "Best Friend - 介词", zh: "在上面 = on", ar: "على", rom: "ala" },
-      { category: "Best Friend - 介词", zh: "在下面 = below", ar: "تحت", rom: "taht" },
-      { category: "Best Friend - 介词", zh: "在外面 = outside", ar: "خارج", rom: "kharij" },
-      { category: "Best Friend - 介词", zh: "旁边", ar: "بجانب", rom: "bijanib" },
-      { category: "Best Friend - 介词", zh: "前面", ar: "أمام", rom: "amam" },
-      { category: "Best Friend - 介词", zh: "后面", ar: "خلف", rom: "khalf" },
-
       { category: "Best Friend - 天气", zh: "晴天", ar: "مشمس", rom: "mushmis" },
       { category: "Best Friend - 天气", zh: "下雨", ar: "ممطر", rom: "mumtir" },
       { category: "Best Friend - 天气", zh: "刮风", ar: "عاصف", rom: "asif" },
-      { category: "Best Friend - 天气", zh: "下雪", ar: "مثلج", rom: "muthlij" },
       { category: "Best Friend - 天气", zh: "有雾", ar: "ضبابي", rom: "dababi" },
       { category: "Best Friend - 天气", zh: "今天天气很好。", ar: "الطقس جميل اليوم", rom: "al-taqs jameel al-yawm" },
       { category: "Best Friend - 天气", zh: "热", ar: "حار", rom: "harr" },
       { category: "Best Friend - 天气", zh: "温暖", ar: "دافئ", rom: "dafi" },
       { category: "Best Friend - 天气", zh: "冷", ar: "بارد", rom: "barid" },
       { category: "Best Friend - 天气", zh: "雪", ar: "مثلج", rom: "muthlij" },
-      { category: "Best Friend - 天气", zh: "狂风", ar: "عاصف", rom: "asif" },
       { category: "Best Friend - 天气", zh: "多云", ar: "غائم", rom: "ghaim" },
-      { category: "Best Friend - 天气", zh: "晴朗", ar: "مشمس", rom: "mushmis" },
-
+      
       { category: "Best Friend - 季节", zh: "春天", ar: "الربيع", rom: "ar-rabee" },
       { category: "Best Friend - 季节", zh: "夏天", ar: "الصيف", rom: "as-sayf" },
       { category: "Best Friend - 季节", zh: "秋天", ar: "الخريف", rom: "al-khareef" },
@@ -812,10 +786,6 @@
       { category: "Best Friend - 星期", zh: "周六", ar: "السبت", rom: "as-sabt" },
       { category: "Best Friend - 星期", zh: "周日", ar: "الأحد", rom: "al-ahad" },
 
-      { category: "Best Friend - 动作", zh: "跑", ar: "يجري", rom: "yajri" },
-      { category: "Best Friend - 动作", zh: "跳", ar: "تقفز", rom: "taqfiz" },
-      { category: "Best Friend - 动作", zh: "玩", ar: "يلعب", rom: "yal'ab" },
-      { category: "Best Friend - 动作", zh: "踢足球", ar: "يلعب كرة القدم", rom: "yal'ab kurat al-qadam" },
       { category: "Best Friend - 动作", zh: "读书", ar: "يقرأ", rom: "yaqra" },
       { category: "Best Friend - 动作", zh: "画画", ar: "يرسم", rom: "yarsum" },
       { category: "Best Friend - 动作", zh: "游泳", ar: "يسبح", rom: "yasbah" },
@@ -828,8 +798,6 @@
       { category: "Best Friend - 动作", zh: "跑步", ar: "يجري", rom: "yajri" },
 
       { category: "Best Friend - 喜欢", zh: "喜欢", ar: "يحب", rom: "yuhibb" },
-      { category: "Best Friend - 喜欢", zh: "我喜欢蓝色。", ar: "أنا أحب اللون الأزرق", rom: "ana uhibb al-lawn al-azraq" },
-      { category: "Best Friend - 喜欢", zh: "她喜欢踢足球。", ar: "هي تحب كرة القدم", rom: "hiya tuhibb kurat al-qadam" },
       { category: "Best Friend - 喜欢", zh: "我更喜欢", ar: "أفضل", rom: "afdalu" },
       { category: "Best Friend - 喜欢", zh: "我喜欢", ar: "أنا أحب", rom: "ana uhibb" },
 
@@ -869,12 +837,6 @@
       { category: "Best Friend - 学校", zh: "科学", ar: "علوم", rom: "ulum" },
       { category: "Best Friend - 学校", zh: "时间表", ar: "جدول", rom: "jadwal" },
 
-      { category: "Best Friend - 国家", zh: "中国", ar: "الصين", rom: "as-seen" },
-      { category: "Best Friend - 国家", zh: "美国", ar: "أمريكا", rom: "amreeka" },
-      { category: "Best Friend - 国家", zh: "日本", ar: "اليابان", rom: "al-yaban" },
-      { category: "Best Friend - 国家", zh: "印度", ar: "الهند", rom: "al-hind" },
-      { category: "Best Friend - 国家", zh: "法国", ar: "فرنسا", rom: "faransa" },
-      { category: "Best Friend - 国家", zh: "加拿大", ar: "كندا", rom: "kanada" },
       { category: "Best Friend - 国家", zh: "我来自中国。", ar: "أنا من الصين", rom: "ana min as-seen" },
       { category: "Best Friend - 国家", zh: "你从哪里来？", ar: "من أين أنت؟", rom: "min ayna anta" },
 
@@ -913,12 +875,8 @@
       { category: "Best Friend - 常用句子", zh: "我七岁", ar: "عمري سبع سنوات", rom: "umri saba sanawat" },
       { category: "Best Friend - 常用句子", zh: "我十岁", ar: "عمري عشر سنوات", rom: "umri ashr sanawat" },
       { category: "Best Friend - 常用句子", zh: "你叫什么名字？", ar: "ما اسمك؟", rom: "ma ismuka" },
-      { category: "Best Friend - 常用句子", zh: "你最喜欢的食物是什么？", ar: "ما طعامك المفضل؟", rom: "ma taamuka al-mufaddal" },
       { category: "Best Friend - 常用句子", zh: "你最喜欢的颜色是什么？", ar: "ما لونك المفضل؟", rom: "ma lawnuka al-mufaddal" },
-      { category: "Best Friend - 常用句子", zh: "你最喜欢的动物是什么？", ar: "ما حيوانك المفضل؟", rom: "ma hayawanuka al-mufaddal" },
-      { category: "Best Friend - 常用句子", zh: "我最喜欢吃汉堡", ar: "طعامي المفضل هو الهامبرغر", rom: "taami al-mufaddal huwa al-hambargahr" },
-      { category: "Best Friend - 常用句子", zh: "我最喜欢绿色", ar: "لوني المفضل هو الأخضر", rom: "lawni al-mufaddal huwa al-akhdar" },
-      { category: "Best Friend - 常用句子", zh: "我最喜欢小猫", ar: "حيواني المفضل هو القطة الصغيرة", rom: "hayawani al-mufaddal huwa al-qitta as-saghira" }
+      { category: "Best Friend - 常用句子", zh: "我最喜欢绿色", ar: "لوني المفضل هو الأخضر", rom: "lawni al-mufaddal huwa al-akhdar" }
     ].map((item) => ({ ...item, source: "best-friend" }));
 
     const allQuestions = [...questions, ...bestFriendQuestions].map((item, index) => ({
