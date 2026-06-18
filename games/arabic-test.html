@@ -1202,6 +1202,7 @@
     function emitMetrics(eventName = "metrics") {
       const completed = completedSet();
       const total = activeQuestions().length;
+      const allTotal = allQuestions.length;
       const completedTokens = [...completed].map((index) => `${progressKey()}:${index}`);
       window.parent.postMessage({
         type: "arabic-test:metrics",
@@ -1212,6 +1213,8 @@
           completedQuestions: completed.size,
           completedTokens,
           totalQuestions: total,
+          sourceTotalQuestions: total,
+          allTotalQuestions: allTotal,
           sourceCompleted: total > 0 && completed.size >= total,
           currentQuestion: current ? {
             id: current.id,

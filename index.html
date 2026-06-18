@@ -167,14 +167,18 @@
     function syncSharedLifeMetrics(payload = latestArabicMetrics || {}) {
       const completedTokens = Array.isArray(payload.completedTokens) ? payload.completedTokens : [];
       completedTokens.forEach((token) => sharedCompletedTokens.add(token));
-      const totalQuestions = Number(payload.totalQuestions || 0);
+      const sourceTotalQuestions = Number(payload.sourceTotalQuestions || payload.totalQuestions || 0);
+      const totalQuestions = Number(payload.allTotalQuestions || payload.totalQuestions || 0);
       const completedQuestions = Number(payload.completedQuestions || 0);
       latestArabicMetrics = {
         ...payload,
         completedTokens: [...sharedCompletedTokens],
         lives: sharedLives(),
         sharedLives: sharedLives(),
-        sourceCompleted: totalQuestions > 0 && completedQuestions >= totalQuestions
+        totalQuestions,
+        sourceTotalQuestions,
+        allTotalQuestions: totalQuestions,
+        sourceCompleted: sourceTotalQuestions > 0 && completedQuestions >= sourceTotalQuestions
       };
       return latestArabicMetrics;
     }
