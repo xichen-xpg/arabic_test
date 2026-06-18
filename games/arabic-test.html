@@ -679,7 +679,13 @@
       { category: "额外高频词", zh: "水", ar: "ماء", rom: "ma'" },
       { category: "额外高频词", zh: "果汁", ar: "عصير", rom: "asir" },
       { category: "额外高频词", zh: "大", ar: "كبير", rom: "kabir" },
-      { category: "额外高频词", zh: "小", ar: "صغير", rom: "saghir" }
+      { category: "额外高频词", zh: "小", ar: "صغير", rom: "saghir" },
+
+      { category: "价值观", zh: "尊重", ar: "احترام", rom: "ihtiram" },
+      { category: "价值观", zh: "决心", ar: "عزيمة", rom: "azimah" },
+      { category: "价值观", zh: "诚信", ar: "أمانة", rom: "amanah" },
+      { category: "价值观", zh: "创新", ar: "ابتكار", rom: "ibtikar" },
+      { category: "价值观", zh: "合作", ar: "تعاون", rom: "taawun" }
     ].map((item) => ({ ...item, source: "restaurant" }));
 
     const bestFriendQuestions = [
@@ -696,7 +702,6 @@
       { category: "Best Friend - 人物", zh: "女孩", ar: "بنت", rom: "bint" },
       { category: "Best Friend - 人物", zh: "朋友", ar: "صديق", rom: "sadeeq" },
       { category: "Best Friend - 人物", zh: "女朋友/女性朋友", ar: "صديقة", rom: "sadeeqa" },
-      { category: "Best Friend - 人物", zh: "最好的朋友", ar: "أفضل صديق", rom: "afdal sadeeq" },
       { category: "Best Friend - 人物", zh: "close friend", ar: "صديق مقرب", rom: "sadeeq muqarrab" },
       { category: "Best Friend - 人物", zh: "老师", ar: "معلم", rom: "muallim" },
       { category: "Best Friend - 人物", zh: "学生", ar: "طالب", rom: "talib" },
@@ -710,13 +715,7 @@
       { category: "Best Friend - 家庭成员", zh: "爷爷/外公", ar: "جد", rom: "jadd" },
       { category: "Best Friend - 家庭成员", zh: "奶奶/外婆", ar: "جدة", rom: "jadda" },
       { category: "Best Friend - 家庭成员", zh: "家人", ar: "عائلة", rom: "a'ila" },
-      { category: "Best Friend - 家庭成员", zh: "我的父亲", ar: "والدي", rom: "walidi" },
-      { category: "Best Friend - 家庭成员", zh: "我的母亲", ar: "والدتي", rom: "walidati" },
-      { category: "Best Friend - 家庭成员", zh: "我的兄弟", ar: "أخي", rom: "akhi" },
-      { category: "Best Friend - 家庭成员", zh: "我的姐妹", ar: "أختي", rom: "ukhti" },
-      { category: "Best Friend - 家庭成员", zh: "我的伯父", ar: "عمي", rom: "ammi" },
-      { category: "Best Friend - 家庭成员", zh: "我的祖母", ar: "جدتي", rom: "jaddati" },
-
+      
       { category: "Best Friend - 外貌", zh: "高", ar: "طويل", rom: "taweel" },
       { category: "Best Friend - 外貌", zh: "矮", ar: "قصير", rom: "qaseer" },
       { category: "Best Friend - 外貌", zh: "胖", ar: "سمين", rom: "sameen" },
@@ -743,12 +742,7 @@
       { category: "Best Friend - 性格与情绪", zh: "焦虑", ar: "متوتر", rom: "mutawattir" },
       { category: "Best Friend - 性格与情绪", zh: "震惊", ar: "مصدوم", rom: "masdum" },
       { category: "Best Friend - 性格与情绪", zh: "兴奋", ar: "متحمس", rom: "mutahammas" },
-      { category: "Best Friend - 价值观", zh: "尊重", ar: "احترام", rom: "ihtiram" },
-      { category: "Best Friend - 价值观", zh: "决心", ar: "عزيمة", rom: "azimah" },
-      { category: "Best Friend - 价值观", zh: "诚信", ar: "أمانة", rom: "amanah" },
-      { category: "Best Friend - 价值观", zh: "创新", ar: "ابتكار", rom: "ibtikar" },
-      { category: "Best Friend - 价值观", zh: "合作", ar: "تعاون", rom: "taawun" },
-
+      
       { category: "Best Friend - 天气", zh: "晴天", ar: "مشمس", rom: "mushmis" },
       { category: "Best Friend - 天气", zh: "下雨", ar: "ممطر", rom: "mumtir" },
       { category: "Best Friend - 天气", zh: "刮风", ar: "عاصف", rom: "asif" },
@@ -799,8 +793,7 @@
 
       { category: "Best Friend - 喜欢", zh: "喜欢", ar: "يحب", rom: "yuhibb" },
       { category: "Best Friend - 喜欢", zh: "我更喜欢", ar: "أفضل", rom: "afdalu" },
-      { category: "Best Friend - 喜欢", zh: "我喜欢", ar: "أنا أحب", rom: "ana uhibb" },
-
+      
       { category: "Best Friend - 颜色", zh: "红色", ar: "أحمر", rom: "ahmar" },
       { category: "Best Friend - 颜色", zh: "蓝色", ar: "أزرق", rom: "azraq" },
       { category: "Best Friend - 颜色", zh: "绿色", ar: "أخضر", rom: "akhdar" },
@@ -827,8 +820,7 @@
       { category: "Best Friend - 地点", zh: "银行", ar: "بنك", rom: "bank" },
       { category: "Best Friend - 地点", zh: "池塘", ar: "بركة", rom: "birka" },
       { category: "Best Friend - 地点", zh: "沙滩", ar: "شاطئ", rom: "shati" },
-      { category: "Best Friend - 地点", zh: "mall 商场", ar: "مول", rom: "mol" },
-
+      
       { category: "Best Friend - 交通", zh: "汽车", ar: "سيارة", rom: "sayyara" },
       { category: "Best Friend - 交通", zh: "飞机", ar: "طائرة", rom: "ta'ira" },
 
@@ -839,14 +831,6 @@
 
       { category: "Best Friend - 国家", zh: "我来自中国。", ar: "أنا من الصين", rom: "ana min as-seen" },
       { category: "Best Friend - 国家", zh: "你从哪里来？", ar: "من أين أنت؟", rom: "min ayna anta" },
-
-      { category: "Best Friend - 疑问词", zh: "谁 = who", ar: "من", rom: "man" },
-      { category: "Best Friend - 疑问词", zh: "什么 = what", ar: "ماذا", rom: "madha" },
-      { category: "Best Friend - 疑问词", zh: "什么 = what", ar: "ما", rom: "ma" },
-      { category: "Best Friend - 疑问词", zh: "哪里 = where", ar: "أين", rom: "ayna" },
-      { category: "Best Friend - 疑问词", zh: "什么时候 = when", ar: "متى", rom: "mata" },
-      { category: "Best Friend - 疑问词", zh: "为什么 = why", ar: "لماذا", rom: "limadha" },
-      { category: "Best Friend - 疑问词", zh: "怎么样 = how", ar: "كيف", rom: "kayf" },
 
       { category: "Best Friend - 常用句子", zh: "这是我最好的朋友。", ar: "هذا صديقي المفضل", rom: "hadha sadeeqi al-mufaddal" },
       { category: "Best Friend - 常用句子", zh: "她很聪明。", ar: "هي ذكية جدا", rom: "hiya dhakiyya jiddan" },
