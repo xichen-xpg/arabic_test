@@ -563,6 +563,20 @@
       align-items: center;
     }
 
+    .calendar-summary {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 4px 9px;
+      border: 1px solid #9bd7b1;
+      border-radius: 7px;
+      background: #ecfdf3;
+      color: var(--success);
+      font-size: 13px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
     .calendar-grid {
       display: grid;
       grid-template-columns: repeat(7, minmax(0, 1fr));
@@ -753,6 +767,7 @@
       <div class="calendar-header">
         <h2 id="calendarTitle">每日打卡</h2>
         <div class="calendar-actions">
+          <span id="todayProgressSummary" class="calendar-summary">今天已做 0 题</span>
           <button id="prevMonthButton" class="ghost" type="button" aria-label="上个月">&lt;</button>
           <button id="todayButton" class="secondary" type="button">今天</button>
           <button id="nextMonthButton" class="ghost" type="button" aria-label="下个月">&gt;</button>
@@ -1274,6 +1289,7 @@
       mainView: document.querySelector(".main-view"),
       calendarView: document.querySelector("#calendarView"),
       calendarTitle: document.querySelector("#calendarTitle"),
+      todayProgressSummary: document.querySelector("#todayProgressSummary"),
       calendarGrid: document.querySelector("#calendarGrid"),
       prevMonthButton: document.querySelector("#prevMonthButton"),
       todayButton: document.querySelector("#todayButton"),
@@ -1367,12 +1383,33 @@
       return true;
     }
 
-    function dailyQuestionCount(dateKey) {
+    function dailyProgressBySource(dateKey) {
       const progress = loadDailyProgress();
       const byDate = progress[dateKey];
+      const result = {};
+
+      if (byDate && typeof byDate === "object") {
+        Object.entries(byDate).forEach(([source, indexes]) => {
+          if (!Array.isArray(indexes)) return;
+          result[source] = indexes.filter((index) => Number.isInteger(index) && index >= 0);
+        });
+      }
+
+      if (dateKey === localDateKey()) {
+        Object.entries(completedByGroup).forEach(([source, indexes]) => {
+          if (!(indexes instanceof Set)) return;
+          const merged = new Set([...(result[source] || []), ...indexes]);
+          result[source] = [...merged].filter((index) => Number.isInteger(index) && index >= 0);
+        });
+      }
+
+      return result;
+    }
+
+    function dailyQuestionCount(dateKey) {
+      const byDate = dailyProgressBySource(dateKey);
       const countedSources = new Set();
-      const progressCount = !byDate || typeof byDate !== "object" ? 0 : Object.entries(byDate).reduce((total, [source, indexes]) => {
-        if (!Array.isArray(indexes)) return total;
+      const progressCount = Object.entries(byDate).reduce((total, [source, indexes]) => {
         const uniqueIndexes = new Set(indexes.filter((index) => Number.isInteger(index) && index >= 0));
         countedSources.add(source);
         return total + uniqueIndexes.size;
@@ -1396,6 +1433,7 @@
       const weekdays = ["日", "一", "二", "三", "四", "五", "六"];
 
       elements.calendarTitle.textContent = `每日打卡 · ${year}年${month + 1}月`;
+      elements.todayProgressSummary.textContent = `今天已做 ${dailyQuestionCount(todayKey)} 题`;
       elements.calendarGrid.replaceChildren();
       weekdays.forEach((weekday) => {
         const cell = document.createElement("div");
@@ -2101,6 +2139,7 @@
       if (pieceIndex >= 0 && !completedSet().has(pieceIndex)) {
         completedSet().add(pieceIndex);
         markDailyQuestionComplete(source, pieceIndex);
+        if (window.location.hash === "#checkin") renderCalendar();
       }
       if (activeQuestions().length > 0 && completedSet().size >= activeQuestions().length) {
         markDailyCheckin(source);
