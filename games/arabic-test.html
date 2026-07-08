@@ -606,6 +606,12 @@
       font-size: 13px;
     }
 
+    .calendar-count {
+      color: var(--ink);
+      font-size: 12px;
+      line-height: 1.25;
+    }
+
     .calendar-done {
       display: inline-grid;
       width: 24px;
@@ -1290,6 +1296,7 @@
     const keyAudioElements = new Map();
     const completedByGroup = {};
     const checkinStorageKey = "arabic-test:daily-checkins";
+    const dailyProgressStorageKey = "arabic-test:daily-progress";
     let calendarMonth = new Date();
 
     function localDateKey(date = new Date()) {
@@ -1319,6 +1326,64 @@
       checkins[dateKey] = [...sources, source];
       saveCheckins(checkins);
       return true;
+    }
+
+    function loadDailyProgress() {
+      try {
+        const parsed = JSON.parse(localStorage.getItem(dailyProgressStorageKey) || "{}");
+        return parsed && typeof parsed === "object" ? parsed : {};
+      } catch {
+        return {};
+      }
+    }
+
+    function saveDailyProgress(progress) {
+      localStorage.setItem(dailyProgressStorageKey, JSON.stringify(progress));
+    }
+
+    function dailyProgressIndexes(source = activeSource(), dateKey = localDateKey()) {
+      const progress = loadDailyProgress();
+      const byDate = progress[dateKey];
+      const indexes = byDate && Array.isArray(byDate[source]) ? byDate[source] : [];
+      const validIndexes = indexes.filter((index) => Number.isInteger(index) && index >= 0);
+      if (validIndexes.length) return validIndexes;
+
+      const checkins = loadCheckins();
+      const completedSources = Array.isArray(checkins[dateKey]) ? checkins[dateKey] : [];
+      if (completedSources.includes(source)) {
+        return sourceQuestions(source).map((_, index) => index);
+      }
+      return [];
+    }
+
+    function markDailyQuestionComplete(source, questionIndex, dateKey = localDateKey()) {
+      if (questionIndex < 0) return false;
+      const progress = loadDailyProgress();
+      progress[dateKey] ||= {};
+      const indexes = Array.isArray(progress[dateKey][source]) ? progress[dateKey][source] : [];
+      if (indexes.includes(questionIndex)) return false;
+      progress[dateKey][source] = [...indexes, questionIndex].sort((a, b) => a - b);
+      saveDailyProgress(progress);
+      return true;
+    }
+
+    function dailyQuestionCount(dateKey) {
+      const progress = loadDailyProgress();
+      const byDate = progress[dateKey];
+      const countedSources = new Set();
+      const progressCount = !byDate || typeof byDate !== "object" ? 0 : Object.entries(byDate).reduce((total, [source, indexes]) => {
+        if (!Array.isArray(indexes)) return total;
+        const uniqueIndexes = new Set(indexes.filter((index) => Number.isInteger(index) && index >= 0));
+        countedSources.add(source);
+        return total + uniqueIndexes.size;
+      }, 0);
+
+      const checkins = loadCheckins();
+      const completedSources = Array.isArray(checkins[dateKey]) ? checkins[dateKey] : [];
+      return completedSources.reduce((total, source) => {
+        if (countedSources.has(source)) return total;
+        return total + sourceQuestions(source).length;
+      }, progressCount);
     }
 
     function renderCalendar() {
@@ -1352,6 +1417,14 @@
         number.className = "calendar-date";
         number.textContent = String(date.getDate());
         day.append(number);
+
+        const questionCount = dailyQuestionCount(dateKey);
+        if (questionCount > 0) {
+          const count = document.createElement("div");
+          count.className = "calendar-count";
+          count.textContent = `已做 ${questionCount} 题`;
+          day.append(count);
+        }
 
         const completedSources = Array.isArray(checkins[dateKey]) ? checkins[dateKey] : [];
         if (completedSources.length) {
@@ -1679,7 +1752,7 @@
     }
 
     function completedSet(key = progressKey()) {
-      completedByGroup[key] ||= new Set();
+      completedByGroup[key] ||= new Set(dailyProgressIndexes(key));
       return completedByGroup[key];
     }
 
@@ -1693,6 +1766,11 @@
 
     function sourcePieceIndex(question) {
       return activeQuestions().findIndex((item) => item.id === question.id);
+    }
+
+    function incompleteQuestions() {
+      const completed = completedSet();
+      return activeQuestions().filter((question, index) => !completed.has(index));
     }
 
     function activePuzzleImage(source = activeSource()) {
@@ -1848,9 +1926,12 @@
     }
 
     function drawQuestion() {
-      const available = activeQuestions();
+      const pending = incompleteQuestions();
+      const available = pending.length ? pending : activeQuestions();
       if (!pool.length || !pool.some((item) => available.includes(item))) {
         pool = shuffle(available);
+      } else {
+        pool = pool.filter((item) => available.includes(item));
       }
 
       if (completionSpeechTimer) {
@@ -2015,12 +2096,14 @@
 
     function completeQuestion() {
       completedCurrent = true;
+      const source = activeSource();
       const pieceIndex = sourcePieceIndex(current);
       if (pieceIndex >= 0 && !completedSet().has(pieceIndex)) {
         completedSet().add(pieceIndex);
+        markDailyQuestionComplete(source, pieceIndex);
       }
       if (activeQuestions().length > 0 && completedSet().size >= activeQuestions().length) {
-        markDailyCheckin(activeSource());
+        markDailyCheckin(source);
         if (window.location.hash === "#checkin") renderCalendar();
       }
         elements.feedback.textContent = "";
