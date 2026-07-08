@@ -135,6 +135,8 @@
     let nfs2Window = null;
     let sharedLifeSpent = 0;
     const sharedCompletedTokens = new Set();
+    const dailyLifeStorageKey = "arabic-game:daily-life";
+    let activeDailyLifeDate = "";
     const nfs2RewardSeconds = 60;
     const nfs2Channel = "BroadcastChannel" in window
       ? new BroadcastChannel("nfs2-reward")
@@ -152,6 +154,50 @@
       "Space"
     ]);
 
+    function localDateKey(date = new Date()) {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, "0");
+      const day = String(date.getDate()).padStart(2, "0");
+      return `${year}-${month}-${day}`;
+    }
+
+    function loadDailyLifeState() {
+      activeDailyLifeDate = localDateKey();
+      try {
+        const parsed = JSON.parse(localStorage.getItem(dailyLifeStorageKey) || "{}");
+        if (!parsed || parsed.date !== activeDailyLifeDate) return;
+        sharedLifeSpent = Math.max(0, Number(parsed.spent || 0));
+        if (Array.isArray(parsed.tokens)) {
+          parsed.tokens.forEach((token) => sharedCompletedTokens.add(token));
+        }
+      } catch {
+        sharedLifeSpent = 0;
+        sharedCompletedTokens.clear();
+      }
+    }
+
+    function ensureDailyLifeDate() {
+      const today = localDateKey();
+      if (!activeDailyLifeDate) {
+        activeDailyLifeDate = today;
+      }
+      if (activeDailyLifeDate !== today) {
+        activeDailyLifeDate = today;
+        sharedLifeSpent = 0;
+        sharedCompletedTokens.clear();
+        latestArabicMetrics = null;
+        saveDailyLifeState();
+      }
+    }
+
+    function saveDailyLifeState() {
+      localStorage.setItem(dailyLifeStorageKey, JSON.stringify({
+        date: activeDailyLifeDate || localDateKey(),
+        spent: sharedLifeSpent,
+        tokens: [...sharedCompletedTokens]
+      }));
+    }
+
     function forwardArabicMetrics() {
       if (!latestArabicMetrics) return;
       mainGameFrame.contentWindow?.postMessage({
@@ -161,12 +207,16 @@
     }
 
     function sharedLives() {
+      ensureDailyLifeDate();
       return Math.max(0, sharedCompletedTokens.size - sharedLifeSpent);
     }
 
     function syncSharedLifeMetrics(payload = latestArabicMetrics || {}) {
+      ensureDailyLifeDate();
       const completedTokens = Array.isArray(payload.completedTokens) ? payload.completedTokens : [];
       completedTokens.forEach((token) => sharedCompletedTokens.add(token));
+      sharedLifeSpent = Math.min(sharedCompletedTokens.size, sharedLifeSpent);
+      saveDailyLifeState();
       const sourceTotalQuestions = Number(payload.sourceTotalQuestions || payload.totalQuestions || 0);
       const totalQuestions = Number(payload.allTotalQuestions || payload.totalQuestions || 0);
       const completedQuestions = Number(payload.completedQuestions || 0);
@@ -320,8 +370,10 @@
       }
 
       if (event.data?.type === "game:life-spent") {
+        ensureDailyLifeDate();
         const amount = Math.max(1, Number(event.data.payload?.amount || 1));
         sharedLifeSpent = Math.min(sharedCompletedTokens.size, sharedLifeSpent + amount);
+        saveDailyLifeState();
         syncSharedLifeMetrics();
         forwardArabicMetrics();
         return;
@@ -359,6 +411,17 @@
       });
     }
 
+    loadDailyLifeState();
+    syncSharedLifeMetrics({
+      game: "arabic-test",
+      event: "daily-life-restored",
+      completedTokens: [...sharedCompletedTokens],
+      completedQuestions: sharedCompletedTokens.size,
+      totalQuestions: 0,
+      sourceTotalQuestions: 0,
+      allTotalQuestions: 0,
+      sourceCompleted: false
+    });
     window.addEventListener("keydown", (event) => handlePikachuControl(event, true));
     window.addEventListener("keyup", (event) => handlePikachuControl(event, false));
   </script>
