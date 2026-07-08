@@ -750,7 +750,7 @@
           <button id="prevMonthButton" class="ghost" type="button" aria-label="上个月">&lt;</button>
           <button id="todayButton" class="secondary" type="button">今天</button>
           <button id="nextMonthButton" class="ghost" type="button" aria-label="下个月">&gt;</button>
-          <a class="checkin-link" href="#">返回练习</a>
+          <a id="practiceLink" class="checkin-link" href="#">返回练习</a>
         </div>
       </div>
       <div id="calendarGrid" class="calendar-grid" aria-live="polite"></div>
@@ -1251,6 +1251,8 @@
       categoryTag: document.querySelector("#categoryTag"),
       categorySelect: document.querySelector("#categorySelect"),
       gameSelect: document.querySelector("#gameSelect"),
+      checkinLink: document.querySelector("#checkinLink"),
+      practiceLink: document.querySelector("#practiceLink"),
       chinesePrompt: document.querySelector("#chinesePrompt"),
       choices: document.querySelector("#choices"),
       entry: document.querySelector("#entry"),
@@ -2099,6 +2101,16 @@
     elements.hintButton.addEventListener("click", toggleHint);
     elements.checkButton.addEventListener("click", checkInput);
     elements.nextButton.addEventListener("click", drawQuestion);
+    elements.checkinLink.addEventListener("click", (event) => {
+      event.preventDefault();
+      window.location.hash = "checkin";
+      syncViewFromHash();
+    });
+    elements.practiceLink.addEventListener("click", (event) => {
+      event.preventDefault();
+      history.replaceState(null, "", window.location.pathname + window.location.search);
+      syncViewFromHash();
+    });
     elements.prevMonthButton.addEventListener("click", () => {
       calendarMonth = new Date(calendarMonth.getFullYear(), calendarMonth.getMonth() - 1, 1);
       renderCalendar();
