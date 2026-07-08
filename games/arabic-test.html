@@ -138,6 +138,27 @@
       flex: 0 0 132px;
     }
 
+    .checkin-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      padding: 5px 10px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fff;
+      color: var(--accent-strong);
+      font-size: 13px;
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .checkin-link:hover {
+      border-color: var(--accent);
+      background: #e7f6f3;
+    }
+
     .question {
       padding: 10px 12px;
       border: 2px solid #bad0df;
@@ -513,6 +534,102 @@
       font-weight: 700;
     }
 
+    .calendar-view {
+      display: none;
+      padding: 14px;
+    }
+
+    .calendar-view.active {
+      display: block;
+    }
+
+    .calendar-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .calendar-header h2 {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    .calendar-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 6px;
+    }
+
+    .calendar-weekday,
+    .calendar-day {
+      min-height: 42px;
+      border-radius: 7px;
+      font-weight: 800;
+    }
+
+    .calendar-weekday {
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .calendar-day {
+      display: grid;
+      align-content: start;
+      gap: 4px;
+      min-height: 76px;
+      padding: 7px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .82);
+    }
+
+    .calendar-day.muted {
+      opacity: .4;
+    }
+
+    .calendar-day.today {
+      border-color: var(--accent);
+      box-shadow: inset 0 0 0 2px rgba(15, 118, 110, .18);
+    }
+
+    .calendar-date {
+      font-size: 13px;
+    }
+
+    .calendar-done {
+      display: inline-grid;
+      width: 24px;
+      height: 24px;
+      place-items: center;
+      border-radius: 50%;
+      background: #ecfdf3;
+      color: var(--success);
+      font-size: 15px;
+      line-height: 1;
+    }
+
+    .calendar-labels {
+      display: grid;
+      gap: 2px;
+      color: var(--accent-strong);
+      font-size: 11px;
+      line-height: 1.2;
+    }
+
+    .main-view.hidden {
+      display: none;
+    }
+
     @media (max-width: 900px) {
       .app {
         padding: 16px;
@@ -541,6 +658,15 @@
       .game {
         padding: 16px;
       }
+
+      .meta-row {
+        flex-wrap: wrap;
+      }
+
+      .calendar-day {
+        min-height: 64px;
+        padding: 5px;
+      }
     }
   </style>
 </head>
@@ -553,7 +679,7 @@
       </div>
     </section>
 
-    <section class="layout">
+    <section class="layout main-view">
       <div class="panel game">
         <div class="meta-row">
           <span id="categoryTag" class="tag">基础问候</span>
@@ -566,6 +692,7 @@
             <option value="games/pikachu-volleyball/zh/index.html?v=20260614life">Pikachu</option>
             <option value="need_for_speed/Need%20for%20Speed%20II%20SE%20-%20Play%20in%20Browser%20for%20Free%20-%20Retro%20Online.html">极品飞车2</option>
           </select>
+          <a id="checkinLink" class="checkin-link" href="#checkin">每日打卡</a>
         </div>
 
         <div class="question">
@@ -614,6 +741,19 @@
         </section>
 
       </div>
+    </section>
+
+    <section id="calendarView" class="panel calendar-view" aria-label="每日打卡日历">
+      <div class="calendar-header">
+        <h2 id="calendarTitle">每日打卡</h2>
+        <div class="calendar-actions">
+          <button id="prevMonthButton" class="ghost" type="button" aria-label="上个月">&lt;</button>
+          <button id="todayButton" class="secondary" type="button">今天</button>
+          <button id="nextMonthButton" class="ghost" type="button" aria-label="下个月">&gt;</button>
+          <a class="checkin-link" href="#">返回练习</a>
+        </div>
+      </div>
+      <div id="calendarGrid" class="calendar-grid" aria-live="polite"></div>
     </section>
   </main>
 
@@ -1122,7 +1262,14 @@
       nextChar: document.querySelector("#nextChar"),
       nextKey: document.querySelector("#nextKey"),
       nextPronunciation: document.querySelector("#nextPronunciation"),
-      softKeyboard: document.querySelector("#softKeyboard")
+      softKeyboard: document.querySelector("#softKeyboard"),
+      mainView: document.querySelector(".main-view"),
+      calendarView: document.querySelector("#calendarView"),
+      calendarTitle: document.querySelector("#calendarTitle"),
+      calendarGrid: document.querySelector("#calendarGrid"),
+      prevMonthButton: document.querySelector("#prevMonthButton"),
+      todayButton: document.querySelector("#todayButton"),
+      nextMonthButton: document.querySelector("#nextMonthButton")
     };
 
     let pool = [];
@@ -1140,6 +1287,94 @@
     const preloadedSpeech = new Map();
     const keyAudioElements = new Map();
     const completedByGroup = {};
+    const checkinStorageKey = "arabic-test:daily-checkins";
+    let calendarMonth = new Date();
+
+    function localDateKey(date = new Date()) {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, "0");
+      const day = String(date.getDate()).padStart(2, "0");
+      return `${year}-${month}-${day}`;
+    }
+
+    function loadCheckins() {
+      try {
+        const parsed = JSON.parse(localStorage.getItem(checkinStorageKey) || "{}");
+        return parsed && typeof parsed === "object" ? parsed : {};
+      } catch {
+        return {};
+      }
+    }
+
+    function saveCheckins(checkins) {
+      localStorage.setItem(checkinStorageKey, JSON.stringify(checkins));
+    }
+
+    function markDailyCheckin(source = activeSource(), dateKey = localDateKey()) {
+      const checkins = loadCheckins();
+      const sources = Array.isArray(checkins[dateKey]) ? checkins[dateKey] : [];
+      if (sources.includes(source)) return false;
+      checkins[dateKey] = [...sources, source];
+      saveCheckins(checkins);
+      return true;
+    }
+
+    function renderCalendar() {
+      const checkins = loadCheckins();
+      const year = calendarMonth.getFullYear();
+      const month = calendarMonth.getMonth();
+      const todayKey = localDateKey();
+      const first = new Date(year, month, 1);
+      const start = new Date(year, month, 1 - first.getDay());
+      const weekdays = ["日", "一", "二", "三", "四", "五", "六"];
+
+      elements.calendarTitle.textContent = `每日打卡 · ${year}年${month + 1}月`;
+      elements.calendarGrid.replaceChildren();
+      weekdays.forEach((weekday) => {
+        const cell = document.createElement("div");
+        cell.className = "calendar-weekday";
+        cell.textContent = weekday;
+        elements.calendarGrid.append(cell);
+      });
+
+      for (let index = 0; index < 42; index += 1) {
+        const date = new Date(start);
+        date.setDate(start.getDate() + index);
+        const dateKey = localDateKey(date);
+        const day = document.createElement("div");
+        day.className = "calendar-day";
+        if (date.getMonth() !== month) day.classList.add("muted");
+        if (dateKey === todayKey) day.classList.add("today");
+
+        const number = document.createElement("div");
+        number.className = "calendar-date";
+        number.textContent = String(date.getDate());
+        day.append(number);
+
+        const completedSources = Array.isArray(checkins[dateKey]) ? checkins[dateKey] : [];
+        if (completedSources.length) {
+          const icon = document.createElement("div");
+          icon.className = "calendar-done";
+          icon.textContent = "✓";
+          icon.title = "已完成题库";
+          const labels = document.createElement("div");
+          labels.className = "calendar-labels";
+          labels.textContent = completedSources
+            .map((source) => sourceConfig[source]?.label || source)
+            .join("、");
+          day.append(icon, labels);
+        }
+
+        elements.calendarGrid.append(day);
+      }
+    }
+
+    function syncViewFromHash() {
+      const showCalendar = window.location.hash === "#checkin";
+      elements.mainView.classList.toggle("hidden", showCalendar);
+      elements.calendarView.classList.toggle("active", showCalendar);
+      if (showCalendar) renderCalendar();
+    }
 
     function emitMetrics(eventName = "metrics") {
       const completed = completedSet();
@@ -1782,6 +2017,10 @@
       if (pieceIndex >= 0 && !completedSet().has(pieceIndex)) {
         completedSet().add(pieceIndex);
       }
+      if (activeQuestions().length > 0 && completedSet().size >= activeQuestions().length) {
+        markDailyCheckin(activeSource());
+        if (window.location.hash === "#checkin") renderCalendar();
+      }
         elements.feedback.textContent = "";
         elements.feedback.className = "feedback success";
         elements.nextButton.disabled = true;
@@ -1860,6 +2099,19 @@
     elements.hintButton.addEventListener("click", toggleHint);
     elements.checkButton.addEventListener("click", checkInput);
     elements.nextButton.addEventListener("click", drawQuestion);
+    elements.prevMonthButton.addEventListener("click", () => {
+      calendarMonth = new Date(calendarMonth.getFullYear(), calendarMonth.getMonth() - 1, 1);
+      renderCalendar();
+    });
+    elements.todayButton.addEventListener("click", () => {
+      calendarMonth = new Date();
+      renderCalendar();
+    });
+    elements.nextMonthButton.addEventListener("click", () => {
+      calendarMonth = new Date(calendarMonth.getFullYear(), calendarMonth.getMonth() + 1, 1);
+      renderCalendar();
+    });
+    window.addEventListener("hashchange", syncViewFromHash);
     elements.arabicInput.addEventListener("input", updateLiveInput);
     elements.arabicInput.addEventListener("keydown", (event) => {
       if (event.key === "Enter") {
@@ -1892,6 +2144,7 @@
 
     preloadSoftKeyboardAudio();
     drawQuestion();
+    syncViewFromHash();
     emitMetrics("ready");
   </script>
 </body>
