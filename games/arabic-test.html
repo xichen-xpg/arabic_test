@@ -349,6 +349,24 @@
       display: none !important;
     }
 
+    .poem-hints {
+      display: grid;
+      gap: 4px;
+      margin: -4px 0 10px;
+      padding: 8px 10px;
+      border: 1px solid #f0d48a;
+      border-radius: 8px;
+      background: #fff8e6;
+      color: #6b4500;
+      font-size: 15px;
+      line-height: 1.45;
+      font-weight: 800;
+    }
+
+    .poem-hints[hidden] {
+      display: none;
+    }
+
     .soft-keyboard {
       display: grid;
       grid-template-columns: repeat(7, minmax(0, 1fr));
@@ -765,6 +783,7 @@
           <p class="question-label">中文</p>
           <p id="chinesePrompt" class="chinese">你好</p>
         </div>
+        <div id="poemHints" class="poem-hints" aria-live="polite" hidden></div>
 
         <div id="choices" class="choices" aria-label="发音选项"></div>
 
@@ -1334,6 +1353,7 @@
       checkinLink: document.querySelector("#checkinLink"),
       practiceLink: document.querySelector("#practiceLink"),
       chinesePrompt: document.querySelector("#chinesePrompt"),
+      poemHints: document.querySelector("#poemHints"),
       choices: document.querySelector("#choices"),
       entry: document.querySelector("#entry"),
       arabicInput: document.querySelector("#arabicInput"),
@@ -1364,6 +1384,7 @@
     let currentSpeechFinish = null;
     let completionSpeechTimer = null;
     let lastValidInput = "";
+    let poemHintLineIndex = 0;
     const completionSpeechDelay = 200;
     const finalKeySpeechDelay = 80;
     const keyAudioVersion = "2";
@@ -2053,6 +2074,44 @@
       return (work.fullText || []).join("\n").replace(/\n{3,}/g, "\n\n").trim();
     }
 
+    function poemHintLines(question = current) {
+      if (!isPoemQuestion(question)) return [];
+      return (question.fullText || [])
+        .flatMap((line) => (line.match(/[^。！？；]+[。！？；]?/g) || [line]))
+        .map((line) => line.trim())
+        .filter(Boolean);
+    }
+
+    function resetPoemHints() {
+      poemHintLineIndex = 0;
+      elements.poemHints.replaceChildren();
+      elements.poemHints.hidden = true;
+    }
+
+    function updatePoemHintButton() {
+      if (!isPoemQuestion()) return;
+      const remaining = poemHintLineIndex < poemHintLines().length;
+      elements.hintButton.disabled = completedCurrent || !remaining;
+      elements.hintButton.textContent = remaining ? "提示一句" : "提示已完";
+      elements.hintButton.classList.toggle("active", poemHintLineIndex > 0);
+      elements.hintButton.setAttribute("aria-pressed", poemHintLineIndex > 0 ? "true" : "false");
+    }
+
+    function revealPoemHintLine() {
+      const lines = poemHintLines();
+      if (!lines[poemHintLineIndex]) {
+        updatePoemHintButton();
+        return;
+      }
+
+      const item = document.createElement("div");
+      item.textContent = `${poemHintLineIndex + 1}. ${lines[poemHintLineIndex]}`;
+      elements.poemHints.append(item);
+      elements.poemHints.hidden = false;
+      poemHintLineIndex += 1;
+      updatePoemHintButton();
+    }
+
     function buildPoemQuestion(work, index, todayIndex, dateKey) {
       const answer = poemText(work);
       return {
@@ -2348,6 +2407,7 @@
       hintEnabled = true;
       completedCurrent = false;
       lastValidInput = "";
+      resetPoemHints();
 
       elements.gamePanel.classList.toggle("poem-mode", isPoemQuestion(current));
       elements.categoryTag.textContent = current.category;
@@ -2360,14 +2420,16 @@
       elements.feedback.textContent = "";
       elements.feedback.className = "feedback";
       elements.nextButton.disabled = true;
-      elements.hintButton.disabled = true;
-      elements.hintButton.classList.add("active");
-      elements.hintButton.setAttribute("aria-pressed", "true");
+      elements.hintButton.disabled = !isPoemQuestion(current);
+      elements.hintButton.textContent = isPoemQuestion(current) ? "提示一句" : "提示：关";
+      elements.hintButton.classList.toggle("active", !isPoemQuestion(current));
+      elements.hintButton.setAttribute("aria-pressed", isPoemQuestion(current) ? "false" : "true");
       elements.checkButton.disabled = true;
       preloadCurrentQuestionAudio();
       updateLiveInput();
       renderChoices();
       renderSoftKeyboard();
+      updatePoemHintButton();
       emitMetrics("question-loaded");
     }
 
@@ -2592,6 +2654,9 @@
         elements.nextButton.disabled = true;
         elements.checkButton.disabled = true;
         elements.hintButton.disabled = true;
+        if (isPoemQuestion(current)) {
+          elements.hintButton.textContent = "提示已完";
+        }
         elements.nextChar.textContent = "-";
         renderKeyHint("");
         elements.nextPronunciation.textContent = "-";
@@ -2629,6 +2694,10 @@
     }
 
     function toggleHint() {
+      if (isPoemQuestion()) {
+        revealPoemHintLine();
+        return;
+      }
       updateLiveInput();
     }
 
