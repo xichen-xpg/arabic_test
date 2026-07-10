@@ -1081,6 +1081,7 @@
     const poemSourceKey = "daily-poems";
     const dailyPoemReviewCount = 2;
     const poemQuestionsByDate = {};
+    const dailyPoemSelectionStorageKey = "arabic-test:daily-poem-selections";
 
     const sourceConfig = {
       restaurant: {
@@ -2067,6 +2068,57 @@
       };
     }
 
+    function loadDailyPoemSelections() {
+      try {
+        const parsed = JSON.parse(localStorage.getItem(dailyPoemSelectionStorageKey) || "{}");
+        return parsed && typeof parsed === "object" ? parsed : {};
+      } catch {
+        return {};
+      }
+    }
+
+    function saveDailyPoemSelections(selections) {
+      localStorage.setItem(dailyPoemSelectionStorageKey, JSON.stringify(selections));
+    }
+
+    function usedReviewPoemIndexes(selections, currentDateKey) {
+      const used = new Set();
+      Object.entries(selections).forEach(([dateKey, selection]) => {
+        if (dateKey === currentDateKey || !selection || !Array.isArray(selection.reviewIndexes)) return;
+        selection.reviewIndexes.forEach((index) => {
+          if (Number.isInteger(index)) used.add(index);
+        });
+      });
+      return used;
+    }
+
+    function validStoredPoemSelection(selection, todayIndex, historicalIndexes) {
+      if (!selection || selection.todayIndex !== todayIndex || !Array.isArray(selection.reviewIndexes)) return false;
+      if (selection.reviewIndexes.length > dailyPoemReviewCount) return false;
+      const historicalSet = new Set(historicalIndexes);
+      const uniqueReviews = new Set(selection.reviewIndexes);
+      return uniqueReviews.size === selection.reviewIndexes.length &&
+        selection.reviewIndexes.every((index) => Number.isInteger(index) && historicalSet.has(index));
+    }
+
+    function dailyPoemSelection(dateKey, todayIndex, historicalIndexes) {
+      const selections = loadDailyPoemSelections();
+      const stored = selections[dateKey];
+      if (validStoredPoemSelection(stored, todayIndex, historicalIndexes)) {
+        return stored;
+      }
+
+      const usedReviews = usedReviewPoemIndexes(selections, dateKey);
+      const unusedHistorical = historicalIndexes.filter((index) => !usedReviews.has(index));
+      const candidateIndexes = unusedHistorical.length >= dailyPoemReviewCount ? unusedHistorical : historicalIndexes;
+      const reviewIndexes = seededShuffle(candidateIndexes, `poem-review:${dateKey}`)
+        .slice(0, Math.min(dailyPoemReviewCount, candidateIndexes.length));
+      const selection = { todayIndex, reviewIndexes };
+      selections[dateKey] = selection;
+      saveDailyPoemSelections(selections);
+      return selection;
+    }
+
     function dailyPoemQuestions(dateKey = dubaiDateKey()) {
       if (poemQuestionsByDate[dateKey]) return poemQuestionsByDate[dateKey];
       if (!poemWorks.length) return [];
@@ -2084,8 +2136,8 @@
         }
       }
 
-      const reviewIndexes = seededShuffle(historicalIndexes, `poem-review:${dateKey}`).slice(0, dailyPoemReviewCount);
-      poemQuestionsByDate[dateKey] = [...reviewIndexes, todayIndex]
+      const selection = dailyPoemSelection(dateKey, todayIndex, historicalIndexes);
+      poemQuestionsByDate[dateKey] = [selection.todayIndex, ...selection.reviewIndexes]
         .map((index) => buildPoemQuestion(poemWorks[index], index, todayIndex, dateKey));
       return poemQuestionsByDate[dateKey];
     }
@@ -2276,7 +2328,12 @@
     function drawQuestion() {
       const pending = incompleteQuestions();
       const available = pending.length ? pending : activeQuestions();
-      if (!pool.length || !pool.some((item) => available.includes(item))) {
+      const pendingTodayPoem = isPoemSource() && pending.find((item) => item.todayPoem);
+      let nextQuestion = null;
+      if (pendingTodayPoem) {
+        nextQuestion = pendingTodayPoem;
+        pool = pool.filter((item) => item !== nextQuestion && available.includes(item));
+      } else if (!pool.length || !pool.some((item) => available.includes(item))) {
         pool = shuffle(available);
       } else {
         pool = pool.filter((item) => available.includes(item));
@@ -2286,7 +2343,7 @@
         clearTimeout(completionSpeechTimer);
         completionSpeechTimer = null;
       }
-      current = pool.pop();
+      current = nextQuestion || pool.pop();
       selectedCorrect = isPoemQuestion(current);
       hintEnabled = true;
       completedCurrent = false;
