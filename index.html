@@ -27,6 +27,15 @@
       grid-template-columns: minmax(260px, .38fr) minmax(680px, 1fr);
       gap: 10px;
       min-height: calc(100vh - 20px);
+      transition: grid-template-columns .22s ease;
+    }
+
+    .layout.practice-mode {
+      grid-template-columns: minmax(240px, .32fr) minmax(720px, 1fr);
+    }
+
+    .layout.game-mode {
+      grid-template-columns: minmax(720px, 1fr) minmax(360px, .42fr);
     }
 
     .pane {
@@ -90,7 +99,9 @@
         height: auto;
       }
 
-      .layout {
+      .layout,
+      .layout.practice-mode,
+      .layout.game-mode {
         grid-template-columns: 1fr;
         min-height: 0;
       }
@@ -118,13 +129,14 @@
         </div>
       </section>
       <aside class="pane">
-        <iframe id="arabicFrame" title="arabic test" src="games/arabic-test.html?v=20260710poem-hints" allow="autoplay"></iframe>
+        <iframe id="arabicFrame" title="arabic test" src="games/arabic-test.html?v=20260710layout-hints" allow="autoplay"></iframe>
       </aside>
     </section>
   </main>
 
   <script>
     const mainGameFrame = document.querySelector("#mainGameFrame");
+    const layout = document.querySelector(".layout");
     const gameLock = document.querySelector("#gameLock");
     const gameLockTitle = document.querySelector("#gameLockTitle");
     const gameLockText = document.querySelector("#gameLockText");
@@ -204,6 +216,12 @@
         type: "hub:arabic-metrics",
         payload: latestArabicMetrics
       }, "*");
+    }
+
+    function setLayoutMode(mode) {
+      const gameMode = mode === "game";
+      layout.classList.toggle("game-mode", gameMode);
+      layout.classList.toggle("practice-mode", !gameMode);
     }
 
     function sharedLives() {
@@ -363,7 +381,11 @@
       if (event.data?.type === "arabic-test:metrics") {
         latestArabicMetrics = syncSharedLifeMetrics(event.data.payload);
         forwardArabicMetrics();
+        if (latestArabicMetrics.event === "question-loaded") {
+          setLayoutMode("practice");
+        }
         if (latestArabicMetrics.event === "question-completed") {
+          setLayoutMode("game");
           unlockNfs2();
         }
         return;
@@ -376,6 +398,9 @@
         saveDailyLifeState();
         syncSharedLifeMetrics();
         forwardArabicMetrics();
+        if (sharedLives() <= 0) {
+          setLayoutMode("practice");
+        }
         return;
       }
 
@@ -412,6 +437,7 @@
     }
 
     loadDailyLifeState();
+    setLayoutMode("practice");
     syncSharedLifeMetrics({
       game: "arabic-test",
       event: "daily-life-restored",
