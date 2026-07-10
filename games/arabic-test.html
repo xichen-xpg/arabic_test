@@ -1901,6 +1901,28 @@
       });
     }
 
+    function speakChinese(text) {
+      if (!("speechSynthesis" in window) || !text) {
+        return Promise.resolve();
+      }
+
+      window.speechSynthesis.cancel();
+      const voices = window.speechSynthesis.getVoices();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "zh-CN";
+      utterance.voice =
+        voices.find((voice) => voice.lang.toLowerCase() === "zh-cn") ||
+        voices.find((voice) => voice.lang.toLowerCase().startsWith("zh")) ||
+        null;
+      utterance.rate = 0.82;
+      utterance.volume = 1;
+      return new Promise((resolve) => {
+        utterance.onend = resolve;
+        utterance.onerror = resolve;
+        window.speechSynthesis.speak(utterance);
+      });
+    }
+
     function speakKeySound(text) {
       const sound = arabicSoundMap[text];
       if (!sound || sound === "-") return Promise.resolve();
@@ -2240,12 +2262,15 @@
           button.type = "button";
           button.className = "soft-key";
           button.textContent = letter;
+          button.setAttribute("aria-label", `读 ${letter}`);
+          button.title = `读 ${letter}`;
           button.disabled = completedCurrent;
           button.addEventListener("pointerdown", (event) => {
             event.preventDefault();
           });
           button.addEventListener("click", () => {
             if (completedCurrent) return;
+            speakChinese(letter);
             const expected = nextPoemChar();
             if (letter !== expected) {
               button.classList.add("wrong");
