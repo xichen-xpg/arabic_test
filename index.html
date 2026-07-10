@@ -120,7 +120,7 @@
   <main class="shell">
     <section class="layout">
       <section class="pane">
-        <iframe id="mainGameFrame" title="game" src="games/space-shooter.html"></iframe>
+        <iframe id="mainGameFrame" title="game" src="games/space-shooter.html?v=20260710start-layout"></iframe>
         <div id="gameLock" class="game-lock" tabindex="-1" aria-live="polite">
           <div class="lock-panel">
             <h2 id="gameLockTitle">需要先完成阿语题</h2>
@@ -129,7 +129,7 @@
         </div>
       </section>
       <aside class="pane">
-        <iframe id="arabicFrame" title="arabic test" src="games/arabic-test.html?v=20260710layout-hints" allow="autoplay"></iframe>
+        <iframe id="arabicFrame" title="arabic test" src="games/arabic-test.html?v=20260710game-click-hints" allow="autoplay"></iframe>
       </aside>
     </section>
   </main>
@@ -141,7 +141,7 @@
     const gameLockTitle = document.querySelector("#gameLockTitle");
     const gameLockText = document.querySelector("#gameLockText");
     let latestArabicMetrics = null;
-    let activeGameSource = "games/space-shooter.html";
+    let activeGameSource = "games/space-shooter.html?v=20260710start-layout";
     let nfs2RemainingSeconds = 0;
     let nfs2Timer = null;
     let nfs2Window = null;
@@ -154,7 +154,7 @@
       ? new BroadcastChannel("nfs2-reward")
       : null;
     const gameSourceMap = {
-      shooter: "games/space-shooter.html",
+      shooter: "games/space-shooter.html?v=20260710start-layout",
       pikachu: "games/pikachu-volleyball/zh/index.html?v=20260614life",
       nfs2: "need_for_speed/Need%20for%20Speed%20II%20SE%20-%20Play%20in%20Browser%20for%20Free%20-%20Retro%20Online.html"
     };
@@ -385,7 +385,6 @@
           setLayoutMode("practice");
         }
         if (latestArabicMetrics.event === "question-completed") {
-          setLayoutMode("game");
           unlockNfs2();
         }
         return;
@@ -401,6 +400,11 @@
         if (sharedLives() <= 0) {
           setLayoutMode("practice");
         }
+        return;
+      }
+
+      if (event.data?.type === "game:start") {
+        setLayoutMode("game");
         return;
       }
 

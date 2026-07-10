@@ -895,6 +895,10 @@
       startButton.disabled = false;
       startMusic();
       lastTime = performance.now();
+      window.parent.postMessage({
+        type: "game:start",
+        payload: { game: "space-shooter" }
+      }, "*");
     });
 
     pauseButton.addEventListener("click", togglePause);
