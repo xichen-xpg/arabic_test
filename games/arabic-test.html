@@ -1468,7 +1468,8 @@
       const progress = loadDailyProgress();
       const byDate = progress[dateKey];
       const indexes = byDate && Array.isArray(byDate[source]) ? byDate[source] : [];
-      const validIndexes = indexes.filter((index) => Number.isInteger(index) && index >= 0);
+      const sourceTotal = sourceQuestions(source).length;
+      const validIndexes = indexes.filter((index) => Number.isInteger(index) && index >= 0 && index < sourceTotal);
       if (validIndexes.length) return validIndexes;
 
       const checkins = loadCheckins();
@@ -1498,7 +1499,8 @@
       if (byDate && typeof byDate === "object") {
         Object.entries(byDate).forEach(([source, indexes]) => {
           if (!Array.isArray(indexes)) return;
-          result[source] = indexes.filter((index) => Number.isInteger(index) && index >= 0);
+          const sourceTotal = sourceQuestions(source).length;
+          result[source] = indexes.filter((index) => Number.isInteger(index) && index >= 0 && index < sourceTotal);
         });
       }
 
@@ -1506,7 +1508,8 @@
         Object.entries(completedByGroup).forEach(([source, indexes]) => {
           if (!(indexes instanceof Set)) return;
           const merged = new Set([...(result[source] || []), ...indexes]);
-          result[source] = [...merged].filter((index) => Number.isInteger(index) && index >= 0);
+          const sourceTotal = sourceQuestions(source).length;
+          result[source] = [...merged].filter((index) => Number.isInteger(index) && index >= 0 && index < sourceTotal);
         });
       }
 
@@ -1524,7 +1527,7 @@
           const total = sourceQuestions(source).length;
           const completedCount = completedSources.has(source)
             ? total
-            : new Set((byDate[source] || []).filter((index) => Number.isInteger(index) && index >= 0)).size;
+            : new Set((byDate[source] || []).filter((index) => Number.isInteger(index) && index >= 0 && index < total)).size;
           return {
             source,
             label: sourceConfig[source]?.label || source,
