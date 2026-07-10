@@ -1702,7 +1702,7 @@
     }
 
     function poemKeyboardLetters(question = current) {
-      return seededShuffle(poemRequiredChars(question), `poem-keyboard:${question?.id || ""}`);
+      return poemRequiredChars(question).sort((left, right) => left.localeCompare(right, "zh-Hans-CN"));
     }
 
     function displayChar(char) {
