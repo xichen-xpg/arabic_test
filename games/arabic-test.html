@@ -1368,6 +1368,7 @@
     const keyAudioVersion = "2";
     const preloadedSpeech = new Map();
     const keyAudioElements = new Map();
+    const chineseAudioElements = new Map();
     const completedByGroup = {};
     const checkinStorageKey = "arabic-test:daily-checkins";
     const dailyProgressStorageKey = "arabic-test:daily-progress";
@@ -1793,6 +1794,10 @@
       return `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ar&q=${encodeURIComponent(text)}`;
     }
 
+    function chineseSpeechUrl(text) {
+      return `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=zh-CN&q=${encodeURIComponent(text)}`;
+    }
+
     function preloadArabic(text) {
       const speechText = normalizeArabicForSpeech(text);
       if (!speechText.trim() || preloadedSpeech.has(speechText)) return;
@@ -1836,16 +1841,67 @@
 
       const audio = cached.cloneNode();
       audio.currentTime = 0;
+      currentAudio = audio;
       return new Promise((resolve, reject) => {
-        audio.addEventListener("ended", resolve, { once: true });
-        audio.addEventListener("error", reject, { once: true });
-        audio.play().catch(reject);
+        audio.addEventListener("ended", () => {
+          if (currentAudio === audio) currentAudio = null;
+          resolve();
+        }, { once: true });
+        audio.addEventListener("error", () => {
+          if (currentAudio === audio) currentAudio = null;
+          reject();
+        }, { once: true });
+        audio.play().catch(() => {
+          if (currentAudio === audio) currentAudio = null;
+          reject();
+        });
+      });
+    }
+
+    function preloadChineseKeyAudio(char) {
+      const url = chineseSpeechUrl(char);
+      if (!char || chineseAudioElements.has(url)) return Promise.resolve(chineseAudioElements.get(url));
+
+      const audio = new Audio(url);
+      audio.preload = "auto";
+      chineseAudioElements.set(url, audio);
+      audio.load();
+      return Promise.resolve(audio);
+    }
+
+    function playChineseKeyAudio(char) {
+      const url = chineseSpeechUrl(char);
+      if (!char) return Promise.reject();
+
+      preloadChineseKeyAudio(char);
+      const cached = chineseAudioElements.get(url);
+      if (!cached) return Promise.reject();
+
+      const audio = cached.cloneNode();
+      audio.currentTime = 0;
+      currentAudio = audio;
+      return new Promise((resolve, reject) => {
+        audio.addEventListener("ended", () => {
+          if (currentAudio === audio) currentAudio = null;
+          resolve();
+        }, { once: true });
+        audio.addEventListener("error", () => {
+          if (currentAudio === audio) currentAudio = null;
+          reject();
+        }, { once: true });
+        audio.play().catch(() => {
+          if (currentAudio === audio) currentAudio = null;
+          reject();
+        });
       });
     }
 
     function preloadCurrentQuestionAudio() {
       if (!current) return Promise.resolve();
-      if (isPoemQuestion(current)) return Promise.resolve();
+      if (isPoemQuestion(current)) {
+        const loads = [...new Set(poemKeyboardLetters(current))].map(preloadChineseKeyAudio);
+        return Promise.allSettled(loads);
+      }
 
       preloadArabic(current.ar);
       const loads = [...new Set(inputChars(current.ar))].map((char) => {
@@ -1926,7 +1982,7 @@
       });
     }
 
-    function speakChinese(text) {
+    function speakChineseWithBrowserVoice(text) {
       if (!("speechSynthesis" in window) || !text) {
         return Promise.resolve();
       }
@@ -1946,6 +2002,19 @@
         utterance.onerror = resolve;
         window.speechSynthesis.speak(utterance);
       });
+    }
+
+    function speakChinese(text) {
+      if (!text) return Promise.resolve();
+
+      if (currentAudio) {
+        currentAudio.pause();
+        currentAudio = null;
+      }
+      if (currentSpeechFinish) {
+        currentSpeechFinish();
+      }
+      return playChineseKeyAudio(text).catch(() => speakChineseWithBrowserVoice(text));
     }
 
     function speakKeySound(text) {
