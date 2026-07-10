@@ -1,13 +1,34 @@
 const NFS2_ALARM_NAME = "nfs2-reward-timeout";
 
 function sendToRetroOnline(message) {
-  chrome.tabs.query({ url: "https://retroonline.net/*" }, (tabs) => {
+  chrome.tabs.query({}, (tabs) => {
     for (const tab of tabs) {
       if (!tab.id) continue;
-      chrome.tabs.sendMessage(tab.id, message, () => {
+      if (!isNfs2Tab(tab)) continue;
+      sendToRetroOnlineTab(tab.id, message);
+    }
+  });
+}
+
+function isNfs2Tab(tab) {
+  const url = tab.url || "";
+  return url.startsWith("https://retroonline.net/Windows/Need%20for%20Speed%20II%20SE")
+    || url.includes("/need_for_speed/Need%20for%20Speed%20II%20SE")
+    || url.includes("\\need_for_speed\\Need%20for%20Speed%20II%20SE");
+}
+
+function sendToRetroOnlineTab(tabId, message) {
+  chrome.tabs.sendMessage(tabId, message, () => {
+    if (!chrome.runtime.lastError) return;
+    chrome.scripting.executeScript({
+      target: { tabId },
+      files: ["retroonline-content.js"]
+    }, () => {
+      if (chrome.runtime.lastError) return;
+      chrome.tabs.sendMessage(tabId, message, () => {
         void chrome.runtime.lastError;
       });
-    }
+    });
   });
 }
 

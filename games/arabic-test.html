@@ -38,7 +38,8 @@
 
     button,
     input,
-    select {
+    select,
+    textarea {
       font: inherit;
     }
 
@@ -178,6 +179,7 @@
       font-size: 30px;
       line-height: 1.2;
       font-weight: 800;
+      white-space: pre-line;
     }
 
     .choices {
@@ -267,6 +269,7 @@
       font-size: 26px;
       line-height: 1.25;
       text-align: right;
+      resize: vertical;
     }
 
     .arabic-input:focus {
@@ -374,8 +377,44 @@
       background: #e7f6f3;
     }
 
+    .soft-key.wrong {
+      border-color: #f2a8a1;
+      background: #fff3f2;
+      color: var(--danger);
+    }
+
     .soft-key:disabled {
       opacity: .42;
+    }
+
+    .game.poem-mode .chinese {
+      font-size: 24px;
+      line-height: 1.35;
+    }
+
+    .game.poem-mode .choices {
+      display: none;
+    }
+
+    .game.poem-mode .arabic-input {
+      min-height: 116px;
+      direction: ltr;
+      font-family: "Microsoft YaHei", "Noto Serif SC", "SimSun", serif;
+      font-size: 22px;
+      line-height: 1.55;
+      text-align: left;
+      white-space: pre-wrap;
+    }
+
+    .game.poem-mode .soft-keyboard {
+      grid-template-columns: repeat(auto-fill, minmax(38px, 1fr));
+      max-height: 260px;
+      overflow: auto;
+    }
+
+    .game.poem-mode .soft-key {
+      min-height: 38px;
+      font-size: 21px;
     }
 
     .hint-item {
@@ -706,6 +745,7 @@
           <select id="categorySelect" class="select" aria-label="题库分类">
             <option value="source:restaurant">餐厅题库</option>
             <option value="source:best-friend">Best Friend 题库</option>
+            <option value="source:daily-poems">每日古诗词</option>
           </select>
           <select id="gameSelect" class="select game-select" aria-label="选择游戏">
             <option value="games/space-shooter.html">雷电</option>
@@ -723,7 +763,7 @@
         <div id="choices" class="choices" aria-label="发音选项"></div>
 
         <div id="entry" class="entry" hidden>
-          <input id="arabicInput" class="arabic-input" dir="rtl" lang="ar" autocomplete="off" spellcheck="false" aria-label="阿语输入">
+          <textarea id="arabicInput" class="arabic-input" dir="rtl" lang="ar" rows="4" autocomplete="off" spellcheck="false" aria-label="阿语输入"></textarea>
           <div class="actions">
             <button id="checkButton" class="primary" type="button">检查输入</button>
             <button id="hintButton" class="secondary" type="button" aria-pressed="false">提示：关</button>
@@ -778,6 +818,7 @@
     </section>
   </main>
 
+  <script src="games/daily-poems.js"></script>
   <script>
     const questions = [
       { category: "基础问候", zh: "你好", ar: "مرحبا", rom: "marhaban" },
@@ -1029,6 +1070,11 @@
       id: `${item.source}-${index}`
     }));
 
+    const poemWorks = Array.isArray(window.dailyPoemWorks) ? window.dailyPoemWorks : [];
+    const poemRotationStartKey = "2026-05-20";
+    const poemSourceKey = "daily-poems";
+    const poemQuestionsByDate = {};
+
     const sourceConfig = {
       restaurant: {
         label: "餐厅题库",
@@ -1036,6 +1082,10 @@
       },
       "best-friend": {
         label: "Best Friend 题库",
+        puzzleImages: []
+      },
+      [poemSourceKey]: {
+        label: "每日古诗词",
         puzzleImages: []
       }
     };
@@ -1269,6 +1319,7 @@
     ];
 
     const elements = {
+      gamePanel: document.querySelector(".game"),
       categoryTag: document.querySelector("#categoryTag"),
       categorySelect: document.querySelector("#categorySelect"),
       gameSelect: document.querySelector("#gameSelect"),
@@ -1320,6 +1371,55 @@
       const month = String(date.getMonth() + 1).padStart(2, "0");
       const day = String(date.getDate()).padStart(2, "0");
       return `${year}-${month}-${day}`;
+    }
+
+    function dubaiDateKey(date = new Date()) {
+      const parts = new Intl.DateTimeFormat("en-CA", {
+        timeZone: "Asia/Dubai",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      }).formatToParts(date);
+      const value = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+      return `${value.year}-${value.month}-${value.day}`;
+    }
+
+    function daysBetween(startKey, endKey) {
+      return Math.floor((Date.parse(`${endKey}T00:00:00Z`) - Date.parse(`${startKey}T00:00:00Z`)) / 86400000);
+    }
+
+    function positiveModulo(value, length) {
+      return ((value % length) + length) % length;
+    }
+
+    function hashString(value) {
+      let hash = 2166136261;
+      for (const char of value) {
+        hash ^= char.codePointAt(0);
+        hash = Math.imul(hash, 16777619);
+      }
+      return hash >>> 0;
+    }
+
+    function seededRandom(seed) {
+      let state = seed >>> 0;
+      return () => {
+        state = Math.imul(state + 0x6d2b79f5, 1);
+        let value = state;
+        value = Math.imul(value ^ (value >>> 15), value | 1);
+        value ^= value + Math.imul(value ^ (value >>> 7), value | 61);
+        return ((value ^ (value >>> 14)) >>> 0) / 4294967296;
+      };
+    }
+
+    function seededShuffle(items, seedText) {
+      const result = [...items];
+      const random = seededRandom(hashString(seedText));
+      for (let index = result.length - 1; index > 0; index -= 1) {
+        const swapIndex = Math.floor(random() * (index + 1));
+        [result[index], result[swapIndex]] = [result[swapIndex], result[index]];
+      }
+      return result;
     }
 
     function loadCheckins() {
@@ -1539,6 +1639,47 @@
       return inputChars(answer)[inputChars(typed).length] || "";
     }
 
+    function isHanChar(char) {
+      return /[\u3400-\u9fff\uf900-\ufaff]/.test(char);
+    }
+
+    function poemRequiredChars(question = current) {
+      return Array.from(question?.ar || "").filter(isHanChar);
+    }
+
+    function poemTypedChars() {
+      return Array.from(elements.arabicInput.value).filter(isHanChar);
+    }
+
+    function composePoemInput(answer, typedChars) {
+      let output = "";
+      let used = 0;
+      for (const char of Array.from(answer)) {
+        if (isHanChar(char)) {
+          if (used >= typedChars.length) break;
+          output += typedChars[used];
+          used += 1;
+        } else if (used > 0 && used <= typedChars.length) {
+          output += char;
+        }
+      }
+      return output;
+    }
+
+    function setPoemTypedChars(chars) {
+      elements.arabicInput.value = composePoemInput(current.ar, chars);
+      elements.arabicInput.setSelectionRange(elements.arabicInput.value.length, elements.arabicInput.value.length);
+      updateLiveInput();
+    }
+
+    function nextPoemChar() {
+      return poemRequiredChars()[poemTypedChars().length] || "";
+    }
+
+    function poemKeyboardLetters(question = current) {
+      return seededShuffle(poemRequiredChars(question), `poem-keyboard:${question?.id || ""}`);
+    }
+
     function displayChar(char) {
       if (char === " ") return "空格";
       return char || "-";
@@ -1679,6 +1820,7 @@
 
     function preloadCurrentQuestionAudio() {
       if (!current) return Promise.resolve();
+      if (isPoemQuestion(current)) return Promise.resolve();
 
       preloadArabic(current.ar);
       const loads = [...new Set(inputChars(current.ar))].map((char) => {
@@ -1778,10 +1920,62 @@
     }
 
     function activeSource() {
+      if (elements.categorySelect.value === "source:daily-poems") return poemSourceKey;
       return elements.categorySelect.value === "source:best-friend" ? "best-friend" : "restaurant";
     }
 
+    function isPoemSource(source = activeSource()) {
+      return source === poemSourceKey;
+    }
+
+    function isPoemQuestion(question = current) {
+      return question?.source === poemSourceKey;
+    }
+
+    function poemText(work) {
+      return (work.fullText || []).join("\n").replace(/\n{3,}/g, "\n\n").trim();
+    }
+
+    function buildPoemQuestion(work, index, todayIndex, dateKey) {
+      const answer = poemText(work);
+      return {
+        ...work,
+        source: poemSourceKey,
+        category: index === todayIndex ? "今日古诗词" : "往日古诗词",
+        zh: `${index === todayIndex ? "今日" : "复习"}：${work.title} · ${work.author}\n按顺序点击汉字默写正文，标点会自动补齐。`,
+        ar: answer,
+        rom: `${work.title}-${work.author}`,
+        id: `${poemSourceKey}-${dateKey}-${index}`,
+        poemIndex: index,
+        todayPoem: index === todayIndex
+      };
+    }
+
+    function dailyPoemQuestions(dateKey = dubaiDateKey()) {
+      if (poemQuestionsByDate[dateKey]) return poemQuestionsByDate[dateKey];
+      if (!poemWorks.length) return [];
+
+      const dayIndex = daysBetween(poemRotationStartKey, dateKey);
+      const todayIndex = positiveModulo(dayIndex, poemWorks.length);
+      const historicalIndexes = [];
+      const seen = new Set([todayIndex]);
+      const historyLength = Math.max(0, dayIndex);
+      for (let offset = 0; offset < historyLength; offset += 1) {
+        const index = positiveModulo(offset, poemWorks.length);
+        if (!seen.has(index)) {
+          seen.add(index);
+          historicalIndexes.push(index);
+        }
+      }
+
+      const reviewIndexes = seededShuffle(historicalIndexes, `poem-review:${dateKey}`).slice(0, 9);
+      poemQuestionsByDate[dateKey] = [...reviewIndexes, todayIndex]
+        .map((index) => buildPoemQuestion(poemWorks[index], index, todayIndex, dateKey));
+      return poemQuestionsByDate[dateKey];
+    }
+
     function sourceQuestions(source) {
+      if (isPoemSource(source)) return dailyPoemQuestions();
       return allQuestions.filter((item) => item.source === source);
     }
 
@@ -1977,14 +2171,18 @@
         completionSpeechTimer = null;
       }
       current = pool.pop();
-      selectedCorrect = false;
+      selectedCorrect = isPoemQuestion(current);
       hintEnabled = true;
       completedCurrent = false;
       lastValidInput = "";
 
+      elements.gamePanel.classList.toggle("poem-mode", isPoemQuestion(current));
       elements.categoryTag.textContent = current.category;
       elements.chinesePrompt.textContent = current.zh;
-      elements.entry.hidden = true;
+      elements.entry.hidden = !isPoemQuestion(current);
+      elements.arabicInput.dir = isPoemQuestion(current) ? "ltr" : "rtl";
+      elements.arabicInput.lang = isPoemQuestion(current) ? "zh-CN" : "ar";
+      elements.arabicInput.setAttribute("aria-label", isPoemQuestion(current) ? "古诗词默写输入" : "阿语输入");
       elements.arabicInput.value = "";
       elements.feedback.textContent = "";
       elements.feedback.className = "feedback";
@@ -2001,6 +2199,11 @@
     }
 
     function renderChoices() {
+      if (isPoemQuestion()) {
+        elements.choices.replaceChildren();
+        return;
+      }
+
       const wrongOptions = shuffle(allQuestions.filter((item) => item.rom !== current.rom))
         .slice(0, 3)
         .map((item) => ({ rom: item.rom, ar: item.ar, correct: false }));
@@ -2031,6 +2234,34 @@
 
     function renderSoftKeyboard() {
       elements.softKeyboard.replaceChildren();
+      if (isPoemQuestion()) {
+        poemKeyboardLetters().forEach((letter) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "soft-key";
+          button.textContent = letter;
+          button.disabled = completedCurrent;
+          button.addEventListener("pointerdown", (event) => {
+            event.preventDefault();
+          });
+          button.addEventListener("click", () => {
+            if (completedCurrent) return;
+            const expected = nextPoemChar();
+            if (letter !== expected) {
+              button.classList.add("wrong");
+              window.setTimeout(() => button.classList.remove("wrong"), 180);
+              updateLiveInput();
+              elements.arabicInput.focus();
+              return;
+            }
+            setPoemTypedChars([...poemTypedChars(), letter]);
+            elements.arabicInput.focus();
+          });
+          elements.softKeyboard.append(button);
+        });
+        return;
+      }
+
       softKeyboardLetters.forEach((letter) => {
         const button = document.createElement("button");
         button.type = "button";
@@ -2095,6 +2326,17 @@
     }
 
     function liveState() {
+      if (isPoemQuestion()) {
+        const typed = poemTypedChars();
+        const answer = poemRequiredChars();
+        return {
+          typed: typed.join(""),
+          answer: answer.join(""),
+          matchesPrefix: answer.slice(0, typed.length).join("") === typed.join(""),
+          isComplete: typed.length === answer.length && answer.every((char, index) => char === typed[index])
+        };
+      }
+
       const typed = normalizeLive(elements.arabicInput.value);
       const answer = normalizeLive(current ? current.ar : "");
       return {
@@ -2107,6 +2349,30 @@
 
     function updateLiveInput() {
       if (!current) return;
+
+      if (isPoemQuestion()) {
+        const required = poemRequiredChars();
+        const typed = poemTypedChars().filter((char, index) => char === required[index]);
+        const composed = composePoemInput(current.ar, typed);
+        if (elements.arabicInput.value !== composed) {
+          elements.arabicInput.value = composed;
+          elements.arabicInput.setSelectionRange(composed.length, composed.length);
+        }
+
+        const state = liveState();
+        const next = nextPoemChar();
+        elements.nextChar.textContent = displayChar(next);
+        renderKeyHint("");
+        elements.nextPronunciation.textContent = "-";
+        if (!state.isComplete) {
+          elements.feedback.textContent = "";
+          elements.feedback.className = "feedback";
+        }
+        if (state.isComplete && !completedCurrent) {
+          completeQuestion();
+        }
+        return;
+      }
 
       const rawValue = elements.arabicInput.value;
       const rawAnswer = current.ar;
@@ -2153,7 +2419,13 @@
         elements.nextChar.textContent = "-";
         renderKeyHint("");
         elements.nextPronunciation.textContent = "-";
-        scheduleCompletionSpeech(current);
+        if (isPoemQuestion(current)) {
+          window.setTimeout(() => {
+            if (current && completedCurrent) elements.nextButton.disabled = false;
+          }, 160);
+        } else {
+          scheduleCompletionSpeech(current);
+        }
         renderSoftKeyboard();
         emitMetrics("question-completed");
     }
@@ -2164,6 +2436,12 @@
       }
       completionSpeechTimer = setTimeout(() => {
         completionSpeechTimer = null;
+        if (isPoemQuestion(question)) {
+          if (current?.id === question.id && completedCurrent) {
+            elements.nextButton.disabled = false;
+          }
+          return;
+        }
         if (current?.id === question.id && completedCurrent) {
           beforeSpeech.then(() => new Promise((resolve) => setTimeout(resolve, finalKeySpeechDelay))).then(() => speakArabic(question.ar)).then(() => {
             if (current?.id === question.id && completedCurrent) {
@@ -2255,6 +2533,10 @@
       }
 
       if (event.ctrlKey || event.metaKey || event.altKey) {
+        return;
+      }
+
+      if (isPoemQuestion()) {
         return;
       }
 
