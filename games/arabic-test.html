@@ -640,7 +640,7 @@
       display: grid;
       align-content: start;
       gap: 4px;
-      min-height: 76px;
+      min-height: 96px;
       padding: 7px;
       border: 1px solid var(--line);
       background: rgba(255, 255, 255, .82);
@@ -659,30 +659,36 @@
       font-size: 13px;
     }
 
-    .calendar-count {
-      color: var(--ink);
-      font-size: 12px;
-      line-height: 1.25;
-    }
-
-    .calendar-done {
-      display: inline-grid;
-      width: 24px;
-      height: 24px;
-      place-items: center;
-      border-radius: 50%;
-      background: #ecfdf3;
-      color: var(--success);
-      font-size: 15px;
-      line-height: 1;
-    }
-
-    .calendar-labels {
+    .calendar-source-list {
       display: grid;
       gap: 2px;
-      color: var(--accent-strong);
+    }
+
+    .calendar-source {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 4px;
+      min-width: 0;
+      color: var(--ink);
       font-size: 11px;
       line-height: 1.2;
+    }
+
+    .calendar-source.done {
+      color: var(--success);
+    }
+
+    .calendar-source-name {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .calendar-source-count {
+      flex: 0 0 auto;
+      color: inherit;
     }
 
     .main-view.hidden {
@@ -723,7 +729,7 @@
       }
 
       .calendar-day {
-        min-height: 64px;
+        min-height: 82px;
         padding: 5px;
       }
     }
@@ -1506,25 +1512,42 @@
       return result;
     }
 
-    function dailyQuestionCount(dateKey) {
+    function dailyProgressSummaries(dateKey) {
       const byDate = dailyProgressBySource(dateKey);
-      const countedSources = new Set();
-      const progressCount = Object.entries(byDate).reduce((total, [source, indexes]) => {
-        const uniqueIndexes = new Set(indexes.filter((index) => Number.isInteger(index) && index >= 0));
-        countedSources.add(source);
-        return total + uniqueIndexes.size;
-      }, 0);
-
       const checkins = loadCheckins();
-      const completedSources = Array.isArray(checkins[dateKey]) ? checkins[dateKey] : [];
-      return completedSources.reduce((total, source) => {
-        if (countedSources.has(source)) return total;
-        return total + sourceQuestions(source).length;
-      }, progressCount);
+      const completedSources = new Set(Array.isArray(checkins[dateKey]) ? checkins[dateKey] : []);
+      const sources = new Set([...Object.keys(byDate), ...completedSources]);
+
+      return [...sources]
+        .map((source) => {
+          const total = sourceQuestions(source).length;
+          const completedCount = completedSources.has(source)
+            ? total
+            : new Set((byDate[source] || []).filter((index) => Number.isInteger(index) && index >= 0)).size;
+          return {
+            source,
+            label: sourceConfig[source]?.label || source,
+            completedCount,
+            total,
+            done: total > 0 && completedCount >= total
+          };
+        })
+        .filter((item) => item.completedCount > 0 || item.done)
+        .sort((left, right) => {
+          const order = ["restaurant", "best-friend", poemSourceKey];
+          const leftIndex = order.indexOf(left.source);
+          const rightIndex = order.indexOf(right.source);
+          return (leftIndex === -1 ? 99 : leftIndex) - (rightIndex === -1 ? 99 : rightIndex);
+        });
+    }
+
+    function dailyProgressSummaryText(dateKey) {
+      const summaries = dailyProgressSummaries(dateKey);
+      if (!summaries.length) return "今天已做 0 题";
+      return `今天：${summaries.map((item) => `${item.label} ${item.completedCount}/${item.total}`).join(" · ")}`;
     }
 
     function renderCalendar() {
-      const checkins = loadCheckins();
       const year = calendarMonth.getFullYear();
       const month = calendarMonth.getMonth();
       const todayKey = localDateKey();
@@ -1533,7 +1556,7 @@
       const weekdays = ["日", "一", "二", "三", "四", "五", "六"];
 
       elements.calendarTitle.textContent = `每日打卡 · ${year}年${month + 1}月`;
-      elements.todayProgressSummary.textContent = `今天已做 ${dailyQuestionCount(todayKey)} 题`;
+      elements.todayProgressSummary.textContent = dailyProgressSummaryText(todayKey);
       elements.calendarGrid.replaceChildren();
       weekdays.forEach((weekday) => {
         const cell = document.createElement("div");
@@ -1556,26 +1579,24 @@
         number.textContent = String(date.getDate());
         day.append(number);
 
-        const questionCount = dailyQuestionCount(dateKey);
-        if (questionCount > 0) {
-          const count = document.createElement("div");
-          count.className = "calendar-count";
-          count.textContent = `已做 ${questionCount} 题`;
-          day.append(count);
-        }
-
-        const completedSources = Array.isArray(checkins[dateKey]) ? checkins[dateKey] : [];
-        if (completedSources.length) {
-          const icon = document.createElement("div");
-          icon.className = "calendar-done";
-          icon.textContent = "✓";
-          icon.title = "已完成题库";
-          const labels = document.createElement("div");
-          labels.className = "calendar-labels";
-          labels.textContent = completedSources
-            .map((source) => sourceConfig[source]?.label || source)
-            .join("、");
-          day.append(icon, labels);
+        const summaries = dailyProgressSummaries(dateKey);
+        if (summaries.length) {
+          const list = document.createElement("div");
+          list.className = "calendar-source-list";
+          summaries.forEach((summary) => {
+            const item = document.createElement("div");
+            item.className = `calendar-source${summary.done ? " done" : ""}`;
+            item.title = `${summary.label} ${summary.completedCount}/${summary.total}`;
+            const name = document.createElement("span");
+            name.className = "calendar-source-name";
+            name.textContent = summary.label;
+            const count = document.createElement("span");
+            count.className = "calendar-source-count";
+            count.textContent = `${summary.done ? "✓ " : ""}${summary.completedCount}/${summary.total}`;
+            item.append(name, count);
+            list.append(item);
+          });
+          day.append(list);
         }
 
         elements.calendarGrid.append(day);
