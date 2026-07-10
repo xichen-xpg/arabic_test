@@ -1079,6 +1079,7 @@
     const poemWorks = Array.isArray(window.dailyPoemWorks) ? window.dailyPoemWorks : [];
     const poemRotationStartKey = "2026-05-20";
     const poemSourceKey = "daily-poems";
+    const dailyPoemReviewCount = 2;
     const poemQuestionsByDate = {};
 
     const sourceConfig = {
@@ -2011,7 +2012,7 @@
         }
       }
 
-      const reviewIndexes = seededShuffle(historicalIndexes, `poem-review:${dateKey}`).slice(0, 9);
+      const reviewIndexes = seededShuffle(historicalIndexes, `poem-review:${dateKey}`).slice(0, dailyPoemReviewCount);
       poemQuestionsByDate[dateKey] = [...reviewIndexes, todayIndex]
         .map((index) => buildPoemQuestion(poemWorks[index], index, todayIndex, dateKey));
       return poemQuestionsByDate[dateKey];
