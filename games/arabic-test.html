@@ -285,7 +285,8 @@
     }
 
     #checkButton,
-    #hintButton {
+    #hintButton,
+    #restartPoemButton {
       display: none;
     }
 
@@ -415,6 +416,12 @@
     }
 
     .game.poem-mode #hintButton {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .game.poem-mode #restartPoemButton {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -798,6 +805,7 @@
           <div class="actions">
             <button id="checkButton" class="primary" type="button">检查输入</button>
             <button id="hintButton" class="secondary" type="button" aria-pressed="false">提示：关</button>
+            <button id="restartPoemButton" class="ghost" type="button">重新开始</button>
             <button id="nextButton" class="ghost" type="button" disabled>下一题</button>
           </div>
           <div id="softKeyboard" class="soft-keyboard" aria-label="Arabic soft keyboard"></div>
@@ -1110,6 +1118,7 @@
     const dailyPoemSelectionVersion = 2;
     const poemQuestionsByDate = {};
     const dailyPoemSelectionStorageKey = "arabic-test:daily-poem-selections";
+    const poemDraftStorageKey = "arabic-test:poem-drafts";
 
     const sourceConfig = {
       restaurant: {
@@ -1369,6 +1378,7 @@
       feedback: document.querySelector("#feedback"),
       checkButton: document.querySelector("#checkButton"),
       hintButton: document.querySelector("#hintButton"),
+      restartPoemButton: document.querySelector("#restartPoemButton"),
       nextButton: document.querySelector("#nextButton"),
       nextChar: document.querySelector("#nextChar"),
       nextKey: document.querySelector("#nextKey"),
@@ -1727,6 +1737,46 @@
       elements.arabicInput.value = composePoemInput(current.ar, chars);
       elements.arabicInput.setSelectionRange(elements.arabicInput.value.length, elements.arabicInput.value.length);
       updateLiveInput();
+    }
+
+    function poemDraftKey(question = current, dateKey = dubaiDateKey()) {
+      return question ? `${dateKey}:${question.poemIndex}` : "";
+    }
+
+    function loadPoemDrafts() {
+      try {
+        const parsed = JSON.parse(localStorage.getItem(poemDraftStorageKey) || "{}");
+        return parsed && typeof parsed === "object" ? parsed : {};
+      } catch {
+        return {};
+      }
+    }
+
+    function savePoemDrafts(drafts) {
+      localStorage.setItem(poemDraftStorageKey, JSON.stringify(drafts));
+    }
+
+    function savePoemDraft(question = current) {
+      if (!isPoemQuestion(question) || completedCurrent) return;
+      const key = poemDraftKey(question);
+      if (!key) return;
+      const drafts = loadPoemDrafts();
+      drafts[key] = poemTypedChars().join("");
+      savePoemDrafts(drafts);
+    }
+
+    function loadPoemDraft(question = current) {
+      if (!isPoemQuestion(question)) return [];
+      const value = loadPoemDrafts()[poemDraftKey(question)] || "";
+      const required = poemRequiredChars(question);
+      return Array.from(value).filter((char, index) => char === required[index]);
+    }
+
+    function clearPoemDraft(question = current) {
+      if (!isPoemQuestion(question)) return;
+      const drafts = loadPoemDrafts();
+      delete drafts[poemDraftKey(question)];
+      savePoemDrafts(drafts);
     }
 
     function nextPoemChar() {
@@ -2451,7 +2501,15 @@
       elements.hintButton.textContent = isPoemQuestion(current) ? "提示一句" : "提示：关";
       elements.hintButton.classList.toggle("active", !isPoemQuestion(current));
       elements.hintButton.setAttribute("aria-pressed", isPoemQuestion(current) ? "false" : "true");
+      elements.restartPoemButton.disabled = !isPoemQuestion(current);
       elements.checkButton.disabled = true;
+      if (isPoemQuestion(current)) {
+        const draftChars = loadPoemDraft(current);
+        if (draftChars.length) {
+          elements.arabicInput.value = composePoemInput(current.ar, draftChars);
+          lastValidInput = elements.arabicInput.value;
+        }
+      }
       preloadCurrentQuestionAudio();
       updateLiveInput();
       renderChoices();
@@ -2632,6 +2690,7 @@
         if (!state.isComplete) {
           elements.feedback.textContent = "";
           elements.feedback.className = "feedback";
+          savePoemDraft();
         }
         if (state.isComplete && !completedCurrent) {
           completeQuestion();
@@ -2672,6 +2731,9 @@
         markDailyQuestionComplete(source, pieceIndex);
         if (window.location.hash === "#checkin") renderCalendar();
       }
+      if (isPoemQuestion(current)) {
+        clearPoemDraft(current);
+      }
       if (activeQuestions().length > 0 && completedSet().size >= activeQuestions().length) {
         markDailyCheckin(source);
         if (window.location.hash === "#checkin") renderCalendar();
@@ -2681,6 +2743,7 @@
         elements.nextButton.disabled = true;
         elements.checkButton.disabled = true;
         elements.hintButton.disabled = true;
+        elements.restartPoemButton.disabled = true;
         if (isPoemQuestion(current)) {
           elements.hintButton.textContent = "提示已完";
         }
@@ -2732,6 +2795,16 @@
       updateLiveInput();
     }
 
+    function restartCurrentPoem() {
+      if (!isPoemQuestion() || completedCurrent) return;
+      clearPoemDraft(current);
+      elements.arabicInput.value = "";
+      lastValidInput = "";
+      updateLiveInput();
+      renderSoftKeyboard();
+      elements.arabicInput.focus();
+    }
+
     elements.categorySelect.addEventListener("change", () => {
       pool = [];
       drawQuestion();
@@ -2772,6 +2845,7 @@
     window.addEventListener("keyup", (event) => forwardPikachuControl(event, false));
     elements.hintButton.addEventListener("click", toggleHint);
     elements.checkButton.addEventListener("click", checkInput);
+    elements.restartPoemButton.addEventListener("click", restartCurrentPoem);
     elements.nextButton.addEventListener("click", drawQuestion);
     elements.checkinLink.addEventListener("click", (event) => {
       event.preventDefault();
