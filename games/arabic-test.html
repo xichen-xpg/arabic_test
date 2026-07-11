@@ -1104,7 +1104,9 @@
     const poemWorks = Array.isArray(window.dailyPoemWorks) ? window.dailyPoemWorks : [];
     const poemRotationStartKey = "2026-05-20";
     const poemSourceKey = "daily-poems";
-    const dailyPoemReviewCount = 2;
+    const dailyPoemRecentCount = 2;
+    const dailyPoemReviewCount = 1;
+    const dailyPoemSelectionVersion = 2;
     const poemQuestionsByDate = {};
     const dailyPoemSelectionStorageKey = "arabic-test:daily-poem-selections";
 
@@ -2157,28 +2159,36 @@
       return used;
     }
 
-    function validStoredPoemSelection(selection, todayIndex, historicalIndexes) {
-      if (!selection || selection.todayIndex !== todayIndex || !Array.isArray(selection.reviewIndexes)) return false;
+    function validStoredPoemSelection(selection, recentIndexes, reviewPoolIndexes) {
+      if (!selection ||
+        selection.version !== dailyPoemSelectionVersion ||
+        !Array.isArray(selection.recentIndexes) ||
+        !Array.isArray(selection.reviewIndexes)) return false;
+      if (selection.recentIndexes.length !== recentIndexes.length) return false;
       if (selection.reviewIndexes.length > dailyPoemReviewCount) return false;
-      const historicalSet = new Set(historicalIndexes);
+      if (!selection.recentIndexes.every((index, position) => index === recentIndexes[position])) return false;
+      const reviewPoolSet = new Set(reviewPoolIndexes);
       const uniqueReviews = new Set(selection.reviewIndexes);
       return uniqueReviews.size === selection.reviewIndexes.length &&
-        selection.reviewIndexes.every((index) => Number.isInteger(index) && historicalSet.has(index));
+        selection.reviewIndexes.every((index) => Number.isInteger(index) && reviewPoolSet.has(index));
     }
 
-    function dailyPoemSelection(dateKey, todayIndex, historicalIndexes) {
+    function dailyPoemSelection(dateKey, recentIndexes, reviewPoolIndexes) {
       const selections = loadDailyPoemSelections();
       const stored = selections[dateKey];
-      if (validStoredPoemSelection(stored, todayIndex, historicalIndexes)) {
+      if (validStoredPoemSelection(stored, recentIndexes, reviewPoolIndexes)) {
         return stored;
       }
 
       const usedReviews = usedReviewPoemIndexes(selections, dateKey);
-      const unusedHistorical = historicalIndexes.filter((index) => !usedReviews.has(index));
-      const candidateIndexes = unusedHistorical.length >= dailyPoemReviewCount ? unusedHistorical : historicalIndexes;
+      const candidateIndexes = reviewPoolIndexes.filter((index) => !usedReviews.has(index));
       const reviewIndexes = seededShuffle(candidateIndexes, `poem-review:${dateKey}`)
         .slice(0, Math.min(dailyPoemReviewCount, candidateIndexes.length));
-      const selection = { todayIndex, reviewIndexes };
+      const selection = {
+        version: dailyPoemSelectionVersion,
+        recentIndexes,
+        reviewIndexes
+      };
       selections[dateKey] = selection;
       saveDailyPoemSelections(selections);
       return selection;
@@ -2190,8 +2200,14 @@
 
       const dayIndex = daysBetween(poemRotationStartKey, dateKey);
       const todayIndex = positiveModulo(dayIndex, poemWorks.length);
+      const recentIndexes = [];
+      for (let offset = 0; offset < Math.min(dailyPoemRecentCount, Math.max(0, dayIndex) + 1); offset += 1) {
+        const index = positiveModulo(dayIndex - offset, poemWorks.length);
+        if (!recentIndexes.includes(index)) recentIndexes.push(index);
+      }
+
       const historicalIndexes = [];
-      const seen = new Set([todayIndex]);
+      const seen = new Set(recentIndexes);
       const historyLength = Math.max(0, dayIndex);
       for (let offset = 0; offset < historyLength; offset += 1) {
         const index = positiveModulo(offset, poemWorks.length);
@@ -2201,8 +2217,8 @@
         }
       }
 
-      const selection = dailyPoemSelection(dateKey, todayIndex, historicalIndexes);
-      poemQuestionsByDate[dateKey] = [selection.todayIndex, ...selection.reviewIndexes]
+      const selection = dailyPoemSelection(dateKey, recentIndexes, historicalIndexes);
+      poemQuestionsByDate[dateKey] = [...selection.recentIndexes, ...selection.reviewIndexes]
         .map((index) => buildPoemQuestion(poemWorks[index], index, todayIndex, dateKey));
       return poemQuestionsByDate[dateKey];
     }
