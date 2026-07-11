@@ -1106,6 +1106,7 @@
     const poemSourceKey = "daily-poems";
     const dailyPoemRecentCount = 2;
     const dailyPoemReviewCount = 1;
+    const dailyPoemRandomMaxChars = 80;
     const dailyPoemSelectionVersion = 2;
     const poemQuestionsByDate = {};
     const dailyPoemSelectionStorageKey = "arabic-test:daily-poem-selections";
@@ -2082,6 +2083,10 @@
       return (work.fullText || []).join("\n").replace(/\n{3,}/g, "\n\n").trim();
     }
 
+    function poemHanCharCount(work) {
+      return Array.from(poemText(work)).filter(isHanChar).length;
+    }
+
     function poemHintLines(question = current) {
       if (!isPoemQuestion(question)) return [];
       return (question.fullText || [])
@@ -2211,7 +2216,7 @@
       const historyLength = Math.max(0, dayIndex);
       for (let offset = 0; offset < historyLength; offset += 1) {
         const index = positiveModulo(offset, poemWorks.length);
-        if (!seen.has(index)) {
+        if (!seen.has(index) && poemHanCharCount(poemWorks[index]) <= dailyPoemRandomMaxChars) {
           seen.add(index);
           historicalIndexes.push(index);
         }
