@@ -448,6 +448,17 @@
       font-size: 21px;
     }
 
+    .game.poem-mode .soft-key.used {
+      border-color: #d0d5dd;
+      background: #eef1f4;
+      color: #98a2b3;
+      box-shadow: none;
+    }
+
+    .game.poem-mode .soft-key.used:disabled {
+      opacity: .58;
+    }
+
     .hint-item {
       min-height: 66px;
       padding: 8px;
@@ -1779,6 +1790,13 @@
       savePoemDrafts(drafts);
     }
 
+    function poemCharCounts(chars) {
+      return chars.reduce((counts, char) => {
+        counts[char] = (counts[char] || 0) + 1;
+        return counts;
+      }, {});
+    }
+
     function nextPoemChar() {
       return poemRequiredChars()[poemTypedChars().length] || "";
     }
@@ -2555,19 +2573,23 @@
     function renderSoftKeyboard() {
       elements.softKeyboard.replaceChildren();
       if (isPoemQuestion()) {
+        const usedCounts = poemCharCounts(poemTypedChars());
         poemKeyboardLetters().forEach((letter) => {
+          const used = (usedCounts[letter] || 0) > 0;
+          if (used) usedCounts[letter] -= 1;
           const button = document.createElement("button");
           button.type = "button";
           button.className = "soft-key";
+          button.classList.toggle("used", used);
           button.textContent = letter;
           button.setAttribute("aria-label", `读 ${letter}`);
           button.title = `读 ${letter}`;
-          button.disabled = completedCurrent;
+          button.disabled = completedCurrent || used;
           button.addEventListener("pointerdown", (event) => {
             event.preventDefault();
           });
           button.addEventListener("click", () => {
-            if (completedCurrent) return;
+            if (completedCurrent || used) return;
             speakChinese(letter);
             const expected = nextPoemChar();
             if (letter !== expected) {
@@ -2578,6 +2600,7 @@
               return;
             }
             setPoemTypedChars([...poemTypedChars(), letter]);
+            renderSoftKeyboard();
             elements.arabicInput.focus();
           });
           elements.softKeyboard.append(button);
