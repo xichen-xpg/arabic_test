@@ -247,6 +247,43 @@
       white-space: nowrap;
     }
 
+    .word-meanings {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: -2px 0 10px;
+    }
+
+    .word-meanings[hidden] {
+      display: none;
+    }
+
+    .word-meaning {
+      display: grid;
+      gap: 4px;
+      min-width: 92px;
+      padding: 8px 10px;
+      border: 1px solid #cfe5df;
+      border-radius: 8px;
+      background: #f6fbf9;
+    }
+
+    .word-meaning-ar {
+      direction: rtl;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      font-size: 22px;
+      line-height: 1;
+      font-weight: 900;
+      text-align: right;
+    }
+
+    .word-meaning-zh {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
     .entry {
       display: grid;
       gap: 12px;
@@ -810,6 +847,7 @@
         <div id="poemHints" class="poem-hints" aria-live="polite" hidden></div>
 
         <div id="choices" class="choices" aria-label="发音选项"></div>
+        <div id="wordMeanings" class="word-meanings" aria-label="阿语单词意思" hidden></div>
 
         <div id="entry" class="entry" hidden>
           <textarea id="arabicInput" class="arabic-input" dir="rtl" lang="ar" rows="4" autocomplete="off" spellcheck="false" aria-label="阿语输入"></textarea>
@@ -1133,6 +1171,128 @@
       id: `${item.source}-${index}`
     }));
 
+    const arabicWordMeanings = {
+      "أنا": "我",
+      "أنت": "你",
+      "وأنت": "你呢",
+      "هو": "他 / 是",
+      "هي": "她 / 是",
+      "هذا": "这个 / 这",
+      "هذه": "这个 / 这",
+      "هنا": "这里",
+      "نحن": "我们",
+      "من": "从 / 谁",
+      "أين": "哪里",
+      "ما": "什么",
+      "ماذا": "什么",
+      "متى": "什么时候",
+      "كم": "多少",
+      "كيف": "怎么样",
+      "حال": "状态",
+      "حالك": "你的状态",
+      "اسم": "名字",
+      "اسمك": "你的名字",
+      "اسمها": "她的名字",
+      "عمرك": "你的年龄",
+      "عمري": "我的年龄",
+      "عمرها": "她的年龄",
+      "عيد": "节日",
+      "ميلادها": "她的生日",
+      "في": "在",
+      "إلى": "去 / 到",
+      "مع": "和 / 一起",
+      "لك": "你的",
+      "لديها": "她有",
+      "كل": "每个",
+      "يوم": "天",
+      "اليوم": "今天",
+      "لذلك": "所以",
+      "جدا": "很 / 非常",
+      "بخير": "很好",
+      "شكرا": "谢谢",
+      "مرحبا": "你好",
+      "السلام": "平安",
+      "عليكم": "在你们身上",
+      "وعليكم": "也祝你们",
+      "صباح": "早晨",
+      "الخير": "好",
+      "صديقي": "我的朋友",
+      "صديق": "朋友",
+      "أفضل": "最好的",
+      "المفضل": "最喜欢的",
+      "المفضلة": "最喜欢的",
+      "لوني": "我的颜色",
+      "لونك": "你的颜色",
+      "الأخضر": "绿色",
+      "ذكية": "聪明的",
+      "طويل": "高的",
+      "شعر": "头发",
+      "أسود": "黑色",
+      "نلعب": "我们玩",
+      "معا": "一起",
+      "مدرستك": "你的学校",
+      "أكاديمية": "学院",
+      "ياس": "Yas",
+      "أمريكا": "America",
+      "صفك": "你的班级",
+      "صف": "班级",
+      "سكوربيون": "Scorpion",
+      "هوكسبيل": "Hawksbill",
+      "سبع": "七",
+      "عشر": "十",
+      "سنوات": "岁",
+      "فعلت": "做了",
+      "عطلة": "假期",
+      "نهاية": "末尾",
+      "الأسبوع": "周",
+      "ذهبت": "我去了",
+      "ذهبنا": "我们去了",
+      "مدينة": "城市 / 乐园",
+      "الملاهي": "游乐设施",
+      "مطعمي": "我的餐厅",
+      "مطعم": "餐厅",
+      "3fils": "3fils",
+      "أحب": "我喜欢",
+      "أكل": "吃",
+      "السوشي": "sushi",
+      "لعبتي": "我的游乐项目",
+      "mat": "mat",
+      "race": "race",
+      "بقيت": "我留下",
+      "أبوظبي": "阿布扎比",
+      "الصيف": "夏天",
+      "زرت": "我参观了",
+      "المتحف": "博物馆",
+      "عائلتي": "我的家人",
+      "دبي": "迪拜",
+      "لأكل": "去吃",
+      "الهوت": "hot",
+      "بوت": "pot",
+      "سعيد": "开心",
+      "حار": "热",
+      "للسباحة": "去游泳",
+      "جميل": "漂亮",
+      "التسوق": "逛街 / 购物",
+      "وشراء": "和购买",
+      "الأشياء": "东西",
+      "تعلمت": "我学会了",
+      "تنس": "乒乓球",
+      "الطاولة": "桌子",
+      "يوجد": "有",
+      "القائمة": "菜单",
+      "تريد": "想要",
+      "أن": "去 / 要",
+      "تطلب": "点餐",
+      "توصي": "推荐",
+      "لذيذ": "好吃",
+      "أقرأ": "我读",
+      "قائمة": "菜单",
+      "الطعام": "食物",
+      "المطعم": "餐厅",
+      "يعطيني": "给我",
+      "النادل": "服务员"
+    };
+
     const poemWorks = Array.isArray(window.dailyPoemWorks) ? window.dailyPoemWorks : [];
     const poemRotationStartKey = "2026-05-20";
     const poemSourceKey = "daily-poems";
@@ -1397,6 +1557,7 @@
       chinesePrompt: document.querySelector("#chinesePrompt"),
       poemHints: document.querySelector("#poemHints"),
       choices: document.querySelector("#choices"),
+      wordMeanings: document.querySelector("#wordMeanings"),
       entry: document.querySelector("#entry"),
       arabicInput: document.querySelector("#arabicInput"),
       feedback: document.querySelector("#feedback"),
@@ -1493,6 +1654,58 @@
         [result[index], result[swapIndex]] = [result[swapIndex], result[index]];
       }
       return result;
+    }
+
+    function normalizeArabicWord(word) {
+      return word
+        .replace(/[؟?،,.;:!]/g, "")
+        .replace(/[ًٌٍَُِّْـ]/g, "")
+        .trim();
+    }
+
+    function arabicWords(text) {
+      return text
+        .split(/\s+/)
+        .map(normalizeArabicWord)
+        .filter(Boolean);
+    }
+
+    function wordMeaning(word) {
+      if (arabicWordMeanings[word]) return arabicWordMeanings[word];
+
+      const exactMatch = allQuestions.find((item) => normalizeArabicWord(item.ar) === word);
+      if (exactMatch && !exactMatch.zh.includes("\n")) return exactMatch.zh.replace(/[。？?]/g, "");
+
+      const withoutPrefix = word.replace(/^(لل|ال|و|ب|ل)/, "");
+      if (withoutPrefix !== word && arabicWordMeanings[withoutPrefix]) return arabicWordMeanings[withoutPrefix];
+
+      return "看整句意思";
+    }
+
+    function renderWordMeanings(question = current) {
+      elements.wordMeanings.replaceChildren();
+      elements.wordMeanings.hidden = true;
+      if (!question || isPoemQuestion(question)) return;
+
+      const words = arabicWords(question.ar);
+      const shouldShow = words.length > 1 || question.category.includes("句子");
+      if (!shouldShow) return;
+
+      words.forEach((word) => {
+        const card = document.createElement("div");
+        card.className = "word-meaning";
+        const arabic = document.createElement("div");
+        arabic.className = "word-meaning-ar";
+        arabic.lang = "ar";
+        arabic.dir = "rtl";
+        arabic.textContent = word;
+        const chinese = document.createElement("div");
+        chinese.className = "word-meaning-zh";
+        chinese.textContent = wordMeaning(word);
+        card.append(arabic, chinese);
+        elements.wordMeanings.append(card);
+      });
+      elements.wordMeanings.hidden = false;
     }
 
     function loadCheckins() {
@@ -2525,6 +2738,8 @@
       elements.arabicInput.lang = isPoemQuestion(current) ? "zh-CN" : "ar";
       elements.arabicInput.setAttribute("aria-label", isPoemQuestion(current) ? "古诗词默写输入" : "阿语输入");
       elements.arabicInput.value = "";
+      elements.wordMeanings.replaceChildren();
+      elements.wordMeanings.hidden = true;
       elements.feedback.textContent = "";
       elements.feedback.className = "feedback";
       elements.nextButton.disabled = true;
@@ -2666,6 +2881,7 @@
         elements.feedback.className = "feedback success";
         elements.entry.hidden = false;
         elements.arabicInput.disabled = false;
+        renderWordMeanings(current);
         [...elements.choices.children].forEach((choice) => {
           choice.disabled = false;
           if (choice.dataset.correct === "true") {
