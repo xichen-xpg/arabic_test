@@ -1943,6 +1943,11 @@
       return inputChars(answer)[inputChars(typed).length] || "";
     }
 
+    function isExpectedNativeKey(event) {
+      if (!current || event.key.length !== 1) return false;
+      return event.key === nextInputChar(current.ar, elements.arabicInput.value);
+    }
+
     function isHanChar(char) {
       return /[\u3400-\u9fff\uf900-\ufaff]/.test(char);
     }
@@ -3135,6 +3140,10 @@
       }
 
       if (isPoemQuestion()) {
+        return;
+      }
+
+      if (isExpectedNativeKey(event)) {
         return;
       }
 
