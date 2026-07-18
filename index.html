@@ -48,43 +48,6 @@
       background: #fff;
     }
 
-    .game-lock {
-      position: absolute;
-      inset: 0;
-      z-index: 2;
-      display: none;
-      place-items: center;
-      padding: 24px;
-      background: rgba(11, 18, 32, .9);
-      color: #fff;
-      text-align: center;
-    }
-
-    .game-lock.active {
-      display: grid;
-    }
-
-    .game-lock:focus {
-      outline: none;
-    }
-
-    .lock-panel {
-      max-width: 420px;
-    }
-
-    .lock-panel h2 {
-      margin: 0 0 10px;
-      font-size: 28px;
-      line-height: 1.2;
-    }
-
-    .lock-panel p {
-      margin: 0;
-      color: rgba(255, 255, 255, .82);
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
     iframe {
       display: block;
       width: 100%;
@@ -121,12 +84,6 @@
     <section class="layout">
       <section class="pane">
         <iframe id="mainGameFrame" title="game" src="games/space-shooter.html?v=20260710start-layout"></iframe>
-        <div id="gameLock" class="game-lock" tabindex="-1" aria-live="polite">
-          <div class="lock-panel">
-            <h2 id="gameLockTitle">需要先完成阿语题</h2>
-            <p id="gameLockText">选择极品飞车2后，完成右侧一题即可解锁 60 秒游戏时间。</p>
-          </div>
-        </div>
       </section>
       <aside class="pane">
         <iframe id="arabicFrame" title="arabic test" src="games/arabic-test.html?v=20260712poem-used-keys" allow="autoplay"></iframe>
@@ -137,26 +94,15 @@
   <script>
     const mainGameFrame = document.querySelector("#mainGameFrame");
     const layout = document.querySelector(".layout");
-    const gameLock = document.querySelector("#gameLock");
-    const gameLockTitle = document.querySelector("#gameLockTitle");
-    const gameLockText = document.querySelector("#gameLockText");
     let latestArabicMetrics = null;
     let activeGameSource = "games/space-shooter.html?v=20260710start-layout";
-    let nfs2RemainingSeconds = 0;
-    let nfs2Timer = null;
-    let nfs2Window = null;
     let sharedLifeSpent = 0;
     const sharedCompletedTokens = new Set();
     const dailyLifeStorageKey = "arabic-game:daily-life";
     let activeDailyLifeDate = "";
-    const nfs2RewardSeconds = 60;
-    const nfs2Channel = "BroadcastChannel" in window
-      ? new BroadcastChannel("nfs2-reward")
-      : null;
     const gameSourceMap = {
       shooter: "games/space-shooter.html?v=20260710start-layout",
-      pikachu: "games/pikachu-volleyball/zh/index.html?v=20260614life",
-      nfs2: "need_for_speed/Need%20for%20Speed%20II%20SE%20-%20Play%20in%20Browser%20for%20Free%20-%20Retro%20Online.html"
+      pikachu: "games/pikachu-volleyball/zh/index.html?v=20260614life"
     };
     const pikachuControlCodes = new Set([
       "ArrowLeft",
@@ -251,124 +197,10 @@
       return latestArabicMetrics;
     }
 
-    function isNfs2Source(src = activeGameSource) {
-      return src === gameSourceMap.nfs2;
-    }
-
-    function setGameLock(locked, title, text) {
-      gameLock.classList.toggle("active", locked);
-      gameLockTitle.textContent = title;
-      gameLockText.textContent = text;
-      mainGameFrame.style.pointerEvents = locked ? "none" : "";
-      if (locked) {
-        gameLock.focus();
-      }
-    }
-
-    function stopNfs2Timer() {
-      if (nfs2Timer) {
-        clearInterval(nfs2Timer);
-        nfs2Timer = null;
-      }
-    }
-
-    function openNfs2Tab() {
-      if (!nfs2Window || nfs2Window.closed) {
-        nfs2Window = window.open(gameSourceMap.nfs2, "nfs2RewardTab");
-      } else {
-        nfs2Window.focus();
-      }
-      return nfs2Window;
-    }
-
-    function sendNfs2Command(action, details = {}) {
-      const message = {
-        type: "nfs2-reward",
-        action,
-        ...details
-      };
-      window.postMessage(message, "*");
-      nfs2Channel?.postMessage(message);
-      if (nfs2Window && !nfs2Window.closed) {
-        nfs2Window.postMessage(message, "*");
-      }
-    }
-
-    function sendNfs2CommandWithRetries(action, details = {}) {
-      sendNfs2Command(action, details);
-      [800, 2000, 5000].forEach((delay) => {
-        window.setTimeout(() => sendNfs2Command(action, details), delay);
-      });
-    }
-
-    function lockNfs2(reason = "时间到了") {
-      stopNfs2Timer();
-      nfs2RemainingSeconds = 0;
-      setGameLock(
-        true,
-        "极品飞车2已锁定",
-        `${reason}。完成右侧一题后继续访问网页。`
-      );
-      sendNfs2Command("lock", { reason });
-    }
-
-    function tickNfs2Timer() {
-      nfs2RemainingSeconds -= 1;
-      if (nfs2RemainingSeconds <= 0) {
-        lockNfs2();
-        return;
-      }
-      setGameLock(
-        false,
-        "极品飞车2已解锁",
-        `剩余 ${nfs2RemainingSeconds} 秒。`
-      );
-    }
-
-    function unlockNfs2() {
-      if (!isNfs2Source()) return;
-      nfs2RemainingSeconds = nfs2RewardSeconds;
-      openNfs2Tab();
-      sendNfs2Command("unlock", { seconds: nfs2RemainingSeconds });
-      window.setTimeout(() => {
-        sendNfs2Command("unlock", { seconds: nfs2RemainingSeconds });
-      }, 600);
-      setGameLock(
-        false,
-        "极品飞车2已解锁",
-        `剩余 ${nfs2RemainingSeconds} 秒。`
-      );
-      stopNfs2Timer();
-      nfs2Timer = setInterval(tickNfs2Timer, 1000);
-    }
-
     function selectGameSource(requested) {
-      stopNfs2Timer();
       activeGameSource = Object.values(gameSourceMap).includes(requested)
         ? requested
         : gameSourceMap.shooter;
-
-      if (isNfs2Source()) {
-        setGameLock(
-          true,
-          "需要先完成阿语题",
-          "已打开极品飞车2奖励页。完成右侧一题即可解锁 60 秒，网页里的确认和开始按钮由玩家自己点击。"
-        );
-        mainGameFrame.src = "about:blank";
-        if (!openNfs2Tab()) {
-          setGameLock(
-            true,
-            "浏览器拦截了新标签页",
-            "请允许弹出窗口后，再重新选择极品飞车2。"
-          );
-        } else {
-          sendNfs2CommandWithRetries("lock", { reason: "需要先完成阿语题" });
-        }
-        return;
-      }
-
-      setGameLock(false, "", "");
-      sendNfs2Command("lock", { reason: "已切换到其他游戏" });
       mainGameFrame.src = activeGameSource;
     }
 
@@ -383,9 +215,6 @@
         forwardArabicMetrics();
         if (latestArabicMetrics.event === "question-loaded") {
           setLayoutMode("practice");
-        }
-        if (latestArabicMetrics.event === "question-completed") {
-          unlockNfs2();
         }
         return;
       }
