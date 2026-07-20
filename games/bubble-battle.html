@@ -327,6 +327,7 @@
     const solidTiles = new Set([1, 2, 3]);
     const blastBlockers = new Set([1, 3]);
     const keys = new Set();
+    const pressedKeys = new Set();
     const inputs = {};
     const aiInputs = {};
     let tile = 40;
@@ -384,6 +385,9 @@
           color: playerColors[index],
           x: spawn.x + .5,
           y: spawn.y + .5,
+          targetX: spawn.x + .5,
+          targetY: spawn.y + .5,
+          moving: false,
           radius: .28,
           speed: 3.35,
           bombs: 1,
@@ -567,23 +571,25 @@
       ws.send(JSON.stringify({ type: "state", state, running: overlay.hidden }));
     }
 
-    function solidAt(x, y, ignoreBombPlayer = null) {
+    function solidAt(x, y, player = null) {
       const cx = Math.floor(x);
       const cy = Math.floor(y);
       if (cy < 0 || cy >= rows || cx < 0 || cx >= cols) return true;
       if (solidTiles.has(state.map[cy][cx])) return true;
       return state.bombs.some((bomb) => {
-        if (ignoreBombPlayer && bomb.owner === ignoreBombPlayer && bomb.grace > 0) return false;
+        if (player && bomb.owner === player.id && bomb.x === Math.floor(player.x) && bomb.y === Math.floor(player.y)) {
+          return false;
+        }
         return bomb.x === cx && bomb.y === cy && !bomb.dead;
       });
     }
 
     function canMoveTo(player, x, y) {
       const r = player.radius;
-      return !solidAt(x - r, y - r, player.id)
-        && !solidAt(x + r, y - r, player.id)
-        && !solidAt(x - r, y + r, player.id)
-        && !solidAt(x + r, y + r, player.id);
+      return !solidAt(x - r, y - r, player)
+        && !solidAt(x + r, y - r, player)
+        && !solidAt(x - r, y + r, player)
+        && !solidAt(x + r, y + r, player);
     }
 
     function placeBomb(player) {
@@ -609,14 +615,34 @@
     function updatePlayer(player, input, dt) {
       if (!player.alive) return;
       player.shield = Math.max(0, player.shield - dt);
-      const dx = (input.right ? 1 : 0) - (input.left ? 1 : 0);
-      const dy = (input.down ? 1 : 0) - (input.up ? 1 : 0);
-      const len = Math.hypot(dx, dy) || 1;
-      const step = player.speed * dt;
-      const nx = player.x + (dx / len) * step;
-      const ny = player.y + (dy / len) * step;
-      if (canMoveTo(player, nx, player.y)) player.x = nx;
-      if (canMoveTo(player, player.x, ny)) player.y = ny;
+      if (player.moving) {
+        const dx = player.targetX - player.x;
+        const dy = player.targetY - player.y;
+        const distance = Math.hypot(dx, dy);
+        const step = player.speed * dt;
+        if (distance <= step) {
+          player.x = player.targetX;
+          player.y = player.targetY;
+          player.moving = false;
+        } else {
+          player.x += (dx / distance) * step;
+          player.y += (dy / distance) * step;
+        }
+      } else {
+        player.x = Math.floor(player.x) + .5;
+        player.y = Math.floor(player.y) + .5;
+        const dx = input.right ? 1 : input.left ? -1 : 0;
+        const dy = dx === 0 ? (input.down ? 1 : input.up ? -1 : 0) : 0;
+        if (dx !== 0 || dy !== 0) {
+          const targetX = player.x + dx;
+          const targetY = player.y + dy;
+          if (canMoveTo(player, targetX, targetY)) {
+            player.targetX = targetX;
+            player.targetY = targetY;
+            player.moving = true;
+          }
+        }
+      }
       if (input.bomb) {
         placeBomb(player);
       } else {
@@ -796,18 +822,18 @@
 
     function syncInputs() {
       const p1 = {
-        left: keys.has("ArrowLeft"),
-        right: keys.has("ArrowRight"),
-        up: keys.has("ArrowUp"),
-        down: keys.has("ArrowDown"),
-        bomb: keys.has("Enter") || keys.has("Space") || keys.has("Numpad0")
+        left: pressedKeys.has("ArrowLeft"),
+        right: pressedKeys.has("ArrowRight"),
+        up: pressedKeys.has("ArrowUp"),
+        down: pressedKeys.has("ArrowDown"),
+        bomb: pressedKeys.has("Enter") || pressedKeys.has("Space") || pressedKeys.has("Numpad0")
       };
       const p2 = {
-        left: keys.has("KeyA"),
-        right: keys.has("KeyD"),
-        up: keys.has("KeyW"),
-        down: keys.has("KeyS"),
-        bomb: keys.has("KeyF") || keys.has("ShiftLeft")
+        left: pressedKeys.has("KeyA"),
+        right: pressedKeys.has("KeyD"),
+        up: pressedKeys.has("KeyW"),
+        down: pressedKeys.has("KeyS"),
+        bomb: pressedKeys.has("KeyF") || pressedKeys.has("ShiftLeft")
       };
       if (mode === "local") {
         inputs["0"] = p1;
@@ -817,6 +843,7 @@
         if (slot !== undefined) inputs[String(slot)] = p1;
         sendInput();
       }
+      pressedKeys.clear();
     }
 
     function draw() {
@@ -1072,6 +1099,7 @@
       if (["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Space", "Enter", "Numpad0", "KeyW", "KeyA", "KeyS", "KeyD", "KeyF", "ShiftLeft"].includes(event.code)) {
         event.preventDefault();
         keys.add(event.code);
+        if (!event.repeat) pressedKeys.add(event.code);
       }
       if (event.code === "KeyP") {
         paused = !paused;
