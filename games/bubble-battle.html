@@ -388,8 +388,10 @@
           targetX: spawn.x + .5,
           targetY: spawn.y + .5,
           moving: false,
+          queuedDx: 0,
+          queuedDy: 0,
           radius: .28,
-          speed: 3.35,
+          speed: 10.5,
           bombs: 1,
           range: 2,
           alive: true,
@@ -612,10 +614,34 @@
       player.placeLock = true;
     }
 
+    function requestedDirection(input) {
+      const dx = input.right ? 1 : input.left ? -1 : 0;
+      const dy = dx === 0 ? (input.down ? 1 : input.up ? -1 : 0) : 0;
+      return { dx, dy };
+    }
+
+    function tryStartMove(player, dx, dy) {
+      if (dx === 0 && dy === 0) return false;
+      player.x = Math.floor(player.x) + .5;
+      player.y = Math.floor(player.y) + .5;
+      const targetX = player.x + dx;
+      const targetY = player.y + dy;
+      if (!canMoveTo(player, targetX, targetY)) return false;
+      player.targetX = targetX;
+      player.targetY = targetY;
+      player.moving = true;
+      return true;
+    }
+
     function updatePlayer(player, input, dt) {
       if (!player.alive) return;
       player.shield = Math.max(0, player.shield - dt);
+      const requested = requestedDirection(input);
       if (player.moving) {
+        if (requested.dx !== 0 || requested.dy !== 0) {
+          player.queuedDx = requested.dx;
+          player.queuedDy = requested.dy;
+        }
         const dx = player.targetX - player.x;
         const dy = player.targetY - player.y;
         const distance = Math.hypot(dx, dy);
@@ -624,24 +650,19 @@
           player.x = player.targetX;
           player.y = player.targetY;
           player.moving = false;
+          if (player.queuedDx !== 0 || player.queuedDy !== 0) {
+            const queuedDx = player.queuedDx;
+            const queuedDy = player.queuedDy;
+            player.queuedDx = 0;
+            player.queuedDy = 0;
+            tryStartMove(player, queuedDx, queuedDy);
+          }
         } else {
           player.x += (dx / distance) * step;
           player.y += (dy / distance) * step;
         }
       } else {
-        player.x = Math.floor(player.x) + .5;
-        player.y = Math.floor(player.y) + .5;
-        const dx = input.right ? 1 : input.left ? -1 : 0;
-        const dy = dx === 0 ? (input.down ? 1 : input.up ? -1 : 0) : 0;
-        if (dx !== 0 || dy !== 0) {
-          const targetX = player.x + dx;
-          const targetY = player.y + dy;
-          if (canMoveTo(player, targetX, targetY)) {
-            player.targetX = targetX;
-            player.targetY = targetY;
-            player.moving = true;
-          }
-        }
+        tryStartMove(player, requested.dx, requested.dy);
       }
       if (input.bomb) {
         placeBomb(player);
@@ -658,7 +679,7 @@
         if (power.x !== px || power.y !== py) return true;
         if (power.type === "bomb") player.bombs = Math.min(5, player.bombs + 1);
         if (power.type === "range") player.range = Math.min(6, player.range + 1);
-        if (power.type === "speed") player.speed = Math.min(4.6, player.speed + .35);
+        if (power.type === "speed") player.speed = Math.min(14, player.speed + 1);
         if (power.type === "shield") player.shield = 5;
         burst((power.x + .5), (power.y + .5), "#ffffff", 10);
         return false;
