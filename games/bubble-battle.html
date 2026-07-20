@@ -349,6 +349,7 @@
     let isHost = false;
     let connectedPeers = [];
     let remoteNames = {};
+    let lanAddresses = [];
     let localSlots = [0, 1];
     let includeBots = false;
     let paused = false;
@@ -504,11 +505,34 @@
       return Math.random().toString(36).slice(2, 8).toUpperCase();
     }
 
+    function localRoomUrl(base = window.location.href) {
+      const url = new URL(base);
+      url.pathname = "/games/bubble-battle.html";
+      url.searchParams.set("room", roomInput.value.trim() || "bubble");
+      return url.href;
+    }
+
+    function shareRoomUrl() {
+      const base = lanAddresses[0] || window.location.href;
+      return localRoomUrl(base);
+    }
+
     function updateRoomUrl() {
       const url = new URL(window.location.href);
       url.searchParams.set("room", roomInput.value.trim() || "bubble");
       history.replaceState(null, "", url);
-      return url.href;
+      return shareRoomUrl();
+    }
+
+    async function loadLanAddresses() {
+      try {
+        const response = await fetch("/bubble-lan-info", { cache: "no-store" });
+        if (!response.ok) return;
+        const info = await response.json();
+        lanAddresses = Array.isArray(info.addresses) ? info.addresses : [];
+      } catch {
+        lanAddresses = [];
+      }
     }
 
     function createLanRoom() {
@@ -1197,6 +1221,7 @@
       setLanStatus(`已载入房间：${roomInput.value}，填写玩家名后点击加入房间`);
     }
 
+    loadLanAddresses();
     resize();
     syncHud();
     requestAnimationFrame(loop);

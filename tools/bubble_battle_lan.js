@@ -27,6 +27,15 @@ const types = {
 
 const server = http.createServer((req, res) => {
   const url = new URL(req.url, `http://${req.headers.host}`);
+  if (url.pathname === "/bubble-lan-info") {
+    const addresses = lanAddresses();
+    res.writeHead(200, {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "no-cache"
+    });
+    res.end(JSON.stringify({ port, addresses }));
+    return;
+  }
   let pathname = decodeURIComponent(url.pathname);
   if (pathname === "/") pathname = "/index.html";
   const file = path.resolve(root, pathname.replace(/^\/+/, ""));
@@ -224,11 +233,15 @@ server.on("error", (error) => {
   throw error;
 });
 
-server.listen(port, "0.0.0.0", () => {
-  const addresses = Object.values(os.networkInterfaces())
+function lanAddresses() {
+  return Object.values(os.networkInterfaces())
     .flat()
     .filter((item) => item && item.family === "IPv4" && !item.internal)
     .map((item) => `http://${item.address}:${port}/`);
+}
+
+server.listen(port, "0.0.0.0", () => {
+  const addresses = lanAddresses();
   console.log(`Bubble Battle LAN server running on http://localhost:${port}/`);
   addresses.forEach((address) => console.log(`LAN: ${address}`));
 });
