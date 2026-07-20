@@ -250,7 +250,10 @@
   <main class="stage">
     <canvas id="gameCanvas" aria-label="水泡 PK 游戏画面"></canvas>
     <section class="hud">
-      <div id="players" class="players"></div>
+      <div class="players">
+        <div id="roundTimer" class="badge"><span>时间</span><b>3:00</b></div>
+        <div id="players" class="players"></div>
+      </div>
       <div class="top-actions">
         <button id="pauseButton" class="icon-button" type="button" title="暂停/继续">⏸</button>
         <button id="menuButton" class="icon-button" type="button" title="菜单">☰</button>
@@ -303,6 +306,7 @@
     const overlay = document.querySelector("#overlay");
     const headline = document.querySelector("#headline");
     const playersEl = document.querySelector("#players");
+    const roundTimerEl = document.querySelector("#roundTimer b");
     const pauseButton = document.querySelector("#pauseButton");
     const menuButton = document.querySelector("#menuButton");
     const localButton = document.querySelector("#localButton");
@@ -1089,6 +1093,11 @@
     }
 
     function syncHud() {
+      const remaining = Math.max(0, Math.ceil(state.roundTime));
+      const minutes = Math.floor(remaining / 60);
+      const seconds = String(remaining % 60).padStart(2, "0");
+      roundTimerEl.textContent = `${minutes}:${seconds}`;
+      roundTimerEl.style.color = remaining <= 30 ? "#ff8a8a" : "#ffffff";
       playersEl.replaceChildren();
       state.players.forEach((player) => {
         const badge = document.createElement("div");
