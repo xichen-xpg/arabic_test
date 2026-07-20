@@ -286,10 +286,11 @@
               <input id="nameInput" value="玩家" maxlength="12">
             </div>
             <div class="button-row">
-              <button id="lanButton" class="primary" type="button">加入局域网</button>
+              <button id="createLanButton" class="primary" type="button">创建房间</button>
+              <button id="lanButton" class="secondary" type="button">加入房间</button>
               <button id="lanStartButton" class="secondary" type="button">房主开局</button>
             </div>
-            <p class="note">先运行 `node tools/bubble_battle_lan.js`，局域网设备打开服务器地址。第一个进入房间的人是房主。</p>
+            <p class="note">先运行 `node tools/bubble_battle_lan.js`，然后在网页里创建房间，把生成的房间链接发给同局域网玩家。第一个进入房间的人是房主。</p>
             <div id="lanStatus" class="status"></div>
           </section>
         </div>
@@ -311,6 +312,7 @@
     const menuButton = document.querySelector("#menuButton");
     const localButton = document.querySelector("#localButton");
     const botButton = document.querySelector("#botButton");
+    const createLanButton = document.querySelector("#createLanButton");
     const lanButton = document.querySelector("#lanButton");
     const lanStartButton = document.querySelector("#lanStartButton");
     const roomInput = document.querySelector("#roomInput");
@@ -498,9 +500,31 @@
       lanStatus.textContent = text;
     }
 
-    function connectLan() {
+    function roomCode() {
+      return Math.random().toString(36).slice(2, 8).toUpperCase();
+    }
+
+    function updateRoomUrl() {
+      const url = new URL(window.location.href);
+      url.searchParams.set("room", roomInput.value.trim() || "bubble");
+      history.replaceState(null, "", url);
+      return url.href;
+    }
+
+    function createLanRoom() {
+      roomInput.value = roomCode();
+      const link = updateRoomUrl();
+      connectLan(true);
+      setLanStatus(`房间已创建：${roomInput.value} | 分享链接：${link}`);
+    }
+
+    function connectLan(created = false) {
       room = roomInput.value.trim() || "bubble";
       const name = nameInput.value.trim() || "玩家";
+      updateRoomUrl();
+      if (ws && ws.readyState === WebSocket.OPEN) {
+        ws.close();
+      }
       const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
       const url = `${protocol}//${window.location.host}/bubble-ws`;
       try {
@@ -509,7 +533,7 @@
         setLanStatus("无法连接局域网服务器");
         return;
       }
-      setLanStatus("连接中...");
+      setLanStatus(created ? "正在创建房间..." : "正在加入房间...");
       mode = "lan";
       ws.addEventListener("open", () => {
         ws.send(JSON.stringify({ type: "join", room, name }));
@@ -1162,9 +1186,16 @@
     });
     localButton.addEventListener("click", () => startLocal(0));
     botButton.addEventListener("click", () => startLocal(2));
-    lanButton.addEventListener("click", connectLan);
+    createLanButton.addEventListener("click", createLanRoom);
+    lanButton.addEventListener("click", () => connectLan(false));
     lanStartButton.addEventListener("click", startLanRound);
     window.addEventListener("resize", resize);
+
+    const roomFromUrl = new URLSearchParams(window.location.search).get("room");
+    if (roomFromUrl) {
+      roomInput.value = roomFromUrl.slice(0, 18);
+      setLanStatus(`已载入房间：${roomInput.value}，填写玩家名后点击加入房间`);
+    }
 
     resize();
     syncHud();
