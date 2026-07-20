@@ -1,0 +1,1116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>水泡 PK</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow: hidden;
+      background: #14213d;
+      color: #f8fafc;
+      font-family: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    .stage {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      min-height: 620px;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(255, 200, 87, .24), transparent 22%),
+        radial-gradient(circle at 86% 10%, rgba(94, 234, 212, .18), transparent 24%),
+        linear-gradient(180deg, #16213e 0%, #12324a 52%, #143927 100%);
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .hud {
+      position: absolute;
+      inset: 12px 12px auto 12px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      pointer-events: none;
+    }
+
+    .players {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .badge {
+      min-width: 118px;
+      padding: 8px 10px;
+      border: 1px solid rgba(255, 255, 255, .22);
+      border-radius: 8px;
+      background: rgba(5, 18, 34, .78);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .22);
+    }
+
+    .badge span {
+      display: block;
+      color: rgba(248, 250, 252, .72);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .badge b {
+      display: block;
+      margin-top: 3px;
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .top-actions {
+      display: flex;
+      gap: 8px;
+      pointer-events: auto;
+    }
+
+    .icon-button,
+    .primary,
+    .secondary {
+      min-height: 38px;
+      border: 0;
+      border-radius: 8px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .icon-button {
+      width: 42px;
+      background: rgba(255, 255, 255, .92);
+      color: #132238;
+      font-size: 18px;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 18px;
+      background: rgba(5, 12, 24, .42);
+    }
+
+    .overlay[hidden] {
+      display: none;
+    }
+
+    .menu {
+      width: min(760px, 100%);
+      max-height: calc(100vh - 36px);
+      overflow: auto;
+      border: 1px solid rgba(255, 255, 255, .22);
+      border-radius: 10px;
+      background: rgba(11, 26, 44, .94);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, .38);
+    }
+
+    .menu-head {
+      padding: 22px 24px 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+    }
+
+    .menu h1 {
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.15;
+    }
+
+    .menu p {
+      margin: 8px 0 0;
+      color: rgba(248, 250, 252, .76);
+      line-height: 1.6;
+      font-weight: 700;
+    }
+
+    .menu-body {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      padding: 16px;
+    }
+
+    .panel {
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .16);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .07);
+    }
+
+    .panel h2 {
+      margin: 0 0 10px;
+      font-size: 17px;
+    }
+
+    .form-row {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    label {
+      color: rgba(248, 250, 252, .72);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    input {
+      width: 100%;
+      min-height: 38px;
+      border: 1px solid rgba(255, 255, 255, .22);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .9);
+      color: #111827;
+      padding: 8px 10px;
+      font-weight: 800;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .primary,
+    .secondary {
+      padding: 9px 13px;
+    }
+
+    .primary {
+      background: #ffc857;
+      color: #2a1b00;
+    }
+
+    .secondary {
+      background: rgba(255, 255, 255, .12);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, .2);
+    }
+
+    .note {
+      margin: 10px 0 0;
+      color: rgba(248, 250, 252, .66);
+      font-size: 13px;
+      line-height: 1.45;
+      font-weight: 700;
+    }
+
+    .status {
+      margin-top: 10px;
+      color: #a7f3d0;
+      font-size: 13px;
+      font-weight: 800;
+      min-height: 18px;
+    }
+
+    .footer {
+      padding: 0 16px 16px;
+      color: rgba(248, 250, 252, .7);
+      font-size: 13px;
+      line-height: 1.55;
+      font-weight: 700;
+    }
+
+    @media (max-width: 740px) {
+      .stage {
+        min-height: 560px;
+      }
+
+      .menu-body {
+        grid-template-columns: 1fr;
+      }
+
+      .badge {
+        min-width: 96px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="stage">
+    <canvas id="gameCanvas" aria-label="水泡 PK 游戏画面"></canvas>
+    <section class="hud">
+      <div id="players" class="players"></div>
+      <div class="top-actions">
+        <button id="pauseButton" class="icon-button" type="button" title="暂停/继续">⏸</button>
+        <button id="menuButton" class="icon-button" type="button" title="菜单">☰</button>
+      </div>
+    </section>
+
+    <section id="overlay" class="overlay">
+      <div class="menu">
+        <div class="menu-head">
+          <h1>水泡 PK</h1>
+          <p id="headline">放水泡，炸箱子，躲在石墙和掩体后面，最后活下来的人获胜。</p>
+        </div>
+        <div class="menu-body">
+          <section class="panel">
+            <h2>同屏对战</h2>
+            <div class="button-row">
+              <button id="localButton" class="primary" type="button">开始双人 PK</button>
+              <button id="botButton" class="secondary" type="button">加 2 个机器人</button>
+            </div>
+            <p class="note">P1：方向键移动，Enter 或 Space 放水泡。P2：WASD 移动，F 放水泡。</p>
+          </section>
+          <section class="panel">
+            <h2>局域网房间</h2>
+            <div class="form-row">
+              <label for="roomInput">房间名</label>
+              <input id="roomInput" value="bubble" maxlength="18">
+            </div>
+            <div class="form-row">
+              <label for="nameInput">玩家名</label>
+              <input id="nameInput" value="玩家" maxlength="12">
+            </div>
+            <div class="button-row">
+              <button id="lanButton" class="primary" type="button">加入局域网</button>
+              <button id="lanStartButton" class="secondary" type="button">房主开局</button>
+            </div>
+            <p class="note">先运行 `node tools/bubble_battle_lan.js`，局域网设备打开服务器地址。第一个进入房间的人是房主。</p>
+            <div id="lanStatus" class="status"></div>
+          </section>
+        </div>
+        <div class="footer">
+          道具：蓝色加水泡数量，黄色加爆炸范围，绿色加速度，白色护盾。硬墙和绿色掩体会挡住爆炸；箱子会被炸开并可能掉道具。
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const canvas = document.querySelector("#gameCanvas");
+    const ctx = canvas.getContext("2d");
+    const overlay = document.querySelector("#overlay");
+    const headline = document.querySelector("#headline");
+    const playersEl = document.querySelector("#players");
+    const pauseButton = document.querySelector("#pauseButton");
+    const menuButton = document.querySelector("#menuButton");
+    const localButton = document.querySelector("#localButton");
+    const botButton = document.querySelector("#botButton");
+    const lanButton = document.querySelector("#lanButton");
+    const lanStartButton = document.querySelector("#lanStartButton");
+    const roomInput = document.querySelector("#roomInput");
+    const nameInput = document.querySelector("#nameInput");
+    const lanStatus = document.querySelector("#lanStatus");
+
+    const cols = 15;
+    const rows = 13;
+    const tickRate = 1 / 60;
+    const snapshotRate = 1 / 12;
+    const playerColors = ["#ff5f7e", "#44c2ff", "#ffd166", "#8ee36d"];
+    const spawnCells = [
+      { x: 1, y: 1 },
+      { x: cols - 2, y: rows - 2 },
+      { x: cols - 2, y: 1 },
+      { x: 1, y: rows - 2 }
+    ];
+    const solidTiles = new Set([1, 2, 3]);
+    const blastBlockers = new Set([1, 3]);
+    const keys = new Set();
+    const inputs = {};
+    const aiInputs = {};
+    let tile = 40;
+    let boardX = 0;
+    let boardY = 0;
+    let lastTime = 0;
+    let accumulator = 0;
+    let snapshotTimer = 0;
+    let mode = "local";
+    let ws = null;
+    let room = "bubble";
+    let clientId = "";
+    let isHost = false;
+    let connectedPeers = [];
+    let remoteNames = {};
+    let localSlots = [0, 1];
+    let includeBots = false;
+    let paused = false;
+    let lives = 0;
+    let lifeSpentForRound = false;
+    let state = newGameState(2, 1);
+
+    function random(seed) {
+      let t = seed + 0x6D2B79F5;
+      return () => {
+        t += 0x6D2B79F5;
+        let x = Math.imul(t ^ (t >>> 15), t | 1);
+        x ^= x + Math.imul(x ^ (x >>> 7), x | 61);
+        return ((x ^ (x >>> 14)) >>> 0) / 4294967296;
+      };
+    }
+
+    function newGameState(count, seed = Date.now() & 0xfffffff) {
+      const rng = random(seed);
+      const map = Array.from({ length: rows }, (_, y) => Array.from({ length: cols }, (_, x) => {
+        if (x === 0 || y === 0 || x === cols - 1 || y === rows - 1) return 1;
+        if (x % 2 === 0 && y % 2 === 0) return 1;
+        if ((x === 4 || x === 10) && y > 2 && y < rows - 3 && y % 3 === 1) return 3;
+        return rng() < .62 ? 2 : 0;
+      }));
+
+      spawnCells.forEach((spawn) => {
+        for (let y = spawn.y - 1; y <= spawn.y + 1; y += 1) {
+          for (let x = spawn.x - 1; x <= spawn.x + 1; x += 1) {
+            if (map[y] && map[y][x] !== 1) map[y][x] = 0;
+          }
+        }
+      });
+
+      const players = Array.from({ length: count }, (_, index) => {
+        const spawn = spawnCells[index];
+        return {
+          id: String(index),
+          name: remoteNames[String(index)] || `P${index + 1}`,
+          color: playerColors[index],
+          x: spawn.x + .5,
+          y: spawn.y + .5,
+          radius: .28,
+          speed: 3.35,
+          bombs: 1,
+          range: 2,
+          alive: true,
+          shield: 0,
+          wins: 0,
+          placeLock: false,
+          bot: false
+        };
+      });
+
+      return {
+        seed,
+        map,
+        players,
+        bombs: [],
+        flames: [],
+        powerups: [],
+        particles: [],
+        roundTime: 180,
+        countdown: 2.2,
+        winner: "",
+        message: "准备"
+      };
+    }
+
+    function resize() {
+      const rect = canvas.getBoundingClientRect();
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = Math.max(1, Math.floor(rect.width * dpr));
+      canvas.height = Math.max(1, Math.floor(rect.height * dpr));
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      tile = Math.floor(Math.min(rect.width / cols, (rect.height - 86) / rows));
+      tile = Math.max(28, Math.min(54, tile));
+      boardX = Math.floor((rect.width - tile * cols) / 2);
+      boardY = Math.floor((rect.height - tile * rows) / 2 + 26);
+    }
+
+    function startLocal(botCount = 0, preserveScores = false) {
+      mode = "local";
+      includeBots = botCount > 0;
+      const count = botCount ? 4 : 2;
+      const previousWins = preserveScores && state.players.length === count
+        ? state.players.map((player) => player.wins || 0)
+        : [];
+      state = newGameState(count);
+      state.players.forEach((player, index) => {
+        player.name = index < 2 ? `P${index + 1}` : `机器人 ${index - 1}`;
+        player.bot = index >= 2;
+        player.wins = previousWins[index] || 0;
+      });
+      localSlots = [0, 1];
+      paused = false;
+      lifeSpentForRound = false;
+      maybeSpendLife();
+      overlay.hidden = true;
+      syncHud();
+      postGameStart();
+    }
+
+    function startLanRound() {
+      if (!ws || ws.readyState !== WebSocket.OPEN) return;
+      if (!isHost) {
+        setLanStatus("等待房主开局");
+        return;
+      }
+      const peers = connectedPeers.slice(0, 4);
+      const count = Math.max(2, peers.length);
+      const next = newGameState(count);
+      peers.forEach((peer, index) => {
+        if (next.players[index]) next.players[index].name = remoteNames[peer] || `玩家 ${index + 1}`;
+      });
+      state = next;
+      paused = false;
+      lifeSpentForRound = false;
+      maybeSpendLife();
+      overlay.hidden = true;
+      postGameStart();
+      sendState(true);
+    }
+
+    function maybeSpendLife() {
+      if (window.parent === window || lifeSpentForRound) return;
+      if (lives > 0) {
+        lifeSpentForRound = true;
+        window.parent.postMessage({
+          type: "game:life-spent",
+          payload: { game: "bubble-battle", amount: 1 }
+        }, "*");
+      }
+    }
+
+    function postGameStart() {
+      window.parent.postMessage({
+        type: "game:start",
+        payload: { game: "bubble-battle" }
+      }, "*");
+    }
+
+    function setLanStatus(text) {
+      lanStatus.textContent = text;
+    }
+
+    function connectLan() {
+      room = roomInput.value.trim() || "bubble";
+      const name = nameInput.value.trim() || "玩家";
+      const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
+      const url = `${protocol}//${window.location.host}/bubble-ws`;
+      try {
+        ws = new WebSocket(url);
+      } catch (error) {
+        setLanStatus("无法连接局域网服务器");
+        return;
+      }
+      setLanStatus("连接中...");
+      mode = "lan";
+      ws.addEventListener("open", () => {
+        ws.send(JSON.stringify({ type: "join", room, name }));
+      });
+      ws.addEventListener("message", (event) => {
+        let data = null;
+        try {
+          data = JSON.parse(event.data);
+        } catch {
+          return;
+        }
+        handleNetMessage(data);
+      });
+      ws.addEventListener("close", () => {
+        isHost = false;
+        setLanStatus("连接已断开，确认已运行 tools/bubble_battle_lan.js");
+      });
+      ws.addEventListener("error", () => {
+        setLanStatus("局域网服务器不可用");
+      });
+    }
+
+    function handleNetMessage(data) {
+      if (data.type === "welcome") {
+        clientId = data.id;
+        isHost = Boolean(data.host);
+        setLanStatus(isHost ? "已连接，你是房主" : "已连接，等待房主");
+        return;
+      }
+      if (data.type === "peers") {
+        connectedPeers = data.peers.map((peer) => peer.id);
+        remoteNames = {};
+        data.peers.forEach((peer) => {
+          remoteNames[peer.id] = peer.name;
+        });
+        const slot = connectedPeers.indexOf(clientId);
+        localSlots = slot >= 0 ? [slot] : [];
+        isHost = data.host === clientId;
+        setLanStatus(`${isHost ? "房主" : "玩家"} | 房间 ${room} | ${connectedPeers.length} 人`);
+        return;
+      }
+      if (data.type === "input" && isHost) {
+        const slot = connectedPeers.indexOf(data.id);
+        if (slot >= 0) inputs[String(slot)] = data.input || {};
+        return;
+      }
+      if (data.type === "state" && !isHost) {
+        state = data.state;
+        overlay.hidden = data.running ? true : overlay.hidden;
+        syncHud();
+      }
+    }
+
+    function sendInput() {
+      if (mode !== "lan" || !ws || ws.readyState !== WebSocket.OPEN || isHost) return;
+      const slot = localSlots[0];
+      if (slot === undefined) return;
+      ws.send(JSON.stringify({ type: "input", input: inputs[String(slot)] || {} }));
+    }
+
+    function sendState(force = false) {
+      if (mode !== "lan" || !isHost || !ws || ws.readyState !== WebSocket.OPEN) return;
+      if (!force && snapshotTimer > 0) return;
+      snapshotTimer = snapshotRate;
+      ws.send(JSON.stringify({ type: "state", state, running: overlay.hidden }));
+    }
+
+    function solidAt(x, y, ignoreBombPlayer = null) {
+      const cx = Math.floor(x);
+      const cy = Math.floor(y);
+      if (cy < 0 || cy >= rows || cx < 0 || cx >= cols) return true;
+      if (solidTiles.has(state.map[cy][cx])) return true;
+      return state.bombs.some((bomb) => {
+        if (ignoreBombPlayer && bomb.owner === ignoreBombPlayer && bomb.grace > 0) return false;
+        return bomb.x === cx && bomb.y === cy && !bomb.dead;
+      });
+    }
+
+    function canMoveTo(player, x, y) {
+      const r = player.radius;
+      return !solidAt(x - r, y - r, player.id)
+        && !solidAt(x + r, y - r, player.id)
+        && !solidAt(x - r, y + r, player.id)
+        && !solidAt(x + r, y + r, player.id);
+    }
+
+    function placeBomb(player) {
+      if (!player.alive || player.placeLock || state.countdown > 0 || state.winner) return;
+      const active = state.bombs.filter((bomb) => bomb.owner === player.id && !bomb.dead).length;
+      if (active >= player.bombs) return;
+      const x = Math.floor(player.x);
+      const y = Math.floor(player.y);
+      if (state.bombs.some((bomb) => bomb.x === x && bomb.y === y && !bomb.dead)) return;
+      state.bombs.push({
+        id: `${player.id}-${Date.now()}-${Math.random()}`,
+        owner: player.id,
+        x,
+        y,
+        range: player.range,
+        timer: 2.05,
+        grace: .35,
+        pulse: 0
+      });
+      player.placeLock = true;
+    }
+
+    function updatePlayer(player, input, dt) {
+      if (!player.alive) return;
+      player.shield = Math.max(0, player.shield - dt);
+      const dx = (input.right ? 1 : 0) - (input.left ? 1 : 0);
+      const dy = (input.down ? 1 : 0) - (input.up ? 1 : 0);
+      const len = Math.hypot(dx, dy) || 1;
+      const step = player.speed * dt;
+      const nx = player.x + (dx / len) * step;
+      const ny = player.y + (dy / len) * step;
+      if (canMoveTo(player, nx, player.y)) player.x = nx;
+      if (canMoveTo(player, player.x, ny)) player.y = ny;
+      if (input.bomb) {
+        placeBomb(player);
+      } else {
+        player.placeLock = false;
+      }
+      collectPowerup(player);
+    }
+
+    function collectPowerup(player) {
+      const px = Math.floor(player.x);
+      const py = Math.floor(player.y);
+      state.powerups = state.powerups.filter((power) => {
+        if (power.x !== px || power.y !== py) return true;
+        if (power.type === "bomb") player.bombs = Math.min(5, player.bombs + 1);
+        if (power.type === "range") player.range = Math.min(6, player.range + 1);
+        if (power.type === "speed") player.speed = Math.min(4.6, player.speed + .35);
+        if (power.type === "shield") player.shield = 5;
+        burst((power.x + .5), (power.y + .5), "#ffffff", 10);
+        return false;
+      });
+    }
+
+    function explosionCells(bomb) {
+      const cells = [{ x: bomb.x, y: bomb.y }];
+      const dirs = [[1, 0], [-1, 0], [0, 1], [0, -1]];
+      dirs.forEach(([dx, dy]) => {
+        for (let i = 1; i <= bomb.range; i += 1) {
+          const x = bomb.x + dx * i;
+          const y = bomb.y + dy * i;
+          if (x < 0 || y < 0 || x >= cols || y >= rows) break;
+          const t = state.map[y][x];
+          if (blastBlockers.has(t)) break;
+          cells.push({ x, y });
+          if (t === 2) break;
+        }
+      });
+      return cells;
+    }
+
+    function explodeBomb(bomb) {
+      if (bomb.dead) return;
+      bomb.dead = true;
+      const cells = explosionCells(bomb);
+      cells.forEach((cell) => {
+        state.flames.push({ x: cell.x, y: cell.y, life: .45, max: .45 });
+        if (state.map[cell.y][cell.x] === 2) {
+          state.map[cell.y][cell.x] = 0;
+          maybeDropPower(cell.x, cell.y);
+          burst(cell.x + .5, cell.y + .5, "#d98b40", 8);
+        }
+        state.bombs.forEach((other) => {
+          if (!other.dead && other.x === cell.x && other.y === cell.y) other.timer = Math.min(other.timer, .02);
+        });
+      });
+      burst(bomb.x + .5, bomb.y + .5, "#88e8ff", 18);
+    }
+
+    function maybeDropPower(x, y) {
+      const roll = Math.random();
+      if (roll > .34) return;
+      const types = ["bomb", "range", "speed", "shield"];
+      state.powerups.push({ x, y, type: types[Math.floor(Math.random() * types.length)] });
+    }
+
+    function burst(x, y, color, count) {
+      for (let i = 0; i < count; i += 1) {
+        const a = Math.random() * Math.PI * 2;
+        const s = Math.random() * 4 + 2;
+        state.particles.push({
+          x,
+          y,
+          vx: Math.cos(a) * s,
+          vy: Math.sin(a) * s,
+          life: .45,
+          max: .45,
+          color
+        });
+      }
+    }
+
+    function updateAi(dt) {
+      state.players.forEach((player, index) => {
+        if (!player.bot || !player.alive) return;
+        const key = String(index);
+        const current = aiInputs[key] || { change: 0 };
+        current.change -= dt;
+        const danger = state.flames.some((flame) => Math.abs(flame.x + .5 - player.x) < .72 && Math.abs(flame.y + .5 - player.y) < .72);
+        if (current.change <= 0 || danger) {
+          const dirs = [
+            { left: true }, { right: true }, { up: true }, { down: true }
+          ];
+          current.left = false;
+          current.right = false;
+          current.up = false;
+          current.down = false;
+          Object.assign(current, dirs[Math.floor(Math.random() * dirs.length)]);
+          current.bomb = Math.random() < .28 || nearEnemy(player, index);
+          current.change = Math.random() * .65 + .25;
+        }
+        aiInputs[key] = current;
+        inputs[key] = current;
+      });
+    }
+
+    function nearEnemy(player, index) {
+      return state.players.some((other, otherIndex) => {
+        if (otherIndex === index || !other.alive) return false;
+        return Math.abs(Math.floor(other.x) - Math.floor(player.x)) + Math.abs(Math.floor(other.y) - Math.floor(player.y)) <= 3;
+      });
+    }
+
+    function step(dt) {
+      if (paused || !overlay.hidden) return;
+      state.countdown = Math.max(0, state.countdown - dt);
+      if (state.winner) return;
+      state.roundTime = Math.max(0, state.roundTime - dt);
+      updateAi(dt);
+      state.players.forEach((player, index) => {
+        updatePlayer(player, inputs[String(index)] || {}, dt);
+      });
+      state.bombs.forEach((bomb) => {
+        bomb.timer -= dt;
+        bomb.grace = Math.max(0, bomb.grace - dt);
+        bomb.pulse += dt;
+        if (bomb.timer <= 0) explodeBomb(bomb);
+      });
+      state.bombs = state.bombs.filter((bomb) => !bomb.dead);
+      state.flames.forEach((flame) => {
+        flame.life -= dt;
+      });
+      applyFlameDamage();
+      state.flames = state.flames.filter((flame) => flame.life > 0);
+      state.particles.forEach((p) => {
+        p.x += p.vx * dt;
+        p.y += p.vy * dt;
+        p.life -= dt;
+      });
+      state.particles = state.particles.filter((p) => p.life > 0);
+      checkWinner();
+      snapshotTimer -= dt;
+      sendState();
+      syncHud();
+    }
+
+    function applyFlameDamage() {
+      state.players.forEach((player) => {
+        if (!player.alive) return;
+        const hit = state.flames.some((flame) => Math.abs(flame.x + .5 - player.x) < .58 && Math.abs(flame.y + .5 - player.y) < .58);
+        if (!hit) return;
+        if (player.shield > 0) {
+          player.shield = 0;
+          burst(player.x, player.y, "#ffffff", 14);
+          return;
+        }
+        player.alive = false;
+        burst(player.x, player.y, player.color, 24);
+      });
+    }
+
+    function checkWinner() {
+      const alive = state.players.filter((player) => player.alive);
+      if (alive.length === 1) {
+        alive[0].wins += 1;
+        state.winner = alive[0].name;
+        state.message = `${alive[0].name} 获胜`;
+        setTimeout(() => {
+          if (mode === "local") startLocal(includeBots ? 2 : 0, true);
+        }, 2600);
+      } else if (alive.length === 0 || state.roundTime <= 0) {
+        state.winner = "平局";
+        state.message = "平局";
+        setTimeout(() => {
+          if (mode === "local") startLocal(includeBots ? 2 : 0, true);
+        }, 2600);
+      }
+    }
+
+    function syncInputs() {
+      const p1 = {
+        left: keys.has("ArrowLeft"),
+        right: keys.has("ArrowRight"),
+        up: keys.has("ArrowUp"),
+        down: keys.has("ArrowDown"),
+        bomb: keys.has("Enter") || keys.has("Space") || keys.has("Numpad0")
+      };
+      const p2 = {
+        left: keys.has("KeyA"),
+        right: keys.has("KeyD"),
+        up: keys.has("KeyW"),
+        down: keys.has("KeyS"),
+        bomb: keys.has("KeyF") || keys.has("ShiftLeft")
+      };
+      if (mode === "local") {
+        inputs["0"] = p1;
+        inputs["1"] = p2;
+      } else {
+        const slot = localSlots[0];
+        if (slot !== undefined) inputs[String(slot)] = p1;
+        sendInput();
+      }
+    }
+
+    function draw() {
+      const rect = canvas.getBoundingClientRect();
+      ctx.clearRect(0, 0, rect.width, rect.height);
+      drawWater(rect);
+      drawBoard();
+      drawEntities();
+      drawMessage(rect);
+    }
+
+    function drawWater(rect) {
+      const t = performance.now() / 1000;
+      ctx.fillStyle = "#14324a";
+      ctx.fillRect(0, 0, rect.width, rect.height);
+      ctx.globalAlpha = .28;
+      ctx.strokeStyle = "#65d2ff";
+      ctx.lineWidth = 2;
+      for (let y = -60; y < rect.height + 60; y += 38) {
+        ctx.beginPath();
+        for (let x = -20; x < rect.width + 20; x += 28) {
+          const yy = y + Math.sin(x * .026 + t * 1.8) * 8;
+          if (x === -20) ctx.moveTo(x, yy);
+          else ctx.lineTo(x, yy);
+        }
+        ctx.stroke();
+      }
+      ctx.globalAlpha = 1;
+    }
+
+    function cellRect(x, y, inset = 0) {
+      return {
+        x: boardX + x * tile + inset,
+        y: boardY + y * tile + inset,
+        w: tile - inset * 2,
+        h: tile - inset * 2
+      };
+    }
+
+    function drawRoundRect(x, y, w, h, r) {
+      const radius = Math.min(r, w / 2, h / 2);
+      ctx.beginPath();
+      ctx.moveTo(x + radius, y);
+      ctx.lineTo(x + w - radius, y);
+      ctx.quadraticCurveTo(x + w, y, x + w, y + radius);
+      ctx.lineTo(x + w, y + h - radius);
+      ctx.quadraticCurveTo(x + w, y + h, x + w - radius, y + h);
+      ctx.lineTo(x + radius, y + h);
+      ctx.quadraticCurveTo(x, y + h, x, y + h - radius);
+      ctx.lineTo(x, y + radius);
+      ctx.quadraticCurveTo(x, y, x + radius, y);
+      ctx.closePath();
+    }
+
+    function drawBoard() {
+      ctx.save();
+      ctx.shadowColor = "rgba(0,0,0,.3)";
+      ctx.shadowBlur = 20;
+      ctx.fillStyle = "#2d8b65";
+      drawRoundRect(boardX - 8, boardY - 8, cols * tile + 16, rows * tile + 16, 12);
+      ctx.fill();
+      ctx.shadowBlur = 0;
+      for (let y = 0; y < rows; y += 1) {
+        for (let x = 0; x < cols; x += 1) {
+          const r = cellRect(x, y);
+          ctx.fillStyle = (x + y) % 2 ? "#54b878" : "#48aa70";
+          ctx.fillRect(r.x, r.y, r.w, r.h);
+          const t = state.map[y][x];
+          if (t === 1) drawStone(r);
+          if (t === 2) drawCrate(r);
+          if (t === 3) drawCover(r);
+        }
+      }
+      ctx.restore();
+    }
+
+    function drawStone(r) {
+      const g = ctx.createLinearGradient(r.x, r.y, r.x, r.y + r.h);
+      g.addColorStop(0, "#d5dde8");
+      g.addColorStop(1, "#8090a2");
+      ctx.fillStyle = g;
+      drawRoundRect(r.x + 3, r.y + 3, r.w - 6, r.h - 6, 8);
+      ctx.fill();
+      ctx.strokeStyle = "rgba(30,41,59,.35)";
+      ctx.stroke();
+    }
+
+    function drawCrate(r) {
+      ctx.fillStyle = "#a8642a";
+      drawRoundRect(r.x + 5, r.y + 5, r.w - 10, r.h - 10, 6);
+      ctx.fill();
+      ctx.strokeStyle = "#6f3f17";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+      ctx.strokeStyle = "rgba(255,231,180,.45)";
+      ctx.beginPath();
+      ctx.moveTo(r.x + 9, r.y + 11);
+      ctx.lineTo(r.x + r.w - 9, r.y + r.h - 11);
+      ctx.moveTo(r.x + r.w - 9, r.y + 11);
+      ctx.lineTo(r.x + 9, r.y + r.h - 11);
+      ctx.stroke();
+    }
+
+    function drawCover(r) {
+      ctx.fillStyle = "#136f63";
+      drawRoundRect(r.x + 5, r.y + 7, r.w - 10, r.h - 14, 8);
+      ctx.fill();
+      ctx.fillStyle = "#62d394";
+      ctx.fillRect(r.x + 10, r.y + 12, r.w - 20, 6);
+      ctx.fillStyle = "rgba(4,20,24,.3)";
+      ctx.fillRect(r.x + 9, r.y + r.h - 15, r.w - 18, 5);
+    }
+
+    function drawEntities() {
+      state.powerups.forEach(drawPowerup);
+      state.bombs.forEach(drawBomb);
+      state.flames.forEach(drawFlame);
+      state.players.forEach(drawPlayer);
+      state.particles.forEach(drawParticle);
+    }
+
+    function drawPowerup(power) {
+      const r = cellRect(power.x, power.y, tile * .24);
+      const colors = { bomb: "#5ac8fa", range: "#ffd166", speed: "#8ee36d", shield: "#f8fafc" };
+      ctx.fillStyle = colors[power.type];
+      ctx.beginPath();
+      ctx.arc(r.x + r.w / 2, r.y + r.h / 2, r.w / 2, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = "#132238";
+      ctx.font = `900 ${Math.floor(tile * .28)}px "Segoe UI"`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      const label = { bomb: "+", range: "R", speed: "S", shield: "◎" }[power.type];
+      ctx.fillText(label, r.x + r.w / 2, r.y + r.h / 2 + 1);
+    }
+
+    function drawBomb(bomb) {
+      const cx = boardX + (bomb.x + .5) * tile;
+      const cy = boardY + (bomb.y + .5) * tile;
+      const pulse = Math.sin(bomb.pulse * 18) * 2;
+      ctx.fillStyle = "#79ddff";
+      ctx.shadowColor = "#82eaff";
+      ctx.shadowBlur = 12;
+      ctx.beginPath();
+      ctx.arc(cx, cy, tile * .28 + pulse, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.shadowBlur = 0;
+      ctx.fillStyle = "rgba(255,255,255,.78)";
+      ctx.beginPath();
+      ctx.arc(cx - tile * .08, cy - tile * .1, tile * .08, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    function drawFlame(flame) {
+      const r = cellRect(flame.x, flame.y, 3);
+      const a = Math.max(0, flame.life / flame.max);
+      ctx.globalAlpha = .25 + a * .75;
+      ctx.fillStyle = "#dbf7ff";
+      drawRoundRect(r.x, r.y, r.w, r.h, 8);
+      ctx.fill();
+      ctx.fillStyle = "#5eead4";
+      drawRoundRect(r.x + r.w * .18, r.y + r.h * .18, r.w * .64, r.h * .64, 8);
+      ctx.fill();
+      ctx.globalAlpha = 1;
+    }
+
+    function drawPlayer(player) {
+      const cx = boardX + player.x * tile;
+      const cy = boardY + player.y * tile;
+      if (!player.alive) {
+        ctx.globalAlpha = .28;
+      }
+      if (player.shield > 0) {
+        ctx.strokeStyle = "#ffffff";
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.arc(cx, cy, tile * .38, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+      ctx.fillStyle = player.color;
+      ctx.beginPath();
+      ctx.arc(cx, cy - tile * .05, tile * .29, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = "#fff";
+      ctx.beginPath();
+      ctx.arc(cx - tile * .09, cy - tile * .1, tile * .045, 0, Math.PI * 2);
+      ctx.arc(cx + tile * .09, cy - tile * .1, tile * .045, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = "#102030";
+      ctx.beginPath();
+      ctx.arc(cx - tile * .09, cy - tile * .1, tile * .02, 0, Math.PI * 2);
+      ctx.arc(cx + tile * .09, cy - tile * .1, tile * .02, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = "rgba(0,0,0,.32)";
+      ctx.beginPath();
+      ctx.ellipse(cx, cy + tile * .29, tile * .24, tile * .06, 0, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.globalAlpha = 1;
+    }
+
+    function drawParticle(p) {
+      const a = Math.max(0, p.life / p.max);
+      ctx.globalAlpha = a;
+      ctx.fillStyle = p.color;
+      ctx.beginPath();
+      ctx.arc(boardX + p.x * tile, boardY + p.y * tile, Math.max(2, tile * .06), 0, Math.PI * 2);
+      ctx.fill();
+      ctx.globalAlpha = 1;
+    }
+
+    function drawMessage(rect) {
+      const message = state.winner ? state.message : state.countdown > 0 ? Math.ceil(state.countdown) : "";
+      if (!message) return;
+      ctx.fillStyle = "rgba(5, 12, 24, .62)";
+      drawRoundRect(rect.width / 2 - 150, rect.height / 2 - 48, 300, 96, 10);
+      ctx.fill();
+      ctx.fillStyle = "#fff";
+      ctx.font = `900 ${state.countdown > 0 ? 54 : 34}px "Segoe UI"`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(message, rect.width / 2, rect.height / 2);
+    }
+
+    function syncHud() {
+      playersEl.replaceChildren();
+      state.players.forEach((player) => {
+        const badge = document.createElement("div");
+        badge.className = "badge";
+        const label = document.createElement("span");
+        label.textContent = player.alive ? `${player.bombs} 泡 / ${player.range} 格` : "出局";
+        const value = document.createElement("b");
+        value.textContent = `${player.name} ${player.wins || 0}`;
+        value.style.color = player.color;
+        badge.append(label, value);
+        playersEl.append(badge);
+      });
+    }
+
+    function loop(time) {
+      const dt = Math.min(.05, (time - lastTime) / 1000 || 0);
+      lastTime = time;
+      syncInputs();
+      accumulator += dt;
+      while (accumulator >= tickRate) {
+        step(tickRate);
+        accumulator -= tickRate;
+      }
+      draw();
+      requestAnimationFrame(loop);
+    }
+
+    window.addEventListener("keydown", (event) => {
+      if (["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Space", "Enter", "Numpad0", "KeyW", "KeyA", "KeyS", "KeyD", "KeyF", "ShiftLeft"].includes(event.code)) {
+        event.preventDefault();
+        keys.add(event.code);
+      }
+      if (event.code === "KeyP") {
+        paused = !paused;
+      }
+    });
+
+    window.addEventListener("keyup", (event) => {
+      keys.delete(event.code);
+    });
+
+    window.addEventListener("message", (event) => {
+      if (event.data?.type !== "hub:arabic-metrics") return;
+      const payload = event.data.payload || {};
+      if (Number.isFinite(Number(payload.lives))) {
+        lives = Math.max(0, Number(payload.lives));
+      }
+      if (!overlay.hidden) {
+        headline.textContent = lives > 0
+          ? `当前奖励生命：${lives}。开始一局会消耗 1 点。`
+          : "完成右侧阿语题获得奖励生命，也可以直接在单独页面试玩。";
+      }
+    });
+
+    pauseButton.addEventListener("click", () => {
+      paused = !paused;
+      pauseButton.textContent = paused ? "▶" : "⏸";
+    });
+    menuButton.addEventListener("click", () => {
+      overlay.hidden = false;
+    });
+    localButton.addEventListener("click", () => startLocal(0));
+    botButton.addEventListener("click", () => startLocal(2));
+    lanButton.addEventListener("click", connectLan);
+    lanStartButton.addEventListener("click", startLanRound);
+    window.addEventListener("resize", resize);
+
+    resize();
+    syncHud();
+    requestAnimationFrame(loop);
+  </script>
+</body>
+</html>

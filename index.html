@@ -48,6 +48,43 @@
       background: #fff;
     }
 
+    .game-pane {
+      padding-top: 46px;
+      background: #07111f;
+    }
+
+    .game-tabs {
+      position: absolute;
+      inset: 0 0 auto 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 46px;
+      padding: 6px;
+      border-bottom: 1px solid rgba(215, 222, 232, .22);
+      background: rgba(7, 17, 31, .94);
+    }
+
+    .game-tab {
+      min-height: 34px;
+      padding: 7px 11px;
+      border: 1px solid rgba(255, 255, 255, .18);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .08);
+      color: #dbeafe;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .game-tab.active {
+      border-color: #ffc857;
+      background: #ffc857;
+      color: #261a00;
+    }
+
     iframe {
       display: block;
       width: 100%;
@@ -73,8 +110,16 @@
         min-height: 0;
       }
 
+      .game-pane {
+        padding-top: 46px;
+      }
+
       iframe {
         height: 640px;
+      }
+
+      .game-pane iframe {
+        height: 594px;
       }
     }
   </style>
@@ -82,7 +127,12 @@
 <body>
   <main class="shell">
     <section class="layout">
-      <section class="pane">
+      <section class="pane game-pane">
+        <nav class="game-tabs" aria-label="选择游戏">
+          <button class="game-tab active" type="button" data-game="shooter">雷电</button>
+          <button class="game-tab" type="button" data-game="bubble">水泡 PK</button>
+          <button class="game-tab" type="button" data-game="pikachu">Pikachu</button>
+        </nav>
         <iframe id="mainGameFrame" title="game" src="games/space-shooter.html?v=20260710start-layout"></iframe>
       </section>
       <aside class="pane">
@@ -94,6 +144,7 @@
   <script>
     const mainGameFrame = document.querySelector("#mainGameFrame");
     const layout = document.querySelector(".layout");
+    const gameTabs = Array.from(document.querySelectorAll(".game-tab"));
     let latestArabicMetrics = null;
     let activeGameSource = "games/space-shooter.html?v=20260710start-layout";
     let sharedLifeSpent = 0;
@@ -102,6 +153,7 @@
     let activeDailyLifeDate = "";
     const gameSourceMap = {
       shooter: "games/space-shooter.html?v=20260710start-layout",
+      bubble: "games/bubble-battle.html",
       pikachu: "games/pikachu-volleyball/zh/index.html?v=20260614life"
     };
     const pikachuControlCodes = new Set([
@@ -201,6 +253,10 @@
       activeGameSource = Object.values(gameSourceMap).includes(requested)
         ? requested
         : gameSourceMap.shooter;
+      const activeKey = Object.entries(gameSourceMap).find(([, src]) => src === activeGameSource)?.[0] || "shooter";
+      gameTabs.forEach((tab) => {
+        tab.classList.toggle("active", tab.dataset.game === activeKey);
+      });
       mainGameFrame.src = activeGameSource;
     }
 
@@ -283,6 +339,11 @@
     });
     window.addEventListener("keydown", (event) => handlePikachuControl(event, true));
     window.addEventListener("keyup", (event) => handlePikachuControl(event, false));
+    gameTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        selectGameSource(gameSourceMap[tab.dataset.game]);
+      });
+    });
   </script>
 </body>
 </html>
