@@ -215,6 +215,15 @@ function send(client, payload) {
   client.socket.write(Buffer.concat([header, data]));
 }
 
+server.on("error", (error) => {
+  if (error.code === "EADDRINUSE") {
+    console.error(`Port ${port} is already in use. Bubble Battle LAN may already be running.`);
+    console.error(`Open http://localhost:${port}/games/bubble-battle.html or close the existing server first.`);
+    process.exit(1);
+  }
+  throw error;
+});
+
 server.listen(port, "0.0.0.0", () => {
   const addresses = Object.values(os.networkInterfaces())
     .flat()
