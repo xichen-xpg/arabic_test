@@ -828,6 +828,7 @@
         <div class="meta-row">
           <span id="categoryTag" class="tag">基础问候</span>
           <select id="categorySelect" class="select" aria-label="题库分类">
+            <option value="source:daily-arabic" selected>每日阿语50题</option>
             <option value="source:restaurant">餐厅题库</option>
             <option value="source:best-friend">Best Friend 题库</option>
             <option value="source:daily-poems">每日古诗词</option>
@@ -906,6 +907,7 @@
     </section>
   </main>
 
+  <script src="games/daily-arabic.js"></script>
   <script src="games/daily-poems.js"></script>
   <script>
     const questions = [
@@ -1294,6 +1296,14 @@
     };
 
     const poemWorks = Array.isArray(window.dailyPoemWorks) ? window.dailyPoemWorks : [];
+    const dailyArabicBank = Array.isArray(window.dailyArabicQuestionBank) ? window.dailyArabicQuestionBank : [];
+    const dailyArabicSourceKey = "daily-arabic";
+    const dailyArabicRotationStartKey = "2026-09-03";
+    const dailyArabicNewCount = 3;
+    const dailyArabicRecentDays = 5;
+    const dailyArabicQuestionCount = 50;
+    const dailyArabicSelectionVersion = 1;
+    const dailyArabicQuestionsByDate = {};
     const poemRotationStartKey = "2026-05-20";
     const poemSourceKey = "daily-poems";
     const dailyPoemRecentCount = 2;
@@ -1305,6 +1315,10 @@
     const poemDraftStorageKey = "arabic-test:poem-drafts";
 
     const sourceConfig = {
+      [dailyArabicSourceKey]: {
+        label: "每日阿语50题",
+        puzzleImages: []
+      },
       restaurant: {
         label: "餐厅题库",
         puzzleImages: []
@@ -1817,7 +1831,7 @@
         })
         .filter((item) => item.completedCount > 0 || item.done)
         .sort((left, right) => {
-          const order = ["restaurant", "best-friend", poemSourceKey];
+          const order = [dailyArabicSourceKey, "restaurant", "best-friend", poemSourceKey];
           const leftIndex = order.indexOf(left.source);
           const rightIndex = order.indexOf(right.source);
           return (leftIndex === -1 ? 99 : leftIndex) - (rightIndex === -1 ? 99 : rightIndex);
@@ -2366,8 +2380,13 @@
     }
 
     function activeSource() {
+      if (elements.categorySelect.value === "source:daily-arabic") return dailyArabicSourceKey;
       if (elements.categorySelect.value === "source:daily-poems") return poemSourceKey;
       return elements.categorySelect.value === "source:best-friend" ? "best-friend" : "restaurant";
+    }
+
+    function isDailyArabicSource(source = activeSource()) {
+      return source === dailyArabicSourceKey;
     }
 
     function isPoemSource(source = activeSource()) {
@@ -2437,6 +2456,74 @@
         poemIndex: index,
         todayPoem: index === todayIndex
       };
+    }
+
+    function buildDailyArabicQuestion(item, index, dateKey, learnedDateKey) {
+      return {
+        ...item,
+        source: dailyArabicSourceKey,
+        category: learnedDateKey === dateKey ? `今日新题 - ${item.category}` : item.category,
+        id: `${dailyArabicSourceKey}-${index}`,
+        dailyArabicIndex: index,
+        learnedDateKey
+      };
+    }
+
+    function dailyArabicIntroducedCount(dateKey = dubaiDateKey()) {
+      if (!dailyArabicBank.length) return 0;
+      const dayIndex = Math.max(0, daysBetween(dailyArabicRotationStartKey, dateKey));
+      return Math.min(dailyArabicBank.length, (dayIndex + 1) * dailyArabicNewCount);
+    }
+
+    function dailyArabicLearnedDate(index) {
+      const dayOffset = Math.floor(index / dailyArabicNewCount);
+      const start = Date.parse(`${dailyArabicRotationStartKey}T00:00:00Z`);
+      return new Date(start + dayOffset * 86400000).toISOString().slice(0, 10);
+    }
+
+    function dailyArabicQuestions(dateKey = dubaiDateKey()) {
+      if (dailyArabicQuestionsByDate[dateKey]) return dailyArabicQuestionsByDate[dateKey];
+      const introducedCount = dailyArabicIntroducedCount(dateKey);
+      if (!introducedCount) return [];
+
+      const introducedIndexes = Array.from({ length: introducedCount }, (_, index) => index);
+      const recentStart = Math.max(0, introducedCount - dailyArabicNewCount * dailyArabicRecentDays);
+      const recentIndexes = introducedIndexes.filter((index) => index >= recentStart);
+      const oldDailyIndexes = introducedIndexes.filter((index) => index < recentStart);
+      const oldLegacyIndexes = allQuestions.map((_, index) => index);
+      const recentPick = seededShuffle(recentIndexes, `daily-arabic-recent:${dateKey}:${dailyArabicSelectionVersion}`);
+      const oldDailyPick = seededShuffle(oldDailyIndexes, `daily-arabic-old-daily:${dateKey}:${dailyArabicSelectionVersion}`);
+      const oldLegacyPick = seededShuffle(oldLegacyIndexes, `daily-arabic-old-legacy:${dateKey}:${dailyArabicSelectionVersion}`);
+      const picked = [];
+
+      recentPick.forEach((index) => {
+        if (picked.length < dailyArabicQuestionCount) picked.push({ type: "daily", index });
+      });
+
+      oldDailyPick.forEach((index) => {
+        if (picked.length < dailyArabicQuestionCount) picked.push({ type: "daily", index });
+      });
+
+      oldLegacyPick.forEach((index) => {
+        if (picked.length < dailyArabicQuestionCount) picked.push({ type: "legacy", index });
+      });
+
+      dailyArabicQuestionsByDate[dateKey] = picked.map((entry) => {
+        if (entry.type === "legacy") {
+          return {
+            ...allQuestions[entry.index],
+            source: dailyArabicSourceKey,
+            id: `${dailyArabicSourceKey}-legacy-${entry.index}`
+          };
+        }
+        return buildDailyArabicQuestion(
+          dailyArabicBank[entry.index],
+          entry.index,
+          dateKey,
+          dailyArabicLearnedDate(entry.index)
+        );
+      });
+      return dailyArabicQuestionsByDate[dateKey];
     }
 
     function loadDailyPoemSelections() {
@@ -2528,6 +2615,7 @@
     }
 
     function sourceQuestions(source) {
+      if (isDailyArabicSource(source)) return dailyArabicQuestions();
       if (isPoemSource(source)) return dailyPoemQuestions();
       return allQuestions.filter((item) => item.source === source);
     }
@@ -2775,7 +2863,10 @@
         return;
       }
 
-      const wrongOptions = shuffle(allQuestions.filter((item) => item.rom !== current.rom))
+      const optionSource = isDailyArabicSource()
+        ? [...sourceQuestions(dailyArabicSourceKey), ...allQuestions]
+        : allQuestions;
+      const wrongOptions = shuffle(optionSource.filter((item) => item.rom !== current.rom))
         .slice(0, 3)
         .map((item) => ({ rom: item.rom, ar: item.ar, correct: false }));
       const options = shuffle([{ rom: current.rom, ar: current.ar, correct: true }, ...wrongOptions]);
