@@ -1302,6 +1302,7 @@
     const dailyArabicNewCount = 3;
     const dailyArabicRecentDays = 5;
     const dailyArabicQuestionCount = 50;
+    const dailyArabicLegacyReviewCount = 20;
     const dailyArabicSelectionVersion = 1;
     const dailyArabicQuestionsByDate = {};
     const poemRotationStartKey = "2026-05-20";
@@ -2500,12 +2501,22 @@
         if (picked.length < dailyArabicQuestionCount) picked.push({ type: "daily", index });
       });
 
+      oldLegacyPick.forEach((index) => {
+        if (picked.filter((item) => item.type === "legacy").length < dailyArabicLegacyReviewCount &&
+          picked.length < dailyArabicQuestionCount) {
+          picked.push({ type: "legacy", index });
+        }
+      });
+
       oldDailyPick.forEach((index) => {
         if (picked.length < dailyArabicQuestionCount) picked.push({ type: "daily", index });
       });
 
       oldLegacyPick.forEach((index) => {
-        if (picked.length < dailyArabicQuestionCount) picked.push({ type: "legacy", index });
+        if (!picked.some((item) => item.type === "legacy" && item.index === index) &&
+          picked.length < dailyArabicQuestionCount) {
+          picked.push({ type: "legacy", index });
+        }
       });
 
       dailyArabicQuestionsByDate[dateKey] = picked.map((entry) => {
