@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>阿拉伯语餐厅复习</title>
+  <title>每日语言练习</title>
   <base href="../">
+  <link rel="stylesheet" href="games/english-practice.css">
   <style>
     :root {
       color-scheme: light;
@@ -818,8 +819,8 @@
   <main class="app">
     <section class="topbar" aria-label="游戏信息">
       <div class="title">
-        <h1>阿拉伯语餐厅复习</h1>
-        <p>看中文选发音，选对后输入阿语。提示会给出下一个阿语字符和 Arabic 101 键盘按键。</p>
+        <h1>每日语言练习</h1>
+        <p id="practiceDescription">看中文选发音，选对后输入阿语。提示会给出下一个阿语字符和 Arabic 101 键盘按键。</p>
       </div>
     </section>
 
@@ -829,6 +830,7 @@
           <span id="categoryTag" class="tag">基础问候</span>
           <select id="categorySelect" class="select" aria-label="题库分类">
             <option value="source:daily-arabic" selected>每日阿语50题</option>
+            <option value="source:daily-english">每日雅思英语 · 最多30词</option>
             <option value="source:restaurant">餐厅题库</option>
             <option value="source:best-friend">Best Friend 题库</option>
             <option value="source:daily-poems">每日古诗词</option>
@@ -841,6 +843,7 @@
           <a id="checkinLink" class="checkin-link" href="#checkin">每日打卡</a>
         </div>
 
+        <div id="englishPanel" hidden></div>
         <div class="question">
           <p class="question-label">中文</p>
           <p id="chinesePrompt" class="chinese">你好</p>
@@ -909,6 +912,9 @@
 
   <script src="games/daily-arabic.js"></script>
   <script src="games/daily-poems.js"></script>
+  <script src="games/daily-english.js"></script>
+  <script src="games/english-scheduler.js"></script>
+  <script src="games/english-practice.js"></script>
   <script>
     const questions = [
       { category: "基础问候", zh: "你好", ar: "مرحبا", rom: "marhaban" },
@@ -1298,6 +1304,8 @@
     const poemWorks = Array.isArray(window.dailyPoemWorks) ? window.dailyPoemWorks : [];
     const dailyArabicBank = Array.isArray(window.dailyArabicQuestionBank) ? window.dailyArabicQuestionBank : [];
     const dailyArabicSourceKey = "daily-arabic";
+    const englishSourceKey = "daily-english";
+    const englishScheduler = new EnglishLearning.Scheduler(window.dailyEnglishQuestionBank, localStorage);
     const dailyArabicRotationStartKey = "2026-09-03";
     const dailyArabicNewCount = 3;
     const dailyArabicRecentDays = 5;
@@ -1316,6 +1324,10 @@
     const poemDraftStorageKey = "arabic-test:poem-drafts";
 
     const sourceConfig = {
+      [englishSourceKey]: {
+        label: "每日雅思英语",
+        puzzleImages: []
+      },
       [dailyArabicSourceKey]: {
         label: "每日阿语50题",
         puzzleImages: []
@@ -1614,8 +1626,16 @@
     const checkinStorageKey = "arabic-test:daily-checkins";
     const dailyProgressStorageKey = "arabic-test:daily-progress";
     let calendarMonth = new Date();
+    let practiceDate = dubaiDateKey();
+    const englishPractice = new EnglishPractice(document.querySelector("#englishPanel"), englishScheduler, (eventName) => {
+      current = englishPractice.current;
+      if (englishScheduler.summary().done) markDailyCheckin(englishSourceKey);
+      emitMetrics(eventName);
+      if (window.location.hash === "#checkin") renderCalendar();
+    }, ensurePracticeDate);
 
-    function localDateKey(date = new Date()) {
+    function localDateKey(date) {
+      if (!date) return dubaiDateKey();
       const year = date.getFullYear();
       const month = String(date.getMonth() + 1).padStart(2, "0");
       const day = String(date.getDate()).padStart(2, "0");
@@ -1814,35 +1834,32 @@
       const byDate = dailyProgressBySource(dateKey);
       const checkins = loadCheckins();
       const completedSources = new Set(Array.isArray(checkins[dateKey]) ? checkins[dateKey] : []);
-      const sources = new Set([...Object.keys(byDate), ...completedSources]);
+      const source = dailyArabicSourceKey;
+      const total = dailyArabicQuestions(dateKey).length;
+      const completedCount = completedSources.has(source)
+        ? total
+        : new Set((byDate[source] || []).filter((index) => Number.isInteger(index) && index >= 0 && index < total)).size;
 
-      return [...sources]
-        .map((source) => {
-          const total = sourceQuestions(source).length;
-          const completedCount = completedSources.has(source)
-            ? total
-            : new Set((byDate[source] || []).filter((index) => Number.isInteger(index) && index >= 0 && index < total)).size;
-          return {
-            source,
-            label: sourceConfig[source]?.label || source,
-            completedCount,
-            total,
-            done: total > 0 && completedCount >= total
-          };
-        })
-        .filter((item) => item.completedCount > 0 || item.done)
-        .sort((left, right) => {
-          const order = [dailyArabicSourceKey, "restaurant", "best-friend", poemSourceKey];
-          const leftIndex = order.indexOf(left.source);
-          const rightIndex = order.indexOf(right.source);
-          return (leftIndex === -1 ? 99 : leftIndex) - (rightIndex === -1 ? 99 : rightIndex);
-        });
+      const result = [];
+      if (completedCount > 0 || completedSources.has(source) || dateKey === localDateKey()) result.push({
+        source,
+        label: sourceConfig[source]?.label || source,
+        completedCount,
+        total,
+        done: total > 0 && completedCount >= total
+      });
+      const english = englishScheduler.summary(dateKey);
+      if (english) {
+        result.push({ source: englishSourceKey, label: "英语新词", completedCount: english.freshDone, total: english.fresh, done: english.freshDone === english.fresh });
+        result.push({ source: englishSourceKey, label: "英语复习", completedCount: english.reviewDone, total: english.review, done: english.reviewDone === english.review });
+      }
+      return result;
     }
 
     function dailyProgressSummaryText(dateKey) {
       const summaries = dailyProgressSummaries(dateKey);
       if (!summaries.length) return "今天已做 0 题";
-      return `今天：${summaries.map((item) => `${item.label} ${item.completedCount}/${item.total}`).join(" · ")}`;
+      return `今天：${summaries.map((item) => `${item.label} ${item.completedCount}/${item.total}`).join(" · ")}${summaries.length === 3 && summaries.every(item => item.done) ? " · 今日全部完成 ✓" : ""}`;
     }
 
     function renderCalendar() {
@@ -1895,6 +1912,12 @@
             list.append(item);
           });
           day.append(list);
+          if (summaries.length === 3 && summaries.every(summary => summary.done)) {
+            const badge = document.createElement("div");
+            badge.className = "calendar-all-done";
+            badge.textContent = "全部完成 ✓";
+            day.append(badge);
+          }
         }
 
         elements.calendarGrid.append(day);
@@ -1912,7 +1935,8 @@
       const completed = completedSet();
       const total = activeQuestions().length;
       const allTotal = allQuestions.length;
-      const completedTokens = [...completed].map((index) => `${progressKey()}:${index}`);
+      const completedTokens = [...completed].map((index) => activeSource() === englishSourceKey
+        ? `${englishSourceKey}:${localDateKey()}:${activeQuestions()[index].id}` : `${progressKey()}:${index}`);
       window.parent.postMessage({
         type: "arabic-test:metrics",
         payload: {
@@ -2381,6 +2405,7 @@
     }
 
     function activeSource() {
+      if (elements.categorySelect.value === "source:daily-english") return englishSourceKey;
       if (elements.categorySelect.value === "source:daily-arabic") return dailyArabicSourceKey;
       if (elements.categorySelect.value === "source:daily-poems") return poemSourceKey;
       return elements.categorySelect.value === "source:best-friend" ? "best-friend" : "restaurant";
@@ -2626,6 +2651,7 @@
     }
 
     function sourceQuestions(source) {
+      if (source === englishSourceKey) return englishScheduler.questions();
       if (isDailyArabicSource(source)) return dailyArabicQuestions();
       if (isPoemSource(source)) return dailyPoemQuestions();
       return allQuestions.filter((item) => item.source === source);
@@ -2636,6 +2662,10 @@
     }
 
     function completedSet(key = progressKey()) {
+      if (key === englishSourceKey) {
+        const plan = englishScheduler.plan();
+        return new Set(englishScheduler.questions().map((word, index) => plan.completed.includes(word.id) ? index : -1).filter(index => index >= 0));
+      }
       completedByGroup[key] ||= new Set(dailyProgressIndexes(key));
       return completedByGroup[key];
     }
@@ -2810,6 +2840,23 @@
     }
 
     function drawQuestion() {
+      if (ensurePracticeDate()) return;
+      const english = activeSource() === englishSourceKey;
+      elements.gamePanel.classList.toggle("english-mode", english);
+      document.querySelector("#englishPanel").hidden = !english;
+      document.querySelector("#practiceDescription").textContent = english
+        ? "看中文选英文单词，点击带发音。选对后照着输入完整中英文例句。"
+        : "看中文选发音，选对后输入阿语。提示会给出下一个阿语字符和 Arabic 101 键盘按键。";
+      if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+      window.speechSynthesis?.cancel();
+      if (completionSpeechTimer) { clearTimeout(completionSpeechTimer); completionSpeechTimer = null; }
+      if (english) {
+        elements.categoryTag.textContent = "雅思核心2000词";
+        elements.gamePanel.classList.remove("poem-mode");
+        resetPoemHints();
+        englishPractice.draw();
+        return;
+      }
       const pending = incompleteQuestions();
       const available = pending.length ? pending : activeQuestions();
       const pendingTodayPoem = isPoemSource() && pending.find((item) => item.todayPoem);
@@ -3030,6 +3077,7 @@
     }
 
     function updateLiveInput() {
+      if (ensurePracticeDate()) return;
       if (!current) return;
 
       if (isPoemQuestion()) {
@@ -3185,6 +3233,7 @@
       "Space"
     ]);
     function forwardPikachuControl(event, isDown) {
+      if (event.target.closest?.("textarea, input")) return;
       if (!pikachuControlCodes.has(event.code)) return;
       window.parent.postMessage({
         type: "hub:pikachu-key",
@@ -3259,6 +3308,24 @@
           speakKeySound(arabicText);
         }
       }
+    });
+
+    function ensurePracticeDate() {
+      const today = dubaiDateKey();
+      if (practiceDate === today) return false;
+      practiceDate = today;
+      Object.keys(completedByGroup).forEach(key => { delete completedByGroup[key]; });
+      pool = [];
+      drawQuestion();
+      if (window.location.hash === "#checkin") renderCalendar();
+      return true;
+    }
+    window.setInterval(ensurePracticeDate, 30000);
+    window.addEventListener("focus", ensurePracticeDate);
+    document.addEventListener("visibilitychange", () => { if (!document.hidden) ensurePracticeDate(); });
+    window.addEventListener("storage", event => {
+      if (event.key === EnglishLearning.STORAGE_KEY && activeSource() === englishSourceKey) drawQuestion();
+      if (window.location.hash === "#checkin") renderCalendar();
     });
 
     preloadSoftKeyboardAudio();

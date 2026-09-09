@@ -1,0 +1,15 @@
+{
+  "count": 2000,
+  "originalExamples": 500,
+  "sources": {
+    "ecdict.csv": "1a6947e04785db63613a92e14903cdae7954f7e84860b10e68e5c7cbb3f9c3cf",
+    "oxford.json": "d5a2bd8b2f14b0b24dd54f93f68880af4b8c3f70a4c49f2afbf249564bd42153",
+    "Tatoeba.cmn-en.en": "3fa8a3447de25b324940d42e3ecf101aa54eb3faff4392365f7d5ae481b6c2e6",
+    "Tatoeba.cmn-en.cmn": "ced6b0217e04eac257d3bf04a66e1292c5587169372edafa2f582fc5bc95b931"
+  },
+  "selectionCounts": {
+    "雅思话题人工选词": 500,
+    "雅思标签选词": 880,
+    "学术英语补充": 620
+  }
+}

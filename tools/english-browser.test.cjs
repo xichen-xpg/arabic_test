@@ -1,0 +1,110 @@
+// Run with PLAYWRIGHT_MODULE pointing to an installed playwright package if needed.
+const { chromium } = require(process.env.PLAYWRIGHT_MODULE || "playwright");
+const http = require("node:http");
+const fs = require("node:fs");
+const path = require("node:path");
+const assert = require("node:assert/strict");
+const root = path.resolve(__dirname, "..");
+const mime = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8", ".png": "image/png" };
+const server = http.createServer((req, res) => {
+  const file = path.resolve(root, "." + new URL(req.url, "http://localhost").pathname);
+  if (!file.startsWith(root + path.sep) || !fs.existsSync(file) || !fs.statSync(file).isFile()) { res.writeHead(404); return res.end(); }
+  res.setHeader("Content-Type", mime[path.extname(file)] || "application/octet-stream");
+  fs.createReadStream(file).pipe(res);
+});
+(async () => {
+  await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
+  let browser;
+  try {
+    browser = await chromium.launch({ channel: "chrome", headless: true, args: ["--disable-background-timer-throttling", "--disable-renderer-backgrounding", "--disable-backgrounding-occluded-windows"] });
+    const context = await browser.newContext({ viewport: { width: 1100, height: 950 } });
+    await context.route("**/*", route => {
+      const url = new URL(route.request().url());
+      return url.hostname === "127.0.0.1" ? route.continue() : route.abort();
+    });
+    await context.addInitScript(() => {
+      window.testSpeech = [];
+      window.testMetrics = [];
+      window.speechSynthesis.speak = utterance => { window.testSpeech.push({ text: utterance.text, lang: utterance.lang }); utterance.onend?.(); };
+      window.speechSynthesis.cancel = () => {};
+      window.speechSynthesis.getVoices = () => [];
+      window.addEventListener("message", event => { if (event.data?.type === "arabic-test:metrics") window.testMetrics.push(event.data.payload); });
+    });
+    const page = await context.newPage();
+    page.setDefaultTimeout(10000);
+    const errors = [];
+    page.on("pageerror", error => errors.push(error.message));
+    const url = `http://127.0.0.1:${server.address().port}/games/arabic-test.html`;
+    await page.goto(url);
+    await page.addStyleTag({ content: "*, *::before, *::after { transition: none !important; animation: none !important; }" });
+    await page.selectOption("#categorySelect", "source:daily-english");
+    await page.locator(".english-choices button").first().waitFor();
+    assert.equal(await page.locator(".english-choices button").count(), 4);
+    assert.match(await page.locator(".english-progress").innerText(), /新词 0\/20/);
+    const first = await page.evaluate(() => englishPractice.current);
+    const wrong = page.locator(".english-choices button").filter({ hasNotText: first.word }).first();
+    const wrongWord = await wrong.innerText();
+    await wrong.click();
+    assert.equal(await page.evaluate(() => testSpeech.at(-1).text), wrongWord);
+    await page.getByRole("button", { name: first.word, exact: true }).click();
+    assert.equal(await page.evaluate(() => testSpeech.at(-1).lang), "en-GB");
+    await page.locator(".english-input").fill("unfinished");
+    await page.locator(".english-chinese-input").fill(first.cn);
+    await page.locator(".english-check").click();
+    assert.match(await page.locator(".english-feedback").innerText(), /还不一致/);
+    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 0);
+    await page.locator(".english-input").fill(first.en.toUpperCase());
+    await page.evaluate(() => document.querySelector(".english-chinese-input").dispatchEvent(new CompositionEvent("compositionstart")));
+    await page.locator(".english-check").click();
+    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 0);
+    await page.evaluate(() => document.querySelector(".english-chinese-input").dispatchEvent(new CompositionEvent("compositionend")));
+    await page.reload();
+    await page.addStyleTag({ content: "*, *::before, *::after { transition: none !important; animation: none !important; }" });
+    await page.selectOption("#categorySelect", "source:daily-english");
+    assert.equal(await page.locator(".english-input").inputValue(), first.en.toUpperCase());
+    await page.locator(".english-check").click();
+    assert.match(await page.locator(".english-feedback").innerText(), /队尾/);
+    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 0);
+    await page.locator(".english-next").click();
+    assert.notEqual(await page.evaluate(() => englishPractice.current.id), first.id);
+    for (let i = 0; i < 20; i++) {
+      const word = await page.evaluate(() => englishPractice.current);
+      await page.getByRole("button", { name: word.word, exact: true }).click();
+      await page.locator(".english-input").fill(word.en);
+      await page.locator(".english-chinese-input").fill(word.cn);
+      await page.locator(".english-check").click();
+      await page.locator(".english-next").click();
+    }
+    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 20);
+    assert.match(await page.locator(".english-feedback").innerText(), /今日英语任务已完成/);
+    await page.reload();
+    await page.selectOption("#categorySelect", "source:daily-english");
+    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 20);
+    await page.locator("#checkinLink").click();
+    const today = page.locator(".calendar-day.today");
+    assert.match(await today.innerText(), /每日阿语50题/);
+    assert.match(await today.innerText(), /英语新词/);
+    assert.match(await today.innerText(), /20\/20/);
+    await page.locator("#practiceLink").click();
+    await page.selectOption("#categorySelect", "source:daily-arabic");
+    assert.equal(await page.locator("#englishPanel").isHidden(), true);
+    assert.equal(await page.locator("#choices button").count(), 4);
+    await page.selectOption("#categorySelect", "source:daily-poems");
+    assert.equal(await page.locator("#arabicInput").getAttribute("lang"), "zh-CN");
+    assert.ok(await page.locator("#softKeyboard button").count() > 0);
+    await page.selectOption("#categorySelect", "source:daily-english");
+    // Force a page-open midnight rollover, keeping real-time clock deterministic.
+    await page.evaluate(() => { practiceDate = "2000-01-01"; ensurePracticeDate(); });
+    assert.match(await page.locator(".english-feedback").innerText(), /今日英语任务已完成/);
+    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 20);
+    await page.setViewportSize({ width: 390, height: 844 });
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    if (process.env.ENGLISH_SCREENSHOT) await page.screenshot({ path: process.env.ENGLISH_SCREENSHOT, fullPage: true });
+    assert.deepEqual(errors, []);
+    console.log("Browser checks passed: choices/audio, bilingual typing/IME, retries, reload, calendar, Arabic/poems, rollover, mobile layout.");
+    await context.close();
+  } finally {
+    await browser?.close();
+    await new Promise(resolve => server.close(resolve));
+  }
+})().catch(error => { console.error(error); process.exitCode = 1; });
