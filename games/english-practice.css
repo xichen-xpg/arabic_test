@@ -2,12 +2,10 @@
 .english-note { color: var(--muted); font-size: 13px; line-height: 1.7; }
 .english-entry { margin-top: 20px; }
 .english-word { font-size: 22px; font-weight: 700; overflow-wrap: anywhere; }
-.english-example { font-size: 19px; line-height: 1.65; }
-.english-translation { line-height: 1.8; }
 .english-entry label { display: block; margin: 16px 0; font-size: 14px; }
-.english-entry textarea { display: block; box-sizing: border-box; width: 100%; min-height: 88px; margin-top: 8px; padding: 12px; border: 1px solid var(--line); border-radius: 10px; font: inherit; font-size: 18px; line-height: 1.6; resize: vertical; color: var(--ink); background: white; }
-.english-entry textarea:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
-.english-entry textarea:disabled { background: var(--soft); }
+.english-entry input { display: block; box-sizing: border-box; width: 100%; margin-top: 8px; padding: 12px; border: 1px solid var(--line); border-radius: 10px; font: inherit; font-size: 22px; line-height: 1.6; color: var(--ink); background: white; }
+.english-entry input:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+.english-entry input:disabled { background: var(--soft); }
 .english-credit { margin-top: 18px; color: var(--muted); font-size: 12px; line-height: 1.7; }
 .english-mode > .question, .english-mode > #poemHints, .english-mode > #choices,
 .english-mode > #wordMeanings, .english-mode > #entry, .english-mode > #feedback { display: none; }

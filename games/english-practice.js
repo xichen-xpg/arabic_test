@@ -9,7 +9,7 @@
       this.ensureDate = ensureDate;
       container.innerHTML = `
         <p class="english-progress" aria-live="polite"></p>
-        <p class="english-note">每天最多 50 词，优先复习；新词最多 30 个。选对单词后，照着输入完整中英文例句。</p>
+        <p class="english-note">每天最多 50 词，优先复习；新词最多 30 个。选对后，再完整输入一次英文单词。</p>
         <div class="english-task">
           <p class="english-kind question-label"></p>
           <p class="english-prompt chinese"></p>
@@ -18,43 +18,30 @@
             <p class="english-word"></p>
             <div class="actions">
               <button class="secondary english-speak-word" type="button">🔊 单词发音</button>
-              <button class="secondary english-speak-sentence" type="button">🔊 例句发音</button>
             </div>
-            <p class="english-example" lang="en" dir="ltr"></p>
-            <p class="english-translation" lang="zh-CN"></p>
-            <label>完整输入英文例句<textarea class="english-input" lang="en" dir="ltr" rows="3" spellcheck="false" autocomplete="off"></textarea></label>
-            <label>完整输入中文译文<textarea class="english-chinese-input" lang="zh-CN" dir="ltr" rows="3" spellcheck="false" autocomplete="off"></textarea></label>
-            <p class="english-note">忽略大小写、常见标点和多余空格；中文请按显示的译文输入。</p>
-            <div class="actions"><button class="primary english-check" type="button">检查两句</button></div>
-            <details class="english-credit"><summary>词条与例句来源</summary><p></p><a target="_blank" rel="noopener" href="games/english-sources.html">查看题库选词规则与来源</a></details>
+            <label>输入英文单词<input class="english-input" lang="en" dir="ltr" type="text" spellcheck="false" autocomplete="off" autocapitalize="none"></label>
+            <p class="english-note">忽略大小写和输入前后的空格。</p>
+            <div class="actions"><button class="primary english-check" type="button">检查单词</button></div>
+            <details class="english-credit"><summary>词条来源</summary><p></p><a target="_blank" rel="noopener" href="games/english-sources.html">查看题库选词规则与来源</a></details>
           </div>
         </div>
         <p class="english-feedback feedback" aria-live="polite"></p>
         <p class="english-audio-status english-note" role="status"></p>
         <button class="ghost english-next" type="button" hidden>下一词</button>`;
       this.el = {};
-      for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "example", "translation", "input", "chinese-input", "check", "feedback", "next", "task", "audio-status", "credit"]) {
+      for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "input", "check", "feedback", "next", "task", "audio-status", "credit"]) {
         this.el[name] = container.querySelector(`.english-${name}`);
       }
       container.querySelector(".english-speak-word").addEventListener("click", () => this.speak(this.current.word));
-      container.querySelector(".english-speak-sentence").addEventListener("click", () => this.speak(this.current.en));
       this.el.check.addEventListener("click", () => this.check());
       this.el.next.addEventListener("click", () => this.draw());
-      for (const name of ["input", "chinese-input"]) {
-        const input = this.el[name];
-        input.addEventListener("compositionstart", () => { this.composing = true; });
-        input.addEventListener("compositionend", () => { this.composing = false; this.saveDraft(); });
-        input.addEventListener("input", () => { if (!this.composing) this.saveDraft(); });
-        input.addEventListener("keydown", event => {
-          if (event.isComposing || this.composing || event.keyCode === 229) return;
-          if (event.key === "Enter" && !event.shiftKey) {
-            event.preventDefault();
-            if (this.finished) this.draw();
-            else if (name === "input") this.el["chinese-input"].focus();
-            else this.check();
-          }
-        });
-      }
+      this.el.input.addEventListener("input", () => this.saveDraft());
+      this.el.input.addEventListener("keydown", event => {
+        if (event.key !== "Enter") return;
+        event.preventDefault();
+        if (this.finished) this.draw();
+        else this.check();
+      });
     }
     status() {
       const s = this.scheduler.summary();
@@ -64,14 +51,13 @@
     }
     saveDraft() {
       if (!this.current || this.finished || this.ensureDate()) return;
-      this.scheduler.draft(this.current.id, { selected: this.selected, wrong: this.wrong, en: this.el.input.value, zh: this.el["chinese-input"].value });
+      this.scheduler.draft(this.current.id, { selected: this.selected, wrong: this.wrong, answer: this.el.input.value });
     }
     draw() {
       if (this.ensureDate()) return;
       window.speechSynthesis?.cancel();
       this.current = this.scheduler.next();
       this.finished = false;
-      this.composing = false;
       this.el.feedback.textContent = "";
       this.el["audio-status"].textContent = "";
       this.el.feedback.className = "english-feedback feedback";
@@ -91,14 +77,9 @@
       this.el.kind.textContent = `${plan.fresh.includes(this.current.id) ? "新词" : "复习"}${plan.retry.includes(this.current.id) ? " · 错词再练" : ""} · ${this.current.category} · ${this.current.pos}`;
       this.el.prompt.textContent = this.current.zh;
       this.el.word.textContent = `${this.current.word}${this.current.phonetic ? ` /${this.current.phonetic}/` : ""}`;
-      this.el.example.textContent = this.current.en;
-      this.el.translation.textContent = this.current.cn;
-      this.el.credit.querySelector("p").textContent = this.current.exampleSource === "original"
-        ? "例句：本项目编写。" : "例句：Tatoeba 社区，CC BY 2.0 FR；中文已统一为简体。";
-      this.el.input.value = draft.en || "";
-      this.el["chinese-input"].value = draft.zh || "";
+      this.el.credit.querySelector("p").textContent = `本词条：${this.current.selection}。`;
+      this.el.input.value = draft.answer || "";
       this.el.input.disabled = false;
-      this.el["chinese-input"].disabled = false;
       this.el.check.disabled = false;
       this.el.entry.hidden = !this.selected;
       this.renderChoices();
@@ -136,7 +117,7 @@
             button.classList.add("correct");
             this.el.choices.querySelectorAll("button").forEach(choice => { choice.disabled = true; });
             this.el.entry.hidden = false;
-            this.el.feedback.textContent = "选对了，请完整输入下面的两句。";
+            this.el.feedback.textContent = "选对了，请完整输入这个英文单词。";
             this.el.input.focus();
           }
           this.saveDraft();
@@ -145,23 +126,20 @@
       }
     }
     check() {
-      if (this.composing || this.ensureDate() || !this.current || !this.selected || this.finished) return;
-      const en = normalize(this.el.input.value, "en") === normalize(this.current.en, "en");
-      const zh = normalize(this.el["chinese-input"].value, "zh") === normalize(this.current.cn, "zh");
-      if (!en || !zh) {
-        this.el.feedback.textContent = `${!en ? "英文例句" : ""}${!en && !zh ? "和" : ""}${!zh ? "中文译文" : ""}还不一致，请对照原句检查。`;
+      if (this.ensureDate() || !this.current || !this.selected || this.finished) return;
+      if (normalize(this.el.input.value, "en") !== normalize(this.current.word, "en")) {
+        this.el.feedback.textContent = "单词还不正确，请检查拼写。";
         this.el.feedback.className = "english-feedback feedback error";
-        (!en ? this.el.input : this.el["chinese-input"]).focus();
+        this.el.input.focus();
         return;
       }
       const result = this.scheduler.complete(this.current.id, this.wrong);
       this.finished = true;
       this.el.input.disabled = true;
-      this.el["chinese-input"].disabled = true;
       this.el.check.disabled = true;
       this.el.next.hidden = false;
       this.el.feedback.className = "english-feedback feedback success";
-      this.el.feedback.textContent = result === "retry" ? "两句正确！这个词已放到队尾，再答对一次即可完成。" : "完成 ✓ 已计入今日进度。";
+      this.el.feedback.textContent = result === "retry" ? "拼写正确！这个词已放到队尾，再答对一次即可完成。" : "完成 ✓ 已计入今日进度。";
       this.status();
       this.onChange(result === "completed" ? "question-completed" : "word-retry");
     }

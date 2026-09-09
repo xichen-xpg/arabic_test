@@ -48,20 +48,16 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.evaluate(() => testSpeech.at(-1).text), wrongWord);
     await page.getByRole("button", { name: first.word, exact: true }).click();
     assert.equal(await page.evaluate(() => testSpeech.at(-1).lang), "en-GB");
+    assert.equal(await page.locator(".english-example, .english-translation, .english-chinese-input").count(), 0);
     await page.locator(".english-input").fill("unfinished");
-    await page.locator(".english-chinese-input").fill(first.cn);
     await page.locator(".english-check").click();
-    assert.match(await page.locator(".english-feedback").innerText(), /还不一致/);
+    assert.match(await page.locator(".english-feedback").innerText(), /拼写/);
     assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 0);
-    await page.locator(".english-input").fill(first.en.toUpperCase());
-    await page.evaluate(() => document.querySelector(".english-chinese-input").dispatchEvent(new CompositionEvent("compositionstart")));
-    await page.locator(".english-check").click();
-    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 0);
-    await page.evaluate(() => document.querySelector(".english-chinese-input").dispatchEvent(new CompositionEvent("compositionend")));
+    await page.locator(".english-input").fill(first.word.toUpperCase());
     await page.reload();
     await page.addStyleTag({ content: "*, *::before, *::after { transition: none !important; animation: none !important; }" });
     await page.selectOption("#categorySelect", "source:daily-english");
-    assert.equal(await page.locator(".english-input").inputValue(), first.en.toUpperCase());
+    assert.equal(await page.locator(".english-input").inputValue(), first.word.toUpperCase());
     await page.locator(".english-check").click();
     assert.match(await page.locator(".english-feedback").innerText(), /队尾/);
     assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 0);
@@ -70,8 +66,7 @@ const server = http.createServer((req, res) => {
     for (let i = 0; i < 30; i++) {
       const word = await page.evaluate(() => englishPractice.current);
       await page.getByRole("button", { name: word.word, exact: true }).click();
-      await page.locator(".english-input").fill(word.en);
-      await page.locator(".english-chinese-input").fill(word.cn);
+      await page.locator(".english-input").fill(word.word);
       await page.locator(".english-check").click();
       await page.locator(".english-next").click();
     }
@@ -101,7 +96,7 @@ const server = http.createServer((req, res) => {
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     if (process.env.ENGLISH_SCREENSHOT) await page.screenshot({ path: process.env.ENGLISH_SCREENSHOT, fullPage: true });
     assert.deepEqual(errors, []);
-    console.log("Browser checks passed: choices/audio, bilingual typing/IME, retries, reload, calendar, Arabic/poems, rollover, mobile layout.");
+    console.log("Browser checks passed: choices/audio, word typing, retries, reload, calendar, Arabic/poems, rollover, mobile layout.");
     await context.close();
   } finally {
     await browser?.close();
