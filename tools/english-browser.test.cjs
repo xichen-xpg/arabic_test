@@ -40,7 +40,7 @@ const server = http.createServer((req, res) => {
     await page.selectOption("#categorySelect", "source:daily-english");
     await page.locator(".english-choices button").first().waitFor();
     assert.equal(await page.locator(".english-choices button").count(), 4);
-    assert.match(await page.locator(".english-progress").innerText(), /新词 0\/20/);
+    assert.match(await page.locator(".english-progress").innerText(), /新词 0\/30/);
     const first = await page.evaluate(() => englishPractice.current);
     const wrong = page.locator(".english-choices button").filter({ hasNotText: first.word }).first();
     const wrongWord = await wrong.innerText();
@@ -67,7 +67,7 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 0);
     await page.locator(".english-next").click();
     assert.notEqual(await page.evaluate(() => englishPractice.current.id), first.id);
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 30; i++) {
       const word = await page.evaluate(() => englishPractice.current);
       await page.getByRole("button", { name: word.word, exact: true }).click();
       await page.locator(".english-input").fill(word.en);
@@ -75,16 +75,16 @@ const server = http.createServer((req, res) => {
       await page.locator(".english-check").click();
       await page.locator(".english-next").click();
     }
-    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 20);
+    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 30);
     assert.match(await page.locator(".english-feedback").innerText(), /今日英语任务已完成/);
     await page.reload();
     await page.selectOption("#categorySelect", "source:daily-english");
-    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 20);
+    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 30);
     await page.locator("#checkinLink").click();
     const today = page.locator(".calendar-day.today");
     assert.match(await today.innerText(), /每日阿语50题/);
     assert.match(await today.innerText(), /英语新词/);
-    assert.match(await today.innerText(), /20\/20/);
+    assert.match(await today.innerText(), /30\/30/);
     await page.locator("#practiceLink").click();
     await page.selectOption("#categorySelect", "source:daily-arabic");
     assert.equal(await page.locator("#englishPanel").isHidden(), true);
@@ -96,7 +96,7 @@ const server = http.createServer((req, res) => {
     // Force a page-open midnight rollover, keeping real-time clock deterministic.
     await page.evaluate(() => { practiceDate = "2000-01-01"; ensurePracticeDate(); });
     assert.match(await page.locator(".english-feedback").innerText(), /今日英语任务已完成/);
-    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 20);
+    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 30);
     await page.setViewportSize({ width: 390, height: 844 });
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     if (process.env.ENGLISH_SCREENSHOT) await page.screenshot({ path: process.env.ENGLISH_SCREENSHOT, fullPage: true });

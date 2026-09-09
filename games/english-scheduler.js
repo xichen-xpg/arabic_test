@@ -4,8 +4,10 @@
   const STORAGE_KEY = "arabic-test:english-learning:v1";
   // Successful early reviews fall on days 1, 2, 4, 7, 15, 30.
   // Mature words expand to 30/60/120/180-day gaps so reviews cannot crowd
-  // out the remaining new words forever under the 30-word daily limit.
+  // out the remaining new words forever under the 50-word daily limit.
   const INTERVALS = [1, 1, 2, 3, 8, 15, 30, 60, 120, 180];
+  const DAILY_LIMIT = 50;
+  const NEW_LIMIT = 30;
   const addDays = (date, days) => new Date(Date.parse(`${date}T00:00:00Z`) + days * 86400000).toISOString().slice(0, 10);
   function today() {
     const parts = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Dubai", year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(new Date());
@@ -33,14 +35,40 @@
     save(state) { this.storage.setItem(STORAGE_KEY, JSON.stringify(state)); }
     plan(date = this.clock(), create = date === this.clock()) {
       const state = this.load();
-      if (state.days[date]) return state.days[date];
+      if (state.days[date]) {
+        const existing = state.days[date];
+        if (create && (existing.dailyLimit !== DAILY_LIMIT || existing.newLimit !== NEW_LIMIT)) {
+          const scheduled = new Set([...existing.review, ...existing.fresh]);
+          const due = Object.entries(state.records)
+            .filter(([id, record]) => this.words.has(id) && record.due <= date && !scheduled.has(id))
+            .sort((a, b) => Number(b[1].trouble) - Number(a[1].trouble) || a[1].due.localeCompare(b[1].due) || a[0].localeCompare(b[0]));
+          const previousReviewCount = existing.review.length;
+          for (const [id] of due) {
+            if (scheduled.size >= DAILY_LIMIT) break;
+            existing.review.push(id);
+            scheduled.add(id);
+          }
+          for (const word of this.bank) {
+            if (scheduled.size >= DAILY_LIMIT || existing.fresh.length >= NEW_LIMIT) break;
+            if (!state.records[word.id] && !scheduled.has(word.id)) {
+              existing.fresh.push(word.id);
+              scheduled.add(word.id);
+            }
+          }
+          existing.dailyLimit = DAILY_LIMIT;
+          existing.newLimit = NEW_LIMIT;
+          existing.deferred = Math.max(0, due.length - (existing.review.length - previousReviewCount));
+          this.save(state);
+        }
+        return existing;
+      }
       if (!create) return null;
       const due = Object.entries(state.records)
         .filter(([id, record]) => this.words.has(id) && record.due <= date)
         .sort((a, b) => Number(b[1].trouble) - Number(a[1].trouble) || a[1].due.localeCompare(b[1].due) || a[0].localeCompare(b[0]));
-      const review = due.slice(0, 30).map(([id]) => id);
-      const fresh = this.bank.filter(word => !state.records[word.id]).slice(0, Math.min(20, 30 - review.length)).map(word => word.id);
-      const plan = { date, review, fresh, completed: [], failed: [], retry: [], drafts: {}, deferred: Math.max(0, due.length - review.length) };
+      const review = due.slice(0, DAILY_LIMIT).map(([id]) => id);
+      const fresh = this.bank.filter(word => !state.records[word.id]).slice(0, Math.min(NEW_LIMIT, DAILY_LIMIT - review.length)).map(word => word.id);
+      const plan = { date, review, fresh, completed: [], failed: [], retry: [], drafts: {}, deferred: Math.max(0, due.length - review.length), dailyLimit: DAILY_LIMIT, newLimit: NEW_LIMIT };
       state.days[date] = plan;
       this.save(state);
       return plan;
@@ -97,7 +125,7 @@
         done: plan.completed.length === plan.fresh.length + plan.review.length };
     }
   }
-  const api = { Scheduler, today, normalize, addDays, STORAGE_KEY, INTERVALS };
+  const api = { Scheduler, today, normalize, addDays, STORAGE_KEY, INTERVALS, DAILY_LIMIT, NEW_LIMIT };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.EnglishLearning = api;
 })(typeof window !== "undefined" ? window : globalThis);

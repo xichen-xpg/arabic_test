@@ -16,7 +16,7 @@ function fixture(count = 2000) {
 test("daily limits, fixed plans, reloads and incomplete new words", () => {
   const f = fixture();
   const first = f.scheduler.plan();
-  assert.equal(first.fresh.length, 20);
+  assert.equal(first.fresh.length, 30);
   f.scheduler.complete(first.fresh[0]);
   assert.deepEqual(f.scheduler.plan().fresh, first.fresh);
   const reload = new Scheduler(f.bank, f.storage, () => first.date);
@@ -25,8 +25,8 @@ test("daily limits, fixed plans, reloads and incomplete new words", () => {
   const next = f.scheduler.plan();
   assert.deepEqual(next.review, [first.fresh[0]]);
   assert.ok(next.fresh.includes(first.fresh[1]));
-  assert.equal(next.fresh.length, 20);
-  assert.equal(new Set([...next.review, ...next.fresh]).size, 21);
+  assert.equal(next.fresh.length, 30);
+  assert.equal(new Set([...next.review, ...next.fresh]).size, 31);
 });
 
 test("successful reviews follow days 1, 2, 4, 7, 15, 30 then widen", () => {
@@ -62,7 +62,7 @@ test("overdue backlog replaces new words, historical reads do not create days", 
   const history = f.scheduler.summary("2026-09-09", false);
   f.advance(100);
   const plan = f.scheduler.plan();
-  assert.equal(plan.review.length, 30);
+  assert.equal(plan.review.length, 50);
   assert.equal(plan.fresh.length, 0);
   assert.ok(plan.deferred > 0);
   const snapshot = f.storage.getItem(STORAGE_KEY);
@@ -100,7 +100,7 @@ test("2,000-word bank integrity and source metadata", () => {
   }
 });
 
-test("long-run review load never exceeds 30 and all 2,000 words remain reachable", () => {
+test("long-run review load never exceeds 50 and all 2,000 words remain reachable", () => {
   // Keep serialization cheap for the long simulation without changing scheduler behaviour.
   let date = "2026-09-09";
   const scheduler = new Scheduler(Array.from({ length: 2000 }, (_, i) => ({ id: `word-${i}` })), {} , () => date);
@@ -110,12 +110,24 @@ test("long-run review load never exceeds 30 and all 2,000 words remain reachable
   let firstPass = null;
   for (let day = 0; day < 1800; day++) {
     const plan = scheduler.plan();
-    assert.ok(plan.fresh.length <= 20);
-    assert.ok(plan.fresh.length + plan.review.length <= 30);
+    assert.ok(plan.fresh.length <= 30);
+    assert.ok(plan.fresh.length + plan.review.length <= 50);
     scheduler.questions().forEach(word => scheduler.complete(word.id));
     if (Object.keys(state.records).length === 2000) { firstPass = day + 1; break; }
     date = addDays(date, 1);
   }
   assert.ok(firstPass, "New words must not be permanently starved by reviews");
-  console.log(`Simulated first pass: ${firstPass} study days at the 30-word cap.`);
+  console.log(`Simulated first pass: ${firstPass} study days at the 50-word cap.`);
+});
+
+test("an existing 30/20 plan expands in place to 50/30", () => {
+  const f = fixture();
+  const state = f.scheduler.load();
+  state.days["2026-09-09"] = { date: "2026-09-09", review: [], fresh: f.bank.slice(0, 20).map(word => word.id), completed: [], failed: [], retry: [], drafts: {}, deferred: 0 };
+  f.scheduler.save(state);
+  const upgraded = f.scheduler.plan();
+  assert.equal(upgraded.fresh.length, 30);
+  assert.equal(upgraded.review.length, 0);
+  assert.equal(upgraded.dailyLimit, 50);
+  assert.equal(upgraded.newLimit, 30);
 });
