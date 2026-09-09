@@ -1,6 +1,5 @@
 (function () {
   "use strict";
-  const { normalize } = window.EnglishLearning;
   class EnglishPractice {
     constructor(container, scheduler, onChange, ensureDate) {
       this.container = container;
@@ -20,8 +19,7 @@
               <button class="secondary english-speak-word" type="button">🔊 单词发音</button>
             </div>
             <label>输入英文单词<input class="english-input" lang="en" dir="ltr" type="text" spellcheck="false" autocomplete="off" autocapitalize="none"></label>
-            <p class="english-note">忽略大小写和输入前后的空格。</p>
-            <div class="actions"><button class="primary english-check" type="button">检查单词</button></div>
+            <p class="english-note">输入错误的字母不会保留，完整拼对后自动完成。</p>
             <details class="english-credit"><summary>词条来源</summary><p></p><a target="_blank" rel="noopener" href="games/english-sources.html">查看题库选词规则与来源</a></details>
           </div>
         </div>
@@ -29,18 +27,16 @@
         <p class="english-audio-status english-note" role="status"></p>
         <button class="ghost english-next" type="button" hidden>下一词</button>`;
       this.el = {};
-      for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "input", "check", "feedback", "next", "task", "audio-status", "credit"]) {
+      for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "input", "feedback", "next", "task", "audio-status", "credit"]) {
         this.el[name] = container.querySelector(`.english-${name}`);
       }
       container.querySelector(".english-speak-word").addEventListener("click", () => this.speak(this.current.word));
-      this.el.check.addEventListener("click", () => this.check());
       this.el.next.addEventListener("click", () => this.draw());
-      this.el.input.addEventListener("input", () => this.saveDraft());
+      this.el.input.addEventListener("input", () => this.updateInput());
       this.el.input.addEventListener("keydown", event => {
         if (event.key !== "Enter") return;
         event.preventDefault();
         if (this.finished) this.draw();
-        else this.check();
       });
     }
     status() {
@@ -78,9 +74,10 @@
       this.el.prompt.textContent = this.current.zh;
       this.el.word.textContent = `${this.current.word}${this.current.phonetic ? ` /${this.current.phonetic}/` : ""}`;
       this.el.credit.querySelector("p").textContent = `本词条：${this.current.selection}。`;
-      this.el.input.value = draft.answer || "";
+      const draftAnswer = draft.answer || "";
+      this.lastValidInput = this.current.word.toLowerCase().startsWith(draftAnswer.toLowerCase()) ? draftAnswer : "";
+      this.el.input.value = this.lastValidInput;
       this.el.input.disabled = false;
-      this.el.check.disabled = false;
       this.el.entry.hidden = !this.selected;
       this.renderChoices();
       this.onChange("question-loaded");
@@ -125,18 +122,19 @@
         this.el.choices.append(button);
       }
     }
-    check() {
+    updateInput() {
       if (this.ensureDate() || !this.current || !this.selected || this.finished) return;
-      if (normalize(this.el.input.value, "en") !== normalize(this.current.word, "en")) {
-        this.el.feedback.textContent = "单词还不正确，请检查拼写。";
-        this.el.feedback.className = "english-feedback feedback error";
-        this.el.input.focus();
+      const typed = this.el.input.value;
+      if (!this.current.word.toLowerCase().startsWith(typed.toLowerCase())) {
+        this.el.input.value = this.lastValidInput;
         return;
       }
+      this.lastValidInput = typed;
+      this.saveDraft();
+      if (typed.toLowerCase() !== this.current.word.toLowerCase()) return;
       const result = this.scheduler.complete(this.current.id, this.wrong);
       this.finished = true;
       this.el.input.disabled = true;
-      this.el.check.disabled = true;
       this.el.next.hidden = false;
       this.el.feedback.className = "english-feedback feedback success";
       this.el.feedback.textContent = result === "retry" ? "拼写正确！这个词已放到队尾，再答对一次即可完成。" : "完成 ✓ 已计入今日进度。";
