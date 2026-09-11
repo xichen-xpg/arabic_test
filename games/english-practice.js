@@ -8,7 +8,7 @@
       this.ensureDate = ensureDate;
       container.innerHTML = `
         <p class="english-progress" aria-live="polite"></p>
-        <p class="english-note">每天固定学习 30 个新词，另安排最多 20 个复习词。选对后，再完整输入一次英文单词。</p>
+        <p class="english-note">每天固定学习 30 个新词，另安排最多 20 个复习词，仅来自前几天学过且到期的词。当天错词再练不增加复习数量。选对后，再完整输入一次英文单词。</p>
         <div class="english-task">
           <p class="english-kind question-label"></p>
           <p class="english-prompt chinese"></p>

@@ -56,6 +56,39 @@ test("wrong options require another pass and reset to tomorrow, once only", () =
   assert.equal(f.scheduler.summary().completed, 2);
 });
 
+test("same-day mistakes stay in their original category; reviews only use earlier days", () => {
+  const f = fixture();
+  const first = f.scheduler.plan();
+  const id = first.fresh[0];
+  f.scheduler.mistake(id);
+  f.scheduler.complete(id, true);
+  assert.equal(f.scheduler.summary().review, 0);
+  assert.ok(f.scheduler.plan().fresh.includes(id));
+  f.finish();
+  assert.equal(f.scheduler.summary().freshDone, 30);
+  assert.equal(f.scheduler.summary().reviewDone, 0);
+
+  f.advance();
+  const second = f.scheduler.plan();
+  assert.equal(second.fresh.length, 30);
+  assert.equal(second.review.length, 20);
+  assert.ok(second.review.every(word => first.completed.includes(word) || first.fresh.includes(word)));
+  assert.ok(second.review.every(word => f.scheduler.load().records[word].lastCompleted < second.date));
+  const freshId = second.fresh[0];
+  const reviewId = second.review[0];
+  for (const word of [freshId, reviewId]) {
+    f.scheduler.mistake(word);
+    f.scheduler.complete(word, true);
+    assert.deepEqual(f.scheduler.plan().review, second.review);
+    f.scheduler.complete(word);
+  }
+  const reload = new Scheduler(f.bank, f.storage, () => second.date);
+  assert.deepEqual(reload.plan().review, second.review);
+  assert.equal(reload.summary().freshDone, 1);
+  assert.equal(reload.summary().reviewDone, 1);
+  assert.ok(!reload.plan().review.includes(freshId));
+});
+
 test("overdue backlog is capped while 30 new words remain, historical reads do not create days", () => {
   const f = fixture();
   for (let day = 0; day < 10; day++) { f.finish(); f.advance(); }
