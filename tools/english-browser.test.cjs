@@ -71,6 +71,21 @@ const server = http.createServer((req, res) => {
     }
     assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 30);
     assert.match(await page.locator(".english-feedback").innerText(), /今日英语任务已完成/);
+    const savedLearning = await page.evaluate(() => localStorage.getItem(EnglishLearning.STORAGE_KEY));
+    await page.getByRole("button", { name: "重新学习", exact: true }).click();
+    assert.equal(await page.locator(".english-choices button").count(), 4);
+    const replayWord = await page.evaluate(() => englishPractice.current);
+    await page.locator(".english-choices button").filter({ hasNotText: replayWord.word }).first().click();
+    for (let i = 0; i < 31; i++) {
+      const word = await page.evaluate(() => englishPractice.current);
+      await page.getByRole("button", { name: word.word, exact: true }).click();
+      await page.locator(".english-input").fill(word.word);
+      await page.locator(".english-next").click();
+    }
+    assert.match(await page.locator(".english-feedback").innerText(), /重新学习已完成/);
+    assert.equal(await page.evaluate(() => localStorage.getItem(EnglishLearning.STORAGE_KEY)), savedLearning);
+    await page.getByRole("button", { name: "重新学习", exact: true }).click();
+    assert.equal(await page.evaluate(() => englishPractice.current.id), replayWord.id);
     await page.reload();
     await page.selectOption("#categorySelect", "source:daily-english");
     assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 30);

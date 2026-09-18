@@ -25,13 +25,19 @@
         </div>
         <p class="english-feedback feedback" aria-live="polite"></p>
         <p class="english-audio-status english-note" role="status"></p>
-        <button class="ghost english-next" type="button" hidden>下一词</button>`;
+        <button class="ghost english-next" type="button" hidden>下一词</button>
+        <button class="secondary english-restart" type="button" hidden>重新学习</button>`;
       this.el = {};
-      for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "input", "feedback", "next", "task", "audio-status", "credit"]) {
+      for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "input", "feedback", "next", "restart", "task", "audio-status", "credit"]) {
         this.el[name] = container.querySelector(`.english-${name}`);
       }
       container.querySelector(".english-speak-word").addEventListener("click", () => this.speak(this.current.word));
       this.el.next.addEventListener("click", () => this.draw());
+      this.el.restart.addEventListener("click", () => {
+        if (this.ensureDate()) return;
+        this.replay = { date: this.scheduler.clock(), queue: this.scheduler.questions().map(word => word.id) };
+        this.draw();
+      });
       this.el.input.addEventListener("input", () => this.updateInput());
       this.el.input.addEventListener("keydown", event => {
         if (event.key !== "Enter") return;
@@ -46,13 +52,14 @@
         (s.deferred ? ` · ${s.deferred} 个到期词顺延` : "");
     }
     saveDraft() {
-      if (!this.current || this.finished || this.ensureDate()) return;
+      if (!this.current || this.finished || this.ensureDate() || this.replay) return;
       this.scheduler.draft(this.current.id, { selected: this.selected, wrong: this.wrong, answer: this.el.input.value });
     }
     draw() {
       if (this.ensureDate()) return;
       window.speechSynthesis?.cancel();
-      this.current = this.scheduler.next();
+      if (this.replay && this.replay.date !== this.scheduler.clock()) this.replay = null;
+      this.current = this.replay ? this.scheduler.words.get(this.replay.queue[0]) : this.scheduler.next();
       this.finished = false;
       this.el.feedback.textContent = "";
       this.el["audio-status"].textContent = "";
@@ -60,17 +67,19 @@
       this.el.next.hidden = true;
       this.status();
       this.el.task.hidden = !this.current;
+      this.el.restart.hidden = Boolean(this.current) || !this.scheduler.summary().total;
       if (!this.current) {
-        this.el.feedback.textContent = "今日英语任务已完成 ✓ 明天继续复习与新词学习。";
+        this.el.feedback.textContent = this.replay ? "重新学习已完成 ✓ 打卡数据保持不变，可再次练习。" : "今日英语任务已完成 ✓ 明天继续复习与新词学习，也可重新学习。";
         this.el.feedback.classList.add("success");
         this.onChange("question-loaded");
         return;
       }
       const plan = this.scheduler.plan();
-      const draft = plan.drafts[this.current.id] || {};
+      const draft = this.replay ? {} : plan.drafts[this.current.id] || {};
       this.selected = Boolean(draft.selected);
       this.wrong = Boolean(draft.wrong);
       this.el.kind.textContent = `${plan.fresh.includes(this.current.id) ? "新词" : "复习"}${plan.retry.includes(this.current.id) ? " · 错词再练" : ""} · ${this.current.category} · ${this.current.pos}`;
+      if (this.replay) this.el.kind.textContent = `重新学习 · ${this.current.category} · ${this.current.pos}`;
       this.el.prompt.textContent = this.current.zh;
       this.el.word.textContent = `${this.current.word}${this.current.phonetic ? ` /${this.current.phonetic}/` : ""}`;
       this.el.credit.querySelector("p").textContent = `本词条：${this.current.selection}。`;
@@ -107,7 +116,7 @@
             button.classList.add("wrong");
             button.disabled = true;
             this.wrong = true;
-            this.scheduler.mistake(this.current.id);
+            if (!this.replay) this.scheduler.mistake(this.current.id);
             this.el.feedback.textContent = "再想一想，选择符合中文意思的单词。这个词稍后会再练一次。";
           } else {
             this.selected = true;
@@ -132,12 +141,20 @@
       this.lastValidInput = typed;
       this.saveDraft();
       if (typed.toLowerCase() !== this.current.word.toLowerCase()) return;
-      const result = this.scheduler.complete(this.current.id, this.wrong);
+      let result;
+      if (this.replay) {
+        this.replay.queue.shift();
+        if (this.wrong) this.replay.queue.push(this.current.id);
+        result = this.wrong ? "retry" : "replayed";
+      } else {
+        result = this.scheduler.complete(this.current.id, this.wrong);
+      }
       this.finished = true;
       this.el.input.disabled = true;
       this.el.next.hidden = false;
       this.el.feedback.className = "english-feedback feedback success";
       this.el.feedback.textContent = result === "retry" ? "拼写正确！这个词已放到队尾，再答对一次即可完成。" : "完成 ✓ 已计入今日进度。";
+      if (result === "replayed") this.el.feedback.textContent = "完成 ✓ 打卡数据保持不变。";
       this.status();
       this.onChange(result === "completed" ? "question-completed" : "word-retry");
     }
