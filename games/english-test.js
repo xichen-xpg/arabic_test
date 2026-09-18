@@ -10,13 +10,22 @@
     }
     draw() {
       this.hide();
-      if (this.scheduler.testStudyWords().length) {
-        this.onChange("test-relearn-required");
-        return;
-      }
       this.container.hidden = false;
       const summary = this.scheduler.testSummary();
       const active = this.scheduler.plan().test?.active;
+      if (active?.failed) {
+        const needsStudy = this.scheduler.testStudyWords().length > 0;
+        this.container.innerHTML = `<button class="secondary english-test-start" type="button"></button>`;
+        const button = this.container.querySelector("button");
+        button.textContent = needsStudy ? "重新学习本页单词" : "重做本页（20 秒）";
+        button.addEventListener("click", () => {
+          if (this.ensureDate()) return;
+          if (needsStudy) this.onChange("test-relearn-required");
+          else { this.scheduler.startTest(); this.draw(); }
+        });
+        button.focus({ preventScroll: true });
+        return;
+      }
       this.container.innerHTML = `<h3 class="english-test-title"></h3>
         <p class="english-note">每页最多 10 题，20 秒内全部选对才过关。选错或超时必须先重新学习本页全部单词，再重考；已通过的页会保留。</p>
         <p class="english-test-clock" role="timer"></p>
@@ -24,7 +33,6 @@
         <p class="english-test-feedback" role="status"></p>
         <button class="secondary english-test-start" type="button"></button>`;
       const title = this.container.querySelector("h3");
-      const feedback = this.container.querySelector(".english-test-feedback");
       const start = this.container.querySelector("button");
       const reverse = summary.passed >= summary.pages;
       title.textContent = summary.done ? "两组测试已通过 ✓ 英文每日打卡完成" :
@@ -63,7 +71,6 @@
         }
         tbody.append(tr);
       });
-      if (active.failed) feedback.textContent = "本页未过关；本页单词已重新学完，现在可以重考。";
       const tick = () => {
         if (this.ensureDate()) { this.hide(); return; }
         const remaining = Math.max(0, Math.ceil((active.deadline - Date.now()) / 1000));

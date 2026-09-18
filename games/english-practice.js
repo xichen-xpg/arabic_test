@@ -33,7 +33,7 @@
         <button class="secondary english-restart" type="button" hidden>重新学习</button>`;
       this.el = {};
       this.test = new EnglishTest(container.querySelector(".english-test"), scheduler, event => {
-        if (event === "test-relearn-required") { this.draw(); return; }
+        if (event === "test-relearn-required") { this.relearning = true; this.draw(); return; }
         if (scheduler.summary().done) this.el.feedback.textContent = "两组测试已通过 ✓ 今日英文打卡完成。";
         onChange(event);
       }, ensureDate);
@@ -94,8 +94,8 @@
       if (this.replay && this.replay.date !== this.scheduler.clock()) this.replay = null;
       const studyWords = this.scheduler.testStudyWords();
       const wasRelearning = this.relearning;
-      this.relearning = studyWords.length > 0;
-      this.current = this.relearning ? this.scheduler.words.get(studyWords[0]) : wasRelearning ? null : this.replay ? this.scheduler.words.get(this.replay.queue[0]) : this.scheduler.next();
+      this.relearning = Boolean(wasRelearning && studyWords.length);
+      this.current = this.relearning ? this.scheduler.words.get(studyWords[0]) : studyWords.length || wasRelearning ? null : this.replay ? this.scheduler.words.get(this.replay.queue[0]) : this.scheduler.next();
       this.finished = false;
       this.el.feedback.textContent = "";
       this.el["audio-status"].textContent = "";
@@ -114,6 +114,7 @@
           this.el.feedback.textContent = "本页单词已重新学完，可以重考。";
           this.el["back-study"].hidden = !this.scheduler.next();
         }
+        if (this.scheduler.plan().test?.active?.failed) this.el.feedback.textContent = "";
         this.test.draw();
         this.el.feedback.classList.add("success");
         this.onChange("question-loaded");

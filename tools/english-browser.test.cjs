@@ -51,6 +51,9 @@ const server = http.createServer((req, res) => {
       assert.equal(await page.locator(".english-input").evaluate(el => el === document.activeElement), true);
     }
     async function relearnPage() {
+      assert.equal(await page.locator(".english-test-table").count(), 0);
+      assert.equal(await page.locator(".english-test").locator(":scope > *").count(), 1);
+      await page.getByRole("button", { name: "重新学习本页单词", exact: true }).click();
       assert.match(await page.locator(".english-kind").innerText(), /本页重新学习/);
       assert.equal(await page.locator(".english-open-test").isHidden(), true);
       const expected = await page.evaluate(() => englishScheduler.testStudyWords());
@@ -109,7 +112,8 @@ const server = http.createServer((req, res) => {
       await page.keyboard.press("Enter");
     }
     assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 30);
-    assert.match(await page.locator(".english-feedback").innerText(), /今日单词学习已完成/);
+    assert.equal(await page.locator(".english-test-table").count(), 0);
+    assert.equal(await page.locator(".english-test-start").innerText(), "重做本页（20 秒）");
     assert.equal(await page.evaluate(() => englishScheduler.summary().done), false);
     assert.equal(await page.evaluate(() => loadCheckins()[localDateKey()]?.includes(englishSourceKey) || false), false);
     await page.locator(".english-test-start").click();
