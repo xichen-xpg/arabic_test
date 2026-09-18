@@ -31,7 +31,7 @@
       for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "input", "feedback", "next", "restart", "task", "audio-status", "credit"]) {
         this.el[name] = container.querySelector(`.english-${name}`);
       }
-      container.querySelector(".english-speak-word").addEventListener("click", () => this.speak(this.current.word));
+      container.querySelector(".english-speak-word").addEventListener("click", () => this.speak(this.current.word, this.current.zh));
       this.el.next.addEventListener("click", () => this.draw());
       this.el.restart.addEventListener("click", () => {
         if (this.ensureDate()) return;
@@ -111,7 +111,7 @@
         if (this.selected && option.id === this.current.id) button.classList.add("correct");
         button.addEventListener("click", () => {
           if (this.ensureDate() || this.selected) return;
-          this.speak(option.word);
+          this.speak(option.word, option.id === this.current.id ? this.current.zh : "");
           if (option.id !== this.current.id) {
             button.classList.add("wrong");
             button.disabled = true;
@@ -158,7 +158,7 @@
       this.status();
       this.onChange(result === "completed" ? "question-completed" : "word-retry");
     }
-    speak(text) {
+    speak(text, chineseText = "") {
       if (!("speechSynthesis" in window)) {
         this.el["audio-status"].textContent = "当前浏览器不支持朗读，仍可继续答题。";
         return;
@@ -172,9 +172,18 @@
       voice.rate = 0.85;
       this.el["audio-status"].textContent = "";
       voice.onerror = event => {
-        if (!["canceled", "interrupted"].includes(event.error)) this.el["audio-status"].textContent = "朗读暂不可用，请检查设备是否安装英语语音后重试。";
+        if (!["canceled", "interrupted"].includes(event.error)) this.el["audio-status"].textContent = "朗读暂不可用，请检查设备是否安装对应语言的语音后重试。";
       };
       synth.speak(voice);
+      if (chineseText) {
+        const chineseVoice = new SpeechSynthesisUtterance(chineseText);
+        const chinese = synth.getVoices().filter(item => /^zh[-_]/i.test(item.lang));
+        chineseVoice.voice = chinese.find(item => /^zh[-_]CN$/i.test(item.lang)) || chinese[0] || null;
+        chineseVoice.lang = chineseVoice.voice?.lang || "zh-CN";
+        chineseVoice.rate = 0.85;
+        chineseVoice.onerror = voice.onerror;
+        synth.speak(chineseVoice);
+      }
     }
   }
   window.EnglishPractice = EnglishPractice;

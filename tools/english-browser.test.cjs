@@ -47,7 +47,11 @@ const server = http.createServer((req, res) => {
     await wrong.click();
     assert.equal(await page.evaluate(() => testSpeech.at(-1).text), wrongWord);
     await page.getByRole("button", { name: first.word, exact: true }).click();
-    assert.equal(await page.evaluate(() => testSpeech.at(-1).lang), "en-GB");
+    const expectedSpeech = [{ text: first.word, lang: "en-GB" }, { text: first.zh, lang: "zh-CN" }];
+    assert.deepEqual(await page.evaluate(() => testSpeech.slice(-2)), expectedSpeech);
+    await page.evaluate(() => { window.testSpeech = []; });
+    await page.locator(".english-speak-word").click();
+    assert.deepEqual(await page.evaluate(() => testSpeech), expectedSpeech);
     assert.equal(await page.locator(".english-example, .english-translation, .english-chinese-input").count(), 0);
     assert.equal(await page.locator(".english-check").count(), 0);
     await page.locator(".english-input").fill("unfinished");
