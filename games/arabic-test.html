@@ -1864,8 +1864,7 @@
           result.push({ source: englishSourceKey, label: "英语复习", completedCount: english.reviewDone, total: english.review, done: english.reviewDone === english.review });
         } else {
           const test = englishScheduler.testSummary(dateKey);
-          result.push({ source: englishSourceKey, label: "英文选中文", completedCount: Math.min(test.passed, test.pages), total: test.pages, done: test.pages > 0 && test.passed >= test.pages });
-          result.push({ source: englishSourceKey, label: "中文选英文", completedCount: Math.max(0, test.passed - test.pages), total: test.pages, done: test.done });
+          result.push({ source: englishSourceKey, label: "完成英语测试", checkOnly: true, done: test.done });
         }
       }
       return result;
@@ -1874,7 +1873,7 @@
     function dailyProgressSummaryText(dateKey) {
       const summaries = dailyProgressSummaries(dateKey);
       if (!summaries.length) return "今天已做 0 题";
-      return `今天：${summaries.map((item) => `${item.label} ${item.completedCount}/${item.total}`).join(" · ")}${summaries.length === 3 && summaries.every(item => item.done) ? " · 今日全部完成 ✓" : ""}`;
+      return `今天：${summaries.map((item) => item.checkOnly ? `${item.label} ${item.done ? "✓" : "未完成"}` : `${item.label} ${item.completedCount}/${item.total}`).join(" · ")}${summaries.some(item => item.source === dailyArabicSourceKey) && summaries.some(item => item.source === englishSourceKey) && summaries.every(item => item.done) ? " · 今日全部完成 ✓" : ""}`;
     }
 
     function renderCalendar() {
@@ -1916,18 +1915,18 @@
           summaries.forEach((summary) => {
             const item = document.createElement("div");
             item.className = `calendar-source${summary.done ? " done" : ""}`;
-            item.title = `${summary.label} ${summary.completedCount}/${summary.total}`;
+            item.title = summary.checkOnly ? `${summary.label}：${summary.done ? "已完成" : "未完成"}` : `${summary.label} ${summary.completedCount}/${summary.total}`;
             const name = document.createElement("span");
             name.className = "calendar-source-name";
             name.textContent = summary.label;
             const count = document.createElement("span");
             count.className = "calendar-source-count";
-            count.textContent = `${summary.done ? "✓ " : ""}${summary.completedCount}/${summary.total}`;
+            count.textContent = summary.checkOnly ? (summary.done ? "✓" : "未完成") : `${summary.done ? "✓ " : ""}${summary.completedCount}/${summary.total}`;
             item.append(name, count);
             list.append(item);
           });
           day.append(list);
-          if (summaries.length === 3 && summaries.every(summary => summary.done)) {
+          if (summaries.some(summary => summary.source === dailyArabicSourceKey) && summaries.some(summary => summary.source === englishSourceKey) && summaries.every(summary => summary.done)) {
             const badge = document.createElement("div");
             badge.className = "calendar-all-done";
             badge.textContent = "全部完成 ✓";
