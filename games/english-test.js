@@ -26,7 +26,7 @@
       title.textContent = summary.done ? "两组测试已通过 ✓ 英文每日打卡完成" :
         `${reverse ? "第二组 · 中文选英文" : "第一组 · 英文选中文"} · 第 ${summary.passed % summary.pages + 1}/${summary.pages} 页`;
       start.hidden = summary.done || Boolean(active && !active.failed);
-      start.textContent = active?.failed ? "重做本页（20 秒）" : "开始本页（20 秒）";
+      start.textContent = active?.failed ? "重做本页（20 秒）" : "开始测试";
       start.addEventListener("click", () => {
         if (this.ensureDate()) return;
         this.scheduler.startTest();
