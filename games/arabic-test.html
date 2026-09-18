@@ -1863,8 +1863,7 @@
           result.push({ source: englishSourceKey, label: "英语新词", completedCount: english.freshDone, total: english.fresh, done: english.freshDone === english.fresh });
           result.push({ source: englishSourceKey, label: "英语复习", completedCount: english.reviewDone, total: english.review, done: english.reviewDone === english.review });
         } else {
-          const test = englishScheduler.testSummary(dateKey);
-          result.push({ source: englishSourceKey, label: "完成英语测试", checkOnly: true, done: test.done });
+          result.push({ source: englishSourceKey, label: "完成英语测试", checkOnly: true, done: english.done });
         }
       }
       return result;

@@ -182,6 +182,17 @@ const server = http.createServer((req, res) => {
     assert.match(await page.locator(".english-test-title").innerText(), /英文每日打卡完成/);
     assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 30);
     await page.setViewportSize({ width: 390, height: 844 });
+    const checkinsBeforeRepeat = await page.evaluate(() => localStorage.getItem(checkinStorageKey));
+    await page.getByRole("button", { name: "重新测试", exact: true }).click();
+    assert.match(await page.locator(".english-test-title").innerText(), /第一组.*第 1\/3 页/);
+    assert.equal(await page.locator(".english-test-table tr").count(), 10);
+    await page.reload();
+    await page.selectOption("#categorySelect", "source:daily-english");
+    assert.equal(await page.evaluate(() => englishScheduler.summary().done), true);
+    assert.equal(await page.evaluate(() => localStorage.getItem(checkinStorageKey)), checkinsBeforeRepeat);
+    await page.locator("#checkinLink").click();
+    assert.equal(await page.locator(".calendar-day.today .calendar-source").filter({ hasText: "完成英语测试" }).locator(".calendar-source-count").innerText(), "✓");
+    await page.locator("#practiceLink").click();
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     if (process.env.ENGLISH_SCREENSHOT) await page.screenshot({ path: process.env.ENGLISH_SCREENSHOT, fullPage: true });
     assert.deepEqual(errors, []);

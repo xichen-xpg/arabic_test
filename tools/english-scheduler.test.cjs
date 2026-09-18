@@ -49,6 +49,15 @@ test("daily check-in requires both timed tests; failures, reloads and short page
     assert.equal(reload.summary().done, page === 5);
   }
   assert.equal(JSON.stringify(reload.load().records), records);
+  reload.restartTest();
+  assert.equal(reload.testSummary().passed, 0);
+  assert.equal(reload.summary().done, true);
+  reload.startTest(40000);
+  const repeat = reload.plan().test.active.rows[0];
+  assert.equal(reload.answerTest(0, repeat.options.find(id => id !== repeat.id), 40001), "wrong");
+  assert.equal(reload.summary().done, true);
+  assert.equal(new Scheduler(f.bank, f.storage, () => "2026-09-09").summary().done, true);
+  assert.equal(JSON.stringify(reload.load().records), records);
   f.advance();
   assert.equal(f.scheduler.summary().done, false);
   assert.equal(f.scheduler.summary("2026-09-09").done, true);

@@ -131,9 +131,15 @@
       const passed = plan.test?.passed || 0;
       return { pages, passed, done: pages > 0 && passed === pages * 2 };
     }
+    restartTest() {
+      if (!this.testSummary().done) return;
+      const state = this.load();
+      state.days[this.clock()].test = { passed: 0, checkedIn: true };
+      this.save(state);
+    }
     startTest(now = Date.now()) {
       const summary = this.summary();
-      if (summary.done || !summary.total) return;
+      if (this.testSummary().done || !summary.total) return;
       const state = this.load();
       const plan = state.days[this.clock()];
       const test = plan.test || { passed: 0 };
@@ -198,7 +204,7 @@
         total: plan.fresh.length + plan.review.length, completed: plan.completed.length, deferred: plan.deferred,
         learningDone: plan.completed.length === plan.fresh.length + plan.review.length,
         done: date < this.clock() && !plan.test
-          ? plan.completed.length === plan.fresh.length + plan.review.length : this.testSummary(date, create).done };
+          ? plan.completed.length === plan.fresh.length + plan.review.length : Boolean(plan.test?.checkedIn) || this.testSummary(date, create).done };
     }
   }
   const api = { Scheduler, today, normalize, addDays, STORAGE_KEY, INTERVALS, DAILY_LIMIT, NEW_LIMIT, REVIEW_LIMIT };
