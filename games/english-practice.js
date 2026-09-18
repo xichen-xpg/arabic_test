@@ -15,13 +15,14 @@
           <p class="english-kind question-label"></p>
           <p class="english-prompt chinese"></p>
           <div class="english-choices choices" aria-label="英文单词选项"></div>
+          <label class="english-choice-entry">输入 1–4，按回车选择<input class="english-choice-number" type="text" inputmode="numeric" maxlength="1" autocomplete="off" aria-label="选项编号"></label>
           <div class="english-entry" hidden>
             <p class="english-word"></p>
             <div class="actions">
               <button class="secondary english-speak-word" type="button">🔊 单词发音</button>
             </div>
             <label>输入英文单词<input class="english-input" lang="en" dir="ltr" type="text" spellcheck="false" autocomplete="off" autocapitalize="none"></label>
-            <p class="english-note">输入错误的字母不会保留，完整拼对后自动完成。</p>
+            <p class="english-note">输入错误的字母不会保留，完整拼对后按回车进入下一词。</p>
             <details class="english-credit"><summary>词条来源</summary><p></p><a target="_blank" rel="noopener" href="games/english-sources.html">查看题库选词规则与来源</a></details>
           </div>
         </div>
@@ -36,7 +37,7 @@
         if (scheduler.summary().done) this.el.feedback.textContent = "两组测试已通过 ✓ 今日英文打卡完成。";
         onChange(event);
       }, ensureDate);
-      for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "input", "feedback", "next", "restart", "task", "audio-status", "credit", "open-test", "back-study"]) {
+      for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "input", "feedback", "next", "restart", "task", "audio-status", "credit", "open-test", "back-study", "choice-entry", "choice-number"]) {
         this.el[name] = container.querySelector(`.english-${name}`);
       }
       container.querySelector(".english-speak-word").addEventListener("click", () => this.speak(this.current.word, this.current.zh));
@@ -61,8 +62,17 @@
         this.draw();
       });
       this.el.input.addEventListener("input", () => this.updateInput());
+      this.el["choice-number"].addEventListener("keydown", event => {
+        if (event.key !== "Enter" || event.isComposing || event.repeat) return;
+        event.preventDefault();
+        if (this.ensureDate() || this.selected) return;
+        const number = this.el["choice-number"].value;
+        if (!/^[1-4]$/.test(number)) return;
+        this.el.choices.querySelectorAll("button")[Number(number) - 1]?.click();
+        this.el["choice-number"].value = "";
+      });
       this.el.input.addEventListener("keydown", event => {
-        if (event.key !== "Enter") return;
+        if (event.key !== "Enter" || event.isComposing || event.repeat) return;
         event.preventDefault();
         if (this.finished) this.draw();
       });
@@ -126,8 +136,12 @@
       this.lastValidInput = this.current.word.toLowerCase().startsWith(draftAnswer.toLowerCase()) ? draftAnswer : "";
       this.el.input.value = this.lastValidInput;
       this.el.input.disabled = false;
+      this.el.input.readOnly = false;
       this.el.entry.hidden = !this.selected;
+      this.el["choice-entry"].hidden = this.selected;
+      this.el["choice-number"].value = "";
       this.renderChoices();
+      (this.selected ? this.el.input : this.el["choice-number"]).focus({ preventScroll: true });
       this.onChange("question-loaded");
     }
     renderChoices() {
@@ -140,12 +154,16 @@
       const options = candidates.slice(0, 3);
       options.splice(Math.floor(Math.random() * 4), 0, this.current);
       this.el.choices.replaceChildren();
-      for (const option of options) {
+      for (const [index, option] of options.entries()) {
         const button = document.createElement("button");
         button.type = "button";
         button.className = "choice";
         button.lang = "en";
         button.textContent = option.word;
+        const number = document.createElement("span");
+        number.textContent = `${index + 1}. `;
+        number.setAttribute("aria-hidden", "true");
+        button.prepend(number);
         button.disabled = this.selected;
         if (this.selected && option.id === this.current.id) button.classList.add("correct");
         button.addEventListener("click", () => {
@@ -157,11 +175,13 @@
             this.wrong = true;
             if (!this.replay && !this.relearning) this.scheduler.mistake(this.current.id);
             this.el.feedback.textContent = "再想一想，选择符合中文意思的单词。这个词稍后会再练一次。";
+            this.el["choice-number"].focus();
           } else {
             this.selected = true;
             button.classList.add("correct");
             this.el.choices.querySelectorAll("button").forEach(choice => { choice.disabled = true; });
             this.el.entry.hidden = false;
+            this.el["choice-entry"].hidden = true;
             this.el.feedback.textContent = "选对了，请完整输入这个英文单词。";
             this.el.input.focus();
           }
@@ -192,7 +212,7 @@
         result = this.scheduler.complete(this.current.id, this.wrong);
       }
       this.finished = true;
-      this.el.input.disabled = true;
+      this.el.input.readOnly = true;
       this.el.next.hidden = false;
       this.el.feedback.className = "english-feedback feedback success";
       this.el.feedback.textContent = result === "retry" ? "拼写正确！这个词已放到队尾，再答对一次即可完成。" : "完成 ✓ 已计入今日进度。";

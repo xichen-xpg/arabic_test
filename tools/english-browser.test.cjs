@@ -42,6 +42,14 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.locator(".english-choices button").count(), 4);
     assert.match(await page.locator(".english-progress").innerText(), /新词 0\/30/);
     const first = await page.evaluate(() => englishPractice.current);
+    async function chooseWithKeyboard(word) {
+      const option = page.getByRole("button", { name: word.word, exact: true });
+      const number = (await option.innerText()).match(/^[1-4]/)[0];
+      assert.equal(await page.locator(".english-choice-number").evaluate(el => el === document.activeElement), true);
+      await page.keyboard.type(number);
+      await page.keyboard.press("Enter");
+      assert.equal(await page.locator(".english-input").evaluate(el => el === document.activeElement), true);
+    }
     async function relearnPage() {
       assert.match(await page.locator(".english-kind").innerText(), /本页重新学习/);
       assert.equal(await page.locator(".english-open-test").isHidden(), true);
@@ -49,9 +57,9 @@ const server = http.createServer((req, res) => {
       for (const id of expected) {
         const word = await page.evaluate(() => englishPractice.current);
         assert.equal(word.id, id);
-        await page.getByRole("button", { name: word.word, exact: true }).click();
+        await chooseWithKeyboard(word);
         await page.locator(".english-input").fill(word.word);
-        await page.locator(".english-next").click();
+        await page.keyboard.press("Enter");
       }
       assert.equal(await page.evaluate(() => englishScheduler.testStudyWords().length), 0);
     }
@@ -70,10 +78,10 @@ const server = http.createServer((req, res) => {
     await page.getByRole("button", { name: "返回单词练习", exact: true }).click();
     assert.equal(await page.evaluate(() => englishPractice.current.id), first.id);
     const wrong = page.locator(".english-choices button").filter({ hasNotText: first.word }).first();
-    const wrongWord = await wrong.innerText();
+    const wrongWord = (await wrong.innerText()).replace(/^[1-4]\.\s*/, "");
     await wrong.click();
     assert.equal(await page.evaluate(() => testSpeech.at(-1).text), wrongWord);
-    await page.getByRole("button", { name: first.word, exact: true }).click();
+    await chooseWithKeyboard(first);
     const expectedSpeech = [{ text: first.word, lang: "en-GB" }, { text: first.zh, lang: "zh-CN" }];
     assert.deepEqual(await page.evaluate(() => testSpeech.slice(-2)), expectedSpeech);
     await page.evaluate(() => { window.testSpeech = []; });
@@ -92,13 +100,13 @@ const server = http.createServer((req, res) => {
     await page.locator(".english-input").fill(first.word.toUpperCase());
     assert.match(await page.locator(".english-feedback").innerText(), /队尾/);
     assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 0);
-    await page.locator(".english-next").click();
+    await page.keyboard.press("Enter");
     assert.notEqual(await page.evaluate(() => englishPractice.current.id), first.id);
     for (let i = 0; i < 30; i++) {
       const word = await page.evaluate(() => englishPractice.current);
-      await page.getByRole("button", { name: word.word, exact: true }).click();
+      await chooseWithKeyboard(word);
       await page.locator(".english-input").fill(word.word);
-      await page.locator(".english-next").click();
+      await page.keyboard.press("Enter");
     }
     assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 30);
     assert.match(await page.locator(".english-feedback").innerText(), /今日单词学习已完成/);
