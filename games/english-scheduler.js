@@ -137,7 +137,7 @@
       const state = this.load();
       const plan = state.days[this.clock()];
       const test = plan.test || { passed: 0 };
-      if (test.active && !test.active.failed) return;
+      if (test.active && (!test.active.failed || this.testStudyWords().length)) return;
       const pages = Math.ceil(summary.total / 10);
       const reverse = test.passed >= pages;
       const ids = [...plan.review, ...plan.fresh].slice((test.passed % pages) * 10, (test.passed % pages + 1) * 10);
@@ -157,6 +157,17 @@
         return { id, options: shuffle([id, ...choices.map(item => item.id)]) };
       }) };
       plan.test = test;
+      this.save(state);
+    }
+    testStudyWords() {
+      const active = this.plan().test?.active;
+      return active?.failed ? active.rows.map(row => row.id).filter(id => !(active.learned || []).includes(id)) : [];
+    }
+    completeTestStudy(id) {
+      if (!this.testStudyWords().includes(id)) return;
+      const state = this.load();
+      const active = state.days[this.clock()].test.active;
+      active.learned = [...(active.learned || []), id];
       this.save(state);
     }
     answerTest(rowIndex, optionId, now = Date.now()) {

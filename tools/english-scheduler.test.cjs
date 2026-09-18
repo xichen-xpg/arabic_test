@@ -27,11 +27,17 @@ test("daily check-in requires both timed tests; failures, reloads and short page
   assert.equal(f.scheduler.answerTest(0, first.options.find(id => id !== first.id), 1001), "wrong");
   assert.equal(f.scheduler.testSummary().passed, 0);
   f.scheduler.startTest(2000);
+  assert.equal(f.scheduler.plan().test.active.failed, true);
+  assert.equal(f.scheduler.testStudyWords().length, 10);
+  f.scheduler.testStudyWords().forEach(id => f.scheduler.completeTestStudy(id));
+  f.scheduler.startTest(2000);
   const reload = new Scheduler(f.bank, f.storage, () => "2026-09-09");
   reload.startTest(3000);
   assert.equal(reload.plan().test.active.deadline, 22000);
   assert.equal(reload.answerTest(0, first.id, 22000), "timeout");
   assert.equal(reload.testSummary().passed, 0);
+  assert.equal(reload.testStudyWords().length, 10);
+  reload.testStudyWords().forEach(id => reload.completeTestStudy(id));
   for (let page = 0; page < 6; page++) {
     reload.startTest(30000);
     const rows = reload.plan().test.active.rows;

@@ -10,11 +10,15 @@
     }
     draw() {
       this.hide();
+      if (this.scheduler.testStudyWords().length) {
+        this.onChange("test-relearn-required");
+        return;
+      }
       this.container.hidden = false;
       const summary = this.scheduler.testSummary();
       const active = this.scheduler.plan().test?.active;
       this.container.innerHTML = `<h3 class="english-test-title"></h3>
-        <p class="english-note">每页最多 10 题，20 秒内全部选对才过关。选错或超时需重做本页，已通过的页会保留。</p>
+        <p class="english-note">每页最多 10 题，20 秒内全部选对才过关。选错或超时必须先重新学习本页全部单词，再重考；已通过的页会保留。</p>
         <p class="english-test-clock" role="timer"></p>
         <div class="english-test-scroll"><table class="english-test-table"><tbody></tbody></table></div>
         <p class="english-test-feedback" role="status"></p>
@@ -58,7 +62,7 @@
         }
         tbody.append(tr);
       });
-      if (active.failed) feedback.textContent = "本页未过关：选错或超时，请重做。";
+      if (active.failed) feedback.textContent = "本页未过关；本页单词已重新学完，现在可以重考。";
       const tick = () => {
         if (this.ensureDate()) { this.hide(); return; }
         const remaining = Math.max(0, Math.ceil((active.deadline - Date.now()) / 1000));

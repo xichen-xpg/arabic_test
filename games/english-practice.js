@@ -32,6 +32,7 @@
         <button class="secondary english-restart" type="button" hidden>重新学习</button>`;
       this.el = {};
       this.test = new EnglishTest(container.querySelector(".english-test"), scheduler, event => {
+        if (event === "test-relearn-required") { this.draw(); return; }
         if (scheduler.summary().done) this.el.feedback.textContent = "两组测试已通过 ✓ 今日英文打卡完成。";
         onChange(event);
       }, ensureDate);
@@ -73,7 +74,7 @@
         (s.deferred ? ` · ${s.deferred} 个到期词顺延` : "");
     }
     saveDraft() {
-      if (!this.current || this.finished || this.ensureDate() || this.replay) return;
+      if (!this.current || this.finished || this.ensureDate() || this.replay || this.relearning) return;
       this.scheduler.draft(this.current.id, { selected: this.selected, wrong: this.wrong, answer: this.el.input.value });
     }
     draw() {
@@ -81,7 +82,10 @@
       this.test.hide();
       window.speechSynthesis?.cancel();
       if (this.replay && this.replay.date !== this.scheduler.clock()) this.replay = null;
-      this.current = this.replay ? this.scheduler.words.get(this.replay.queue[0]) : this.scheduler.next();
+      const studyWords = this.scheduler.testStudyWords();
+      const wasRelearning = this.relearning;
+      this.relearning = studyWords.length > 0;
+      this.current = this.relearning ? this.scheduler.words.get(studyWords[0]) : wasRelearning ? null : this.replay ? this.scheduler.words.get(this.replay.queue[0]) : this.scheduler.next();
       this.finished = false;
       this.el.feedback.textContent = "";
       this.el["audio-status"].textContent = "";
@@ -89,24 +93,32 @@
       this.el.next.hidden = true;
       this.status();
       this.el.task.hidden = !this.current;
-      this.el["open-test"].hidden = !this.current;
+      this.el["open-test"].hidden = !this.current || this.relearning;
       this.el["open-test"].textContent = this.scheduler.summary().done ? "查看测试结果" : "开始测试";
       this.el["back-study"].hidden = true;
       this.el.restart.hidden = Boolean(this.current) || !this.scheduler.summary().total;
       if (!this.current) {
         this.el.feedback.textContent = this.replay ? "重新学习已完成 ✓ 打卡数据保持不变，可再次练习。" : "今日单词学习已完成，请通过两组限时测试完成英文打卡。";
         if (!this.replay && this.scheduler.summary().done) this.el.feedback.textContent = "两组测试已通过 ✓ 今日英文打卡完成。";
+        if (wasRelearning) {
+          this.el.feedback.textContent = "本页单词已重新学完，可以重考。";
+          this.el["back-study"].hidden = !this.scheduler.next();
+        }
         this.test.draw();
         this.el.feedback.classList.add("success");
         this.onChange("question-loaded");
         return;
       }
       const plan = this.scheduler.plan();
-      const draft = this.replay ? {} : plan.drafts[this.current.id] || {};
+      const draft = this.replay || this.relearning ? {} : plan.drafts[this.current.id] || {};
       this.selected = Boolean(draft.selected);
       this.wrong = Boolean(draft.wrong);
       this.el.kind.textContent = `${plan.fresh.includes(this.current.id) ? "新词" : "复习"}${plan.retry.includes(this.current.id) ? " · 错词再练" : ""} · ${this.current.category} · ${this.current.pos}`;
       if (this.replay) this.el.kind.textContent = `重新学习 · ${this.current.category} · ${this.current.pos}`;
+      if (this.relearning) {
+        this.el.kind.textContent = `测试未过关 · 本页重新学习 · 剩余 ${studyWords.length} 词`;
+        this.el.feedback.textContent = "必须重新学完本页全部单词才能重考：选对后完整输入英文单词。";
+      }
       this.el.prompt.textContent = this.current.zh;
       this.el.word.textContent = `${this.current.word}${this.current.phonetic ? ` /${this.current.phonetic}/` : ""}`;
       this.el.credit.querySelector("p").textContent = `本词条：${this.current.selection}。`;
@@ -143,7 +155,7 @@
             button.classList.add("wrong");
             button.disabled = true;
             this.wrong = true;
-            if (!this.replay) this.scheduler.mistake(this.current.id);
+            if (!this.replay && !this.relearning) this.scheduler.mistake(this.current.id);
             this.el.feedback.textContent = "再想一想，选择符合中文意思的单词。这个词稍后会再练一次。";
           } else {
             this.selected = true;
@@ -169,7 +181,10 @@
       this.saveDraft();
       if (typed.toLowerCase() !== this.current.word.toLowerCase()) return;
       let result;
-      if (this.replay) {
+      if (this.relearning) {
+        if (!this.wrong) this.scheduler.completeTestStudy(this.current.id);
+        result = this.wrong ? "study-retry" : "replayed";
+      } else if (this.replay) {
         this.replay.queue.shift();
         if (this.wrong) this.replay.queue.push(this.current.id);
         result = this.wrong ? "retry" : "replayed";
@@ -182,6 +197,7 @@
       this.el.feedback.className = "english-feedback feedback success";
       this.el.feedback.textContent = result === "retry" ? "拼写正确！这个词已放到队尾，再答对一次即可完成。" : "完成 ✓ 已计入今日进度。";
       if (result === "replayed") this.el.feedback.textContent = "完成 ✓ 打卡数据保持不变。";
+      if (result === "study-retry") this.el.feedback.textContent = "拼写正确！请再完整答对本词一次，才能继续。";
       this.status();
       this.onChange(result === "completed" ? "question-completed" : "word-retry");
     }

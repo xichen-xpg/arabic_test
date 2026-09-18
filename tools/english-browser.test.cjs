@@ -42,6 +42,19 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.locator(".english-choices button").count(), 4);
     assert.match(await page.locator(".english-progress").innerText(), /新词 0\/30/);
     const first = await page.evaluate(() => englishPractice.current);
+    async function relearnPage() {
+      assert.match(await page.locator(".english-kind").innerText(), /本页重新学习/);
+      assert.equal(await page.locator(".english-open-test").isHidden(), true);
+      const expected = await page.evaluate(() => englishScheduler.testStudyWords());
+      for (const id of expected) {
+        const word = await page.evaluate(() => englishPractice.current);
+        assert.equal(word.id, id);
+        await page.getByRole("button", { name: word.word, exact: true }).click();
+        await page.locator(".english-input").fill(word.word);
+        await page.locator(".english-next").click();
+      }
+      assert.equal(await page.evaluate(() => englishScheduler.testStudyWords().length), 0);
+    }
     await page.getByRole("button", { name: "开始测试", exact: true }).click();
     assert.equal(await page.locator(".english-test-table tr").count(), 10);
     assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 0);
@@ -51,6 +64,9 @@ const server = http.createServer((req, res) => {
       return englishScheduler.words.get(row.options.find(id => id !== row.id)).zh;
     });
     await page.locator(".english-test-table tr").first().getByRole("button", { name: earlyWrong, exact: true }).click();
+    await page.reload();
+    await page.selectOption("#categorySelect", "source:daily-english");
+    await relearnPage();
     await page.getByRole("button", { name: "返回单词练习", exact: true }).click();
     assert.equal(await page.evaluate(() => englishPractice.current.id), first.id);
     const wrong = page.locator(".english-choices button").filter({ hasNotText: first.word }).first();
@@ -103,7 +119,7 @@ const server = http.createServer((req, res) => {
       return englishScheduler.words.get(row.options.find(id => id !== row.id)).zh;
     });
     await page.locator(".english-test-table tr").first().getByRole("button", { name: wrongAnswer, exact: true }).click();
-    assert.match(await page.locator(".english-test-feedback").innerText(), /未过关/);
+    await relearnPage();
     assert.equal(await page.evaluate(() => englishScheduler.testSummary().passed), 0);
     await page.locator(".english-test-start").click();
     await page.evaluate(() => {
@@ -112,7 +128,7 @@ const server = http.createServer((req, res) => {
       englishScheduler.save(state);
       englishPractice.test.draw();
     });
-    assert.match(await page.locator(".english-test-feedback").innerText(), /未过关/);
+    await relearnPage();
     for (let batch = 0; batch < 6; batch++) {
       await page.locator(".english-test-start").click();
       const answers = await page.evaluate(() => {
