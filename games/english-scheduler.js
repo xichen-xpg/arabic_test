@@ -38,6 +38,7 @@
       const state = this.load();
       if (state.days[date]) {
         const existing = state.days[date];
+        if (create && !existing.test) { existing.test = { passed: 0 }; this.save(state); }
         if (create && (existing.dailyLimit !== DAILY_LIMIT || existing.newLimit !== NEW_LIMIT || existing.reviewLimit !== REVIEW_LIMIT)) {
           const completed = new Set(existing.completed);
           const completedReviews = existing.review.filter(id => completed.has(id));
@@ -75,6 +76,7 @@
       const review = due.slice(0, REVIEW_LIMIT).map(([id]) => id);
       const fresh = this.bank.filter(word => !state.records[word.id]).slice(0, NEW_LIMIT).map(word => word.id);
       const plan = { date, review, fresh, completed: [], failed: [], retry: [], drafts: {}, deferred: Math.max(0, due.length - review.length), dailyLimit: DAILY_LIMIT, newLimit: NEW_LIMIT, reviewLimit: REVIEW_LIMIT };
+      plan.test = { passed: 0 };
       state.days[date] = plan;
       this.save(state);
       return plan;
@@ -122,13 +124,70 @@
       this.save(state);
       return "completed";
     }
+    testSummary(date = this.clock(), create = date === this.clock()) {
+      const plan = this.plan(date, create);
+      if (!plan) return null;
+      const pages = Math.ceil((plan.review.length + plan.fresh.length) / 10);
+      const passed = plan.test?.passed || 0;
+      return { pages, passed, done: pages > 0 && passed === pages * 2 };
+    }
+    startTest(now = Date.now()) {
+      const summary = this.summary();
+      if (!summary.learningDone || summary.done || !summary.total) return;
+      const state = this.load();
+      const plan = state.days[this.clock()];
+      const test = plan.test || { passed: 0 };
+      if (test.active && !test.active.failed) return;
+      const pages = Math.ceil(summary.total / 10);
+      const reverse = test.passed >= pages;
+      const ids = [...plan.review, ...plan.fresh].slice((test.passed % pages) * 10, (test.passed % pages + 1) * 10);
+      const shuffle = values => {
+        for (let i = values.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [values[i], values[j]] = [values[j], values[i]];
+        }
+        return values;
+      };
+      test.active = { deadline: now + 20000, answers: {}, failed: false, rows: ids.map(id => {
+        const word = this.words.get(id);
+        const field = reverse ? "word" : "zh";
+        const seen = new Set([word[field]]);
+        const choices = shuffle(this.bank.filter(item => item.id !== id && item.zh !== word.zh && item.word !== word.word))
+          .filter(item => { if (seen.has(item[field])) return false; seen.add(item[field]); return true; }).slice(0, 3);
+        return { id, options: shuffle([id, ...choices.map(item => item.id)]) };
+      }) };
+      plan.test = test;
+      this.save(state);
+    }
+    answerTest(rowIndex, optionId, now = Date.now()) {
+      const state = this.load();
+      const plan = state.days[this.clock()];
+      const test = plan?.test;
+      const active = test?.active;
+      if (!active || active.failed) return "ignored";
+      if (now >= active.deadline) {
+        active.failed = true;
+        this.save(state);
+        return "timeout";
+      }
+      const row = active.rows[rowIndex];
+      if (!row || active.answers[rowIndex] || !row.options.includes(optionId)) return "ignored";
+      active.answers[rowIndex] = optionId;
+      if (optionId !== row.id) active.failed = true;
+      const passed = !active.failed && Object.keys(active.answers).length === active.rows.length;
+      if (passed) { test.passed++; delete test.active; }
+      this.save(state);
+      return passed ? "passed" : active.failed ? "wrong" : "correct";
+    }
     summary(date = this.clock(), create = date === this.clock()) {
       const plan = this.plan(date, create);
       if (!plan) return null;
       const count = ids => ids.filter(id => plan.completed.includes(id)).length;
       return { fresh: plan.fresh.length, review: plan.review.length, freshDone: count(plan.fresh), reviewDone: count(plan.review),
         total: plan.fresh.length + plan.review.length, completed: plan.completed.length, deferred: plan.deferred,
-        done: plan.completed.length === plan.fresh.length + plan.review.length };
+        learningDone: plan.completed.length === plan.fresh.length + plan.review.length,
+        done: plan.completed.length === plan.fresh.length + plan.review.length &&
+          (date < this.clock() && !plan.test || this.testSummary(date, create).done) };
     }
   }
   const api = { Scheduler, today, normalize, addDays, STORAGE_KEY, INTERVALS, DAILY_LIMIT, NEW_LIMIT, REVIEW_LIMIT };

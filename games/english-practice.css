@@ -12,3 +12,11 @@
 .english-choices .choice { direction: ltr; font-size: 19px; overflow-wrap: anywhere; }
 .calendar-all-done { color: var(--success); font-size: 11px; margin-top: 5px; }
 [hidden] { display: none !important; }
+.english-test-clock { font-size: 22px; font-weight: 700; color: var(--accent-strong); }
+.english-test-scroll { overflow-x: auto; }
+.english-test-table { width: 100%; table-layout: fixed; border-collapse: collapse; }
+.english-test-table th, .english-test-table td { width: 20%; padding: 4px; border: 1px solid var(--line); overflow-wrap: anywhere; }
+.english-test-table th { font-size: 14px; text-align: left; }
+.english-test-table button { width: 100%; min-height: 44px; padding: 6px 3px; font-size: 13px; white-space: normal; overflow-wrap: anywhere; }
+.english-test-table button.correct { background: #d8f0df; color: #175c2e; }
+.english-test-table button.wrong { background: #fbe0df; color: #992522; }

@@ -13,6 +13,42 @@ function fixture(count = 2000) {
   return { scheduler, storage, bank, advance(days = 1) { date = addDays(date, days); }, finish() { scheduler.questions().forEach(word => scheduler.complete(word.id)); } };
 }
 
+test("daily check-in requires both timed tests; failures, reloads and short pages", () => {
+  const f = fixture(23);
+  f.bank.forEach((word, index) => { word.word = `word ${index}`; word.zh = `意思 ${index}`; });
+  f.scheduler.plan();
+  f.scheduler.startTest(1000);
+  assert.equal(f.scheduler.plan().test.active, undefined);
+  f.finish();
+  const records = JSON.stringify(f.scheduler.load().records);
+  assert.equal(f.scheduler.summary().learningDone, true);
+  assert.equal(f.scheduler.summary().done, false);
+  f.scheduler.startTest(1000);
+  const first = f.scheduler.plan().test.active.rows[0];
+  assert.equal(f.scheduler.answerTest(0, first.options.find(id => id !== first.id), 1001), "wrong");
+  assert.equal(f.scheduler.testSummary().passed, 0);
+  f.scheduler.startTest(2000);
+  const reload = new Scheduler(f.bank, f.storage, () => "2026-09-09");
+  reload.startTest(3000);
+  assert.equal(reload.plan().test.active.deadline, 22000);
+  assert.equal(reload.answerTest(0, first.id, 22000), "timeout");
+  assert.equal(reload.testSummary().passed, 0);
+  for (let page = 0; page < 6; page++) {
+    reload.startTest(30000);
+    const rows = reload.plan().test.active.rows;
+    assert.equal(rows.length, page % 3 === 2 ? 3 : 10);
+    rows.forEach((row, index) => {
+      assert.equal(new Set(row.options).size, 4);
+      assert.equal(reload.answerTest(index, row.id, 30001), index === rows.length - 1 ? "passed" : "correct");
+    });
+    assert.equal(reload.summary().done, page === 5);
+  }
+  assert.equal(JSON.stringify(reload.load().records), records);
+  f.advance();
+  assert.equal(f.scheduler.summary().done, false);
+  assert.equal(f.scheduler.summary("2026-09-09").done, true);
+});
+
 test("daily limits, fixed plans, reloads and incomplete new words", () => {
   const f = fixture();
   const first = f.scheduler.plan();

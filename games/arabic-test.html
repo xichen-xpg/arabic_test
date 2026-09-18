@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>每日语言练习</title>
   <base href="../">
-  <link rel="stylesheet" href="games/english-practice.css?v=20260911fixed3020">
+  <link rel="stylesheet" href="games/english-practice.css?v=20260918tests">
   <style>
     :root {
       color-scheme: light;
@@ -913,8 +913,9 @@
   <script src="games/daily-arabic.js"></script>
   <script src="games/daily-poems.js"></script>
   <script src="games/daily-english.js?v=20260911fixed3020"></script>
-  <script src="games/english-scheduler.js?v=20260911fixed3020"></script>
-  <script src="games/english-practice.js?v=20260911review-note"></script>
+  <script src="games/english-scheduler.js?v=20260918tests"></script>
+  <script src="games/english-test.js?v=20260918tests"></script>
+  <script src="games/english-practice.js?v=20260918tests"></script>
   <script>
     const questions = [
       { category: "基础问候", zh: "你好", ar: "مرحبا", rom: "marhaban" },
@@ -1630,6 +1631,14 @@
     const englishPractice = new EnglishPractice(document.querySelector("#englishPanel"), englishScheduler, (eventName) => {
       current = englishPractice.current;
       if (englishScheduler.summary().done) markDailyCheckin(englishSourceKey);
+      else {
+        const checkins = loadCheckins();
+        const today = localDateKey();
+        if (checkins[today]?.includes(englishSourceKey)) {
+          checkins[today] = checkins[today].filter(source => source !== englishSourceKey);
+          saveCheckins(checkins);
+        }
+      }
       emitMetrics(eventName);
       if (window.location.hash === "#checkin") renderCalendar();
     }, ensurePracticeDate);
@@ -1850,8 +1859,14 @@
       });
       const english = englishScheduler.summary(dateKey);
       if (english) {
-        result.push({ source: englishSourceKey, label: "英语新词", completedCount: english.freshDone, total: english.fresh, done: english.freshDone === english.fresh });
-        result.push({ source: englishSourceKey, label: "英语复习", completedCount: english.reviewDone, total: english.review, done: english.reviewDone === english.review });
+        if (dateKey < localDateKey() && !englishScheduler.plan(dateKey, false).test) {
+          result.push({ source: englishSourceKey, label: "英语新词", completedCount: english.freshDone, total: english.fresh, done: english.freshDone === english.fresh });
+          result.push({ source: englishSourceKey, label: "英语复习", completedCount: english.reviewDone, total: english.review, done: english.reviewDone === english.review });
+        } else {
+          const test = englishScheduler.testSummary(dateKey);
+          result.push({ source: englishSourceKey, label: "英文选中文", completedCount: Math.min(test.passed, test.pages), total: test.pages, done: test.pages > 0 && test.passed >= test.pages });
+          result.push({ source: englishSourceKey, label: "中文选英文", completedCount: Math.max(0, test.passed - test.pages), total: test.pages, done: test.done });
+        }
       }
       return result;
     }
