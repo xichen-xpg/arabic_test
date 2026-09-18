@@ -18,10 +18,9 @@ test("daily check-in requires both timed tests; failures, reloads and short page
   f.bank.forEach((word, index) => { word.word = `word ${index}`; word.zh = `意思 ${index}`; });
   f.scheduler.plan();
   f.scheduler.startTest(1000);
-  assert.equal(f.scheduler.plan().test.active, undefined);
-  f.finish();
+  assert.equal(f.scheduler.plan().test.active.rows.length, 10);
   const records = JSON.stringify(f.scheduler.load().records);
-  assert.equal(f.scheduler.summary().learningDone, true);
+  assert.equal(f.scheduler.summary().learningDone, false);
   assert.equal(f.scheduler.summary().done, false);
   f.scheduler.startTest(1000);
   const first = f.scheduler.plan().test.active.rows[0];

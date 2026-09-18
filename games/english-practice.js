@@ -8,6 +8,8 @@
       this.ensureDate = ensureDate;
       container.innerHTML = `
         <p class="english-progress" aria-live="polite"></p>
+        <button class="secondary english-open-test" type="button">开始测试</button>
+        <button class="secondary english-back-study" type="button" hidden>返回单词练习</button>
         <p class="english-note">每天固定学习 30 个新词，另安排最多 20 个复习词，仅来自前几天学过且到期的词。当天错词再练不增加复习数量。选对后，再完整输入一次英文单词。</p>
         <div class="english-task">
           <p class="english-kind question-label"></p>
@@ -33,11 +35,25 @@
         if (scheduler.summary().done) this.el.feedback.textContent = "两组测试已通过 ✓ 今日英文打卡完成。";
         onChange(event);
       }, ensureDate);
-      for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "input", "feedback", "next", "restart", "task", "audio-status", "credit"]) {
+      for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "input", "feedback", "next", "restart", "task", "audio-status", "credit", "open-test", "back-study"]) {
         this.el[name] = container.querySelector(`.english-${name}`);
       }
       container.querySelector(".english-speak-word").addEventListener("click", () => this.speak(this.current.word, this.current.zh));
       this.el.next.addEventListener("click", () => this.draw());
+      this.el["open-test"].addEventListener("click", () => {
+        if (this.ensureDate()) return;
+        this.saveDraft();
+        window.speechSynthesis?.cancel();
+        this.el.task.hidden = true;
+        this.el.next.hidden = true;
+        this.el.feedback.textContent = "";
+        this.el["audio-status"].textContent = "";
+        this.el["open-test"].hidden = true;
+        this.el["back-study"].hidden = false;
+        this.scheduler.startTest();
+        this.test.draw();
+      });
+      this.el["back-study"].addEventListener("click", () => this.draw());
       this.el.restart.addEventListener("click", () => {
         if (this.ensureDate()) return;
         this.replay = { date: this.scheduler.clock(), queue: this.scheduler.questions().map(word => word.id) };
@@ -73,6 +89,9 @@
       this.el.next.hidden = true;
       this.status();
       this.el.task.hidden = !this.current;
+      this.el["open-test"].hidden = !this.current;
+      this.el["open-test"].textContent = this.scheduler.summary().done ? "查看测试结果" : "开始测试";
+      this.el["back-study"].hidden = true;
       this.el.restart.hidden = Boolean(this.current) || !this.scheduler.summary().total;
       if (!this.current) {
         this.el.feedback.textContent = this.replay ? "重新学习已完成 ✓ 打卡数据保持不变，可再次练习。" : "今日单词学习已完成，请通过两组限时测试完成英文打卡。";

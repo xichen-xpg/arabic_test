@@ -42,6 +42,17 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.locator(".english-choices button").count(), 4);
     assert.match(await page.locator(".english-progress").innerText(), /新词 0\/30/);
     const first = await page.evaluate(() => englishPractice.current);
+    await page.getByRole("button", { name: "开始测试", exact: true }).click();
+    assert.equal(await page.locator(".english-test-table tr").count(), 10);
+    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 0);
+    assert.equal(await page.locator(".english-task").isHidden(), true);
+    const earlyWrong = await page.evaluate(() => {
+      const row = englishScheduler.plan().test.active.rows[0];
+      return englishScheduler.words.get(row.options.find(id => id !== row.id)).zh;
+    });
+    await page.locator(".english-test-table tr").first().getByRole("button", { name: earlyWrong, exact: true }).click();
+    await page.getByRole("button", { name: "返回单词练习", exact: true }).click();
+    assert.equal(await page.evaluate(() => englishPractice.current.id), first.id);
     const wrong = page.locator(".english-choices button").filter({ hasNotText: first.word }).first();
     const wrongWord = await wrong.innerText();
     await wrong.click();

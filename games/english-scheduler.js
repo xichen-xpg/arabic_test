@@ -133,7 +133,7 @@
     }
     startTest(now = Date.now()) {
       const summary = this.summary();
-      if (!summary.learningDone || summary.done || !summary.total) return;
+      if (summary.done || !summary.total) return;
       const state = this.load();
       const plan = state.days[this.clock()];
       const test = plan.test || { passed: 0 };
@@ -186,8 +186,8 @@
       return { fresh: plan.fresh.length, review: plan.review.length, freshDone: count(plan.fresh), reviewDone: count(plan.review),
         total: plan.fresh.length + plan.review.length, completed: plan.completed.length, deferred: plan.deferred,
         learningDone: plan.completed.length === plan.fresh.length + plan.review.length,
-        done: plan.completed.length === plan.fresh.length + plan.review.length &&
-          (date < this.clock() && !plan.test || this.testSummary(date, create).done) };
+        done: date < this.clock() && !plan.test
+          ? plan.completed.length === plan.fresh.length + plan.review.length : this.testSummary(date, create).done };
     }
   }
   const api = { Scheduler, today, normalize, addDays, STORAGE_KEY, INTERVALS, DAILY_LIMIT, NEW_LIMIT, REVIEW_LIMIT };
