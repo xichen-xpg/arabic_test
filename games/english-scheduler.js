@@ -19,6 +19,10 @@
     const clean = value.normalize("NFKC").toLowerCase().replace(/[’‘]/g, "'").replace(/\p{P}/gu, "").trim();
     return language === "zh" ? clean.replace(/\s+/g, "") : clean.replace(/\s+/g, " ");
   }
+  function matchesMeaning(answer, meaning) {
+    const typed = normalize(answer, "zh");
+    return Boolean(typed) && [meaning, ...meaning.split(/[；;，,、/／|\n]+/)].some(part => normalize(part, "zh") === typed);
+  }
   class Scheduler {
     constructor(bank, storage, clock = today) {
       this.bank = bank;
@@ -218,7 +222,7 @@
           ? plan.completed.length === plan.fresh.length + plan.review.length : Boolean(plan.test?.checkedIn) || this.testSummary(date, create).done };
     }
   }
-  const api = { Scheduler, today, normalize, addDays, STORAGE_KEY, INTERVALS, DAILY_LIMIT, NEW_LIMIT, REVIEW_LIMIT };
+  const api = { Scheduler, today, normalize, matchesMeaning, addDays, STORAGE_KEY, INTERVALS, DAILY_LIMIT, NEW_LIMIT, REVIEW_LIMIT };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.EnglishLearning = api;
 })(typeof window !== "undefined" ? window : globalThis);

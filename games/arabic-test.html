@@ -2858,7 +2858,7 @@
       elements.gamePanel.classList.toggle("english-mode", english);
       document.querySelector("#englishPanel").hidden = !english;
       document.querySelector("#practiceDescription").textContent = english
-        ? "看中文选英文单词，点击带发音。选对后再完整输入一次英文单词。"
+        ? "看中文选英文单词，点击带发音。选对后输入英文单词和一个中文释义。"
         : "看中文选发音，选对后输入阿语。提示会给出下一个阿语字符和 Arabic 101 键盘按键。";
       if (currentAudio) { currentAudio.pause(); currentAudio = null; }
       window.speechSynthesis?.cancel();

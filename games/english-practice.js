@@ -10,7 +10,7 @@
         <p class="english-progress" aria-live="polite"></p>
         <button class="secondary english-open-test" type="button">开始测试</button>
         <button class="secondary english-back-study" type="button" hidden>返回单词练习</button>
-        <p class="english-note">每天固定学习 30 个新词，另安排最多 20 个复习词，仅来自前几天学过且到期的词。当天错词再练不增加复习数量。选对后，再完整输入一次英文单词。</p>
+        <p class="english-note">每天固定学习 30 个新词，另安排最多 20 个复习词，仅来自前几天学过且到期的词。当天错词再练不增加复习数量。选对后输入英文单词，再输入一个中文释义。</p>
         <div class="english-task">
           <p class="english-kind question-label"></p>
           <p class="english-prompt chinese"></p>
@@ -22,7 +22,8 @@
               <button class="secondary english-speak-word" type="button">🔊 单词发音</button>
             </div>
             <label>输入英文单词<input class="english-input" lang="en" dir="ltr" type="text" spellcheck="false" autocomplete="off" autocapitalize="none"></label>
-            <p class="english-note">输入错误的字母不会保留，完整拼对后按回车进入下一词。</p>
+            <label>输入中文释义（多个释义任选一个）<input class="english-chinese-input" lang="zh-CN" type="text" autocomplete="off" disabled></label>
+            <p class="english-note">英文拼对后自动进入中文输入框；中文答对后按回车进入下一词。</p>
             <details class="english-credit"><summary>词条来源</summary><p></p><a target="_blank" rel="noopener" href="games/english-sources.html">查看题库选词规则与来源</a></details>
           </div>
         </div>
@@ -32,6 +33,7 @@
         <button class="ghost english-next" type="button" hidden>下一词</button>
         <button class="secondary english-restart" type="button" hidden>重新学习</button>`;
       this.el = {};
+      this.chineseInput = container.querySelector(".english-chinese-input");
       this.test = new EnglishTest(container.querySelector(".english-test"), scheduler, event => {
         if (event === "test-relearn-required") { this.relearning = true; this.draw(); return; }
         this.status();
@@ -65,6 +67,20 @@
         this.draw();
       });
       this.el.input.addEventListener("input", () => this.updateInput());
+      this.chineseInput.addEventListener("input", event => {
+        this.saveDraft();
+        if (!event.isComposing) this.completeAnswer();
+      });
+      this.chineseInput.addEventListener("compositionend", () => this.completeAnswer());
+      this.chineseInput.addEventListener("keydown", event => {
+        if (event.key !== "Enter" || event.isComposing || event.keyCode === 229 || event.repeat) return;
+        event.preventDefault();
+        if (this.finished) this.draw();
+        else {
+          this.completeAnswer();
+          if (!this.finished) this.el.feedback.textContent = "请输入一个完整的中文释义，多个释义任选一个即可。";
+        }
+      });
       this.el["choice-number"].addEventListener("keydown", event => {
         if (event.key !== "Enter" || event.isComposing || event.repeat) return;
         event.preventDefault();
@@ -89,7 +105,7 @@
     }
     saveDraft() {
       if (!this.current || this.finished || this.ensureDate() || this.replay || this.relearning) return;
-      this.scheduler.draft(this.current.id, { selected: this.selected, wrong: this.wrong, answer: this.el.input.value });
+      this.scheduler.draft(this.current.id, { selected: this.selected, wrong: this.wrong, answer: this.el.input.value, chinese: this.chineseInput.value });
     }
     draw() {
       if (this.ensureDate()) return;
@@ -136,7 +152,7 @@
       if (this.replay) this.el.kind.textContent = `重新学习 · ${this.current.category} · ${this.current.pos}`;
       if (this.relearning) {
         this.el.kind.textContent = `测试未过关 · 本页重新学习 · 剩余 ${studyWords.length} 词`;
-        this.el.feedback.textContent = "必须重新学完本页全部单词才能重考：选对后完整输入英文单词。";
+        this.el.feedback.textContent = "必须重新学完本页全部单词才能重考：选对后输入英文单词和一个中文释义。";
       }
       this.el.prompt.textContent = this.current.zh;
       this.el.word.textContent = `${this.current.word}${this.current.phonetic ? ` /${this.current.phonetic}/` : ""}`;
@@ -146,11 +162,14 @@
       this.el.input.value = this.lastValidInput;
       this.el.input.disabled = false;
       this.el.input.readOnly = false;
+      this.chineseInput.value = draft.chinese || "";
+      this.chineseInput.readOnly = false;
+      this.chineseInput.disabled = this.lastValidInput.toLowerCase() !== this.current.word.toLowerCase();
       this.el.entry.hidden = !this.selected;
       this.el["choice-entry"].hidden = this.selected;
       this.el["choice-number"].value = "";
       this.renderChoices();
-      (this.selected ? this.el.input : this.el["choice-number"]).focus({ preventScroll: true });
+      (this.selected ? this.chineseInput.disabled ? this.el.input : this.chineseInput : this.el["choice-number"]).focus({ preventScroll: true });
       this.onChange("question-loaded");
     }
     renderChoices() {
@@ -209,6 +228,14 @@
       this.lastValidInput = typed;
       this.saveDraft();
       if (typed.toLowerCase() !== this.current.word.toLowerCase()) return;
+      this.el.input.readOnly = true;
+      this.chineseInput.disabled = false;
+      this.chineseInput.focus();
+      this.el.feedback.textContent = "英文正确，请输入中文释义，多个释义任选一个即可。";
+    }
+    completeAnswer() {
+      if (this.ensureDate() || !this.current || !this.selected || this.finished || this.chineseInput.disabled) return;
+      if (this.el.input.value.toLowerCase() !== this.current.word.toLowerCase() || !EnglishLearning.matchesMeaning(this.chineseInput.value, this.current.zh)) return;
       let result;
       if (this.relearning) {
         if (!this.wrong) this.scheduler.completeTestStudy(this.current.id);
@@ -221,6 +248,7 @@
         result = this.scheduler.complete(this.current.id, this.wrong);
       }
       this.finished = true;
+      this.chineseInput.readOnly = true;
       this.el.input.readOnly = true;
       this.el.next.hidden = false;
       this.el.feedback.className = "english-feedback feedback success";

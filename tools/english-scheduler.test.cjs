@@ -3,6 +3,16 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const vm = require("node:vm");
 const { Scheduler, addDays, normalize, STORAGE_KEY } = require("../games/english-scheduler.js");
+const { matchesMeaning } = require("../games/english-scheduler.js");
+test("Chinese learning accepts a complete individual meaning, not a substring", () => {
+  assert.equal(matchesMeaning("分配", "分配；拨出"), true);
+  assert.equal(matchesMeaning("拨出", "分配；拨出"), true);
+  assert.equal(matchesMeaning("分配；拨出", "分配；拨出"), true);
+  assert.equal(matchesMeaning(" 拨 出 ", "分配、拨出"), true);
+  assert.equal(matchesMeaning("分", "分配；拨出"), false);
+  assert.equal(matchesMeaning("", "分配；拨出"), false);
+  assert.equal(matchesMeaning("错误", "分配；拨出"), false);
+});
 
 function fixture(count = 2000) {
   let date = "2026-09-09";

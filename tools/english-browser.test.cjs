@@ -62,6 +62,7 @@ const server = http.createServer((req, res) => {
         assert.equal(word.id, id);
         await chooseWithKeyboard(word);
         await page.locator(".english-input").fill(word.word);
+        await page.locator(".english-chinese-input").fill(word.zh.split(/[；;，,、/／|\n]+/)[0]);
         await page.keyboard.press("Enter");
       }
       assert.equal(await page.evaluate(() => englishScheduler.testStudyWords().length), 0);
@@ -90,7 +91,7 @@ const server = http.createServer((req, res) => {
     await page.evaluate(() => { window.testSpeech = []; });
     await page.locator(".english-speak-word").click();
     assert.deepEqual(await page.evaluate(() => testSpeech), expectedSpeech);
-    assert.equal(await page.locator(".english-example, .english-translation, .english-chinese-input").count(), 0);
+    assert.equal(await page.locator(".english-chinese-input").count(), 1);
     assert.equal(await page.locator(".english-check").count(), 0);
     await page.locator(".english-input").fill("unfinished");
     assert.equal(await page.locator(".english-input").inputValue(), "");
@@ -101,6 +102,11 @@ const server = http.createServer((req, res) => {
     await page.selectOption("#categorySelect", "source:daily-english");
     assert.equal(await page.locator(".english-input").inputValue(), first.word.slice(0, 2).toUpperCase());
     await page.locator(".english-input").fill(first.word.toUpperCase());
+    assert.equal(await page.evaluate(() => englishPractice.finished), false);
+    assert.equal(await page.locator(".english-chinese-input").evaluate(el => el === document.activeElement), true);
+    await page.locator(".english-chinese-input").fill("错误释义");
+    assert.equal(await page.evaluate(() => englishPractice.finished), false);
+    await page.locator(".english-chinese-input").fill(first.zh.split(/[；;，,、/／|\n]+/)[0]);
     assert.match(await page.locator(".english-feedback").innerText(), /队尾/);
     assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 0);
     await page.keyboard.press("Enter");
@@ -109,6 +115,7 @@ const server = http.createServer((req, res) => {
       const word = await page.evaluate(() => englishPractice.current);
       await chooseWithKeyboard(word);
       await page.locator(".english-input").fill(word.word);
+      await page.locator(".english-chinese-input").fill(word.zh.split(/[；;，,、/／|\n]+/)[0]);
       await page.keyboard.press("Enter");
     }
     assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 30);
@@ -177,6 +184,7 @@ const server = http.createServer((req, res) => {
       const word = await page.evaluate(() => englishPractice.current);
       await page.getByRole("button", { name: word.word, exact: true }).click();
       await page.locator(".english-input").fill(word.word);
+      await page.locator(".english-chinese-input").fill(word.zh.split(/[；;，,、/／|\n]+/)[0]);
       await page.locator(".english-next").click();
     }
     assert.match(await page.locator(".english-feedback").innerText(), /重新学习已完成/);
