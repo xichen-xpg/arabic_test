@@ -180,13 +180,14 @@
       const active = state.days[this.clock()].test.active;
       active.learned = [...(active.learned || []), id];
       this.save(state);
+      this.complete(id);
     }
     syncTestLearning() {
       const plan = this.plan();
       const ids = [...plan.review, ...plan.fresh];
-      const pages = Math.ceil(ids.length / 10);
-      const count = plan.test?.checkedIn ? ids.length : Math.max(0, (plan.test?.passed || 0) - pages) * 10;
-      ids.slice(0, count).filter(id => !plan.completed.includes(id)).forEach(id => this.complete(id));
+      const count = plan.test?.checkedIn ? ids.length : (plan.test?.passed || 0) * 10;
+      const learned = new Set([...ids.slice(0, count), ...(plan.test?.active?.learned || [])]);
+      [...learned].filter(id => !plan.completed.includes(id)).forEach(id => this.complete(id));
     }
     answerTest(rowIndex, optionId, now = Date.now()) {
       const state = this.load();

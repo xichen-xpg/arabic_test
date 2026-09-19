@@ -56,7 +56,7 @@ test("daily check-in requires both timed tests; failures, reloads and short page
       assert.equal(reload.answerTest(index, row.id, 30001), index === rows.length - 1 ? "passed" : "correct");
     });
     assert.equal(reload.summary().done, page === 5);
-    assert.equal(reload.summary().freshDone, Math.min(23, Math.max(0, page - 2) * 10));
+    assert.equal(reload.summary().freshDone, Math.min(23, (page + 1) * 10));
   }
   assert.equal(Object.keys(reload.load().records).length, 23);
   const records = JSON.stringify(reload.load().records);

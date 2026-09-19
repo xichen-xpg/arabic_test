@@ -41,7 +41,7 @@ const server = http.createServer((req, res) => {
     await page.locator(".english-choices button").first().waitFor();
     assert.equal(await page.locator(".english-choices button").count(), 4);
     assert.match(await page.locator(".english-progress").innerText(), /新词 0\/30/);
-    const first = await page.evaluate(() => englishPractice.current);
+    let first = await page.evaluate(() => englishPractice.current);
     async function chooseWithKeyboard(word) {
       const option = page.getByRole("button", { name: word.word, exact: true });
       const number = (await option.innerText()).match(/^[1-4]/)[0];
@@ -79,8 +79,10 @@ const server = http.createServer((req, res) => {
     await page.reload();
     await page.selectOption("#categorySelect", "source:daily-english");
     await relearnPage();
+    assert.match(await page.locator(".english-progress").innerText(), /新词 10\/30/);
+    assert.match(await page.locator(".english-progress").innerText(), /已学 10\/2000/);
     await page.getByRole("button", { name: "返回单词练习", exact: true }).click();
-    assert.equal(await page.evaluate(() => englishPractice.current.id), first.id);
+    first = await page.evaluate(() => englishPractice.current);
     const wrong = page.locator(".english-choices button").filter({ hasNotText: first.word }).first();
     const wrongWord = (await wrong.innerText()).replace(/^[1-4]\.\s*/, "");
     await wrong.click();
@@ -95,7 +97,7 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.locator(".english-check").count(), 0);
     await page.locator(".english-input").fill("unfinished");
     assert.equal(await page.locator(".english-input").inputValue(), "");
-    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 0);
+    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 10);
     await page.locator(".english-input").fill(first.word.slice(0, 2).toUpperCase());
     await page.reload();
     await page.addStyleTag({ content: "*, *::before, *::after { transition: none !important; animation: none !important; }" });
@@ -108,10 +110,10 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.evaluate(() => englishPractice.finished), false);
     await page.locator(".english-chinese-input").fill(first.zh.split(/[；;，,、/／|\n]+/)[0]);
     assert.match(await page.locator(".english-feedback").innerText(), /队尾/);
-    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 0);
+    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 10);
     await page.keyboard.press("Enter");
     assert.notEqual(await page.evaluate(() => englishPractice.current.id), first.id);
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < 20; i++) {
       const word = await page.evaluate(() => englishPractice.current);
       await chooseWithKeyboard(word);
       await page.locator(".english-input").fill(word.word);
@@ -135,6 +137,13 @@ const server = http.createServer((req, res) => {
         const box = el.getBoundingClientRect();
         return box.top >= 0 && box.bottom <= innerHeight && box.right <= innerWidth;
       }));
+      if (viewport.width === 1366) {
+        assert.ok(await page.locator(".english-test-active").evaluate(el => {
+          const bottom = el.getBoundingClientRect().bottom - parseFloat(getComputedStyle(el).paddingBottom);
+          const table = el.querySelector("table").getBoundingClientRect();
+          return Math.abs(bottom - table.bottom) < 6;
+        }));
+      }
     }
     await page.setViewportSize({ width: 1100, height: 950 });
     const deadline = await page.evaluate(() => englishScheduler.plan().test.active.deadline);
