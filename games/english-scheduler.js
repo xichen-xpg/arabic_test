@@ -133,7 +133,10 @@
       if (!plan) return null;
       const pages = Math.ceil((plan.review.length + plan.fresh.length) / 10);
       const passed = plan.test?.passed || 0;
-      return { pages, passed, done: pages > 0 && passed === pages * 2 };
+      const timing = plan.testTiming;
+      const averageSeconds = timing ? timing.totalMs / timing.pages / 1000 : null;
+      return { pages, passed, done: pages > 0 && passed === pages * 2,
+        averageSeconds, fast: timing?.pages === 10 && averageSeconds < 15 };
     }
     restartTest() {
       if (!this.testSummary().done) return;
@@ -159,7 +162,7 @@
         }
         return values;
       };
-      test.active = { deadline: now + 20000, answers: {}, failed: false, rows: ids.map(id => {
+      test.active = { startedAt: now, deadline: now + 20000, answers: {}, failed: false, rows: ids.map(id => {
         const word = this.words.get(id);
         const field = reverse ? "word" : "zh";
         const seen = new Set([word[field]]);
@@ -205,7 +208,16 @@
       active.answers[rowIndex] = optionId;
       if (optionId !== row.id) active.failed = true;
       const passed = !active.failed && Object.keys(active.answers).length === active.rows.length;
-      if (passed) { test.passed++; delete test.active; }
+      if (passed) {
+        test.times = test.times || [];
+        test.times[test.passed] = Number.isFinite(active.startedAt) ? Math.max(0, now - active.startedAt) : null;
+        test.passed++;
+        const pages = Math.ceil((plan.review.length + plan.fresh.length) / 10) * 2;
+        if (!plan.testTiming && test.passed === pages && Array.from({ length: pages }, (_, i) => test.times[i]).every(Number.isFinite)) {
+          plan.testTiming = { pages, totalMs: test.times.reduce((sum, ms) => sum + ms, 0) };
+        }
+        delete test.active;
+      }
       this.save(state);
       if (passed) this.syncTestLearning();
       return passed ? "passed" : active.failed ? "wrong" : "correct";

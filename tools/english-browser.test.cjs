@@ -227,6 +227,13 @@ const server = http.createServer((req, res) => {
     await page.getByRole("button", { name: "收起测试（继续计时）", exact: true }).click();
     await page.locator("#checkinLink").click();
     assert.equal(await page.locator(".calendar-day.today .calendar-source").filter({ hasText: "完成英语测试" }).locator(".calendar-source-count").innerText(), "✓");
+    await page.evaluate(() => {
+      const state = englishScheduler.load();
+      state.days[localDateKey()].testTiming = { pages: 10, totalMs: 120000 };
+      englishScheduler.save(state);
+      renderCalendar();
+    });
+    assert.match(await page.locator(".calendar-day.today .calendar-source.timed").innerText(), /平均 12\.00 秒 🚩/);
     await page.locator("#practiceLink").click();
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     if (process.env.ENGLISH_SCREENSHOT) await page.screenshot({ path: process.env.ENGLISH_SCREENSHOT, fullPage: true });

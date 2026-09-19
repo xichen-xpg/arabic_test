@@ -770,6 +770,9 @@
       flex: 0 0 auto;
       color: inherit;
     }
+    .calendar-source.timed { flex-wrap: wrap; }
+    .calendar-source.timed .calendar-source-name { flex-basis: 100%; }
+    .calendar-source.timed .calendar-source-count { flex: 0 1 auto; overflow-wrap: anywhere; }
 
     .main-view.hidden {
       display: none;
@@ -1863,7 +1866,9 @@
           result.push({ source: englishSourceKey, label: "英语新词", completedCount: english.freshDone, total: english.fresh, done: english.freshDone === english.fresh });
           result.push({ source: englishSourceKey, label: "英语复习", completedCount: english.reviewDone, total: english.review, done: english.reviewDone === english.review });
         } else {
-          result.push({ source: englishSourceKey, label: "完成英语测试", checkOnly: true, done: english.done });
+          const timing = englishScheduler.testSummary(dateKey);
+          const timeLabel = english.done && timing.fast ? ` · 平均 ${timing.averageSeconds.toFixed(2)} 秒 🚩` : "";
+          result.push({ source: englishSourceKey, label: "完成英语测试", checkOnly: true, done: english.done, timeLabel });
         }
       }
       return result;
@@ -1872,7 +1877,7 @@
     function dailyProgressSummaryText(dateKey) {
       const summaries = dailyProgressSummaries(dateKey);
       if (!summaries.length) return "今天已做 0 题";
-      return `今天：${summaries.map((item) => item.checkOnly ? `${item.label} ${item.done ? "✓" : "未完成"}` : `${item.label} ${item.completedCount}/${item.total}`).join(" · ")}${summaries.some(item => item.source === dailyArabicSourceKey) && summaries.some(item => item.source === englishSourceKey) && summaries.every(item => item.done) ? " · 今日全部完成 ✓" : ""}`;
+      return `今天：${summaries.map((item) => item.checkOnly ? `${item.label} ${item.done ? "✓" : "未完成"}${item.timeLabel}` : `${item.label} ${item.completedCount}/${item.total}`).join(" · ")}${summaries.some(item => item.source === dailyArabicSourceKey) && summaries.some(item => item.source === englishSourceKey) && summaries.every(item => item.done) ? " · 今日全部完成 ✓" : ""}`;
     }
 
     function renderCalendar() {
@@ -1913,14 +1918,14 @@
           list.className = "calendar-source-list";
           summaries.forEach((summary) => {
             const item = document.createElement("div");
-            item.className = `calendar-source${summary.done ? " done" : ""}`;
+            item.className = `calendar-source${summary.done ? " done" : ""}${summary.timeLabel ? " timed" : ""}`;
             item.title = summary.checkOnly ? `${summary.label}：${summary.done ? "已完成" : "未完成"}` : `${summary.label} ${summary.completedCount}/${summary.total}`;
             const name = document.createElement("span");
             name.className = "calendar-source-name";
             name.textContent = summary.label;
             const count = document.createElement("span");
             count.className = "calendar-source-count";
-            count.textContent = summary.checkOnly ? (summary.done ? "✓" : "未完成") : `${summary.done ? "✓ " : ""}${summary.completedCount}/${summary.total}`;
+            count.textContent = summary.checkOnly ? `${summary.done ? "✓" : "未完成"}${summary.timeLabel}` : `${summary.done ? "✓ " : ""}${summary.completedCount}/${summary.total}`;
             item.append(name, count);
             list.append(item);
           });

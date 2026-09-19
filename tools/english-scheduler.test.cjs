@@ -23,6 +23,33 @@ function fixture(count = 2000) {
   return { scheduler, storage, bank, advance(days = 1) { date = addDays(date, days); }, finish() { scheduler.questions().forEach(word => scheduler.complete(word.id)); } };
 }
 
+test("ten timed pages earn a flag strictly below 15 seconds and retain the first record", () => {
+  for (const duration of [14900, 15000, 16000]) {
+    const f = fixture(100);
+    f.bank.forEach((word, index) => { word.word = `word ${index}`; word.zh = `意思 ${index}`; });
+    f.finish();
+    f.advance();
+    assert.equal(f.scheduler.testSummary().pages, 5);
+    for (let page = 0; page < 10; page++) {
+      f.scheduler.startTest(100000);
+      const rows = f.scheduler.plan().test.active.rows;
+      const reload = new Scheduler(f.bank, f.storage, () => f.scheduler.clock());
+      rows.forEach((row, i) => reload.answerTest(i, row.id, 100000 + duration));
+      if (page < 9) assert.equal(reload.testSummary().averageSeconds, null);
+    }
+    assert.equal(f.scheduler.testSummary().averageSeconds, duration / 1000);
+    assert.equal(f.scheduler.testSummary().fast, duration < 15000);
+    f.scheduler.restartTest();
+    f.scheduler.startTest(200000);
+    f.scheduler.answerTest(-1, null, 220000);
+    assert.equal(f.scheduler.testSummary().averageSeconds, duration / 1000);
+    assert.equal(f.scheduler.summary().done, true);
+    f.advance();
+    assert.equal(f.scheduler.testSummary().averageSeconds, null);
+    assert.equal(f.scheduler.testSummary("2026-09-10").averageSeconds, duration / 1000);
+  }
+});
+
 test("daily check-in requires both timed tests; failures, reloads and short pages", () => {
   const f = fixture(23);
   f.bank.forEach((word, index) => { word.word = `word ${index}`; word.zh = `意思 ${index}`; });
