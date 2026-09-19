@@ -155,6 +155,13 @@
         this.el.feedback.textContent = "必须重新学完本页全部单词才能重考：选对后输入英文单词和一个中文释义。";
       }
       this.el.prompt.textContent = this.current.zh;
+      if (this.current.zhPinyin) {
+        const pinyin = document.createElement("span");
+        pinyin.className = "english-pinyin";
+        pinyin.lang = "zh-Latn";
+        pinyin.textContent = `（${this.current.zhPinyin}）`;
+        this.el.prompt.append(pinyin);
+      }
       this.el.word.textContent = `${this.current.word}${this.current.phonetic ? ` /${this.current.phonetic}/` : ""}`;
       this.el.credit.querySelector("p").textContent = `本词条：${this.current.selection}。`;
       const draftAnswer = draft.answer || "";

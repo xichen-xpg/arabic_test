@@ -10,7 +10,8 @@ window.dailyEnglishQuestionBank = [
     "id": "sustainable",
     "phonetic": "sә'steinәbl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "kě chí xù de"
   },
   {
     "word": "curriculum",
@@ -22,7 +23,8 @@ window.dailyEnglishQuestionBank = [
     "id": "curriculum",
     "phonetic": "kә'rikjulәm",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "kè chéng tǐ xì"
   },
   {
     "word": "biodiversity",
@@ -34,7 +36,8 @@ window.dailyEnglishQuestionBank = [
     "id": "biodiversity",
     "phonetic": "",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shēng wù duō yàng xìng"
   },
   {
     "word": "allocate",
@@ -46,7 +49,8 @@ window.dailyEnglishQuestionBank = [
     "id": "allocate",
     "phonetic": "'ælәukeit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fēn pèi ； bō chū"
   },
   {
     "word": "assessment",
@@ -58,7 +62,8 @@ window.dailyEnglishQuestionBank = [
     "id": "assessment",
     "phonetic": "ә'sesmәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "píng gū"
   },
   {
     "word": "emission",
@@ -70,7 +75,8 @@ window.dailyEnglishQuestionBank = [
     "id": "emission",
     "phonetic": "i'miʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "pái fàng ； pái fàng wù"
   },
   {
     "word": "renewable",
@@ -82,7 +88,8 @@ window.dailyEnglishQuestionBank = [
     "id": "renewable",
     "phonetic": "ri'nju(:)әbl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "kě zài shēng de"
   },
   {
     "word": "infrastructure",
@@ -94,7 +101,8 @@ window.dailyEnglishQuestionBank = [
     "id": "infrastructure",
     "phonetic": "'infrәstrʌktʃә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jī chǔ shè shī"
   },
   {
     "word": "inequality",
@@ -106,7 +114,8 @@ window.dailyEnglishQuestionBank = [
     "id": "inequality",
     "phonetic": ".ini'kwɒliti",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bù píng děng"
   },
   {
     "word": "migration",
@@ -118,7 +127,8 @@ window.dailyEnglishQuestionBank = [
     "id": "migration",
     "phonetic": "mai'greiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qiān yí ； yí mín"
   },
   {
     "word": "substantial",
@@ -130,7 +140,8 @@ window.dailyEnglishQuestionBank = [
     "id": "substantial",
     "phonetic": "sәb'stænʃәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "dà liàng de ； zhòng dà de"
   },
   {
     "word": "justify",
@@ -142,7 +153,8 @@ window.dailyEnglishQuestionBank = [
     "id": "justify",
     "phonetic": "'dʒʌstifai",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhèng míng …… hé lǐ"
   },
   {
     "word": "consequence",
@@ -154,7 +166,8 @@ window.dailyEnglishQuestionBank = [
     "id": "consequence",
     "phonetic": "'kɒnsikwәns",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "hòu guǒ"
   },
   {
     "word": "retain",
@@ -166,7 +179,8 @@ window.dailyEnglishQuestionBank = [
     "id": "retain",
     "phonetic": "ri'tein",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bǎo liú ； liú zhù"
   },
   {
     "word": "urbanisation",
@@ -178,7 +192,8 @@ window.dailyEnglishQuestionBank = [
     "id": "urbanisation",
     "phonetic": "ˌɜ:bənaɪ'zeɪʃən",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chéng shì huà"
   },
   {
     "word": "depletion",
@@ -190,7 +205,8 @@ window.dailyEnglishQuestionBank = [
     "id": "depletion",
     "phonetic": "di'pli:ʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xiāo hào ； kū jié"
   },
   {
     "word": "conservation",
@@ -202,7 +218,8 @@ window.dailyEnglishQuestionBank = [
     "id": "conservation",
     "phonetic": ".kɒnsә'veiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bǎo hù ； jié yuē"
   },
   {
     "word": "habitat",
@@ -214,7 +231,8 @@ window.dailyEnglishQuestionBank = [
     "id": "habitat",
     "phonetic": "'hæbitæt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qī xī dì"
   },
   {
     "word": "ecosystem",
@@ -226,7 +244,8 @@ window.dailyEnglishQuestionBank = [
     "id": "ecosystem",
     "phonetic": "'i:kәu.sistәm",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shēng tài xì tǒng"
   },
   {
     "word": "deforestation",
@@ -238,7 +257,8 @@ window.dailyEnglishQuestionBank = [
     "id": "deforestation",
     "phonetic": "di:.fɒ:ri'steiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "sēn lín kǎn fá"
   },
   {
     "word": "erosion",
@@ -250,7 +270,8 @@ window.dailyEnglishQuestionBank = [
     "id": "erosion",
     "phonetic": "i'rәuʒәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qīn shí"
   },
   {
     "word": "fossil",
@@ -262,7 +283,8 @@ window.dailyEnglishQuestionBank = [
     "id": "fossil",
     "phonetic": "'fɒsәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "huà shí"
   },
   {
     "word": "mitigate",
@@ -274,7 +296,8 @@ window.dailyEnglishQuestionBank = [
     "id": "mitigate",
     "phonetic": "'mitigeit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiǎn qīng ； huǎn jiě"
   },
   {
     "word": "adaptation",
@@ -286,7 +309,8 @@ window.dailyEnglishQuestionBank = [
     "id": "adaptation",
     "phonetic": ".ædæp'teiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shì yìng ； shì yìng xìng tiáo zhěng"
   },
   {
     "word": "resilience",
@@ -298,7 +322,8 @@ window.dailyEnglishQuestionBank = [
     "id": "resilience",
     "phonetic": "ri'ziliәns",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "huī fù lì ； shì yìng lì"
   },
   {
     "word": "carbon",
@@ -310,7 +335,8 @@ window.dailyEnglishQuestionBank = [
     "id": "carbon",
     "phonetic": "'kɑ:bәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tàn"
   },
   {
     "word": "consumption",
@@ -322,7 +348,8 @@ window.dailyEnglishQuestionBank = [
     "id": "consumption",
     "phonetic": "kәn'sʌmpʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xiāo hào ； xiāo fèi"
   },
   {
     "word": "efficiency",
@@ -334,7 +361,8 @@ window.dailyEnglishQuestionBank = [
     "id": "efficiency",
     "phonetic": "i'fiʃәnsi",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xiào lǜ"
   },
   {
     "word": "productivity",
@@ -346,7 +374,8 @@ window.dailyEnglishQuestionBank = [
     "id": "productivity",
     "phonetic": ".prәudʌk'tiviti",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shēng chǎn lǜ"
   },
   {
     "word": "automation",
@@ -358,7 +387,8 @@ window.dailyEnglishQuestionBank = [
     "id": "automation",
     "phonetic": ".ɒ:tә'meiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zì dòng huà"
   },
   {
     "word": "innovation",
@@ -370,7 +400,8 @@ window.dailyEnglishQuestionBank = [
     "id": "innovation",
     "phonetic": ".inәu'veiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chuàng xīn"
   },
   {
     "word": "artificial",
@@ -382,7 +413,8 @@ window.dailyEnglishQuestionBank = [
     "id": "artificial",
     "phonetic": ".ɑ:ti'fiʃәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "rén gōng de ； rén zào de"
   },
   {
     "word": "algorithm",
@@ -394,7 +426,8 @@ window.dailyEnglishQuestionBank = [
     "id": "algorithm",
     "phonetic": "'ælgәriðm",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "suàn fǎ"
   },
   {
     "word": "privacy",
@@ -406,7 +439,8 @@ window.dailyEnglishQuestionBank = [
     "id": "privacy",
     "phonetic": "'praivәsi",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yǐn sī"
   },
   {
     "word": "surveillance",
@@ -418,7 +452,8 @@ window.dailyEnglishQuestionBank = [
     "id": "surveillance",
     "phonetic": "sә:'veilәns",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiān kòng ； jiān shì"
   },
   {
     "word": "digital",
@@ -430,7 +465,8 @@ window.dailyEnglishQuestionBank = [
     "id": "digital",
     "phonetic": "'didʒitәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shù zì de"
   },
   {
     "word": "accessible",
@@ -442,7 +478,8 @@ window.dailyEnglishQuestionBank = [
     "id": "accessible",
     "phonetic": "әk'sesәbl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "kě shǐ yòng de ； yì yú dào dá de"
   },
   {
     "word": "literacy",
@@ -454,7 +491,8 @@ window.dailyEnglishQuestionBank = [
     "id": "literacy",
     "phonetic": "'litәrәsi",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "dú xiě néng lì"
   },
   {
     "word": "tuition",
@@ -466,7 +504,8 @@ window.dailyEnglishQuestionBank = [
     "id": "tuition",
     "phonetic": "tju:'iʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiào xué ； xué fèi"
   },
   {
     "word": "scholarship",
@@ -478,7 +517,8 @@ window.dailyEnglishQuestionBank = [
     "id": "scholarship",
     "phonetic": "'skɒlәʃip",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiǎng xué jīn"
   },
   {
     "word": "vocational",
@@ -490,7 +530,8 @@ window.dailyEnglishQuestionBank = [
     "id": "vocational",
     "phonetic": "vәu'keiʃәnl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhí yè de ； zhí yè jì shù de"
   },
   {
     "word": "qualification",
@@ -502,7 +543,8 @@ window.dailyEnglishQuestionBank = [
     "id": "qualification",
     "phonetic": ".kwɒlifi'keiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zī gé ； zī lì"
   },
   {
     "word": "enrolment",
@@ -514,7 +556,8 @@ window.dailyEnglishQuestionBank = [
     "id": "enrolment",
     "phonetic": "in'rәulmәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "rù xué ； zhù cè rén shù"
   },
   {
     "word": "discipline",
@@ -526,7 +569,8 @@ window.dailyEnglishQuestionBank = [
     "id": "discipline",
     "phonetic": "'disiplin",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xué kē ； jì lǜ"
   },
   {
     "word": "autonomy",
@@ -538,7 +582,8 @@ window.dailyEnglishQuestionBank = [
     "id": "autonomy",
     "phonetic": "ɒ:'tɒnәmi",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zì zhǔ quán"
   },
   {
     "word": "collaboration",
@@ -550,7 +595,8 @@ window.dailyEnglishQuestionBank = [
     "id": "collaboration",
     "phonetic": "kә.læbә'ræʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "hé zuò"
   },
   {
     "word": "peer",
@@ -562,7 +608,8 @@ window.dailyEnglishQuestionBank = [
     "id": "peer",
     "phonetic": "piә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tóng líng rén ； tóng děng dì wèi de rén"
   },
   {
     "word": "critical",
@@ -574,7 +621,8 @@ window.dailyEnglishQuestionBank = [
     "id": "critical",
     "phonetic": "'kritikәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "pī pàn xìng de ； guān jiàn de"
   },
   {
     "word": "evaluate",
@@ -586,7 +634,8 @@ window.dailyEnglishQuestionBank = [
     "id": "evaluate",
     "phonetic": "i'væljueit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "píng jià ； píng gū"
   },
   {
     "word": "hypothesis",
@@ -598,7 +647,8 @@ window.dailyEnglishQuestionBank = [
     "id": "hypothesis",
     "phonetic": "hai'pɒθәsis",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiǎ shè"
   },
   {
     "word": "empirical",
@@ -610,7 +660,8 @@ window.dailyEnglishQuestionBank = [
     "id": "empirical",
     "phonetic": "em'pirikәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shí zhèng de"
   },
   {
     "word": "methodology",
@@ -622,7 +673,8 @@ window.dailyEnglishQuestionBank = [
     "id": "methodology",
     "phonetic": ".meθә'dɒlәdʒi",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yán jiū fāng fǎ"
   },
   {
     "word": "correlation",
@@ -634,7 +686,8 @@ window.dailyEnglishQuestionBank = [
     "id": "correlation",
     "phonetic": ".kɒrә'leiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xiāng guān xìng"
   },
   {
     "word": "causation",
@@ -646,7 +699,8 @@ window.dailyEnglishQuestionBank = [
     "id": "causation",
     "phonetic": "kɒ:'zeiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yīn guǒ guān xì"
   },
   {
     "word": "variable",
@@ -658,7 +712,8 @@ window.dailyEnglishQuestionBank = [
     "id": "variable",
     "phonetic": "'vєәriәbl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "biàn liàng"
   },
   {
     "word": "reliable",
@@ -670,7 +725,8 @@ window.dailyEnglishQuestionBank = [
     "id": "reliable",
     "phonetic": "ri'laiәbl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "kě kào de"
   },
   {
     "word": "valid",
@@ -682,7 +738,8 @@ window.dailyEnglishQuestionBank = [
     "id": "valid",
     "phonetic": "'vælid",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yǒu xiào de ； yǒu gēn jù de"
   },
   {
     "word": "bias",
@@ -694,7 +751,8 @@ window.dailyEnglishQuestionBank = [
     "id": "bias",
     "phonetic": "'baiәs",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "piān chā ； piān jiàn"
   },
   {
     "word": "sample",
@@ -706,7 +764,8 @@ window.dailyEnglishQuestionBank = [
     "id": "sample",
     "phonetic": "'sæmpl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yàng běn"
   },
   {
     "word": "statistic",
@@ -718,7 +777,8 @@ window.dailyEnglishQuestionBank = [
     "id": "statistic",
     "phonetic": "stә'tistik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tǒng jì shù jù"
   },
   {
     "word": "proportion",
@@ -730,7 +790,8 @@ window.dailyEnglishQuestionBank = [
     "id": "proportion",
     "phonetic": "prә'pɒ:ʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bǐ lì"
   },
   {
     "word": "fluctuate",
@@ -742,7 +803,8 @@ window.dailyEnglishQuestionBank = [
     "id": "fluctuate",
     "phonetic": "'flʌktʃueit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bō dòng"
   },
   {
     "word": "plateau",
@@ -754,7 +816,8 @@ window.dailyEnglishQuestionBank = [
     "id": "plateau",
     "phonetic": "plæ'tәu",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wěn dìng qī ； gāo yuán"
   },
   {
     "word": "decline",
@@ -766,7 +829,8 @@ window.dailyEnglishQuestionBank = [
     "id": "decline",
     "phonetic": "di'klain",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xià jiàng ； jiǎn shǎo"
   },
   {
     "word": "projection",
@@ -778,7 +842,8 @@ window.dailyEnglishQuestionBank = [
     "id": "projection",
     "phonetic": "prә'dʒekʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yù cè"
   },
   {
     "word": "demographic",
@@ -790,7 +855,8 @@ window.dailyEnglishQuestionBank = [
     "id": "demographic",
     "phonetic": ".demә'græfik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "rén kǒu tǒng jì de"
   },
   {
     "word": "ageing",
@@ -802,7 +868,8 @@ window.dailyEnglishQuestionBank = [
     "id": "ageing",
     "phonetic": "'eidʒiŋ",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shuāi lǎo ； lǎo líng huà"
   },
   {
     "word": "fertility",
@@ -814,7 +881,8 @@ window.dailyEnglishQuestionBank = [
     "id": "fertility",
     "phonetic": "fә'tiliti",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shēng yù néng lì ； féi lì"
   },
   {
     "word": "dependency",
@@ -826,7 +894,8 @@ window.dailyEnglishQuestionBank = [
     "id": "dependency",
     "phonetic": "di'pendәnsi",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yī lài"
   },
   {
     "word": "pension",
@@ -838,7 +907,8 @@ window.dailyEnglishQuestionBank = [
     "id": "pension",
     "phonetic": "'penʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yǎng lǎo jīn"
   },
   {
     "word": "welfare",
@@ -850,7 +920,8 @@ window.dailyEnglishQuestionBank = [
     "id": "welfare",
     "phonetic": "'welfєә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fú lì ； fú zhǐ"
   },
   {
     "word": "subsidy",
@@ -862,7 +933,8 @@ window.dailyEnglishQuestionBank = [
     "id": "subsidy",
     "phonetic": "'sʌbsidi",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bǔ tiē"
   },
   {
     "word": "incentive",
@@ -874,7 +946,8 @@ window.dailyEnglishQuestionBank = [
     "id": "incentive",
     "phonetic": "in'sentiv",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jī lì ； cì jī"
   },
   {
     "word": "regulation",
@@ -886,7 +959,8 @@ window.dailyEnglishQuestionBank = [
     "id": "regulation",
     "phonetic": ".regju'leiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fǎ guī ； guǎn lǐ"
   },
   {
     "word": "legislation",
@@ -898,7 +972,8 @@ window.dailyEnglishQuestionBank = [
     "id": "legislation",
     "phonetic": ".ledʒis'leiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fǎ lǜ ； lì fǎ"
   },
   {
     "word": "accountability",
@@ -910,7 +985,8 @@ window.dailyEnglishQuestionBank = [
     "id": "accountability",
     "phonetic": "ә.kauntә'biliti",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wèn zé ； zé rèn"
   },
   {
     "word": "transparency",
@@ -922,7 +998,8 @@ window.dailyEnglishQuestionBank = [
     "id": "transparency",
     "phonetic": "træns'pærәnsi",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tòu míng dù"
   },
   {
     "word": "consensus",
@@ -934,7 +1011,8 @@ window.dailyEnglishQuestionBank = [
     "id": "consensus",
     "phonetic": "kәn'sensәs",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gòng shí"
   },
   {
     "word": "controversial",
@@ -946,7 +1024,8 @@ window.dailyEnglishQuestionBank = [
     "id": "controversial",
     "phonetic": ".kɒntrә'vә:ʃәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yǒu zhēng yì de"
   },
   {
     "word": "feasible",
@@ -958,7 +1037,8 @@ window.dailyEnglishQuestionBank = [
     "id": "feasible",
     "phonetic": "'fi:zәbl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "kě xíng de"
   },
   {
     "word": "viable",
@@ -970,7 +1050,8 @@ window.dailyEnglishQuestionBank = [
     "id": "viable",
     "phonetic": "'vaiәbl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qiè shí kě xíng de"
   },
   {
     "word": "expenditure",
@@ -982,7 +1063,8 @@ window.dailyEnglishQuestionBank = [
     "id": "expenditure",
     "phonetic": "ik'spenditʃә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhī chū"
   },
   {
     "word": "revenue",
@@ -994,7 +1076,8 @@ window.dailyEnglishQuestionBank = [
     "id": "revenue",
     "phonetic": "'revinju:",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shōu rù ； cái zhèng shōu rù"
   },
   {
     "word": "deficit",
@@ -1006,7 +1089,8 @@ window.dailyEnglishQuestionBank = [
     "id": "deficit",
     "phonetic": "'defisit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chì zì ； bù zú"
   },
   {
     "word": "inflation",
@@ -1018,7 +1102,8 @@ window.dailyEnglishQuestionBank = [
     "id": "inflation",
     "phonetic": "in'fleiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tōng huò péng zhàng"
   },
   {
     "word": "recession",
@@ -1030,7 +1115,8 @@ window.dailyEnglishQuestionBank = [
     "id": "recession",
     "phonetic": "ri'seʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jīng jì shuāi tuì"
   },
   {
     "word": "entrepreneur",
@@ -1042,7 +1128,8 @@ window.dailyEnglishQuestionBank = [
     "id": "entrepreneur",
     "phonetic": ".ɒntrәprә'nә:",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qǐ yè jiā ； chuàng yè zhě"
   },
   {
     "word": "entrepreneurship",
@@ -1054,7 +1141,8 @@ window.dailyEnglishQuestionBank = [
     "id": "entrepreneurship",
     "phonetic": ",ɑntrəprə'nɝʃɪp",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chuàng yè ； qǐ yè jiā jīng shén"
   },
   {
     "word": "outsourcing",
@@ -1066,7 +1154,8 @@ window.dailyEnglishQuestionBank = [
     "id": "outsourcing",
     "phonetic": "'ajt,sɔ:siŋ",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wài bāo"
   },
   {
     "word": "globalisation",
@@ -1078,7 +1167,8 @@ window.dailyEnglishQuestionBank = [
     "id": "globalisation",
     "phonetic": ",gləubəlai'zeiʃən",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "quán qiú huà"
   },
   {
     "word": "congestion",
@@ -1090,7 +1180,8 @@ window.dailyEnglishQuestionBank = [
     "id": "congestion",
     "phonetic": "kәn'dʒestʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yōng dǔ"
   },
   {
     "word": "commute",
@@ -1102,7 +1193,8 @@ window.dailyEnglishQuestionBank = [
     "id": "commute",
     "phonetic": "kә'mju:t",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tōng qín"
   },
   {
     "word": "pedestrian",
@@ -1114,7 +1206,8 @@ window.dailyEnglishQuestionBank = [
     "id": "pedestrian",
     "phonetic": "pә'destriәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xíng rén"
   },
   {
     "word": "affordable",
@@ -1126,7 +1219,8 @@ window.dailyEnglishQuestionBank = [
     "id": "affordable",
     "phonetic": "",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fù dān dé qǐ de"
   },
   {
     "word": "sanitation",
@@ -1138,7 +1232,8 @@ window.dailyEnglishQuestionBank = [
     "id": "sanitation",
     "phonetic": "sæni'teiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wèi shēng shè shī ； huán jìng wèi shēng"
   },
   {
     "word": "nutrition",
@@ -1150,7 +1245,8 @@ window.dailyEnglishQuestionBank = [
     "id": "nutrition",
     "phonetic": "nju:'triʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yíng yǎng"
   },
   {
     "word": "sedentary",
@@ -1162,7 +1258,8 @@ window.dailyEnglishQuestionBank = [
     "id": "sedentary",
     "phonetic": "'sedәntәri",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiǔ zuò de"
   },
   {
     "word": "obesity",
@@ -1174,7 +1271,8 @@ window.dailyEnglishQuestionBank = [
     "id": "obesity",
     "phonetic": "әu'bi:siti",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "féi pàng"
   },
   {
     "word": "preventive",
@@ -1186,7 +1284,8 @@ window.dailyEnglishQuestionBank = [
     "id": "preventive",
     "phonetic": "pri'ventiv",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yù fáng xìng de"
   },
   {
     "word": "wellbeing",
@@ -1198,7 +1297,8 @@ window.dailyEnglishQuestionBank = [
     "id": "wellbeing",
     "phonetic": "",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiàn kāng yǔ xìng fú"
   },
   {
     "word": "economic",
@@ -1210,7 +1310,8 @@ window.dailyEnglishQuestionBank = [
     "id": "economic",
     "phonetic": ".i:kә'nɒmik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jīng jì de"
   },
   {
     "word": "administration",
@@ -1222,7 +1323,8 @@ window.dailyEnglishQuestionBank = [
     "id": "administration",
     "phonetic": "әd.mini'streiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "guǎn lǐ ； xíng zhèng"
   },
   {
     "word": "congress",
@@ -1234,7 +1336,8 @@ window.dailyEnglishQuestionBank = [
     "id": "congress",
     "phonetic": "'kɒŋgres",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "dài biǎo dà huì ； guó huì"
   },
   {
     "word": "behaviour",
@@ -1246,7 +1349,8 @@ window.dailyEnglishQuestionBank = [
     "id": "behaviour",
     "phonetic": "bi'heivjә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xíng wéi"
   },
   {
     "word": "agency",
@@ -1258,7 +1362,8 @@ window.dailyEnglishQuestionBank = [
     "id": "agency",
     "phonetic": "'eidʒәnsi",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jī gòu ； dài lǐ chù"
   },
   {
     "word": "significant",
@@ -1270,7 +1375,8 @@ window.dailyEnglishQuestionBank = [
     "id": "significant",
     "phonetic": "sig'nifikәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xiǎn zhù de ； zhòng yào de"
   },
   {
     "word": "establish",
@@ -1282,7 +1388,8 @@ window.dailyEnglishQuestionBank = [
     "id": "establish",
     "phonetic": "i'stæbliʃ",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiàn lì ； què lì"
   },
   {
     "word": "trial",
@@ -1294,7 +1401,8 @@ window.dailyEnglishQuestionBank = [
     "id": "trial",
     "phonetic": "'traiәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shì yàn"
   },
   {
     "word": "institution",
@@ -1306,7 +1414,8 @@ window.dailyEnglishQuestionBank = [
     "id": "institution",
     "phonetic": ".insti'tju:ʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jī gòu ； zhì dù"
   },
   {
     "word": "tough",
@@ -1318,7 +1427,8 @@ window.dailyEnglishQuestionBank = [
     "id": "tough",
     "phonetic": "tʌf",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiān nán de ； jiān rèn de"
   },
   {
     "word": "consumer",
@@ -1330,7 +1440,8 @@ window.dailyEnglishQuestionBank = [
     "id": "consumer",
     "phonetic": "kәn'sju:mә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xiāo fèi zhě"
   },
   {
     "word": "assume",
@@ -1342,7 +1453,8 @@ window.dailyEnglishQuestionBank = [
     "id": "assume",
     "phonetic": "ә'sju:m",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiǎ dìng ； rèn wéi"
   },
   {
     "word": "eventually",
@@ -1354,7 +1466,8 @@ window.dailyEnglishQuestionBank = [
     "id": "eventually",
     "phonetic": "i'ventʃuәli",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zuì zhōng"
   },
   {
     "word": "recall",
@@ -1366,7 +1479,8 @@ window.dailyEnglishQuestionBank = [
     "id": "recall",
     "phonetic": "ri'kɒ:l",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "huí xiǎng ； zhào huí"
   },
   {
     "word": "species",
@@ -1378,7 +1492,8 @@ window.dailyEnglishQuestionBank = [
     "id": "species",
     "phonetic": "'spi:ʃiz",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wù zhǒng"
   },
   {
     "word": "potential",
@@ -1390,7 +1505,8 @@ window.dailyEnglishQuestionBank = [
     "id": "potential",
     "phonetic": "pә'tenʃәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qián lì"
   },
   {
     "word": "contract",
@@ -1402,7 +1518,8 @@ window.dailyEnglishQuestionBank = [
     "id": "contract",
     "phonetic": "'kɒntrækt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "hé tóng"
   },
   {
     "word": "previous",
@@ -1414,7 +1531,8 @@ window.dailyEnglishQuestionBank = [
     "id": "previous",
     "phonetic": "'pri:viәs",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xiān qián de"
   },
   {
     "word": "deliver",
@@ -1426,7 +1544,8 @@ window.dailyEnglishQuestionBank = [
     "id": "deliver",
     "phonetic": "di'livә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tí gōng ； dì sòng"
   },
   {
     "word": "facility",
@@ -1438,7 +1557,8 @@ window.dailyEnglishQuestionBank = [
     "id": "facility",
     "phonetic": "fә'siliti",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shè shī"
   },
   {
     "word": "emerge",
@@ -1450,7 +1570,8 @@ window.dailyEnglishQuestionBank = [
     "id": "emerge",
     "phonetic": "i'mә:dʒ",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chū xiàn"
   },
   {
     "word": "basis",
@@ -1462,7 +1583,8 @@ window.dailyEnglishQuestionBank = [
     "id": "basis",
     "phonetic": "'beisis",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jī chǔ ； yī jù"
   },
   {
     "word": "contribute",
@@ -1474,7 +1596,8 @@ window.dailyEnglishQuestionBank = [
     "id": "contribute",
     "phonetic": "kәn'tribju:t",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gòng xiàn ； cù chéng"
   },
   {
     "word": "identity",
@@ -1486,7 +1609,8 @@ window.dailyEnglishQuestionBank = [
     "id": "identity",
     "phonetic": "ai'dentiti",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shēn fèn ； rèn tóng"
   },
   {
     "word": "promote",
@@ -1498,7 +1622,8 @@ window.dailyEnglishQuestionBank = [
     "id": "promote",
     "phonetic": "prәu'mәut",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "cù jìn ； tuī guǎng"
   },
   {
     "word": "annual",
@@ -1510,7 +1635,8 @@ window.dailyEnglishQuestionBank = [
     "id": "annual",
     "phonetic": "'ænjuәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "měi nián de"
   },
   {
     "word": "demonstrate",
@@ -1522,7 +1648,8 @@ window.dailyEnglishQuestionBank = [
     "id": "demonstrate",
     "phonetic": "'demәnstreit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhèng míng ； zhǎn shì"
   },
   {
     "word": "engage",
@@ -1534,7 +1661,8 @@ window.dailyEnglishQuestionBank = [
     "id": "engage",
     "phonetic": "in'geidʒ",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "cān yù ； xī yǐn"
   },
   {
     "word": "perspective",
@@ -1546,7 +1674,8 @@ window.dailyEnglishQuestionBank = [
     "id": "perspective",
     "phonetic": "pә'spektiv",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "guān diǎn ； shì jiǎo"
   },
   {
     "word": "extend",
@@ -1558,7 +1687,8 @@ window.dailyEnglishQuestionBank = [
     "id": "extend",
     "phonetic": "ik'stend",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yán cháng ； kuò zhǎn"
   },
   {
     "word": "combine",
@@ -1570,7 +1700,8 @@ window.dailyEnglishQuestionBank = [
     "id": "combine",
     "phonetic": "kәm'bain",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jié hé"
   },
   {
     "word": "category",
@@ -1582,7 +1713,8 @@ window.dailyEnglishQuestionBank = [
     "id": "category",
     "phonetic": "'kætigәri",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "lèi bié"
   },
   {
     "word": "appropriate",
@@ -1594,7 +1726,8 @@ window.dailyEnglishQuestionBank = [
     "id": "appropriate",
     "phonetic": "ә'prәupriәt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shì dàng de"
   },
   {
     "word": "domestic",
@@ -1606,7 +1739,8 @@ window.dailyEnglishQuestionBank = [
     "id": "domestic",
     "phonetic": "dәu'mestik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "guó nèi de ； jiā tíng de"
   },
   {
     "word": "expand",
@@ -1618,7 +1752,8 @@ window.dailyEnglishQuestionBank = [
     "id": "expand",
     "phonetic": "ik'spænd",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "kuò dà"
   },
   {
     "word": "corporate",
@@ -1630,7 +1765,8 @@ window.dailyEnglishQuestionBank = [
     "id": "corporate",
     "phonetic": "'kɒ:pәrit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gōng sī de ； qǐ yè de"
   },
   {
     "word": "explore",
@@ -1642,7 +1778,8 @@ window.dailyEnglishQuestionBank = [
     "id": "explore",
     "phonetic": "ik'splɒ:",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tàn suǒ ； tàn tǎo"
   },
   {
     "word": "panel",
@@ -1654,7 +1791,8 @@ window.dailyEnglishQuestionBank = [
     "id": "panel",
     "phonetic": "'pænl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhuān jiā xiǎo zǔ ； miàn bǎn"
   },
   {
     "word": "commitment",
@@ -1666,7 +1804,8 @@ window.dailyEnglishQuestionBank = [
     "id": "commitment",
     "phonetic": "kә'mitmәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chéng nuò ； tóu rù"
   },
   {
     "word": "regional",
@@ -1678,7 +1817,8 @@ window.dailyEnglishQuestionBank = [
     "id": "regional",
     "phonetic": "'ri:dʒәnәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "dì qū de"
   },
   {
     "word": "shift",
@@ -1690,7 +1830,8 @@ window.dailyEnglishQuestionBank = [
     "id": "shift",
     "phonetic": "ʃift",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhuǎn biàn"
   },
   {
     "word": "trend",
@@ -1702,7 +1843,8 @@ window.dailyEnglishQuestionBank = [
     "id": "trend",
     "phonetic": "trend",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qū shì"
   },
   {
     "word": "profit",
@@ -1714,7 +1856,8 @@ window.dailyEnglishQuestionBank = [
     "id": "profit",
     "phonetic": "'prɒfit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "lì rùn"
   },
   {
     "word": "notion",
@@ -1726,7 +1869,8 @@ window.dailyEnglishQuestionBank = [
     "id": "notion",
     "phonetic": "'nәuʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "guān niàn ； xiǎng fǎ"
   },
   {
     "word": "capture",
@@ -1738,7 +1882,8 @@ window.dailyEnglishQuestionBank = [
     "id": "capture",
     "phonetic": "'kæptʃә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bǔ zhuō ； jì lù"
   },
   {
     "word": "internal",
@@ -1750,7 +1895,8 @@ window.dailyEnglishQuestionBank = [
     "id": "internal",
     "phonetic": "in'tә:nәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "nèi bù de"
   },
   {
     "word": "ethnic",
@@ -1762,7 +1908,8 @@ window.dailyEnglishQuestionBank = [
     "id": "ethnic",
     "phonetic": "'eθnik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "mín zú de ； zú qún de"
   },
   {
     "word": "contrast",
@@ -1774,7 +1921,8 @@ window.dailyEnglishQuestionBank = [
     "id": "contrast",
     "phonetic": "kәn'træst",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "duì bǐ ； chā yì"
   },
   {
     "word": "ultimately",
@@ -1786,7 +1934,8 @@ window.dailyEnglishQuestionBank = [
     "id": "ultimately",
     "phonetic": "'ʌltimәtli",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zuì zhōng ； guī gēn jié dǐ"
   },
   {
     "word": "contribution",
@@ -1798,7 +1947,8 @@ window.dailyEnglishQuestionBank = [
     "id": "contribution",
     "phonetic": ".kɒntri'bju:ʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gòng xiàn"
   },
   {
     "word": "estate",
@@ -1810,7 +1960,8 @@ window.dailyEnglishQuestionBank = [
     "id": "estate",
     "phonetic": "i'steit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "dì chǎn ； zhù zhái qū"
   },
   {
     "word": "circumstance",
@@ -1822,7 +1973,8 @@ window.dailyEnglishQuestionBank = [
     "id": "circumstance",
     "phonetic": "'sә:kәmstәns",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qíng kuàng ； tiáo jiàn"
   },
   {
     "word": "percentage",
@@ -1834,7 +1986,8 @@ window.dailyEnglishQuestionBank = [
     "id": "percentage",
     "phonetic": "pә'sentidʒ",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bǎi fēn bǐ"
   },
   {
     "word": "relief",
@@ -1846,7 +1999,8 @@ window.dailyEnglishQuestionBank = [
     "id": "relief",
     "phonetic": "ri'li:f",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "huǎn jiě ； jiù jì"
   },
   {
     "word": "gender",
@@ -1858,7 +2012,8 @@ window.dailyEnglishQuestionBank = [
     "id": "gender",
     "phonetic": "'dʒendә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xìng bié"
   },
   {
     "word": "landscape",
@@ -1870,7 +2025,8 @@ window.dailyEnglishQuestionBank = [
     "id": "landscape",
     "phonetic": "'lændskeip",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jǐng guān ； xíng shì"
   },
   {
     "word": "confirm",
@@ -1882,7 +2038,8 @@ window.dailyEnglishQuestionBank = [
     "id": "confirm",
     "phonetic": "kәn'fә:m",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "què rèn ； zhèng shí"
   },
   {
     "word": "perception",
@@ -1894,7 +2051,8 @@ window.dailyEnglishQuestionBank = [
     "id": "perception",
     "phonetic": "pә'sepʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "kàn fǎ ； gǎn zhī"
   },
   {
     "word": "coverage",
@@ -1906,7 +2064,8 @@ window.dailyEnglishQuestionBank = [
     "id": "coverage",
     "phonetic": "'kʌvәridʒ",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bào dào ； fù gài fàn wéi"
   },
   {
     "word": "requirement",
@@ -1918,7 +2077,8 @@ window.dailyEnglishQuestionBank = [
     "id": "requirement",
     "phonetic": "ri'kwaiәmәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yāo qiú"
   },
   {
     "word": "intervention",
@@ -1930,7 +2090,8 @@ window.dailyEnglishQuestionBank = [
     "id": "intervention",
     "phonetic": ".intә'venʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gān yù"
   },
   {
     "word": "overall",
@@ -1942,7 +2103,8 @@ window.dailyEnglishQuestionBank = [
     "id": "overall",
     "phonetic": "'әuvәrɒ:l",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zǒng tǐ de"
   },
   {
     "word": "initial",
@@ -1954,7 +2116,8 @@ window.dailyEnglishQuestionBank = [
     "id": "initial",
     "phonetic": "i'niʃәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zuì chū de"
   },
   {
     "word": "contemporary",
@@ -1966,7 +2129,8 @@ window.dailyEnglishQuestionBank = [
     "id": "contemporary",
     "phonetic": "kәn'tempәrәri",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "dāng dài de"
   },
   {
     "word": "faculty",
@@ -1978,7 +2142,8 @@ window.dailyEnglishQuestionBank = [
     "id": "faculty",
     "phonetic": "'fækәlti",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yuàn xì ； quán tǐ jiào shī"
   },
   {
     "word": "massive",
@@ -1990,7 +2155,8 @@ window.dailyEnglishQuestionBank = [
     "id": "massive",
     "phonetic": "'mæsiv",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jù dà de"
   },
   {
     "word": "invest",
@@ -2002,7 +2168,8 @@ window.dailyEnglishQuestionBank = [
     "id": "invest",
     "phonetic": "in'vest",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tóu zī"
   },
   {
     "word": "expose",
@@ -2014,7 +2181,8 @@ window.dailyEnglishQuestionBank = [
     "id": "expose",
     "phonetic": "ik'spәuz",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shǐ jiē chù ； jiē lù"
   },
   {
     "word": "rural",
@@ -2026,7 +2194,8 @@ window.dailyEnglishQuestionBank = [
     "id": "rural",
     "phonetic": "'ruәrәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "nóng cūn de"
   },
   {
     "word": "assess",
@@ -2038,7 +2207,8 @@ window.dailyEnglishQuestionBank = [
     "id": "assess",
     "phonetic": "ә'ses",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "píng gū"
   },
   {
     "word": "virtually",
@@ -2050,7 +2220,8 @@ window.dailyEnglishQuestionBank = [
     "id": "virtually",
     "phonetic": "'vә:tʃuәli",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jī hū"
   },
   {
     "word": "acquire",
@@ -2062,7 +2233,8 @@ window.dailyEnglishQuestionBank = [
     "id": "acquire",
     "phonetic": "ә'kwaiә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "huò dé ； xí dé"
   },
   {
     "word": "technical",
@@ -2074,7 +2246,8 @@ window.dailyEnglishQuestionBank = [
     "id": "technical",
     "phonetic": "'teknikl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jì shù de"
   },
   {
     "word": "immigrant",
@@ -2086,7 +2259,8 @@ window.dailyEnglishQuestionBank = [
     "id": "immigrant",
     "phonetic": "'imigrәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yí mín"
   },
   {
     "word": "depression",
@@ -2098,7 +2272,8 @@ window.dailyEnglishQuestionBank = [
     "id": "depression",
     "phonetic": "di'preʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yì yù ； xiāo tiáo"
   },
   {
     "word": "creation",
@@ -2110,7 +2285,8 @@ window.dailyEnglishQuestionBank = [
     "id": "creation",
     "phonetic": "kri:'eiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chuàng zào ； chuàng jiàn"
   },
   {
     "word": "dramatic",
@@ -2122,7 +2298,8 @@ window.dailyEnglishQuestionBank = [
     "id": "dramatic",
     "phonetic": "drә'mætik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xiǎn zhù de ； jù liè de"
   },
   {
     "word": "agenda",
@@ -2134,7 +2311,8 @@ window.dailyEnglishQuestionBank = [
     "id": "agenda",
     "phonetic": "ә'dʒendә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yì chéng"
   },
   {
     "word": "selection",
@@ -2146,7 +2324,8 @@ window.dailyEnglishQuestionBank = [
     "id": "selection",
     "phonetic": "si'lekʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xuǎn zé ； shāi xuǎn"
   },
   {
     "word": "initiative",
@@ -2158,7 +2337,8 @@ window.dailyEnglishQuestionBank = [
     "id": "initiative",
     "phonetic": "i'niʃiәtiv",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chàng yì ； zhǔ dòng xìng"
   },
   {
     "word": "therapy",
@@ -2170,7 +2350,8 @@ window.dailyEnglishQuestionBank = [
     "id": "therapy",
     "phonetic": "'θerәpi",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhì liáo"
   },
   {
     "word": "visual",
@@ -2182,7 +2363,8 @@ window.dailyEnglishQuestionBank = [
     "id": "visual",
     "phonetic": "'viʒuәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shì jué de"
   },
   {
     "word": "perceive",
@@ -2194,7 +2376,8 @@ window.dailyEnglishQuestionBank = [
     "id": "perceive",
     "phonetic": "pә'si:v",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gǎn zhī ； rèn wéi"
   },
   {
     "word": "settlement",
@@ -2206,7 +2389,8 @@ window.dailyEnglishQuestionBank = [
     "id": "settlement",
     "phonetic": "'setlmәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "dìng jū diǎn ； jiě jué"
   },
   {
     "word": "transform",
@@ -2218,7 +2402,8 @@ window.dailyEnglishQuestionBank = [
     "id": "transform",
     "phonetic": "træns'fɒ:m",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gǎi biàn ； zhuǎn biàn"
   },
   {
     "word": "consist",
@@ -2230,7 +2415,8 @@ window.dailyEnglishQuestionBank = [
     "id": "consist",
     "phonetic": "kәn'sist",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yóu …… zǔ chéng"
   },
   {
     "word": "resistance",
@@ -2242,7 +2428,8 @@ window.dailyEnglishQuestionBank = [
     "id": "resistance",
     "phonetic": "ri'zistәns",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "dǐ kàng ； zǔ lì"
   },
   {
     "word": "exposure",
@@ -2254,7 +2441,8 @@ window.dailyEnglishQuestionBank = [
     "id": "exposure",
     "phonetic": "ik'spәuʒә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiē chù ； bào lù"
   },
   {
     "word": "coalition",
@@ -2266,7 +2454,8 @@ window.dailyEnglishQuestionBank = [
     "id": "coalition",
     "phonetic": ".kәuә'liʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "lián méng"
   },
   {
     "word": "symptom",
@@ -2278,7 +2467,8 @@ window.dailyEnglishQuestionBank = [
     "id": "symptom",
     "phonetic": "'simptәm",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhèng zhuàng"
   },
   {
     "word": "numerous",
@@ -2290,7 +2480,8 @@ window.dailyEnglishQuestionBank = [
     "id": "numerous",
     "phonetic": "'nju:mәrәs",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhòng duō de"
   },
   {
     "word": "moreover",
@@ -2302,7 +2493,8 @@ window.dailyEnglishQuestionBank = [
     "id": "moreover",
     "phonetic": "mɒ:'әuvә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "cǐ wài ； ér qiě"
   },
   {
     "word": "intense",
@@ -2314,7 +2506,8 @@ window.dailyEnglishQuestionBank = [
     "id": "intense",
     "phonetic": "in'tens",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qiáng liè de"
   },
   {
     "word": "inspire",
@@ -2326,7 +2519,8 @@ window.dailyEnglishQuestionBank = [
     "id": "inspire",
     "phonetic": "in'spaiә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jī lì ； qǐ fā"
   },
   {
     "word": "adjust",
@@ -2338,7 +2532,8 @@ window.dailyEnglishQuestionBank = [
     "id": "adjust",
     "phonetic": "ә'dʒʌst",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tiáo zhěng"
   },
   {
     "word": "visible",
@@ -2350,7 +2545,8 @@ window.dailyEnglishQuestionBank = [
     "id": "visible",
     "phonetic": "'vizәbl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "kě jiàn de ； míng xiǎn de"
   },
   {
     "word": "dominate",
@@ -2362,7 +2558,8 @@ window.dailyEnglishQuestionBank = [
     "id": "dominate",
     "phonetic": "'dɒmineit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhàn zhǔ dǎo dì wèi"
   },
   {
     "word": "transfer",
@@ -2374,7 +2571,8 @@ window.dailyEnglishQuestionBank = [
     "id": "transfer",
     "phonetic": "træns'fә:",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhuǎn yí ； zhuǎn ràng"
   },
   {
     "word": "prospect",
@@ -2386,7 +2584,8 @@ window.dailyEnglishQuestionBank = [
     "id": "prospect",
     "phonetic": "'prɒspekt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qián jǐng ； kě néng xìng"
   },
   {
     "word": "severe",
@@ -2398,7 +2597,8 @@ window.dailyEnglishQuestionBank = [
     "id": "severe",
     "phonetic": "si'viә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yán zhòng de"
   },
   {
     "word": "enhance",
@@ -2410,7 +2610,8 @@ window.dailyEnglishQuestionBank = [
     "id": "enhance",
     "phonetic": "in'hæns",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tí gāo ； zēng qiáng"
   },
   {
     "word": "impose",
@@ -2422,7 +2623,8 @@ window.dailyEnglishQuestionBank = [
     "id": "impose",
     "phonetic": "im'pәuz",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shí shī ； qiáng jiā"
   },
   {
     "word": "illustrate",
@@ -2434,7 +2636,8 @@ window.dailyEnglishQuestionBank = [
     "id": "illustrate",
     "phonetic": "'ilәstreit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shuō míng ； chǎn míng"
   },
   {
     "word": "psychological",
@@ -2446,7 +2649,8 @@ window.dailyEnglishQuestionBank = [
     "id": "psychological",
     "phonetic": ".saikә'lɒdʒikәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xīn lǐ de"
   },
   {
     "word": "disorder",
@@ -2458,7 +2662,8 @@ window.dailyEnglishQuestionBank = [
     "id": "disorder",
     "phonetic": "dis'ɒ:dә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wěn luàn ； jí bìng"
   },
   {
     "word": "distribution",
@@ -2470,7 +2675,8 @@ window.dailyEnglishQuestionBank = [
     "id": "distribution",
     "phonetic": ".distrә'bju:ʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fēn pèi ； fēn bù"
   },
   {
     "word": "transportation",
@@ -2482,7 +2688,8 @@ window.dailyEnglishQuestionBank = [
     "id": "transportation",
     "phonetic": ".trænspә'teiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yùn shū"
   },
   {
     "word": "commission",
@@ -2494,7 +2701,8 @@ window.dailyEnglishQuestionBank = [
     "id": "commission",
     "phonetic": "kә'miʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wěi yuán huì ； yòng jīn"
   },
   {
     "word": "veteran",
@@ -2506,7 +2714,8 @@ window.dailyEnglishQuestionBank = [
     "id": "veteran",
     "phonetic": "'vetәrәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jīng yàn fēng fù de rén"
   },
   {
     "word": "crucial",
@@ -2518,7 +2727,8 @@ window.dailyEnglishQuestionBank = [
     "id": "crucial",
     "phonetic": "'kru:ʃәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhì guān zhòng yào de"
   },
   {
     "word": "confront",
@@ -2530,7 +2740,8 @@ window.dailyEnglishQuestionBank = [
     "id": "confront",
     "phonetic": "kәn'frʌnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "miàn duì ； chǔ lǐ"
   },
   {
     "word": "dimension",
@@ -2542,7 +2753,8 @@ window.dailyEnglishQuestionBank = [
     "id": "dimension",
     "phonetic": "dai'menʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fāng miàn ； wéi dù"
   },
   {
     "word": "publication",
@@ -2554,7 +2766,8 @@ window.dailyEnglishQuestionBank = [
     "id": "publication",
     "phonetic": ".pʌbli'keiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chū bǎn ； chū bǎn wù"
   },
   {
     "word": "anxiety",
@@ -2566,7 +2779,8 @@ window.dailyEnglishQuestionBank = [
     "id": "anxiety",
     "phonetic": "æŋ'zaiәti",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiāo lǜ"
   },
   {
     "word": "convention",
@@ -2578,7 +2792,8 @@ window.dailyEnglishQuestionBank = [
     "id": "convention",
     "phonetic": "kәn'venʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "guàn lì ； dà huì"
   },
   {
     "word": "embrace",
@@ -2590,7 +2805,8 @@ window.dailyEnglishQuestionBank = [
     "id": "embrace",
     "phonetic": "im'breis",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiē shòu ； yōng bào"
   },
   {
     "word": "exhibition",
@@ -2602,7 +2818,8 @@ window.dailyEnglishQuestionBank = [
     "id": "exhibition",
     "phonetic": ".eksi'biʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhǎn lǎn"
   },
   {
     "word": "consultant",
@@ -2614,7 +2831,8 @@ window.dailyEnglishQuestionBank = [
     "id": "consultant",
     "phonetic": "kәn'sʌltәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gù wèn"
   },
   {
     "word": "administrator",
@@ -2626,7 +2844,8 @@ window.dailyEnglishQuestionBank = [
     "id": "administrator",
     "phonetic": "әd'ministreitә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "guǎn lǐ rén yuán"
   },
   {
     "word": "historic",
@@ -2638,7 +2857,8 @@ window.dailyEnglishQuestionBank = [
     "id": "historic",
     "phonetic": "hi'stɒrik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yǒu lì shǐ yì yì de"
   },
   {
     "word": "enterprise",
@@ -2650,7 +2870,8 @@ window.dailyEnglishQuestionBank = [
     "id": "enterprise",
     "phonetic": "'entәpraiz",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qǐ yè ； shì yè"
   },
   {
     "word": "apparent",
@@ -2662,7 +2883,8 @@ window.dailyEnglishQuestionBank = [
     "id": "apparent",
     "phonetic": "ә'pærәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "míng xiǎn de ； biǎo miàn shàng de"
   },
   {
     "word": "aggressive",
@@ -2674,7 +2896,8 @@ window.dailyEnglishQuestionBank = [
     "id": "aggressive",
     "phonetic": "ә'gresiv",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jī jìn de ； yǒu gōng jī xìng de"
   },
   {
     "word": "protein",
@@ -2686,7 +2909,8 @@ window.dailyEnglishQuestionBank = [
     "id": "protein",
     "phonetic": "'prәuti:in",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "dàn bái zhì"
   },
   {
     "word": "historian",
@@ -2698,7 +2922,8 @@ window.dailyEnglishQuestionBank = [
     "id": "historian",
     "phonetic": "hi'stɒ:riәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "lì shǐ xué jiā"
   },
   {
     "word": "restore",
@@ -2710,7 +2935,8 @@ window.dailyEnglishQuestionBank = [
     "id": "restore",
     "phonetic": "ri'stɒ:",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "huī fù ； xiū fù"
   },
   {
     "word": "origin",
@@ -2722,7 +2948,8 @@ window.dailyEnglishQuestionBank = [
     "id": "origin",
     "phonetic": "'ɒridʒin",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qǐ yuán ； lái yuán"
   },
   {
     "word": "biological",
@@ -2734,7 +2961,8 @@ window.dailyEnglishQuestionBank = [
     "id": "biological",
     "phonetic": ".baiәu'lɒdʒikәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shēng wù de"
   },
   {
     "word": "assure",
@@ -2746,7 +2974,8 @@ window.dailyEnglishQuestionBank = [
     "id": "assure",
     "phonetic": "ә'ʃuә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xiàng …… bǎo zhèng"
   },
   {
     "word": "utility",
@@ -2758,7 +2987,8 @@ window.dailyEnglishQuestionBank = [
     "id": "utility",
     "phonetic": "ju:'tiliti",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gōng yòng shì yè ； xiào yòng"
   },
   {
     "word": "arise",
@@ -2770,7 +3000,8 @@ window.dailyEnglishQuestionBank = [
     "id": "arise",
     "phonetic": "ә'raiz",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chū xiàn ； chǎn shēng"
   },
   {
     "word": "stake",
@@ -2782,7 +3013,8 @@ window.dailyEnglishQuestionBank = [
     "id": "stake",
     "phonetic": "steik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "lì hài guān xì ； gǔ fèn"
   },
   {
     "word": "refugee",
@@ -2794,7 +3026,8 @@ window.dailyEnglishQuestionBank = [
     "id": "refugee",
     "phonetic": ".refju'dʒi:",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "nàn mín"
   },
   {
     "word": "incorporate",
@@ -2806,7 +3039,8 @@ window.dailyEnglishQuestionBank = [
     "id": "incorporate",
     "phonetic": "in'kɒ:pәreit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "nà rù ； bāo hán"
   },
   {
     "word": "assumption",
@@ -2818,7 +3052,8 @@ window.dailyEnglishQuestionBank = [
     "id": "assumption",
     "phonetic": "ә'sʌmpʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiǎ shè"
   },
   {
     "word": "barrier",
@@ -2830,7 +3065,8 @@ window.dailyEnglishQuestionBank = [
     "id": "barrier",
     "phonetic": "'bæriә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhàng ài"
   },
   {
     "word": "assign",
@@ -2842,7 +3078,8 @@ window.dailyEnglishQuestionBank = [
     "id": "assign",
     "phonetic": "ә'sain",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fēn pèi ； zhǐ pài"
   },
   {
     "word": "provision",
@@ -2854,7 +3091,8 @@ window.dailyEnglishQuestionBank = [
     "id": "provision",
     "phonetic": "prә'viʒәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tí gōng ； tiáo kuǎn"
   },
   {
     "word": "universal",
@@ -2866,7 +3104,8 @@ window.dailyEnglishQuestionBank = [
     "id": "universal",
     "phonetic": ".ju:ni'vә:sl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "pǔ biàn de ； tōng yòng de"
   },
   {
     "word": "testimony",
@@ -2878,7 +3117,8 @@ window.dailyEnglishQuestionBank = [
     "id": "testimony",
     "phonetic": "'testimәni",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhèng cí ； zhèng jù"
   },
   {
     "word": "mechanism",
@@ -2890,7 +3130,8 @@ window.dailyEnglishQuestionBank = [
     "id": "mechanism",
     "phonetic": "'mekәnizm",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jī zhì"
   },
   {
     "word": "penalty",
@@ -2902,7 +3143,8 @@ window.dailyEnglishQuestionBank = [
     "id": "penalty",
     "phonetic": "'penәlti",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chǔ fá ； fá kuǎn"
   },
   {
     "word": "infection",
@@ -2914,7 +3156,8 @@ window.dailyEnglishQuestionBank = [
     "id": "infection",
     "phonetic": "in'fekʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gǎn rǎn"
   },
   {
     "word": "strategic",
@@ -2926,7 +3169,8 @@ window.dailyEnglishQuestionBank = [
     "id": "strategic",
     "phonetic": "strә'ti:dʒik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhàn lüè xìng de"
   },
   {
     "word": "dispute",
@@ -2938,7 +3182,8 @@ window.dailyEnglishQuestionBank = [
     "id": "dispute",
     "phonetic": "dis'pju:t",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhēng yì ； jiū fēn"
   },
   {
     "word": "statistics",
@@ -2950,7 +3195,8 @@ window.dailyEnglishQuestionBank = [
     "id": "statistics",
     "phonetic": "stә'tistiks",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tǒng jì xué ； tǒng jì shù jù"
   },
   {
     "word": "occupy",
@@ -2962,7 +3208,8 @@ window.dailyEnglishQuestionBank = [
     "id": "occupy",
     "phonetic": "'ɒkjupai",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhàn jù"
   },
   {
     "word": "accurate",
@@ -2974,7 +3221,8 @@ window.dailyEnglishQuestionBank = [
     "id": "accurate",
     "phonetic": "'ækjurәt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhǔn què de"
   },
   {
     "word": "expansion",
@@ -2986,7 +3234,8 @@ window.dailyEnglishQuestionBank = [
     "id": "expansion",
     "phonetic": "ik'spænʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "kuò zhāng ； kuò dà"
   },
   {
     "word": "detect",
@@ -2998,7 +3247,8 @@ window.dailyEnglishQuestionBank = [
     "id": "detect",
     "phonetic": "di'tekt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fā xiàn ； jiǎn cè"
   },
   {
     "word": "tremendous",
@@ -3010,7 +3260,8 @@ window.dailyEnglishQuestionBank = [
     "id": "tremendous",
     "phonetic": "tri'mendәs",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jù dà de"
   },
   {
     "word": "awareness",
@@ -3022,7 +3273,8 @@ window.dailyEnglishQuestionBank = [
     "id": "awareness",
     "phonetic": "ә'weәnis",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yì shí ； rèn shí"
   },
   {
     "word": "withdraw",
@@ -3034,7 +3286,8 @@ window.dailyEnglishQuestionBank = [
     "id": "withdraw",
     "phonetic": "wið'drɒ:",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chè huí ； tuì chū"
   },
   {
     "word": "mutual",
@@ -3046,7 +3299,8 @@ window.dailyEnglishQuestionBank = [
     "id": "mutual",
     "phonetic": "'mju:tʃuәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xiāng hù de ； gòng tóng de"
   },
   {
     "word": "finance",
@@ -3058,7 +3312,8 @@ window.dailyEnglishQuestionBank = [
     "id": "finance",
     "phonetic": "fai'næns",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zī jīn ； jīn róng"
   },
   {
     "word": "relevant",
@@ -3070,7 +3325,8 @@ window.dailyEnglishQuestionBank = [
     "id": "relevant",
     "phonetic": "'relivәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xiāng guān de"
   },
   {
     "word": "protest",
@@ -3082,7 +3338,8 @@ window.dailyEnglishQuestionBank = [
     "id": "protest",
     "phonetic": "prә'test",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "kàng yì"
   },
   {
     "word": "insight",
@@ -3094,7 +3351,8 @@ window.dailyEnglishQuestionBank = [
     "id": "insight",
     "phonetic": "'insait",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shēn rù liǎo jiě ； dòng chá"
   },
   {
     "word": "extensive",
@@ -3106,7 +3364,8 @@ window.dailyEnglishQuestionBank = [
     "id": "extensive",
     "phonetic": "ik'stensiv",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "guǎng fàn de ； dà liàng de"
   },
   {
     "word": "considerable",
@@ -3118,7 +3377,8 @@ window.dailyEnglishQuestionBank = [
     "id": "considerable",
     "phonetic": "kәn'sidәrәbl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xiāng dāng dà de"
   },
   {
     "word": "prior",
@@ -3130,7 +3390,8 @@ window.dailyEnglishQuestionBank = [
     "id": "prior",
     "phonetic": "'praiә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xiān qián de"
   },
   {
     "word": "intellectual",
@@ -3142,7 +3403,8 @@ window.dailyEnglishQuestionBank = [
     "id": "intellectual",
     "phonetic": ".intә'lektʃuәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhì lì de ； sī xiǎng de"
   },
   {
     "word": "characterise",
@@ -3154,7 +3416,8 @@ window.dailyEnglishQuestionBank = [
     "id": "characterise",
     "phonetic": "'kærәktәraiz",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "miáo shù …… de tè diǎn"
   },
   {
     "word": "external",
@@ -3166,7 +3429,8 @@ window.dailyEnglishQuestionBank = [
     "id": "external",
     "phonetic": "ik'stә:nl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wài bù de"
   },
   {
     "word": "controversy",
@@ -3178,7 +3442,8 @@ window.dailyEnglishQuestionBank = [
     "id": "controversy",
     "phonetic": "'kɒntrәvә:si",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhēng yì"
   },
   {
     "word": "alter",
@@ -3190,7 +3455,8 @@ window.dailyEnglishQuestionBank = [
     "id": "alter",
     "phonetic": "'ɒ:ltә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gǎi biàn"
   },
   {
     "word": "prominent",
@@ -3202,7 +3468,8 @@ window.dailyEnglishQuestionBank = [
     "id": "prominent",
     "phonetic": "'prɒminәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tū chū de ； zhòng yào de"
   },
   {
     "word": "presentation",
@@ -3214,7 +3481,8 @@ window.dailyEnglishQuestionBank = [
     "id": "presentation",
     "phonetic": ".prezәn'teiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhǎn shì ； yǎn shì"
   },
   {
     "word": "elderly",
@@ -3226,7 +3494,8 @@ window.dailyEnglishQuestionBank = [
     "id": "elderly",
     "phonetic": "'eldәli",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "nián lǎo de"
   },
   {
     "word": "violate",
@@ -3238,7 +3507,8 @@ window.dailyEnglishQuestionBank = [
     "id": "violate",
     "phonetic": "'vaiәleit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wéi fǎn"
   },
   {
     "word": "distinction",
@@ -3250,7 +3520,8 @@ window.dailyEnglishQuestionBank = [
     "id": "distinction",
     "phonetic": "dis'tiŋkʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qū bié"
   },
   {
     "word": "segment",
@@ -3262,7 +3533,8 @@ window.dailyEnglishQuestionBank = [
     "id": "segment",
     "phonetic": "'segmәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bù fèn ； qún tǐ"
   },
   {
     "word": "variation",
@@ -3274,7 +3546,8 @@ window.dailyEnglishQuestionBank = [
     "id": "variation",
     "phonetic": ".vєәri'eiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "biàn huà ； chā yì"
   },
   {
     "word": "correspondent",
@@ -3286,7 +3559,8 @@ window.dailyEnglishQuestionBank = [
     "id": "correspondent",
     "phonetic": ".kɒri'spɒndәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jì zhě ； tōng xùn yuán"
   },
   {
     "word": "vessel",
@@ -3298,7 +3572,8 @@ window.dailyEnglishQuestionBank = [
     "id": "vessel",
     "phonetic": "'vesl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chuán bó ； róng qì"
   },
   {
     "word": "storage",
@@ -3310,7 +3585,8 @@ window.dailyEnglishQuestionBank = [
     "id": "storage",
     "phonetic": "'stɒ:ridʒ",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chǔ cún"
   },
   {
     "word": "distribute",
@@ -3322,7 +3598,8 @@ window.dailyEnglishQuestionBank = [
     "id": "distribute",
     "phonetic": "di'stribju:t",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fēn pèi ； fēn fā"
   },
   {
     "word": "vulnerable",
@@ -3334,7 +3611,8 @@ window.dailyEnglishQuestionBank = [
     "id": "vulnerable",
     "phonetic": "'vʌlnәrәbl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "cuì ruò de ； yì shòu shāng hài de"
   },
   {
     "word": "stability",
@@ -3346,7 +3624,8 @@ window.dailyEnglishQuestionBank = [
     "id": "stability",
     "phonetic": "stә'biliti",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wěn dìng"
   },
   {
     "word": "framework",
@@ -3358,7 +3637,8 @@ window.dailyEnglishQuestionBank = [
     "id": "framework",
     "phonetic": "'freimwә:k",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "kuāng jià"
   },
   {
     "word": "ongoing",
@@ -3370,7 +3650,8 @@ window.dailyEnglishQuestionBank = [
     "id": "ongoing",
     "phonetic": "'ɒngәuiŋ",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chí xù de"
   },
   {
     "word": "psychology",
@@ -3382,7 +3663,8 @@ window.dailyEnglishQuestionBank = [
     "id": "psychology",
     "phonetic": "sai'kɒlәdʒi",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xīn lǐ xué"
   },
   {
     "word": "sustain",
@@ -3394,7 +3676,8 @@ window.dailyEnglishQuestionBank = [
     "id": "sustain",
     "phonetic": "sә'stein",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wéi chí ； zhī chēng"
   },
   {
     "word": "frequency",
@@ -3406,7 +3689,8 @@ window.dailyEnglishQuestionBank = [
     "id": "frequency",
     "phonetic": "'fri:kwәnsi",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "pín lǜ"
   },
   {
     "word": "preference",
@@ -3418,7 +3702,8 @@ window.dailyEnglishQuestionBank = [
     "id": "preference",
     "phonetic": "'prefәrәns",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "piān hǎo"
   },
   {
     "word": "qualify",
@@ -3430,7 +3715,8 @@ window.dailyEnglishQuestionBank = [
     "id": "qualify",
     "phonetic": "'kwɒlifai",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qǔ dé zī gé ； fú hé tiáo jiàn"
   },
   {
     "word": "derive",
@@ -3442,7 +3728,8 @@ window.dailyEnglishQuestionBank = [
     "id": "derive",
     "phonetic": "di'raiv",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "huò dé ； yuán zì"
   },
   {
     "word": "resemble",
@@ -3454,7 +3741,8 @@ window.dailyEnglishQuestionBank = [
     "id": "resemble",
     "phonetic": "ri'zembl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "lèi sì ； xiàng"
   },
   {
     "word": "guideline",
@@ -3466,7 +3754,8 @@ window.dailyEnglishQuestionBank = [
     "id": "guideline",
     "phonetic": "'gaidlain",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhǐ dǎo yuán zé"
   },
   {
     "word": "conviction",
@@ -3478,7 +3767,8 @@ window.dailyEnglishQuestionBank = [
     "id": "conviction",
     "phonetic": "kәn'vikʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiān dìng de xìn niàn"
   },
   {
     "word": "maintenance",
@@ -3490,7 +3780,8 @@ window.dailyEnglishQuestionBank = [
     "id": "maintenance",
     "phonetic": "'meintәnәns",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wéi hù ； bǎo yǎng"
   },
   {
     "word": "ratio",
@@ -3502,7 +3793,8 @@ window.dailyEnglishQuestionBank = [
     "id": "ratio",
     "phonetic": "'reiʃәu",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bǐ lǜ"
   },
   {
     "word": "narrative",
@@ -3514,7 +3806,8 @@ window.dailyEnglishQuestionBank = [
     "id": "narrative",
     "phonetic": "'nærәtiv",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xù shù"
   },
   {
     "word": "modest",
@@ -3526,7 +3819,8 @@ window.dailyEnglishQuestionBank = [
     "id": "modest",
     "phonetic": "'mɒdist",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shì dù de ； bù dà de"
   },
   {
     "word": "prompt",
@@ -3538,7 +3832,8 @@ window.dailyEnglishQuestionBank = [
     "id": "prompt",
     "phonetic": "prɒmpt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "cù shǐ"
   },
   {
     "word": "motivation",
@@ -3550,7 +3845,8 @@ window.dailyEnglishQuestionBank = [
     "id": "motivation",
     "phonetic": ".mәuti'veiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "dòng lì ； dòng jī"
   },
   {
     "word": "overlook",
@@ -3562,7 +3858,8 @@ window.dailyEnglishQuestionBank = [
     "id": "overlook",
     "phonetic": ".әuvә'luk",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "hū shì"
   },
   {
     "word": "undergo",
@@ -3574,7 +3871,8 @@ window.dailyEnglishQuestionBank = [
     "id": "undergo",
     "phonetic": ".ʌndә'gәu",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jīng lì ； jiē shòu"
   },
   {
     "word": "sequence",
@@ -3586,7 +3884,8 @@ window.dailyEnglishQuestionBank = [
     "id": "sequence",
     "phonetic": "'si:kwәns",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shùn xù"
   },
   {
     "word": "assert",
@@ -3598,7 +3897,8 @@ window.dailyEnglishQuestionBank = [
     "id": "assert",
     "phonetic": "ә'sә:t",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "duàn yán ； zhǔ zhāng"
   },
   {
     "word": "dominant",
@@ -3610,7 +3910,8 @@ window.dailyEnglishQuestionBank = [
     "id": "dominant",
     "phonetic": "'dɒminәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhàn zhǔ dǎo dì wèi de"
   },
   {
     "word": "anticipate",
@@ -3622,7 +3923,8 @@ window.dailyEnglishQuestionBank = [
     "id": "anticipate",
     "phonetic": "æn'tisipeit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yù qī ； yù liào"
   },
   {
     "word": "legitimate",
@@ -3634,7 +3936,8 @@ window.dailyEnglishQuestionBank = [
     "id": "legitimate",
     "phonetic": "li'dʒitimәt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "hé lǐ de ； hé fǎ de"
   },
   {
     "word": "orientation",
@@ -3646,7 +3949,8 @@ window.dailyEnglishQuestionBank = [
     "id": "orientation",
     "phonetic": ".ɒ:rien'teiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fāng xiàng ； rù mén péi xùn"
   },
   {
     "word": "cluster",
@@ -3658,7 +3962,8 @@ window.dailyEnglishQuestionBank = [
     "id": "cluster",
     "phonetic": "'klʌstә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qún ； jí qún"
   },
   {
     "word": "dependent",
@@ -3670,7 +3975,8 @@ window.dailyEnglishQuestionBank = [
     "id": "dependent",
     "phonetic": "di'pendәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yī lài de"
   },
   {
     "word": "depict",
@@ -3682,7 +3988,8 @@ window.dailyEnglishQuestionBank = [
     "id": "depict",
     "phonetic": "di'pikt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "miáo huì"
   },
   {
     "word": "mortgage",
@@ -3694,7 +4001,8 @@ window.dailyEnglishQuestionBank = [
     "id": "mortgage",
     "phonetic": "'mɒ:gidʒ",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhù fáng dǐ yā dài kuǎn"
   },
   {
     "word": "sanction",
@@ -3706,7 +4014,8 @@ window.dailyEnglishQuestionBank = [
     "id": "sanction",
     "phonetic": "'sæŋkʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhì cái ； chǔ fá"
   },
   {
     "word": "civilian",
@@ -3718,7 +4027,8 @@ window.dailyEnglishQuestionBank = [
     "id": "civilian",
     "phonetic": "si'viljәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "píng mín"
   },
   {
     "word": "devote",
@@ -3730,7 +4040,8 @@ window.dailyEnglishQuestionBank = [
     "id": "devote",
     "phonetic": "di'vәut",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tóu rù ； zhì lì yú"
   },
   {
     "word": "measurement",
@@ -3742,7 +4053,8 @@ window.dailyEnglishQuestionBank = [
     "id": "measurement",
     "phonetic": "'meʒәdmәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "cè liáng"
   },
   {
     "word": "summit",
@@ -3754,7 +4066,8 @@ window.dailyEnglishQuestionBank = [
     "id": "summit",
     "phonetic": "'sʌmit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fēng huì ； dǐng fēng"
   },
   {
     "word": "impressive",
@@ -3766,7 +4079,8 @@ window.dailyEnglishQuestionBank = [
     "id": "impressive",
     "phonetic": "im'presiv",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "lìng rén yìn xiàng shēn kè de"
   },
   {
     "word": "portray",
@@ -3778,7 +4092,8 @@ window.dailyEnglishQuestionBank = [
     "id": "portray",
     "phonetic": "pɒ:'trei",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "miáo huì ； kè huà"
   },
   {
     "word": "subsequent",
@@ -3790,7 +4105,8 @@ window.dailyEnglishQuestionBank = [
     "id": "subsequent",
     "phonetic": "'sʌbsikwәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "suí hòu de"
   },
   {
     "word": "frequent",
@@ -3802,7 +4118,8 @@ window.dailyEnglishQuestionBank = [
     "id": "frequent",
     "phonetic": "'fri:kwәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "pín fán de"
   },
   {
     "word": "rhythm",
@@ -3814,7 +4131,8 @@ window.dailyEnglishQuestionBank = [
     "id": "rhythm",
     "phonetic": "'riðәm",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jié zòu"
   },
   {
     "word": "exceed",
@@ -3826,7 +4144,8 @@ window.dailyEnglishQuestionBank = [
     "id": "exceed",
     "phonetic": "ik'si:d",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chāo guò"
   },
   {
     "word": "script",
@@ -3838,7 +4157,8 @@ window.dailyEnglishQuestionBank = [
     "id": "script",
     "phonetic": "skript",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiǎo běn ； jù běn"
   },
   {
     "word": "tactic",
@@ -3850,7 +4170,8 @@ window.dailyEnglishQuestionBank = [
     "id": "tactic",
     "phonetic": "'tæktik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "cè lüè ； shǒu duàn"
   },
   {
     "word": "identification",
@@ -3862,7 +4183,8 @@ window.dailyEnglishQuestionBank = [
     "id": "identification",
     "phonetic": "ai.dentifi'keiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shí bié ； shēn fèn zhèng míng"
   },
   {
     "word": "margin",
@@ -3874,7 +4196,8 @@ window.dailyEnglishQuestionBank = [
     "id": "margin",
     "phonetic": "'mɑ:dʒin",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chā é ； yú dì"
   },
   {
     "word": "prescription",
@@ -3886,7 +4209,8 @@ window.dailyEnglishQuestionBank = [
     "id": "prescription",
     "phonetic": "pri'skripʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chǔ fāng"
   },
   {
     "word": "recruit",
@@ -3898,7 +4222,8 @@ window.dailyEnglishQuestionBank = [
     "id": "recruit",
     "phonetic": "ri'kru:t",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhāo pìn ； zhāo mù"
   },
   {
     "word": "colonial",
@@ -3910,7 +4235,8 @@ window.dailyEnglishQuestionBank = [
     "id": "colonial",
     "phonetic": "kә'lәunjәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhí mín shí qī de"
   },
   {
     "word": "reinforce",
@@ -3922,7 +4248,8 @@ window.dailyEnglishQuestionBank = [
     "id": "reinforce",
     "phonetic": ".ri:in'fɒ:s",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiā qiáng ； gǒng gù"
   },
   {
     "word": "confusion",
@@ -3934,7 +4261,8 @@ window.dailyEnglishQuestionBank = [
     "id": "confusion",
     "phonetic": "kәn'fju:ʒәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "kùn huò ； hùn luàn"
   },
   {
     "word": "cognitive",
@@ -3946,7 +4274,8 @@ window.dailyEnglishQuestionBank = [
     "id": "cognitive",
     "phonetic": "'kɒgnitiv",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "rèn zhī de"
   },
   {
     "word": "attribute",
@@ -3958,7 +4287,8 @@ window.dailyEnglishQuestionBank = [
     "id": "attribute",
     "phonetic": "ә'tribju:t",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bǎ …… guī yīn yú"
   },
   {
     "word": "fitness",
@@ -3970,7 +4300,8 @@ window.dailyEnglishQuestionBank = [
     "id": "fitness",
     "phonetic": "'fitnis",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiàn kāng ； tǐ néng"
   },
   {
     "word": "container",
@@ -3982,7 +4313,8 @@ window.dailyEnglishQuestionBank = [
     "id": "container",
     "phonetic": "kәn'teinә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "róng qì ； jí zhuāng xiāng"
   },
   {
     "word": "highlight",
@@ -3994,7 +4326,8 @@ window.dailyEnglishQuestionBank = [
     "id": "highlight",
     "phonetic": "'hailait",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tū chū ； qiáng diào"
   },
   {
     "word": "decrease",
@@ -4006,7 +4339,8 @@ window.dailyEnglishQuestionBank = [
     "id": "decrease",
     "phonetic": "'di:kri:s",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiǎn shǎo"
   },
   {
     "word": "alliance",
@@ -4018,7 +4352,8 @@ window.dailyEnglishQuestionBank = [
     "id": "alliance",
     "phonetic": "ә'laiәns",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "lián méng"
   },
   {
     "word": "compose",
@@ -4030,7 +4365,8 @@ window.dailyEnglishQuestionBank = [
     "id": "compose",
     "phonetic": "kәm'pәuz",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chuàng zuò ； zǔ chéng"
   },
   {
     "word": "counsel",
@@ -4042,7 +4378,8 @@ window.dailyEnglishQuestionBank = [
     "id": "counsel",
     "phonetic": "'kaunsәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiàn yì ； fǎ lǜ gù wèn"
   },
   {
     "word": "sculpture",
@@ -4054,7 +4391,8 @@ window.dailyEnglishQuestionBank = [
     "id": "sculpture",
     "phonetic": "'skʌlptʃә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "diāo sù"
   },
   {
     "word": "compound",
@@ -4066,7 +4404,8 @@ window.dailyEnglishQuestionBank = [
     "id": "compound",
     "phonetic": "kәm'paund",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "huà hé wù"
   },
   {
     "word": "integrate",
@@ -4078,7 +4417,8 @@ window.dailyEnglishQuestionBank = [
     "id": "integrate",
     "phonetic": "'intigreit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhěng hé ； róng rù"
   },
   {
     "word": "subtle",
@@ -4090,7 +4430,8 @@ window.dailyEnglishQuestionBank = [
     "id": "subtle",
     "phonetic": "'sʌtl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wēi miào de"
   },
   {
     "word": "curve",
@@ -4102,7 +4443,8 @@ window.dailyEnglishQuestionBank = [
     "id": "curve",
     "phonetic": "kә:v",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qū xiàn"
   },
   {
     "word": "integrity",
@@ -4114,7 +4456,8 @@ window.dailyEnglishQuestionBank = [
     "id": "integrity",
     "phonetic": "in'tegriti",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chéng xìn ； wán zhěng xìng"
   },
   {
     "word": "entitle",
@@ -4126,7 +4469,8 @@ window.dailyEnglishQuestionBank = [
     "id": "entitle",
     "phonetic": "in'taitl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jǐ yǔ …… quán lì"
   },
   {
     "word": "exclude",
@@ -4138,7 +4482,8 @@ window.dailyEnglishQuestionBank = [
     "id": "exclude",
     "phonetic": "iks'klu:d",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "pái chú"
   },
   {
     "word": "harsh",
@@ -4150,7 +4495,8 @@ window.dailyEnglishQuestionBank = [
     "id": "harsh",
     "phonetic": "hɑ:ʃ",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yán kù de ； yán lì de"
   },
   {
     "word": "interior",
@@ -4162,7 +4508,8 @@ window.dailyEnglishQuestionBank = [
     "id": "interior",
     "phonetic": "in'tiәriә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "nèi bù"
   },
   {
     "word": "reverse",
@@ -4174,7 +4521,8 @@ window.dailyEnglishQuestionBank = [
     "id": "reverse",
     "phonetic": "ri'vә:s",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "nì zhuǎn"
   },
   {
     "word": "initiate",
@@ -4186,7 +4534,8 @@ window.dailyEnglishQuestionBank = [
     "id": "initiate",
     "phonetic": "i'niʃieit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fā qǐ ； kāi shǐ"
   },
   {
     "word": "motivate",
@@ -4198,7 +4547,8 @@ window.dailyEnglishQuestionBank = [
     "id": "motivate",
     "phonetic": "'mәutiveit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jī lì"
   },
   {
     "word": "render",
@@ -4210,7 +4560,8 @@ window.dailyEnglishQuestionBank = [
     "id": "render",
     "phonetic": "'rendә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shǐ chéng wéi"
   },
   {
     "word": "seemingly",
@@ -4222,7 +4573,8 @@ window.dailyEnglishQuestionBank = [
     "id": "seemingly",
     "phonetic": "'si:miŋli",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "kàn shì ； biǎo miàn shàng"
   },
   {
     "word": "enforce",
@@ -4234,7 +4586,8 @@ window.dailyEnglishQuestionBank = [
     "id": "enforce",
     "phonetic": "in'fɒ:s",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhí xíng ； qiáng zhì shí shī"
   },
   {
     "word": "fraud",
@@ -4246,7 +4599,8 @@ window.dailyEnglishQuestionBank = [
     "id": "fraud",
     "phonetic": "frɒ:d",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qī zhà"
   },
   {
     "word": "contend",
@@ -4258,7 +4612,8 @@ window.dailyEnglishQuestionBank = [
     "id": "contend",
     "phonetic": "kәn'tend",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhǔ zhāng ； yìng duì"
   },
   {
     "word": "array",
@@ -4270,7 +4625,8 @@ window.dailyEnglishQuestionBank = [
     "id": "array",
     "phonetic": "ә'rei",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yī xì liè"
   },
   {
     "word": "assemble",
@@ -4282,7 +4638,8 @@ window.dailyEnglishQuestionBank = [
     "id": "assemble",
     "phonetic": "ә'sembl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zǔ zhuāng ； jí hé"
   },
   {
     "word": "inevitable",
@@ -4294,7 +4651,8 @@ window.dailyEnglishQuestionBank = [
     "id": "inevitable",
     "phonetic": "in'evitәbl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bù kě bì miǎn de"
   },
   {
     "word": "facilitate",
@@ -4306,7 +4664,8 @@ window.dailyEnglishQuestionBank = [
     "id": "facilitate",
     "phonetic": "fә'siliteit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "cù jìn ； shǐ biàn lì"
   },
   {
     "word": "obstacle",
@@ -4318,7 +4677,8 @@ window.dailyEnglishQuestionBank = [
     "id": "obstacle",
     "phonetic": "'ɒbstәkl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhàng ài"
   },
   {
     "word": "ownership",
@@ -4330,7 +4690,8 @@ window.dailyEnglishQuestionBank = [
     "id": "ownership",
     "phonetic": "'әunәʃip",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "suǒ yǒu quán"
   },
   {
     "word": "supervisor",
@@ -4342,7 +4703,8 @@ window.dailyEnglishQuestionBank = [
     "id": "supervisor",
     "phonetic": ".sju:pә'vaizә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhǔ guǎn ； dǎo shī"
   },
   {
     "word": "arena",
@@ -4354,7 +4716,8 @@ window.dailyEnglishQuestionBank = [
     "id": "arena",
     "phonetic": "ә'ri:nә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "lǐng yù ； jìng jì chǎng"
   },
   {
     "word": "consult",
@@ -4366,7 +4729,8 @@ window.dailyEnglishQuestionBank = [
     "id": "consult",
     "phonetic": "kәn'sʌlt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zī xún ； zhēng qiú yì jiàn"
   },
   {
     "word": "drift",
@@ -4378,7 +4742,8 @@ window.dailyEnglishQuestionBank = [
     "id": "drift",
     "phonetic": "drift",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "piāo yí ； zhú jiàn piān lí"
   },
   {
     "word": "drain",
@@ -4390,7 +4755,8 @@ window.dailyEnglishQuestionBank = [
     "id": "drain",
     "phonetic": "drein",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "pái shuǐ ； hào jìn"
   },
   {
     "word": "questionnaire",
@@ -4402,7 +4768,8 @@ window.dailyEnglishQuestionBank = [
     "id": "questionnaire",
     "phonetic": "kwestʃә'nєә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wèn juǎn"
   },
   {
     "word": "privilege",
@@ -4414,7 +4781,8 @@ window.dailyEnglishQuestionBank = [
     "id": "privilege",
     "phonetic": "'privilidʒ",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tè quán ； tè shū dài yù"
   },
   {
     "word": "domain",
@@ -4426,7 +4794,8 @@ window.dailyEnglishQuestionBank = [
     "id": "domain",
     "phonetic": "dәu'mein",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "lǐng yù"
   },
   {
     "word": "minimum",
@@ -4438,7 +4807,8 @@ window.dailyEnglishQuestionBank = [
     "id": "minimum",
     "phonetic": "'minimәm",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zuì dī xiàn dù"
   },
   {
     "word": "database",
@@ -4450,7 +4820,8 @@ window.dailyEnglishQuestionBank = [
     "id": "database",
     "phonetic": "'deitәbeis",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shù jù kù"
   },
   {
     "word": "chronic",
@@ -4462,7 +4833,8 @@ window.dailyEnglishQuestionBank = [
     "id": "chronic",
     "phonetic": "'krɒnik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "màn xìng de ； cháng qī de"
   },
   {
     "word": "replacement",
@@ -4474,7 +4846,8 @@ window.dailyEnglishQuestionBank = [
     "id": "replacement",
     "phonetic": "ri'pleismәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tì dài pǐn ； gēng huàn"
   },
   {
     "word": "strain",
@@ -4486,7 +4859,8 @@ window.dailyEnglishQuestionBank = [
     "id": "strain",
     "phonetic": "strein",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yā lì ； fù dān"
   },
   {
     "word": "administer",
@@ -4498,7 +4872,8 @@ window.dailyEnglishQuestionBank = [
     "id": "administer",
     "phonetic": "әd'ministә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "guǎn lǐ ； shí shī"
   },
   {
     "word": "transmission",
@@ -4510,7 +4885,8 @@ window.dailyEnglishQuestionBank = [
     "id": "transmission",
     "phonetic": "træns'miʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chuán bō ； chuán shū"
   },
   {
     "word": "trigger",
@@ -4522,7 +4898,8 @@ window.dailyEnglishQuestionBank = [
     "id": "trigger",
     "phonetic": "'trigә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yǐn fā"
   },
   {
     "word": "virtual",
@@ -4534,7 +4911,8 @@ window.dailyEnglishQuestionBank = [
     "id": "virtual",
     "phonetic": "'vә:tʃuәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xū nǐ de"
   },
   {
     "word": "indigenous",
@@ -4546,7 +4924,8 @@ window.dailyEnglishQuestionBank = [
     "id": "indigenous",
     "phonetic": "in'didʒinәs",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "běn tǔ de ； yuán zhù mín de"
   },
   {
     "word": "particle",
@@ -4558,7 +4937,8 @@ window.dailyEnglishQuestionBank = [
     "id": "particle",
     "phonetic": "'pɑ:tikl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wēi lì"
   },
   {
     "word": "boost",
@@ -4570,7 +4950,8 @@ window.dailyEnglishQuestionBank = [
     "id": "boost",
     "phonetic": "bu:st",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "cù jìn ； tí gāo"
   },
   {
     "word": "undermine",
@@ -4582,7 +4963,8 @@ window.dailyEnglishQuestionBank = [
     "id": "undermine",
     "phonetic": ".ʌndә'main",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xuē ruò"
   },
   {
     "word": "ballot",
@@ -4594,7 +4976,8 @@ window.dailyEnglishQuestionBank = [
     "id": "ballot",
     "phonetic": "'bælәt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xuǎn piào ； tóu piào"
   },
   {
     "word": "rhetoric",
@@ -4606,7 +4989,8 @@ window.dailyEnglishQuestionBank = [
     "id": "rhetoric",
     "phonetic": "'retәrik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xiū cí ； cí lìng"
   },
   {
     "word": "enthusiasm",
@@ -4618,7 +5002,8 @@ window.dailyEnglishQuestionBank = [
     "id": "enthusiasm",
     "phonetic": "in'θju:ziæzәm",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "rè qíng"
   },
   {
     "word": "wilderness",
@@ -4630,7 +5015,8 @@ window.dailyEnglishQuestionBank = [
     "id": "wilderness",
     "phonetic": "'wildәnis",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "huāng yě"
   },
   {
     "word": "mandate",
@@ -4642,7 +5028,8 @@ window.dailyEnglishQuestionBank = [
     "id": "mandate",
     "phonetic": "'mændeit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shòu quán ； zhí zé"
   },
   {
     "word": "chaos",
@@ -4654,7 +5041,8 @@ window.dailyEnglishQuestionBank = [
     "id": "chaos",
     "phonetic": "'keiɒs",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "hùn luàn"
   },
   {
     "word": "format",
@@ -4666,7 +5054,8 @@ window.dailyEnglishQuestionBank = [
     "id": "format",
     "phonetic": "'fɒ:mæt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gé shì ； xíng shì"
   },
   {
     "word": "canvas",
@@ -4678,7 +5067,8 @@ window.dailyEnglishQuestionBank = [
     "id": "canvas",
     "phonetic": "'kænvәs",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "huà bù"
   },
   {
     "word": "lobby",
@@ -4690,7 +5080,8 @@ window.dailyEnglishQuestionBank = [
     "id": "lobby",
     "phonetic": "'lɒbi",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yóu shuì"
   },
   {
     "word": "trait",
@@ -4702,7 +5093,8 @@ window.dailyEnglishQuestionBank = [
     "id": "trait",
     "phonetic": "treit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tè zhēng"
   },
   {
     "word": "currency",
@@ -4714,7 +5106,8 @@ window.dailyEnglishQuestionBank = [
     "id": "currency",
     "phonetic": "'kʌrәnsi",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "huò bì"
   },
   {
     "word": "doctrine",
@@ -4726,7 +5119,8 @@ window.dailyEnglishQuestionBank = [
     "id": "doctrine",
     "phonetic": "'dɒktrin",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "xué shuō ； xìn tiáo"
   },
   {
     "word": "genuine",
@@ -4738,7 +5132,8 @@ window.dailyEnglishQuestionBank = [
     "id": "genuine",
     "phonetic": "'dʒenjuin",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhēn zhèng de ； zhēn chéng de"
   },
   {
     "word": "exclusive",
@@ -4750,7 +5145,8 @@ window.dailyEnglishQuestionBank = [
     "id": "exclusive",
     "phonetic": "ik'sklu:siv",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "dú yǒu de ； zhuān yòng de"
   },
   {
     "word": "scatter",
@@ -4762,7 +5158,8 @@ window.dailyEnglishQuestionBank = [
     "id": "scatter",
     "phonetic": "'skætә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "sàn bù ； fēn sàn"
   },
   {
     "word": "convey",
@@ -4774,7 +5171,8 @@ window.dailyEnglishQuestionBank = [
     "id": "convey",
     "phonetic": "kәn'vei",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chuán dá"
   },
   {
     "word": "residence",
@@ -4786,7 +5184,8 @@ window.dailyEnglishQuestionBank = [
     "id": "residence",
     "phonetic": "'rezidәns",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhù suǒ ； jū zhù"
   },
   {
     "word": "signature",
@@ -4798,7 +5197,8 @@ window.dailyEnglishQuestionBank = [
     "id": "signature",
     "phonetic": "'signәtʃә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qiān míng ； xiǎn zhù tè zhēng"
   },
   {
     "word": "suspend",
@@ -4810,7 +5210,8 @@ window.dailyEnglishQuestionBank = [
     "id": "suspend",
     "phonetic": "sә'spend",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zàn tíng"
   },
   {
     "word": "spouse",
@@ -4822,7 +5223,8 @@ window.dailyEnglishQuestionBank = [
     "id": "spouse",
     "phonetic": "spauz",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "pèi ǒu"
   },
   {
     "word": "fluid",
@@ -4834,7 +5236,8 @@ window.dailyEnglishQuestionBank = [
     "id": "fluid",
     "phonetic": "'flu:id",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bù duàn biàn huà de ； liú dòng de"
   },
   {
     "word": "resume",
@@ -4846,7 +5249,8 @@ window.dailyEnglishQuestionBank = [
     "id": "resume",
     "phonetic": "ri'zju:m",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "huī fù ； chóng xīn kāi shǐ"
   },
   {
     "word": "compensation",
@@ -4858,7 +5262,8 @@ window.dailyEnglishQuestionBank = [
     "id": "compensation",
     "phonetic": ".kɒmpen'seiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bǔ cháng"
   },
   {
     "word": "dedicate",
@@ -4870,7 +5275,8 @@ window.dailyEnglishQuestionBank = [
     "id": "dedicate",
     "phonetic": "'dedikeit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tóu rù ； zhì lì yú"
   },
   {
     "word": "portfolio",
@@ -4882,7 +5288,8 @@ window.dailyEnglishQuestionBank = [
     "id": "portfolio",
     "phonetic": "pɒ:t'fәuliәu",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zuò pǐn jí ； tóu zī zǔ hé"
   },
   {
     "word": "invisible",
@@ -4894,7 +5301,8 @@ window.dailyEnglishQuestionBank = [
     "id": "invisible",
     "phonetic": "in'vizәbl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "kàn bú jiàn de"
   },
   {
     "word": "transaction",
@@ -4906,7 +5314,8 @@ window.dailyEnglishQuestionBank = [
     "id": "transaction",
     "phonetic": "træn'sækʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiāo yì"
   },
   {
     "word": "counterpart",
@@ -4918,7 +5327,8 @@ window.dailyEnglishQuestionBank = [
     "id": "counterpart",
     "phonetic": "'kauntәpɑ:t",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "duì yìng de rén huò shì wù"
   },
   {
     "word": "identical",
@@ -4930,7 +5340,8 @@ window.dailyEnglishQuestionBank = [
     "id": "identical",
     "phonetic": "ai'dentikәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wán quán xiāng tóng de"
   },
   {
     "word": "precise",
@@ -4942,7 +5353,8 @@ window.dailyEnglishQuestionBank = [
     "id": "precise",
     "phonetic": "pri'sais",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jīng què de"
   },
   {
     "word": "structural",
@@ -4954,7 +5366,8 @@ window.dailyEnglishQuestionBank = [
     "id": "structural",
     "phonetic": "'strʌktʃәrәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jié gòu xìng de"
   },
   {
     "word": "diagnose",
@@ -4966,7 +5379,8 @@ window.dailyEnglishQuestionBank = [
     "id": "diagnose",
     "phonetic": "'daiәgnәuz",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhěn duàn"
   },
   {
     "word": "conscious",
@@ -4978,7 +5392,8 @@ window.dailyEnglishQuestionBank = [
     "id": "conscious",
     "phonetic": "'kɒnʃәs",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yì shí dào de ； yǒu yì shí de"
   },
   {
     "word": "acquisition",
@@ -4990,7 +5405,8 @@ window.dailyEnglishQuestionBank = [
     "id": "acquisition",
     "phonetic": ".ækwi'ziʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "huò dé ； xí dé"
   },
   {
     "word": "wildlife",
@@ -5002,7 +5418,8 @@ window.dailyEnglishQuestionBank = [
     "id": "wildlife",
     "phonetic": "'waildlaif",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yě shēng shēng wù"
   },
   {
     "word": "equity",
@@ -5014,7 +5431,8 @@ window.dailyEnglishQuestionBank = [
     "id": "equity",
     "phonetic": "'ekwiti",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gōng píng ； gǔ quán"
   },
   {
     "word": "decent",
@@ -5026,7 +5444,8 @@ window.dailyEnglishQuestionBank = [
     "id": "decent",
     "phonetic": "'di:sәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tǐ miàn de ； xiàng yàng de"
   },
   {
     "word": "endorse",
@@ -5038,7 +5457,8 @@ window.dailyEnglishQuestionBank = [
     "id": "endorse",
     "phonetic": "in'dɒ:s",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhī chí ； rèn kě"
   },
   {
     "word": "thereby",
@@ -5050,7 +5470,8 @@ window.dailyEnglishQuestionBank = [
     "id": "thereby",
     "phonetic": "'ðєәbai",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "cóng ér"
   },
   {
     "word": "indicator",
@@ -5062,7 +5483,8 @@ window.dailyEnglishQuestionBank = [
     "id": "indicator",
     "phonetic": "'indikeitә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhǐ biāo"
   },
   {
     "word": "spectrum",
@@ -5074,7 +5496,8 @@ window.dailyEnglishQuestionBank = [
     "id": "spectrum",
     "phonetic": "'spektrәm",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fàn wéi ； guāng pǔ"
   },
   {
     "word": "expertise",
@@ -5086,7 +5509,8 @@ window.dailyEnglishQuestionBank = [
     "id": "expertise",
     "phonetic": ".ekspә:'ti:z",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhuān yè zhī shí"
   },
   {
     "word": "reluctant",
@@ -5098,7 +5522,8 @@ window.dailyEnglishQuestionBank = [
     "id": "reluctant",
     "phonetic": "ri'lʌktәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bù qíng yuàn de"
   },
   {
     "word": "realm",
@@ -5110,7 +5535,8 @@ window.dailyEnglishQuestionBank = [
     "id": "realm",
     "phonetic": "relm",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "lǐng yù"
   },
   {
     "word": "blend",
@@ -5122,7 +5548,8 @@ window.dailyEnglishQuestionBank = [
     "id": "blend",
     "phonetic": "blend",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "róng hé ； hùn hé"
   },
   {
     "word": "therapist",
@@ -5134,7 +5561,8 @@ window.dailyEnglishQuestionBank = [
     "id": "therapist",
     "phonetic": "'θerәpist",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhì liáo shī"
   },
   {
     "word": "recipient",
@@ -5146,7 +5574,8 @@ window.dailyEnglishQuestionBank = [
     "id": "recipient",
     "phonetic": "ri'sipiәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiē shòu zhě"
   },
   {
     "word": "metaphor",
@@ -5158,7 +5587,8 @@ window.dailyEnglishQuestionBank = [
     "id": "metaphor",
     "phonetic": "'metәfә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yǐn yù ； bǐ yù"
   },
   {
     "word": "judicial",
@@ -5170,7 +5600,8 @@ window.dailyEnglishQuestionBank = [
     "id": "judicial",
     "phonetic": "dʒu:'diʃәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "sī fǎ de"
   },
   {
     "word": "entity",
@@ -5182,7 +5613,8 @@ window.dailyEnglishQuestionBank = [
     "id": "entity",
     "phonetic": "'entiti",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shí tǐ"
   },
   {
     "word": "diminish",
@@ -5194,7 +5626,8 @@ window.dailyEnglishQuestionBank = [
     "id": "diminish",
     "phonetic": "di'miniʃ",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiǎn shǎo ； jiǎn ruò"
   },
   {
     "word": "isolate",
@@ -5206,7 +5639,8 @@ window.dailyEnglishQuestionBank = [
     "id": "isolate",
     "phonetic": "'aisәleit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gé lí ； fēn lí"
   },
   {
     "word": "productive",
@@ -5218,7 +5652,8 @@ window.dailyEnglishQuestionBank = [
     "id": "productive",
     "phonetic": "prә'dʌktiv",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gāo xiào de ； fù yǒu chéng xiào de"
   },
   {
     "word": "inventory",
@@ -5230,7 +5665,8 @@ window.dailyEnglishQuestionBank = [
     "id": "inventory",
     "phonetic": "'invәntәri",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "kù cún ； qīng dān"
   },
   {
     "word": "civic",
@@ -5242,7 +5678,8 @@ window.dailyEnglishQuestionBank = [
     "id": "civic",
     "phonetic": "'sivik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gōng mín de ； chéng shì de"
   },
   {
     "word": "magnitude",
@@ -5254,7 +5691,8 @@ window.dailyEnglishQuestionBank = [
     "id": "magnitude",
     "phonetic": "'mægnitju:d",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "guī mó ； chéng dù"
   },
   {
     "word": "dynamic",
@@ -5266,7 +5704,8 @@ window.dailyEnglishQuestionBank = [
     "id": "dynamic",
     "phonetic": "dai'næmik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bù duàn biàn huà de ； yǒu huó lì de"
   },
   {
     "word": "equation",
@@ -5278,7 +5717,8 @@ window.dailyEnglishQuestionBank = [
     "id": "equation",
     "phonetic": "i'kweiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fāng chéng ； děng shì"
   },
   {
     "word": "shortage",
@@ -5290,7 +5730,8 @@ window.dailyEnglishQuestionBank = [
     "id": "shortage",
     "phonetic": "'ʃɒ:tidʒ",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "duǎn quē"
   },
   {
     "word": "undertake",
@@ -5302,7 +5743,8 @@ window.dailyEnglishQuestionBank = [
     "id": "undertake",
     "phonetic": ".ʌndә'teik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chéng dān ； cóng shì"
   },
   {
     "word": "oversee",
@@ -5314,7 +5756,8 @@ window.dailyEnglishQuestionBank = [
     "id": "oversee",
     "phonetic": ".әuvә'si:",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiān dū"
   },
   {
     "word": "nominee",
@@ -5326,7 +5769,8 @@ window.dailyEnglishQuestionBank = [
     "id": "nominee",
     "phonetic": ".nɒmi'ni:",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bèi tí míng zhě"
   },
   {
     "word": "toxic",
@@ -5338,7 +5782,8 @@ window.dailyEnglishQuestionBank = [
     "id": "toxic",
     "phonetic": "'tɒksik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yǒu dú de"
   },
   {
     "word": "donate",
@@ -5350,7 +5795,8 @@ window.dailyEnglishQuestionBank = [
     "id": "donate",
     "phonetic": "'dәuneit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "juān zèng"
   },
   {
     "word": "parental",
@@ -5362,7 +5808,8 @@ window.dailyEnglishQuestionBank = [
     "id": "parental",
     "phonetic": "pә'rentәl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fù mǔ de"
   },
   {
     "word": "specialise",
@@ -5374,7 +5821,8 @@ window.dailyEnglishQuestionBank = [
     "id": "specialise",
     "phonetic": "'speʃә,laiz",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhuān mén cóng shì"
   },
   {
     "word": "dilemma",
@@ -5386,7 +5834,8 @@ window.dailyEnglishQuestionBank = [
     "id": "dilemma",
     "phonetic": "di'lemә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "liǎng nán chǔ jìng"
   },
   {
     "word": "liability",
@@ -5398,7 +5847,8 @@ window.dailyEnglishQuestionBank = [
     "id": "liability",
     "phonetic": "laiә'biliti",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "fǎ lǜ zé rèn ； fù zhài"
   },
   {
     "word": "ancestor",
@@ -5410,7 +5860,8 @@ window.dailyEnglishQuestionBank = [
     "id": "ancestor",
     "phonetic": "'ænsestә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zǔ xiān"
   },
   {
     "word": "condemn",
@@ -5422,7 +5873,8 @@ window.dailyEnglishQuestionBank = [
     "id": "condemn",
     "phonetic": "kәn'dem",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qiǎn zé"
   },
   {
     "word": "statute",
@@ -5434,7 +5886,8 @@ window.dailyEnglishQuestionBank = [
     "id": "statute",
     "phonetic": "'stætju:t",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chéng wén fǎ ； fǎ guī"
   },
   {
     "word": "hostile",
@@ -5446,7 +5899,8 @@ window.dailyEnglishQuestionBank = [
     "id": "hostile",
     "phonetic": "'hɒstail",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "dí duì de ； bù lì de"
   },
   {
     "word": "conceive",
@@ -5458,7 +5912,8 @@ window.dailyEnglishQuestionBank = [
     "id": "conceive",
     "phonetic": "kәn'si:v",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gòu xiǎng"
   },
   {
     "word": "bonus",
@@ -5470,7 +5925,8 @@ window.dailyEnglishQuestionBank = [
     "id": "bonus",
     "phonetic": "'bәunәs",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiǎng jīn ； é wài hǎo chù"
   },
   {
     "word": "vaccine",
@@ -5482,7 +5938,8 @@ window.dailyEnglishQuestionBank = [
     "id": "vaccine",
     "phonetic": "'væksi:n",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yì miáo"
   },
   {
     "word": "orbit",
@@ -5494,7 +5951,8 @@ window.dailyEnglishQuestionBank = [
     "id": "orbit",
     "phonetic": "'ɒ:bit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "guǐ dào"
   },
   {
     "word": "revelation",
@@ -5506,7 +5964,8 @@ window.dailyEnglishQuestionBank = [
     "id": "revelation",
     "phonetic": ".revi'leiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "jiē shì ； bèi jiē lù de shì shí"
   },
   {
     "word": "concede",
@@ -5518,7 +5977,8 @@ window.dailyEnglishQuestionBank = [
     "id": "concede",
     "phonetic": "kәn'si:d",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chéng rèn ； ràng bù"
   },
   {
     "word": "spectacular",
@@ -5530,7 +5990,8 @@ window.dailyEnglishQuestionBank = [
     "id": "spectacular",
     "phonetic": "spek'tækjulә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhuàng guān de ； jīng rén de"
   },
   {
     "word": "exotic",
@@ -5542,7 +6003,8 @@ window.dailyEnglishQuestionBank = [
     "id": "exotic",
     "phonetic": "ig'zɒtik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "wài lái de ； yì guó de"
   },
   {
     "word": "secular",
@@ -5554,7 +6016,8 @@ window.dailyEnglishQuestionBank = [
     "id": "secular",
     "phonetic": "'sekjulә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shì sú de ； fēi zōng jiào de"
   },
   {
     "word": "flexible",
@@ -5566,7 +6029,8 @@ window.dailyEnglishQuestionBank = [
     "id": "flexible",
     "phonetic": "'fleksәbl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "líng huó de"
   },
   {
     "word": "manipulate",
@@ -5578,7 +6042,8 @@ window.dailyEnglishQuestionBank = [
     "id": "manipulate",
     "phonetic": "mә'nipjuleit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "cāo zòng ； cāo zuò"
   },
   {
     "word": "practitioner",
@@ -5590,7 +6055,8 @@ window.dailyEnglishQuestionBank = [
     "id": "practitioner",
     "phonetic": "præk'tiʃәnә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "cóng yè zhě"
   },
   {
     "word": "isolation",
@@ -5602,7 +6068,8 @@ window.dailyEnglishQuestionBank = [
     "id": "isolation",
     "phonetic": ".aisә'leiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "gū lì ； gé lí"
   },
   {
     "word": "ambition",
@@ -5614,7 +6081,8 @@ window.dailyEnglishQuestionBank = [
     "id": "ambition",
     "phonetic": "æm'biʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bào fù ； zhì xiàng"
   },
   {
     "word": "costly",
@@ -5626,7 +6094,8 @@ window.dailyEnglishQuestionBank = [
     "id": "costly",
     "phonetic": "'kɒstli",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "dài jià gāo de"
   },
   {
     "word": "ambitious",
@@ -5638,7 +6107,8 @@ window.dailyEnglishQuestionBank = [
     "id": "ambitious",
     "phonetic": "æm'biʃәs",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "yǒu xióng xīn de"
   },
   {
     "word": "presumably",
@@ -5650,7 +6120,8 @@ window.dailyEnglishQuestionBank = [
     "id": "presumably",
     "phonetic": "pri'zu:mәbli",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "dà gài ； jù tuī cè"
   },
   {
     "word": "metropolitan",
@@ -5662,7 +6133,8 @@ window.dailyEnglishQuestionBank = [
     "id": "metropolitan",
     "phonetic": ".metrә'pɒlitn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "dà dū shì de"
   },
   {
     "word": "dissolve",
@@ -5674,7 +6146,8 @@ window.dailyEnglishQuestionBank = [
     "id": "dissolve",
     "phonetic": "di'zɒlv",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "róng jiě ； jiě sàn"
   },
   {
     "word": "aesthetic",
@@ -5686,7 +6159,8 @@ window.dailyEnglishQuestionBank = [
     "id": "aesthetic",
     "phonetic": "i:s'θetik",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shěn měi de"
   },
   {
     "word": "insert",
@@ -5698,7 +6172,8 @@ window.dailyEnglishQuestionBank = [
     "id": "insert",
     "phonetic": "in'sә:t",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chā rù"
   },
   {
     "word": "minimal",
@@ -5710,7 +6185,8 @@ window.dailyEnglishQuestionBank = [
     "id": "minimal",
     "phonetic": "'miniml",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zuì shǎo de ； jí xiǎo de"
   },
   {
     "word": "anonymous",
@@ -5722,7 +6198,8 @@ window.dailyEnglishQuestionBank = [
     "id": "anonymous",
     "phonetic": "ә'nɒnimәs",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "nì míng de"
   },
   {
     "word": "momentum",
@@ -5734,7 +6211,8 @@ window.dailyEnglishQuestionBank = [
     "id": "momentum",
     "phonetic": "mәu'mentәm",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shì tou ； dòng liàng"
   },
   {
     "word": "donation",
@@ -5746,7 +6224,8 @@ window.dailyEnglishQuestionBank = [
     "id": "donation",
     "phonetic": "dәu'neiʃәn",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "juān zèng"
   },
   {
     "word": "interact",
@@ -5758,7 +6237,8 @@ window.dailyEnglishQuestionBank = [
     "id": "interact",
     "phonetic": ".intәr'ækt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "hù dòng ； xiāng hù zuò yòng"
   },
   {
     "word": "persist",
@@ -5770,7 +6250,8 @@ window.dailyEnglishQuestionBank = [
     "id": "persist",
     "phonetic": "pә'sist",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chí xù ； jiān chí"
   },
   {
     "word": "foster",
@@ -5782,7 +6263,8 @@ window.dailyEnglishQuestionBank = [
     "id": "foster",
     "phonetic": "'fɒstә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "péi yǎng ； cù jìn"
   },
   {
     "word": "filter",
@@ -5794,7 +6276,8 @@ window.dailyEnglishQuestionBank = [
     "id": "filter",
     "phonetic": "'filtә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "guò lǜ"
   },
   {
     "word": "exploit",
@@ -5806,7 +6289,8 @@ window.dailyEnglishQuestionBank = [
     "id": "exploit",
     "phonetic": "'eksplɒit",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "lì yòng ； bō xuē"
   },
   {
     "word": "organism",
@@ -5818,7 +6302,8 @@ window.dailyEnglishQuestionBank = [
     "id": "organism",
     "phonetic": "'ɒ:gәnizm",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shēng wù tǐ"
   },
   {
     "word": "charter",
@@ -5830,7 +6315,8 @@ window.dailyEnglishQuestionBank = [
     "id": "charter",
     "phonetic": "'tʃɑ:tә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhāng chéng ； xiàn zhāng"
   },
   {
     "word": "comprise",
@@ -5842,7 +6328,8 @@ window.dailyEnglishQuestionBank = [
     "id": "comprise",
     "phonetic": "kәm'praiz",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "bāo kuò ； yóu …… zǔ chéng"
   },
   {
     "word": "placement",
@@ -5854,7 +6341,8 @@ window.dailyEnglishQuestionBank = [
     "id": "placement",
     "phonetic": "'pleismәnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "shí xí ān pái ； ān zhì"
   },
   {
     "word": "preliminary",
@@ -5866,7 +6354,8 @@ window.dailyEnglishQuestionBank = [
     "id": "preliminary",
     "phonetic": "pri'liminәri",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chū bù de"
   },
   {
     "word": "patent",
@@ -5878,7 +6367,8 @@ window.dailyEnglishQuestionBank = [
     "id": "patent",
     "phonetic": "'pætnt. 'peitnt",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhuān lì"
   },
   {
     "word": "gross",
@@ -5890,7 +6380,8 @@ window.dailyEnglishQuestionBank = [
     "id": "gross",
     "phonetic": "grәus",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zǒng de ； máo de"
   },
   {
     "word": "texture",
@@ -5902,7 +6393,8 @@ window.dailyEnglishQuestionBank = [
     "id": "texture",
     "phonetic": "'tekstʃә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "zhì dì ； wén lǐ"
   },
   {
     "word": "frontier",
@@ -5914,7 +6406,8 @@ window.dailyEnglishQuestionBank = [
     "id": "frontier",
     "phonetic": "'frʌntjә",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "qián yán ； biān jiè"
   },
   {
     "word": "disclose",
@@ -5926,7 +6419,8 @@ window.dailyEnglishQuestionBank = [
     "id": "disclose",
     "phonetic": "dis'klәuz",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "pī lù"
   },
   {
     "word": "outline",
@@ -5938,7 +6432,8 @@ window.dailyEnglishQuestionBank = [
     "id": "outline",
     "phonetic": "'autlain",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tí gāng ； gài shù"
   },
   {
     "word": "catalogue",
@@ -5950,7 +6445,8 @@ window.dailyEnglishQuestionBank = [
     "id": "catalogue",
     "phonetic": "'kætәlɒg",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "mù lù"
   },
   {
     "word": "fleet",
@@ -5962,7 +6458,8 @@ window.dailyEnglishQuestionBank = [
     "id": "fleet",
     "phonetic": "fli:t",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chē duì ； chuán duì"
   },
   {
     "word": "vertical",
@@ -5974,7 +6471,8 @@ window.dailyEnglishQuestionBank = [
     "id": "vertical",
     "phonetic": "'vә:tikl",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "chuí zhí de"
   },
   {
     "word": "compel",
@@ -5986,7 +6484,8 @@ window.dailyEnglishQuestionBank = [
     "id": "compel",
     "phonetic": "kәm'pel",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "pò shǐ"
   },
   {
     "word": "cease",
@@ -5998,7 +6497,8 @@ window.dailyEnglishQuestionBank = [
     "id": "cease",
     "phonetic": "si:s",
     "exampleSource": "original",
-    "selection": "雅思话题人工选词"
+    "selection": "雅思话题人工选词",
+    "zhPinyin": "tíng zhǐ"
   },
   {
     "id": "issue",
@@ -6011,7 +6511,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'isju",
     "exampleSource": "tatoeba",
     "sourceRow": 23775,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wèn tí"
   },
   {
     "id": "political",
@@ -6024,7 +6525,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'litikl",
     "exampleSource": "tatoeba",
     "sourceRow": 28422,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhèng zhì de"
   },
   {
     "id": "former",
@@ -6037,7 +6539,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fɒ:mә",
     "exampleSource": "tatoeba",
     "sourceRow": 46328,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qián zhě de"
   },
   {
     "id": "campaign",
@@ -6050,7 +6553,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kæm'pein",
     "exampleSource": "tatoeba",
     "sourceRow": 11600,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yùn dòng"
   },
   {
     "id": "economy",
@@ -6063,7 +6567,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'kɒnәmi",
     "exampleSource": "tatoeba",
     "sourceRow": 6078,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jīng jì"
   },
   {
     "id": "current",
@@ -6076,7 +6581,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kʌrәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 49711,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dāng qián de"
   },
   {
     "id": "performance",
@@ -6089,7 +6595,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'fɒ:mәns",
     "exampleSource": "tatoeba",
     "sourceRow": 40222,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǎn chū"
   },
   {
     "id": "represent",
@@ -6102,7 +6609,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".repri'zent",
     "exampleSource": "tatoeba",
     "sourceRow": 25923,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dài biǎo"
   },
   {
     "id": "concern",
@@ -6115,7 +6623,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'sә:n",
     "exampleSource": "tatoeba",
     "sourceRow": 11956,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "guān xīn"
   },
   {
     "id": "decade",
@@ -6128,7 +6637,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dekeid",
     "exampleSource": "tatoeba",
     "sourceRow": 2351,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shí nián"
   },
   {
     "id": "stock",
@@ -6141,7 +6651,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "stɒk",
     "exampleSource": "tatoeba",
     "sourceRow": 17496,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gǔ piào"
   },
   {
     "id": "central",
@@ -6154,7 +6665,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sentrәl",
     "exampleSource": "tatoeba",
     "sourceRow": 32124,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhōng yāng de"
   },
   {
     "id": "approach",
@@ -6167,7 +6679,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'prәutʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 9323,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiē jìn"
   },
   {
     "id": "occur",
@@ -6180,7 +6693,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'kә:",
     "exampleSource": "tatoeba",
     "sourceRow": 2067,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fā shēng"
   },
   {
     "id": "pressure",
@@ -6193,7 +6707,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'preʃә",
     "exampleSource": "tatoeba",
     "sourceRow": 6453,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yā lì"
   },
   {
     "id": "resource",
@@ -6206,7 +6721,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'sɒ:s",
     "exampleSource": "tatoeba",
     "sourceRow": 2581,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zī yuán"
   },
   {
     "id": "staff",
@@ -6219,7 +6735,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "stɑ:f",
     "exampleSource": "tatoeba",
     "sourceRow": 6506,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhí yuán de"
   },
   {
     "id": "growth",
@@ -6232,7 +6749,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "grәuθ",
     "exampleSource": "tatoeba",
     "sourceRow": 42233,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zēng zhǎng"
   },
   {
     "id": "loss",
@@ -6245,7 +6763,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "lɒs",
     "exampleSource": "tatoeba",
     "sourceRow": 18216,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "sǔn shī"
   },
   {
     "id": "analysis",
@@ -6258,7 +6777,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'nælәsis",
     "exampleSource": "tatoeba",
     "sourceRow": 2269,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fēn xī"
   },
   {
     "id": "environmental",
@@ -6271,7 +6791,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in.vaiәrәn'mentәl",
     "exampleSource": "tatoeba",
     "sourceRow": 2006,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huán jìng de"
   },
   {
     "id": "financial",
@@ -6284,7 +6805,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fai'nænʃәl",
     "exampleSource": "tatoeba",
     "sourceRow": 7218,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jīn róng de"
   },
   {
     "id": "authority",
@@ -6297,7 +6819,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ɒ:'θɒriti",
     "exampleSource": "tatoeba",
     "sourceRow": 6560,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhuān jiā"
   },
   {
     "id": "various",
@@ -6310,7 +6833,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vєәriәs",
     "exampleSource": "tatoeba",
     "sourceRow": 42287,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gè zhǒng de"
   },
   {
     "id": "executive",
@@ -6323,7 +6847,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ig'zekjutiv",
     "exampleSource": "tatoeba",
     "sourceRow": 17090,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhí xíng zhě"
   },
   {
     "id": "claim",
@@ -6336,7 +6861,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kleim",
     "exampleSource": "tatoeba",
     "sourceRow": 16467,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhǔ zhāng"
   },
   {
     "id": "legal",
@@ -6349,7 +6875,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'li:gәl",
     "exampleSource": "tatoeba",
     "sourceRow": 42966,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fǎ lǜ de"
   },
   {
     "id": "firm",
@@ -6362,7 +6889,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fә:m",
     "exampleSource": "tatoeba",
     "sourceRow": 8019,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gōng sī"
   },
   {
     "id": "management",
@@ -6375,7 +6903,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mænidʒmәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 2199,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "guǎn lǐ"
   },
   {
     "id": "theory",
@@ -6388,7 +6917,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'θiәri",
     "exampleSource": "tatoeba",
     "sourceRow": 33352,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lǐ lùn"
   },
   {
     "id": "impact",
@@ -6401,7 +6931,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'impækt",
     "exampleSource": "tatoeba",
     "sourceRow": 49569,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǐng xiǎng"
   },
   {
     "id": "maintain",
@@ -6414,7 +6945,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mein'tein",
     "exampleSource": "tatoeba",
     "sourceRow": 21095,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wéi chí"
   },
   {
     "id": "charge",
@@ -6427,7 +6959,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "tʃɑ:dʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 37447,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhǔ guǎn"
   },
   {
     "id": "cultural",
@@ -6440,7 +6973,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kʌltʃәrәl",
     "exampleSource": "tatoeba",
     "sourceRow": 43902,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wén huà de"
   },
   {
     "id": "measure",
@@ -6453,7 +6987,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'meʒә",
     "exampleSource": "tatoeba",
     "sourceRow": 15123,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fāng fǎ"
   },
   {
     "id": "candidate",
@@ -6466,7 +7001,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kændideit",
     "exampleSource": "tatoeba",
     "sourceRow": 1950,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hòu xuǎn rén"
   },
   {
     "id": "production",
@@ -6479,7 +7015,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prә'dʌkʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 43498,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhì zào"
   },
   {
     "id": "range",
@@ -6492,7 +7029,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'reindʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 48872,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shān mài"
   },
   {
     "id": "challenge",
@@ -6505,7 +7043,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tʃælindʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 7914,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tiǎo zhàn"
   },
   {
     "id": "property",
@@ -6518,7 +7057,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'prɒpәti",
     "exampleSource": "tatoeba",
     "sourceRow": 17323,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cái chǎn"
   },
   {
     "id": "stuff",
@@ -6531,7 +7071,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "stʌf",
     "exampleSource": "tatoeba",
     "sourceRow": 32586,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dōng xī"
   },
   {
     "id": "commercial",
@@ -6544,7 +7085,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'mә:ʃәl",
     "exampleSource": "tatoeba",
     "sourceRow": 47929,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shāng yè de"
   },
   {
     "id": "investment",
@@ -6557,7 +7099,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'vestmәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 43979,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tóu zī"
   },
   {
     "id": "collection",
@@ -6570,7 +7113,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'lekʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 13364,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shōu jí"
   },
   {
     "id": "budget",
@@ -6583,7 +7127,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bʌdʒit",
     "exampleSource": "tatoeba",
     "sourceRow": 49048,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yù suàn"
   },
   {
     "id": "responsibility",
@@ -6596,7 +7141,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri.spɒnsә'biliti",
     "exampleSource": "tatoeba",
     "sourceRow": 6187,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zé rèn ； fù dān"
   },
   {
     "id": "attorney",
@@ -6609,7 +7155,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'tә:ni",
     "exampleSource": "tatoeba",
     "sourceRow": 16062,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lǜ shī"
   },
   {
     "id": "account",
@@ -6622,7 +7169,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'kaunt",
     "exampleSource": "tatoeba",
     "sourceRow": 754,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiě shì"
   },
   {
     "id": "majority",
@@ -6635,7 +7183,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mә'dʒɒriti",
     "exampleSource": "tatoeba",
     "sourceRow": 25269,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "duō shù"
   },
   {
     "id": "mission",
@@ -6648,7 +7197,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'miʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 43211,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "rèn wù"
   },
   {
     "id": "global",
@@ -6661,7 +7211,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'glәubl",
     "exampleSource": "tatoeba",
     "sourceRow": 28363,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "quán qiú de"
   },
   {
     "id": "reform",
@@ -6674,7 +7225,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'fɒ:m",
     "exampleSource": "tatoeba",
     "sourceRow": 436,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gǎi gé"
   },
   {
     "id": "access",
@@ -6687,7 +7239,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ækses",
     "exampleSource": "tatoeba",
     "sourceRow": 14629,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jìn rù"
   },
   {
     "id": "release",
@@ -6700,7 +7253,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'li:s",
     "exampleSource": "tatoeba",
     "sourceRow": 28816,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fā xíng"
   },
   {
     "id": "version",
@@ -6713,7 +7267,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vә:ʒәn",
     "exampleSource": "tatoeba",
     "sourceRow": 28443,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bǎn běn"
   },
   {
     "id": "effective",
@@ -6726,7 +7281,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'fektiv",
     "exampleSource": "tatoeba",
     "sourceRow": 3220,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǒu xiào de"
   },
   {
     "id": "strike",
@@ -6739,7 +7295,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "straik",
     "exampleSource": "tatoeba",
     "sourceRow": 33271,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qǔ xiāo ； bà gōng"
   },
   {
     "id": "freedom",
@@ -6752,7 +7309,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fri:dәm",
     "exampleSource": "tatoeba",
     "sourceRow": 10551,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zì yóu"
   },
   {
     "id": "client",
@@ -6765,7 +7323,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'klaiәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 49443,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kè hù"
   },
   {
     "id": "investigation",
@@ -6778,7 +7337,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in.vesti'geiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 45364,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "diào chá"
   },
   {
     "id": "conflict",
@@ -6791,7 +7351,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒnflikt",
     "exampleSource": "tatoeba",
     "sourceRow": 48078,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chōng tū"
   },
   {
     "id": "insurance",
@@ -6804,7 +7365,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'ʃurәns",
     "exampleSource": "tatoeba",
     "sourceRow": 29878,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bǎo xiǎn"
   },
   {
     "id": "crisis",
@@ -6817,7 +7379,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kraisis",
     "exampleSource": "tatoeba",
     "sourceRow": 27698,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wēi jī"
   },
   {
     "id": "status",
@@ -6830,7 +7393,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'steitәs",
     "exampleSource": "tatoeba",
     "sourceRow": 28652,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dì wèi"
   },
   {
     "id": "scale",
@@ -6843,7 +7407,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "skeil",
     "exampleSource": "tatoeba",
     "sourceRow": 49666,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "guī mó"
   },
   {
     "id": "attempt",
@@ -6856,7 +7421,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'tempt",
     "exampleSource": "tatoeba",
     "sourceRow": 45796,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cháng shì"
   },
   {
     "id": "spot",
@@ -6869,7 +7435,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "spɒt",
     "exampleSource": "tatoeba",
     "sourceRow": 6420,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiàn chǎng de"
   },
   {
     "id": "lack",
@@ -6882,7 +7449,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "læk",
     "exampleSource": "tatoeba",
     "sourceRow": 38895,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù zú ； xū yào"
   },
   {
     "id": "sales",
@@ -6895,7 +7463,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "",
     "exampleSource": "tatoeba",
     "sourceRow": 10781,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiāo shòu de"
   },
   {
     "id": "presence",
@@ -6908,7 +7477,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'prezns",
     "exampleSource": "tatoeba",
     "sourceRow": 49008,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cún zài"
   },
   {
     "id": "strength",
@@ -6921,7 +7491,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "streŋθ",
     "exampleSource": "tatoeba",
     "sourceRow": 48403,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lì liàng"
   },
   {
     "id": "observe",
@@ -6934,7 +7505,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әb'zә:v",
     "exampleSource": "tatoeba",
     "sourceRow": 18498,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zūn shǒu"
   },
   {
     "id": "block",
@@ -6947,7 +7519,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "blɒk",
     "exampleSource": "tatoeba",
     "sourceRow": 8940,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiē qū"
   },
   {
     "id": "settle",
@@ -6960,7 +7533,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'setl",
     "exampleSource": "tatoeba",
     "sourceRow": 18783,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiě jué"
   },
   {
     "id": "additional",
@@ -6973,7 +7547,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'diʃәnәl",
     "exampleSource": "tatoeba",
     "sourceRow": 49385,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "é wài de"
   },
   {
     "id": "faith",
@@ -6986,7 +7561,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "feiθ",
     "exampleSource": "tatoeba",
     "sourceRow": 12780,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xìn rèn"
   },
   {
     "id": "technique",
@@ -6999,7 +7575,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "tek'ni:k",
     "exampleSource": "tatoeba",
     "sourceRow": 34025,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fāng fǎ"
   },
   {
     "id": "border",
@@ -7012,7 +7589,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bɒ:dә",
     "exampleSource": "tatoeba",
     "sourceRow": 44300,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "biān jìng"
   },
   {
     "id": "associate",
@@ -7025,7 +7603,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'sәuʃieit",
     "exampleSource": "tatoeba",
     "sourceRow": 47285,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiāo wǎng"
   },
   {
     "id": "failure",
@@ -7038,7 +7617,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'feiljә",
     "exampleSource": "tatoeba",
     "sourceRow": 11257,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shī bài"
   },
   {
     "id": "procedure",
@@ -7051,7 +7631,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prә'si:dʒә",
     "exampleSource": "tatoeba",
     "sourceRow": 37020,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chéng xù"
   },
   {
     "id": "religion",
@@ -7064,7 +7645,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'lidʒәn",
     "exampleSource": "tatoeba",
     "sourceRow": 39808,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zōng jiào"
   },
   {
     "id": "editor",
@@ -7077,7 +7659,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'editә",
     "exampleSource": "tatoeba",
     "sourceRow": 36086,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "biān jí"
   },
   {
     "id": "commit",
@@ -7090,7 +7673,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'mit",
     "exampleSource": "tatoeba",
     "sourceRow": 4405,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fàn zuì"
   },
   {
     "id": "youth",
@@ -7103,7 +7687,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ju:θ",
     "exampleSource": "tatoeba",
     "sourceRow": 47315,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "nián qīng"
   },
   {
     "id": "native",
@@ -7116,7 +7701,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'neitiv",
     "exampleSource": "tatoeba",
     "sourceRow": 24552,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "běn dì rén"
   },
   {
     "id": "deny",
@@ -7129,7 +7715,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'nai",
     "exampleSource": "tatoeba",
     "sourceRow": 21720,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fǒu rèn"
   },
   {
     "id": "construction",
@@ -7142,7 +7729,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'strʌkʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 49585,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiàn zhù"
   },
   {
     "id": "intelligence",
@@ -7155,7 +7743,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'telidʒәns",
     "exampleSource": "tatoeba",
     "sourceRow": 26082,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qíng bào"
   },
   {
     "id": "committee",
@@ -7168,7 +7757,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'miti",
     "exampleSource": "tatoeba",
     "sourceRow": 6562,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wěi yuán huì"
   },
   {
     "id": "location",
@@ -7181,7 +7771,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "lәu'keiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 9920,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wèi zhì"
   },
   {
     "id": "aware",
@@ -7194,7 +7785,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'wєә",
     "exampleSource": "tatoeba",
     "sourceRow": 709,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhī dào de"
   },
   {
     "id": "function",
@@ -7207,7 +7799,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fʌŋkʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 4333,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gōng néng"
   },
   {
     "id": "chief",
@@ -7220,7 +7813,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "tʃi:f",
     "exampleSource": "tatoeba",
     "sourceRow": 12506,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhǎng guān"
   },
   {
     "id": "remind",
@@ -7233,7 +7827,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'maind",
     "exampleSource": "tatoeba",
     "sourceRow": 21112,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tí xǐng"
   },
   {
     "id": "academic",
@@ -7246,7 +7841,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ækә'demik",
     "exampleSource": "tatoeba",
     "sourceRow": 39221,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xué shù de"
   },
   {
     "id": "historical",
@@ -7259,7 +7855,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hi'stɒrikәl",
     "exampleSource": "tatoeba",
     "sourceRow": 49062,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lì shǐ de"
   },
   {
     "id": "contact",
@@ -7272,7 +7869,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒntækt",
     "exampleSource": "tatoeba",
     "sourceRow": 49392,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lián xì"
   },
   {
     "id": "participate",
@@ -7285,7 +7883,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pɑ:'tisipeit",
     "exampleSource": "tatoeba",
     "sourceRow": 14808,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cān yù"
   },
   {
     "id": "familiar",
@@ -7298,7 +7897,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fә'miljә",
     "exampleSource": "tatoeba",
     "sourceRow": 18361,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shú xī de"
   },
   {
     "id": "democracy",
@@ -7311,7 +7911,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'mɒkrәsi",
     "exampleSource": "tatoeba",
     "sourceRow": 25269,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mín zhǔ zhǔ yì"
   },
   {
     "id": "exchange",
@@ -7324,7 +7925,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "iks'tʃeindʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 35255,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiāo huàn"
   },
   {
     "id": "application",
@@ -7337,7 +7939,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".æpli'keiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 32403,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yìng yòng ； yìng yòng chéng xù"
   },
   {
     "id": "damage",
@@ -7350,7 +7953,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dæmidʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 10685,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "sǔn hài"
   },
   {
     "id": "otherwise",
@@ -7363,7 +7967,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ʌðәwaiz",
     "exampleSource": "tatoeba",
     "sourceRow": 38916,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fǒu zé"
   },
   {
     "id": "abuse",
@@ -7376,7 +7981,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'bju:s.ә'bju:z",
     "exampleSource": "tatoeba",
     "sourceRow": 31122,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "làn yòng"
   },
   {
     "id": "session",
@@ -7389,7 +7995,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'seʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 48906,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huì yì"
   },
   {
     "id": "literature",
@@ -7402,7 +8009,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'litәrәtʃә",
     "exampleSource": "tatoeba",
     "sourceRow": 13415,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wén xué"
   },
   {
     "id": "desire",
@@ -7415,7 +8023,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'zaiә",
     "exampleSource": "tatoeba",
     "sourceRow": 32257,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yù wàng"
   },
   {
     "id": "fuel",
@@ -7428,7 +8037,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fjuәl",
     "exampleSource": "tatoeba",
     "sourceRow": 28407,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "rán liào"
   },
   {
     "id": "mental",
@@ -7441,7 +8051,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mentl",
     "exampleSource": "tatoeba",
     "sourceRow": 16542,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xīn lǐ de"
   },
   {
     "id": "educational",
@@ -7454,7 +8065,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".edju'keiʃәnl",
     "exampleSource": "tatoeba",
     "sourceRow": 5370,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiào yù de"
   },
   {
     "id": "favorite",
@@ -7467,7 +8079,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'feivәrit",
     "exampleSource": "tatoeba",
     "sourceRow": 27845,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xǐ ài de"
   },
   {
     "id": "complex",
@@ -7480,7 +8093,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәm'pleks",
     "exampleSource": "tatoeba",
     "sourceRow": 7238,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fù zá de"
   },
   {
     "id": "scientific",
@@ -7493,7 +8107,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".saiәn'tifik",
     "exampleSource": "tatoeba",
     "sourceRow": 10552,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kē xué de"
   },
   {
     "id": "balance",
@@ -7506,7 +8121,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bælәns",
     "exampleSource": "tatoeba",
     "sourceRow": 21457,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "píng héng"
   },
   {
     "id": "adopt",
@@ -7519,7 +8135,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'dɒpt",
     "exampleSource": "tatoeba",
     "sourceRow": 23505,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cǎi yòng"
   },
   {
     "id": "minority",
@@ -7532,7 +8149,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mai'nɒriti",
     "exampleSource": "tatoeba",
     "sourceRow": 45604,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shǎo shù"
   },
   {
     "id": "jury",
@@ -7545,7 +8163,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒuәri",
     "exampleSource": "tatoeba",
     "sourceRow": 16039,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "péi shěn tuán"
   },
   {
     "id": "acknowledge",
@@ -7558,7 +8177,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әk'nɒlidʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 809,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chéng rèn"
   },
   {
     "id": "theme",
@@ -7571,7 +8191,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "θi:m",
     "exampleSource": "tatoeba",
     "sourceRow": 16333,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhǔ tí"
   },
   {
     "id": "union",
@@ -7584,7 +8205,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ju:njәn",
     "exampleSource": "tatoeba",
     "sourceRow": 28791,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gōng huì"
   },
   {
     "id": "conclusion",
@@ -7597,7 +8219,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'klu:ʒәn",
     "exampleSource": "tatoeba",
     "sourceRow": 2307,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jié lùn"
   },
   {
     "id": "prime",
@@ -7610,7 +8233,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "praim",
     "exampleSource": "tatoeba",
     "sourceRow": 31490,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhǔ yào de"
   },
   {
     "id": "obvious",
@@ -7623,7 +8247,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒbviәs",
     "exampleSource": "tatoeba",
     "sourceRow": 21182,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "míng xiǎn de"
   },
   {
     "id": "generate",
@@ -7636,7 +8261,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒenәreit",
     "exampleSource": "tatoeba",
     "sourceRow": 15680,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chǎn shēng"
   },
   {
     "id": "propose",
@@ -7649,7 +8275,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prә'pәuz",
     "exampleSource": "tatoeba",
     "sourceRow": 19119,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dǎ suàn ； qiú hūn"
   },
   {
     "id": "loan",
@@ -7662,7 +8289,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "lәun",
     "exampleSource": "tatoeba",
     "sourceRow": 873,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dài kuǎn"
   },
   {
     "id": "beauty",
@@ -7675,7 +8303,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bju:ti",
     "exampleSource": "tatoeba",
     "sourceRow": 20291,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "měi rén"
   },
   {
     "id": "unique",
@@ -7688,7 +8317,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ju:'ni:k",
     "exampleSource": "tatoeba",
     "sourceRow": 23161,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dú tè de"
   },
   {
     "id": "content",
@@ -7701,7 +8331,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'tent",
     "exampleSource": "tatoeba",
     "sourceRow": 33499,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "nèi róng"
   },
   {
     "id": "declare",
@@ -7714,7 +8345,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'klєә",
     "exampleSource": "tatoeba",
     "sourceRow": 2358,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shēn bào"
   },
   {
     "id": "appreciate",
@@ -7727,7 +8359,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'pri:ʃieit",
     "exampleSource": "tatoeba",
     "sourceRow": 28464,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xīn shǎng"
   },
   {
     "id": "launch",
@@ -7740,7 +8373,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "lɒ:ntʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 38631,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fā shè"
   },
   {
     "id": "file",
@@ -7753,7 +8387,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fail",
     "exampleSource": "tatoeba",
     "sourceRow": 21678,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wén jiàn"
   },
   {
     "id": "outcome",
@@ -7766,7 +8401,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'autkʌm",
     "exampleSource": "tatoeba",
     "sourceRow": 26156,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jié guǒ"
   },
   {
     "id": "extent",
@@ -7779,7 +8415,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'stent",
     "exampleSource": "tatoeba",
     "sourceRow": 27682,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chéng dù"
   },
   {
     "id": "component",
@@ -7792,7 +8429,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәm'pәunәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 43157,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zǔ chéng de"
   },
   {
     "id": "capacity",
@@ -7805,7 +8443,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'pæsiti",
     "exampleSource": "tatoeba",
     "sourceRow": 14672,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "néng lì"
   },
   {
     "id": "slip",
@@ -7818,7 +8457,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "slip",
     "exampleSource": "tatoeba",
     "sourceRow": 15720,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huá dào"
   },
   {
     "id": "soil",
@@ -7831,7 +8471,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sɒil",
     "exampleSource": "tatoeba",
     "sourceRow": 7711,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tǔ rǎng"
   },
   {
     "id": "surgery",
@@ -7844,7 +8485,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sә:dʒәri",
     "exampleSource": "tatoeba",
     "sourceRow": 27024,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shǒu shù"
   },
   {
     "id": "blame",
@@ -7857,7 +8499,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bleim",
     "exampleSource": "tatoeba",
     "sourceRow": 15127,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "guò shī"
   },
   {
     "id": "estimate",
@@ -7870,7 +8513,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'estimeit",
     "exampleSource": "tatoeba",
     "sourceRow": 7179,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gū jì"
   },
   {
     "id": "investigate",
@@ -7883,7 +8527,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'vestigeit",
     "exampleSource": "tatoeba",
     "sourceRow": 23903,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "diào chá"
   },
   {
     "id": "branch",
@@ -7896,7 +8541,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bræntʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 3504,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shù zhī"
   },
   {
     "id": "motion",
@@ -7909,7 +8555,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mәuʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 22826,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dòng zuò"
   },
   {
     "id": "equal",
@@ -7922,7 +8569,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'i:kwәl",
     "exampleSource": "tatoeba",
     "sourceRow": 26180,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "píng děng de"
   },
   {
     "id": "eliminate",
@@ -7935,7 +8583,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'limineit",
     "exampleSource": "tatoeba",
     "sourceRow": 43211,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiāo chú"
   },
   {
     "id": "regime",
@@ -7948,7 +8597,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "rei'ʒi:m",
     "exampleSource": "tatoeba",
     "sourceRow": 16498,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhèng quán"
   },
   {
     "id": "appeal",
@@ -7961,7 +8611,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'pi:l",
     "exampleSource": "tatoeba",
     "sourceRow": 11634,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hū yù"
   },
   {
     "id": "length",
@@ -7974,7 +8625,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "leŋθ",
     "exampleSource": "tatoeba",
     "sourceRow": 28803,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cháng dù"
   },
   {
     "id": "rely",
@@ -7987,7 +8639,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'lai",
     "exampleSource": "tatoeba",
     "sourceRow": 45922,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yī lài"
   },
   {
     "id": "association",
@@ -8000,7 +8653,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә.sәuʃә'eiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 6510,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xié huì"
   },
   {
     "id": "confidence",
@@ -8013,7 +8667,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒnfidәns",
     "exampleSource": "tatoeba",
     "sourceRow": 17214,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xìn xīn"
   },
   {
     "id": "debt",
@@ -8026,7 +8681,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "det",
     "exampleSource": "tatoeba",
     "sourceRow": 13249,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhài wù"
   },
   {
     "id": "reference",
@@ -8039,7 +8695,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'refәrәns",
     "exampleSource": "tatoeba",
     "sourceRow": 48909,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cān kǎo"
   },
   {
     "id": "grant",
@@ -8052,7 +8709,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "grænt",
     "exampleSource": "tatoeba",
     "sourceRow": 2692,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chéng rèn"
   },
   {
     "id": "minister",
@@ -8065,7 +8723,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ministә",
     "exampleSource": "tatoeba",
     "sourceRow": 44219,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gōng shǐ"
   },
   {
     "id": "industrial",
@@ -8078,7 +8737,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'dʌstriәl",
     "exampleSource": "tatoeba",
     "sourceRow": 15162,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gōng yè de"
   },
   {
     "id": "volume",
@@ -8091,7 +8751,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vɒljum",
     "exampleSource": "tatoeba",
     "sourceRow": 26400,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yīn liàng"
   },
   {
     "id": "improvement",
@@ -8104,7 +8765,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "im'pru:vmәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 14182,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gǎi shàn"
   },
   {
     "id": "oppose",
@@ -8117,7 +8779,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'pәuz",
     "exampleSource": "tatoeba",
     "sourceRow": 33840,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fǎn duì"
   },
   {
     "id": "essential",
@@ -8130,7 +8793,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'senʃәl",
     "exampleSource": "tatoeba",
     "sourceRow": 31236,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bì yào de"
   },
   {
     "id": "resolution",
@@ -8143,7 +8807,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".rezә'lu:ʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 9059,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jué xīn"
   },
   {
     "id": "witness",
@@ -8156,7 +8821,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'witnis",
     "exampleSource": "tatoeba",
     "sourceRow": 33093,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhèng rén"
   },
   {
     "id": "barely",
@@ -8169,7 +8835,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bєәli",
     "exampleSource": "tatoeba",
     "sourceRow": 4167,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jī hū bù"
   },
   {
     "id": "sector",
@@ -8182,7 +8849,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sektә",
     "exampleSource": "tatoeba",
     "sourceRow": 47539,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù mén"
   },
   {
     "id": "emphasize",
@@ -8195,7 +8863,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'emfәsaiz",
     "exampleSource": "tatoeba",
     "sourceRow": 4212,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qiáng diào"
   },
   {
     "id": "representative",
@@ -8208,7 +8877,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".repri'zentәtiv",
     "exampleSource": "tatoeba",
     "sourceRow": 22438,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dài biǎo"
   },
   {
     "id": "mass",
@@ -8221,7 +8891,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mæs",
     "exampleSource": "tatoeba",
     "sourceRow": 15284,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dà liàng"
   },
   {
     "id": "achievement",
@@ -8234,7 +8905,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'tʃi:vmәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 10486,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chéng jiù"
   },
   {
     "id": "accuse",
@@ -8247,7 +8919,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'kju:z",
     "exampleSource": "tatoeba",
     "sourceRow": 1003,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhǐ zé"
   },
   {
     "id": "characteristic",
@@ -8260,7 +8933,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kærәktә'ristik",
     "exampleSource": "tatoeba",
     "sourceRow": 8866,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tè yǒu de"
   },
   {
     "id": "convince",
@@ -8273,7 +8947,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'vins",
     "exampleSource": "tatoeba",
     "sourceRow": 30967,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shuō fú"
   },
   {
     "id": "physician",
@@ -8286,7 +8961,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fi'ziʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 42122,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yī shī"
   },
   {
     "id": "addition",
@@ -8299,7 +8975,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'diʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 8928,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiā fǎ"
   },
   {
     "id": "sharp",
@@ -8312,7 +8989,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ʃɑ:p",
     "exampleSource": "tatoeba",
     "sourceRow": 30269,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mǐn ruì de"
   },
   {
     "id": "campus",
@@ -8325,7 +9003,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kæmpәs",
     "exampleSource": "tatoeba",
     "sourceRow": 15243,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiào yuán"
   },
   {
     "id": "illegal",
@@ -8338,7 +9017,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'li:gәl",
     "exampleSource": "tatoeba",
     "sourceRow": 30237,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wéi fǎ de"
   },
   {
     "id": "signal",
@@ -8351,7 +9031,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'signl",
     "exampleSource": "tatoeba",
     "sourceRow": 17796,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xìn hào"
   },
   {
     "id": "assistance",
@@ -8364,7 +9045,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'sistәns",
     "exampleSource": "tatoeba",
     "sourceRow": 38288,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xié zhù"
   },
   {
     "id": "wrap",
@@ -8377,7 +9059,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ræp",
     "exampleSource": "tatoeba",
     "sourceRow": 28100,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bāo qǐ lái"
   },
   {
     "id": "asset",
@@ -8390,7 +9073,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æset",
     "exampleSource": "tatoeba",
     "sourceRow": 48913,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zī chǎn"
   },
   {
     "id": "suspect",
@@ -8403,7 +9087,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sә'spekt",
     "exampleSource": "tatoeba",
     "sourceRow": 45510,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huái yí"
   },
   {
     "id": "observation",
@@ -8416,7 +9101,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ɒbzә:'veiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 36248,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "guān chá ； guān chá lì"
   },
   {
     "id": "permit",
@@ -8429,7 +9115,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'mit",
     "exampleSource": "tatoeba",
     "sourceRow": 6669,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǔn xǔ"
   },
   {
     "id": "priority",
@@ -8442,7 +9129,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prai'ɒriti",
     "exampleSource": "tatoeba",
     "sourceRow": 49055,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yōu xiān"
   },
   {
     "id": "emotion",
@@ -8455,7 +9143,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'mәuʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 27669,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qíng xù"
   },
   {
     "id": "recover",
@@ -8468,7 +9157,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'kʌvә",
     "exampleSource": "tatoeba",
     "sourceRow": 43980,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huī fù"
   },
   {
     "id": "violent",
@@ -8481,7 +9171,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vaiәlәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 23617,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bào lì de"
   },
   {
     "id": "portion",
@@ -8494,7 +9185,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pɒ:ʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 28267,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù fèn"
   },
   {
     "id": "territory",
@@ -8507,7 +9199,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'teritәri",
     "exampleSource": "tatoeba",
     "sourceRow": 27223,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lǐng tǔ"
   },
   {
     "id": "opponent",
@@ -8520,7 +9213,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'pәunәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 18202,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "duì shǒu"
   },
   {
     "id": "tension",
@@ -8533,7 +9227,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tenʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 49378,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yā lì"
   },
   {
     "id": "bother",
@@ -8546,7 +9241,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bɒðә",
     "exampleSource": "tatoeba",
     "sourceRow": 40249,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "má fán"
   },
   {
     "id": "bend",
@@ -8559,7 +9255,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bend",
     "exampleSource": "tatoeba",
     "sourceRow": 43479,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wān qū"
   },
   {
     "id": "preserve",
@@ -8572,7 +9269,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pri'zә:v",
     "exampleSource": "tatoeba",
     "sourceRow": 28659,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bǎo hù ； bǎo cún"
   },
   {
     "id": "transition",
@@ -8585,7 +9283,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "træn'ziʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 48220,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhuǎn biàn"
   },
   {
     "id": "existence",
@@ -8598,7 +9297,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ig'zistәns",
     "exampleSource": "tatoeba",
     "sourceRow": 33320,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cún zài"
   },
   {
     "id": "deserve",
@@ -8611,7 +9311,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'zә:v",
     "exampleSource": "tatoeba",
     "sourceRow": 36130,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhí de"
   },
   {
     "id": "pose",
@@ -8624,7 +9325,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pәuz",
     "exampleSource": "tatoeba",
     "sourceRow": 29936,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tí chū"
   },
   {
     "id": "resolve",
@@ -8637,7 +9339,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'zɒlv",
     "exampleSource": "tatoeba",
     "sourceRow": 28487,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jué xīn"
   },
   {
     "id": "phase",
@@ -8650,7 +9353,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "feiz",
     "exampleSource": "tatoeba",
     "sourceRow": 8584,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiē duàn"
   },
   {
     "id": "dust",
@@ -8663,7 +9367,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dʌst",
     "exampleSource": "tatoeba",
     "sourceRow": 25496,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huī chén ； huā fěn"
   },
   {
     "id": "practical",
@@ -8676,7 +9381,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'præktikl",
     "exampleSource": "tatoeba",
     "sourceRow": 14188,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiàn shí de"
   },
   {
     "id": "passion",
@@ -8689,7 +9395,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pæʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 14010,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jī qíng"
   },
   {
     "id": "implement",
@@ -8702,7 +9409,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'implimәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 37822,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhí xíng"
   },
   {
     "id": "gene",
@@ -8715,7 +9423,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dʒi:n",
     "exampleSource": "tatoeba",
     "sourceRow": 27800,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jī yīn"
   },
   {
     "id": "independence",
@@ -8728,7 +9437,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".indi'pendәns",
     "exampleSource": "tatoeba",
     "sourceRow": 33426,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dú lì"
   },
   {
     "id": "shock",
@@ -8741,7 +9451,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ʃɒk",
     "exampleSource": "tatoeba",
     "sourceRow": 20252,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhèn jīng"
   },
   {
     "id": "competitive",
@@ -8754,7 +9465,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәm'petitiv",
     "exampleSource": "tatoeba",
     "sourceRow": 15903,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jìng zhēng de"
   },
   {
     "id": "attach",
@@ -8767,7 +9479,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'tætʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 20466,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fù shàng"
   },
   {
     "id": "complaint",
@@ -8780,7 +9493,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәm'pleint",
     "exampleSource": "tatoeba",
     "sourceRow": 20484,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bào yuàn"
   },
   {
     "id": "fundamental",
@@ -8793,7 +9507,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".fʌndә'mentәl",
     "exampleSource": "tatoeba",
     "sourceRow": 21543,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jī běn de"
   },
   {
     "id": "poverty",
@@ -8806,7 +9521,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pɒvәti",
     "exampleSource": "tatoeba",
     "sourceRow": 47174,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "pín qióng"
   },
   {
     "id": "entry",
@@ -8819,7 +9535,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'entri",
     "exampleSource": "tatoeba",
     "sourceRow": 31361,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jìn rù"
   },
   {
     "id": "mood",
@@ -8832,7 +9549,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mu:d",
     "exampleSource": "tatoeba",
     "sourceRow": 47817,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xīn qíng"
   },
   {
     "id": "accomplish",
@@ -8845,7 +9563,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'kʌmpliʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 18433,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dá dào"
   },
   {
     "id": "entertainment",
@@ -8858,7 +9577,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".entә'teinmәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 49411,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yú lè"
   },
   {
     "id": "concentrate",
@@ -8871,7 +9591,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒnsәntreit",
     "exampleSource": "tatoeba",
     "sourceRow": 11215,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jí zhōng"
   },
   {
     "id": "anger",
@@ -8884,7 +9605,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æŋgә",
     "exampleSource": "tatoeba",
     "sourceRow": 14280,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jī nù"
   },
   {
     "id": "constant",
@@ -8897,7 +9619,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒnstәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 415,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù biàn de"
   },
   {
     "id": "clinic",
@@ -8910,7 +9633,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'klinik",
     "exampleSource": "tatoeba",
     "sourceRow": 49063,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhěn suǒ"
   },
   {
     "id": "exception",
@@ -8923,7 +9647,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'sepʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 10790,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lì wài"
   },
   {
     "id": "objective",
@@ -8936,7 +9661,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әb'dʒektiv",
     "exampleSource": "tatoeba",
     "sourceRow": 20829,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mù biāo"
   },
   {
     "id": "reputation",
@@ -8949,7 +9675,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".repju'teiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 49846,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "míng yù"
   },
   {
     "id": "mixture",
@@ -8962,7 +9689,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mikstʃә",
     "exampleSource": "tatoeba",
     "sourceRow": 1545,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hùn hé ； hùn hé wù"
   },
   {
     "id": "pure",
@@ -8975,7 +9703,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pjuә",
     "exampleSource": "tatoeba",
     "sourceRow": 48244,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chún jìng de"
   },
   {
     "id": "accompany",
@@ -8988,7 +9717,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'kʌmpәni",
     "exampleSource": "tatoeba",
     "sourceRow": 19025,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bàn zòu"
   },
   {
     "id": "retirement",
@@ -9001,7 +9731,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'taiәmәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 28324,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tuì xiū"
   },
   {
     "id": "throat",
@@ -9014,7 +9745,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "θrәut",
     "exampleSource": "tatoeba",
     "sourceRow": 3205,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hóu lóng"
   },
   {
     "id": "permanent",
@@ -9027,7 +9759,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pә:mәnәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 1175,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǒng jiǔ de"
   },
   {
     "id": "phenomenon",
@@ -9040,7 +9773,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fi'nɒminәn",
     "exampleSource": "tatoeba",
     "sourceRow": 15865,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiàn xiàng"
   },
   {
     "id": "install",
@@ -9053,7 +9787,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'stɒ:l",
     "exampleSource": "tatoeba",
     "sourceRow": 6138,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "ān zhuāng"
   },
   {
     "id": "sensitive",
@@ -9066,7 +9801,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sensitiv",
     "exampleSource": "tatoeba",
     "sourceRow": 36092,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mǐn gǎn de"
   },
   {
     "id": "reasonable",
@@ -9079,7 +9815,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ri:znәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 5491,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hé lǐ de"
   },
   {
     "id": "channel",
@@ -9092,7 +9829,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tʃænәl",
     "exampleSource": "tatoeba",
     "sourceRow": 16743,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hǎi xiá"
   },
   {
     "id": "jail",
@@ -9105,7 +9843,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dʒeil",
     "exampleSource": "tatoeba",
     "sourceRow": 46648,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiān yù"
   },
   {
     "id": "pace",
@@ -9118,7 +9857,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "peis",
     "exampleSource": "tatoeba",
     "sourceRow": 30678,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "sù dù"
   },
   {
     "id": "employment",
@@ -9131,7 +9871,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "im'plɒimәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 19465,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gōng zuò"
   },
   {
     "id": "approval",
@@ -9144,7 +9885,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'pru:vl",
     "exampleSource": "tatoeba",
     "sourceRow": 41858,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zàn chéng"
   },
   {
     "id": "depth",
@@ -9157,7 +9899,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "depθ",
     "exampleSource": "tatoeba",
     "sourceRow": 47660,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shēn dù"
   },
   {
     "id": "shell",
@@ -9170,7 +9913,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ʃel",
     "exampleSource": "tatoeba",
     "sourceRow": 26403,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bèi ké"
   },
   {
     "id": "effectively",
@@ -9183,7 +9927,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'fektivli",
     "exampleSource": "tatoeba",
     "sourceRow": 3250,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǒu xiào dì"
   },
   {
     "id": "deputy",
@@ -9196,7 +9941,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'depjuti",
     "exampleSource": "tatoeba",
     "sourceRow": 11436,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dài lǐ rén"
   },
   {
     "id": "brand",
@@ -9209,7 +9955,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "brænd",
     "exampleSource": "tatoeba",
     "sourceRow": 44193,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "pái zi"
   },
   {
     "id": "nevertheless",
@@ -9222,7 +9969,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".nevәðә'les",
     "exampleSource": "tatoeba",
     "sourceRow": 13724,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "rán ér"
   },
   {
     "id": "ingredient",
@@ -9235,7 +9983,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'gri:diәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 47414,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chéng fèn"
   },
   {
     "id": "fiber",
@@ -9248,7 +9997,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'faibә",
     "exampleSource": "tatoeba",
     "sourceRow": 3627,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiān wéi"
   },
   {
     "id": "corporation",
@@ -9261,7 +10011,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kɒ:pә'reiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 29697,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gōng sī"
   },
   {
     "id": "switch",
@@ -9274,7 +10025,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "switʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 19639,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kāi guān"
   },
   {
     "id": "council",
@@ -9287,7 +10039,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kaunsәl",
     "exampleSource": "tatoeba",
     "sourceRow": 42789,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wěi yuán huì"
   },
   {
     "id": "index",
@@ -9300,7 +10053,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'indeks",
     "exampleSource": "tatoeba",
     "sourceRow": 32403,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhǐ shù"
   },
   {
     "id": "advocate",
@@ -9313,7 +10067,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ædvәkeit",
     "exampleSource": "tatoeba",
     "sourceRow": 35274,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhǔ zhāng"
   },
   {
     "id": "draft",
@@ -9326,7 +10081,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dræft. drɑ:ft",
     "exampleSource": "tatoeba",
     "sourceRow": 12452,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cǎo gǎo"
   },
   {
     "id": "rough",
@@ -9339,7 +10095,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "rʌf",
     "exampleSource": "tatoeba",
     "sourceRow": 6019,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cū cāo de"
   },
   {
     "id": "pregnant",
@@ -9352,7 +10109,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pregnәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 44408,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huái yùn de"
   },
   {
     "id": "satellite",
@@ -9365,7 +10123,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sætlait",
     "exampleSource": "tatoeba",
     "sourceRow": 40270,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "rén zào wèi xīng"
   },
   {
     "id": "yield",
@@ -9378,7 +10137,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ji:ld",
     "exampleSource": "tatoeba",
     "sourceRow": 21309,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qū fú"
   },
   {
     "id": "survival",
@@ -9391,7 +10151,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sә'vaivәl",
     "exampleSource": "tatoeba",
     "sourceRow": 15250,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shēng cún"
   },
   {
     "id": "cooperation",
@@ -9404,7 +10165,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәu.ɒpә'reiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 48848,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hé zuò"
   },
   {
     "id": "ceremony",
@@ -9417,7 +10179,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'serimәni",
     "exampleSource": "tatoeba",
     "sourceRow": 20882,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lǐ jié"
   },
   {
     "id": "unlikely",
@@ -9430,7 +10193,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌn'laikli",
     "exampleSource": "tatoeba",
     "sourceRow": 45689,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù tài kě néng de"
   },
   {
     "id": "tissue",
@@ -9443,7 +10207,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tiʃu:",
     "exampleSource": "tatoeba",
     "sourceRow": 40370,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zǔ zhī"
   },
   {
     "id": "cabinet",
@@ -9456,7 +10221,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kæbinit",
     "exampleSource": "tatoeba",
     "sourceRow": 5441,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chú guì"
   },
   {
     "id": "proceed",
@@ -9469,7 +10235,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prәu'si:d",
     "exampleSource": "tatoeba",
     "sourceRow": 1837,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jì xù jìn xíng ； jìn xíng"
   },
   {
     "id": "remarkable",
@@ -9482,7 +10249,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'mɑ:kәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 37149,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiǎn zhù de"
   },
   {
     "id": "encounter",
@@ -9495,7 +10263,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'kauntә",
     "exampleSource": "tatoeba",
     "sourceRow": 21614,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiāng yù"
   },
   {
     "id": "port",
@@ -9508,7 +10277,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pɒ:t",
     "exampleSource": "tatoeba",
     "sourceRow": 49229,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gǎng kǒu"
   },
   {
     "id": "genetic",
@@ -9521,7 +10291,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dʒi'netik",
     "exampleSource": "tatoeba",
     "sourceRow": 30044,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yí chuán de"
   },
   {
     "id": "solar",
@@ -9534,7 +10305,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sәulә",
     "exampleSource": "tatoeba",
     "sourceRow": 21232,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tài yáng de"
   },
   {
     "id": "interpret",
@@ -9547,7 +10319,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'tә:prit",
     "exampleSource": "tatoeba",
     "sourceRow": 45180,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiě shì"
   },
   {
     "id": "champion",
@@ -9560,7 +10333,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tʃæmpiәn",
     "exampleSource": "tatoeba",
     "sourceRow": 9286,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "guàn jūn"
   },
   {
     "id": "telescope",
@@ -9573,7 +10347,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'teliskәup",
     "exampleSource": "tatoeba",
     "sourceRow": 10544,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wàng yuǎn jìng"
   },
   {
     "id": "tournament",
@@ -9586,7 +10361,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tә:nәmәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 6165,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bǐ sài"
   },
   {
     "id": "recommendation",
@@ -9599,7 +10375,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".rekәmen'deiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 47312,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tuī jiàn"
   },
   {
     "id": "guarantee",
@@ -9612,7 +10389,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".gærәn'ti:",
     "exampleSource": "tatoeba",
     "sourceRow": 7812,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bǎo zhèng"
   },
   {
     "id": "innocent",
@@ -9625,7 +10403,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'inәsәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 44225,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wú zuì de"
   },
   {
     "id": "boundary",
@@ -9638,7 +10417,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'baundri",
     "exampleSource": "tatoeba",
     "sourceRow": 21489,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fēn jiè xiàn"
   },
   {
     "id": "satisfaction",
@@ -9651,7 +10431,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".sætis'fækʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 33049,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mǎn zú"
   },
   {
     "id": "journal",
@@ -9664,7 +10445,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒә:nәl",
     "exampleSource": "tatoeba",
     "sourceRow": 22425,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "rì jì"
   },
   {
     "id": "deck",
@@ -9677,7 +10459,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dek",
     "exampleSource": "tatoeba",
     "sourceRow": 20112,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiǎ bǎn"
   },
   {
     "id": "delivery",
@@ -9690,7 +10473,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'livәri",
     "exampleSource": "tatoeba",
     "sourceRow": 37651,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiāo huò"
   },
   {
     "id": "diverse",
@@ -9703,7 +10487,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dai'vә:s",
     "exampleSource": "tatoeba",
     "sourceRow": 48258,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù tóng de"
   },
   {
     "id": "counter",
@@ -9716,7 +10501,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kauntә",
     "exampleSource": "tatoeba",
     "sourceRow": 39320,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "guì tái"
   },
   {
     "id": "treaty",
@@ -9729,7 +10515,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tri:ti",
     "exampleSource": "tatoeba",
     "sourceRow": 42650,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tán pàn"
   },
   {
     "id": "crash",
@@ -9742,7 +10529,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kræʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 49767,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bēng kuì"
   },
   {
     "id": "fault",
@@ -9755,7 +10543,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fɒ:lt",
     "exampleSource": "tatoeba",
     "sourceRow": 7020,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "máo bìng"
   },
   {
     "id": "confident",
@@ -9768,7 +10557,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒnfidәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 31694,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǒu xìn xīn de"
   },
   {
     "id": "shelter",
@@ -9781,7 +10571,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ʃeltә",
     "exampleSource": "tatoeba",
     "sourceRow": 34368,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "duǒ bì"
   },
   {
     "id": "entrance",
@@ -9794,7 +10585,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'entrәns",
     "exampleSource": "tatoeba",
     "sourceRow": 6438,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "rù kǒu"
   },
   {
     "id": "tragedy",
@@ -9807,7 +10599,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'trædʒidi",
     "exampleSource": "tatoeba",
     "sourceRow": 28414,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bēi jù"
   },
   {
     "id": "profession",
@@ -9820,7 +10613,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prә'feʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 16482,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhí yè"
   },
   {
     "id": "constitute",
@@ -9833,7 +10627,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'stitjut",
     "exampleSource": "tatoeba",
     "sourceRow": 7345,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gòu chéng"
   },
   {
     "id": "mask",
@@ -9846,7 +10641,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mæsk",
     "exampleSource": "tatoeba",
     "sourceRow": 18163,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "miàn jù"
   },
   {
     "id": "convert",
@@ -9859,7 +10655,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'vә:t",
     "exampleSource": "tatoeba",
     "sourceRow": 23131,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "guī yī"
   },
   {
     "id": "regardless",
@@ -9872,7 +10669,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'gɑ:dlis",
     "exampleSource": "tatoeba",
     "sourceRow": 36451,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù guǎn"
   },
   {
     "id": "steady",
@@ -9885,7 +10683,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'stedi",
     "exampleSource": "tatoeba",
     "sourceRow": 14679,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wěn dìng de"
   },
   {
     "id": "vital",
@@ -9898,7 +10697,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vaitl",
     "exampleSource": "tatoeba",
     "sourceRow": 521,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhòng yào de"
   },
   {
     "id": "radical",
@@ -9911,7 +10711,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'rædikl",
     "exampleSource": "tatoeba",
     "sourceRow": 19458,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jī jìn de"
   },
   {
     "id": "adapt",
@@ -9924,7 +10725,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'dæpt",
     "exampleSource": "tatoeba",
     "sourceRow": 14672,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shì yìng"
   },
   {
     "id": "evolution",
@@ -9937,7 +10739,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".i:vә'lu:ʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 2298,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jìn huà"
   },
   {
     "id": "tribe",
@@ -9950,7 +10753,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "traib",
     "exampleSource": "tatoeba",
     "sourceRow": 30632,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù luò"
   },
   {
     "id": "lawn",
@@ -9963,7 +10767,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "lɒ:n",
     "exampleSource": "tatoeba",
     "sourceRow": 15631,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cǎo píng"
   },
   {
     "id": "wisdom",
@@ -9976,7 +10781,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'wizdәm",
     "exampleSource": "tatoeba",
     "sourceRow": 388,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhì huì"
   },
   {
     "id": "fantasy",
@@ -9989,7 +10795,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fæntәsi",
     "exampleSource": "tatoeba",
     "sourceRow": 10568,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huàn xiǎng"
   },
   {
     "id": "divorce",
@@ -10002,7 +10809,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'vɒ:s",
     "exampleSource": "tatoeba",
     "sourceRow": 8628,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lí hūn"
   },
   {
     "id": "slight",
@@ -10015,7 +10823,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "slait",
     "exampleSource": "tatoeba",
     "sourceRow": 21318,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qīng wēi de"
   },
   {
     "id": "obligation",
@@ -10028,7 +10837,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ɒbli'geiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 15014,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yì wù"
   },
   {
     "id": "differ",
@@ -10041,7 +10851,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'difә",
     "exampleSource": "tatoeba",
     "sourceRow": 9835,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù tóng"
   },
   {
     "id": "palm",
@@ -10054,7 +10865,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pɑ:m",
     "exampleSource": "tatoeba",
     "sourceRow": 42837,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zōng lǘ"
   },
   {
     "id": "custom",
@@ -10067,7 +10879,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kʌstәm",
     "exampleSource": "tatoeba",
     "sourceRow": 15517,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xí guàn"
   },
   {
     "id": "efficient",
@@ -10080,7 +10893,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'fiʃәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 29984,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǒu xiào lǜ de"
   },
   {
     "id": "scheme",
@@ -10093,7 +10907,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ski:m",
     "exampleSource": "tatoeba",
     "sourceRow": 6450,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jì huà"
   },
   {
     "id": "trace",
@@ -10106,7 +10921,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "treis",
     "exampleSource": "tatoeba",
     "sourceRow": 36176,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hén jì"
   },
   {
     "id": "appointment",
@@ -10119,7 +10935,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'pɒintmәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 17714,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yuē huì"
   },
   {
     "id": "explosion",
@@ -10132,7 +10949,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'splәuʒәn",
     "exampleSource": "tatoeba",
     "sourceRow": 6051,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bào zhà"
   },
   {
     "id": "admission",
@@ -10145,7 +10963,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әd'miʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 7677,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "rù chǎng fèi"
   },
   {
     "id": "infant",
@@ -10158,7 +10977,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'infәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 6275,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yīng ér"
   },
   {
     "id": "tendency",
@@ -10171,7 +10991,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tendәnsi",
     "exampleSource": "tatoeba",
     "sourceRow": 19100,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qīng xiàng"
   },
   {
     "id": "reservation",
@@ -10184,7 +11005,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".rezә'veiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 7529,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yù dìng"
   },
   {
     "id": "scandal",
@@ -10197,7 +11019,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'skændәl",
     "exampleSource": "tatoeba",
     "sourceRow": 6613,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chǒu wén"
   },
   {
     "id": "fabric",
@@ -10210,7 +11033,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fæbrik",
     "exampleSource": "tatoeba",
     "sourceRow": 27861,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhī wù"
   },
   {
     "id": "contest",
@@ -10223,7 +11047,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒntest",
     "exampleSource": "tatoeba",
     "sourceRow": 22075,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jìng sài"
   },
   {
     "id": "organic",
@@ -10236,7 +11061,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ɒ:'gænik",
     "exampleSource": "tatoeba",
     "sourceRow": 28515,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǒu jī de"
   },
   {
     "id": "strengthen",
@@ -10249,7 +11075,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'streŋθәn",
     "exampleSource": "tatoeba",
     "sourceRow": 49268,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiā qiáng"
   },
   {
     "id": "myth",
@@ -10262,7 +11089,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "miθ",
     "exampleSource": "tatoeba",
     "sourceRow": 6203,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shén huà"
   },
   {
     "id": "sufficient",
@@ -10275,7 +11103,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sә'fiʃәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 28521,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zú gòu de"
   },
   {
     "id": "helicopter",
@@ -10288,7 +11117,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'helikɒptә",
     "exampleSource": "tatoeba",
     "sourceRow": 14809,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhí shēng jī"
   },
   {
     "id": "delay",
@@ -10301,7 +11131,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'lei",
     "exampleSource": "tatoeba",
     "sourceRow": 15645,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yán chí"
   },
   {
     "id": "horizon",
@@ -10314,7 +11145,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hә'raizәn",
     "exampleSource": "tatoeba",
     "sourceRow": 5463,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dì píng xiàn"
   },
   {
     "id": "downtown",
@@ -10327,7 +11159,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'daun'taun",
     "exampleSource": "tatoeba",
     "sourceRow": 24435,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shì zhōng xīn de"
   },
   {
     "id": "absorb",
@@ -10340,7 +11173,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әb'sɒ:b",
     "exampleSource": "tatoeba",
     "sourceRow": 14294,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xī shōu"
   },
   {
     "id": "principal",
@@ -10353,7 +11187,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'prinsipәl",
     "exampleSource": "tatoeba",
     "sourceRow": 24671,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiào zhǎng"
   },
   {
     "id": "assignment",
@@ -10366,7 +11201,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'sainmәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 37247,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "rèn wù"
   },
   {
     "id": "workshop",
@@ -10379,7 +11215,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'wә:kʃɒp",
     "exampleSource": "tatoeba",
     "sourceRow": 34307,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chē jiān"
   },
   {
     "id": "temporary",
@@ -10392,7 +11229,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tempәrәri",
     "exampleSource": "tatoeba",
     "sourceRow": 45706,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lín shí de"
   },
   {
     "id": "cabin",
@@ -10405,7 +11243,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kæbin",
     "exampleSource": "tatoeba",
     "sourceRow": 41253,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiǎo wū"
   },
   {
     "id": "edition",
@@ -10418,7 +11257,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'diʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 23998,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bǎn běn"
   },
   {
     "id": "pitch",
@@ -10431,7 +11271,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pitʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 18789,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dā zhàng péng"
   },
   {
     "id": "pine",
@@ -10444,7 +11285,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pain",
     "exampleSource": "tatoeba",
     "sourceRow": 48513,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "sōng shù"
   },
   {
     "id": "register",
@@ -10457,7 +11299,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'redʒistә",
     "exampleSource": "tatoeba",
     "sourceRow": 45474,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhù cè"
   },
   {
     "id": "heritage",
@@ -10470,7 +11313,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'heritidʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 48272,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yí chǎn"
   },
   {
     "id": "submit",
@@ -10483,7 +11327,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sәb'mit",
     "exampleSource": "tatoeba",
     "sourceRow": 30753,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tí jiāo"
   },
   {
     "id": "economics",
@@ -10496,7 +11341,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".i:kә'nɒmiks",
     "exampleSource": "tatoeba",
     "sourceRow": 30349,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jīng jì xué"
   },
   {
     "id": "extension",
@@ -10509,7 +11355,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'stenʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 41020,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yán cháng"
   },
   {
     "id": "battery",
@@ -10522,7 +11369,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bætәri",
     "exampleSource": "tatoeba",
     "sourceRow": 26626,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "diàn chí"
   },
   {
     "id": "arrival",
@@ -10535,7 +11383,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'raivl",
     "exampleSource": "tatoeba",
     "sourceRow": 43106,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dào dá"
   },
   {
     "id": "flame",
@@ -10548,7 +11397,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fleim",
     "exampleSource": "tatoeba",
     "sourceRow": 28613,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huǒ yàn"
   },
   {
     "id": "garage",
@@ -10561,7 +11411,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "gә'rɑ:ʒ. 'gærɑ:ʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 48447,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chē kù"
   },
   {
     "id": "collapse",
@@ -10574,7 +11425,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'læps",
     "exampleSource": "tatoeba",
     "sourceRow": 24638,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dǎo tā"
   },
   {
     "id": "weekly",
@@ -10587,7 +11439,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'wi:kli",
     "exampleSource": "tatoeba",
     "sourceRow": 27347,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "měi zhōu de"
   },
   {
     "id": "ease",
@@ -10600,7 +11453,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i:z",
     "exampleSource": "tatoeba",
     "sourceRow": 45259,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "ān yì"
   },
   {
     "id": "acid",
@@ -10613,7 +11467,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æsid",
     "exampleSource": "tatoeba",
     "sourceRow": 11247,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "suān xìng de"
   },
   {
     "id": "medium",
@@ -10626,7 +11481,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mi:diәm",
     "exampleSource": "tatoeba",
     "sourceRow": 4042,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "méi jiè"
   },
   {
     "id": "distinguish",
@@ -10639,7 +11495,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dis'tiŋgwiʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 21563,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "biàn bié"
   },
   {
     "id": "artistic",
@@ -10652,7 +11509,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ɑ:'tistik",
     "exampleSource": "tatoeba",
     "sourceRow": 44614,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yì shù de ； yì shù jiā de"
   },
   {
     "id": "distinct",
@@ -10665,7 +11523,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dis'tiŋkt",
     "exampleSource": "tatoeba",
     "sourceRow": 6066,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù tóng de"
   },
   {
     "id": "moderate",
@@ -10678,7 +11537,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mɒdәrәt",
     "exampleSource": "tatoeba",
     "sourceRow": 26992,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shì dù de"
   },
   {
     "id": "miracle",
@@ -10691,7 +11551,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mirәkl",
     "exampleSource": "tatoeba",
     "sourceRow": 37101,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qí jì"
   },
   {
     "id": "venture",
@@ -10704,7 +11565,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ventʃә",
     "exampleSource": "tatoeba",
     "sourceRow": 6335,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fēng xiǎn"
   },
   {
     "id": "adequate",
@@ -10717,7 +11579,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ædikwәt",
     "exampleSource": "tatoeba",
     "sourceRow": 11646,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zú gòu de"
   },
   {
     "id": "concrete",
@@ -10730,7 +11593,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒnkri:t",
     "exampleSource": "tatoeba",
     "sourceRow": 37396,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jù tǐ de"
   },
   {
     "id": "defeat",
@@ -10743,7 +11607,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'fi:t",
     "exampleSource": "tatoeba",
     "sourceRow": 22552,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jī bài"
   },
   {
     "id": "swear",
@@ -10756,7 +11621,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "swєә",
     "exampleSource": "tatoeba",
     "sourceRow": 14929,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fā shì"
   },
   {
     "id": "occupation",
@@ -10769,7 +11635,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ɒkju'peiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 24516,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhí yè"
   },
   {
     "id": "sacred",
@@ -10782,7 +11649,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'seikrid",
     "exampleSource": "tatoeba",
     "sourceRow": 14617,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shén shèng de ； zhuāng yán de"
   },
   {
     "id": "formula",
@@ -10795,7 +11663,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fɒ:mjulә",
     "exampleSource": "tatoeba",
     "sourceRow": 49634,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gōng shì"
   },
   {
     "id": "tunnel",
@@ -10808,7 +11677,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tʌnl",
     "exampleSource": "tatoeba",
     "sourceRow": 1994,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "suì dào"
   },
   {
     "id": "defendant",
@@ -10821,7 +11691,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'fendәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 435,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bèi gào"
   },
   {
     "id": "rail",
@@ -10834,7 +11705,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "reil",
     "exampleSource": "tatoeba",
     "sourceRow": 16355,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lán gān"
   },
   {
     "id": "anniversary",
@@ -10847,7 +11719,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "æni'vә:sәri",
     "exampleSource": "tatoeba",
     "sourceRow": 38688,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhōu nián jì niàn"
   },
   {
     "id": "couch",
@@ -10860,7 +11733,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kautʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 37844,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cháng shā fā"
   },
   {
     "id": "mess",
@@ -10873,7 +11747,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mes",
     "exampleSource": "tatoeba",
     "sourceRow": 19570,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "luàn qī bā zāo"
   },
   {
     "id": "regulate",
@@ -10886,7 +11761,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'regjuleit",
     "exampleSource": "tatoeba",
     "sourceRow": 10627,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kòng zhì"
   },
   {
     "id": "remark",
@@ -10899,7 +11775,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'mɑ:k",
     "exampleSource": "tatoeba",
     "sourceRow": 15097,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "píng lùn"
   },
   {
     "id": "resign",
@@ -10912,7 +11789,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'zain",
     "exampleSource": "tatoeba",
     "sourceRow": 32777,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cí zhí"
   },
   {
     "id": "reward",
@@ -10925,7 +11803,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'wɒ:d",
     "exampleSource": "tatoeba",
     "sourceRow": 20807,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bào chóu"
   },
   {
     "id": "organ",
@@ -10938,7 +11817,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒ:gәn",
     "exampleSource": "tatoeba",
     "sourceRow": 42834,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fēng qín"
   },
   {
     "id": "ritual",
@@ -10951,7 +11831,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ritʃuәl",
     "exampleSource": "tatoeba",
     "sourceRow": 14617,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yí shì"
   },
   {
     "id": "superior",
@@ -10964,7 +11845,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sju:'piәriә",
     "exampleSource": "tatoeba",
     "sourceRow": 8972,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shàng jí"
   },
   {
     "id": "surgeon",
@@ -10977,7 +11859,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sә:dʒәn",
     "exampleSource": "tatoeba",
     "sourceRow": 16579,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wài kē yī shēng"
   },
   {
     "id": "hunt",
@@ -10990,7 +11873,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hʌnt",
     "exampleSource": "tatoeba",
     "sourceRow": 48286,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shòu liè"
   },
   {
     "id": "echo",
@@ -11003,7 +11887,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ekәu",
     "exampleSource": "tatoeba",
     "sourceRow": 11486,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huí yīn"
   },
   {
     "id": "flour",
@@ -11016,7 +11901,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'flauә",
     "exampleSource": "tatoeba",
     "sourceRow": 31351,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "miàn fěn"
   },
   {
     "id": "slope",
@@ -11029,7 +11915,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "slәup",
     "exampleSource": "tatoeba",
     "sourceRow": 21609,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xié pō"
   },
   {
     "id": "sponsor",
@@ -11042,7 +11929,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'spɒnsә",
     "exampleSource": "tatoeba",
     "sourceRow": 45300,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zàn zhù"
   },
   {
     "id": "secondary",
@@ -11055,7 +11943,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sekәndәri",
     "exampleSource": "tatoeba",
     "sourceRow": 14409,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cì yào de"
   },
   {
     "id": "export",
@@ -11068,7 +11957,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'spɒ:t",
     "exampleSource": "tatoeba",
     "sourceRow": 49216,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chū kǒu"
   },
   {
     "id": "experimental",
@@ -11081,7 +11971,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik.speri'mentәl",
     "exampleSource": "tatoeba",
     "sourceRow": 28669,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shí yàn de"
   },
   {
     "id": "essence",
@@ -11094,7 +11985,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'esns",
     "exampleSource": "tatoeba",
     "sourceRow": 38827,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "běn zhì"
   },
   {
     "id": "logic",
@@ -11107,7 +11999,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'lɒdʒik",
     "exampleSource": "tatoeba",
     "sourceRow": 44575,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "luó jí"
   },
   {
     "id": "retail",
@@ -11120,7 +12013,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ri:teil",
     "exampleSource": "tatoeba",
     "sourceRow": 47906,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "líng shòu"
   },
   {
     "id": "unemployment",
@@ -11133,7 +12027,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌnim'plɒimәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 43042,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shī yè"
   },
   {
     "id": "flash",
@@ -11146,7 +12041,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "flæʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 41636,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shǎn guāng"
   },
   {
     "id": "humanity",
@@ -11159,7 +12055,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hju:'mæniti",
     "exampleSource": "tatoeba",
     "sourceRow": 48421,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "rén lèi"
   },
   {
     "id": "excitement",
@@ -11172,7 +12069,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'saitmәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 19762,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xīng fèn"
   },
   {
     "id": "deadly",
@@ -11185,7 +12083,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dedli",
     "exampleSource": "tatoeba",
     "sourceRow": 37756,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhì mìng de"
   },
   {
     "id": "suburb",
@@ -11198,7 +12097,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sʌbә:b",
     "exampleSource": "tatoeba",
     "sourceRow": 4270,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiāo qū"
   },
   {
     "id": "trunk",
@@ -11211,7 +12111,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "trʌŋk",
     "exampleSource": "tatoeba",
     "sourceRow": 30125,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shù gàn"
   },
   {
     "id": "swallow",
@@ -11224,7 +12125,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'swɒlәu",
     "exampleSource": "tatoeba",
     "sourceRow": 5462,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yàn zi"
   },
   {
     "id": "trap",
@@ -11237,7 +12139,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "træp",
     "exampleSource": "tatoeba",
     "sourceRow": 11610,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiàn jǐng"
   },
   {
     "id": "cloth",
@@ -11250,7 +12153,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "klɒ:θ. klɒθ",
     "exampleSource": "tatoeba",
     "sourceRow": 20054,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù liào"
   },
   {
     "id": "lens",
@@ -11263,7 +12167,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "lenz",
     "exampleSource": "tatoeba",
     "sourceRow": 3456,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jìng piàn"
   },
   {
     "id": "monster",
@@ -11276,7 +12181,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mɒnstә",
     "exampleSource": "tatoeba",
     "sourceRow": 34753,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "guài wù"
   },
   {
     "id": "herb",
@@ -11289,7 +12195,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hә:b",
     "exampleSource": "tatoeba",
     "sourceRow": 29394,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiāng cǎo"
   },
   {
     "id": "nightmare",
@@ -11302,7 +12209,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'naitmєә",
     "exampleSource": "tatoeba",
     "sourceRow": 3292,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "è mèng"
   },
   {
     "id": "inspection",
@@ -11315,7 +12223,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'spekʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 15525,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shì chá"
   },
   {
     "id": "forgive",
@@ -11328,7 +12237,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fә'giv",
     "exampleSource": "tatoeba",
     "sourceRow": 42474,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yuán liàng"
   },
   {
     "id": "basement",
@@ -11341,7 +12251,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'beismәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 39649,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dì xià shì"
   },
   {
     "id": "maximum",
@@ -11354,7 +12265,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mæksimәn",
     "exampleSource": "tatoeba",
     "sourceRow": 23364,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zuì dà de"
   },
   {
     "id": "temple",
@@ -11367,7 +12279,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "templ",
     "exampleSource": "tatoeba",
     "sourceRow": 7893,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "miào yǔ"
   },
   {
     "id": "random",
@@ -11380,7 +12293,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'rændәm",
     "exampleSource": "tatoeba",
     "sourceRow": 46137,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hú luàn de"
   },
   {
     "id": "hence",
@@ -11393,7 +12307,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hens",
     "exampleSource": "tatoeba",
     "sourceRow": 46451,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yīn cǐ"
   },
   {
     "id": "uncomfortable",
@@ -11406,7 +12321,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌn'kʌmfәtәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 32808,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù shū fú de"
   },
   {
     "id": "ideology",
@@ -11419,7 +12335,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".aidi'ɒlәdʒi",
     "exampleSource": "tatoeba",
     "sourceRow": 47472,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yì shí xíng tài"
   },
   {
     "id": "colony",
@@ -11432,7 +12349,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒlәni",
     "exampleSource": "tatoeba",
     "sourceRow": 33981,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhí mín dì"
   },
   {
     "id": "modify",
@@ -11445,7 +12363,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mɒdifai",
     "exampleSource": "tatoeba",
     "sourceRow": 21648,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiū shì"
   },
   {
     "id": "accommodate",
@@ -11458,7 +12377,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'kɒmәdeit",
     "exampleSource": "tatoeba",
     "sourceRow": 7972,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "róng nà"
   },
   {
     "id": "profound",
@@ -11471,7 +12391,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prә'faund",
     "exampleSource": "tatoeba",
     "sourceRow": 31065,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shēn kè de"
   },
   {
     "id": "reserve",
@@ -11484,7 +12405,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'zә:v",
     "exampleSource": "tatoeba",
     "sourceRow": 6896,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yù dìng"
   },
   {
     "id": "thumb",
@@ -11497,7 +12419,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "θʌm",
     "exampleSource": "tatoeba",
     "sourceRow": 31649,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mǔ zhǐ"
   },
   {
     "id": "horrible",
@@ -11510,7 +12433,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hɒrәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 14982,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kě pà de"
   },
   {
     "id": "compromise",
@@ -11523,7 +12447,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒmprәmaiz",
     "exampleSource": "tatoeba",
     "sourceRow": 23680,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tuǒ xié"
   },
   {
     "id": "theoretical",
@@ -11536,7 +12461,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "θiә'retikәl",
     "exampleSource": "tatoeba",
     "sourceRow": 39346,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lǐ lùn de"
   },
   {
     "id": "delicate",
@@ -11549,7 +12475,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'delikәt",
     "exampleSource": "tatoeba",
     "sourceRow": 5778,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wēi miào de"
   },
   {
     "id": "shuttle",
@@ -11562,7 +12489,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ʃʌtl",
     "exampleSource": "tatoeba",
     "sourceRow": 33210,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chuān suō"
   },
   {
     "id": "engagement",
@@ -11575,7 +12503,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'geidʒdmәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 18868,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hūn yuē"
   },
   {
     "id": "rescue",
@@ -11588,7 +12517,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'reskju:",
     "exampleSource": "tatoeba",
     "sourceRow": 37919,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yíng jiù"
   },
   {
     "id": "determination",
@@ -11601,7 +12531,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di.tә:mi'neiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 17330,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jué xīn"
   },
   {
     "id": "guidance",
@@ -11614,7 +12545,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'gaidns",
     "exampleSource": "tatoeba",
     "sourceRow": 39524,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhǐ dǎo"
   },
   {
     "id": "elevator",
@@ -11627,7 +12559,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'eliveitә",
     "exampleSource": "tatoeba",
     "sourceRow": 20405,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "diàn tī"
   },
   {
     "id": "statue",
@@ -11640,7 +12573,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'stætju",
     "exampleSource": "tatoeba",
     "sourceRow": 6111,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "diāo xiàng"
   },
   {
     "id": "pursuit",
@@ -11653,7 +12587,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'sju:t",
     "exampleSource": "tatoeba",
     "sourceRow": 28491,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhuī qiú"
   },
   {
     "id": "fist",
@@ -11666,7 +12601,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fist",
     "exampleSource": "tatoeba",
     "sourceRow": 19794,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "quán tou"
   },
   {
     "id": "destination",
@@ -11679,7 +12615,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".desti'neiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 5474,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mù biāo"
   },
   {
     "id": "feedback",
@@ -11692,7 +12629,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fi:dbæk",
     "exampleSource": "tatoeba",
     "sourceRow": 41210,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fǎn kuì"
   },
   {
     "id": "laser",
@@ -11705,7 +12643,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'leizә",
     "exampleSource": "tatoeba",
     "sourceRow": 45952,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jī guāng"
   },
   {
     "id": "practically",
@@ -11718,7 +12657,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'præktikli",
     "exampleSource": "tatoeba",
     "sourceRow": 34305,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jī hū"
   },
   {
     "id": "parade",
@@ -11731,7 +12671,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'reid",
     "exampleSource": "tatoeba",
     "sourceRow": 1919,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yuè bīng"
   },
   {
     "id": "hint",
@@ -11744,7 +12685,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hint",
     "exampleSource": "tatoeba",
     "sourceRow": 39360,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tí shì"
   },
   {
     "id": "constitution",
@@ -11757,7 +12699,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kɒnsti'tju:ʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 11357,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiàn fǎ"
   },
   {
     "id": "garbage",
@@ -11770,7 +12713,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'gɑ:bidʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 47709,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lā jī"
   },
   {
     "id": "diplomatic",
@@ -11783,7 +12727,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".diplә'mætik",
     "exampleSource": "tatoeba",
     "sourceRow": 26739,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wài jiāo de"
   },
   {
     "id": "chin",
@@ -11796,7 +12741,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "tʃin",
     "exampleSource": "tatoeba",
     "sourceRow": 19910,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xià bā"
   },
   {
     "id": "confess",
@@ -11809,7 +12755,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'fes",
     "exampleSource": "tatoeba",
     "sourceRow": 42531,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chéng rèn"
   },
   {
     "id": "gravity",
@@ -11822,7 +12769,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'græviti",
     "exampleSource": "tatoeba",
     "sourceRow": 24145,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhòng lì"
   },
   {
     "id": "prevention",
@@ -11835,7 +12783,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pri'venʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 21339,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yù fáng"
   },
   {
     "id": "intent",
@@ -11848,7 +12797,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'tent",
     "exampleSource": "tatoeba",
     "sourceRow": 26836,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yì tú"
   },
   {
     "id": "steep",
@@ -11861,7 +12811,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sti:p",
     "exampleSource": "tatoeba",
     "sourceRow": 21609,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dǒu qiào de"
   },
   {
     "id": "precious",
@@ -11874,7 +12825,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'preʃәs",
     "exampleSource": "tatoeba",
     "sourceRow": 25762,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bǎo guì de"
   },
   {
     "id": "prohibit",
@@ -11887,7 +12839,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prә'hibit",
     "exampleSource": "tatoeba",
     "sourceRow": 47149,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jìn zhǐ"
   },
   {
     "id": "dawn",
@@ -11900,7 +12853,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dɒ:n",
     "exampleSource": "tatoeba",
     "sourceRow": 13960,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lí míng"
   },
   {
     "id": "automobile",
@@ -11913,7 +12867,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒ:tәmәbi:l",
     "exampleSource": "tatoeba",
     "sourceRow": 9235,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qì chē"
   },
   {
     "id": "abstract",
@@ -11926,7 +12881,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æbstrækt",
     "exampleSource": "tatoeba",
     "sourceRow": 15489,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chōu xiàng de"
   },
   {
     "id": "cooperate",
@@ -11939,7 +12895,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәu'ɒpәreit",
     "exampleSource": "tatoeba",
     "sourceRow": 45320,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hé zuò"
   },
   {
     "id": "hardware",
@@ -11952,7 +12909,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hɑ:dwєә",
     "exampleSource": "tatoeba",
     "sourceRow": 36259,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yìng jiàn"
   },
   {
     "id": "deadline",
@@ -11965,7 +12923,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dedlain",
     "exampleSource": "tatoeba",
     "sourceRow": 40354,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zuì hòu qī xiàn"
   },
   {
     "id": "verbal",
@@ -11978,7 +12937,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vә:bl",
     "exampleSource": "tatoeba",
     "sourceRow": 47290,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kǒu tóu de"
   },
   {
     "id": "coastal",
@@ -11991,7 +12951,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kәustәl",
     "exampleSource": "tatoeba",
     "sourceRow": 34899,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yán hǎi de"
   },
   {
     "id": "ridiculous",
@@ -12004,7 +12965,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'dikjulәs",
     "exampleSource": "tatoeba",
     "sourceRow": 14128,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huāng miù de"
   },
   {
     "id": "automatic",
@@ -12017,7 +12979,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ɒ:tә'mætik",
     "exampleSource": "tatoeba",
     "sourceRow": 21627,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zì dòng de"
   },
   {
     "id": "sentiment",
@@ -12030,7 +12993,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sentimәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 39566,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qíng xù"
   },
   {
     "id": "inspiration",
@@ -12043,7 +13007,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".inspә'reiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 21620,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "líng gǎn"
   },
   {
     "id": "genius",
@@ -12056,7 +13021,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒi:njәs",
     "exampleSource": "tatoeba",
     "sourceRow": 30825,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tiān cái ； jīng shén"
   },
   {
     "id": "quest",
@@ -12069,7 +13035,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kwest",
     "exampleSource": "tatoeba",
     "sourceRow": 8596,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xún qiú"
   },
   {
     "id": "sacrifice",
@@ -12082,7 +13049,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sækrifais",
     "exampleSource": "tatoeba",
     "sourceRow": 33873,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xī shēng"
   },
   {
     "id": "accuracy",
@@ -12095,7 +13063,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ækjurәsi",
     "exampleSource": "tatoeba",
     "sourceRow": 42437,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jīng què"
   },
   {
     "id": "talented",
@@ -12108,7 +13077,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tælәntid",
     "exampleSource": "tatoeba",
     "sourceRow": 45356,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǒu cái néng de"
   },
   {
     "id": "tackle",
@@ -12121,7 +13091,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tækl",
     "exampleSource": "tatoeba",
     "sourceRow": 4045,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chǔ lǐ"
   },
   {
     "id": "dignity",
@@ -12134,7 +13105,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'digniti",
     "exampleSource": "tatoeba",
     "sourceRow": 36253,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zūn yán"
   },
   {
     "id": "barn",
@@ -12147,7 +13119,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bɑ:n",
     "exampleSource": "tatoeba",
     "sourceRow": 21413,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gǔ cāng"
   },
   {
     "id": "faint",
@@ -12160,7 +13133,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "feint",
     "exampleSource": "tatoeba",
     "sourceRow": 29448,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hūn dào"
   },
   {
     "id": "shallow",
@@ -12173,7 +13147,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ʃælәu",
     "exampleSource": "tatoeba",
     "sourceRow": 8315,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fū qiǎn de"
   },
   {
     "id": "lane",
@@ -12186,7 +13161,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "lein",
     "exampleSource": "tatoeba",
     "sourceRow": 14442,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiǎo lù"
   },
   {
     "id": "steam",
@@ -12199,7 +13175,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sti:m",
     "exampleSource": "tatoeba",
     "sourceRow": 14741,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhēng qì"
   },
   {
     "id": "agriculture",
@@ -12212,7 +13189,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ægrikʌltʃә",
     "exampleSource": "tatoeba",
     "sourceRow": 16008,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "nóng yè"
   },
   {
     "id": "jewelry",
@@ -12225,7 +13203,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒu:әlri",
     "exampleSource": "tatoeba",
     "sourceRow": 5925,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhū bǎo"
   },
   {
     "id": "sheer",
@@ -12238,7 +13217,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ʃiә",
     "exampleSource": "tatoeba",
     "sourceRow": 5798,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wán quán"
   },
   {
     "id": "immune",
@@ -12251,7 +13231,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'mju:n",
     "exampleSource": "tatoeba",
     "sourceRow": 7738,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "miǎn yì de"
   },
   {
     "id": "tender",
@@ -12264,7 +13245,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tendә",
     "exampleSource": "tatoeba",
     "sourceRow": 20196,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wēn róu de"
   },
   {
     "id": "conspiracy",
@@ -12277,7 +13259,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'spirәsi",
     "exampleSource": "tatoeba",
     "sourceRow": 45542,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yīn móu"
   },
   {
     "id": "instinct",
@@ -12290,7 +13273,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'instiŋkt",
     "exampleSource": "tatoeba",
     "sourceRow": 14488,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "běn néng"
   },
   {
     "id": "verdict",
@@ -12303,7 +13287,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vә:dikt",
     "exampleSource": "tatoeba",
     "sourceRow": 42480,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jié lùn"
   },
   {
     "id": "breeze",
@@ -12316,7 +13301,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bri:z",
     "exampleSource": "tatoeba",
     "sourceRow": 48340,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wēi fēng"
   },
   {
     "id": "royal",
@@ -12329,7 +13315,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'rɒiәl",
     "exampleSource": "tatoeba",
     "sourceRow": 6869,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huáng jiā de"
   },
   {
     "id": "panic",
@@ -12342,7 +13329,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pænik",
     "exampleSource": "tatoeba",
     "sourceRow": 6118,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kǒng huāng"
   },
   {
     "id": "cliff",
@@ -12355,7 +13343,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "klif",
     "exampleSource": "tatoeba",
     "sourceRow": 3080,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xuán yá"
   },
   {
     "id": "illusion",
@@ -12368,7 +13357,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'lju:ʒәn",
     "exampleSource": "tatoeba",
     "sourceRow": 17972,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huàn xiǎng"
   },
   {
     "id": "decorate",
@@ -12381,7 +13371,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dekәreit",
     "exampleSource": "tatoeba",
     "sourceRow": 29027,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhuāng shì"
   },
   {
     "id": "equivalent",
@@ -12394,7 +13385,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'kwivәlәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 9216,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiāng dāng de"
   },
   {
     "id": "irony",
@@ -12407,7 +13399,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'aiәrәni",
     "exampleSource": "tatoeba",
     "sourceRow": 49303,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fěng cì"
   },
   {
     "id": "rival",
@@ -12420,7 +13413,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'raivl",
     "exampleSource": "tatoeba",
     "sourceRow": 33704,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jìng zhēng de"
   },
   {
     "id": "heal",
@@ -12433,7 +13427,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hi:l",
     "exampleSource": "tatoeba",
     "sourceRow": 27063,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhì yù"
   },
   {
     "id": "consent",
@@ -12446,7 +13441,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'sent",
     "exampleSource": "tatoeba",
     "sourceRow": 6213,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tóng yì"
   },
   {
     "id": "attendance",
@@ -12459,7 +13455,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'tendәns",
     "exampleSource": "tatoeba",
     "sourceRow": 15032,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chū xí"
   },
   {
     "id": "stimulate",
@@ -12472,7 +13469,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'stimjuleit",
     "exampleSource": "tatoeba",
     "sourceRow": 10559,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cì jī"
   },
   {
     "id": "hike",
@@ -12485,7 +13483,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "haik",
     "exampleSource": "tatoeba",
     "sourceRow": 27487,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yuǎn zú"
   },
   {
     "id": "scent",
@@ -12498,7 +13497,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sent",
     "exampleSource": "tatoeba",
     "sourceRow": 49493,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiāng wèi"
   },
   {
     "id": "textbook",
@@ -12511,7 +13511,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tekstbuk",
     "exampleSource": "tatoeba",
     "sourceRow": 7975,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiào kē shū"
   },
   {
     "id": "shrink",
@@ -12524,7 +13525,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ʃriŋk",
     "exampleSource": "tatoeba",
     "sourceRow": 34399,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shōu suō"
   },
   {
     "id": "unfair",
@@ -12537,7 +13539,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌn'fєә",
     "exampleSource": "tatoeba",
     "sourceRow": 26474,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù gōng píng de"
   },
   {
     "id": "discount",
@@ -12550,7 +13553,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'diskaunt",
     "exampleSource": "tatoeba",
     "sourceRow": 36832,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhé kòu"
   },
   {
     "id": "jungle",
@@ -12563,7 +13567,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒʌŋgl",
     "exampleSource": "tatoeba",
     "sourceRow": 3530,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cóng lín"
   },
   {
     "id": "hurricane",
@@ -12576,7 +13581,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hә:rikәn",
     "exampleSource": "tatoeba",
     "sourceRow": 27878,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bào fēng ； bào fēng yǔ"
   },
   {
     "id": "classify",
@@ -12589,7 +13595,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'klæsifai",
     "exampleSource": "tatoeba",
     "sourceRow": 36433,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fēn lèi"
   },
   {
     "id": "skip",
@@ -12602,7 +13609,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "skip",
     "exampleSource": "tatoeba",
     "sourceRow": 41737,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tiào guò"
   },
   {
     "id": "ambassador",
@@ -12615,7 +13623,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "æm'bæsәdә",
     "exampleSource": "tatoeba",
     "sourceRow": 42434,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dà shǐ"
   },
   {
     "id": "sphere",
@@ -12628,7 +13637,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sfiә",
     "exampleSource": "tatoeba",
     "sourceRow": 15431,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qiú tǐ"
   },
   {
     "id": "partial",
@@ -12641,7 +13651,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pɑ:ʃәl",
     "exampleSource": "tatoeba",
     "sourceRow": 47099,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù fèn de"
   },
   {
     "id": "cure",
@@ -12654,7 +13665,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kjuә",
     "exampleSource": "tatoeba",
     "sourceRow": 27893,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhì liáo"
   },
   {
     "id": "fame",
@@ -12667,7 +13679,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "feim",
     "exampleSource": "tatoeba",
     "sourceRow": 13731,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "míng shēng"
   },
   {
     "id": "suspicious",
@@ -12680,7 +13693,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sә'spiʃәs",
     "exampleSource": "tatoeba",
     "sourceRow": 29235,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huái yí de"
   },
   {
     "id": "blink",
@@ -12693,7 +13707,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bliŋk",
     "exampleSource": "tatoeba",
     "sourceRow": 39309,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhǎ yǎn"
   },
   {
     "id": "eligible",
@@ -12706,7 +13721,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'elidʒәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 16622,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǒu zī gé dāng xuǎn de"
   },
   {
     "id": "chill",
@@ -12719,7 +13735,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "tʃil",
     "exampleSource": "tatoeba",
     "sourceRow": 48986,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hán yì"
   },
   {
     "id": "auction",
@@ -12732,7 +13749,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒ:kʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 25585,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "pāi mài"
   },
   {
     "id": "triumph",
@@ -12745,7 +13763,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'traiәmf",
     "exampleSource": "tatoeba",
     "sourceRow": 33857,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dé shèng"
   },
   {
     "id": "interval",
@@ -12758,7 +13777,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'intәvәl",
     "exampleSource": "tatoeba",
     "sourceRow": 16213,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiàn gé"
   },
   {
     "id": "calendar",
@@ -12771,7 +13791,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kælindә",
     "exampleSource": "tatoeba",
     "sourceRow": 36847,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "rì lì"
   },
   {
     "id": "brake",
@@ -12784,7 +13805,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "breik",
     "exampleSource": "tatoeba",
     "sourceRow": 4333,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shā chē"
   },
   {
     "id": "fragile",
@@ -12797,7 +13819,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'frædʒail",
     "exampleSource": "tatoeba",
     "sourceRow": 48917,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yì suì de"
   },
   {
     "id": "exhaust",
@@ -12810,7 +13833,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ig'zɒ:st",
     "exampleSource": "tatoeba",
     "sourceRow": 15247,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fèi qì"
   },
   {
     "id": "objection",
@@ -12823,7 +13847,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әb'dʒekʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 24707,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fǎn duì"
   },
   {
     "id": "blast",
@@ -12836,7 +13861,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "blæst",
     "exampleSource": "tatoeba",
     "sourceRow": 27824,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bào zhà"
   },
   {
     "id": "prevail",
@@ -12849,7 +13875,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pri'veil",
     "exampleSource": "tatoeba",
     "sourceRow": 41936,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shèng xíng"
   },
   {
     "id": "denial",
@@ -12862,7 +13889,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'naiәl",
     "exampleSource": "tatoeba",
     "sourceRow": 47472,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fǒu rèn"
   },
   {
     "id": "rental",
@@ -12875,7 +13903,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'rentl",
     "exampleSource": "tatoeba",
     "sourceRow": 48691,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zū lìn de"
   },
   {
     "id": "suitable",
@@ -12888,7 +13917,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sju:tәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 1528,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shì dàng de"
   },
   {
     "id": "mansion",
@@ -12901,7 +13931,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mænʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 48649,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhái dǐ"
   },
   {
     "id": "cottage",
@@ -12914,7 +13945,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒtidʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 1679,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiǎo wū"
   },
   {
     "id": "update",
@@ -12927,7 +13959,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ʌp'deit",
     "exampleSource": "tatoeba",
     "sourceRow": 8143,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gēng xīn"
   },
   {
     "id": "fatigue",
@@ -12940,7 +13973,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fә'ti:g",
     "exampleSource": "tatoeba",
     "sourceRow": 2349,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "pí láo"
   },
   {
     "id": "preach",
@@ -12953,7 +13987,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pri:tʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 21018,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiǎng dào"
   },
   {
     "id": "depart",
@@ -12966,7 +14001,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'pɑ:t",
     "exampleSource": "tatoeba",
     "sourceRow": 4639,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chū fā"
   },
   {
     "id": "technician",
@@ -12979,7 +14015,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "tek'niʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 45135,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jì shī"
   },
   {
     "id": "riot",
@@ -12992,7 +14029,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'raiәt",
     "exampleSource": "tatoeba",
     "sourceRow": 20857,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bào dòng"
   },
   {
     "id": "convenience",
@@ -13005,7 +14043,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'vi:njәns",
     "exampleSource": "tatoeba",
     "sourceRow": 5368,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fāng biàn"
   },
   {
     "id": "summary",
@@ -13018,7 +14057,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sʌmәri",
     "exampleSource": "tatoeba",
     "sourceRow": 3273,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gài yào"
   },
   {
     "id": "diplomat",
@@ -13031,7 +14071,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'diplәmæt",
     "exampleSource": "tatoeba",
     "sourceRow": 29709,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wài jiāo guān"
   },
   {
     "id": "trim",
@@ -13044,7 +14085,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "trim",
     "exampleSource": "tatoeba",
     "sourceRow": 48296,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiū jiǎn"
   },
   {
     "id": "warehouse",
@@ -13057,7 +14099,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'wєәhaus",
     "exampleSource": "tatoeba",
     "sourceRow": 15060,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cāng kù"
   },
   {
     "id": "accelerate",
@@ -13070,7 +14113,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әk'selәreit",
     "exampleSource": "tatoeba",
     "sourceRow": 33900,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiā sù"
   },
   {
     "id": "bronze",
@@ -13083,7 +14127,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "brɒnz",
     "exampleSource": "tatoeba",
     "sourceRow": 42339,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qīng tóng"
   },
   {
     "id": "drown",
@@ -13096,7 +14141,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "draun",
     "exampleSource": "tatoeba",
     "sourceRow": 46714,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yān sǐ"
   },
   {
     "id": "manual",
@@ -13109,7 +14155,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mænjuәl",
     "exampleSource": "tatoeba",
     "sourceRow": 19677,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shǒu cè"
   },
   {
     "id": "betray",
@@ -13122,7 +14169,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bi'trei",
     "exampleSource": "tatoeba",
     "sourceRow": 45967,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chū mài"
   },
   {
     "id": "bureaucracy",
@@ -13135,7 +14183,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bjuә'rɒkrәsi",
     "exampleSource": "tatoeba",
     "sourceRow": 45855,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "guān liáo"
   },
   {
     "id": "beneficial",
@@ -13148,7 +14197,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".beni'fiʃәl",
     "exampleSource": "tatoeba",
     "sourceRow": 1863,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǒu yì de"
   },
   {
     "id": "editorial",
@@ -13161,7 +14211,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".edi'tɒ:riәl",
     "exampleSource": "tatoeba",
     "sourceRow": 4389,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "biān jí de"
   },
   {
     "id": "surrender",
@@ -13174,7 +14225,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sә'rendә",
     "exampleSource": "tatoeba",
     "sourceRow": 41633,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tóu xiáng"
   },
   {
     "id": "scar",
@@ -13187,7 +14239,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "skɑ:",
     "exampleSource": "tatoeba",
     "sourceRow": 42166,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bā hén"
   },
   {
     "id": "clarify",
@@ -13200,7 +14253,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'klærifai",
     "exampleSource": "tatoeba",
     "sourceRow": 8288,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chǎn míng"
   },
   {
     "id": "sketch",
@@ -13213,7 +14267,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sketʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 23385,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cǎo tú"
   },
   {
     "id": "strive",
@@ -13226,7 +14281,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "straiv",
     "exampleSource": "tatoeba",
     "sourceRow": 28314,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "nǔ lì"
   },
   {
     "id": "neglect",
@@ -13239,7 +14295,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ni'glekt",
     "exampleSource": "tatoeba",
     "sourceRow": 32750,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hū shì"
   },
   {
     "id": "dull",
@@ -13252,7 +14309,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dʌl",
     "exampleSource": "tatoeba",
     "sourceRow": 47263,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wú qù de"
   },
   {
     "id": "morality",
@@ -13265,7 +14323,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mә'ræliti",
     "exampleSource": "tatoeba",
     "sourceRow": 31163,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dào dé"
   },
   {
     "id": "fancy",
@@ -13278,7 +14337,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fænsi",
     "exampleSource": "tatoeba",
     "sourceRow": 21439,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huàn xiǎng"
   },
   {
     "id": "junk",
@@ -13291,7 +14351,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dʒʌŋk",
     "exampleSource": "tatoeba",
     "sourceRow": 11371,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lā jī"
   },
   {
     "id": "manufacture",
@@ -13304,7 +14365,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".mænju'fæktʃә",
     "exampleSource": "tatoeba",
     "sourceRow": 995,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhì zào"
   },
   {
     "id": "breakdown",
@@ -13317,7 +14379,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'breikdaun",
     "exampleSource": "tatoeba",
     "sourceRow": 38916,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gù zhàng"
   },
   {
     "id": "conceal",
@@ -13330,7 +14393,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'si:l",
     "exampleSource": "tatoeba",
     "sourceRow": 5872,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǐn mán"
   },
   {
     "id": "destiny",
@@ -13343,7 +14407,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'destini",
     "exampleSource": "tatoeba",
     "sourceRow": 14646,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mìng yùn"
   },
   {
     "id": "solo",
@@ -13356,7 +14421,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sәulәu",
     "exampleSource": "tatoeba",
     "sourceRow": 30066,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dú zòu"
   },
   {
     "id": "parliament",
@@ -13369,7 +14435,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pɑ:lәmәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 47409,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "guó huì"
   },
   {
     "id": "snack",
@@ -13382,7 +14449,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "snæk",
     "exampleSource": "tatoeba",
     "sourceRow": 38374,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "diǎn xīn"
   },
   {
     "id": "pledge",
@@ -13395,7 +14463,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pledʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 24932,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bǎo zhèng"
   },
   {
     "id": "appetite",
@@ -13408,7 +14477,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æpitait",
     "exampleSource": "tatoeba",
     "sourceRow": 5489,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shí yù"
   },
   {
     "id": "bleed",
@@ -13421,7 +14491,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bli:d",
     "exampleSource": "tatoeba",
     "sourceRow": 16546,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "liú xiě"
   },
   {
     "id": "prejudice",
@@ -13434,7 +14505,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'predʒudis",
     "exampleSource": "tatoeba",
     "sourceRow": 2121,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "piān jiàn"
   },
   {
     "id": "certificate",
@@ -13447,7 +14519,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sә'tifikeit",
     "exampleSource": "tatoeba",
     "sourceRow": 20466,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhèng míng shū"
   },
   {
     "id": "diameter",
@@ -13460,7 +14533,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dai'æmitә",
     "exampleSource": "tatoeba",
     "sourceRow": 26520,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhí jìng"
   },
   {
     "id": "acute",
@@ -13473,7 +14547,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'kju:t",
     "exampleSource": "tatoeba",
     "sourceRow": 27395,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jí xìng de"
   },
   {
     "id": "juvenile",
@@ -13486,7 +14561,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒu:vinail",
     "exampleSource": "tatoeba",
     "sourceRow": 32499,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shào nián"
   },
   {
     "id": "halt",
@@ -13499,7 +14575,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hɒ:lt",
     "exampleSource": "tatoeba",
     "sourceRow": 21508,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tíng zhǐ"
   },
   {
     "id": "comic",
@@ -13512,7 +14589,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒmik",
     "exampleSource": "tatoeba",
     "sourceRow": 9348,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xǐ jù yǎn yuán"
   },
   {
     "id": "revenge",
@@ -13525,7 +14603,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'vendʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 39299,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fù chóu"
   },
   {
     "id": "cane",
@@ -13538,7 +14617,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kein",
     "exampleSource": "tatoeba",
     "sourceRow": 47469,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "téng tiáo"
   },
   {
     "id": "slim",
@@ -13551,7 +14631,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "slim",
     "exampleSource": "tatoeba",
     "sourceRow": 40199,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "miáo tiáo de"
   },
   {
     "id": "avenue",
@@ -13564,7 +14645,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ævәnju:",
     "exampleSource": "tatoeba",
     "sourceRow": 43732,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dà jiē"
   },
   {
     "id": "choir",
@@ -13577,7 +14659,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kwaiә",
     "exampleSource": "tatoeba",
     "sourceRow": 47728,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hé chàng"
   },
   {
     "id": "theft",
@@ -13590,7 +14673,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "θeft",
     "exampleSource": "tatoeba",
     "sourceRow": 10441,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dào qiè"
   },
   {
     "id": "convenient",
@@ -13603,7 +14687,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'vi:njәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 26022,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fāng biàn de"
   },
   {
     "id": "registration",
@@ -13616,7 +14701,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".redʒi'streiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 15700,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhù cè"
   },
   {
     "id": "canal",
@@ -13629,7 +14715,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'næl",
     "exampleSource": "tatoeba",
     "sourceRow": 28424,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yùn hé"
   },
   {
     "id": "optimism",
@@ -13642,7 +14729,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒptimizm",
     "exampleSource": "tatoeba",
     "sourceRow": 27190,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lè guān zhǔ yì ； lè guān"
   },
   {
     "id": "abundance",
@@ -13655,7 +14743,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'bʌndәns",
     "exampleSource": "tatoeba",
     "sourceRow": 30633,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dà liàng"
   },
   {
     "id": "despair",
@@ -13668,7 +14757,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'spєә",
     "exampleSource": "tatoeba",
     "sourceRow": 48920,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jué wàng"
   },
   {
     "id": "contradiction",
@@ -13681,7 +14771,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kɒntrә'dikʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 37147,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "máo dùn"
   },
   {
     "id": "gorgeous",
@@ -13694,7 +14785,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'gɒ:dʒәs",
     "exampleSource": "tatoeba",
     "sourceRow": 44604,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huá lì de"
   },
   {
     "id": "semester",
@@ -13707,7 +14799,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "si'mestә",
     "exampleSource": "tatoeba",
     "sourceRow": 45033,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xué qī"
   },
   {
     "id": "precision",
@@ -13720,7 +14813,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pri'siʒәn",
     "exampleSource": "tatoeba",
     "sourceRow": 36302,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jīng què"
   },
   {
     "id": "ambulance",
@@ -13733,7 +14827,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æmbjulәns",
     "exampleSource": "tatoeba",
     "sourceRow": 24499,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiù hù chē"
   },
   {
     "id": "peculiar",
@@ -13746,7 +14841,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pi'kju:ljә",
     "exampleSource": "tatoeba",
     "sourceRow": 8084,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tè shū de"
   },
   {
     "id": "enthusiastic",
@@ -13759,7 +14855,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in.θju:zi'æstik",
     "exampleSource": "tatoeba",
     "sourceRow": 7590,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "rè xīn de"
   },
   {
     "id": "visa",
@@ -13772,7 +14869,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vi:zә",
     "exampleSource": "tatoeba",
     "sourceRow": 3709,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qiān zhèng"
   },
   {
     "id": "undoubtedly",
@@ -13785,7 +14883,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ʌn'dajtidli",
     "exampleSource": "tatoeba",
     "sourceRow": 41652,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wú yí"
   },
   {
     "id": "omit",
@@ -13798,7 +14897,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әu'mit",
     "exampleSource": "tatoeba",
     "sourceRow": 32054,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yí lòu"
   },
   {
     "id": "vocabulary",
@@ -13811,7 +14911,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "vә'kæbjulәri",
     "exampleSource": "tatoeba",
     "sourceRow": 5980,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cí huì"
   },
   {
     "id": "utterly",
@@ -13824,7 +14925,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ʌtәli",
     "exampleSource": "tatoeba",
     "sourceRow": 6367,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jué duì"
   },
   {
     "id": "microphone",
@@ -13837,7 +14939,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'maikrәfәun",
     "exampleSource": "tatoeba",
     "sourceRow": 36,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mài kè fēng"
   },
   {
     "id": "meadow",
@@ -13850,7 +14953,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'medәu",
     "exampleSource": "tatoeba",
     "sourceRow": 21361,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cǎo dì"
   },
   {
     "id": "plug",
@@ -13863,7 +14967,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "plʌg",
     "exampleSource": "tatoeba",
     "sourceRow": 46896,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chā tóu"
   },
   {
     "id": "suitcase",
@@ -13876,7 +14981,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sju:tkeis",
     "exampleSource": "tatoeba",
     "sourceRow": 28337,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shǒu tí xiāng"
   },
   {
     "id": "triangle",
@@ -13889,7 +14995,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'traiæŋgl",
     "exampleSource": "tatoeba",
     "sourceRow": 24501,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "sān jiǎo xíng"
   },
   {
     "id": "eternal",
@@ -13902,7 +15009,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'tә:nl",
     "exampleSource": "tatoeba",
     "sourceRow": 23338,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǒng yuǎn de"
   },
   {
     "id": "clan",
@@ -13915,7 +15023,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "klæn",
     "exampleSource": "tatoeba",
     "sourceRow": 43157,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zōng zú"
   },
   {
     "id": "ashamed",
@@ -13928,7 +15037,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'ʃeimd",
     "exampleSource": "tatoeba",
     "sourceRow": 16734,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiū chǐ de"
   },
   {
     "id": "useless",
@@ -13941,7 +15051,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ju:slis",
     "exampleSource": "tatoeba",
     "sourceRow": 26623,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wú yòng de"
   },
   {
     "id": "thoughtful",
@@ -13954,7 +15065,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'θɒ:tful",
     "exampleSource": "tatoeba",
     "sourceRow": 17105,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tǐ tiē de"
   },
   {
     "id": "passive",
@@ -13967,7 +15079,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pæsiv",
     "exampleSource": "tatoeba",
     "sourceRow": 49450,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bèi dòng de"
   },
   {
     "id": "embassy",
@@ -13980,7 +15093,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'embәsi",
     "exampleSource": "tatoeba",
     "sourceRow": 24175,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dà shǐ guǎn"
   },
   {
     "id": "injection",
@@ -13993,7 +15107,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'dʒekʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 15577,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhù shè"
   },
   {
     "id": "excess",
@@ -14006,7 +15121,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'ses",
     "exampleSource": "tatoeba",
     "sourceRow": 6605,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chāo guò"
   },
   {
     "id": "antique",
@@ -14019,7 +15135,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "æn'ti:k",
     "exampleSource": "tatoeba",
     "sourceRow": 17577,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gǔ dǒng"
   },
   {
     "id": "intersection",
@@ -14032,7 +15149,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".intә'sekʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 17648,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shí zì lù kǒu"
   },
   {
     "id": "resignation",
@@ -14045,7 +15163,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".rezig'neiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 2539,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cí zhí"
   },
   {
     "id": "miserable",
@@ -14058,7 +15177,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mizәrәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 8471,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tòng kǔ de"
   },
   {
     "id": "erase",
@@ -14071,7 +15191,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'reis",
     "exampleSource": "tatoeba",
     "sourceRow": 494,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mǒ qù"
   },
   {
     "id": "shave",
@@ -14084,7 +15205,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ʃeiv",
     "exampleSource": "tatoeba",
     "sourceRow": 14353,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "guā hú zi"
   },
   {
     "id": "ignorance",
@@ -14097,7 +15219,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ignәrәns",
     "exampleSource": "tatoeba",
     "sourceRow": 589,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wú zhī"
   },
   {
     "id": "amateur",
@@ -14110,7 +15233,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æmәtә",
     "exampleSource": "tatoeba",
     "sourceRow": 44147,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wài háng"
   },
   {
     "id": "primitive",
@@ -14123,7 +15247,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'primitiv",
     "exampleSource": "tatoeba",
     "sourceRow": 14285,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yuán shǐ de"
   },
   {
     "id": "worship",
@@ -14136,7 +15261,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'wә:ʃip",
     "exampleSource": "tatoeba",
     "sourceRow": 28113,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lǐ bài"
   },
   {
     "id": "harmful",
@@ -14149,7 +15275,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hɑ:mful",
     "exampleSource": "tatoeba",
     "sourceRow": 37598,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǒu hài de"
   },
   {
     "id": "coincidence",
@@ -14162,7 +15289,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәu'insidәns",
     "exampleSource": "tatoeba",
     "sourceRow": 39009,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qiǎo hé"
   },
   {
     "id": "repetition",
@@ -14175,7 +15303,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".repi'tiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 27639,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chóng fù"
   },
   {
     "id": "propaganda",
@@ -14188,7 +15317,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".prɒpә'gændә",
     "exampleSource": "tatoeba",
     "sourceRow": 30012,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xuān chuán"
   },
   {
     "id": "parallel",
@@ -14201,7 +15331,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pærәlel",
     "exampleSource": "tatoeba",
     "sourceRow": 15623,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "píng xíng"
   },
   {
     "id": "obscure",
@@ -14214,7 +15345,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әb'skjuә",
     "exampleSource": "tatoeba",
     "sourceRow": 6018,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mó hú de"
   },
   {
     "id": "recreation",
@@ -14227,7 +15359,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".rekri'eiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 45591,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiū xī"
   },
   {
     "id": "integral",
@@ -14240,7 +15373,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'intigrәl",
     "exampleSource": "tatoeba",
     "sourceRow": 49645,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jī fēn"
   },
   {
     "id": "absurd",
@@ -14253,7 +15387,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әb'sә:d",
     "exampleSource": "tatoeba",
     "sourceRow": 1479,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huāng miù de"
   },
   {
     "id": "temptation",
@@ -14266,7 +15401,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "temp'teiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 5466,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yòu huò"
   },
   {
     "id": "sway",
@@ -14279,7 +15415,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "swei",
     "exampleSource": "tatoeba",
     "sourceRow": 35946,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yáo dòng"
   },
   {
     "id": "refusal",
@@ -14292,7 +15429,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'fju:zl",
     "exampleSource": "tatoeba",
     "sourceRow": 13705,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jù jué"
   },
   {
     "id": "defect",
@@ -14305,7 +15443,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'fekt",
     "exampleSource": "tatoeba",
     "sourceRow": 88,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "quē diǎn"
   },
   {
     "id": "subjective",
@@ -14318,7 +15457,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sәb'dʒektiv",
     "exampleSource": "tatoeba",
     "sourceRow": 16553,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhǔ guān de"
   },
   {
     "id": "humble",
@@ -14331,7 +15471,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hʌmbl",
     "exampleSource": "tatoeba",
     "sourceRow": 6421,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qiān xùn de"
   },
   {
     "id": "thesis",
@@ -14344,7 +15485,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'θi:sis",
     "exampleSource": "tatoeba",
     "sourceRow": 39896,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lùn wén"
   },
   {
     "id": "audio",
@@ -14357,7 +15499,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒ:diou",
     "exampleSource": "tatoeba",
     "sourceRow": 26828,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yīn pín de"
   },
   {
     "id": "lottery",
@@ -14370,7 +15513,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'lɒtәri",
     "exampleSource": "tatoeba",
     "sourceRow": 23976,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cǎi piào"
   },
   {
     "id": "hedge",
@@ -14383,7 +15527,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hedʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 15989,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shù lí"
   },
   {
     "id": "lease",
@@ -14396,7 +15541,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "li:s",
     "exampleSource": "tatoeba",
     "sourceRow": 37571,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zū yuē"
   },
   {
     "id": "circus",
@@ -14409,7 +15555,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sә:kәs",
     "exampleSource": "tatoeba",
     "sourceRow": 45980,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mǎ xì tuán ； mǎ xì"
   },
   {
     "id": "hail",
@@ -14422,7 +15569,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "heil",
     "exampleSource": "tatoeba",
     "sourceRow": 21558,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bīng báo"
   },
   {
     "id": "notify",
@@ -14435,7 +15583,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'nәutifai",
     "exampleSource": "tatoeba",
     "sourceRow": 20467,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tōng zhī"
   },
   {
     "id": "arctic",
@@ -14448,7 +15597,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɑ:ktik",
     "exampleSource": "tatoeba",
     "sourceRow": 10132,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "běi jí de"
   },
   {
     "id": "turnover",
@@ -14461,7 +15611,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tә:n.әuvә",
     "exampleSource": "tatoeba",
     "sourceRow": 37149,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yíng yè é"
   },
   {
     "id": "sensible",
@@ -14474,7 +15625,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sensәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 9853,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "míng zhì de"
   },
   {
     "id": "decoration",
@@ -14487,7 +15639,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".dekә'reiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 28656,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhuāng shì"
   },
   {
     "id": "clash",
@@ -14500,7 +15653,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "klæʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 43290,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chōng tū"
   },
   {
     "id": "mammal",
@@ -14513,7 +15667,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mæmәl",
     "exampleSource": "tatoeba",
     "sourceRow": 10447,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bǔ rǔ dòng wù"
   },
   {
     "id": "imitate",
@@ -14526,7 +15681,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'imiteit",
     "exampleSource": "tatoeba",
     "sourceRow": 11339,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mó fǎng"
   },
   {
     "id": "notorious",
@@ -14539,7 +15695,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "nәu'tɒ:riәs",
     "exampleSource": "tatoeba",
     "sourceRow": 46808,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chòu míng zhāo zhù de"
   },
   {
     "id": "stereo",
@@ -14552,7 +15709,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'stiәriәu",
     "exampleSource": "tatoeba",
     "sourceRow": 6782,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lì tǐ de"
   },
   {
     "id": "toast",
@@ -14565,7 +15723,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "tәust",
     "exampleSource": "tatoeba",
     "sourceRow": 45941,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gān bēi"
   },
   {
     "id": "deprive",
@@ -14578,7 +15737,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'praiv",
     "exampleSource": "tatoeba",
     "sourceRow": 7641,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bō duó"
   },
   {
     "id": "flourish",
@@ -14591,7 +15751,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'flʌriʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 3974,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fán róng"
   },
   {
     "id": "shiver",
@@ -14604,7 +15765,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ʃivә",
     "exampleSource": "tatoeba",
     "sourceRow": 10271,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chàn dǒu"
   },
   {
     "id": "occurrence",
@@ -14617,7 +15779,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'kʌrәns",
     "exampleSource": "tatoeba",
     "sourceRow": 7260,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fā shēng"
   },
   {
     "id": "marital",
@@ -14630,7 +15793,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mæritәl",
     "exampleSource": "tatoeba",
     "sourceRow": 41857,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hūn yīn de"
   },
   {
     "id": "leisure",
@@ -14643,7 +15807,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'li:ʒә",
     "exampleSource": "tatoeba",
     "sourceRow": 12882,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xián xiá"
   },
   {
     "id": "exaggerate",
@@ -14656,7 +15821,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ig'zædʒәreit",
     "exampleSource": "tatoeba",
     "sourceRow": 19100,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kuā zhāng"
   },
   {
     "id": "volcano",
@@ -14669,7 +15835,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "vɒl'keinәu",
     "exampleSource": "tatoeba",
     "sourceRow": 3330,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huǒ shān"
   },
   {
     "id": "jealous",
@@ -14682,7 +15849,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒelәs",
     "exampleSource": "tatoeba",
     "sourceRow": 33118,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiàn mù de"
   },
   {
     "id": "pasture",
@@ -14695,7 +15863,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pæstʃә",
     "exampleSource": "tatoeba",
     "sourceRow": 25933,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mù chǎng"
   },
   {
     "id": "deliberate",
@@ -14708,7 +15877,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'libәrәt",
     "exampleSource": "tatoeba",
     "sourceRow": 35896,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shēn sī shú lǜ de"
   },
   {
     "id": "oath",
@@ -14721,7 +15891,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әuθ",
     "exampleSource": "tatoeba",
     "sourceRow": 48078,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shì yán"
   },
   {
     "id": "cement",
@@ -14734,7 +15905,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "si'ment",
     "exampleSource": "tatoeba",
     "sourceRow": 6701,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shuǐ ní"
   },
   {
     "id": "underestimate",
@@ -14747,7 +15919,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌndәr'estimeit",
     "exampleSource": "tatoeba",
     "sourceRow": 37547,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dī gū"
   },
   {
     "id": "ecology",
@@ -14760,7 +15933,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i:'kɒlәdʒi",
     "exampleSource": "tatoeba",
     "sourceRow": 19055,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shēng tài xué"
   },
   {
     "id": "temper",
@@ -14773,7 +15947,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tempә",
     "exampleSource": "tatoeba",
     "sourceRow": 29065,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "pí qì"
   },
   {
     "id": "spur",
@@ -14786,7 +15961,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "spә:",
     "exampleSource": "tatoeba",
     "sourceRow": 1700,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cì jī"
   },
   {
     "id": "whistle",
@@ -14799,7 +15975,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hwisl",
     "exampleSource": "tatoeba",
     "sourceRow": 40391,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kǒu shào"
   },
   {
     "id": "astronomy",
@@ -14812,7 +15989,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'strɒnәmi",
     "exampleSource": "tatoeba",
     "sourceRow": 18307,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tiān wén xué"
   },
   {
     "id": "receipt",
@@ -14825,7 +16003,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'si:t",
     "exampleSource": "tatoeba",
     "sourceRow": 21484,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shōu jù"
   },
   {
     "id": "uneasy",
@@ -14838,7 +16017,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌn'i:zi",
     "exampleSource": "tatoeba",
     "sourceRow": 27111,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù zì zài de"
   },
   {
     "id": "tractor",
@@ -14851,7 +16031,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'træktә",
     "exampleSource": "tatoeba",
     "sourceRow": 44176,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tuō lā jī"
   },
   {
     "id": "bloom",
@@ -14864,7 +16045,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "blu:m",
     "exampleSource": "tatoeba",
     "sourceRow": 29026,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kāi huā"
   },
   {
     "id": "perfume",
@@ -14877,7 +16059,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pә:fju:m",
     "exampleSource": "tatoeba",
     "sourceRow": 39188,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiāng shuǐ"
   },
   {
     "id": "oval",
@@ -14890,7 +16073,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'әuvәl",
     "exampleSource": "tatoeba",
     "sourceRow": 41813,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tuǒ yuán xíng"
   },
   {
     "id": "rigorous",
@@ -14903,7 +16087,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'rigәrәs",
     "exampleSource": "tatoeba",
     "sourceRow": 45364,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yán gé de"
   },
   {
     "id": "anthropology",
@@ -14916,7 +16101,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ænθrә'pɒlәdʒi",
     "exampleSource": "tatoeba",
     "sourceRow": 30272,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "rén lèi xué"
   },
   {
     "id": "conquer",
@@ -14929,7 +16115,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒŋkә",
     "exampleSource": "tatoeba",
     "sourceRow": 29189,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhēng fú"
   },
   {
     "id": "width",
@@ -14942,7 +16129,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "widθ",
     "exampleSource": "tatoeba",
     "sourceRow": 26509,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kuān dù"
   },
   {
     "id": "barbecue",
@@ -14955,7 +16143,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bɑ:bikju:",
     "exampleSource": "tatoeba",
     "sourceRow": 2179,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kǎo ròu ； shāo kǎo"
   },
   {
     "id": "polar",
@@ -14968,7 +16157,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pәulә",
     "exampleSource": "tatoeba",
     "sourceRow": 28412,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jí dì de"
   },
   {
     "id": "paradise",
@@ -14981,7 +16171,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pærәdais",
     "exampleSource": "tatoeba",
     "sourceRow": 49196,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tiān táng"
   },
   {
     "id": "mimic",
@@ -14994,7 +16185,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mimik",
     "exampleSource": "tatoeba",
     "sourceRow": 8878,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mó fǎng de"
   },
   {
     "id": "atmospheric",
@@ -15007,7 +16199,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ætmәs'ferik",
     "exampleSource": "tatoeba",
     "sourceRow": 46677,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dà qì de"
   },
   {
     "id": "dwarf",
@@ -15020,7 +16213,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dwɒ:f",
     "exampleSource": "tatoeba",
     "sourceRow": 34885,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhū rú"
   },
   {
     "id": "surpass",
@@ -15033,7 +16227,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sә'pɑ:s",
     "exampleSource": "tatoeba",
     "sourceRow": 30297,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chāo yuè"
   },
   {
     "id": "infinite",
@@ -15046,7 +16241,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'infinit",
     "exampleSource": "tatoeba",
     "sourceRow": 7576,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wú xiàn"
   },
   {
     "id": "gossip",
@@ -15059,7 +16255,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'gɒsip",
     "exampleSource": "tatoeba",
     "sourceRow": 24645,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xián liáo ； liú yán"
   },
   {
     "id": "evacuate",
@@ -15072,7 +16269,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'vækjueit",
     "exampleSource": "tatoeba",
     "sourceRow": 27592,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shū sàn"
   },
   {
     "id": "excel",
@@ -15085,7 +16283,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'sel",
     "exampleSource": "tatoeba",
     "sourceRow": 45640,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shàn cháng"
   },
   {
     "id": "gratitude",
@@ -15098,7 +16297,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'grætitju:d",
     "exampleSource": "tatoeba",
     "sourceRow": 19159,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gǎn jī zhī qíng"
   },
   {
     "id": "emperor",
@@ -15111,7 +16311,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'empәrә",
     "exampleSource": "tatoeba",
     "sourceRow": 27984,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huáng dì"
   },
   {
     "id": "cylinder",
@@ -15124,7 +16325,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'silindә",
     "exampleSource": "tatoeba",
     "sourceRow": 34377,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qì gāng"
   },
   {
     "id": "cafeteria",
@@ -15137,7 +16339,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kæfi'tiәriә",
     "exampleSource": "tatoeba",
     "sourceRow": 8609,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zì zhù cān tīng"
   },
   {
     "id": "energetic",
@@ -15150,7 +16353,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".enә'dʒetik",
     "exampleSource": "tatoeba",
     "sourceRow": 40722,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jī jí de"
   },
   {
     "id": "arouse",
@@ -15163,7 +16367,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'rauz",
     "exampleSource": "tatoeba",
     "sourceRow": 26477,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǐn qǐ"
   },
   {
     "id": "wreck",
@@ -15176,7 +16381,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "rek",
     "exampleSource": "tatoeba",
     "sourceRow": 6795,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cán hái"
   },
   {
     "id": "masculine",
@@ -15189,7 +16395,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mæskjulin",
     "exampleSource": "tatoeba",
     "sourceRow": 39969,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "nán xìng"
   },
   {
     "id": "allegiance",
@@ -15202,7 +16409,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'li:dʒәns",
     "exampleSource": "tatoeba",
     "sourceRow": 2748,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiào zhōng"
   },
   {
     "id": "orchard",
@@ -15215,7 +16423,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒ:tʃәd",
     "exampleSource": "tatoeba",
     "sourceRow": 12161,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "guǒ yuán"
   },
   {
     "id": "starve",
@@ -15228,7 +16437,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "stɑ:v",
     "exampleSource": "tatoeba",
     "sourceRow": 15748,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "è sǐ"
   },
   {
     "id": "sewer",
@@ -15241,7 +16451,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'su:ә",
     "exampleSource": "tatoeba",
     "sourceRow": 49334,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xià shuǐ dào"
   },
   {
     "id": "fertile",
@@ -15254,7 +16465,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fә:tail",
     "exampleSource": "tatoeba",
     "sourceRow": 8243,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "féi wò de"
   },
   {
     "id": "timely",
@@ -15267,7 +16479,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'taili",
     "exampleSource": "tatoeba",
     "sourceRow": 45171,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shì shí de"
   },
   {
     "id": "layout",
@@ -15280,7 +16493,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'leiaut",
     "exampleSource": "tatoeba",
     "sourceRow": 441,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù jú"
   },
   {
     "id": "capsule",
@@ -15293,7 +16507,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kæpsju:l",
     "exampleSource": "tatoeba",
     "sourceRow": 10286,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiāo náng"
   },
   {
     "id": "mock",
@@ -15306,7 +16521,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mɒk",
     "exampleSource": "tatoeba",
     "sourceRow": 21074,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mó nǐ de"
   },
   {
     "id": "stubborn",
@@ -15319,7 +16535,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'stʌbәn",
     "exampleSource": "tatoeba",
     "sourceRow": 47958,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wán gù de"
   },
   {
     "id": "deteriorate",
@@ -15332,7 +16549,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'tiәriәreit",
     "exampleSource": "tatoeba",
     "sourceRow": 45830,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "è huà"
   },
   {
     "id": "reap",
@@ -15345,7 +16563,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri:p",
     "exampleSource": "tatoeba",
     "sourceRow": 30135,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shōu huò"
   },
   {
     "id": "arrogant",
@@ -15358,7 +16577,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ærәɡәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 9318,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zì dà de"
   },
   {
     "id": "dubious",
@@ -15371,7 +16591,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dju:biәs",
     "exampleSource": "tatoeba",
     "sourceRow": 46008,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kě yí de"
   },
   {
     "id": "eclipse",
@@ -15384,7 +16605,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'klips",
     "exampleSource": "tatoeba",
     "sourceRow": 10485,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yuè shí"
   },
   {
     "id": "briefcase",
@@ -15397,7 +16619,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bri:fkeis",
     "exampleSource": "tatoeba",
     "sourceRow": 4572,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gōng shì bāo"
   },
   {
     "id": "brink",
@@ -15410,7 +16633,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "briŋk",
     "exampleSource": "tatoeba",
     "sourceRow": 33802,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "biān yuán"
   },
   {
     "id": "symphony",
@@ -15423,7 +16647,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'simfәni",
     "exampleSource": "tatoeba",
     "sourceRow": 3420,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiāo xiǎng yuè"
   },
   {
     "id": "cellar",
@@ -15436,7 +16661,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'selә",
     "exampleSource": "tatoeba",
     "sourceRow": 46975,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dì xià shì"
   },
   {
     "id": "allowance",
@@ -15449,7 +16675,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'lauәns",
     "exampleSource": "tatoeba",
     "sourceRow": 27347,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "líng yòng qián"
   },
   {
     "id": "masterpiece",
@@ -15462,7 +16689,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mɑ:stәpi:s",
     "exampleSource": "tatoeba",
     "sourceRow": 23630,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jié zuò"
   },
   {
     "id": "ordeal",
@@ -15475,7 +16703,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ɒ:'di:l",
     "exampleSource": "tatoeba",
     "sourceRow": 42310,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yán kù kǎo yàn"
   },
   {
     "id": "slippery",
@@ -15488,7 +16717,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'slipәri",
     "exampleSource": "tatoeba",
     "sourceRow": 27880,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "guāng huá de"
   },
   {
     "id": "splendid",
@@ -15501,7 +16731,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'spendid",
     "exampleSource": "tatoeba",
     "sourceRow": 30123,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "càn làn de"
   },
   {
     "id": "foul",
@@ -15514,7 +16745,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "faul",
     "exampleSource": "tatoeba",
     "sourceRow": 22475,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "è chòu de"
   },
   {
     "id": "parcel",
@@ -15527,7 +16759,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pɑ:sl",
     "exampleSource": "tatoeba",
     "sourceRow": 8181,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bāo guǒ"
   },
   {
     "id": "nationality",
@@ -15540,7 +16773,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".næʃә'nælәti",
     "exampleSource": "tatoeba",
     "sourceRow": 9354,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "guó jí"
   },
   {
     "id": "compute",
@@ -15553,7 +16787,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәm'pju:t",
     "exampleSource": "tatoeba",
     "sourceRow": 2422,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jì suàn"
   },
   {
     "id": "coarse",
@@ -15566,7 +16801,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kɒ:s",
     "exampleSource": "tatoeba",
     "sourceRow": 19141,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cū cāo de"
   },
   {
     "id": "aviation",
@@ -15579,7 +16815,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".eivi'eiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 43293,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "háng kōng"
   },
   {
     "id": "imaginative",
@@ -15592,7 +16829,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'mædʒinәtiv",
     "exampleSource": "tatoeba",
     "sourceRow": 18198,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiǎng xiàng de"
   },
   {
     "id": "compass",
@@ -15605,7 +16843,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kʌmpәs",
     "exampleSource": "tatoeba",
     "sourceRow": 14106,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhǐ nán zhēn"
   },
   {
     "id": "institute",
@@ -15618,7 +16857,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'institju:t",
     "exampleSource": "tatoeba",
     "sourceRow": 34309,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xué yuàn"
   },
   {
     "id": "yearn",
@@ -15631,7 +16871,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "jә:n",
     "exampleSource": "tatoeba",
     "sourceRow": 42783,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kě wàng"
   },
   {
     "id": "sociology",
@@ -15644,7 +16885,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".sәusi'ɒlәdʒi",
     "exampleSource": "tatoeba",
     "sourceRow": 4348,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shè huì xué"
   },
   {
     "id": "unify",
@@ -15657,7 +16899,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ju:nifai",
     "exampleSource": "tatoeba",
     "sourceRow": 18620,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tǒng yī"
   },
   {
     "id": "spiral",
@@ -15670,7 +16913,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'spairәl",
     "exampleSource": "tatoeba",
     "sourceRow": 34422,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "luó xuán xíng de"
   },
   {
     "id": "flirt",
@@ -15683,7 +16927,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "flә:t",
     "exampleSource": "tatoeba",
     "sourceRow": 45270,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tiáo qíng"
   },
   {
     "id": "delete",
@@ -15696,7 +16941,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'li:t",
     "exampleSource": "tatoeba",
     "sourceRow": 43587,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shān chú"
   },
   {
     "id": "carpenter",
@@ -15709,7 +16955,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɑ:pintә",
     "exampleSource": "tatoeba",
     "sourceRow": 39223,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mù jiàng"
   },
   {
     "id": "souvenir",
@@ -15722,7 +16969,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".su:vә'niә",
     "exampleSource": "tatoeba",
     "sourceRow": 261,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jì niàn pǐn"
   },
   {
     "id": "nostalgia",
@@ -15735,7 +16983,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "nɒs'tældʒiә",
     "exampleSource": "tatoeba",
     "sourceRow": 34967,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiāng chóu"
   },
   {
     "id": "thunder",
@@ -15748,7 +16997,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'θʌndә",
     "exampleSource": "tatoeba",
     "sourceRow": 21394,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "léi shēng"
   },
   {
     "id": "waterfall",
@@ -15761,7 +17011,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'wɒtәfɒ:l",
     "exampleSource": "tatoeba",
     "sourceRow": 22184,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "pù bù"
   },
   {
     "id": "patriotism",
@@ -15774,7 +17025,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'peitriәtizm",
     "exampleSource": "tatoeba",
     "sourceRow": 26851,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "ài guó zhǔ yì"
   },
   {
     "id": "idle",
@@ -15787,7 +17039,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'aidl",
     "exampleSource": "tatoeba",
     "sourceRow": 7710,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "làng fèi"
   },
   {
     "id": "scenery",
@@ -15800,7 +17053,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'si:nәri",
     "exampleSource": "tatoeba",
     "sourceRow": 6080,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jǐng sè"
   },
   {
     "id": "abnormal",
@@ -15813,7 +17067,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "æb'nɒ:mәl",
     "exampleSource": "tatoeba",
     "sourceRow": 45159,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jī xíng de"
   },
   {
     "id": "pianist",
@@ -15826,7 +17081,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'piәnist",
     "exampleSource": "tatoeba",
     "sourceRow": 3372,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gāng qín jiā"
   },
   {
     "id": "superficial",
@@ -15839,7 +17095,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".sju:pә'fiʃәl",
     "exampleSource": "tatoeba",
     "sourceRow": 27546,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "biǎo miàn"
   },
   {
     "id": "cucumber",
@@ -15852,7 +17109,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kju:kәmbә",
     "exampleSource": "tatoeba",
     "sourceRow": 45414,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huáng guā"
   },
   {
     "id": "liable",
@@ -15865,7 +17123,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'laiәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 9639,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǒu yì wù de"
   },
   {
     "id": "heroine",
@@ -15878,7 +17137,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'herәuin",
     "exampleSource": "tatoeba",
     "sourceRow": 7659,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "nǚ zhǔ jué"
   },
   {
     "id": "cricket",
@@ -15891,7 +17151,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'krikit",
     "exampleSource": "tatoeba",
     "sourceRow": 27563,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xī shuài"
   },
   {
     "id": "deceive",
@@ -15904,7 +17165,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'si:v",
     "exampleSource": "tatoeba",
     "sourceRow": 24192,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qī piàn"
   },
   {
     "id": "irregular",
@@ -15917,7 +17179,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'regjulә",
     "exampleSource": "tatoeba",
     "sourceRow": 362,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù guī zé de"
   },
   {
     "id": "butcher",
@@ -15930,7 +17193,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'butʃә",
     "exampleSource": "tatoeba",
     "sourceRow": 40632,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tú fū"
   },
   {
     "id": "nylon",
@@ -15943,7 +17207,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'nailɒn",
     "exampleSource": "tatoeba",
     "sourceRow": 44594,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "ní lóng"
   },
   {
     "id": "diploma",
@@ -15956,7 +17221,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'plәumә",
     "exampleSource": "tatoeba",
     "sourceRow": 10683,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bì yè zhèng shū"
   },
   {
     "id": "envy",
@@ -15969,7 +17235,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'envi",
     "exampleSource": "tatoeba",
     "sourceRow": 10617,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiàn mù"
   },
   {
     "id": "customary",
@@ -15982,7 +17249,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kʌstәmәri",
     "exampleSource": "tatoeba",
     "sourceRow": 27336,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xí guàn de"
   },
   {
     "id": "referee",
@@ -15995,7 +17263,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".refә'ri:",
     "exampleSource": "tatoeba",
     "sourceRow": 40388,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cái pàn"
   },
   {
     "id": "reckless",
@@ -16008,7 +17277,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'reklis",
     "exampleSource": "tatoeba",
     "sourceRow": 37059,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lǔ mǎng de"
   },
   {
     "id": "drawback",
@@ -16021,7 +17291,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'drɒ:bæk",
     "exampleSource": "tatoeba",
     "sourceRow": 27210,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "quē diǎn"
   },
   {
     "id": "handicap",
@@ -16034,7 +17305,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hændikæp",
     "exampleSource": "tatoeba",
     "sourceRow": 3251,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhàng ài"
   },
   {
     "id": "cradle",
@@ -16047,7 +17319,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kreidl",
     "exampleSource": "tatoeba",
     "sourceRow": 3574,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yáo lán"
   },
   {
     "id": "cherish",
@@ -16060,7 +17333,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tʃeriʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 44630,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "ài hù"
   },
   {
     "id": "trumpet",
@@ -16073,7 +17347,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'trʌmpit",
     "exampleSource": "tatoeba",
     "sourceRow": 5407,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiǎo hào"
   },
   {
     "id": "indispensable",
@@ -16086,7 +17361,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".indis'pensәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 14738,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù kě quē shǎo de"
   },
   {
     "id": "oriental",
@@ -16099,7 +17375,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ɒ:ri'entl",
     "exampleSource": "tatoeba",
     "sourceRow": 20662,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dōng fāng de"
   },
   {
     "id": "clasp",
@@ -16112,7 +17389,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "klɑ:sp",
     "exampleSource": "tatoeba",
     "sourceRow": 31051,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jǐn wò"
   },
   {
     "id": "vegetarian",
@@ -16125,7 +17403,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".vedʒi'tєәriәn",
     "exampleSource": "tatoeba",
     "sourceRow": 40906,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "sù shí zhě"
   },
   {
     "id": "equilibrium",
@@ -16138,7 +17417,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".i:kwi'libriәm",
     "exampleSource": "tatoeba",
     "sourceRow": 31389,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "píng héng"
   },
   {
     "id": "tutor",
@@ -16151,7 +17431,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tju:tә",
     "exampleSource": "tatoeba",
     "sourceRow": 41695,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dǎo shī"
   },
   {
     "id": "barber",
@@ -16164,7 +17445,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bɑ:bә",
     "exampleSource": "tatoeba",
     "sourceRow": 21415,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lǐ fà shī"
   },
   {
     "id": "malaria",
@@ -16177,7 +17459,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mә'lєәriә",
     "exampleSource": "tatoeba",
     "sourceRow": 3967,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "nüè jí"
   },
   {
     "id": "gamble",
@@ -16190,7 +17473,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'gæmbl",
     "exampleSource": "tatoeba",
     "sourceRow": 38613,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dǔ bó"
   },
   {
     "id": "dread",
@@ -16203,7 +17487,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dred",
     "exampleSource": "tatoeba",
     "sourceRow": 38871,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kě pà de"
   },
   {
     "id": "dissertation",
@@ -16216,7 +17501,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".disә'teiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 28276,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lùn wén"
   },
   {
     "id": "extinct",
@@ -16229,7 +17515,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'stiŋkt",
     "exampleSource": "tatoeba",
     "sourceRow": 23570,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "miè jué de"
   },
   {
     "id": "prophecy",
@@ -16242,7 +17529,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'prɒfәsi",
     "exampleSource": "tatoeba",
     "sourceRow": 19112,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yù yán"
   },
   {
     "id": "bandage",
@@ -16255,7 +17543,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bændidʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 27655,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bēng dài"
   },
   {
     "id": "vicinity",
@@ -16268,7 +17557,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "vi'siniti",
     "exampleSource": "tatoeba",
     "sourceRow": 24260,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fù jìn"
   },
   {
     "id": "traveling",
@@ -16281,7 +17571,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'trævliŋ",
     "exampleSource": "tatoeba",
     "sourceRow": 3557,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lǚ xíng de"
   },
   {
     "id": "ultraviolet",
@@ -16294,7 +17585,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌltrә'vaiәlit",
     "exampleSource": "tatoeba",
     "sourceRow": 14005,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zǐ wài xiàn de"
   },
   {
     "id": "unhealthy",
@@ -16307,7 +17599,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌn'helθi",
     "exampleSource": "tatoeba",
     "sourceRow": 19522,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù jiàn kāng de"
   },
   {
     "id": "bilingual",
@@ -16320,7 +17613,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bai'liŋgwәl",
     "exampleSource": "tatoeba",
     "sourceRow": 34241,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shuāng yǔ de"
   },
   {
     "id": "robber",
@@ -16333,7 +17627,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'rɒbә",
     "exampleSource": "tatoeba",
     "sourceRow": 49533,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qiáng dào"
   },
   {
     "id": "voltage",
@@ -16346,7 +17641,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vәultidʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 31335,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "diàn yā"
   },
   {
     "id": "racket",
@@ -16359,7 +17655,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'rækit",
     "exampleSource": "tatoeba",
     "sourceRow": 15668,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qiú pāi"
   },
   {
     "id": "paralysis",
@@ -16372,7 +17669,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'rælisis",
     "exampleSource": "tatoeba",
     "sourceRow": 41571,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tān huàn"
   },
   {
     "id": "statesman",
@@ -16385,7 +17683,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'steitsmәn",
     "exampleSource": "tatoeba",
     "sourceRow": 6194,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhèng zhì jiā"
   },
   {
     "id": "metric",
@@ -16398,7 +17697,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'metrik",
     "exampleSource": "tatoeba",
     "sourceRow": 32406,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "gōng zhì de"
   },
   {
     "id": "crocodile",
@@ -16411,7 +17711,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'krɒkәdail",
     "exampleSource": "tatoeba",
     "sourceRow": 43094,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "è yú"
   },
   {
     "id": "gleam",
@@ -16424,7 +17725,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "gli:m",
     "exampleSource": "tatoeba",
     "sourceRow": 2803,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wēi guāng"
   },
   {
     "id": "adept",
@@ -16437,7 +17739,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'dept",
     "exampleSource": "tatoeba",
     "sourceRow": 24534,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "nèi háng"
   },
   {
     "id": "nourish",
@@ -16450,7 +17753,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'nә:riʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 46036,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zī yǎng"
   },
   {
     "id": "rust",
@@ -16463,7 +17767,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "rʌst",
     "exampleSource": "tatoeba",
     "sourceRow": 3013,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shēng xiù"
   },
   {
     "id": "oasis",
@@ -16476,7 +17781,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әu'eisis",
     "exampleSource": "tatoeba",
     "sourceRow": 46128,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lǜ zhōu"
   },
   {
     "id": "misfortune",
@@ -16489,7 +17795,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mis'fɒ:tʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 14161,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù xìng"
   },
   {
     "id": "fuse",
@@ -16502,7 +17809,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fju:z",
     "exampleSource": "tatoeba",
     "sourceRow": 5042,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bǎo xiǎn sī"
   },
   {
     "id": "extravagant",
@@ -16515,7 +17823,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'strævgәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 8146,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shē chǐ de"
   },
   {
     "id": "remorse",
@@ -16528,7 +17837,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'mɒ:s",
     "exampleSource": "tatoeba",
     "sourceRow": 40667,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "ào huǐ"
   },
   {
     "id": "disco",
@@ -16541,7 +17851,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'diskәu",
     "exampleSource": "tatoeba",
     "sourceRow": 32015,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dí sī kē"
   },
   {
     "id": "booklet",
@@ -16554,7 +17865,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'buklit",
     "exampleSource": "tatoeba",
     "sourceRow": 7823,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiǎo cè zi"
   },
   {
     "id": "dialect",
@@ -16567,7 +17879,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'daiәlekt",
     "exampleSource": "tatoeba",
     "sourceRow": 31114,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fāng yán"
   },
   {
     "id": "thirst",
@@ -16580,7 +17893,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "θә:st",
     "exampleSource": "tatoeba",
     "sourceRow": 3387,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kě wàng"
   },
   {
     "id": "prolific",
@@ -16593,7 +17907,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prәu'lifik",
     "exampleSource": "tatoeba",
     "sourceRow": 40435,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "duō chǎn de"
   },
   {
     "id": "shabby",
@@ -16606,7 +17921,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ʃæbi",
     "exampleSource": "tatoeba",
     "sourceRow": 6030,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "pò jiù de"
   },
   {
     "id": "renaissance",
@@ -16619,7 +17935,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'neisәns",
     "exampleSource": "tatoeba",
     "sourceRow": 29959,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fù xīng ； wén yì fù xīng"
   },
   {
     "id": "burglar",
@@ -16632,7 +17949,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bә:glә",
     "exampleSource": "tatoeba",
     "sourceRow": 15614,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qiè zéi"
   },
   {
     "id": "pastime",
@@ -16645,7 +17963,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pæstaim",
     "exampleSource": "tatoeba",
     "sourceRow": 4862,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiāo qiǎn"
   },
   {
     "id": "bookshelf",
@@ -16658,7 +17977,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bukʃelf",
     "exampleSource": "tatoeba",
     "sourceRow": 23560,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shū jià"
   },
   {
     "id": "ferocious",
@@ -16671,7 +17991,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fә'rәuʃәs",
     "exampleSource": "tatoeba",
     "sourceRow": 29537,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xiōng měng de"
   },
   {
     "id": "inland",
@@ -16684,7 +18005,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'inlәnd",
     "exampleSource": "tatoeba",
     "sourceRow": 34899,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "nèi lù de"
   },
   {
     "id": "economical",
@@ -16697,7 +18019,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".i:kә'nɒmikәl",
     "exampleSource": "tatoeba",
     "sourceRow": 14434,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jīng jì de"
   },
   {
     "id": "trample",
@@ -16710,7 +18033,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'træmpl",
     "exampleSource": "tatoeba",
     "sourceRow": 14194,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiàn tà"
   },
   {
     "id": "taboo",
@@ -16723,7 +18047,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "tә'bu:",
     "exampleSource": "tatoeba",
     "sourceRow": 27389,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jìn jì"
   },
   {
     "id": "vulgar",
@@ -16736,7 +18061,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vʌlgә",
     "exampleSource": "tatoeba",
     "sourceRow": 36074,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cū sú de"
   },
   {
     "id": "picturesque",
@@ -16749,7 +18075,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".piktʃә'resk",
     "exampleSource": "tatoeba",
     "sourceRow": 4715,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "rú huà de"
   },
   {
     "id": "veterinarian",
@@ -16762,7 +18089,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".vetәri'nєәriәn",
     "exampleSource": "tatoeba",
     "sourceRow": 20049,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shòu yī"
   },
   {
     "id": "superstition",
@@ -16775,7 +18103,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".sju:pә'stiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 48733,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "mí xìn"
   },
   {
     "id": "fluent",
@@ -16788,7 +18117,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'flu:әnt",
     "exampleSource": "tatoeba",
     "sourceRow": 24243,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "liú lì de"
   },
   {
     "id": "strait",
@@ -16801,7 +18131,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "streit",
     "exampleSource": "tatoeba",
     "sourceRow": 7772,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "hǎi xiá"
   },
   {
     "id": "temperate",
@@ -16814,7 +18145,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tempәrәt",
     "exampleSource": "tatoeba",
     "sourceRow": 2330,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wēn dài de"
   },
   {
     "id": "bookcase",
@@ -16827,7 +18159,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bukkeis",
     "exampleSource": "tatoeba",
     "sourceRow": 38620,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shū jià"
   },
   {
     "id": "cunning",
@@ -16840,7 +18173,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kʌniŋ",
     "exampleSource": "tatoeba",
     "sourceRow": 37153,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiǎo huá de"
   },
   {
     "id": "rendezvous",
@@ -16853,7 +18187,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'rɒndivu:",
     "exampleSource": "tatoeba",
     "sourceRow": 47419,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yuē huì"
   },
   {
     "id": "transistor",
@@ -16866,7 +18201,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "træn'zistә",
     "exampleSource": "tatoeba",
     "sourceRow": 4864,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jīng tǐ guǎn"
   },
   {
     "id": "piston",
@@ -16879,7 +18215,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pistәn",
     "exampleSource": "tatoeba",
     "sourceRow": 34377,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huó sāi"
   },
   {
     "id": "pretext",
@@ -16892,7 +18229,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pri:tekst",
     "exampleSource": "tatoeba",
     "sourceRow": 49561,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiè kǒu"
   },
   {
     "id": "malice",
@@ -16905,7 +18243,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mælis",
     "exampleSource": "tatoeba",
     "sourceRow": 19131,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "è yì"
   },
   {
     "id": "agreeable",
@@ -16918,7 +18257,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'griәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 19184,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lìng rén yú kuài de"
   },
   {
     "id": "malnutrition",
@@ -16931,7 +18271,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".mælnju:'triʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 330,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yíng yǎng bù liáng"
   },
   {
     "id": "obligatory",
@@ -16944,7 +18285,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ɒb'ligәtәri",
     "exampleSource": "tatoeba",
     "sourceRow": 40609,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bì xū de"
   },
   {
     "id": "blot",
@@ -16957,7 +18299,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "blɒt",
     "exampleSource": "tatoeba",
     "sourceRow": 8171,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wū diǎn"
   },
   {
     "id": "rainwater",
@@ -16970,7 +18313,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'reinwɒ:tә",
     "exampleSource": "tatoeba",
     "sourceRow": 39900,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǔ shuǐ"
   },
   {
     "id": "diligent",
@@ -16983,7 +18327,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dilidʒәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 25956,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yòng gōng de"
   },
   {
     "id": "maiden",
@@ -16996,7 +18341,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'meidn",
     "exampleSource": "tatoeba",
     "sourceRow": 33001,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "chǔ nǚ"
   },
   {
     "id": "sportsman",
@@ -17009,7 +18355,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'spɒ:tsmәn",
     "exampleSource": "tatoeba",
     "sourceRow": 16911,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yùn dòng yuán"
   },
   {
     "id": "eyesight",
@@ -17022,7 +18369,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'aisait",
     "exampleSource": "tatoeba",
     "sourceRow": 42542,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shì lì"
   },
   {
     "id": "stationery",
@@ -17035,7 +18383,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'steiʃәnәri",
     "exampleSource": "tatoeba",
     "sourceRow": 28432,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wén jù"
   },
   {
     "id": "vogue",
@@ -17048,7 +18397,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "vәug",
     "exampleSource": "tatoeba",
     "sourceRow": 24476,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shí máo"
   },
   {
     "id": "phobia",
@@ -17061,7 +18411,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fәubiә",
     "exampleSource": "tatoeba",
     "sourceRow": 42739,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kǒng jù zhèng"
   },
   {
     "id": "departmental",
@@ -17074,7 +18425,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".di:pɑ:t'mentәl",
     "exampleSource": "tatoeba",
     "sourceRow": 48848,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bù mén de"
   },
   {
     "id": "fickle",
@@ -17087,7 +18439,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fikl",
     "exampleSource": "tatoeba",
     "sourceRow": 42610,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "bó qíng de"
   },
   {
     "id": "concise",
@@ -17100,7 +18453,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'sais",
     "exampleSource": "tatoeba",
     "sourceRow": 16539,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiǎn jié de"
   },
   {
     "id": "monsoon",
@@ -17113,7 +18467,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mɒn'su:n",
     "exampleSource": "tatoeba",
     "sourceRow": 26151,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jì fēng"
   },
   {
     "id": "remittance",
@@ -17126,7 +18481,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'mitns",
     "exampleSource": "tatoeba",
     "sourceRow": 24458,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "huì kuǎn"
   },
   {
     "id": "monotonous",
@@ -17139,7 +18495,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mә'nɒtәnәs",
     "exampleSource": "tatoeba",
     "sourceRow": 13425,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "dān diào de"
   },
   {
     "id": "synonym",
@@ -17152,7 +18509,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sinәnim",
     "exampleSource": "tatoeba",
     "sourceRow": 41953,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tóng yì cí"
   },
   {
     "id": "everlasting",
@@ -17165,7 +18523,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".evә'læstiŋ",
     "exampleSource": "tatoeba",
     "sourceRow": 49228,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "yǒng héng de"
   },
   {
     "id": "considerate",
@@ -17178,7 +18537,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'sidәrit",
     "exampleSource": "tatoeba",
     "sourceRow": 11464,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kǎo lǜ zhōu dào de"
   },
   {
     "id": "invalid",
@@ -17191,7 +18551,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'vælid",
     "exampleSource": "tatoeba",
     "sourceRow": 47528,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wú xiào de"
   },
   {
     "id": "deadlock",
@@ -17204,7 +18565,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dedlɒk",
     "exampleSource": "tatoeba",
     "sourceRow": 3326,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiāng jú"
   },
   {
     "id": "alphabetical",
@@ -17217,7 +18579,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ælfә'betikәl",
     "exampleSource": "tatoeba",
     "sourceRow": 43265,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zì mǔ de"
   },
   {
     "id": "naught",
@@ -17230,7 +18593,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "nɒ:t",
     "exampleSource": "tatoeba",
     "sourceRow": 33977,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wú yòng de"
   },
   {
     "id": "abbreviation",
@@ -17243,7 +18607,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә.bri:vi'eiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 32068,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "suō xiě"
   },
   {
     "id": "pliable",
@@ -17256,7 +18621,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'plaiәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 27674,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "róu shùn de"
   },
   {
     "id": "bookshop",
@@ -17269,7 +18635,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bukʃɒp",
     "exampleSource": "tatoeba",
     "sourceRow": 43526,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "shū diàn"
   },
   {
     "id": "typhoon",
@@ -17282,7 +18649,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "tai'fu:n",
     "exampleSource": "tatoeba",
     "sourceRow": 15224,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "tái fēng"
   },
   {
     "id": "obstinate",
@@ -17295,7 +18663,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒbstinit",
     "exampleSource": "tatoeba",
     "sourceRow": 17720,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "wán gù de"
   },
   {
     "id": "matrimony",
@@ -17308,7 +18677,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mætrimәuni",
     "exampleSource": "tatoeba",
     "sourceRow": 30403,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jié hūn"
   },
   {
     "id": "punctual",
@@ -17321,7 +18691,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pәŋktʃuәl",
     "exampleSource": "tatoeba",
     "sourceRow": 30865,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zhǔn shí de"
   },
   {
     "id": "existent",
@@ -17334,7 +18705,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ig'zistәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 48201,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "cún zài de"
   },
   {
     "id": "favour",
@@ -17347,7 +18719,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'feivә",
     "exampleSource": "tatoeba",
     "sourceRow": 9870,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "zàn chéng"
   },
   {
     "id": "antonym",
@@ -17360,7 +18733,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æntәunim",
     "exampleSource": "tatoeba",
     "sourceRow": 41953,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "fǎn yì cí"
   },
   {
     "id": "calorie",
@@ -17373,7 +18747,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kælәri",
     "exampleSource": "tatoeba",
     "sourceRow": 27096,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "kǎ lù lǐ"
   },
   {
     "id": "criterion",
@@ -17386,7 +18761,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "krai'tiәriәn",
     "exampleSource": "tatoeba",
     "sourceRow": 49841,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "biāo zhǔn"
   },
   {
     "id": "invigilate",
@@ -17399,7 +18775,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'vidʒileit",
     "exampleSource": "tatoeba",
     "sourceRow": 27268,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "jiān kǎo"
   },
   {
     "id": "odour",
@@ -17412,7 +18789,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'әudә",
     "exampleSource": "tatoeba",
     "sourceRow": 37205,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "qì wèi"
   },
   {
     "id": "sydney",
@@ -17425,7 +18803,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sidni",
     "exampleSource": "tatoeba",
     "sourceRow": 7072,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "xī ní"
   },
   {
     "id": "tyre",
@@ -17438,7 +18817,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'taiә",
     "exampleSource": "tatoeba",
     "sourceRow": 46747,
-    "selection": "雅思标签选词"
+    "selection": "雅思标签选词",
+    "zhPinyin": "lún tāi"
   },
   {
     "id": "nation",
@@ -17451,7 +18831,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'neiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 40228,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "guó jiā"
   },
   {
     "id": "military",
@@ -17464,7 +18845,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'militәri",
     "exampleSource": "tatoeba",
     "sourceRow": 29824,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jūn duì"
   },
   {
     "id": "official",
@@ -17477,7 +18859,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'fiʃәl",
     "exampleSource": "tatoeba",
     "sourceRow": 39607,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "guān fāng de"
   },
   {
     "id": "court",
@@ -17490,7 +18873,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kɒ:t",
     "exampleSource": "tatoeba",
     "sourceRow": 15257,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fǎ yuàn"
   },
   {
     "id": "security",
@@ -17503,7 +18887,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "si'kjuriti",
     "exampleSource": "tatoeba",
     "sourceRow": 38900,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "ān quán ； ān quán xìng"
   },
   {
     "id": "seek",
@@ -17516,7 +18901,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "si:k",
     "exampleSource": "tatoeba",
     "sourceRow": 42237,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xún qiú"
   },
   {
     "id": "shoot",
@@ -17529,7 +18915,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ʃu:t",
     "exampleSource": "tatoeba",
     "sourceRow": 40411,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shè mén"
   },
   {
     "id": "thus",
@@ -17542,7 +18929,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ðʌs",
     "exampleSource": "tatoeba",
     "sourceRow": 36220,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yīn cǐ"
   },
   {
     "id": "fund",
@@ -17555,7 +18943,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fʌnd",
     "exampleSource": "tatoeba",
     "sourceRow": 20838,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jī jīn"
   },
   {
     "id": "particularly",
@@ -17568,7 +18957,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'tikjjlәli",
     "exampleSource": "tatoeba",
     "sourceRow": 21635,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tè bié"
   },
   {
     "id": "election",
@@ -17581,7 +18971,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'lekʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 11664,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xuǎn jǔ"
   },
   {
     "id": "indeed",
@@ -17594,7 +18985,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'di:d",
     "exampleSource": "tatoeba",
     "sourceRow": 40332,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shí zài"
   },
   {
     "id": "democratic",
@@ -17607,7 +18999,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".demә'krætik",
     "exampleSource": "tatoeba",
     "sourceRow": 32379,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "mín zhǔ de"
   },
   {
     "id": "entire",
@@ -17620,7 +19013,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'taiә",
     "exampleSource": "tatoeba",
     "sourceRow": 30045,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "quán bù"
   },
   {
     "id": "religious",
@@ -17633,7 +19027,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'lidʒәs",
     "exampleSource": "tatoeba",
     "sourceRow": 13302,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "qián chéng de"
   },
   {
     "id": "cell",
@@ -17646,7 +19041,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sel",
     "exampleSource": "tatoeba",
     "sourceRow": 7738,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xì bāo"
   },
   {
     "id": "democrat",
@@ -17659,7 +19055,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'demәkræt",
     "exampleSource": "tatoeba",
     "sourceRow": 350,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "mín zhǔ zhǔ yì zhě"
   },
   {
     "id": "politics",
@@ -17672,7 +19069,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pɒlitiks",
     "exampleSource": "tatoeba",
     "sourceRow": 32746,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhèng zhì"
   },
   {
     "id": "treat",
@@ -17685,7 +19083,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "tri:t",
     "exampleSource": "tatoeba",
     "sourceRow": 43077,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "duì dài"
   },
   {
     "id": "reflect",
@@ -17698,7 +19097,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'flekt",
     "exampleSource": "tatoeba",
     "sourceRow": 9179,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fǎn yìng"
   },
   {
     "id": "generation",
@@ -17711,7 +19111,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".dʒenә'reiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 33309,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yí dài"
   },
   {
     "id": "violence",
@@ -17724,7 +19125,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vaiәlәns",
     "exampleSource": "tatoeba",
     "sourceRow": 20858,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bào lì"
   },
   {
     "id": "civil",
@@ -17737,7 +19139,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sivәl",
     "exampleSource": "tatoeba",
     "sourceRow": 14300,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shì mín de"
   },
   {
     "id": "threat",
@@ -17750,7 +19153,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "θret",
     "exampleSource": "tatoeba",
     "sourceRow": 16400,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wēi xié"
   },
   {
     "id": "vote",
@@ -17763,7 +19167,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "vәut",
     "exampleSource": "tatoeba",
     "sourceRow": 9228,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xuǎn jǔ ； xuǎn jǔ quán"
   },
   {
     "id": "debate",
@@ -17776,7 +19181,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'beit",
     "exampleSource": "tatoeba",
     "sourceRow": 43520,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "biàn lùn"
   },
   {
     "id": "citizen",
@@ -17789,7 +19195,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sitizn",
     "exampleSource": "tatoeba",
     "sourceRow": 19676,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gōng mín"
   },
   {
     "id": "admit",
@@ -17802,7 +19209,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әd'mit",
     "exampleSource": "tatoeba",
     "sourceRow": 14810,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chéng rèn"
   },
   {
     "id": "judge",
@@ -17815,7 +19223,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dʒʌdʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 29846,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "pàn duàn"
   },
   {
     "id": "income",
@@ -17828,7 +19237,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'inkʌm",
     "exampleSource": "tatoeba",
     "sourceRow": 10864,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shōu rù"
   },
   {
     "id": "directly",
@@ -17841,7 +19251,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'rektli, dai'rektli",
     "exampleSource": "tatoeba",
     "sourceRow": 46915,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhí jiē dì"
   },
   {
     "id": "concept",
@@ -17854,7 +19265,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒnsept",
     "exampleSource": "tatoeba",
     "sourceRow": 30711,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gài niàn"
   },
   {
     "id": "powerful",
@@ -17867,7 +19279,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pauәful",
     "exampleSource": "tatoeba",
     "sourceRow": 8074,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "qiáng dà de"
   },
   {
     "id": "therefore",
@@ -17880,7 +19293,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ðєәfɒ:",
     "exampleSource": "tatoeba",
     "sourceRow": 18695,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "suǒ yǐ"
   },
   {
     "id": "conduct",
@@ -17893,7 +19307,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɔndʌkt, -dәkt",
     "exampleSource": "tatoeba",
     "sourceRow": 1265,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xíng wéi"
   },
   {
     "id": "announce",
@@ -17906,7 +19321,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'nauns",
     "exampleSource": "tatoeba",
     "sourceRow": 38967,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xuān bù"
   },
   {
     "id": "press",
@@ -17919,7 +19335,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pres",
     "exampleSource": "tatoeba",
     "sourceRow": 27296,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jì zhě"
   },
   {
     "id": "battle",
@@ -17932,7 +19349,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bætl",
     "exampleSource": "tatoeba",
     "sourceRow": 8346,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhàn yì"
   },
   {
     "id": "generally",
@@ -17945,7 +19363,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒenәrәli",
     "exampleSource": "tatoeba",
     "sourceRow": 15104,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tōng cháng"
   },
   {
     "id": "element",
@@ -17958,7 +19377,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'elimәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 38455,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yào sù"
   },
   {
     "id": "vision",
@@ -17971,7 +19391,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'viʒәn",
     "exampleSource": "tatoeba",
     "sourceRow": 27235,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shì lì"
   },
   {
     "id": "handle",
@@ -17984,7 +19405,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hændl",
     "exampleSource": "tatoeba",
     "sourceRow": 7989,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "cāo zuò"
   },
   {
     "id": "gain",
@@ -17997,7 +19419,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "gein",
     "exampleSource": "tatoeba",
     "sourceRow": 27794,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dé dào"
   },
   {
     "id": "demand",
@@ -18010,7 +19433,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'mɑ:nd",
     "exampleSource": "tatoeba",
     "sourceRow": 2311,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xū qiú"
   },
   {
     "id": "leadership",
@@ -18023,7 +19447,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'li:dәʃip",
     "exampleSource": "tatoeba",
     "sourceRow": 48456,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lǐng dǎo néng lì"
   },
   {
     "id": "operate",
@@ -18036,7 +19461,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒpәreit",
     "exampleSource": "tatoeba",
     "sourceRow": 7243,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "cāo zuò"
   },
   {
     "id": "protection",
@@ -18049,7 +19475,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prә'tekʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 23477,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bǎo hù"
   },
   {
     "id": "principle",
@@ -18062,7 +19489,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'prinsipl",
     "exampleSource": "tatoeba",
     "sourceRow": 31229,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yuán zé"
   },
   {
     "id": "survive",
@@ -18075,7 +19503,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sә'vaiv",
     "exampleSource": "tatoeba",
     "sourceRow": 29459,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shēng cún"
   },
   {
     "id": "limit",
@@ -18088,7 +19517,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'limit",
     "exampleSource": "tatoeba",
     "sourceRow": 33555,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xiàn zhì"
   },
   {
     "id": "aspect",
@@ -18101,7 +19531,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æspekt",
     "exampleSource": "tatoeba",
     "sourceRow": 24520,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fāng miàn"
   },
   {
     "id": "affair",
@@ -18114,7 +19545,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'fєә",
     "exampleSource": "tatoeba",
     "sourceRow": 3328,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shì jiàn"
   },
   {
     "id": "responsible",
@@ -18127,7 +19559,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'spɒnsәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 4569,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǒu zé rèn de"
   },
   {
     "id": "ignore",
@@ -18140,7 +19573,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ig'nɒ:",
     "exampleSource": "tatoeba",
     "sourceRow": 40118,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hū lüè"
   },
   {
     "id": "belief",
@@ -18153,7 +19587,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bi'li:f",
     "exampleSource": "tatoeba",
     "sourceRow": 24077,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xìn niàn ； xiāng xìn"
   },
   {
     "id": "threaten",
@@ -18166,7 +19601,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'θretn",
     "exampleSource": "tatoeba",
     "sourceRow": 49553,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wēi xié"
   },
   {
     "id": "reaction",
@@ -18179,7 +19615,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'ækʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 39190,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fǎn yìng"
   },
   {
     "id": "neighbor",
@@ -18192,7 +19629,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'neibә",
     "exampleSource": "tatoeba",
     "sourceRow": 40992,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lín jū"
   },
   {
     "id": "moral",
@@ -18205,7 +19643,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mɒrәl",
     "exampleSource": "tatoeba",
     "sourceRow": 39305,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dào dé"
   },
   {
     "id": "justice",
@@ -18218,7 +19657,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒʌstis",
     "exampleSource": "tatoeba",
     "sourceRow": 41920,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gōng zhèng"
   },
   {
     "id": "intend",
@@ -18231,7 +19671,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'tend",
     "exampleSource": "tatoeba",
     "sourceRow": 13842,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dǎ suàn"
   },
   {
     "id": "respect",
@@ -18244,7 +19685,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'spekt",
     "exampleSource": "tatoeba",
     "sourceRow": 20828,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zūn zhòng"
   },
   {
     "id": "importance",
@@ -18257,7 +19699,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "im'pɒ:tәns",
     "exampleSource": "tatoeba",
     "sourceRow": 17543,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhòng yào ； zhòng yào xìng"
   },
   {
     "id": "software",
@@ -18270,7 +19713,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sɒftwєә",
     "exampleSource": "tatoeba",
     "sourceRow": 26777,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "ruǎn jiàn"
   },
   {
     "id": "urban",
@@ -18283,7 +19727,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ә:bәn",
     "exampleSource": "tatoeba",
     "sourceRow": 10624,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dū shì de"
   },
   {
     "id": "obtain",
@@ -18296,7 +19741,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әb'tein",
     "exampleSource": "tatoeba",
     "sourceRow": 7941,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "huò dé"
   },
   {
     "id": "soul",
@@ -18309,7 +19755,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sәul",
     "exampleSource": "tatoeba",
     "sourceRow": 5711,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "líng hún"
   },
   {
     "id": "emotional",
@@ -18322,7 +19769,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'mәuʃәnәl",
     "exampleSource": "tatoeba",
     "sourceRow": 2427,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "qíng xù de"
   },
   {
     "id": "proposal",
@@ -18335,7 +19783,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prә'pәuzl",
     "exampleSource": "tatoeba",
     "sourceRow": 9722,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tí yì"
   },
   {
     "id": "shadow",
@@ -18348,7 +19797,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ʃædәu",
     "exampleSource": "tatoeba",
     "sourceRow": 17165,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǐng zi"
   },
   {
     "id": "struggle",
@@ -18361,7 +19811,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'strʌgl",
     "exampleSource": "tatoeba",
     "sourceRow": 10587,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dòu zhēng"
   },
   {
     "id": "possibly",
@@ -18374,7 +19825,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pɒsәbli",
     "exampleSource": "tatoeba",
     "sourceRow": 8223,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "kě néng"
   },
   {
     "id": "currently",
@@ -18387,7 +19839,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kʌrәntli",
     "exampleSource": "tatoeba",
     "sourceRow": 34989,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xiàn zài"
   },
   {
     "id": "muscle",
@@ -18400,7 +19853,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mʌsl",
     "exampleSource": "tatoeba",
     "sourceRow": 42806,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jī ròu"
   },
   {
     "id": "root",
@@ -18413,7 +19867,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ru:t",
     "exampleSource": "tatoeba",
     "sourceRow": 30718,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yuán yú"
   },
   {
     "id": "actual",
@@ -18426,7 +19881,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æktʃuәl",
     "exampleSource": "tatoeba",
     "sourceRow": 49390,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shí jì de"
   },
   {
     "id": "ensure",
@@ -18439,7 +19895,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'ʃuә",
     "exampleSource": "tatoeba",
     "sourceRow": 49058,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "què dìng"
   },
   {
     "id": "politician",
@@ -18452,7 +19909,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".pɒli'tiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 14038,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhèng zhì jiā"
   },
   {
     "id": "pursue",
@@ -18465,7 +19923,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'sju:",
     "exampleSource": "tatoeba",
     "sourceRow": 2191,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhuī qiú"
   },
   {
     "id": "governor",
@@ -18478,7 +19937,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'gʌvәnә",
     "exampleSource": "tatoeba",
     "sourceRow": 49558,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhōu zhǎng"
   },
   {
     "id": "meanwhile",
@@ -18491,7 +19951,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mi:nhwail",
     "exampleSource": "tatoeba",
     "sourceRow": 45932,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tóng shí"
   },
   {
     "id": "division",
@@ -18504,7 +19965,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'viʒәn",
     "exampleSource": "tatoeba",
     "sourceRow": 38082,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chú fǎ"
   },
   {
     "id": "attract",
@@ -18517,7 +19979,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'trækt",
     "exampleSource": "tatoeba",
     "sourceRow": 47909,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xī yǐn"
   },
   {
     "id": "opposition",
@@ -18530,7 +19993,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ɒpә'ziʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 18683,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fǎn duì"
   },
   {
     "id": "gray",
@@ -18543,7 +20007,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "grei",
     "exampleSource": "tatoeba",
     "sourceRow": 49022,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "huī sè"
   },
   {
     "id": "league",
@@ -18556,7 +20021,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "li:g",
     "exampleSource": "tatoeba",
     "sourceRow": 43879,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lián méng"
   },
   {
     "id": "vast",
@@ -18569,7 +20035,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "vɑ:st",
     "exampleSource": "tatoeba",
     "sourceRow": 18363,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fēi cháng de"
   },
   {
     "id": "household",
@@ -18582,7 +20049,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'haushәuld",
     "exampleSource": "tatoeba",
     "sourceRow": 30979,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jiā tíng"
   },
   {
     "id": "incident",
@@ -18595,7 +20063,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'insidәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 10830,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shì jiàn"
   },
   {
     "id": "tone",
@@ -18608,7 +20077,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "tәun",
     "exampleSource": "tatoeba",
     "sourceRow": 27134,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǔ qì"
   },
   {
     "id": "talent",
@@ -18621,7 +20091,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tælәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 41935,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "cái néng"
   },
   {
     "id": "escape",
@@ -18634,7 +20105,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'skeip",
     "exampleSource": "tatoeba",
     "sourceRow": 24532,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "liū zǒu"
   },
   {
     "id": "approve",
@@ -18647,7 +20119,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'pru:v",
     "exampleSource": "tatoeba",
     "sourceRow": 34334,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zàn tóng"
   },
   {
     "id": "honor",
@@ -18660,7 +20133,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒnә",
     "exampleSource": "tatoeba",
     "sourceRow": 13232,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "míng yù"
   },
   {
     "id": "guilty",
@@ -18673,7 +20147,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'gilti",
     "exampleSource": "tatoeba",
     "sourceRow": 16039,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fàn zuì de"
   },
   {
     "id": "forever",
@@ -18686,7 +20161,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fә'revә",
     "exampleSource": "tatoeba",
     "sourceRow": 49399,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǒng yuǎn"
   },
   {
     "id": "criticism",
@@ -18699,7 +20175,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kritisizm",
     "exampleSource": "tatoeba",
     "sourceRow": 35941,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "pī píng"
   },
   {
     "id": "scholar",
@@ -18712,7 +20189,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'skɒlә",
     "exampleSource": "tatoeba",
     "sourceRow": 15294,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xué zhě"
   },
   {
     "id": "graduate",
@@ -18725,7 +20203,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'grædʒueit",
     "exampleSource": "tatoeba",
     "sourceRow": 41815,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yán jiū shēng de ； bì yè de"
   },
   {
     "id": "universe",
@@ -18738,7 +20217,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ju:nivә:s",
     "exampleSource": "tatoeba",
     "sourceRow": 3053,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǔ zhòu ； xīng xì"
   },
   {
     "id": "unable",
@@ -18751,7 +20231,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ʌn'eibl",
     "exampleSource": "tatoeba",
     "sourceRow": 21355,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù néng de"
   },
   {
     "id": "purchase",
@@ -18764,7 +20245,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pә:tʃәs",
     "exampleSource": "tatoeba",
     "sourceRow": 49385,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gòu mǎi"
   },
   {
     "id": "self",
@@ -18777,7 +20259,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "self",
     "exampleSource": "tatoeba",
     "sourceRow": 21695,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zì jǐ"
   },
   {
     "id": "widely",
@@ -18790,7 +20273,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'waidli",
     "exampleSource": "tatoeba",
     "sourceRow": 4042,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "guǎng fàn dì"
   },
   {
     "id": "inform",
@@ -18803,7 +20287,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'fɒ:m",
     "exampleSource": "tatoeba",
     "sourceRow": 4808,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tōng zhī"
   },
   {
     "id": "abandon",
@@ -18816,7 +20301,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'bændәn",
     "exampleSource": "tatoeba",
     "sourceRow": 22301,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fàng qì"
   },
   {
     "id": "atmosphere",
@@ -18829,7 +20315,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ætmәsfiә",
     "exampleSource": "tatoeba",
     "sourceRow": 44764,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dà qì"
   },
   {
     "id": "consistent",
@@ -18842,7 +20329,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'sistәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 16531,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yí zhì de"
   },
   {
     "id": "racial",
@@ -18855,7 +20343,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'reiʃәl",
     "exampleSource": "tatoeba",
     "sourceRow": 14688,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhǒng zú de"
   },
   {
     "id": "philosophy",
@@ -18868,7 +20357,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fi'lɒsәfi",
     "exampleSource": "tatoeba",
     "sourceRow": 12150,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhé xué"
   },
   {
     "id": "quote",
@@ -18881,7 +20371,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kwәut",
     "exampleSource": "tatoeba",
     "sourceRow": 32289,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǐn yòng"
   },
   {
     "id": "foundation",
@@ -18894,7 +20385,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "faun'deiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 29417,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jī chǔ"
   },
   {
     "id": "urge",
@@ -18907,7 +20399,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә:dʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 42966,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lì quàn"
   },
   {
     "id": "substance",
@@ -18920,7 +20413,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sʌbstәns",
     "exampleSource": "tatoeba",
     "sourceRow": 6020,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wù zhì"
   },
   {
     "id": "priest",
@@ -18933,7 +20427,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pri:st",
     "exampleSource": "tatoeba",
     "sourceRow": 27295,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "mù shī"
   },
   {
     "id": "advance",
@@ -18946,7 +20441,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әd'vɑ:ns",
     "exampleSource": "tatoeba",
     "sourceRow": 2328,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "qián jìn"
   },
   {
     "id": "retire",
@@ -18959,7 +20455,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'taiә",
     "exampleSource": "tatoeba",
     "sourceRow": 20513,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tuì xiū"
   },
   {
     "id": "congressional",
@@ -18972,7 +20469,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'greʃәnl",
     "exampleSource": "tatoeba",
     "sourceRow": 27530,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yì huì de"
   },
   {
     "id": "previously",
@@ -18985,7 +20483,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pri:vju:sli",
     "exampleSource": "tatoeba",
     "sourceRow": 22883,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǐ qián"
   },
   {
     "id": "mystery",
@@ -18998,7 +20497,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mistәri",
     "exampleSource": "tatoeba",
     "sourceRow": 26122,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shén mì"
   },
   {
     "id": "emphasis",
@@ -19011,7 +20511,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'emfәsis",
     "exampleSource": "tatoeba",
     "sourceRow": 37437,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "qiáng diào"
   },
   {
     "id": "creature",
@@ -19024,7 +20525,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kri:tʃә",
     "exampleSource": "tatoeba",
     "sourceRow": 40119,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shēng wù"
   },
   {
     "id": "wire",
@@ -19037,7 +20539,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'waiә",
     "exampleSource": "tatoeba",
     "sourceRow": 49730,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "diàn xiàn"
   },
   {
     "id": "command",
@@ -19050,7 +20553,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'mɑ:nd",
     "exampleSource": "tatoeba",
     "sourceRow": 31607,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "mìng lìng"
   },
   {
     "id": "interpretation",
@@ -19063,7 +20567,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in.tә:pri'teiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 33894,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jiě shì"
   },
   {
     "id": "capable",
@@ -19076,7 +20581,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'keipәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 16906,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǒu néng lì de"
   },
   {
     "id": "pray",
@@ -19089,7 +20595,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prei",
     "exampleSource": "tatoeba",
     "sourceRow": 35789,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "qí dǎo"
   },
   {
     "id": "nearby",
@@ -19102,7 +20609,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'niәbai",
     "exampleSource": "tatoeba",
     "sourceRow": 1636,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fù jìn de"
   },
   {
     "id": "implication",
@@ -19115,7 +20623,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".impli'keiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 28644,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hán yì"
   },
   {
     "id": "recognition",
@@ -19128,7 +20637,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".rekәg'niʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 11725,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "rèn kě"
   },
   {
     "id": "recovery",
@@ -19141,7 +20651,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'kʌvәri",
     "exampleSource": "tatoeba",
     "sourceRow": 16134,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "quán yù"
   },
   {
     "id": "unlike",
@@ -19154,7 +20665,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌn'laik",
     "exampleSource": "tatoeba",
     "sourceRow": 46170,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù xiàng de"
   },
   {
     "id": "resist",
@@ -19167,7 +20679,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'zist",
     "exampleSource": "tatoeba",
     "sourceRow": 21633,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dǐ zhì"
   },
   {
     "id": "assist",
@@ -19180,7 +20693,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'sist",
     "exampleSource": "tatoeba",
     "sourceRow": 16839,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xié zhù"
   },
   {
     "id": "mayor",
@@ -19193,7 +20707,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mєә",
     "exampleSource": "tatoeba",
     "sourceRow": 11351,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shì zhǎng"
   },
   {
     "id": "consideration",
@@ -19206,7 +20721,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn.sidә'reiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 4048,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "kǎo lǜ"
   },
   {
     "id": "secure",
@@ -19219,7 +20735,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "si'kjuә",
     "exampleSource": "tatoeba",
     "sourceRow": 16251,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "ān quán de"
   },
   {
     "id": "constantly",
@@ -19232,7 +20749,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒnstәntli",
     "exampleSource": "tatoeba",
     "sourceRow": 40317,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù duàn dì"
   },
   {
     "id": "preparation",
@@ -19245,7 +20763,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".prepә'reiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 34412,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhǔn bèi"
   },
   {
     "id": "absence",
@@ -19258,7 +20777,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æbsәns",
     "exampleSource": "tatoeba",
     "sourceRow": 17523,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "quē xí"
   },
   {
     "id": "impression",
@@ -19271,7 +20791,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "im'preʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 35153,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yìn xiàng"
   },
   {
     "id": "specialist",
@@ -19284,7 +20805,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'speiʃәlist",
     "exampleSource": "tatoeba",
     "sourceRow": 36511,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhuān jiā"
   },
   {
     "id": "criticize",
@@ -19297,7 +20819,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kritisaiz",
     "exampleSource": "tatoeba",
     "sourceRow": 19003,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "pī píng"
   },
   {
     "id": "conventional",
@@ -19310,7 +20833,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'venʃәnl",
     "exampleSource": "tatoeba",
     "sourceRow": 4351,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chuán tǒng de"
   },
   {
     "id": "highway",
@@ -19323,7 +20847,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'haiwei",
     "exampleSource": "tatoeba",
     "sourceRow": 40658,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gōng lù"
   },
   {
     "id": "clinical",
@@ -19336,7 +20861,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'klinikәl",
     "exampleSource": "tatoeba",
     "sourceRow": 45860,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lín chuáng de"
   },
   {
     "id": "wage",
@@ -19349,7 +20875,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "weidʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 37402,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gōng zī"
   },
   {
     "id": "valuable",
@@ -19362,7 +20889,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'væljuәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 21036,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǒu jià zhí de"
   },
   {
     "id": "chemical",
@@ -19375,7 +20903,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kemikl",
     "exampleSource": "tatoeba",
     "sourceRow": 34210,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "huà xué de"
   },
   {
     "id": "label",
@@ -19388,7 +20917,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'leibl",
     "exampleSource": "tatoeba",
     "sourceRow": 16055,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "biāo qiān"
   },
   {
     "id": "extraordinary",
@@ -19401,7 +20931,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'strɒ:dәnәri",
     "exampleSource": "tatoeba",
     "sourceRow": 26718,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fēi fán de"
   },
   {
     "id": "yell",
@@ -19414,7 +20945,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "jel",
     "exampleSource": "tatoeba",
     "sourceRow": 43666,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dà jiào"
   },
   {
     "id": "fence",
@@ -19427,7 +20959,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fens",
     "exampleSource": "tatoeba",
     "sourceRow": 46702,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhà lán"
   },
   {
     "id": "portrait",
@@ -19440,7 +20973,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pɒ:treit",
     "exampleSource": "tatoeba",
     "sourceRow": 48985,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xiào xiàng"
   },
   {
     "id": "burden",
@@ -19453,7 +20987,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bә:dn",
     "exampleSource": "tatoeba",
     "sourceRow": 6187,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fù dān ； zé rèn"
   },
   {
     "id": "destruction",
@@ -19466,7 +21001,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'strʌkʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 33802,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "huǐ miè"
   },
   {
     "id": "literary",
@@ -19479,7 +21015,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'litәrәri",
     "exampleSource": "tatoeba",
     "sourceRow": 49492,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wén xué de"
   },
   {
     "id": "fortune",
@@ -19492,7 +21029,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fɒ:tʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 17778,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "cái fù"
   },
   {
     "id": "initially",
@@ -19505,7 +21043,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'niʃәli",
     "exampleSource": "tatoeba",
     "sourceRow": 24810,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zuì chū"
   },
   {
     "id": "latter",
@@ -19518,7 +21057,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'lætә",
     "exampleSource": "tatoeba",
     "sourceRow": 42733,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hòu zhě de"
   },
   {
     "id": "revolution",
@@ -19531,7 +21071,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".revә'lu:ʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 41852,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gé mìng"
   },
   {
     "id": "reflection",
@@ -19544,7 +21085,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'flekʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 37548,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yìng xiàng"
   },
   {
     "id": "pause",
@@ -19557,7 +21099,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pɒ:z",
     "exampleSource": "tatoeba",
     "sourceRow": 18204,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tíng dùn"
   },
   {
     "id": "remote",
@@ -19570,7 +21113,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'mәut",
     "exampleSource": "tatoeba",
     "sourceRow": 47500,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "piān pì de"
   },
   {
     "id": "testify",
@@ -19583,7 +21127,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'testifai",
     "exampleSource": "tatoeba",
     "sourceRow": 45020,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zuò zhèng"
   },
   {
     "id": "imply",
@@ -19596,7 +21141,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "im'plai",
     "exampleSource": "tatoeba",
     "sourceRow": 16430,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "àn shì"
   },
   {
     "id": "unknown",
@@ -19609,7 +21155,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌn'nәun",
     "exampleSource": "tatoeba",
     "sourceRow": 32645,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wèi zhī de"
   },
   {
     "id": "tire",
@@ -19622,7 +21169,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "taiә",
     "exampleSource": "tatoeba",
     "sourceRow": 5646,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lún tāi"
   },
   {
     "id": "shortly",
@@ -19635,7 +21183,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ʃɒ:tli",
     "exampleSource": "tatoeba",
     "sourceRow": 14044,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù jiǔ"
   },
   {
     "id": "originally",
@@ -19648,7 +21197,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'ridʒәnli",
     "exampleSource": "tatoeba",
     "sourceRow": 42808,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "běn lái"
   },
   {
     "id": "proof",
@@ -19661,7 +21211,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pru:f",
     "exampleSource": "tatoeba",
     "sourceRow": 21637,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhèng míng"
   },
   {
     "id": "imagination",
@@ -19674,7 +21225,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i.mædʒi'neiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 15061,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xiǎng xiàng ； xiǎng xiàng lì"
   },
   {
     "id": "stable",
@@ -19687,7 +21239,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'steibl",
     "exampleSource": "tatoeba",
     "sourceRow": 10402,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wěn dìng de"
   },
   {
     "id": "fate",
@@ -19700,7 +21253,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "feit",
     "exampleSource": "tatoeba",
     "sourceRow": 34772,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "mìng yùn"
   },
   {
     "id": "poet",
@@ -19713,7 +21267,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pәuit",
     "exampleSource": "tatoeba",
     "sourceRow": 7465,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shī rén"
   },
   {
     "id": "comfort",
@@ -19726,7 +21281,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kʌmfәt",
     "exampleSource": "tatoeba",
     "sourceRow": 17451,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shū shì"
   },
   {
     "id": "significance",
@@ -19739,7 +21295,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sig'nifikәns",
     "exampleSource": "tatoeba",
     "sourceRow": 35370,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yì yì"
   },
   {
     "id": "leather",
@@ -19752,7 +21309,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'leðә",
     "exampleSource": "tatoeba",
     "sourceRow": 5750,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "pí gé"
   },
   {
     "id": "garlic",
@@ -19765,7 +21323,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'gɑ:lik",
     "exampleSource": "tatoeba",
     "sourceRow": 6209,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dà suàn"
   },
   {
     "id": "capability",
@@ -19778,7 +21337,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".keipә'biliti",
     "exampleSource": "tatoeba",
     "sourceRow": 37684,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "néng lì"
   },
   {
     "id": "pipe",
@@ -19791,7 +21351,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "paip",
     "exampleSource": "tatoeba",
     "sourceRow": 17657,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yān dǒu"
   },
   {
     "id": "athletic",
@@ -19804,7 +21365,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "æθ'letik",
     "exampleSource": "tatoeba",
     "sourceRow": 7121,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yùn dòng de"
   },
   {
     "id": "angle",
@@ -19817,7 +21379,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æŋgl",
     "exampleSource": "tatoeba",
     "sourceRow": 5879,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jiǎo dù"
   },
   {
     "id": "pile",
@@ -19830,7 +21393,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pail",
     "exampleSource": "tatoeba",
     "sourceRow": 49591,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dà duī"
   },
   {
     "id": "consume",
@@ -19843,7 +21407,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'sju:m",
     "exampleSource": "tatoeba",
     "sourceRow": 32996,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xiāo hào"
   },
   {
     "id": "survivor",
@@ -19856,7 +21421,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sә'vaivә",
     "exampleSource": "tatoeba",
     "sourceRow": 42749,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xìng cún zhě"
   },
   {
     "id": "painful",
@@ -19869,7 +21435,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'peinful",
     "exampleSource": "tatoeba",
     "sourceRow": 10042,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tòng kǔ de"
   },
   {
     "id": "calculate",
@@ -19882,7 +21449,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kælkjuleit",
     "exampleSource": "tatoeba",
     "sourceRow": 30140,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jì suàn"
   },
   {
     "id": "scope",
@@ -19895,7 +21463,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "skәup",
     "exampleSource": "tatoeba",
     "sourceRow": 7399,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fàn wéi"
   },
   {
     "id": "handful",
@@ -19908,7 +21477,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hændful",
     "exampleSource": "tatoeba",
     "sourceRow": 14465,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yī bǎ"
   },
   {
     "id": "punishment",
@@ -19921,7 +21491,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pʌniʃmәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 27864,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chéng fá"
   },
   {
     "id": "curious",
@@ -19934,7 +21505,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kjuәriәs",
     "exampleSource": "tatoeba",
     "sourceRow": 19809,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hào qí de"
   },
   {
     "id": "eager",
@@ -19947,7 +21519,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'i:gә",
     "exampleSource": "tatoeba",
     "sourceRow": 25610,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "kě wàng de"
   },
   {
     "id": "romantic",
@@ -19960,7 +21533,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "rәu'mæntik",
     "exampleSource": "tatoeba",
     "sourceRow": 17103,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "làng màn de"
   },
   {
     "id": "blade",
@@ -19973,7 +21547,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bleid",
     "exampleSource": "tatoeba",
     "sourceRow": 6601,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dāo fēng"
   },
   {
     "id": "absolute",
@@ -19986,7 +21561,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æbsәlu:t",
     "exampleSource": "tatoeba",
     "sourceRow": 7242,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jué duì de"
   },
   {
     "id": "offensive",
@@ -19999,7 +21575,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'fensiv",
     "exampleSource": "tatoeba",
     "sourceRow": 27828,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gōng jī xìng de"
   },
   {
     "id": "appoint",
@@ -20012,7 +21589,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'pɒint",
     "exampleSource": "tatoeba",
     "sourceRow": 29859,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "rèn mìng"
   },
   {
     "id": "successfully",
@@ -20025,7 +21603,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sәk'sesfjli",
     "exampleSource": "tatoeba",
     "sourceRow": 36778,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chéng gōng"
   },
   {
     "id": "cope",
@@ -20038,7 +21617,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәup",
     "exampleSource": "tatoeba",
     "sourceRow": 21233,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yìng fù"
   },
   {
     "id": "furthermore",
@@ -20051,7 +21631,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fә:ðә'mɒ:",
     "exampleSource": "tatoeba",
     "sourceRow": 30988,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "ér qiě"
   },
   {
     "id": "consciousness",
@@ -20064,7 +21645,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒnʃәsnis",
     "exampleSource": "tatoeba",
     "sourceRow": 28876,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhī jué"
   },
   {
     "id": "powder",
@@ -20077,7 +21659,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'paudә",
     "exampleSource": "tatoeba",
     "sourceRow": 25829,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fěn mò"
   },
   {
     "id": "admire",
@@ -20090,7 +21673,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әd'maiә",
     "exampleSource": "tatoeba",
     "sourceRow": 19180,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chēng zàn"
   },
   {
     "id": "turkey",
@@ -20103,7 +21687,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tә:ki",
     "exampleSource": "tatoeba",
     "sourceRow": 33521,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tǔ ěr qí"
   },
   {
     "id": "nonetheless",
@@ -20116,7 +21701,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ",nʌnðә'les",
     "exampleSource": "tatoeba",
     "sourceRow": 22059,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "rán ér"
   },
   {
     "id": "horror",
@@ -20129,7 +21715,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hɒrә",
     "exampleSource": "tatoeba",
     "sourceRow": 27572,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "kǒng bù"
   },
   {
     "id": "collective",
@@ -20142,7 +21729,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'leiktiv",
     "exampleSource": "tatoeba",
     "sourceRow": 45261,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jí tǐ de"
   },
   {
     "id": "virtue",
@@ -20155,7 +21743,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vә:tju:",
     "exampleSource": "tatoeba",
     "sourceRow": 27518,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "měi dé"
   },
   {
     "id": "makeup",
@@ -20168,7 +21757,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'meikʌp",
     "exampleSource": "tatoeba",
     "sourceRow": 36366,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "huà zhuāng pǐn"
   },
   {
     "id": "interrupt",
@@ -20181,7 +21771,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".intә'rʌpt",
     "exampleSource": "tatoeba",
     "sourceRow": 11445,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chā zuǐ"
   },
   {
     "id": "continuous",
@@ -20194,7 +21785,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'tinjuәs",
     "exampleSource": "tatoeba",
     "sourceRow": 45686,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lián xù de ； lián xù bù duàn de"
   },
   {
     "id": "evil",
@@ -20207,7 +21799,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'i:vl",
     "exampleSource": "tatoeba",
     "sourceRow": 1594,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zuì è"
   },
   {
     "id": "civilization",
@@ -20220,7 +21813,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "si.vilai'zeiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 45798,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wén míng"
   },
   {
     "id": "evident",
@@ -20233,7 +21827,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'evidәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 40414,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "míng xiǎn de"
   },
   {
     "id": "corridor",
@@ -20246,7 +21841,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒridɒ:",
     "exampleSource": "tatoeba",
     "sourceRow": 30890,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zǒu láng"
   },
   {
     "id": "weakness",
@@ -20259,7 +21855,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'wi:knis",
     "exampleSource": "tatoeba",
     "sourceRow": 6175,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "ruò diǎn"
   },
   {
     "id": "rumor",
@@ -20272,7 +21869,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ru:mә",
     "exampleSource": "tatoeba",
     "sourceRow": 25949,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yáo yán"
   },
   {
     "id": "administrative",
@@ -20285,7 +21883,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әd'ministrәtiv",
     "exampleSource": "tatoeba",
     "sourceRow": 48852,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xíng zhèng de"
   },
   {
     "id": "nail",
@@ -20298,7 +21897,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "neil",
     "exampleSource": "tatoeba",
     "sourceRow": 8516,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dīng zi"
   },
   {
     "id": "motive",
@@ -20311,7 +21911,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mәutiv",
     "exampleSource": "tatoeba",
     "sourceRow": 17000,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dòng jī"
   },
   {
     "id": "flood",
@@ -20324,7 +21925,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "flʌd",
     "exampleSource": "tatoeba",
     "sourceRow": 2550,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hóng shuǐ"
   },
   {
     "id": "warrior",
@@ -20337,7 +21939,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'wɒ:riә",
     "exampleSource": "tatoeba",
     "sourceRow": 24078,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhàn shì"
   },
   {
     "id": "prediction",
@@ -20350,7 +21953,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pri'dikʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 20481,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yù yán"
   },
   {
     "id": "wrist",
@@ -20363,7 +21967,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "rist",
     "exampleSource": "tatoeba",
     "sourceRow": 23133,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shǒu wàn"
   },
   {
     "id": "guilt",
@@ -20376,7 +21981,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "gilt",
     "exampleSource": "tatoeba",
     "sourceRow": 19095,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "nèi jiù"
   },
   {
     "id": "railroad",
@@ -20389,7 +21995,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'reilrәud",
     "exampleSource": "tatoeba",
     "sourceRow": 21156,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tiě lù"
   },
   {
     "id": "endure",
@@ -20402,7 +22009,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'djuә",
     "exampleSource": "tatoeba",
     "sourceRow": 28619,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "rěn shòu"
   },
   {
     "id": "harm",
@@ -20415,7 +22023,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hɑ:m",
     "exampleSource": "tatoeba",
     "sourceRow": 11902,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shāng hài"
   },
   {
     "id": "horn",
@@ -20428,7 +22037,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hɒ:n",
     "exampleSource": "tatoeba",
     "sourceRow": 27333,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lǎ bā"
   },
   {
     "id": "peaceful",
@@ -20441,7 +22051,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pi:sful",
     "exampleSource": "tatoeba",
     "sourceRow": 24271,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hé píng de"
   },
   {
     "id": "grateful",
@@ -20454,7 +22065,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'greitful",
     "exampleSource": "tatoeba",
     "sourceRow": 45608,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gǎn jī de"
   },
   {
     "id": "sweat",
@@ -20467,7 +22079,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "swet",
     "exampleSource": "tatoeba",
     "sourceRow": 2044,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hàn shuǐ"
   },
   {
     "id": "republic",
@@ -20480,7 +22093,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'pʌblik",
     "exampleSource": "tatoeba",
     "sourceRow": 30082,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gòng hé guó"
   },
   {
     "id": "govern",
@@ -20493,7 +22107,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'gʌvәn",
     "exampleSource": "tatoeba",
     "sourceRow": 33498,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tǒng zhì"
   },
   {
     "id": "vitamin",
@@ -20506,7 +22121,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vaitәmin",
     "exampleSource": "tatoeba",
     "sourceRow": 8811,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wéi shēng sù"
   },
   {
     "id": "mechanical",
@@ -20519,7 +22135,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mi'kænikәl",
     "exampleSource": "tatoeba",
     "sourceRow": 34311,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jī xiè de"
   },
   {
     "id": "apologize",
@@ -20532,7 +22149,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'pɒlәdʒaiz",
     "exampleSource": "tatoeba",
     "sourceRow": 14207,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dào qiàn"
   },
   {
     "id": "corruption",
@@ -20545,7 +22163,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'rʌpʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 436,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fǔ bài"
   },
   {
     "id": "complexity",
@@ -20558,7 +22177,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәm'pleksiti",
     "exampleSource": "tatoeba",
     "sourceRow": 32661,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fù zá ； fù zá xìng"
   },
   {
     "id": "suspicion",
@@ -20571,7 +22191,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sә'spiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 16901,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "huái yí"
   },
   {
     "id": "relieve",
@@ -20584,7 +22205,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'li:v",
     "exampleSource": "tatoeba",
     "sourceRow": 4819,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jiǎn qīng"
   },
   {
     "id": "meaningful",
@@ -20597,7 +22219,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mi:niŋful",
     "exampleSource": "tatoeba",
     "sourceRow": 19193,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yì wèi shēn cháng de"
   },
   {
     "id": "rebel",
@@ -20610,7 +22233,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'rebl",
     "exampleSource": "tatoeba",
     "sourceRow": 23930,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fǎn pàn zhě"
   },
   {
     "id": "exit",
@@ -20623,7 +22247,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'eksit",
     "exampleSource": "tatoeba",
     "sourceRow": 34221,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chū kǒu"
   },
   {
     "id": "needle",
@@ -20636,7 +22261,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ni:dl",
     "exampleSource": "tatoeba",
     "sourceRow": 26260,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "féng rèn"
   },
   {
     "id": "mild",
@@ -20649,7 +22275,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "maild",
     "exampleSource": "tatoeba",
     "sourceRow": 2110,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wēn hé de"
   },
   {
     "id": "anxious",
@@ -20662,7 +22289,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æŋʃәs",
     "exampleSource": "tatoeba",
     "sourceRow": 1378,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "kě wàng de"
   },
   {
     "id": "liberty",
@@ -20675,7 +22303,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'libәli",
     "exampleSource": "tatoeba",
     "sourceRow": 394,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zì yóu"
   },
   {
     "id": "opera",
@@ -20688,7 +22317,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒpәrә",
     "exampleSource": "tatoeba",
     "sourceRow": 34294,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gē jù"
   },
   {
     "id": "departure",
@@ -20701,7 +22331,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'pɑ:tʃә",
     "exampleSource": "tatoeba",
     "sourceRow": 29229,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chū fā"
   },
   {
     "id": "hesitate",
@@ -20714,7 +22345,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'heziteit",
     "exampleSource": "tatoeba",
     "sourceRow": 34388,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yóu yù"
   },
   {
     "id": "necessity",
@@ -20727,7 +22359,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ni'sesәti",
     "exampleSource": "tatoeba",
     "sourceRow": 21527,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xū yào"
   },
   {
     "id": "performer",
@@ -20740,7 +22373,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'fɒ:mә",
     "exampleSource": "tatoeba",
     "sourceRow": 2303,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "biǎo yǎn zhě"
   },
   {
     "id": "photography",
@@ -20753,7 +22387,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fә'tɒgrәfi",
     "exampleSource": "tatoeba",
     "sourceRow": 13237,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shè yǐng"
   },
   {
     "id": "outstanding",
@@ -20766,7 +22401,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".aut'stændiŋ",
     "exampleSource": "tatoeba",
     "sourceRow": 34207,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jié chū de"
   },
   {
     "id": "lately",
@@ -20779,7 +22415,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'leitli",
     "exampleSource": "tatoeba",
     "sourceRow": 11070,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zuì jìn"
   },
   {
     "id": "diamond",
@@ -20792,7 +22429,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'daiәmәnd",
     "exampleSource": "tatoeba",
     "sourceRow": 7359,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zuàn shí"
   },
   {
     "id": "import",
@@ -20805,7 +22443,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "im'pɒ:t",
     "exampleSource": "tatoeba",
     "sourceRow": 3386,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jìn kǒu"
   },
   {
     "id": "mysterious",
@@ -20818,7 +22457,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mis'tiәriәs",
     "exampleSource": "tatoeba",
     "sourceRow": 22349,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shén mì de"
   },
   {
     "id": "rocket",
@@ -20831,7 +22471,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'rɒkit",
     "exampleSource": "tatoeba",
     "sourceRow": 3439,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "huǒ jiàn"
   },
   {
     "id": "tightly",
@@ -20844,7 +22485,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'taitli",
     "exampleSource": "tatoeba",
     "sourceRow": 29386,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jǐn jǐn dì"
   },
   {
     "id": "glory",
@@ -20857,7 +22499,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'glɒ:ri",
     "exampleSource": "tatoeba",
     "sourceRow": 16576,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "guāng róng"
   },
   {
     "id": "nest",
@@ -20870,7 +22513,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "nest",
     "exampleSource": "tatoeba",
     "sourceRow": 32949,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhù cháo"
   },
   {
     "id": "optimistic",
@@ -20883,7 +22527,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ɒpti'mistik",
     "exampleSource": "tatoeba",
     "sourceRow": 45703,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lè guān de"
   },
   {
     "id": "unite",
@@ -20896,7 +22541,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ju:'nait",
     "exampleSource": "tatoeba",
     "sourceRow": 33002,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lián hé"
   },
   {
     "id": "patience",
@@ -20909,7 +22555,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'peiʃәns",
     "exampleSource": "tatoeba",
     "sourceRow": 15981,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "rěn nài"
   },
   {
     "id": "grasp",
@@ -20922,7 +22569,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "græsp",
     "exampleSource": "tatoeba",
     "sourceRow": 40236,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bǎ wò"
   },
   {
     "id": "calm",
@@ -20935,7 +22583,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kɑ:m",
     "exampleSource": "tatoeba",
     "sourceRow": 43618,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lěng jìng de"
   },
   {
     "id": "afterward",
@@ -20948,7 +22597,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɑ:ftәwәd",
     "exampleSource": "tatoeba",
     "sourceRow": 12190,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "rán hòu"
   },
   {
     "id": "ruin",
@@ -20961,7 +22611,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ruin",
     "exampleSource": "tatoeba",
     "sourceRow": 22003,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "pò huài"
   },
   {
     "id": "empire",
@@ -20974,7 +22625,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'empaiә",
     "exampleSource": "tatoeba",
     "sourceRow": 18731,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dì guó"
   },
   {
     "id": "neutral",
@@ -20987,7 +22639,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'nju:trәl",
     "exampleSource": "tatoeba",
     "sourceRow": 6892,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhōng lì de"
   },
   {
     "id": "tragic",
@@ -21000,7 +22653,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'trædʒik",
     "exampleSource": "tatoeba",
     "sourceRow": 27863,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bēi jù de"
   },
   {
     "id": "earthquake",
@@ -21013,7 +22667,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ә:θkweik",
     "exampleSource": "tatoeba",
     "sourceRow": 15442,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dì zhèn"
   },
   {
     "id": "safely",
@@ -21026,7 +22681,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'seifli",
     "exampleSource": "tatoeba",
     "sourceRow": 10715,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "ān quán dì"
   },
   {
     "id": "sympathy",
@@ -21039,7 +22695,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'simpәθi",
     "exampleSource": "tatoeba",
     "sourceRow": 5550,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tóng qíng"
   },
   {
     "id": "influential",
@@ -21052,7 +22709,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".infu'enʃәl",
     "exampleSource": "tatoeba",
     "sourceRow": 28252,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǒu yǐng xiǎng de"
   },
   {
     "id": "translation",
@@ -21065,7 +22723,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "træns'leiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 30199,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fān yì"
   },
   {
     "id": "uncertain",
@@ -21078,7 +22737,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌn'sә:tn",
     "exampleSource": "tatoeba",
     "sourceRow": 29992,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù què dìng de"
   },
   {
     "id": "waist",
@@ -21091,7 +22751,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "weist",
     "exampleSource": "tatoeba",
     "sourceRow": 17679,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yāo bù"
   },
   {
     "id": "pulse",
@@ -21104,7 +22765,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pʌls",
     "exampleSource": "tatoeba",
     "sourceRow": 3214,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "mài bó"
   },
   {
     "id": "icon",
@@ -21117,7 +22779,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'aikɒn",
     "exampleSource": "tatoeba",
     "sourceRow": 26024,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tú biāo"
   },
   {
     "id": "liquid",
@@ -21130,7 +22793,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'likwid",
     "exampleSource": "tatoeba",
     "sourceRow": 14737,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yè tǐ"
   },
   {
     "id": "sensation",
@@ -21143,7 +22807,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sen'seiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 4461,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hōng dòng"
   },
   {
     "id": "alike",
@@ -21156,7 +22821,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'laik",
     "exampleSource": "tatoeba",
     "sourceRow": 36340,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yī yàng"
   },
   {
     "id": "trash",
@@ -21169,7 +22835,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "træʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 14995,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lā jī"
   },
   {
     "id": "interfere",
@@ -21182,7 +22849,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".intә'fiә",
     "exampleSource": "tatoeba",
     "sourceRow": 9475,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gān shè"
   },
   {
     "id": "innovative",
@@ -21195,7 +22863,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'inәjveitiv",
     "exampleSource": "tatoeba",
     "sourceRow": 29696,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chuàng xīn de"
   },
   {
     "id": "shark",
@@ -21208,7 +22877,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ʃɑ:k",
     "exampleSource": "tatoeba",
     "sourceRow": 7170,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shā yú"
   },
   {
     "id": "sensitivity",
@@ -21221,7 +22891,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".sensә'tiviti",
     "exampleSource": "tatoeba",
     "sourceRow": 49303,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "mǐn gǎn"
   },
   {
     "id": "curiosity",
@@ -21234,7 +22905,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kjuәri'ɒsiti",
     "exampleSource": "tatoeba",
     "sourceRow": 30671,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hào qí xīn"
   },
   {
     "id": "aggression",
@@ -21247,7 +22919,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'greʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 49070,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "qīn lüè"
   },
   {
     "id": "feather",
@@ -21260,7 +22933,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'feðә",
     "exampleSource": "tatoeba",
     "sourceRow": 27473,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǔ máo"
   },
   {
     "id": "strictly",
@@ -21273,7 +22947,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'striktli",
     "exampleSource": "tatoeba",
     "sourceRow": 10554,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yán gé dì"
   },
   {
     "id": "specialty",
@@ -21286,7 +22961,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'speʃәlti",
     "exampleSource": "tatoeba",
     "sourceRow": 24393,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhuān yè"
   },
   {
     "id": "lightning",
@@ -21299,7 +22975,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'laitniŋ",
     "exampleSource": "tatoeba",
     "sourceRow": 3074,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shǎn diàn"
   },
   {
     "id": "disappointment",
@@ -21312,7 +22989,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".disә'pɒintmәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 42439,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shī wàng"
   },
   {
     "id": "sleeve",
@@ -21325,7 +23003,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sli:v",
     "exampleSource": "tatoeba",
     "sourceRow": 3064,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xiù zi"
   },
   {
     "id": "mineral",
@@ -21338,7 +23017,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'minәrәl",
     "exampleSource": "tatoeba",
     "sourceRow": 6387,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "kuàng wù"
   },
   {
     "id": "hunger",
@@ -21351,7 +23031,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hʌŋgә",
     "exampleSource": "tatoeba",
     "sourceRow": 21528,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jī è"
   },
   {
     "id": "equality",
@@ -21364,7 +23045,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i:'kwɒliti",
     "exampleSource": "tatoeba",
     "sourceRow": 34212,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "píng děng"
   },
   {
     "id": "refuge",
@@ -21377,7 +23059,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'refju:dʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 12057,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bì nàn suǒ ； bì nàn"
   },
   {
     "id": "calculation",
@@ -21390,7 +23073,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kælkju'leiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 38904,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jì suàn"
   },
   {
     "id": "commerce",
@@ -21403,7 +23087,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒmә:s",
     "exampleSource": "tatoeba",
     "sourceRow": 15255,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shāng yè"
   },
   {
     "id": "formerly",
@@ -21416,7 +23101,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fɒ:mәli",
     "exampleSource": "tatoeba",
     "sourceRow": 14867,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǐ qián"
   },
   {
     "id": "widow",
@@ -21429,7 +23115,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'widәu",
     "exampleSource": "tatoeba",
     "sourceRow": 29499,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "guǎ fù"
   },
   {
     "id": "forbid",
@@ -21442,7 +23129,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fә'bid",
     "exampleSource": "tatoeba",
     "sourceRow": 28468,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jìn zhǐ"
   },
   {
     "id": "globe",
@@ -21455,7 +23143,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "glәub",
     "exampleSource": "tatoeba",
     "sourceRow": 46531,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dì qiú yí"
   },
   {
     "id": "clay",
@@ -21468,7 +23157,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "klei",
     "exampleSource": "tatoeba",
     "sourceRow": 4901,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "nián tǔ"
   },
   {
     "id": "prince",
@@ -21481,7 +23171,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prins",
     "exampleSource": "tatoeba",
     "sourceRow": 28404,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wáng zǐ"
   },
   {
     "id": "favorable",
@@ -21494,7 +23185,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'feivәrәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 21071,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǒu lì de"
   },
   {
     "id": "steadily",
@@ -21507,7 +23199,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'stedili",
     "exampleSource": "tatoeba",
     "sourceRow": 2012,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wěn dìng dì"
   },
   {
     "id": "harvest",
@@ -21520,7 +23213,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hɑ:vist",
     "exampleSource": "tatoeba",
     "sourceRow": 46455,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shōu gē"
   },
   {
     "id": "severely",
@@ -21533,7 +23227,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "si'viәli",
     "exampleSource": "tatoeba",
     "sourceRow": 12267,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yán lì"
   },
   {
     "id": "sovereignty",
@@ -21546,7 +23241,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sɒvrәnti",
     "exampleSource": "tatoeba",
     "sourceRow": 49208,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhǔ quán"
   },
   {
     "id": "specify",
@@ -21559,7 +23255,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'spesifai",
     "exampleSource": "tatoeba",
     "sourceRow": 30282,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhǐ dìng"
   },
   {
     "id": "terribly",
@@ -21572,7 +23269,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'terәbli",
     "exampleSource": "tatoeba",
     "sourceRow": 23835,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fēi cháng"
   },
   {
     "id": "delight",
@@ -21585,7 +23283,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'lait",
     "exampleSource": "tatoeba",
     "sourceRow": 34375,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gāo xìng"
   },
   {
     "id": "academy",
@@ -21598,7 +23297,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'kædәmi",
     "exampleSource": "tatoeba",
     "sourceRow": 48476,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xué yuàn"
   },
   {
     "id": "skilled",
@@ -21611,7 +23311,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'skild",
     "exampleSource": "tatoeba",
     "sourceRow": 28694,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shú liàn de"
   },
   {
     "id": "apology",
@@ -21624,7 +23325,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'pɒlәdʒi",
     "exampleSource": "tatoeba",
     "sourceRow": 1088,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dào qiàn"
   },
   {
     "id": "brass",
@@ -21637,7 +23339,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bræs.brɑ:s",
     "exampleSource": "tatoeba",
     "sourceRow": 1612,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "huáng tóng"
   },
   {
     "id": "unfortunate",
@@ -21650,7 +23353,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌn'fɒ:tʃәnit",
     "exampleSource": "tatoeba",
     "sourceRow": 8961,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù xìng de"
   },
   {
     "id": "composer",
@@ -21663,7 +23367,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәm'pәuzә",
     "exampleSource": "tatoeba",
     "sourceRow": 9750,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zuò qǔ jiā"
   },
   {
     "id": "merger",
@@ -21676,7 +23381,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mә:dʒә",
     "exampleSource": "tatoeba",
     "sourceRow": 21454,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hé bìng"
   },
   {
     "id": "inspect",
@@ -21689,7 +23395,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'spekt",
     "exampleSource": "tatoeba",
     "sourceRow": 42994,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jiǎn chá"
   },
   {
     "id": "countless",
@@ -21702,7 +23409,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kauntlis",
     "exampleSource": "tatoeba",
     "sourceRow": 32744,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wú shù de"
   },
   {
     "id": "warfare",
@@ -21715,7 +23423,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'wɒ:fєә",
     "exampleSource": "tatoeba",
     "sourceRow": 1630,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhàn dòu"
   },
   {
     "id": "biologist",
@@ -21728,7 +23437,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bai'ɒlәdʒist",
     "exampleSource": "tatoeba",
     "sourceRow": 40016,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shēng wù xué jiā"
   },
   {
     "id": "worthy",
@@ -21741,7 +23451,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'wә:ði",
     "exampleSource": "tatoeba",
     "sourceRow": 16486,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhí de de"
   },
   {
     "id": "hopeful",
@@ -21754,7 +23465,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hәupful",
     "exampleSource": "tatoeba",
     "sourceRow": 13278,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǒu xī wàng de"
   },
   {
     "id": "philosopher",
@@ -21767,7 +23479,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fi'lɒsәfә",
     "exampleSource": "tatoeba",
     "sourceRow": 40049,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhé xué jiā"
   },
   {
     "id": "greenhouse",
@@ -21780,7 +23493,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'gri:nhaus",
     "exampleSource": "tatoeba",
     "sourceRow": 28408,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wēn shì"
   },
   {
     "id": "atom",
@@ -21793,7 +23507,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ætәm",
     "exampleSource": "tatoeba",
     "sourceRow": 14755,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yuán zi"
   },
   {
     "id": "temporarily",
@@ -21806,7 +23521,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tempәrәrәli",
     "exampleSource": "tatoeba",
     "sourceRow": 40229,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zàn shí"
   },
   {
     "id": "persistent",
@@ -21819,7 +23535,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'sistәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 14876,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jiān chí de"
   },
   {
     "id": "fortunate",
@@ -21832,7 +23549,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fɒ:tʃәnit",
     "exampleSource": "tatoeba",
     "sourceRow": 1061,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xìng yùn de"
   },
   {
     "id": "alert",
@@ -21845,7 +23563,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'lә:t",
     "exampleSource": "tatoeba",
     "sourceRow": 30310,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jǐng bào"
   },
   {
     "id": "urgent",
@@ -21858,7 +23577,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ә:dʒәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 9808,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jǐn jí de"
   },
   {
     "id": "subway",
@@ -21871,7 +23591,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sʌbwei",
     "exampleSource": "tatoeba",
     "sourceRow": 45283,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dì tiě"
   },
   {
     "id": "unnecessary",
@@ -21884,7 +23605,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌn'nesәsәri",
     "exampleSource": "tatoeba",
     "sourceRow": 41090,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù bì yào de"
   },
   {
     "id": "pope",
@@ -21897,7 +23619,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pәup",
     "exampleSource": "tatoeba",
     "sourceRow": 26818,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "luó mǎ jiào huáng"
   },
   {
     "id": "separately",
@@ -21910,7 +23633,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sepәrәtli",
     "exampleSource": "tatoeba",
     "sourceRow": 7464,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fēn kāi"
   },
   {
     "id": "contrary",
@@ -21923,7 +23647,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒntrәri",
     "exampleSource": "tatoeba",
     "sourceRow": 89,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xiāng fǎn de"
   },
   {
     "id": "sadness",
@@ -21936,7 +23661,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sædnis",
     "exampleSource": "tatoeba",
     "sourceRow": 23165,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bēi shāng"
   },
   {
     "id": "modification",
@@ -21949,7 +23675,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".mɒdifi'keiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 30044,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xiū shì"
   },
   {
     "id": "fireplace",
@@ -21962,7 +23689,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'faiәpleis",
     "exampleSource": "tatoeba",
     "sourceRow": 15405,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bì lú"
   },
   {
     "id": "peach",
@@ -21975,7 +23703,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pi:tʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 34075,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "táo shù"
   },
   {
     "id": "poison",
@@ -21988,7 +23717,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pɒizn",
     "exampleSource": "tatoeba",
     "sourceRow": 7554,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dú yào"
   },
   {
     "id": "wool",
@@ -22001,7 +23731,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "wul",
     "exampleSource": "tatoeba",
     "sourceRow": 49792,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yáng máo"
   },
   {
     "id": "salesman",
@@ -22014,7 +23745,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'seilzmәn",
     "exampleSource": "tatoeba",
     "sourceRow": 22381,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shòu huò yuán"
   },
   {
     "id": "accordingly",
@@ -22027,7 +23759,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'kɒ:diŋli",
     "exampleSource": "tatoeba",
     "sourceRow": 21571,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yīn cǐ"
   },
   {
     "id": "socialist",
@@ -22040,7 +23773,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sәuʃәlist",
     "exampleSource": "tatoeba",
     "sourceRow": 24796,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shè huì zhǔ yì zhě"
   },
   {
     "id": "verify",
@@ -22053,7 +23787,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'verifai",
     "exampleSource": "tatoeba",
     "sourceRow": 35090,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhèng shí"
   },
   {
     "id": "diplomacy",
@@ -22066,7 +23801,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'plәumәsi",
     "exampleSource": "tatoeba",
     "sourceRow": 2922,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wài jiāo"
   },
   {
     "id": "obey",
@@ -22079,7 +23815,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'bei",
     "exampleSource": "tatoeba",
     "sourceRow": 18741,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fú cóng"
   },
   {
     "id": "permanently",
@@ -22092,7 +23829,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'p\\\\\\\\:mәntli",
     "exampleSource": "tatoeba",
     "sourceRow": 40676,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǒng jiǔ"
   },
   {
     "id": "cigar",
@@ -22105,7 +23843,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "si'gɑ:",
     "exampleSource": "tatoeba",
     "sourceRow": 13621,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xuě jiā"
   },
   {
     "id": "weep",
@@ -22118,7 +23857,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "wi:p",
     "exampleSource": "tatoeba",
     "sourceRow": 20765,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "kū qì"
   },
   {
     "id": "emergence",
@@ -22131,7 +23871,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'mә:dʒәns",
     "exampleSource": "tatoeba",
     "sourceRow": 48852,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chū xiàn"
   },
   {
     "id": "sunset",
@@ -22144,7 +23885,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sʌnset",
     "exampleSource": "tatoeba",
     "sourceRow": 34455,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "rì luò"
   },
   {
     "id": "gardener",
@@ -22157,7 +23899,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'gɑ:dәnә",
     "exampleSource": "tatoeba",
     "sourceRow": 15598,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yuán dīng"
   },
   {
     "id": "foolish",
@@ -22170,7 +23913,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fu:liʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 31231,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yú chǔn de"
   },
   {
     "id": "inexpensive",
@@ -22183,7 +23927,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".inik'spensiv",
     "exampleSource": "tatoeba",
     "sourceRow": 23524,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "pián yi de"
   },
   {
     "id": "microwave",
@@ -22196,7 +23941,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'maikrәuweiv",
     "exampleSource": "tatoeba",
     "sourceRow": 47372,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wēi bō"
   },
   {
     "id": "respective",
@@ -22209,7 +23955,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'spektiv",
     "exampleSource": "tatoeba",
     "sourceRow": 2103,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gè zì de"
   },
   {
     "id": "upgrade",
@@ -22222,7 +23969,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ʌpgreid",
     "exampleSource": "tatoeba",
     "sourceRow": 38955,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shēng jí"
   },
   {
     "id": "navy",
@@ -22235,7 +23983,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'neivi",
     "exampleSource": "tatoeba",
     "sourceRow": 12902,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hǎi jūn"
   },
   {
     "id": "stool",
@@ -22248,7 +23997,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "stu:l",
     "exampleSource": "tatoeba",
     "sourceRow": 7707,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dèng zi"
   },
   {
     "id": "princess",
@@ -22261,7 +24011,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'prinsis",
     "exampleSource": "tatoeba",
     "sourceRow": 3308,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gōng zhǔ"
   },
   {
     "id": "coral",
@@ -22274,7 +24025,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒrәl",
     "exampleSource": "tatoeba",
     "sourceRow": 31490,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shān hú"
   },
   {
     "id": "viewpoint",
@@ -22287,7 +24039,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vju:pɒint",
     "exampleSource": "tatoeba",
     "sourceRow": 21457,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "guān diǎn"
   },
   {
     "id": "mustard",
@@ -22300,7 +24053,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mʌstәd",
     "exampleSource": "tatoeba",
     "sourceRow": 27531,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jiè mò"
   },
   {
     "id": "ramp",
@@ -22313,7 +24067,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ræmp",
     "exampleSource": "tatoeba",
     "sourceRow": 49654,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "pō dào"
   },
   {
     "id": "naive",
@@ -22326,7 +24081,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "nɑ:'i:v",
     "exampleSource": "tatoeba",
     "sourceRow": 5680,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yòu zhì de"
   },
   {
     "id": "pyramid",
@@ -22339,7 +24095,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pirәmid",
     "exampleSource": "tatoeba",
     "sourceRow": 27191,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jīn zì tǎ"
   },
   {
     "id": "bachelor",
@@ -22352,7 +24109,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bætʃәlә",
     "exampleSource": "tatoeba",
     "sourceRow": 49339,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dān shēn hàn"
   },
   {
     "id": "interface",
@@ -22365,7 +24123,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'intәfeis",
     "exampleSource": "tatoeba",
     "sourceRow": 33282,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jiè miàn"
   },
   {
     "id": "tomb",
@@ -22378,7 +24137,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "tu:m",
     "exampleSource": "tatoeba",
     "sourceRow": 3574,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fén mù"
   },
   {
     "id": "honesty",
@@ -22391,7 +24151,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒnisti",
     "exampleSource": "tatoeba",
     "sourceRow": 27294,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chéng shí"
   },
   {
     "id": "mainland",
@@ -22404,7 +24165,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'meinlәnd",
     "exampleSource": "tatoeba",
     "sourceRow": 44379,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dà lù"
   },
   {
     "id": "lobster",
@@ -22417,7 +24179,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'lɒbstә",
     "exampleSource": "tatoeba",
     "sourceRow": 41404,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lóng xiā"
   },
   {
     "id": "abundant",
@@ -22430,7 +24193,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'bʌndәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 20709,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fēng fù de"
   },
   {
     "id": "fond",
@@ -22443,7 +24207,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fɒnd",
     "exampleSource": "tatoeba",
     "sourceRow": 12259,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xǐ huān de"
   },
   {
     "id": "acquaintance",
@@ -22456,7 +24221,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'kweintәns",
     "exampleSource": "tatoeba",
     "sourceRow": 20322,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "rèn shí"
   },
   {
     "id": "unusually",
@@ -22469,7 +24235,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ʌn'ju:ʒәli",
     "exampleSource": "tatoeba",
     "sourceRow": 42230,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fēi cháng"
   },
   {
     "id": "sorrow",
@@ -22482,7 +24249,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sɒrәu",
     "exampleSource": "tatoeba",
     "sourceRow": 40116,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bēi shāng ； yí hàn"
   },
   {
     "id": "decisive",
@@ -22495,7 +24263,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'saisiv",
     "exampleSource": "tatoeba",
     "sourceRow": 46138,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jué dìng xìng de"
   },
   {
     "id": "reactor",
@@ -22508,7 +24277,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'æktә",
     "exampleSource": "tatoeba",
     "sourceRow": 48351,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fǎn yìng duī"
   },
   {
     "id": "flashlight",
@@ -22521,7 +24291,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'flæʃlait",
     "exampleSource": "tatoeba",
     "sourceRow": 38285,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shǒu diàn tǒng"
   },
   {
     "id": "marathon",
@@ -22534,7 +24305,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mærәθәn",
     "exampleSource": "tatoeba",
     "sourceRow": 6583,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "mǎ lā sōng"
   },
   {
     "id": "diesel",
@@ -22547,7 +24319,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'di:zәl",
     "exampleSource": "tatoeba",
     "sourceRow": 30325,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chái yóu"
   },
   {
     "id": "muddy",
@@ -22560,7 +24333,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mʌdi",
     "exampleSource": "tatoeba",
     "sourceRow": 40401,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "ní nìng de"
   },
   {
     "id": "thereafter",
@@ -22573,7 +24347,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ðєәr'æftә",
     "exampleSource": "tatoeba",
     "sourceRow": 6404,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "cóng nà shí yǐ hòu"
   },
   {
     "id": "mathematical",
@@ -22586,7 +24361,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".mæθә'mætikl",
     "exampleSource": "tatoeba",
     "sourceRow": 18474,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shù xué de"
   },
   {
     "id": "imaginary",
@@ -22599,7 +24375,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'mædʒinәri",
     "exampleSource": "tatoeba",
     "sourceRow": 994,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xū gòu de"
   },
   {
     "id": "necklace",
@@ -22612,7 +24389,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'neklis",
     "exampleSource": "tatoeba",
     "sourceRow": 46168,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xiàng liàn"
   },
   {
     "id": "lettuce",
@@ -22625,7 +24403,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'letis",
     "exampleSource": "tatoeba",
     "sourceRow": 47689,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shēng cài"
   },
   {
     "id": "canoe",
@@ -22638,7 +24417,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'nu:",
     "exampleSource": "tatoeba",
     "sourceRow": 11518,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dú mù zhōu"
   },
   {
     "id": "voyage",
@@ -22651,7 +24431,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vɒiidʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 18649,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "háng chéng"
   },
   {
     "id": "pact",
@@ -22664,7 +24445,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pækt",
     "exampleSource": "tatoeba",
     "sourceRow": 33966,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tiáo yuē"
   },
   {
     "id": "vest",
@@ -22677,7 +24459,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "vest",
     "exampleSource": "tatoeba",
     "sourceRow": 46842,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bèi xīn"
   },
   {
     "id": "linguistic",
@@ -22690,7 +24473,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "liŋ'^wistik",
     "exampleSource": "tatoeba",
     "sourceRow": 26113,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǔ yán de"
   },
   {
     "id": "landlord",
@@ -22703,7 +24487,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'lændlɒ:d",
     "exampleSource": "tatoeba",
     "sourceRow": 15238,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dì zhǔ"
   },
   {
     "id": "dictator",
@@ -22716,7 +24501,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dikteitә",
     "exampleSource": "tatoeba",
     "sourceRow": 6636,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dú cái zhě"
   },
   {
     "id": "vacant",
@@ -22729,7 +24515,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'veikәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 17208,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "máng rán de"
   },
   {
     "id": "hillside",
@@ -22742,7 +24529,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hilsaid",
     "exampleSource": "tatoeba",
     "sourceRow": 40641,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shān pō"
   },
   {
     "id": "millionaire",
@@ -22755,7 +24543,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".miljә'nєә",
     "exampleSource": "tatoeba",
     "sourceRow": 40735,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bǎi wàn fù wēng"
   },
   {
     "id": "nowadays",
@@ -22768,7 +24557,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'nauәdeiz",
     "exampleSource": "tatoeba",
     "sourceRow": 11072,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xiàn zài"
   },
   {
     "id": "puppy",
@@ -22781,7 +24571,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pʌpi",
     "exampleSource": "tatoeba",
     "sourceRow": 28152,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xiǎo gǒu"
   },
   {
     "id": "dislike",
@@ -22794,7 +24585,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dis'laik",
     "exampleSource": "tatoeba",
     "sourceRow": 29558,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù xǐ huān"
   },
   {
     "id": "syrup",
@@ -22807,7 +24599,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sirәp",
     "exampleSource": "tatoeba",
     "sourceRow": 28015,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "táng jiāng"
   },
   {
     "id": "clown",
@@ -22820,7 +24613,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "klaun",
     "exampleSource": "tatoeba",
     "sourceRow": 47063,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xiǎo chǒu"
   },
   {
     "id": "comprehend",
@@ -22833,7 +24627,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kɒmpri'hend",
     "exampleSource": "tatoeba",
     "sourceRow": 35067,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lǐ jiě"
   },
   {
     "id": "admiration",
@@ -22846,7 +24641,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ædmә'reiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 16485,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "qīn pèi"
   },
   {
     "id": "lumber",
@@ -22859,7 +24655,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'lʌmbә",
     "exampleSource": "tatoeba",
     "sourceRow": 18896,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "mù cái"
   },
   {
     "id": "autobiography",
@@ -22872,7 +24669,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ɒ:tәubai'ɒgrәfi",
     "exampleSource": "tatoeba",
     "sourceRow": 18389,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zì zhuàn"
   },
   {
     "id": "vase",
@@ -22885,7 +24683,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "veis",
     "exampleSource": "tatoeba",
     "sourceRow": 41629,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "huā píng"
   },
   {
     "id": "accidentally",
@@ -22898,7 +24697,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".æksi'dentli",
     "exampleSource": "tatoeba",
     "sourceRow": 27266,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yì wài dì"
   },
   {
     "id": "communism",
@@ -22911,7 +24711,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒmjunizm",
     "exampleSource": "tatoeba",
     "sourceRow": 1719,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gòng chǎn zhǔ yì"
   },
   {
     "id": "plaza",
@@ -22924,7 +24725,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'plɑ:zә",
     "exampleSource": "tatoeba",
     "sourceRow": 35732,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "guǎng chǎng"
   },
   {
     "id": "unstable",
@@ -22937,7 +24739,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌn'steibl",
     "exampleSource": "tatoeba",
     "sourceRow": 43583,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù wěn dìng de"
   },
   {
     "id": "insufficient",
@@ -22950,7 +24753,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".insә'fiʃәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 14195,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù gòu de"
   },
   {
     "id": "antenna",
@@ -22963,7 +24767,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "æn'tenә",
     "exampleSource": "tatoeba",
     "sourceRow": 6138,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tiān xiàn"
   },
   {
     "id": "affluent",
@@ -22976,7 +24781,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æfluәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 48421,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fù yù de"
   },
   {
     "id": "cozy",
@@ -22989,7 +24795,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kәuzi",
     "exampleSource": "tatoeba",
     "sourceRow": 27511,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shū shì de"
   },
   {
     "id": "spinach",
@@ -23002,7 +24809,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'spinitʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 40600,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bō cài"
   },
   {
     "id": "dusk",
@@ -23015,7 +24823,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dʌsk",
     "exampleSource": "tatoeba",
     "sourceRow": 49528,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bàng wǎn"
   },
   {
     "id": "mankind",
@@ -23028,7 +24837,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mæn'kaind",
     "exampleSource": "tatoeba",
     "sourceRow": 30719,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "rén lèi"
   },
   {
     "id": "sunrise",
@@ -23041,7 +24851,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sʌnraiz",
     "exampleSource": "tatoeba",
     "sourceRow": 25703,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "rì chū"
   },
   {
     "id": "extraordinarily",
@@ -23054,7 +24865,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'strɔ:dθnәrili",
     "exampleSource": "tatoeba",
     "sourceRow": 30812,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fēi cháng"
   },
   {
     "id": "luggage",
@@ -23067,7 +24879,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'lʌgidʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 11642,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xíng lǐ"
   },
   {
     "id": "prosperous",
@@ -23080,7 +24893,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'prɒspәrәs",
     "exampleSource": "tatoeba",
     "sourceRow": 48353,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fán shèng de"
   },
   {
     "id": "ignorant",
@@ -23093,7 +24907,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ignәrәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 15151,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù zhī dào de"
   },
   {
     "id": "lipstick",
@@ -23106,7 +24921,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'lipstik",
     "exampleSource": "tatoeba",
     "sourceRow": 26433,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "kǒu hóng"
   },
   {
     "id": "selfish",
@@ -23119,7 +24935,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'selfiʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 2095,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zì sī de"
   },
   {
     "id": "merry",
@@ -23132,7 +24949,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'meri",
     "exampleSource": "tatoeba",
     "sourceRow": 8491,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "kuài lè de"
   },
   {
     "id": "presently",
@@ -23145,7 +24963,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'prezntli",
     "exampleSource": "tatoeba",
     "sourceRow": 15278,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "mù qián"
   },
   {
     "id": "impatient",
@@ -23158,7 +24977,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "im'peiʃәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 15211,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù nài fán de"
   },
   {
     "id": "prose",
@@ -23171,7 +24991,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prәuz",
     "exampleSource": "tatoeba",
     "sourceRow": 17929,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "sǎn wén"
   },
   {
     "id": "accidental",
@@ -23184,7 +25005,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".æksi'dentl",
     "exampleSource": "tatoeba",
     "sourceRow": 6042,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "ǒu rán de"
   },
   {
     "id": "orphan",
@@ -23197,7 +25019,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒ:fәn",
     "exampleSource": "tatoeba",
     "sourceRow": 25020,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gū ér"
   },
   {
     "id": "enlarge",
@@ -23210,7 +25033,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'lɑ:dʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 18158,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "kuò dà"
   },
   {
     "id": "outdoors",
@@ -23223,7 +25047,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'aut'dɒ:z",
     "exampleSource": "tatoeba",
     "sourceRow": 19308,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hù wài"
   },
   {
     "id": "patriotic",
@@ -23236,7 +25061,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".peitri'ɒtik",
     "exampleSource": "tatoeba",
     "sourceRow": 28646,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "ài guó de"
   },
   {
     "id": "lessen",
@@ -23249,7 +25075,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'lesn",
     "exampleSource": "tatoeba",
     "sourceRow": 33048,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jiǎn shǎo"
   },
   {
     "id": "fashionable",
@@ -23262,7 +25089,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fæʃәnәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 24477,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shí máo de"
   },
   {
     "id": "kindness",
@@ -23275,7 +25103,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kaindnis",
     "exampleSource": "tatoeba",
     "sourceRow": 19181,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "rén cí"
   },
   {
     "id": "periodic",
@@ -23288,7 +25117,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".piәri'ɒdik",
     "exampleSource": "tatoeba",
     "sourceRow": 28430,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhōu qī de"
   },
   {
     "id": "sunshine",
@@ -23301,7 +25131,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sʌnʃain",
     "exampleSource": "tatoeba",
     "sourceRow": 15782,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yáng guāng"
   },
   {
     "id": "tailor",
@@ -23314,7 +25145,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'teilә",
     "exampleSource": "tatoeba",
     "sourceRow": 49701,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "cái féng"
   },
   {
     "id": "comprehension",
@@ -23327,7 +25159,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kɒmpri'henʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 30908,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lǐ jiě"
   },
   {
     "id": "generosity",
@@ -23340,7 +25173,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".dʒenә'rɒsiti",
     "exampleSource": "tatoeba",
     "sourceRow": 16485,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "kāng kǎi"
   },
   {
     "id": "repay",
@@ -23353,7 +25187,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'pei",
     "exampleSource": "tatoeba",
     "sourceRow": 13249,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "cháng huán"
   },
   {
     "id": "irresponsible",
@@ -23366,7 +25201,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".iri'spɔnsәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 16565,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù fù zé rèn de"
   },
   {
     "id": "stimulation",
@@ -23379,7 +25215,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".stimju'leiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 14628,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "cì jī"
   },
   {
     "id": "honeymoon",
@@ -23392,7 +25229,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hʌnimu:n",
     "exampleSource": "tatoeba",
     "sourceRow": 8620,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "mì yuè"
   },
   {
     "id": "jealousy",
@@ -23405,7 +25243,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒelәsi",
     "exampleSource": "tatoeba",
     "sourceRow": 601,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dù jì"
   },
   {
     "id": "dolphin",
@@ -23418,7 +25257,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dɒlfin",
     "exampleSource": "tatoeba",
     "sourceRow": 8966,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hǎi tún"
   },
   {
     "id": "cosmos",
@@ -23431,7 +25271,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɔzmɔs",
     "exampleSource": "tatoeba",
     "sourceRow": 44737,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǔ zhòu"
   },
   {
     "id": "courageous",
@@ -23444,7 +25285,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'reidʒәs",
     "exampleSource": "tatoeba",
     "sourceRow": 40007,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǒng gǎn de"
   },
   {
     "id": "arrogance",
@@ -23457,7 +25299,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ærәgәns",
     "exampleSource": "tatoeba",
     "sourceRow": 29078,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zì dà"
   },
   {
     "id": "memorize",
@@ -23470,7 +25313,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'memәraiz",
     "exampleSource": "tatoeba",
     "sourceRow": 43476,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jì zhù"
   },
   {
     "id": "satisfactory",
@@ -23483,7 +25327,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".sætis'fæktәri",
     "exampleSource": "tatoeba",
     "sourceRow": 6104,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "mǎn yì de"
   },
   {
     "id": "asphalt",
@@ -23496,7 +25341,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æsfælt",
     "exampleSource": "tatoeba",
     "sourceRow": 6097,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bǎi yóu"
   },
   {
     "id": "subscription",
@@ -23509,7 +25355,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sәb'skripʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 49383,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dìng yuè"
   },
   {
     "id": "dorm",
@@ -23522,7 +25369,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dɒ:m",
     "exampleSource": "tatoeba",
     "sourceRow": 37408,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "sù shè"
   },
   {
     "id": "overtime",
@@ -23535,7 +25383,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'әuvәtaim",
     "exampleSource": "tatoeba",
     "sourceRow": 37682,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jiā bān"
   },
   {
     "id": "bitterness",
@@ -23548,7 +25397,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bitәnis",
     "exampleSource": "tatoeba",
     "sourceRow": 36852,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "kǔ wèi"
   },
   {
     "id": "chimney",
@@ -23561,7 +25411,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tʃimni",
     "exampleSource": "tatoeba",
     "sourceRow": 2810,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yān cōng"
   },
   {
     "id": "cruelty",
@@ -23574,7 +25425,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kru:әlti",
     "exampleSource": "tatoeba",
     "sourceRow": 36008,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "cán kù"
   },
   {
     "id": "trot",
@@ -23587,7 +25439,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "trɒt",
     "exampleSource": "tatoeba",
     "sourceRow": 31706,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "kuài bù"
   },
   {
     "id": "compression",
@@ -23600,7 +25453,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәm'preʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 32998,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yā suō"
   },
   {
     "id": "respectful",
@@ -23613,7 +25467,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'spektful",
     "exampleSource": "tatoeba",
     "sourceRow": 24550,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǒu lǐ mào de"
   },
   {
     "id": "abide",
@@ -23626,7 +25481,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'baid",
     "exampleSource": "tatoeba",
     "sourceRow": 39145,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zūn shǒu"
   },
   {
     "id": "tasty",
@@ -23639,7 +25495,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'teisti",
     "exampleSource": "tatoeba",
     "sourceRow": 42305,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hǎo chī de"
   },
   {
     "id": "haircut",
@@ -23652,7 +25509,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hєәkʌt",
     "exampleSource": "tatoeba",
     "sourceRow": 11240,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lǐ fà"
   },
   {
     "id": "handkerchief",
@@ -23665,7 +25523,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hæŋkәtʃif",
     "exampleSource": "tatoeba",
     "sourceRow": 17158,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shǒu pà"
   },
   {
     "id": "pudding",
@@ -23678,7 +25537,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pudiŋ",
     "exampleSource": "tatoeba",
     "sourceRow": 45929,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù dīng"
   },
   {
     "id": "dissatisfaction",
@@ -23691,7 +25551,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dis.sætis'fækʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 44673,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù mǎn"
   },
   {
     "id": "volcanic",
@@ -23704,7 +25565,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "vɒl'kænik",
     "exampleSource": "tatoeba",
     "sourceRow": 32303,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "huǒ shān de"
   },
   {
     "id": "epic",
@@ -23717,7 +25579,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'epik",
     "exampleSource": "tatoeba",
     "sourceRow": 13276,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shǐ shī"
   },
   {
     "id": "meteor",
@@ -23730,7 +25593,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mi:tiә",
     "exampleSource": "tatoeba",
     "sourceRow": 32488,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "liú xīng"
   },
   {
     "id": "mislead",
@@ -23743,7 +25607,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mis'li:d",
     "exampleSource": "tatoeba",
     "sourceRow": 41558,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wù dǎo"
   },
   {
     "id": "cedar",
@@ -23756,7 +25621,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'si:dә",
     "exampleSource": "tatoeba",
     "sourceRow": 47744,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xuě sōng"
   },
   {
     "id": "popcorn",
@@ -23769,7 +25635,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pɒpkɒ:n",
     "exampleSource": "tatoeba",
     "sourceRow": 4185,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bào mǐ huā"
   },
   {
     "id": "worthless",
@@ -23782,7 +25649,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'wә:θlis",
     "exampleSource": "tatoeba",
     "sourceRow": 10003,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wú jià zhí de"
   },
   {
     "id": "verb",
@@ -23795,7 +25663,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "vә:b",
     "exampleSource": "tatoeba",
     "sourceRow": 22893,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dòng cí"
   },
   {
     "id": "peninsula",
@@ -23808,7 +25677,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pi'ninsjulә",
     "exampleSource": "tatoeba",
     "sourceRow": 26381,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bàn dǎo"
   },
   {
     "id": "puddle",
@@ -23821,7 +25691,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pʌdl",
     "exampleSource": "tatoeba",
     "sourceRow": 48922,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shuǐ kēng"
   },
   {
     "id": "jelly",
@@ -23834,7 +25705,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒeli",
     "exampleSource": "tatoeba",
     "sourceRow": 13752,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "guǒ dòng"
   },
   {
     "id": "lineage",
@@ -23847,7 +25719,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'liniidʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 47660,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xuè tǒng"
   },
   {
     "id": "pineapple",
@@ -23860,7 +25733,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pain.æpl",
     "exampleSource": "tatoeba",
     "sourceRow": 22064,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bō luó"
   },
   {
     "id": "insulin",
@@ -23873,7 +25747,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'insjulin",
     "exampleSource": "tatoeba",
     "sourceRow": 29117,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yí dǎo sù"
   },
   {
     "id": "midday",
@@ -23886,7 +25761,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'middei",
     "exampleSource": "tatoeba",
     "sourceRow": 38932,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhōng wǔ"
   },
   {
     "id": "cartridge",
@@ -23899,7 +25775,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɑ:tridʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 26166,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "mò fěn gǔ"
   },
   {
     "id": "tolerant",
@@ -23912,7 +25789,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tɒlәrәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 28987,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "kuān róng de"
   },
   {
     "id": "alphabet",
@@ -23925,7 +25803,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ælfәbit",
     "exampleSource": "tatoeba",
     "sourceRow": 7680,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zì mǔ"
   },
   {
     "id": "pollute",
@@ -23938,7 +25817,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'lu:t",
     "exampleSource": "tatoeba",
     "sourceRow": 2007,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "wū rǎn"
   },
   {
     "id": "scripture",
@@ -23951,7 +25831,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'skriptʃә",
     "exampleSource": "tatoeba",
     "sourceRow": 28468,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shèng jīng"
   },
   {
     "id": "stray",
@@ -23964,7 +25845,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "strei",
     "exampleSource": "tatoeba",
     "sourceRow": 48676,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "liú làng"
   },
   {
     "id": "terminology",
@@ -23977,7 +25859,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".tә:mi'nɒlәdʒi",
     "exampleSource": "tatoeba",
     "sourceRow": 29041,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shù yǔ"
   },
   {
     "id": "gorilla",
@@ -23990,7 +25873,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "gә'rilә",
     "exampleSource": "tatoeba",
     "sourceRow": 43273,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dà xīng xīng"
   },
   {
     "id": "humility",
@@ -24003,7 +25887,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hju:'militi",
     "exampleSource": "tatoeba",
     "sourceRow": 16066,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "qiān xùn"
   },
   {
     "id": "persuasion",
@@ -24016,7 +25901,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'sweiʒәn",
     "exampleSource": "tatoeba",
     "sourceRow": 24903,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shuō fú"
   },
   {
     "id": "sulfur",
@@ -24029,7 +25915,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sʌlfә",
     "exampleSource": "tatoeba",
     "sourceRow": 21437,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "liú huáng"
   },
   {
     "id": "treadmill",
@@ -24042,7 +25929,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tredmil",
     "exampleSource": "tatoeba",
     "sourceRow": 43561,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tà chē"
   },
   {
     "id": "ventilation",
@@ -24055,7 +25943,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".venti'leiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 49007,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tōng fēng"
   },
   {
     "id": "troublesome",
@@ -24068,7 +25957,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'trʌblsәm",
     "exampleSource": "tatoeba",
     "sourceRow": 3598,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "má fán de"
   },
   {
     "id": "managerial",
@@ -24081,7 +25971,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".mænә'dʒiәriәl",
     "exampleSource": "tatoeba",
     "sourceRow": 37684,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "guǎn lǐ de"
   },
   {
     "id": "typewriter",
@@ -24094,7 +25985,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'taip.raitә",
     "exampleSource": "tatoeba",
     "sourceRow": 39902,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dǎ zì jī"
   },
   {
     "id": "blizzard",
@@ -24107,7 +25999,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'blizәd",
     "exampleSource": "tatoeba",
     "sourceRow": 21192,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bào fēng xuě"
   },
   {
     "id": "beware",
@@ -24120,7 +26013,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bi'wєә",
     "exampleSource": "tatoeba",
     "sourceRow": 43945,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xiǎo xīn"
   },
   {
     "id": "botanical",
@@ -24133,7 +26027,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bә'tænikәl",
     "exampleSource": "tatoeba",
     "sourceRow": 48531,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhí wù xué de"
   },
   {
     "id": "bland",
@@ -24146,7 +26041,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "blænd",
     "exampleSource": "tatoeba",
     "sourceRow": 48084,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fá wèi de"
   },
   {
     "id": "pickle",
@@ -24159,7 +26055,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pikl",
     "exampleSource": "tatoeba",
     "sourceRow": 31048,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "pào cài"
   },
   {
     "id": "poisonous",
@@ -24172,7 +26069,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pɒizәnәs",
     "exampleSource": "tatoeba",
     "sourceRow": 46522,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǒu dú de"
   },
   {
     "id": "stairway",
@@ -24185,7 +26083,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'stєәwei",
     "exampleSource": "tatoeba",
     "sourceRow": 20405,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lóu tī"
   },
   {
     "id": "innate",
@@ -24198,7 +26097,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'neit",
     "exampleSource": "tatoeba",
     "sourceRow": 18167,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tiān shēng de"
   },
   {
     "id": "obese",
@@ -24211,7 +26111,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әu'bi:s",
     "exampleSource": "tatoeba",
     "sourceRow": 32405,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "féi pàng de"
   },
   {
     "id": "gymnastics",
@@ -24224,7 +26125,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dʒim'næstiks",
     "exampleSource": "tatoeba",
     "sourceRow": 14383,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tǐ cāo"
   },
   {
     "id": "viral",
@@ -24237,7 +26139,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vairәl",
     "exampleSource": "tatoeba",
     "sourceRow": 33090,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bìng dú de"
   },
   {
     "id": "patriot",
@@ -24250,7 +26153,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'peitriәt",
     "exampleSource": "tatoeba",
     "sourceRow": 36252,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "ài guó zhě"
   },
   {
     "id": "humid",
@@ -24263,7 +26167,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hju:mid",
     "exampleSource": "tatoeba",
     "sourceRow": 4502,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "cháo shī de"
   },
   {
     "id": "synonymous",
@@ -24276,7 +26181,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "si'nɒnimәs",
     "exampleSource": "tatoeba",
     "sourceRow": 31394,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tóng yì cí de ； tóng yì de"
   },
   {
     "id": "splendor",
@@ -24289,7 +26195,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'splendә",
     "exampleSource": "tatoeba",
     "sourceRow": 30297,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "guāng huī"
   },
   {
     "id": "pane",
@@ -24302,7 +26209,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pein",
     "exampleSource": "tatoeba",
     "sourceRow": 4928,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chuāng bō lí"
   },
   {
     "id": "infancy",
@@ -24315,7 +26223,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'infәnsi",
     "exampleSource": "tatoeba",
     "sourceRow": 3052,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yòu ér qī"
   },
   {
     "id": "dormitory",
@@ -24328,7 +26237,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dɒ:mitәri",
     "exampleSource": "tatoeba",
     "sourceRow": 46291,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "sù shè"
   },
   {
     "id": "treasurer",
@@ -24341,7 +26251,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'treʒәrә",
     "exampleSource": "tatoeba",
     "sourceRow": 27840,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "sī kù"
   },
   {
     "id": "shortcut",
@@ -24354,7 +26265,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ʃɒ:tkʌt",
     "exampleSource": "tatoeba",
     "sourceRow": 44092,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jié jìng"
   },
   {
     "id": "frigid",
@@ -24367,7 +26279,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'frigid",
     "exampleSource": "tatoeba",
     "sourceRow": 42229,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hán lěng de"
   },
   {
     "id": "landslide",
@@ -24380,7 +26293,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'lændslaid",
     "exampleSource": "tatoeba",
     "sourceRow": 8641,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shān bēng"
   },
   {
     "id": "timid",
@@ -24393,7 +26307,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'timid",
     "exampleSource": "tatoeba",
     "sourceRow": 45021,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dǎn xiǎo de"
   },
   {
     "id": "ambush",
@@ -24406,7 +26321,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'æmbuʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 27406,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "mái fú"
   },
   {
     "id": "adversity",
@@ -24419,7 +26335,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әd'vә:sәti",
     "exampleSource": "tatoeba",
     "sourceRow": 1818,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "nì jìng"
   },
   {
     "id": "immortal",
@@ -24432,7 +26349,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'mɒ:tәl",
     "exampleSource": "tatoeba",
     "sourceRow": 27984,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shén xiān"
   },
   {
     "id": "converse",
@@ -24445,7 +26363,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'vә:s",
     "exampleSource": "tatoeba",
     "sourceRow": 28672,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jiāo tán"
   },
   {
     "id": "barley",
@@ -24458,7 +26377,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bɑ:li",
     "exampleSource": "tatoeba",
     "sourceRow": 762,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dà mài"
   },
   {
     "id": "calculator",
@@ -24471,7 +26391,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kælkjuleitә",
     "exampleSource": "tatoeba",
     "sourceRow": 5431,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jì suàn qì"
   },
   {
     "id": "unavoidable",
@@ -24484,7 +26405,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌnә'vɒidәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 39310,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù kě bì miǎn de"
   },
   {
     "id": "spaceship",
@@ -24497,7 +26419,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'speisʃip",
     "exampleSource": "tatoeba",
     "sourceRow": 28360,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǔ zhòu fēi chuán"
   },
   {
     "id": "tyrant",
@@ -24510,7 +26433,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'taiәrәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 34206,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bào jūn"
   },
   {
     "id": "beggar",
@@ -24523,7 +26447,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'begә",
     "exampleSource": "tatoeba",
     "sourceRow": 13032,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "qǐ gài"
   },
   {
     "id": "shameful",
@@ -24536,7 +26461,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ʃeimful",
     "exampleSource": "tatoeba",
     "sourceRow": 1487,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "kě chǐ de"
   },
   {
     "id": "jack",
@@ -24549,7 +26475,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dʒæk",
     "exampleSource": "tatoeba",
     "sourceRow": 44003,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "qiān jīn dǐng"
   },
   {
     "id": "exhale",
@@ -24562,7 +26489,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "eks'heil",
     "exampleSource": "tatoeba",
     "sourceRow": 28711,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hū qì"
   },
   {
     "id": "optimist",
@@ -24575,7 +26503,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɔptimist",
     "exampleSource": "tatoeba",
     "sourceRow": 13347,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "lè guān zhǔ yì zhě"
   },
   {
     "id": "modesty",
@@ -24588,7 +26517,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mɒdisti",
     "exampleSource": "tatoeba",
     "sourceRow": 16413,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "qiān xùn"
   },
   {
     "id": "waterproof",
@@ -24601,7 +26531,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'wɒtәpru:f",
     "exampleSource": "tatoeba",
     "sourceRow": 49046,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fáng shuǐ de"
   },
   {
     "id": "shrill",
@@ -24614,7 +26545,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ʃril",
     "exampleSource": "tatoeba",
     "sourceRow": 15832,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jiān ruì de"
   },
   {
     "id": "proficient",
@@ -24627,7 +26559,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prә'fiʃәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 29849,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jīng tōng de"
   },
   {
     "id": "gorge",
@@ -24640,7 +26573,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "gɒ:dʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 48272,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xiá gǔ"
   },
   {
     "id": "crimson",
@@ -24653,7 +26587,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'krimzәn",
     "exampleSource": "tatoeba",
     "sourceRow": 47469,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shēn hóng sè"
   },
   {
     "id": "telegram",
@@ -24666,7 +26601,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'teli^ræm",
     "exampleSource": "tatoeba",
     "sourceRow": 1350,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "diàn bào"
   },
   {
     "id": "seaside",
@@ -24679,7 +26615,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'si:said",
     "exampleSource": "tatoeba",
     "sourceRow": 47828,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hǎi biān de ； hǎi bīn de"
   },
   {
     "id": "toad",
@@ -24692,7 +26629,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "tәud",
     "exampleSource": "tatoeba",
     "sourceRow": 26274,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chán chú"
   },
   {
     "id": "lighthouse",
@@ -24705,7 +26643,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'laithaus",
     "exampleSource": "tatoeba",
     "sourceRow": 2803,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dēng tǎ"
   },
   {
     "id": "shopkeeper",
@@ -24718,7 +26657,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ʃɒp.ki:pә",
     "exampleSource": "tatoeba",
     "sourceRow": 29244,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "diàn zhǔ"
   },
   {
     "id": "sneeze",
@@ -24731,7 +26671,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sni:z",
     "exampleSource": "tatoeba",
     "sourceRow": 439,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "pēn tì"
   },
   {
     "id": "windmill",
@@ -24744,7 +26685,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'windmil",
     "exampleSource": "tatoeba",
     "sourceRow": 8822,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fēng chē"
   },
   {
     "id": "teapot",
@@ -24757,7 +26699,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ti:pɒt",
     "exampleSource": "tatoeba",
     "sourceRow": 24395,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chá hú"
   },
   {
     "id": "wasteful",
@@ -24770,7 +26713,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'weistful",
     "exampleSource": "tatoeba",
     "sourceRow": 7710,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "làng fèi de"
   },
   {
     "id": "treason",
@@ -24783,7 +26727,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tri:zn",
     "exampleSource": "tatoeba",
     "sourceRow": 27864,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "pàn guó zuì"
   },
   {
     "id": "proverb",
@@ -24796,7 +26741,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'prɒvә:b",
     "exampleSource": "tatoeba",
     "sourceRow": 8948,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yàn yǔ"
   },
   {
     "id": "sarcastic",
@@ -24809,7 +26755,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sɑ:'kæstik",
     "exampleSource": "tatoeba",
     "sourceRow": 42471,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fěng cì de"
   },
   {
     "id": "mouthful",
@@ -24822,7 +26769,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mauθful",
     "exampleSource": "tatoeba",
     "sourceRow": 37384,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yī kǒu"
   },
   {
     "id": "abate",
@@ -24835,7 +26783,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'beit",
     "exampleSource": "tatoeba",
     "sourceRow": 21410,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jiǎn ruò"
   },
   {
     "id": "adventurer",
@@ -24848,7 +26797,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әd'ventʃәrә",
     "exampleSource": "tatoeba",
     "sourceRow": 28725,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "mào xiǎn jiā"
   },
   {
     "id": "leisurely",
@@ -24861,7 +26811,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'li:ʒәli",
     "exampleSource": "tatoeba",
     "sourceRow": 30693,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yōu xián de"
   },
   {
     "id": "kerosene",
@@ -24874,7 +26825,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kerәsi:n",
     "exampleSource": "tatoeba",
     "sourceRow": 22278,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "méi yóu"
   },
   {
     "id": "perseverance",
@@ -24887,7 +26839,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә:si'viәrәns",
     "exampleSource": "tatoeba",
     "sourceRow": 15979,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yì lì"
   },
   {
     "id": "unlucky",
@@ -24900,7 +26853,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌn'lʌki",
     "exampleSource": "tatoeba",
     "sourceRow": 10113,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù xìng de"
   },
   {
     "id": "noun",
@@ -24913,7 +26867,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "naun",
     "exampleSource": "tatoeba",
     "sourceRow": 36899,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "míng cí"
   },
   {
     "id": "disband",
@@ -24926,7 +26881,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dis'bænd",
     "exampleSource": "tatoeba",
     "sourceRow": 47409,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jiě sàn"
   },
   {
     "id": "impeach",
@@ -24939,7 +26895,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "im'pi:tʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 48959,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tán hé"
   },
   {
     "id": "hoarse",
@@ -24952,7 +26909,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hɒ:s",
     "exampleSource": "tatoeba",
     "sourceRow": 3928,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shā yǎ de"
   },
   {
     "id": "nimble",
@@ -24965,7 +26923,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'nimbl",
     "exampleSource": "tatoeba",
     "sourceRow": 38600,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "mǐn jié de"
   },
   {
     "id": "hare",
@@ -24978,7 +26937,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hєә",
     "exampleSource": "tatoeba",
     "sourceRow": 27450,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yě tù"
   },
   {
     "id": "judgement",
@@ -24991,7 +26951,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒʌdʒmәnt",
     "exampleSource": "tatoeba",
     "sourceRow": 16059,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "pàn jué"
   },
   {
     "id": "diligence",
@@ -25004,7 +26965,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dilidʒәns",
     "exampleSource": "tatoeba",
     "sourceRow": 16495,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "qín fèn"
   },
   {
     "id": "tram",
@@ -25017,7 +26979,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "træm",
     "exampleSource": "tatoeba",
     "sourceRow": 45943,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chéng diàn chē"
   },
   {
     "id": "harmonize",
@@ -25030,7 +26993,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hɑ:mәnaiz",
     "exampleSource": "tatoeba",
     "sourceRow": 15286,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xié tiáo"
   },
   {
     "id": "lyric",
@@ -25043,7 +27007,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'lirik",
     "exampleSource": "tatoeba",
     "sourceRow": 13276,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shū qíng shī"
   },
   {
     "id": "locust",
@@ -25056,7 +27021,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'lәukәst",
     "exampleSource": "tatoeba",
     "sourceRow": 25302,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "huáng chóng"
   },
   {
     "id": "envious",
@@ -25069,7 +27035,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'enviәs",
     "exampleSource": "tatoeba",
     "sourceRow": 19341,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xiàn mù de"
   },
   {
     "id": "queue",
@@ -25082,7 +27049,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kju:",
     "exampleSource": "tatoeba",
     "sourceRow": 29236,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "pái duì"
   },
   {
     "id": "compatriot",
@@ -25095,7 +27063,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәm'pætriәt",
     "exampleSource": "tatoeba",
     "sourceRow": 45020,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "tóng bāo de"
   },
   {
     "id": "bondage",
@@ -25108,7 +27077,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bɒndidʒ",
     "exampleSource": "tatoeba",
     "sourceRow": 21615,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shù fù"
   },
   {
     "id": "dialog",
@@ -25121,7 +27091,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'daiәlɒg",
     "exampleSource": "tatoeba",
     "sourceRow": 25613,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "duì huà"
   },
   {
     "id": "collusion",
@@ -25134,7 +27105,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'lu:ʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 27533,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "gōu jié"
   },
   {
     "id": "woodpecker",
@@ -25147,7 +27119,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'wudpekә",
     "exampleSource": "tatoeba",
     "sourceRow": 45999,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhuó mù niǎo"
   },
   {
     "id": "woolen",
@@ -25160,7 +27133,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'wulin",
     "exampleSource": "tatoeba",
     "sourceRow": 2715,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yáng máo de"
   },
   {
     "id": "moat",
@@ -25173,7 +27147,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mәut",
     "exampleSource": "tatoeba",
     "sourceRow": 44779,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hù chéng hé"
   },
   {
     "id": "rote",
@@ -25186,7 +27161,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "rәut",
     "exampleSource": "tatoeba",
     "sourceRow": 27508,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "sǐ jì yìng bèi"
   },
   {
     "id": "drowsy",
@@ -25199,7 +27175,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'drauzi",
     "exampleSource": "tatoeba",
     "sourceRow": 20332,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hūn hūn yù shuì de"
   },
   {
     "id": "theorem",
@@ -25212,7 +27189,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'θiәrәm",
     "exampleSource": "tatoeba",
     "sourceRow": 49645,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dìng lǐ"
   },
   {
     "id": "innermost",
@@ -25225,7 +27203,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'inәmәust",
     "exampleSource": "tatoeba",
     "sourceRow": 37784,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "nèi xīn de"
   },
   {
     "id": "exponential",
@@ -25238,7 +27217,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ekspәu'nenʃәl",
     "exampleSource": "tatoeba",
     "sourceRow": 25908,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhǐ shù de"
   },
   {
     "id": "magnetism",
@@ -25251,7 +27231,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mægnitizm",
     "exampleSource": "tatoeba",
     "sourceRow": 15680,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "cí xìng"
   },
   {
     "id": "readjust",
@@ -25264,7 +27245,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ri:ә'dʒʌst",
     "exampleSource": "tatoeba",
     "sourceRow": 38898,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "chóng xīn tiáo zhěng"
   },
   {
     "id": "aurora",
@@ -25277,7 +27259,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ɒ:'rɒ:rә",
     "exampleSource": "tatoeba",
     "sourceRow": 8866,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jí guāng"
   },
   {
     "id": "dragonfly",
@@ -25290,7 +27273,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'drægәnflai",
     "exampleSource": "tatoeba",
     "sourceRow": 15624,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "qīng tíng"
   },
   {
     "id": "curt",
@@ -25303,7 +27287,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә:t",
     "exampleSource": "tatoeba",
     "sourceRow": 21195,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "jiǎn duǎn de"
   },
   {
     "id": "grammatical",
@@ -25316,7 +27301,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "grә'mætikl",
     "exampleSource": "tatoeba",
     "sourceRow": 41790,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǔ fǎ de"
   },
   {
     "id": "stingy",
@@ -25329,7 +27315,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'stindʒi",
     "exampleSource": "tatoeba",
     "sourceRow": 37278,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "xiǎo qì de"
   },
   {
     "id": "crafty",
@@ -25342,7 +27329,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kræfti",
     "exampleSource": "tatoeba",
     "sourceRow": 234,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "guǐ jì duō duān de"
   },
   {
     "id": "jellyfish",
@@ -25355,7 +27343,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒelifiʃ",
     "exampleSource": "tatoeba",
     "sourceRow": 45990,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shuǐ mǔ"
   },
   {
     "id": "anesthetic",
@@ -25368,7 +27357,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ænis'θetik",
     "exampleSource": "tatoeba",
     "sourceRow": 28876,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "má zuì jì"
   },
   {
     "id": "thirdly",
@@ -25381,7 +27371,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'θә:dli",
     "exampleSource": "tatoeba",
     "sourceRow": 38971,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dì sān"
   },
   {
     "id": "lavatory",
@@ -25394,7 +27385,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'lævәtәri",
     "exampleSource": "tatoeba",
     "sourceRow": 5518,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "cè suǒ"
   },
   {
     "id": "hazel",
@@ -25407,7 +27399,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'heizl",
     "exampleSource": "tatoeba",
     "sourceRow": 25513,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "dàn hè sè"
   },
   {
     "id": "radioactivity",
@@ -25420,7 +27413,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".reidiәuæk'tiviti",
     "exampleSource": "tatoeba",
     "sourceRow": 26298,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "fàng shè xìng"
   },
   {
     "id": "culpable",
@@ -25433,7 +27427,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kʌlpәbl",
     "exampleSource": "tatoeba",
     "sourceRow": 29407,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "yǒu zuì de"
   },
   {
     "id": "seashore",
@@ -25446,7 +27441,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'siʃɒ:",
     "exampleSource": "tatoeba",
     "sourceRow": 45853,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "hǎi bīn"
   },
   {
     "id": "swampy",
@@ -25459,7 +27455,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'swɒmpi",
     "exampleSource": "tatoeba",
     "sourceRow": 26386,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "zhǎo zé de"
   },
   {
     "id": "pollination",
@@ -25472,7 +27469,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".pɒli'neiʃәn",
     "exampleSource": "tatoeba",
     "sourceRow": 48201,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "shòu fěn"
   },
   {
     "id": "walkout",
@@ -25485,7 +27483,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'wɒ:kaut",
     "exampleSource": "tatoeba",
     "sourceRow": 21156,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bà gōng"
   },
   {
     "id": "cuckoo",
@@ -25498,6 +27497,7 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kuku:",
     "exampleSource": "tatoeba",
     "sourceRow": 28977,
-    "selection": "学术英语补充"
+    "selection": "学术英语补充",
+    "zhPinyin": "bù gǔ niǎo"
   }
 ];

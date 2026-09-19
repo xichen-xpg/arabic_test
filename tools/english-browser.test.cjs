@@ -42,6 +42,8 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.locator(".english-choices button").count(), 4);
     assert.match(await page.locator(".english-progress").innerText(), /新词 0\/30/);
     let first = await page.evaluate(() => englishPractice.current);
+    assert.equal(await page.locator(".english-pinyin").innerText(), `（${first.zhPinyin}）`);
+    assert.ok(first.zhPinyin.length > 0);
     async function chooseWithKeyboard(word) {
       const option = page.getByRole("button", { name: word.word, exact: true });
       const number = (await option.innerText()).match(/^[1-4]/)[0];
