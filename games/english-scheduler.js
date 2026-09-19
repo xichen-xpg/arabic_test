@@ -133,9 +133,11 @@
       if (!plan) return null;
       const pages = Math.ceil((plan.review.length + plan.fresh.length) / 10);
       const passed = plan.test?.passed || 0;
+      const completed = plan.test?.completed || Array.from({ length: passed }, (_, i) => i);
+      const next = Array.from({ length: pages * 2 }, (_, i) => i).find(i => !completed.includes(i));
       const timing = plan.testTiming;
       const averageSeconds = timing ? timing.totalMs / timing.pages / 1000 : null;
-      return { pages, passed, done: pages > 0 && passed === pages * 2,
+      return { pages, passed: completed.length, completed, next, done: pages > 0 && completed.length === pages * 2,
         averageSeconds, fast: timing?.pages === 10 && averageSeconds < 15 };
     }
     restartTest() {
@@ -145,16 +147,28 @@
       state.days[this.clock()].test = { passed: 0, checkedIn: true };
       this.save(state);
     }
-    startTest(now = Date.now()) {
+    selectTest(index) {
+      const summary = this.testSummary();
+      if (!Number.isInteger(index) || index < 0 || index >= summary.pages * 2) return;
+      const state = this.load();
+      const test = state.days[this.clock()].test;
+      test.attempts = test.attempts || {};
+      if (test.active) test.attempts[test.active.index ?? test.passed] = test.active;
+      test.active = test.attempts[index];
+      this.save(state);
+    }
+    startTest(now = Date.now(), index = this.plan().test?.active?.index ?? this.testSummary().next) {
       const summary = this.summary();
-      if (this.testSummary().done || !summary.total) return;
+      if (!summary.total || !Number.isInteger(index) || index < 0 || index >= Math.ceil(summary.total / 10) * 2) return;
+      this.selectTest(index);
       const state = this.load();
       const plan = state.days[this.clock()];
       const test = plan.test || { passed: 0 };
+      test.completed = test.completed || Array.from({ length: test.passed }, (_, i) => i);
       if (test.active && (!test.active.failed || this.testStudyWords().length)) return;
       const pages = Math.ceil(summary.total / 10);
-      const reverse = test.passed >= pages;
-      const ids = [...plan.review, ...plan.fresh].slice((test.passed % pages) * 10, (test.passed % pages + 1) * 10);
+      const reverse = index >= pages;
+      const ids = [...plan.review, ...plan.fresh].slice((index % pages) * 10, (index % pages + 1) * 10);
       const shuffle = values => {
         for (let i = values.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
@@ -162,7 +176,7 @@
         }
         return values;
       };
-      test.active = { startedAt: now, deadline: now + 22000, answers: {}, failed: false, rows: ids.map(id => {
+      test.active = { index, startedAt: now, deadline: now + 22000, answers: {}, failed: false, rows: ids.map(id => {
         const word = this.words.get(id);
         const field = reverse ? "word" : "zh";
         const seen = new Set([word[field]]);
@@ -188,8 +202,9 @@
     syncTestLearning() {
       const plan = this.plan();
       const ids = [...plan.review, ...plan.fresh];
-      const count = plan.test?.checkedIn ? ids.length : (plan.test?.passed || 0) * 10;
-      const learned = new Set([...ids.slice(0, count), ...(plan.test?.active?.learned || [])]);
+      const summary = this.testSummary();
+      const passedWords = summary.completed.flatMap(index => ids.slice((index % summary.pages) * 10, (index % summary.pages + 1) * 10));
+      const learned = new Set([...(plan.test?.checkedIn ? ids : passedWords), ...(plan.test?.active?.learned || [])]);
       [...learned].filter(id => !plan.completed.includes(id)).forEach(id => this.complete(id));
     }
     answerTest(rowIndex, optionId, now = Date.now()) {
@@ -209,9 +224,19 @@
       if (optionId !== row.id) active.failed = true;
       const passed = !active.failed && Object.keys(active.answers).length === active.rows.length;
       if (passed) {
+        const index = active.index ?? test.passed;
+        test.completed = test.completed || Array.from({ length: test.passed }, (_, i) => i);
         test.times = test.times || [];
-        test.times[test.passed] = Number.isFinite(active.startedAt) ? Math.max(0, now - active.startedAt) : null;
-        test.passed++;
+        if (!test.completed.includes(index)) {
+          test.times[index] = Number.isFinite(active.startedAt) ? Math.max(0, now - active.startedAt) : null;
+          test.completed.push(index);
+        }
+        test.lastIndex = index;
+        test.lastTime = Number.isFinite(active.startedAt) ? Math.max(0, now - active.startedAt) : null;
+        test.latestTimes = test.latestTimes || {};
+        test.latestTimes[index] = test.lastTime;
+        test.passed = test.completed.length;
+        if (test.attempts) delete test.attempts[index];
         const pages = Math.ceil((plan.review.length + plan.fresh.length) / 10) * 2;
         if (!plan.testTiming && test.passed === pages && Array.from({ length: pages }, (_, i) => test.times[i]).every(Number.isFinite)) {
           plan.testTiming = { pages, totalMs: test.times.reduce((sum, ms) => sum + ms, 0) };

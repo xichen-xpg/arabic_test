@@ -1,4 +1,9 @@
 .english-progress { color: var(--accent-strong); font-weight: 700; line-height: 1.7; }
+.english-overview { margin: 16px 0; }
+.english-overview-row { display: grid; grid-template-columns: minmax(110px, 2fr) 1fr 1fr auto auto; align-items: center; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+.english-overview-row button { padding: 6px 10px; font-size: 13px; }
+.english-study-next { margin-left: 8px; }
+@media (max-width: 480px) { .english-overview-row { gap: 4px; font-size: 11px; grid-template-columns: minmax(90px, 2fr) 1fr 1fr auto auto; } .english-overview-row button { padding: 6px; font-size: 12px; } }
 .english-note { color: var(--muted); font-size: 13px; line-height: 1.7; }
 .english-entry { margin-top: 20px; }
 .english-choice-entry { display: block; margin-top: 16px; font-size: 14px; }

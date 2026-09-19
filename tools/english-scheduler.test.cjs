@@ -54,6 +54,36 @@ test("ten timed pages earn a flag strictly below 15 seconds and retain the first
   }
 });
 
+test("individual tests may pass out of order and retries do not inflate completion", () => {
+  const f = fixture(100);
+  f.bank.forEach((word, i) => { word.word = `word ${i}`; word.zh = `意思 ${i}`; });
+  f.finish(); f.advance();
+  const finishPage = (index, duration = 10000) => {
+    f.scheduler.startTest(100000, index);
+    f.scheduler.plan().test.active.rows.forEach((row, i) => f.scheduler.answerTest(i, row.id, 100000 + duration));
+  };
+  finishPage(9);
+  assert.deepEqual(f.scheduler.testSummary().completed, [9]);
+  assert.equal(f.scheduler.summary().freshDone, 10);
+  assert.equal(f.scheduler.summary().reviewDone, 0);
+  finishPage(9, 12000);
+  assert.equal(f.scheduler.testSummary().passed, 1);
+  assert.equal(f.scheduler.plan().test.latestTimes[9], 12000);
+  assert.equal(f.scheduler.plan().test.times[9], 10000);
+  f.scheduler.startTest(100000, 3);
+  f.scheduler.answerTest(-1, null, 122000);
+  finishPage(1);
+  f.scheduler.startTest(130000, 3);
+  assert.equal(f.scheduler.plan().test.active.failed, true);
+  f.scheduler.testStudyWords().forEach(id => f.scheduler.completeTestStudy(id));
+  for (const index of [8, 7, 6, 5, 4, 3, 2, 0]) finishPage(index);
+  assert.equal(f.scheduler.summary().done, true);
+  const timing = JSON.stringify(f.scheduler.plan().testTiming);
+  finishPage(5, 15000);
+  assert.equal(f.scheduler.testSummary().passed, 10);
+  assert.equal(JSON.stringify(f.scheduler.plan().testTiming), timing);
+});
+
 test("daily check-in requires both timed tests; failures, reloads and short pages", () => {
   const f = fixture(23);
   f.bank.forEach((word, index) => { word.word = `word ${index}`; word.zh = `意思 ${index}`; });

@@ -8,6 +8,7 @@
       this.ensureDate = ensureDate;
       container.innerHTML = `
         <p class="english-progress" aria-live="polite"></p>
+        <section class="english-overview" aria-label="今日测试记录"></section>
         <button class="secondary english-open-test" type="button">开始测试</button>
         <button class="secondary english-back-study" type="button" hidden>返回单词练习</button>
         <p class="english-note">每天固定学习 30 个新词，另安排最多 20 个复习词，仅来自前几天学过且到期的词。当天错词再练不增加复习数量。选对后输入英文单词，再输入一个中文释义。</p>
@@ -34,12 +35,26 @@
         <button class="secondary english-restart" type="button" hidden>重新学习</button>`;
       this.el = {};
       this.chineseInput = container.querySelector(".english-chinese-input");
-      this.test = new EnglishTest(container.querySelector(".english-test"), scheduler, event => {
+      this.test = new EnglishTest(container.querySelector(".english-test"), scheduler, (event, index) => {
+        if (event === "test-open") { this.openTest(index); return; }
+        if (event === "test-study") {
+          if (this.ensureDate()) return;
+          this.saveDraft();
+          scheduler.selectTest(index);
+          if (scheduler.testStudyWords().length) { this.relearning = true; this.draw(); return; }
+          this.relearning = false;
+          const pages = scheduler.testSummary().pages;
+          this.replay = { date: scheduler.clock(), queue: scheduler.questions().slice((index % pages) * 10, (index % pages + 1) * 10).map(word => word.id), testIndex: index };
+          this.draw();
+          this.el.task.scrollIntoView({ block: "start" });
+          return;
+        }
         if (event === "test-relearn-required") { this.relearning = true; this.draw(); return; }
         this.status();
         if (scheduler.summary().done) this.el.feedback.textContent = "两组测试已通过 ✓ 今日英文打卡完成。";
         else if (event === "test-page-passed") this.el.feedback.textContent = "";
         if (event === "test-page-passed" && scheduler.testSummary().done) this.el.restart.hidden = false;
+        if (event === "test-page-passed" || event === "test-updated" && scheduler.plan().test.active?.failed) this.container.querySelector(".english-overview").scrollIntoView({ block: "start" });
         onChange(event);
       }, ensureDate);
       for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "input", "feedback", "next", "restart", "task", "audio-status", "credit", "open-test", "back-study", "choice-entry", "choice-number"]) {
@@ -48,17 +63,7 @@
       container.querySelector(".english-speak-word").addEventListener("click", () => this.speak(this.current.word, this.current.zh));
       this.el.next.addEventListener("click", () => this.draw());
       this.el["open-test"].addEventListener("click", () => {
-        if (this.ensureDate()) return;
-        this.saveDraft();
-        window.speechSynthesis?.cancel();
-        this.el.task.hidden = true;
-        this.el.next.hidden = true;
-        this.el.feedback.textContent = "";
-        this.el["audio-status"].textContent = "";
-        this.el["open-test"].hidden = true;
-        this.el["back-study"].hidden = false;
-        this.scheduler.startTest();
-        this.test.draw();
+        this.openTest();
       });
       this.el["back-study"].addEventListener("click", () => this.draw());
       this.el.restart.addEventListener("click", () => {
@@ -96,12 +101,27 @@
         if (this.finished) this.draw();
       });
     }
+    openTest(index) {
+      if (this.ensureDate()) return;
+      this.saveDraft();
+      window.speechSynthesis?.cancel();
+      this.el.task.hidden = true;
+      this.el.next.hidden = true;
+      this.el.feedback.textContent = "";
+      this.el["audio-status"].textContent = "";
+      this.el["open-test"].hidden = true;
+      this.el["back-study"].hidden = false;
+      this.scheduler.startTest(Date.now(), index);
+      this.test.draw();
+      this.status();
+    }
     status() {
       this.scheduler.syncTestLearning();
       const s = this.scheduler.summary();
       const learned = Object.keys(this.scheduler.load().records).length;
       this.el.progress.textContent = `今日新词 ${s.freshDone}/${s.fresh} · 复习 ${s.reviewDone}/${s.review} · 已学 ${learned}/${this.scheduler.bank.length}` +
         (s.deferred ? ` · ${s.deferred} 个到期词顺延` : "");
+      this.test.renderOverview(this.container.querySelector(".english-overview"));
     }
     saveDraft() {
       if (!this.current || this.finished || this.ensureDate() || this.replay || this.relearning) return;
@@ -248,6 +268,7 @@
         if (!this.wrong) this.scheduler.completeTestStudy(this.current.id);
         result = this.wrong ? "study-retry" : "replayed";
       } else if (this.replay) {
+        if (this.replay.testIndex !== undefined && !this.wrong) this.scheduler.complete(this.current.id);
         this.replay.queue.shift();
         if (this.wrong) this.replay.queue.push(this.current.id);
         result = this.wrong ? "retry" : "replayed";

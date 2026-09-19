@@ -237,6 +237,24 @@ const server = http.createServer((req, res) => {
     await page.locator("#practiceLink").click();
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     if (process.env.ENGLISH_SCREENSHOT) await page.screenshot({ path: process.env.ENGLISH_SCREENSHOT, fullPage: true });
+    const rows = page.locator(".english-overview-row");
+    assert.equal(await rows.count(), 6);
+    await rows.nth(4).getByRole("button", { name: "测试", exact: true }).click();
+    assert.equal(await page.evaluate(() => englishScheduler.plan().test.active.index), 4);
+    const selectedWords = await page.evaluate(() => englishScheduler.plan().test.active.rows.map(row => englishScheduler.words.get(row.id).word));
+    for (let i = 0; i < selectedWords.length; i++) {
+      await page.locator(".english-test-table tr").nth(i).getByRole("button", { name: selectedWords[i], exact: true }).click();
+    }
+    assert.match(await rows.nth(4).innerText(), /已通过 ✓/);
+    assert.match(await rows.nth(4).innerText(), /\d+\.\d{2} 秒/);
+    assert.equal(await page.locator(".english-study-next").isVisible(), true);
+    await page.locator(".english-study-next").click();
+    assert.equal(await page.evaluate(() => englishPractice.replay.testIndex), 0);
+    await rows.nth(2).getByRole("button", { name: "学习", exact: true }).click();
+    assert.equal(await page.evaluate(() => englishPractice.replay.testIndex), 2);
+    assert.equal(await page.evaluate(() => englishPractice.replay.queue.length), 10);
+    assert.equal(await page.evaluate(() => englishPractice.current.id), await page.evaluate(() => englishScheduler.questions()[20].id));
+    assert.equal(await page.evaluate(() => englishScheduler.summary().done), true);
     assert.deepEqual(errors, []);
     console.log("Browser checks passed: choices/audio, live word typing, retries, reload, calendar, Arabic/poems, rollover, mobile layout.");
     await context.close();
