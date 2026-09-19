@@ -135,15 +135,20 @@
       const passed = plan.test?.passed || 0;
       const completed = plan.test?.completed || Array.from({ length: passed }, (_, i) => i);
       const next = Array.from({ length: pages * 2 }, (_, i) => i).find(i => !completed.includes(i));
-      const timing = plan.testTiming;
+      const done = pages > 0 && completed.length === pages * 2;
+      const times = Array.from({ length: pages * 2 }, (_, index) => plan.test?.latestTimes?.[index] ?? plan.test?.times?.[index]);
+      const latest = done && times.every(Number.isFinite) ? { pages: pages * 2, totalMs: times.reduce((sum, ms) => sum + ms, 0) } : null;
+      const timing = latest && (!plan.testTiming || latest.totalMs / latest.pages < plan.testTiming.totalMs / plan.testTiming.pages) ? latest : plan.testTiming;
       const averageSeconds = timing ? timing.totalMs / timing.pages / 1000 : null;
-      return { pages, passed: completed.length, completed, next, done: pages > 0 && completed.length === pages * 2,
-        averageSeconds, fast: timing?.pages === 10 && averageSeconds < 15 };
+      return { pages, passed: completed.length, completed, next, done, timing,
+        averageSeconds, fast: Boolean(timing && timing.pages > 0 && averageSeconds < 15) };
     }
     restartTest() {
       if (!this.testSummary().done) return;
       this.syncTestLearning();
+      const timing = this.testSummary().timing;
       const state = this.load();
+      if (timing) state.days[this.clock()].testTiming = timing;
       state.days[this.clock()].test = { passed: 0, checkedIn: true };
       this.save(state);
     }
@@ -238,8 +243,10 @@
         test.passed = test.completed.length;
         if (test.attempts) delete test.attempts[index];
         const pages = Math.ceil((plan.review.length + plan.fresh.length) / 10) * 2;
-        if (!plan.testTiming && test.passed === pages && Array.from({ length: pages }, (_, i) => test.times[i]).every(Number.isFinite)) {
-          plan.testTiming = { pages, totalMs: test.times.reduce((sum, ms) => sum + ms, 0) };
+        const times = Array.from({ length: pages }, (_, i) => test.latestTimes?.[i] ?? test.times[i]);
+        if (test.passed === pages && times.every(Number.isFinite)) {
+          const totalMs = times.reduce((sum, ms) => sum + ms, 0);
+          if (!plan.testTiming || totalMs / pages < plan.testTiming.totalMs / plan.testTiming.pages) plan.testTiming = { pages, totalMs };
         }
         delete test.active;
       }

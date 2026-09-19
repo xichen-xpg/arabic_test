@@ -84,6 +84,21 @@ test("individual tests may pass out of order and retries do not inflate completi
   assert.equal(JSON.stringify(f.scheduler.plan().testTiming), timing);
 });
 
+test("a full six-page day earns a flag after improved retakes, including saved older results", () => {
+  const f = fixture(30);
+  f.scheduler.plan();
+  const state = f.scheduler.load();
+  state.days[f.scheduler.clock()].test = { passed: 6, completed: [0, 1, 2, 3, 4, 5], times: Array(6).fill(18000), latestTimes: Object.fromEntries(Array.from({ length: 6 }, (_, i) => [i, 12000])) };
+  state.days[f.scheduler.clock()].testTiming = { pages: 6, totalMs: 108000 };
+  f.scheduler.save(state);
+  assert.equal(f.scheduler.testSummary().averageSeconds, 12);
+  assert.equal(f.scheduler.testSummary().fast, true);
+  f.scheduler.restartTest();
+  assert.equal(f.scheduler.testSummary().fast, true);
+  assert.equal(f.scheduler.testSummary().averageSeconds, 12);
+  assert.equal(f.scheduler.summary().done, true);
+});
+
 test("daily check-in requires both timed tests; failures, reloads and short pages", () => {
   const f = fixture(23);
   f.bank.forEach((word, index) => { word.word = `word ${index}`; word.zh = `意思 ${index}`; });

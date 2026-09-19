@@ -176,7 +176,7 @@ const server = http.createServer((req, res) => {
       await page.evaluate(() => renderCalendar());
       const englishCheckin = page.locator(".calendar-day.today .calendar-source").filter({ hasText: "完成英语测试" });
       assert.equal(await englishCheckin.count(), 1);
-      assert.equal(await englishCheckin.locator(".calendar-source-count").textContent(), batch === 5 ? "✓" : "未完成");
+      assert.match(await englishCheckin.locator(".calendar-source-count").textContent(), batch === 5 ? /^✓.*平均.*🚩/ : /^未完成$/);
     }
     assert.match(await page.locator(".english-test-title").innerText(), /英文每日打卡完成/);
     const savedLearning = await page.evaluate(() => localStorage.getItem(EnglishLearning.STORAGE_KEY));
@@ -202,7 +202,7 @@ const server = http.createServer((req, res) => {
     const today = page.locator(".calendar-day.today");
     assert.match(await today.innerText(), /每日阿语50题/);
     assert.match(await today.innerText(), /完成英语测试/);
-    assert.equal(await today.locator(".calendar-source").filter({ hasText: "完成英语测试" }).locator(".calendar-source-count").innerText(), "✓");
+    assert.match(await today.locator(".calendar-source").filter({ hasText: "完成英语测试" }).locator(".calendar-source-count").innerText(), /^✓.*🚩/);
     await page.locator("#practiceLink").click();
     await page.selectOption("#categorySelect", "source:daily-arabic");
     assert.equal(await page.locator("#englishPanel").isHidden(), true);
@@ -226,7 +226,7 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.evaluate(() => localStorage.getItem(checkinStorageKey)), checkinsBeforeRepeat);
     await page.getByRole("button", { name: "收起测试（继续计时）", exact: true }).click();
     await page.locator("#checkinLink").click();
-    assert.equal(await page.locator(".calendar-day.today .calendar-source").filter({ hasText: "完成英语测试" }).locator(".calendar-source-count").innerText(), "✓");
+    assert.match(await page.locator(".calendar-day.today .calendar-source").filter({ hasText: "完成英语测试" }).locator(".calendar-source-count").innerText(), /^✓.*🚩/);
     await page.evaluate(() => {
       const state = englishScheduler.load();
       state.days[localDateKey()].testTiming = { pages: 10, totalMs: 120000 };
