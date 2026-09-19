@@ -9,14 +9,10 @@
       if (!this.container.classList.contains("english-test-active") || this.container.hidden) return;
       const table = this.container.querySelector("table");
       table.style.zoom = "1";
-      table.style.height = "auto";
-      table.querySelectorAll("tr").forEach(row => { row.style.height = "auto"; });
       const padding = parseFloat(getComputedStyle(this.container).paddingBottom);
       const available = Math.max(120, this.container.getBoundingClientRect().bottom - table.getBoundingClientRect().top - padding - 2);
       const scale = Math.min(1, Math.max(0.75, available / table.getBoundingClientRect().height));
       table.style.zoom = String(scale);
-      table.style.height = `${available / scale}px`;
-      table.querySelectorAll("tr").forEach(row => { row.style.height = `${available / scale / table.rows.length}px`; });
     }
     hide() {
       clearInterval(this.timer);

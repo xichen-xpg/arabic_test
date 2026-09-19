@@ -139,13 +139,6 @@ const server = http.createServer((req, res) => {
         const box = el.getBoundingClientRect();
         return box.top >= 0 && box.bottom <= innerHeight && box.right <= innerWidth;
       }));
-      if (viewport.width === 1366) {
-        assert.ok(await page.locator(".english-test-active").evaluate(el => {
-          const bottom = el.getBoundingClientRect().bottom - parseFloat(getComputedStyle(el).paddingBottom);
-          const table = el.querySelector("table").getBoundingClientRect();
-          return Math.abs(bottom - table.bottom) < 6;
-        }));
-      }
     }
     await page.setViewportSize({ width: 1100, height: 950 });
     const deadline = await page.evaluate(() => englishScheduler.plan().test.active.deadline);

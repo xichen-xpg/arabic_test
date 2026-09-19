@@ -29,10 +29,10 @@
 .english-test-active .english-test-clock { margin: 6px 0; font-size: 20px; }
 .english-test-active .english-test-title { padding-right: 165px; }
 .english-test-active .english-test-close { position: absolute; top: 6px; right: 6px; padding: 5px; font-size: 12px; }
-.english-test-active .english-test-table th, .english-test-active .english-test-table td { padding: 4px; vertical-align: middle; }
+.english-test-active .english-test-table th, .english-test-active .english-test-table td { padding: 2.4px 2px; vertical-align: middle; }
 .english-test-active .english-test-table th { font-size: clamp(14px, 1.4vw, 19px); }
-.english-test-active .english-test-table button { min-height: 36px; padding: 4px 3px; font-size: clamp(14px, 1.4vw, 19px); line-height: 1.25; }
+.english-test-active .english-test-table button { min-height: 43.2px; padding: 4.8px 3px; font-size: clamp(14px, 1.4vw, 19px); line-height: 1.5; }
 @media (max-width: 600px), (max-height: 600px) {
   .english-test-active { inset: 3px; padding: 6px; }
-  .english-test-active .english-test-table button { font-size: 14px; min-height: 30px; }
+  .english-test-active .english-test-table button { font-size: 14px; min-height: 36px; }
 }
