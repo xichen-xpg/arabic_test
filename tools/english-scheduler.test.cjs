@@ -35,13 +35,17 @@ test("ten timed pages earn a flag strictly below 15 seconds and retain the first
       const rows = f.scheduler.plan().test.active.rows;
       const reload = new Scheduler(f.bank, f.storage, () => f.scheduler.clock());
       rows.forEach((row, i) => reload.answerTest(i, row.id, 100000 + duration));
-      if (page < 9) assert.equal(reload.testSummary().averageSeconds, null);
+      if (page < 9) {
+        assert.equal(reload.testSummary().averageSeconds, null);
+        assert.equal(reload.testSummary().fast, false);
+        assert.equal(reload.plan().testTiming, undefined);
+      }
     }
     assert.equal(f.scheduler.testSummary().averageSeconds, duration / 1000);
     assert.equal(f.scheduler.testSummary().fast, duration < 15000);
     f.scheduler.restartTest();
     f.scheduler.startTest(200000);
-    f.scheduler.answerTest(-1, null, 220000);
+    f.scheduler.answerTest(-1, null, 222000);
     assert.equal(f.scheduler.testSummary().averageSeconds, duration / 1000);
     assert.equal(f.scheduler.summary().done, true);
     f.advance();
@@ -69,8 +73,8 @@ test("daily check-in requires both timed tests; failures, reloads and short page
   f.scheduler.startTest(2000);
   const reload = new Scheduler(f.bank, f.storage, () => "2026-09-09");
   reload.startTest(3000);
-  assert.equal(reload.plan().test.active.deadline, 22000);
-  assert.equal(reload.answerTest(0, first.id, 22000), "timeout");
+  assert.equal(reload.plan().test.active.deadline, 24000);
+  assert.equal(reload.answerTest(0, first.id, 24000), "timeout");
   assert.equal(reload.testSummary().passed, 0);
   assert.equal(reload.testStudyWords().length, 10);
   reload.testStudyWords().forEach(id => reload.completeTestStudy(id));
