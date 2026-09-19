@@ -35,6 +35,8 @@
       this.test = new EnglishTest(container.querySelector(".english-test"), scheduler, event => {
         if (event === "test-relearn-required") { this.relearning = true; this.draw(); return; }
         if (scheduler.summary().done) this.el.feedback.textContent = "两组测试已通过 ✓ 今日英文打卡完成。";
+        else if (event === "test-page-passed") this.el.feedback.textContent = "";
+        if (event === "test-page-passed" && scheduler.testSummary().done) this.el.restart.hidden = false;
         onChange(event);
       }, ensureDate);
       for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "input", "feedback", "next", "restart", "task", "audio-status", "credit", "open-test", "back-study", "choice-entry", "choice-number"]) {
@@ -114,7 +116,10 @@
           this.el.feedback.textContent = "本页单词已重新学完，可以重考。";
           this.el["back-study"].hidden = !this.scheduler.next();
         }
-        if (this.scheduler.plan().test?.active?.failed) this.el.feedback.textContent = "";
+        if (this.scheduler.plan().test?.active?.failed) {
+          this.el.feedback.textContent = studyWords.length ? "" : "本页单词已重学完成，但测试尚未过关。请点击“重做本页”重新测试。";
+          this.el.restart.hidden = true;
+        }
         this.test.draw();
         this.el.feedback.classList.add("success");
         this.onChange("question-loaded");

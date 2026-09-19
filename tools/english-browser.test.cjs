@@ -151,6 +151,8 @@ const server = http.createServer((req, res) => {
         await page.locator(".english-test-table tr").nth(row).getByRole("button", { name: answers[row], exact: true }).click();
       }
       assert.equal(await page.evaluate(() => englishScheduler.summary().done), batch === 5);
+      assert.equal(await page.locator(".english-test-start").innerText(), batch === 5 ? "重新测试" : batch === 2 ? "开始第二组测试" : "下一页测试");
+      if (batch < 5) assert.match(await page.locator(".english-test-feedback").innerText(), /上一页测试已通过/);
       assert.equal(await page.evaluate(() => loadCheckins()[localDateKey()]?.includes(englishSourceKey) || false), batch === 5);
       await page.evaluate(() => renderCalendar());
       const englishCheckin = page.locator(".calendar-day.today .calendar-source").filter({ hasText: "完成英语测试" });

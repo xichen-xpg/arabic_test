@@ -38,7 +38,10 @@
       title.textContent = summary.done ? "两组测试已通过 ✓ 英文每日打卡完成" :
         `${reverse ? "第二组 · 中文选英文" : "第一组 · 英文选中文"} · 第 ${summary.passed % summary.pages + 1}/${summary.pages} 页`;
       start.hidden = Boolean(active && !active.failed);
-      start.textContent = summary.done ? "重新测试" : active?.failed ? "重做本页（20 秒）" : "开始测试";
+      start.textContent = summary.done ? "重新测试" : summary.passed === summary.pages ? "开始第二组测试" : summary.passed > 0 ? "下一页测试" : "开始测试";
+      if (!active && summary.passed > 0 && !summary.done) {
+        this.container.querySelector(".english-test-feedback").textContent = "上一页测试已通过 ✓ 请继续。";
+      }
       start.addEventListener("click", () => {
         if (this.ensureDate()) return;
         if (summary.done) this.scheduler.restartTest();
