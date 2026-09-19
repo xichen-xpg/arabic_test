@@ -3,10 +3,19 @@
   class EnglishTest {
     constructor(container, scheduler, onChange, ensureDate) {
       Object.assign(this, { container, scheduler, onChange, ensureDate });
+      window.addEventListener("resize", () => this.fit());
+    }
+    fit() {
+      if (!this.container.classList.contains("english-test-active") || this.container.hidden) return;
+      const table = this.container.querySelector("table");
+      table.style.zoom = "1";
+      const available = Math.max(180, window.innerHeight - 110);
+      table.style.zoom = String(Math.min(1, Math.max(0.75, available / table.getBoundingClientRect().height)));
     }
     hide() {
       clearInterval(this.timer);
       this.container.hidden = true;
+      this.container.classList.remove("english-test-active");
     }
     draw() {
       this.hide();
@@ -31,7 +40,8 @@
         <p class="english-test-clock" role="timer"></p>
         <div class="english-test-scroll"><table class="english-test-table"><tbody></tbody></table></div>
         <p class="english-test-feedback" role="status"></p>
-        <button class="secondary english-test-start" type="button"></button>`;
+        <button class="secondary english-test-start" type="button"></button>
+        <button class="secondary english-test-close" type="button" hidden>收起测试（继续计时）</button>`;
       const title = this.container.querySelector("h3");
       const start = this.container.querySelector("button");
       const reverse = summary.passed >= summary.pages;
@@ -49,6 +59,10 @@
         this.draw();
       });
       if (!active || summary.done) return;
+      this.container.classList.add("english-test-active");
+      const close = this.container.querySelector(".english-test-close");
+      close.hidden = false;
+      close.addEventListener("click", () => this.container.classList.remove("english-test-active"));
       const tbody = this.container.querySelector("tbody");
       active.rows.forEach((row, index) => {
         const tr = document.createElement("tr");
@@ -84,6 +98,7 @@
         }
       };
       if (!active.failed) this.timer = setInterval(tick, 100);
+      this.fit();
       tick();
     }
   }

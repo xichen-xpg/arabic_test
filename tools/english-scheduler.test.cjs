@@ -19,7 +19,6 @@ test("daily check-in requires both timed tests; failures, reloads and short page
   f.scheduler.plan();
   f.scheduler.startTest(1000);
   assert.equal(f.scheduler.plan().test.active.rows.length, 10);
-  const records = JSON.stringify(f.scheduler.load().records);
   assert.equal(f.scheduler.summary().learningDone, false);
   assert.equal(f.scheduler.summary().done, false);
   f.scheduler.startTest(1000);
@@ -47,8 +46,10 @@ test("daily check-in requires both timed tests; failures, reloads and short page
       assert.equal(reload.answerTest(index, row.id, 30001), index === rows.length - 1 ? "passed" : "correct");
     });
     assert.equal(reload.summary().done, page === 5);
+    assert.equal(reload.summary().freshDone, Math.min(23, Math.max(0, page - 2) * 10));
   }
-  assert.equal(JSON.stringify(reload.load().records), records);
+  assert.equal(Object.keys(reload.load().records).length, 23);
+  const records = JSON.stringify(reload.load().records);
   reload.restartTest();
   assert.equal(reload.testSummary().passed, 0);
   assert.equal(reload.summary().done, true);
@@ -61,6 +62,24 @@ test("daily check-in requires both timed tests; failures, reloads and short page
   f.advance();
   assert.equal(f.scheduler.summary().done, false);
   assert.equal(f.scheduler.summary("2026-09-09").done, true);
+});
+
+test("past test passes sync learning once and review backlog is current", () => {
+  const f = fixture(100);
+  f.finish();
+  f.advance();
+  const plan = f.scheduler.plan();
+  assert.equal(f.scheduler.summary().deferred, 10);
+  const state = f.scheduler.load();
+  state.days[plan.date].test = { passed: 10 };
+  f.scheduler.save(state);
+  f.scheduler.syncTestLearning();
+  assert.equal(f.scheduler.summary().reviewDone, 20);
+  assert.equal(f.scheduler.summary().freshDone, 30);
+  assert.equal(Object.keys(f.scheduler.load().records).length, 60);
+  const after = JSON.stringify(f.scheduler.load());
+  f.scheduler.syncTestLearning();
+  assert.equal(JSON.stringify(f.scheduler.load()), after);
 });
 
 test("daily limits, fixed plans, reloads and incomplete new words", () => {

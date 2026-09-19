@@ -22,3 +22,16 @@
 .english-test-table button { width: 100%; min-height: 44px; padding: 6px 3px; font-size: 13px; white-space: normal; overflow-wrap: anywhere; }
 .english-test-table button.correct { background: #d8f0df; color: #175c2e; }
 .english-test-table button.wrong { background: #fbe0df; color: #992522; }
+.english-test-active { position: fixed; inset: 8px; z-index: 100; box-sizing: border-box; padding: 12px; background: var(--soft, #fff); overflow: auto; border-radius: 12px; }
+.english-test-active .english-test-title { margin: 0; font-size: clamp(15px, 2vw, 21px); }
+.english-test-active .english-note, .english-test-active .english-test-feedback { display: none; }
+.english-test-active .english-test-clock { margin: 6px 0; font-size: 20px; }
+.english-test-active .english-test-title { padding-right: 165px; }
+.english-test-active .english-test-close { position: absolute; top: 6px; right: 6px; padding: 5px; font-size: 12px; }
+.english-test-active .english-test-table th, .english-test-active .english-test-table td { padding: 2px; }
+.english-test-active .english-test-table th { font-size: clamp(14px, 1.4vw, 19px); }
+.english-test-active .english-test-table button { min-height: 36px; padding: 4px 3px; font-size: clamp(14px, 1.4vw, 19px); line-height: 1.25; }
+@media (max-width: 600px), (max-height: 600px) {
+  .english-test-active { inset: 3px; padding: 6px; }
+  .english-test-active .english-test-table button { font-size: 14px; min-height: 30px; }
+}

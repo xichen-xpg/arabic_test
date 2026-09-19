@@ -133,6 +133,7 @@
     }
     restartTest() {
       if (!this.testSummary().done) return;
+      this.syncTestLearning();
       const state = this.load();
       state.days[this.clock()].test = { passed: 0, checkedIn: true };
       this.save(state);
@@ -176,6 +177,13 @@
       active.learned = [...(active.learned || []), id];
       this.save(state);
     }
+    syncTestLearning() {
+      const plan = this.plan();
+      const ids = [...plan.review, ...plan.fresh];
+      const pages = Math.ceil(ids.length / 10);
+      const count = plan.test?.checkedIn ? ids.length : Math.max(0, (plan.test?.passed || 0) - pages) * 10;
+      ids.slice(0, count).filter(id => !plan.completed.includes(id)).forEach(id => this.complete(id));
+    }
     answerTest(rowIndex, optionId, now = Date.now()) {
       const state = this.load();
       const plan = state.days[this.clock()];
@@ -194,14 +202,17 @@
       const passed = !active.failed && Object.keys(active.answers).length === active.rows.length;
       if (passed) { test.passed++; delete test.active; }
       this.save(state);
+      if (passed) this.syncTestLearning();
       return passed ? "passed" : active.failed ? "wrong" : "correct";
     }
     summary(date = this.clock(), create = date === this.clock()) {
       const plan = this.plan(date, create);
       if (!plan) return null;
       const count = ids => ids.filter(id => plan.completed.includes(id)).length;
+      const deferred = date === this.clock() ? Object.entries(this.load().records)
+        .filter(([id, record]) => this.words.has(id) && record.due <= date && !plan.review.includes(id) && !plan.completed.includes(id)).length : plan.deferred;
       return { fresh: plan.fresh.length, review: plan.review.length, freshDone: count(plan.fresh), reviewDone: count(plan.review),
-        total: plan.fresh.length + plan.review.length, completed: plan.completed.length, deferred: plan.deferred,
+        total: plan.fresh.length + plan.review.length, completed: plan.completed.length, deferred,
         learningDone: plan.completed.length === plan.fresh.length + plan.review.length,
         done: date < this.clock() && !plan.test
           ? plan.completed.length === plan.fresh.length + plan.review.length : Boolean(plan.test?.checkedIn) || this.testSummary(date, create).done };

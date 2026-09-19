@@ -121,6 +121,14 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.locator(".english-test-table tr").first().locator("th, td").count(), 5);
     await page.setViewportSize({ width: 390, height: 844 });
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    for (const viewport of [{ width: 390, height: 844 }, { width: 1366, height: 768 }, { width: 844, height: 390 }]) {
+      await page.setViewportSize(viewport);
+      await page.evaluate(() => englishPractice.test.fit());
+      assert.ok(await page.locator(".english-test-active").evaluate(el => {
+        const box = el.getBoundingClientRect();
+        return box.top >= 0 && box.bottom <= innerHeight && box.right <= innerWidth;
+      }));
+    }
     await page.setViewportSize({ width: 1100, height: 950 });
     const deadline = await page.evaluate(() => englishScheduler.plan().test.active.deadline);
     await page.reload();
@@ -204,6 +212,7 @@ const server = http.createServer((req, res) => {
     await page.selectOption("#categorySelect", "source:daily-english");
     assert.equal(await page.evaluate(() => englishScheduler.summary().done), true);
     assert.equal(await page.evaluate(() => localStorage.getItem(checkinStorageKey)), checkinsBeforeRepeat);
+    await page.getByRole("button", { name: "收起测试（继续计时）", exact: true }).click();
     await page.locator("#checkinLink").click();
     assert.equal(await page.locator(".calendar-day.today .calendar-source").filter({ hasText: "完成英语测试" }).locator(".calendar-source-count").innerText(), "✓");
     await page.locator("#practiceLink").click();

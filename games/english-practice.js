@@ -34,6 +34,7 @@
       this.el = {};
       this.test = new EnglishTest(container.querySelector(".english-test"), scheduler, event => {
         if (event === "test-relearn-required") { this.relearning = true; this.draw(); return; }
+        this.status();
         if (scheduler.summary().done) this.el.feedback.textContent = "两组测试已通过 ✓ 今日英文打卡完成。";
         else if (event === "test-page-passed") this.el.feedback.textContent = "";
         if (event === "test-page-passed" && scheduler.testSummary().done) this.el.restart.hidden = false;
@@ -80,6 +81,7 @@
       });
     }
     status() {
+      this.scheduler.syncTestLearning();
       const s = this.scheduler.summary();
       const learned = Object.keys(this.scheduler.load().records).length;
       this.el.progress.textContent = `今日新词 ${s.freshDone}/${s.fresh} · 复习 ${s.reviewDone}/${s.review} · 已学 ${learned}/${this.scheduler.bank.length}` +
@@ -91,6 +93,7 @@
     }
     draw() {
       if (this.ensureDate()) return;
+      this.scheduler.syncTestLearning();
       this.test.hide();
       window.speechSynthesis?.cancel();
       if (this.replay && this.replay.date !== this.scheduler.clock()) this.replay = null;
