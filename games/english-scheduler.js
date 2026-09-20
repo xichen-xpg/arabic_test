@@ -181,7 +181,7 @@
         }
         return values;
       };
-      test.active = { index, startedAt: now, deadline: now + 22000, answers: {}, failed: false, rows: ids.map(id => {
+      test.active = { index, startedAt: now, deadline: now + 25000, answers: {}, failed: false, rows: ids.map(id => {
         const word = this.words.get(id);
         const field = reverse ? "word" : "zh";
         const seen = new Set([word[field]]);

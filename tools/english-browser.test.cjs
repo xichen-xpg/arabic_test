@@ -124,7 +124,7 @@ const server = http.createServer((req, res) => {
     }
     assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 30);
     assert.equal(await page.locator(".english-test-table").count(), 0);
-    assert.equal(await page.locator(".english-test-start").innerText(), "重做本页（22 秒）");
+    assert.equal(await page.locator(".english-test-start").innerText(), "重做本页（25 秒）");
     assert.equal(await page.evaluate(() => englishScheduler.summary().done), false);
     assert.equal(await page.evaluate(() => loadCheckins()[localDateKey()]?.includes(englishSourceKey) || false), false);
     await page.locator(".english-test-start").click();
