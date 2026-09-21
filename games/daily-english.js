@@ -11,7 +11,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sә'steinәbl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "kě chí xù de"
+    "zhPinyin": "kě chí xù de",
+    "mixedExample": "城市需要一个更 sustainable 交通系统。"
   },
   {
     "word": "curriculum",
@@ -24,7 +25,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'rikjulәm",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "kè chéng tǐ xì"
+    "zhPinyin": "kè chéng tǐ xì",
+    "mixedExample": "新 curriculum 包含实用技能和环境教育。"
   },
   {
     "word": "biodiversity",
@@ -37,7 +39,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shēng wù duō yàng xìng"
+    "zhPinyin": "shēng wù duō yàng xìng",
+    "mixedExample": "保护森林有助于维护 biodiversity 。"
   },
   {
     "word": "allocate",
@@ -50,7 +53,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ælәukeit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fēn pèi ； bō chū"
+    "zhPinyin": "fēn pèi ； bō chū",
+    "mixedExample": "市政委员会将为公共交通 allocate 更多资金。"
   },
   {
     "word": "assessment",
@@ -63,7 +67,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'sesmәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "píng gū"
+    "zhPinyin": "píng gū",
+    "mixedExample": "定期 assessment 有助于教师发现理解上的不足。"
   },
   {
     "word": "emission",
@@ -76,7 +81,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'miʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "pái fàng ； pái fàng wù"
+    "zhPinyin": "pái fàng ； pái fàng wù",
+    "mixedExample": "新标准限制有害气体的 emission 。"
   },
   {
     "word": "renewable",
@@ -89,7 +95,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'nju(:)әbl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "kě zài shēng de"
+    "zhPinyin": "kě zài shēng de",
+    "mixedExample": "对 renewable 能源的投资可以创造当地就业机会。"
   },
   {
     "word": "infrastructure",
@@ -102,7 +109,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'infrәstrʌktʃә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jī chǔ shè shī"
+    "zhPinyin": "jī chǔ shè shī",
+    "mixedExample": "可靠的 infrastructure 对区域发展至关重要。"
   },
   {
     "word": "inequality",
@@ -115,7 +123,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ini'kwɒliti",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bù píng děng"
+    "zhPinyin": "bù píng děng",
+    "mixedExample": "获得教育的机会有助于减少收入 inequality 。"
   },
   {
     "word": "migration",
@@ -128,7 +137,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mai'greiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qiān yí ； yí mín"
+    "zhPinyin": "qiān yí ； yí mín",
+    "mixedExample": "经济机会是人口 migration 的一个重要原因。"
   },
   {
     "word": "substantial",
@@ -141,7 +151,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sәb'stænʃәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "dà liàng de ； zhòng dà de"
+    "zhPinyin": "dà liàng de ； zhòng dà de",
+    "mixedExample": "该项目需要在员工培训方面投入 substantial 资金。"
   },
   {
     "word": "justify",
@@ -154,7 +165,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒʌstifai",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhèng míng …… hé lǐ"
+    "zhPinyin": "zhèng míng …… hé lǐ",
+    "mixedExample": "现有证据不足以 justify 这一结论。"
   },
   {
     "word": "consequence",
@@ -167,7 +179,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒnsikwәns",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "hòu guǒ"
+    "zhPinyin": "hòu guǒ",
+    "mixedExample": "快速增长的一个 consequence 是住房需求增加。"
   },
   {
     "word": "retain",
@@ -180,7 +193,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'tein",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bǎo liú ； liú zhù"
+    "zhPinyin": "bǎo liú ； liú zhù",
+    "mixedExample": "灵活的工作时间可以帮助企业 retain 熟练员工。"
   },
   {
     "word": "urbanisation",
@@ -193,7 +207,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ˌɜ:bənaɪ'zeɪʃən",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chéng shì huà"
+    "zhPinyin": "chéng shì huà",
+    "mixedExample": "快速 urbanisation 给住房和公共服务带来压力。"
   },
   {
     "word": "depletion",
@@ -206,7 +221,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'pli:ʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xiāo hào ； kū jié"
+    "zhPinyin": "xiāo hào ； kū jié",
+    "mixedExample": "过度灌溉可能导致地下水 depletion 。"
   },
   {
     "word": "conservation",
@@ -219,7 +235,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kɒnsә'veiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bǎo hù ； jié yuē"
+    "zhPinyin": "bǎo hù ； jié yuē",
+    "mixedExample": "社区参与对野生动物 conservation 至关重要。"
   },
   {
     "word": "habitat",
@@ -232,7 +249,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hæbitæt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qī xī dì"
+    "zhPinyin": "qī xī dì",
+    "mixedExample": "道路建设可能破坏珍稀动物的自然 habitat 。"
   },
   {
     "word": "ecosystem",
@@ -245,7 +263,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'i:kәu.sistәm",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shēng tài xì tǒng"
+    "zhPinyin": "shēng tài xì tǒng",
+    "mixedExample": "温度的微小变化可能影响整个 ecosystem 。"
   },
   {
     "word": "deforestation",
@@ -258,7 +277,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di:.fɒ:ri'steiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "sēn lín kǎn fá"
+    "zhPinyin": "sēn lín kǎn fá",
+    "mixedExample": "deforestation 增加了土壤侵蚀的风险。"
   },
   {
     "word": "erosion",
@@ -271,7 +291,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'rәuʒәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qīn shí"
+    "zhPinyin": "qīn shí",
+    "mixedExample": "植树可以减少陡坡上的土壤 erosion 。"
   },
   {
     "word": "fossil",
@@ -284,7 +305,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fɒsәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "huà shí"
+    "zhPinyin": "huà shí",
+    "mixedExample": "这块 fossil 提供了数百万年前生命存在的证据。"
   },
   {
     "word": "mitigate",
@@ -297,7 +319,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mitigeit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiǎn qīng ； huǎn jiě"
+    "zhPinyin": "jiǎn qīng ； huǎn jiě",
+    "mixedExample": "更好的排水系统可以 mitigate 强降雨的影响。"
   },
   {
     "word": "adaptation",
@@ -310,7 +333,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ædæp'teiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shì yìng ； shì yìng xìng tiáo zhěng"
+    "zhPinyin": "shì yìng ； shì yìng xìng tiáo zhěng",
+    "mixedExample": "adaptation 气候变化需要调整农业生产方式。"
   },
   {
     "word": "resilience",
@@ -323,7 +347,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'ziliәns",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "huī fù lì ； shì yìng lì"
+    "zhPinyin": "huī fù lì ； shì yìng lì",
+    "mixedExample": "牢固的本地联系能提高社区在危机中的 resilience 。"
   },
   {
     "word": "carbon",
@@ -336,7 +361,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɑ:bәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tàn"
+    "zhPinyin": "tàn",
+    "mixedExample": "森林储存 carbon 并帮助调节气候。"
   },
   {
     "word": "consumption",
@@ -349,7 +375,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'sʌmpʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xiāo hào ； xiāo fèi"
+    "zhPinyin": "xiāo hào ； xiāo fèi",
+    "mixedExample": "更好的隔热措施可以减少家庭能源 consumption 。"
   },
   {
     "word": "efficiency",
@@ -362,7 +389,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'fiʃәnsi",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xiào lǜ"
+    "zhPinyin": "xiào lǜ",
+    "mixedExample": "自动化可以提高制造业的 efficiency 。"
   },
   {
     "word": "productivity",
@@ -375,7 +403,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".prәudʌk'tiviti",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shēng chǎn lǜ"
+    "zhPinyin": "shēng chǎn lǜ",
+    "mixedExample": "长时间工作期间定期休息可能提高 productivity 。"
   },
   {
     "word": "automation",
@@ -388,7 +417,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ɒ:tә'meiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zì dòng huà"
+    "zhPinyin": "zì dòng huà",
+    "mixedExample": "automation 正在改变许多行业所需的技能。"
   },
   {
     "word": "innovation",
@@ -401,7 +431,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".inәu'veiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chuàng xīn"
+    "zhPinyin": "chuàng xīn",
+    "mixedExample": "公共资金可以鼓励清洁技术 innovation 。"
   },
   {
     "word": "artificial",
@@ -414,7 +445,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ɑ:ti'fiʃәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "rén gōng de ； rén zào de"
+    "zhPinyin": "rén gōng de ； rén zào de",
+    "mixedExample": "artificial 照明使农作物能够全年在室内生长。"
   },
   {
     "word": "algorithm",
@@ -427,7 +459,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ælgәriðm",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "suàn fǎ"
+    "zhPinyin": "suàn fǎ",
+    "mixedExample": "该 algorithm 根据明确的标准对申请进行排序。"
   },
   {
     "word": "privacy",
@@ -440,7 +473,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'praivәsi",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yǐn sī"
+    "zhPinyin": "yǐn sī",
+    "mixedExample": "用户应了解应用程序如何保护他们的 privacy 。"
   },
   {
     "word": "surveillance",
@@ -453,7 +487,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sә:'veilәns",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiān kòng ； jiān shì"
+    "zhPinyin": "jiān kòng ； jiān shì",
+    "mixedExample": "加强 surveillance 引发了有关个人隐私的问题。"
   },
   {
     "word": "digital",
@@ -466,7 +501,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'didʒitәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shù zì de"
+    "zhPinyin": "shù zì de",
+    "mixedExample": "digital 服务应方便老年居民使用。"
   },
   {
     "word": "accessible",
@@ -479,7 +515,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әk'sesәbl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "kě shǐ yòng de ； yì yú dào dá de"
+    "zhPinyin": "kě shǐ yòng de ； yì yú dào dá de",
+    "mixedExample": "公共建筑应当对轮椅使用者同样 accessible。"
   },
   {
     "word": "literacy",
@@ -492,7 +529,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'litәrәsi",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "dú xiě néng lì"
+    "zhPinyin": "dú xiě néng lì",
+    "mixedExample": "成人 literacy 培训项目可以改善就业机会。"
   },
   {
     "word": "tuition",
@@ -505,7 +543,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "tju:'iʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiào xué ； xué fèi"
+    "zhPinyin": "jiào xué ； xué fèi",
+    "mixedExample": "不断上涨的 tuition 可能使低收入家庭的学生望而却步。"
   },
   {
     "word": "scholarship",
@@ -518,7 +557,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'skɒlәʃip",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiǎng xué jīn"
+    "zhPinyin": "jiǎng xué jīn",
+    "mixedExample": "这项 scholarship 涵盖住宿费和学费。"
   },
   {
     "word": "vocational",
@@ -531,7 +571,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "vәu'keiʃәnl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhí yè de ； zhí yè jì shù de"
+    "zhPinyin": "zhí yè de ； zhí yè jì shù de",
+    "mixedExample": "vocational 培训帮助学生为特定职业做好准备。"
   },
   {
     "word": "qualification",
@@ -544,7 +585,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kwɒlifi'keiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zī gé ； zī lì"
+    "zhPinyin": "zī gé ； zī lì",
+    "mixedExample": "受认可的 qualification 证书可以改善毕业生的就业前景。"
   },
   {
     "word": "enrolment",
@@ -557,7 +599,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'rәulmәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "rù xué ； zhù cè rén shù"
+    "zhPinyin": "rù xué ； zhù cè rén shù",
+    "mixedExample": "过去十年大学 enrolment 人数有所增加。"
   },
   {
     "word": "discipline",
@@ -570,7 +613,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'disiplin",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xué kē ； jì lǜ"
+    "zhPinyin": "xué kē ； jì lǜ",
+    "mixedExample": "经济学是一门研究如何选择利用有限资源的 discipline 。"
   },
   {
     "word": "autonomy",
@@ -583,7 +627,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ɒ:'tɒnәmi",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zì zhǔ quán"
+    "zhPinyin": "zì zhǔ quán",
+    "mixedExample": "更大的 autonomy 使学生能够规划自己的学习。"
   },
   {
     "word": "collaboration",
@@ -596,7 +641,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә.læbә'ræʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "hé zuò"
+    "zhPinyin": "hé zuò",
+    "mixedExample": "国际 collaboration 有助于研究人员共享知识和设备。"
   },
   {
     "word": "peer",
@@ -609,7 +655,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "piә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tóng líng rén ； tóng děng dì wèi de rén"
+    "zhPinyin": "tóng líng rén ； tóng děng dì wèi de rén",
+    "mixedExample": "来自 peer 的反馈可以帮助我们发现论证中的不足。"
   },
   {
     "word": "critical",
@@ -622,7 +669,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kritikәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "pī pàn xìng de ； guān jiàn de"
+    "zhPinyin": "pī pàn xìng de ； guān jiàn de",
+    "mixedExample": "critical 思维帮助学生评估相互矛盾的信息。"
   },
   {
     "word": "evaluate",
@@ -635,7 +683,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'væljueit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "píng jià ； píng gū"
+    "zhPinyin": "píng jià ； píng gū",
+    "mixedExample": "研究人员必须 evaluate 证据的质量。"
   },
   {
     "word": "hypothesis",
@@ -648,7 +697,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hai'pɒθәsis",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiǎ shè"
+    "zhPinyin": "jiǎ shè",
+    "mixedExample": "该实验旨在检验一个特定 hypothesis 。"
   },
   {
     "word": "empirical",
@@ -661,7 +711,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "em'pirikәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shí zhèng de"
+    "zhPinyin": "shí zhèng de",
+    "mixedExample": "这项政策应有 empirical 证据支持。"
   },
   {
     "word": "methodology",
@@ -674,7 +725,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".meθә'dɒlәdʒi",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yán jiū fāng fǎ"
+    "zhPinyin": "yán jiū fāng fǎ",
+    "mixedExample": "报告解释了收集数据所采用的 methodology 。"
   },
   {
     "word": "correlation",
@@ -687,7 +739,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kɒrә'leiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xiāng guān xìng"
+    "zhPinyin": "xiāng guān xìng",
+    "mixedExample": "两个因素之间的 correlation 并不能证明因果关系。"
   },
   {
     "word": "causation",
@@ -700,7 +753,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kɒ:'zeiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yīn guǒ guān xì"
+    "zhPinyin": "yīn guǒ guān xì",
+    "mixedExample": "确定 causation 需要的不只是简单比较。"
   },
   {
     "word": "variable",
@@ -713,7 +767,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vєәriәbl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "biàn liàng"
+    "zhPinyin": "biàn liàng",
+    "mixedExample": "该实验每次只改变一个 variable 。"
   },
   {
     "word": "reliable",
@@ -726,7 +781,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'laiәbl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "kě kào de"
+    "zhPinyin": "kě kào de",
+    "mixedExample": "reliable 数据对有效的公共规划至关重要。"
   },
   {
     "word": "valid",
@@ -739,7 +795,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vælid",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yǒu xiào de ； yǒu gēn jù de"
+    "zhPinyin": "yǒu xiào de ； yǒu gēn jù de",
+    "mixedExample": "这是一个 valid 担忧，值得进一步调查。"
   },
   {
     "word": "bias",
@@ -752,7 +809,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'baiәs",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "piān chā ； piān jiàn"
+    "zhPinyin": "piān chā ； piān jiàn",
+    "mixedExample": "小样本可能使结果产生 bias 。"
   },
   {
     "word": "sample",
@@ -765,7 +823,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sæmpl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yàng běn"
+    "zhPinyin": "yàng běn",
+    "mixedExample": "sample 包含几个年龄组的参与者。"
   },
   {
     "word": "statistic",
@@ -778,7 +837,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "stә'tistik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tǒng jì shù jù"
+    "zhPinyin": "tǒng jì shù jù",
+    "mixedExample": "单个 statistic 无法解释复杂的社会问题。"
   },
   {
     "word": "proportion",
@@ -791,7 +851,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prә'pɒ:ʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bǐ lì"
+    "zhPinyin": "bǐ lì",
+    "mixedExample": "骑自行车上班的居民 proportion 正在增加。"
   },
   {
     "word": "fluctuate",
@@ -804,7 +865,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'flʌktʃueit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bō dòng"
+    "zhPinyin": "bō dòng",
+    "mixedExample": "食品价格往往随着供应变化而 fluctuate 。"
   },
   {
     "word": "plateau",
@@ -817,7 +879,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "plæ'tәu",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wěn dìng qī ； gāo yuán"
+    "zhPinyin": "wěn dìng qī ； gāo yuán",
+    "mixedExample": "快速增长之后，销售额在六月进入 plateau 。"
   },
   {
     "word": "decline",
@@ -830,7 +893,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'klain",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xià jiàng ； jiǎn shǎo"
+    "zhPinyin": "xià jiàng ； jiǎn shǎo",
+    "mixedExample": "图表显示煤炭消耗量逐渐 decline 。"
   },
   {
     "word": "projection",
@@ -843,7 +907,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prә'dʒekʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yù cè"
+    "zhPinyin": "yù cè",
+    "mixedExample": "该人口 projection 假定迁移情况保持稳定。"
   },
   {
     "word": "demographic",
@@ -856,7 +921,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".demә'græfik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "rén kǒu tǒng jì de"
+    "zhPinyin": "rén kǒu tǒng jì de",
+    "mixedExample": "这份 demographic 调查记录了当地人口的年龄结构。"
   },
   {
     "word": "ageing",
@@ -869,7 +935,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'eidʒiŋ",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shuāi lǎo ； lǎo líng huà"
+    "zhPinyin": "shuāi lǎo ； lǎo líng huà",
+    "mixedExample": "人口 ageing 给公共服务带来新的挑战。"
   },
   {
     "word": "fertility",
@@ -882,7 +949,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fә'tiliti",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shēng yù néng lì ； féi lì"
+    "zhPinyin": "shēng yù néng lì ； féi lì",
+    "mixedExample": "长期使用有机肥有助于提高土壤的 fertility。"
   },
   {
     "word": "dependency",
@@ -895,7 +963,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'pendәnsi",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yī lài"
+    "zhPinyin": "yī lài",
+    "mixedExample": "更好的公共交通可以减少对私家车的 dependency 。"
   },
   {
     "word": "pension",
@@ -908,7 +977,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'penʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yǎng lǎo jīn"
+    "zhPinyin": "yǎng lǎo jīn",
+    "mixedExample": "稳定的 pension 帮助退休人员支付基本开支。"
   },
   {
     "word": "welfare",
@@ -921,7 +991,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'welfєә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fú lì ； fú zhǐ"
+    "zhPinyin": "fú lì ； fú zhǐ",
+    "mixedExample": "社会 welfare 项目在失业期间为人们提供支持。"
   },
   {
     "word": "subsidy",
@@ -934,7 +1005,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sʌbsidi",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bǔ tiē"
+    "zhPinyin": "bǔ tiē",
+    "mixedExample": "这项 subsidy 帮助小型农场投资高效设备。"
   },
   {
     "word": "incentive",
@@ -947,7 +1019,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'sentiv",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jī lì ； cì jī"
+    "zhPinyin": "jī lì ； cì jī",
+    "mixedExample": "降低税收可以 incentive 人们投资清洁能源。"
   },
   {
     "word": "regulation",
@@ -960,7 +1033,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".regju'leiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fǎ guī ； guǎn lǐ"
+    "zhPinyin": "fǎ guī ； guǎn lǐ",
+    "mixedExample": "严格的 regulation 可以保护消费者免受虚假宣传的影响。"
   },
   {
     "word": "legislation",
@@ -973,7 +1047,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ledʒis'leiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fǎ lǜ ； lì fǎ"
+    "zhPinyin": "fǎ lǜ ； lì fǎ",
+    "mixedExample": "新 legislation 要求企业报告碳排放量。"
   },
   {
     "word": "accountability",
@@ -986,7 +1061,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә.kauntә'biliti",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wèn zé ； zé rèn"
+    "zhPinyin": "wèn zé ； zé rèn",
+    "mixedExample": "透明的支出记录有助于加强公共 accountability 。"
   },
   {
     "word": "transparency",
@@ -999,7 +1075,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "træns'pærәnsi",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tòu míng dù"
+    "zhPinyin": "tòu míng dù",
+    "mixedExample": "更高的 transparency 可以建立对公共机构的信任。"
   },
   {
     "word": "consensus",
@@ -1012,7 +1089,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'sensәs",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gòng shí"
+    "zhPinyin": "gòng shí",
+    "mixedExample": "委员会在审查证据后达成了 consensus 。"
   },
   {
     "word": "controversial",
@@ -1025,7 +1103,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kɒntrә'vә:ʃәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yǒu zhēng yì de"
+    "zhPinyin": "yǒu zhēng yì de",
+    "mixedExample": "由于社会成本过高，这项提案仍然十分 controversial。"
   },
   {
     "word": "feasible",
@@ -1038,7 +1117,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fi:zәbl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "kě xíng de"
+    "zhPinyin": "kě xíng de",
+    "mixedExample": "该研究考察拟建铁路在财务上是否 feasible 。"
   },
   {
     "word": "viable",
@@ -1051,7 +1131,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vaiәbl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qiè shí kě xíng de"
+    "zhPinyin": "qiè shí kě xíng de",
+    "mixedExample": "公司需要一个 viable 长期增长计划。"
   },
   {
     "word": "expenditure",
@@ -1064,7 +1145,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'spenditʃә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhī chū"
+    "zhPinyin": "zhī chū",
+    "mixedExample": "公共医疗 expenditure 稳步上升。"
   },
   {
     "word": "revenue",
@@ -1077,7 +1159,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'revinju:",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shōu rù ； cái zhèng shōu rù"
+    "zhPinyin": "shōu rù ； cái zhèng shōu rù",
+    "mixedExample": "旅游业为该地区提供了重要的 revenue 来源。"
   },
   {
     "word": "deficit",
@@ -1090,7 +1173,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'defisit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chì zì ； bù zú"
+    "zhPinyin": "chì zì ； bù zú",
+    "mixedExample": "政府计划逐步减少预算 deficit 。"
   },
   {
     "word": "inflation",
@@ -1103,7 +1187,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'fleiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tōng huò péng zhàng"
+    "zhPinyin": "tōng huò péng zhàng",
+    "mixedExample": "高 inflation 会降低家庭收入的购买力。"
   },
   {
     "word": "recession",
@@ -1116,7 +1201,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'seʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jīng jì shuāi tuì"
+    "zhPinyin": "jīng jì shuāi tuì",
+    "mixedExample": "recession 期间，小企业往往难以获得信贷。"
   },
   {
     "word": "entrepreneur",
@@ -1129,7 +1215,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ɒntrәprә'nә:",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qǐ yè jiā ； chuàng yè zhě"
+    "zhPinyin": "qǐ yè jiā ； chuàng yè zhě",
+    "mixedExample": "这位 entrepreneur 为当地食品生产者开发了一项服务。"
   },
   {
     "word": "entrepreneurship",
@@ -1142,7 +1229,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ",ɑntrəprə'nɝʃɪp",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chuàng yè ； qǐ yè jiā jīng shén"
+    "zhPinyin": "chuàng yè ； qǐ yè jiā jīng shén",
+    "mixedExample": "获得低成本贷款可以鼓励 entrepreneurship 。"
   },
   {
     "word": "outsourcing",
@@ -1155,7 +1243,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ajt,sɔ:siŋ",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wài bāo"
+    "zhPinyin": "wài bāo",
+    "mixedExample": "outsourcing 可以降低成本，但可能削弱对质量的控制。"
   },
   {
     "word": "globalisation",
@@ -1168,7 +1257,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ",gləubəlai'zeiʃən",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "quán qiú huà"
+    "zhPinyin": "quán qiú huà",
+    "mixedExample": "globalisation 加剧了制造商之间的竞争。"
   },
   {
     "word": "congestion",
@@ -1181,7 +1271,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'dʒestʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yōng dǔ"
+    "zhPinyin": "yōng dǔ",
+    "mixedExample": "可靠的公交服务可以减少交通 congestion 。"
   },
   {
     "word": "commute",
@@ -1194,7 +1285,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'mju:t",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tōng qín"
+    "zhPinyin": "tōng qín",
+    "mixedExample": "许多员工从小城镇 commute 到市中心。"
   },
   {
     "word": "pedestrian",
@@ -1207,7 +1299,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'destriәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xíng rén"
+    "zhPinyin": "xíng rén",
+    "mixedExample": "新的人行横道让每位 pedestrian 都有更多时间安全过街。"
   },
   {
     "word": "affordable",
@@ -1220,7 +1313,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fù dān dé qǐ de"
+    "zhPinyin": "fù dān dé qǐ de",
+    "mixedExample": "政府需要提供更多普通家庭也觉得 affordable 的住房。"
   },
   {
     "word": "sanitation",
@@ -1233,7 +1327,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sæni'teiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wèi shēng shè shī ； huán jìng wèi shēng"
+    "zhPinyin": "wèi shēng shè shī ； huán jìng wèi shēng",
+    "mixedExample": "改善 sanitation 可以防止疾病传播。"
   },
   {
     "word": "nutrition",
@@ -1246,7 +1341,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "nju:'triʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yíng yǎng"
+    "zhPinyin": "yíng yǎng",
+    "mixedExample": "良好的 nutrition 有助于儿童的身心发展。"
   },
   {
     "word": "sedentary",
@@ -1259,7 +1355,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sedәntәri",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiǔ zuò de"
+    "zhPinyin": "jiǔ zuò de",
+    "mixedExample": "sedentary 生活方式可能增加出现健康问题的风险。"
   },
   {
     "word": "obesity",
@@ -1272,7 +1369,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әu'bi:siti",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "féi pàng"
+    "zhPinyin": "féi pàng",
+    "mixedExample": "预防儿童 obesity 需要家庭和学校共同采取行动。"
   },
   {
     "word": "preventive",
@@ -1285,7 +1383,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pri'ventiv",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yù fáng xìng de"
+    "zhPinyin": "yù fáng xìng de",
+    "mixedExample": "preventive 保健可以减少日后对昂贵治疗的需求。"
   },
   {
     "word": "wellbeing",
@@ -1298,7 +1397,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiàn kāng yǔ xìng fú"
+    "zhPinyin": "jiàn kāng yǔ xìng fú",
+    "mixedExample": "附近的绿地有助于改善居民的 wellbeing。"
   },
   {
     "word": "economic",
@@ -1311,7 +1411,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".i:kә'nɒmik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jīng jì de"
+    "zhPinyin": "jīng jì de",
+    "mixedExample": "economic 增长并不总能减少社会不平等。"
   },
   {
     "word": "administration",
@@ -1324,7 +1425,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әd.mini'streiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "guǎn lǐ ； xíng zhèng"
+    "zhPinyin": "guǎn lǐ ； xíng zhèng",
+    "mixedExample": "高效的行政 administration 可以减少公共服务中的延误。"
   },
   {
     "word": "congress",
@@ -1337,7 +1439,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒŋgres",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "dài biǎo dà huì ； guó huì"
+    "zhPinyin": "dài biǎo dà huì ； guó huì",
+    "mixedExample": "来自各地的代表将在本次 congress 上讨论教育政策。"
   },
   {
     "word": "behaviour",
@@ -1350,7 +1453,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bi'heivjә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xíng wéi"
+    "zhPinyin": "xíng wéi",
+    "mixedExample": "广告可以以微妙的方式影响消费者 behaviour 。"
   },
   {
     "word": "agency",
@@ -1363,7 +1467,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'eidʒәnsi",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jī gòu ； dài lǐ chù"
+    "zhPinyin": "jī gòu ； dài lǐ chù",
+    "mixedExample": "环境 agency 监测整个地区的空气质量。"
   },
   {
     "word": "significant",
@@ -1376,7 +1481,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sig'nifikәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xiǎn zhù de ； zhòng yào de"
+    "zhPinyin": "xiǎn zhù de ； zhòng yào de",
+    "mixedExample": "研究发现这些群体之间存在 significant 差异。"
   },
   {
     "word": "establish",
@@ -1389,7 +1495,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'stæbliʃ",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiàn lì ； què lì"
+    "zhPinyin": "jiàn lì ； què lì",
+    "mixedExample": "地方组织可以 establish 网络来支持新居民。"
   },
   {
     "word": "trial",
@@ -1402,7 +1509,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'traiәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shì yàn"
+    "zhPinyin": "shì yàn",
+    "mixedExample": "这项临床 trial 将评估治疗的有效性。"
   },
   {
     "word": "institution",
@@ -1415,7 +1523,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".insti'tju:ʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jī gòu ； zhì dù"
+    "zhPinyin": "jī gòu ； zhì dù",
+    "mixedExample": "每所 institution 都制定自己的入学要求。"
   },
   {
     "word": "tough",
@@ -1428,7 +1537,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "tʌf",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiān nán de ； jiān rèn de"
+    "zhPinyin": "jiān nán de ； jiān rèn de",
+    "mixedExample": "对资金不足的小企业来说，今年将是 tough 的一年。"
   },
   {
     "word": "consumer",
@@ -1441,7 +1551,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'sju:mә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xiāo fèi zhě"
+    "zhPinyin": "xiāo fèi zhě",
+    "mixedExample": "更好的产品信息帮助 consumer 作出明智的选择。"
   },
   {
     "word": "assume",
@@ -1454,7 +1565,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'sju:m",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiǎ dìng ； rèn wéi"
+    "zhPinyin": "jiǎ dìng ； rèn wéi",
+    "mixedExample": "我们不能 assume 所有参与者都能上网。"
   },
   {
     "word": "eventually",
@@ -1467,7 +1579,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'ventʃuәli",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zuì zhōng"
+    "zhPinyin": "zuì zhōng",
+    "mixedExample": "未经处理的废物 eventually 可能进入海洋。"
   },
   {
     "word": "recall",
@@ -1480,7 +1593,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'kɒ:l",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "huí xiǎng ； zhào huí"
+    "zhPinyin": "huí xiǎng ； zhào huí",
+    "mixedExample": "定期练习帮助学习者 recall 起新词汇。"
   },
   {
     "word": "species",
@@ -1493,7 +1607,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'spi:ʃiz",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wù zhǒng"
+    "zhPinyin": "wù zhǒng",
+    "mixedExample": "若干 species 依靠这片湿地生存。"
   },
   {
     "word": "potential",
@@ -1506,7 +1621,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'tenʃәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qián lì"
+    "zhPinyin": "qián lì",
+    "mixedExample": "这项技术具有降低能源成本的 potential 。"
   },
   {
     "word": "contract",
@@ -1519,7 +1635,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒntrækt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "hé tóng"
+    "zhPinyin": "hé tóng",
+    "mixedExample": "contract 明确规定了每位合作伙伴的责任。"
   },
   {
     "word": "previous",
@@ -1532,7 +1649,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pri:viәs",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xiān qián de"
+    "zhPinyin": "xiān qián de",
+    "mixedExample": "这些发现与 previous 研究一致。"
   },
   {
     "word": "deliver",
@@ -1545,7 +1663,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'livә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tí gōng ； dì sòng"
+    "zhPinyin": "tí gōng ； dì sòng",
+    "mixedExample": "地方合作可以以更低成本 deliver 更好的服务。"
   },
   {
     "word": "facility",
@@ -1558,7 +1677,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fә'siliti",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shè shī"
+    "zhPinyin": "shè shī",
+    "mixedExample": "新 facility 将安全处理生活垃圾。"
   },
   {
     "word": "emerge",
@@ -1571,7 +1691,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'mә:dʒ",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chū xiàn"
+    "zhPinyin": "chū xiàn",
+    "mixedExample": "随着更多数据可用，新的模式可能 emerge 。"
   },
   {
     "word": "basis",
@@ -1584,7 +1705,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'beisis",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jī chǔ ； yī jù"
+    "zhPinyin": "jī chǔ ； yī jù",
+    "mixedExample": "可靠的证据构成有力论证的 basis 。"
   },
   {
     "word": "contribute",
@@ -1597,7 +1719,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'tribju:t",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gòng xiàn ； cù chéng"
+    "zhPinyin": "gòng xiàn ； cù chéng",
+    "mixedExample": "私人花园也能为保护城市生物多样性 contribute 一份力量。"
   },
   {
     "word": "identity",
@@ -1610,7 +1733,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ai'dentiti",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shēn fèn ； rèn tóng"
+    "zhPinyin": "shēn fèn ； rèn tóng",
+    "mixedExample": "语言在文化 identity 中发挥重要作用。"
   },
   {
     "word": "promote",
@@ -1623,7 +1747,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prәu'mәut",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "cù jìn ； tuī guǎng"
+    "zhPinyin": "cù jìn ； tuī guǎng",
+    "mixedExample": "公共宣传活动可以 promote 更健康的饮食习惯。"
   },
   {
     "word": "annual",
@@ -1636,7 +1761,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ænjuәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "měi nián de"
+    "zhPinyin": "měi nián de",
+    "mixedExample": "公司的 annual 报告详细介绍了这一年的环保成果。"
   },
   {
     "word": "demonstrate",
@@ -1649,7 +1775,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'demәnstreit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhèng míng ； zhǎn shì"
+    "zhPinyin": "zhèng míng ； zhǎn shì",
+    "mixedExample": "这些结果 demonstrate 了早期干预的价值。"
   },
   {
     "word": "engage",
@@ -1662,7 +1789,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'geidʒ",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "cān yù ； xī yǐn"
+    "zhPinyin": "cān yù ； xī yǐn",
+    "mixedExample": "实践活动可以吸引学生 engage 科学学习。"
   },
   {
     "word": "perspective",
@@ -1675,7 +1803,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'spektiv",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "guān diǎn ； shì jiǎo"
+    "zhPinyin": "guān diǎn ； shì jiǎo",
+    "mixedExample": "国际经验可以提供不同的教育 perspective 。"
   },
   {
     "word": "extend",
@@ -1688,7 +1817,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'stend",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yán cháng ； kuò zhǎn"
+    "zhPinyin": "yán cháng ； kuò zhǎn",
+    "mixedExample": "该城市计划 extend 铁路网络。"
   },
   {
     "word": "combine",
@@ -1701,7 +1831,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәm'bain",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jié hé"
+    "zhPinyin": "jié hé",
+    "mixedExample": "有效的课程将理论知识与实践经验相 combine 。"
   },
   {
     "word": "category",
@@ -1714,7 +1845,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kætigәri",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "lèi bié"
+    "zhPinyin": "lèi bié",
+    "mixedExample": "每项回答都被归入一个单独的 category 。"
   },
   {
     "word": "appropriate",
@@ -1727,7 +1859,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'prәupriәt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shì dàng de"
+    "zhPinyin": "shì dàng de",
+    "mixedExample": "研究人员必须为每个问题选择 appropriate 方法。"
   },
   {
     "word": "domestic",
@@ -1740,7 +1873,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dәu'mestik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "guó nèi de ； jiā tíng de"
+    "zhPinyin": "guó nèi de ； jiā tíng de",
+    "mixedExample": "当出口下降时， domestic 需求可以支持增长。"
   },
   {
     "word": "expand",
@@ -1753,7 +1887,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'spænd",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "kuò dà"
+    "zhPinyin": "kuò dà",
+    "mixedExample": "该项目旨在 expand 年轻创业者的机会。"
   },
   {
     "word": "corporate",
@@ -1766,7 +1901,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒ:pәrit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gōng sī de ； qǐ yè de"
+    "zhPinyin": "gōng sī de ； qǐ yè de",
+    "mixedExample": "corporate 决策可能对当地社区产生持久影响。"
   },
   {
     "word": "explore",
@@ -1779,7 +1915,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'splɒ:",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tàn suǒ ； tàn tǎo"
+    "zhPinyin": "tàn suǒ ； tàn tǎo",
+    "mixedExample": "该研究将 explore 传统包装的替代方案。"
   },
   {
     "word": "panel",
@@ -1792,7 +1929,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pænl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhuān jiā xiǎo zǔ ； miàn bǎn"
+    "zhPinyin": "zhuān jiā xiǎo zǔ ； miàn bǎn",
+    "mixedExample": "一个独立 panel 在提出建议之前审查了证据。"
   },
   {
     "word": "commitment",
@@ -1805,7 +1943,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'mitmәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chéng nuò ； tóu rù"
+    "zhPinyin": "chéng nuò ； tóu rù",
+    "mixedExample": "她对教育事业的 commitment 让她坚持支教十年。"
   },
   {
     "word": "regional",
@@ -1818,7 +1957,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ri:dʒәnәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "dì qū de"
+    "zhPinyin": "dì qū de",
+    "mixedExample": "加强 regional 合作可以改善周边城市之间的交通。"
   },
   {
     "word": "shift",
@@ -1831,7 +1971,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ʃift",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhuǎn biàn"
+    "zhPinyin": "zhuǎn biàn",
+    "mixedExample": "向远程工作的 shift 改变了对办公空间的需求。"
   },
   {
     "word": "trend",
@@ -1844,7 +1985,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "trend",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qū shì"
+    "zhPinyin": "qū shì",
+    "mixedExample": "图表显示需求呈稳定上升 trend 。"
   },
   {
     "word": "profit",
@@ -1857,7 +1999,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'prɒfit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "lì rùn"
+    "zhPinyin": "lì rùn",
+    "mixedExample": "公司将部分 profit 重新投入研究。"
   },
   {
     "word": "notion",
@@ -1870,7 +2013,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'nәuʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "guān niàn ； xiǎng fǎ"
+    "zhPinyin": "guān niàn ； xiǎng fǎ",
+    "mixedExample": "证据对增长使所有人平等受益的 notion 提出了质疑。"
   },
   {
     "word": "capture",
@@ -1883,7 +2027,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kæptʃә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bǔ zhuō ； jì lù"
+    "zhPinyin": "bǔ zhuō ； jì lù",
+    "mixedExample": "这项调查无法 capture 学生体验的每个方面。"
   },
   {
     "word": "internal",
@@ -1896,7 +2041,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'tә:nәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "nèi bù de"
+    "zhPinyin": "nèi bù de",
+    "mixedExample": "一次 internal 审查发现了员工沟通方面的问题。"
   },
   {
     "word": "ethnic",
@@ -1909,7 +2055,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'eθnik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "mín zú de ； zú qún de"
+    "zhPinyin": "mín zú de ； zú qún de",
+    "mixedExample": "这个节日庆祝该地区的 ethnic 和文化多样性。"
   },
   {
     "word": "contrast",
@@ -1922,7 +2069,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'træst",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "duì bǐ ； chā yì"
+    "zhPinyin": "duì bǐ ； chā yì",
+    "mixedExample": "城市与农村的服务存在明显 contrast 。"
   },
   {
     "word": "ultimately",
@@ -1935,7 +2083,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ʌltimәtli",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zuì zhōng ； guī gēn jié dǐ"
+    "zhPinyin": "zuì zhōng ； guī gēn jié dǐ",
+    "mixedExample": "该政策的成功 ultimately 取决于公众参与。"
   },
   {
     "word": "contribution",
@@ -1948,7 +2097,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kɒntri'bju:ʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gòng xiàn"
+    "zhPinyin": "gòng xiàn",
+    "mixedExample": "她的 contribution 帮助团队开发了成本更低的解决方案。"
   },
   {
     "word": "estate",
@@ -1961,7 +2111,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'steit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "dì chǎn ； zhù zhái qū"
+    "zhPinyin": "dì chǎn ； zhù zhái qū",
+    "mixedExample": "这个 estate 设有共享花园和社区中心。"
   },
   {
     "word": "circumstance",
@@ -1974,7 +2125,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sә:kәmstәns",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qíng kuàng ； tiáo jiàn"
+    "zhPinyin": "qíng kuàng ； tiáo jiàn",
+    "mixedExample": "circumstance 的变化可能需要不同的应对方式。"
   },
   {
     "word": "percentage",
@@ -1987,7 +2139,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'sentidʒ",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bǎi fēn bǐ"
+    "zhPinyin": "bǎi fēn bǐ",
+    "mixedExample": "拥有互联网接入的家庭 percentage 稳步上升。"
   },
   {
     "word": "relief",
@@ -2000,7 +2153,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'li:f",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "huǎn jiě ； jiù jì"
+    "zhPinyin": "huǎn jiě ； jiù jì",
+    "mixedExample": "紧急 relief 在自然灾害后提供食物和住所。"
   },
   {
     "word": "gender",
@@ -2013,7 +2167,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒendә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xìng bié"
+    "zhPinyin": "xìng bié",
+    "mixedExample": "报告研究了就业机会中的 gender 差异。"
   },
   {
     "word": "landscape",
@@ -2026,7 +2181,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'lændskeip",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jǐng guān ； xíng shì"
+    "zhPinyin": "jǐng guān ； xíng shì",
+    "mixedExample": "新道路可能永久改变乡村 landscape 。"
   },
   {
     "word": "confirm",
@@ -2039,7 +2195,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'fә:m",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "què rèn ； zhèng shí"
+    "zhPinyin": "què rèn ； zhèng shí",
+    "mixedExample": "需要进一步研究来 confirm 这些发现。"
   },
   {
     "word": "perception",
@@ -2052,7 +2209,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'sepʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "kàn fǎ ； gǎn zhī"
+    "zhPinyin": "kàn fǎ ； gǎn zhī",
+    "mixedExample": "媒体报道可以影响公众对科学风险的 perception 。"
   },
   {
     "word": "coverage",
@@ -2065,7 +2223,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kʌvәridʒ",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bào dào ； fù gài fàn wéi"
+    "zhPinyin": "bào dào ； fù gài fàn wéi",
+    "mixedExample": "平衡的 coverage 帮助读者理解不同观点。"
   },
   {
     "word": "requirement",
@@ -2078,7 +2237,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'kwaiәmәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yāo qiú"
+    "zhPinyin": "yāo qiú",
+    "mixedExample": "实践经验是获得这项资格的 requirement 。"
   },
   {
     "word": "intervention",
@@ -2091,7 +2251,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".intә'venʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gān yù"
+    "zhPinyin": "gān yù",
+    "mixedExample": "早期 intervention 可以防止小问题变得严重。"
   },
   {
     "word": "overall",
@@ -2104,7 +2265,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'әuvәrɒ:l",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zǒng tǐ de"
+    "zhPinyin": "zǒng tǐ de",
+    "mixedExample": "overall 影响取决于政策如何实施。"
   },
   {
     "word": "initial",
@@ -2117,7 +2279,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'niʃәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zuì chū de"
+    "zhPinyin": "zuì chū de",
+    "mixedExample": "initial 结果表明新方法可以节省时间。"
   },
   {
     "word": "contemporary",
@@ -2130,7 +2293,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'tempәrәri",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "dāng dài de"
+    "zhPinyin": "dāng dài de",
+    "mixedExample": "这家博物馆同时展示 contemporary 艺术和传统手工艺。"
   },
   {
     "word": "faculty",
@@ -2143,7 +2307,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fækәlti",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yuàn xì ； quán tǐ jiào shī"
+    "zhPinyin": "yuàn xì ； quán tǐ jiào shī",
+    "mixedExample": "工程 faculty 新开设了几门可再生能源课程。"
   },
   {
     "word": "massive",
@@ -2156,7 +2321,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mæsiv",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jù dà de"
+    "zhPinyin": "jù dà de",
+    "mixedExample": "修建这条铁路需要 massive 的资金投入。"
   },
   {
     "word": "invest",
@@ -2169,7 +2335,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'vest",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tóu zī"
+    "zhPinyin": "tóu zī",
+    "mixedExample": "企业应同时 invest 于培训和设备。"
   },
   {
     "word": "expose",
@@ -2182,7 +2349,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'spәuz",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shǐ jiē chù ； jiē lù"
+    "zhPinyin": "shǐ jiē chù ； jiē lù",
+    "mixedExample": "记者决定 expose 这家公司长期隐瞒的污染问题。"
   },
   {
     "word": "rural",
@@ -2195,7 +2363,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ruәrәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "nóng cūn de"
+    "zhPinyin": "nóng cūn de",
+    "mixedExample": "可靠的互联网接入可以改善 rural 地区的机会。"
   },
   {
     "word": "assess",
@@ -2208,7 +2377,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'ses",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "píng gū"
+    "zhPinyin": "píng gū",
+    "mixedExample": "该调查将 assess 公众对当地服务的满意度。"
   },
   {
     "word": "virtually",
@@ -2221,7 +2391,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vә:tʃuәli",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jī hū"
+    "zhPinyin": "jī hū",
+    "mixedExample": "新系统 virtually 不需要手动输入数据。"
   },
   {
     "word": "acquire",
@@ -2234,7 +2405,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'kwaiә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "huò dé ； xí dé"
+    "zhPinyin": "huò dé ； xí dé",
+    "mixedExample": "学生通过有指导的实践工作 acquire 实用技能。"
   },
   {
     "word": "technical",
@@ -2247,7 +2419,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'teknikl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jì shù de"
+    "zhPinyin": "jì shù de",
+    "mixedExample": "仅有 technical 知识不能保证有效的团队合作。"
   },
   {
     "word": "immigrant",
@@ -2260,7 +2433,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'imigrәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yí mín"
+    "zhPinyin": "yí mín",
+    "mixedExample": "每位 immigrant 都为社区带来技能和经验。"
   },
   {
     "word": "depression",
@@ -2273,7 +2447,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'preʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yì yù ； xiāo tiáo"
+    "zhPinyin": "yì yù ； xiāo tiáo",
+    "mixedExample": "社会支持可以帮助人们应对 depression 。"
   },
   {
     "word": "creation",
@@ -2286,7 +2461,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kri:'eiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chuàng zào ； chuàng jiàn"
+    "zhPinyin": "chuàng zào ； chuàng jiàn",
+    "mixedExample": "对当地企业的投资支持就业岗位的 creation 。"
   },
   {
     "word": "dramatic",
@@ -2299,7 +2475,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "drә'mætik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xiǎn zhù de ； jù liè de"
+    "zhPinyin": "xiǎn zhù de ； jù liè de",
+    "mixedExample": "图表显示线上销售额 dramatic 增加。"
   },
   {
     "word": "agenda",
@@ -2312,7 +2489,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'dʒendә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yì chéng"
+    "zhPinyin": "yì chéng",
+    "mixedExample": "可负担住房是市政委员会 agenda 中的重点。"
   },
   {
     "word": "selection",
@@ -2325,7 +2503,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "si'lekʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xuǎn zé ； shāi xuǎn"
+    "zhPinyin": "xuǎn zé ； shāi xuǎn",
+    "mixedExample": "selection 过程应当公平且透明。"
   },
   {
     "word": "initiative",
@@ -2338,7 +2517,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'niʃiәtiv",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chàng yì ； zhǔ dòng xìng"
+    "zhPinyin": "chàng yì ； zhǔ dòng xìng",
+    "mixedExample": "这项 initiative 鼓励居民共享工具和设备。"
   },
   {
     "word": "therapy",
@@ -2351,7 +2531,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'θerәpi",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhì liáo"
+    "zhPinyin": "zhì liáo",
+    "mixedExample": "定期 therapy 可以帮助患者恢复体力。"
   },
   {
     "word": "visual",
@@ -2364,7 +2545,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'viʒuәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shì jué de"
+    "zhPinyin": "shì jué de",
+    "mixedExample": "visual 示例可以使复杂概念更容易理解。"
   },
   {
     "word": "perceive",
@@ -2377,7 +2559,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'si:v",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gǎn zhī ； rèn wéi"
+    "zhPinyin": "gǎn zhī ； rèn wéi",
+    "mixedExample": "不同的人可能以不同方式 perceive 同一种风险。"
   },
   {
     "word": "settlement",
@@ -2390,7 +2573,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'setlmәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "dìng jū diǎn ； jiě jué"
+    "zhPinyin": "dìng jū diǎn ； jiě jué",
+    "mixedExample": "这个 settlement 在可靠的水源附近发展起来。"
   },
   {
     "word": "transform",
@@ -2403,7 +2587,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "træns'fɒ:m",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gǎi biàn ； zhuǎn biàn"
+    "zhPinyin": "gǎi biàn ； zhuǎn biàn",
+    "mixedExample": "价格可负担的技术可以 transform 人们获得医疗建议的方式。"
   },
   {
     "word": "consist",
@@ -2416,7 +2601,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'sist",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yóu …… zǔ chéng"
+    "zhPinyin": "yóu …… zǔ chéng",
+    "mixedExample": "这门课程将 consist of 讲座和实践研讨课两部分。"
   },
   {
     "word": "resistance",
@@ -2429,7 +2615,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'zistәns",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "dǐ kàng ； zǔ lì"
+    "zhPinyin": "dǐ kàng ； zǔ lì",
+    "mixedExample": "居民的 resistance 推迟了新收费政策的实施。"
   },
   {
     "word": "exposure",
@@ -2442,7 +2629,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'spәuʒә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiē chù ； bào lù"
+    "zhPinyin": "jiē chù ； bào lù",
+    "mixedExample": "长期 exposure 噪音可能影响注意力。"
   },
   {
     "word": "coalition",
@@ -2455,7 +2643,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kәuә'liʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "lián méng"
+    "zhPinyin": "lián méng",
+    "mixedExample": "一个地方团体 coalition 提出了一项回收计划。"
   },
   {
     "word": "symptom",
@@ -2468,7 +2657,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'simptәm",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhèng zhuàng"
+    "zhPinyin": "zhèng zhuàng",
+    "mixedExample": "持续疲劳可能是睡眠不佳的 symptom 。"
   },
   {
     "word": "numerous",
@@ -2481,7 +2671,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'nju:mәrәs",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhòng duō de"
+    "zhPinyin": "zhòng duō de",
+    "mixedExample": "numerous 研究考察了定期运动的益处。"
   },
   {
     "word": "moreover",
@@ -2494,7 +2685,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mɒ:'әuvә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "cǐ wài ； ér qiě"
+    "zhPinyin": "cǐ wài ； ér qiě",
+    "mixedExample": "这项服务价格可负担， moreover 使用方便。"
   },
   {
     "word": "intense",
@@ -2507,7 +2699,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'tens",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qiáng liè de"
+    "zhPinyin": "qiáng liè de",
+    "mixedExample": "市场上的竞争十分 intense，企业必须不断改进产品。"
   },
   {
     "word": "inspire",
@@ -2520,7 +2713,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'spaiә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jī lì ； qǐ fā"
+    "zhPinyin": "jī lì ； qǐ fā",
+    "mixedExample": "这次科学演示可能 inspire 孩子们探索自然的兴趣。"
   },
   {
     "word": "adjust",
@@ -2533,7 +2727,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'dʒʌst",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tiáo zhěng"
+    "zhPinyin": "tiáo zhěng",
+    "mixedExample": "雇主可以 adjust 工作时间来支持有孩子的员工。"
   },
   {
     "word": "visible",
@@ -2546,7 +2741,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vizәbl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "kě jiàn de ； míng xiǎn de"
+    "zhPinyin": "kě jiàn de ； míng xiǎn de",
+    "mixedExample": "河水变清后，生态修复的效果已经十分 visible。"
   },
   {
     "word": "dominate",
@@ -2559,7 +2755,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dɒmineit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhàn zhǔ dǎo dì wèi"
+    "zhPinyin": "zhàn zhǔ dǎo dì wèi",
+    "mixedExample": "少数大型企业逐渐 dominate 了国内市场。"
   },
   {
     "word": "transfer",
@@ -2572,7 +2769,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "træns'fә:",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhuǎn yí ； zhuǎn ràng"
+    "zhPinyin": "zhuǎn yí ； zhuǎn ràng",
+    "mixedExample": "银行需要两天才能把这笔资金 transfer 到国外账户。"
   },
   {
     "word": "prospect",
@@ -2585,7 +2783,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'prɒspekt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qián jǐng ； kě néng xìng"
+    "zhPinyin": "qián jǐng ； kě néng xìng",
+    "mixedExample": "稳定就业的 prospect 吸引着年轻毕业生。"
   },
   {
     "word": "severe",
@@ -2598,7 +2797,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "si'viә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yán zhòng de"
+    "zhPinyin": "yán zhòng de",
+    "mixedExample": "severe 干旱可能损害农作物并减少食物供应。"
   },
   {
     "word": "enhance",
@@ -2611,7 +2811,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'hæns",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tí gāo ； zēng qiáng"
+    "zhPinyin": "tí gāo ； zēng qiáng",
+    "mixedExample": "建设性的反馈可以 enhance 学生写作的质量。"
   },
   {
     "word": "impose",
@@ -2624,7 +2825,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "im'pәuz",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shí shī ； qiáng jiā"
+    "zhPinyin": "shí shī ； qiáng jiā",
+    "mixedExample": "市政委员会可能对学校附近的交通 impose 限制。"
   },
   {
     "word": "illustrate",
@@ -2637,7 +2839,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ilәstreit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shuō míng ； chǎn míng"
+    "zhPinyin": "shuō míng ； chǎn míng",
+    "mixedExample": "这些例子 illustrate 文化如何影响沟通。"
   },
   {
     "word": "psychological",
@@ -2650,7 +2853,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".saikә'lɒdʒikәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xīn lǐ de"
+    "zhPinyin": "xīn lǐ de",
+    "mixedExample": "长时间工作可能造成 psychological 压力。"
   },
   {
     "word": "disorder",
@@ -2663,7 +2867,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dis'ɒ:dә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wěn luàn ； jí bìng"
+    "zhPinyin": "wěn luàn ； jí bìng",
+    "mixedExample": "长期失眠可能是一种需要治疗的睡眠 disorder。"
   },
   {
     "word": "distribution",
@@ -2676,7 +2881,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".distrә'bju:ʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fēn pèi ； fēn bù"
+    "zhPinyin": "fēn pèi ； fēn bù",
+    "mixedExample": "地图显示了公共图书馆的 distribution 。"
   },
   {
     "word": "transportation",
@@ -2689,7 +2895,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".trænspә'teiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yùn shū"
+    "zhPinyin": "yùn shū",
+    "mixedExample": "高效 transportation 降低了配送新鲜食品的成本。"
   },
   {
     "word": "commission",
@@ -2702,7 +2909,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'miʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wěi yuán huì ； yòng jīn"
+    "zhPinyin": "wěi yuán huì ； yòng jīn",
+    "mixedExample": "commission 建议改变规划流程。"
   },
   {
     "word": "veteran",
@@ -2715,7 +2923,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vetәrәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jīng yàn fēng fù de rén"
+    "zhPinyin": "jīng yàn fēng fù de rén",
+    "mixedExample": "这位行业 veteran 为刚创业的年轻人提供了实用建议。"
   },
   {
     "word": "crucial",
@@ -2728,7 +2937,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kru:ʃәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhì guān zhòng yào de"
+    "zhPinyin": "zhì guān zhòng yào de",
+    "mixedExample": "公众信任对疫苗接种项目的成功 crucial 。"
   },
   {
     "word": "confront",
@@ -2741,7 +2951,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'frʌnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "miàn duì ； chǔ lǐ"
+    "zhPinyin": "miàn duì ； chǔ lǐ",
+    "mixedExample": "政府必须 confront 持续不平等的成因。"
   },
   {
     "word": "dimension",
@@ -2754,7 +2965,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dai'menʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fāng miàn ； wéi dù"
+    "zhPinyin": "fāng miàn ； wéi dù",
+    "mixedExample": "这份报告分析了经济变化的社会 dimension。"
   },
   {
     "word": "publication",
@@ -2767,7 +2979,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".pʌbli'keiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chū bǎn ； chū bǎn wù"
+    "zhPinyin": "chū bǎn ； chū bǎn wù",
+    "mixedExample": "研究结果在正式 publication 之前经过了仔细审查。"
   },
   {
     "word": "anxiety",
@@ -2780,7 +2993,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "æŋ'zaiәti",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiāo lǜ"
+    "zhPinyin": "jiāo lǜ",
+    "mixedExample": "清晰的信息可以减少医疗操作前的 anxiety 。"
   },
   {
     "word": "convention",
@@ -2793,7 +3007,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'venʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "guàn lì ； dà huì"
+    "zhPinyin": "guàn lì ； dà huì",
+    "mixedExample": "学术写作遵循注明来源的 convention 。"
   },
   {
     "word": "embrace",
@@ -2806,7 +3021,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "im'breis",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiē shòu ； yōng bào"
+    "zhPinyin": "jiē shòu ； yōng bào",
+    "mixedExample": "企业必须在保护客户隐私的同时 embrace 变化。"
   },
   {
     "word": "exhibition",
@@ -2819,7 +3035,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".eksi'biʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhǎn lǎn"
+    "zhPinyin": "zhǎn lǎn",
+    "mixedExample": "exhibition 探讨了技术与艺术之间的关系。"
   },
   {
     "word": "consultant",
@@ -2832,7 +3049,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'sʌltәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gù wèn"
+    "zhPinyin": "gù wèn",
+    "mixedExample": "consultant 提出了一个效率更高的配送系统。"
   },
   {
     "word": "administrator",
@@ -2845,7 +3063,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әd'ministreitә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "guǎn lǐ rén yuán"
+    "zhPinyin": "guǎn lǐ rén yuán",
+    "mixedExample": "administrator 协调面向国际学生的支持服务。"
   },
   {
     "word": "historic",
@@ -2858,7 +3077,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hi'stɒrik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yǒu lì shǐ yì yì de"
+    "zhPinyin": "yǒu lì shǐ yì yì de",
+    "mixedExample": "该镇通过细致规划保护具 historic 建筑。"
   },
   {
     "word": "enterprise",
@@ -2871,7 +3091,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'entәpraiz",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qǐ yè ； shì yè"
+    "zhPinyin": "qǐ yè ； shì yè",
+    "mixedExample": "这家社会 enterprise 将利润重新投入社区项目。"
   },
   {
     "word": "apparent",
@@ -2884,7 +3105,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'pærәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "míng xiǎn de ； biǎo miàn shàng de"
+    "zhPinyin": "míng xiǎn de ； biǎo miàn shàng de",
+    "mixedExample": "apparent 改善可能反映了测量方法的变化。"
   },
   {
     "word": "aggressive",
@@ -2897,7 +3119,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'gresiv",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jī jìn de ； yǒu gōng jī xìng de"
+    "zhPinyin": "jī jìn de ； yǒu gōng jī xìng de",
+    "mixedExample": "aggressive 营销可能鼓励不必要的消费。"
   },
   {
     "word": "protein",
@@ -2910,7 +3133,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'prәuti:in",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "dàn bái zhì"
+    "zhPinyin": "dàn bái zhì",
+    "mixedExample": "豆类提供了一种价格可负担的 protein 来源。"
   },
   {
     "word": "historian",
@@ -2923,7 +3147,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hi'stɒ:riәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "lì shǐ xué jiā"
+    "zhPinyin": "lì shǐ xué jiā",
+    "mixedExample": "historian 将书面记录与考古证据进行了比较。"
   },
   {
     "word": "restore",
@@ -2936,7 +3161,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'stɒ:",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "huī fù ； xiū fù"
+    "zhPinyin": "huī fù ； xiū fù",
+    "mixedExample": "当地志愿者帮助 restore 了受损湿地。"
   },
   {
     "word": "origin",
@@ -2949,7 +3175,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒridʒin",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qǐ yuán ； lái yuán"
+    "zhPinyin": "qǐ yuán ； lái yuán",
+    "mixedExample": "博物馆解释了当地农业传统的 origin 。"
   },
   {
     "word": "biological",
@@ -2962,7 +3189,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".baiәu'lɒdʒikәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shēng wù de"
+    "zhPinyin": "shēng wù de",
+    "mixedExample": "biological 过程可以帮助清除水中的污染物。"
   },
   {
     "word": "assure",
@@ -2975,7 +3203,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'ʃuә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xiàng …… bǎo zhèng"
+    "zhPinyin": "xiàng …… bǎo zhèng",
+    "mixedExample": "经理向员工 assure，公司会认真处理他们的担忧。"
   },
   {
     "word": "utility",
@@ -2988,7 +3217,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ju:'tiliti",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gōng yòng shì yè ； xiào yòng"
+    "zhPinyin": "gōng yòng shì yè ； xiào yòng",
+    "mixedExample": "utility 公司正在升级供水网络。"
   },
   {
     "word": "arise",
@@ -3001,7 +3231,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'raiz",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chū xiàn ； chǎn shēng"
+    "zhPinyin": "chū xiàn ； chǎn shēng",
+    "mixedExample": "责任界定不清时可能 arise 冲突。"
   },
   {
     "word": "stake",
@@ -3014,7 +3245,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "steik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "lì hài guān xì ； gǔ fèn"
+    "zhPinyin": "lì hài guān xì ； gǔ fèn",
+    "mixedExample": "当地企业的成功与居民有 stake 。"
   },
   {
     "word": "refugee",
@@ -3027,7 +3259,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".refju'dʒi:",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "nàn mín"
+    "zhPinyin": "nàn mín",
+    "mixedExample": "该项目帮助每位 refugee 获得语言课程和就业建议。"
   },
   {
     "word": "incorporate",
@@ -3040,7 +3273,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'kɒ:pәreit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "nà rù ； bāo hán"
+    "zhPinyin": "nà rù ； bāo hán",
+    "mixedExample": "该课程将 incorporate 往届学生的反馈。"
   },
   {
     "word": "assumption",
@@ -3053,7 +3287,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'sʌmpʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiǎ shè"
+    "zhPinyin": "jiǎ shè",
+    "mixedExample": "该模型依赖于需求稳定的 assumption 。"
   },
   {
     "word": "barrier",
@@ -3066,7 +3301,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bæriә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhàng ài"
+    "zhPinyin": "zhàng ài",
+    "mixedExample": "高昂的交通费用可能成为就业 barrier 。"
   },
   {
     "word": "assign",
@@ -3079,7 +3315,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'sain",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fēn pèi ； zhǐ pài"
+    "zhPinyin": "fēn pèi ； zhǐ pài",
+    "mixedExample": "管理者应根据技能和经验 assign 任务。"
   },
   {
     "word": "provision",
@@ -3092,7 +3329,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prә'viʒәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tí gōng ； tiáo kuǎn"
+    "zhPinyin": "tí gōng ； tiáo kuǎn",
+    "mixedExample": "provision 价格可负担的托育服务支持了在职父母。"
   },
   {
     "word": "universal",
@@ -3105,7 +3343,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ju:ni'vә:sl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "pǔ biàn de ； tōng yòng de"
+    "zhPinyin": "pǔ biàn de ； tōng yòng de",
+    "mixedExample": "获得干净饮用水应当是一项 universal 的权利。"
   },
   {
     "word": "testimony",
@@ -3118,7 +3357,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'testimәni",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhèng cí ； zhèng jù"
+    "zhPinyin": "zhèng cí ； zhèng jù",
+    "mixedExample": "调查考虑了居民和独立专家的 testimony 。"
   },
   {
     "word": "mechanism",
@@ -3131,7 +3371,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mekәnizm",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jī zhì"
+    "zhPinyin": "jī zhì",
+    "mixedExample": "该研究考察了这一变化背后的 mechanism 。"
   },
   {
     "word": "penalty",
@@ -3144,7 +3385,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'penәlti",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chǔ fá ； fá kuǎn"
+    "zhPinyin": "chǔ fá ； fá kuǎn",
+    "mixedExample": "经济 penalty 可能遏制非法倾倒废物。"
   },
   {
     "word": "infection",
@@ -3157,7 +3399,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'fekʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gǎn rǎn"
+    "zhPinyin": "gǎn rǎn",
+    "mixedExample": "良好的卫生习惯可以降低 infection 风险。"
   },
   {
     "word": "strategic",
@@ -3170,7 +3413,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "strә'ti:dʒik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhàn lüè xìng de"
+    "zhPinyin": "zhàn lüè xìng de",
+    "mixedExample": "strategic 投资可以增强地区的长期竞争力。"
   },
   {
     "word": "dispute",
@@ -3183,7 +3427,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dis'pju:t",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhēng yì ； jiū fēn"
+    "zhPinyin": "zhēng yì ； jiū fēn",
+    "mixedExample": "调解帮助解决了土地使用 dispute 。"
   },
   {
     "word": "statistics",
@@ -3196,7 +3441,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "stә'tistiks",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tǒng jì xué ； tǒng jì shù jù"
+    "zhPinyin": "tǒng jì xué ； tǒng jì shù jù",
+    "mixedExample": "官方 statistics 显示就业情况逐渐改善。"
   },
   {
     "word": "occupy",
@@ -3209,7 +3455,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒkjupai",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhàn jù"
+    "zhPinyin": "zhàn jù",
+    "mixedExample": "绿地 occupy 了该城市的一小部分面积。"
   },
   {
     "word": "accurate",
@@ -3222,7 +3469,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ækjurәt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhǔn què de"
+    "zhPinyin": "zhǔn què de",
+    "mixedExample": "accurate 测量对于可靠的比较至关重要。"
   },
   {
     "word": "expansion",
@@ -3235,7 +3483,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'spænʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "kuò zhāng ； kuò dà"
+    "zhPinyin": "kuò zhāng ； kuò dà",
+    "mixedExample": "机场的 expansion 增加了周边道路的交通量。"
   },
   {
     "word": "detect",
@@ -3248,7 +3497,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'tekt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fā xiàn ； jiǎn cè"
+    "zhPinyin": "fā xiàn ； jiǎn cè",
+    "mixedExample": "传感器可以 detect 水质的微小变化。"
   },
   {
     "word": "tremendous",
@@ -3261,7 +3511,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "tri'mendәs",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jù dà de"
+    "zhPinyin": "jù dà de",
+    "mixedExample": "这项发现引起了医学研究人员 tremendous 的兴趣。"
   },
   {
     "word": "awareness",
@@ -3274,7 +3525,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'weәnis",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yì shí ； rèn shí"
+    "zhPinyin": "yì shí ； rèn shí",
+    "mixedExample": "学校项目可以提高人们对环境问题的 awareness 。"
   },
   {
     "word": "withdraw",
@@ -3287,7 +3539,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "wið'drɒ:",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chè huí ； tuì chū"
+    "zhPinyin": "chè huí ； tuì chū",
+    "mixedExample": "参与者可以随时 withdraw 研究。"
   },
   {
     "word": "mutual",
@@ -3300,7 +3553,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mju:tʃuәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xiāng hù de ； gòng tóng de"
+    "zhPinyin": "xiāng hù de ； gòng tóng de",
+    "mixedExample": "成功的合作取决于 mutual 尊重与信任。"
   },
   {
     "word": "finance",
@@ -3313,7 +3567,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fai'næns",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zī jīn ； jīn róng"
+    "zhPinyin": "zī jīn ； jīn róng",
+    "mixedExample": "获得 finance 有助于小企业开发新产品。"
   },
   {
     "word": "relevant",
@@ -3326,7 +3581,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'relivәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xiāng guān de"
+    "zhPinyin": "xiāng guān de",
+    "mixedExample": "文章应包含与问题 relevant 证据。"
   },
   {
     "word": "protest",
@@ -3339,7 +3595,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prә'test",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "kàng yì"
+    "zhPinyin": "kàng yì",
+    "mixedExample": "和平 protest 使人们关注不断上涨的住房成本。"
   },
   {
     "word": "insight",
@@ -3352,7 +3609,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'insait",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shēn rù liǎo jiě ； dòng chá"
+    "zhPinyin": "shēn rù liǎo jiě ； dòng chá",
+    "mixedExample": "访谈使人们 insight 居民如何使用公共空间。"
   },
   {
     "word": "extensive",
@@ -3365,7 +3623,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'stensiv",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "guǎng fàn de ； dà liàng de"
+    "zhPinyin": "guǎng fàn de ； dà liàng de",
+    "mixedExample": "这项提案以 extensive 研究和咨询为基础。"
   },
   {
     "word": "considerable",
@@ -3378,7 +3637,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'sidәrәbl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xiāng dāng dà de"
+    "zhPinyin": "xiāng dāng dà de",
+    "mixedExample": "新系统帮助公司节省了 considerable 的费用。"
   },
   {
     "word": "prior",
@@ -3391,7 +3651,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'praiә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xiān qián de"
+    "zhPinyin": "xiān qián de",
+    "mixedExample": "参加工作坊不需要 prior 经验。"
   },
   {
     "word": "intellectual",
@@ -3404,7 +3665,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".intә'lektʃuәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhì lì de ； sī xiǎng de"
+    "zhPinyin": "zhì lì de ； sī xiǎng de",
+    "mixedExample": "阅读和讨论可以促进孩子的 intellectual 发展。"
   },
   {
     "word": "characterise",
@@ -3417,7 +3679,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kærәktәraiz",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "miáo shù …… de tè diǎn"
+    "zhPinyin": "miáo shù …… de tè diǎn",
+    "mixedExample": "开放和互信是可以用来 characterise 这个团队的特点。"
   },
   {
     "word": "external",
@@ -3430,7 +3693,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'stә:nl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wài bù de"
+    "zhPinyin": "wài bù de",
+    "mixedExample": "external 需求对出口行业有很大影响。"
   },
   {
     "word": "controversy",
@@ -3443,7 +3707,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒntrәvә:si",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhēng yì"
+    "zhPinyin": "zhēng yì",
+    "mixedExample": "拟议的开发项目在当地居民中引发了 controversy 。"
   },
   {
     "word": "alter",
@@ -3456,7 +3721,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒ:ltә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gǎi biàn"
+    "zhPinyin": "gǎi biàn",
+    "mixedExample": "气温升高可能 alter 植物生长的时间。"
   },
   {
     "word": "prominent",
@@ -3469,7 +3735,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'prɒminәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tū chū de ； zhòng yào de"
+    "zhPinyin": "tū chū de ； zhòng yào de",
+    "mixedExample": "公共图书馆在社区生活中发挥 prominent 作用。"
   },
   {
     "word": "presentation",
@@ -3482,7 +3749,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".prezәn'teiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhǎn shì ； yǎn shì"
+    "zhPinyin": "zhǎn shì ； yǎn shì",
+    "mixedExample": "清晰的 presentation 帮助听众理解复杂论证。"
   },
   {
     "word": "elderly",
@@ -3495,7 +3763,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'eldәli",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "nián lǎo de"
+    "zhPinyin": "nián lǎo de",
+    "mixedExample": "这项服务帮助 elderly 居民保持独立生活。"
   },
   {
     "word": "violate",
@@ -3508,7 +3777,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vaiәleit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wéi fǎn"
+    "zhPinyin": "wéi fǎn",
+    "mixedExample": "violate 安全规定的企业可能面临巨额罚款。"
   },
   {
     "word": "distinction",
@@ -3521,7 +3791,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dis'tiŋkʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qū bié"
+    "zhPinyin": "qū bié",
+    "mixedExample": "研究者必须弄清相关性与因果关系之间的 distinction。"
   },
   {
     "word": "segment",
@@ -3534,7 +3805,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'segmәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bù fèn ； qún tǐ"
+    "zhPinyin": "bù fèn ； qún tǐ",
+    "mixedExample": "这个市场 segment 对价格变化尤其敏感。"
   },
   {
     "word": "variation",
@@ -3547,7 +3819,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".vєәri'eiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "biàn huà ； chā yì"
+    "zhPinyin": "biàn huà ； chā yì",
+    "mixedExample": "数据显示地区之间存在相当大的 variation 。"
   },
   {
     "word": "correspondent",
@@ -3560,7 +3833,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kɒri'spɒndәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jì zhě ； tōng xùn yuán"
+    "zhPinyin": "jì zhě ； tōng xùn yuán",
+    "mixedExample": "correspondent 采访了受新政策影响的居民。"
   },
   {
     "word": "vessel",
@@ -3573,7 +3847,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vesl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chuán bó ； róng qì"
+    "zhPinyin": "chuán bó ； róng qì",
+    "mixedExample": "这艘科研 vessel 将前往深海采集样本。"
   },
   {
     "word": "storage",
@@ -3586,7 +3861,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'stɒ:ridʒ",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chǔ cún"
+    "zhPinyin": "chǔ cún",
+    "mixedExample": "更好的能源 storage 技术可以提高供电的稳定性。"
   },
   {
     "word": "distribute",
@@ -3599,7 +3875,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'stribju:t",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fēn pèi ； fēn fā"
+    "zhPinyin": "fēn pèi ； fēn fā",
+    "mixedExample": "当地志愿者向偏远社区 distribute 物资。"
   },
   {
     "word": "vulnerable",
@@ -3612,7 +3889,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vʌlnәrәbl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "cuì ruò de ； yì shòu shāng hài de"
+    "zhPinyin": "cuì ruò de ； yì shòu shāng hài de",
+    "mixedExample": "这项政策为最 vulnerable 的家庭提供额外支持。"
   },
   {
     "word": "stability",
@@ -3625,7 +3903,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "stә'biliti",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wěn dìng"
+    "zhPinyin": "wěn dìng",
+    "mixedExample": "经济 stability 使企业能够规划长期投资。"
   },
   {
     "word": "framework",
@@ -3638,7 +3917,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'freimwә:k",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "kuāng jià"
+    "zhPinyin": "kuāng jià",
+    "mixedExample": "该 framework 帮助研究人员比较不同的教育体系。"
   },
   {
     "word": "ongoing",
@@ -3651,7 +3931,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒngәuiŋ",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chí xù de"
+    "zhPinyin": "chí xù de",
+    "mixedExample": "ongoing 开展的研究将评估治疗的长期效果。"
   },
   {
     "word": "psychology",
@@ -3664,7 +3945,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sai'kɒlәdʒi",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xīn lǐ xué"
+    "zhPinyin": "xīn lǐ xué",
+    "mixedExample": "psychology 可以帮助解释人们如何作出决定。"
   },
   {
     "word": "sustain",
@@ -3677,7 +3959,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sә'stein",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wéi chí ； zhī chēng"
+    "zhPinyin": "wéi chí ； zhī chēng",
+    "mixedExample": "小企业需要可靠的需求来 sustain 增长。"
   },
   {
     "word": "frequency",
@@ -3690,7 +3973,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fri:kwәnsi",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "pín lǜ"
+    "zhPinyin": "pín lǜ",
+    "mixedExample": "提高公交车的发车 frequency 可以减少乘客等待时间。"
   },
   {
     "word": "preference",
@@ -3703,7 +3987,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'prefәrәns",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "piān hǎo"
+    "zhPinyin": "piān hǎo",
+    "mixedExample": "调查显示人们 preference 本地生产的食品。"
   },
   {
     "word": "qualify",
@@ -3716,7 +4001,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kwɒlifai",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qǔ dé zī gé ； fú hé tiáo jiàn"
+    "zhPinyin": "qǔ dé zī gé ； fú hé tiáo jiàn",
+    "mixedExample": "申请者必须完成培训，才能 qualify for 这个职位。"
   },
   {
     "word": "derive",
@@ -3729,7 +4015,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'raiv",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "huò dé ； yuán zì"
+    "zhPinyin": "huò dé ； yuán zì",
+    "mixedExample": "研究人员应从可靠证据中 derive 结论。"
   },
   {
     "word": "resemble",
@@ -3742,7 +4029,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'zembl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "lèi sì ； xiàng"
+    "zhPinyin": "lèi sì ； xiàng",
+    "mixedExample": "这种新材料无需使用树木就能呈现 resemble 木材的外观。"
   },
   {
     "word": "guideline",
@@ -3755,7 +4043,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'gaidlain",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhǐ dǎo yuán zé"
+    "zhPinyin": "zhǐ dǎo yuán zé",
+    "mixedExample": "每项 guideline 都说明如何保护个人信息。"
   },
   {
     "word": "conviction",
@@ -3768,7 +4057,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'vikʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiān dìng de xìn niàn"
+    "zhPinyin": "jiān dìng de xìn niàn",
+    "mixedExample": "她坚信教育能够改变人生，这份 conviction 支撑她多年从事志愿工作。"
   },
   {
     "word": "maintenance",
@@ -3781,7 +4071,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'meintәnәns",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wéi hù ； bǎo yǎng"
+    "zhPinyin": "wéi hù ； bǎo yǎng",
+    "mixedExample": "定期 maintenance 延长了公共基础设施的使用寿命。"
   },
   {
     "word": "ratio",
@@ -3794,7 +4085,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'reiʃәu",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bǐ lǜ"
+    "zhPinyin": "bǐ lǜ",
+    "mixedExample": "这所学校的师生 ratio 是一比二十。"
   },
   {
     "word": "narrative",
@@ -3807,7 +4099,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'nærәtiv",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xù shù"
+    "zhPinyin": "xù shù",
+    "mixedExample": "个人 narrative 可以让历史事件更容易理解。"
   },
   {
     "word": "modest",
@@ -3820,7 +4113,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mɒdist",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shì dù de ； bù dà de"
+    "zhPinyin": "shì dù de ； bù dà de",
+    "mixedExample": "modest 投资可以大幅提高效率。"
   },
   {
     "word": "prompt",
@@ -3833,7 +4127,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prɒmpt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "cù shǐ"
+    "zhPinyin": "cù shǐ",
+    "mixedExample": "公众反馈可能 prompt 官员修改提案。"
   },
   {
     "word": "motivation",
@@ -3846,7 +4141,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".mәuti'veiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "dòng lì ； dòng jī"
+    "zhPinyin": "dòng lì ； dòng jī",
+    "mixedExample": "明确的目标可以增强学生的学习 motivation 。"
   },
   {
     "word": "overlook",
@@ -3859,7 +4155,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".әuvә'luk",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "hū shì"
+    "zhPinyin": "hū shì",
+    "mixedExample": "大型调查有时会 overlook 较小社区的需求。"
   },
   {
     "word": "undergo",
@@ -3872,7 +4169,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌndә'gәu",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jīng lì ； jiē shòu"
+    "zhPinyin": "jīng lì ； jiē shòu",
+    "mixedExample": "新产品在发布前 undergo 广泛测试。"
   },
   {
     "word": "sequence",
@@ -3885,7 +4183,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'si:kwәns",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shùn xù"
+    "zhPinyin": "shùn xù",
+    "mixedExample": "图示展示了生产步骤的 sequence 。"
   },
   {
     "word": "assert",
@@ -3898,7 +4197,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'sә:t",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "duàn yán ； zhǔ zhāng"
+    "zhPinyin": "duàn yán ； zhǔ zhāng",
+    "mixedExample": "一些研究人员 assert 环境比个人能力更重要。"
   },
   {
     "word": "dominant",
@@ -3911,7 +4211,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dɒminәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhàn zhǔ dǎo dì wèi de"
+    "zhPinyin": "zhàn zhǔ dǎo dì wèi de",
+    "mixedExample": "旅游业是该地区 dominant 收入来源。"
   },
   {
     "word": "anticipate",
@@ -3924,7 +4225,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "æn'tisipeit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yù qī ； yù liào"
+    "zhPinyin": "yù qī ； yù liào",
+    "mixedExample": "企业必须提前 anticipate 消费者需求的变化。"
   },
   {
     "word": "legitimate",
@@ -3937,7 +4239,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "li'dʒitimәt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "hé lǐ de ； hé fǎ de"
+    "zhPinyin": "hé lǐ de ； hé fǎ de",
+    "mixedExample": "居民对交通噪音增加的担忧是 legitimate 。"
   },
   {
     "word": "orientation",
@@ -3950,7 +4253,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ɒ:rien'teiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fāng xiàng ； rù mén péi xùn"
+    "zhPinyin": "fāng xiàng ； rù mén péi xùn",
+    "mixedExample": "新生可以通过 orientation 活动了解学校的服务。"
   },
   {
     "word": "cluster",
@@ -3963,7 +4267,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'klʌstә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qún ； jí qún"
+    "zhPinyin": "qún ； jí qún",
+    "mixedExample": "大学附近形成了一个科技企业 cluster 。"
   },
   {
     "word": "dependent",
@@ -3976,7 +4281,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'pendәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yī lài de"
+    "zhPinyin": "yī lài de",
+    "mixedExample": "当地经济高度 dependent 旅游业。"
   },
   {
     "word": "depict",
@@ -3989,7 +4295,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'pikt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "miáo huì"
+    "zhPinyin": "miáo huì",
+    "mixedExample": "这些画作 depict 了变化中的城市日常生活。"
   },
   {
     "word": "mortgage",
@@ -4002,7 +4309,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mɒ:gidʒ",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhù fáng dǐ yā dài kuǎn"
+    "zhPinyin": "zhù fáng dǐ yā dài kuǎn",
+    "mixedExample": "利率上升增加了 mortgage 的成本。"
   },
   {
     "word": "sanction",
@@ -4015,7 +4323,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sæŋkʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhì cái ； chǔ fá"
+    "zhPinyin": "zhì cái ； chǔ fá",
+    "mixedExample": "贸易 sanction 可能影响目标行业以外的企业。"
   },
   {
     "word": "civilian",
@@ -4028,7 +4337,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "si'viljәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "píng mín"
+    "zhPinyin": "píng mín",
+    "mixedExample": "紧急避难所应方便每位 civilian 使用。"
   },
   {
     "word": "devote",
@@ -4041,7 +4351,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'vәut",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tóu rù ； zhì lì yú"
+    "zhPinyin": "tóu rù ； zhì lì yú",
+    "mixedExample": "学生应 devote 时间复习难懂的概念。"
   },
   {
     "word": "measurement",
@@ -4054,7 +4365,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'meʒәdmәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "cè liáng"
+    "zhPinyin": "cè liáng",
+    "mixedExample": "精确 measurement 帮助研究人员发现微小变化。"
   },
   {
     "word": "summit",
@@ -4067,7 +4379,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sʌmit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fēng huì ； dǐng fēng"
+    "zhPinyin": "fēng huì ； dǐng fēng",
+    "mixedExample": "气候 summit 聚焦于切实可行的合作方式。"
   },
   {
     "word": "impressive",
@@ -4080,7 +4393,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "im'presiv",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "lìng rén yìn xiàng shēn kè de"
+    "zhPinyin": "lìng rén yìn xiàng shēn kè de",
+    "mixedExample": "新设计的节能效果十分 impressive。"
   },
   {
     "word": "portray",
@@ -4093,7 +4407,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pɒ:'trei",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "miáo huì ； kè huà"
+    "zhPinyin": "miáo huì ； kè huà",
+    "mixedExample": "这部纪录片试图真实地 portray 偏远村庄的生活。"
   },
   {
     "word": "subsequent",
@@ -4106,7 +4421,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sʌbsikwәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "suí hòu de"
+    "zhPinyin": "suí hòu de",
+    "mixedExample": "subsequent 研究证实了最初发现的重要性。"
   },
   {
     "word": "frequent",
@@ -4119,7 +4435,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fri:kwәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "pín fán de"
+    "zhPinyin": "pín fán de",
+    "mixedExample": "frequent 延误使通勤者不愿使用公共交通。"
   },
   {
     "word": "rhythm",
@@ -4132,7 +4449,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'riðәm",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jié zòu"
+    "zhPinyin": "jié zòu",
+    "mixedExample": "规律的睡眠 rhythm 有助于白天集中注意力。"
   },
   {
     "word": "exceed",
@@ -4145,7 +4463,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'si:d",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chāo guò"
+    "zhPinyin": "chāo guò",
+    "mixedExample": "最终成本可能 exceed 最初的估计。"
   },
   {
     "word": "script",
@@ -4158,7 +4477,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "skript",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiǎo běn ； jù běn"
+    "zhPinyin": "jiǎo běn ； jù běn",
+    "mixedExample": "script 经过修改，使信息更加清晰。"
   },
   {
     "word": "tactic",
@@ -4171,7 +4491,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tæktik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "cè lüè ； shǒu duàn"
+    "zhPinyin": "cè lüè ； shǒu duàn",
+    "mixedExample": "提供免费样品是一种常见的营销 tactic 。"
   },
   {
     "word": "identification",
@@ -4184,7 +4505,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ai.dentifi'keiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shí bié ； shēn fèn zhèng míng"
+    "zhPinyin": "shí bié ； shēn fèn zhèng míng",
+    "mixedExample": "准确 identification 缺陷可以减少材料浪费。"
   },
   {
     "word": "margin",
@@ -4197,7 +4519,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mɑ:dʒin",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chā é ； yú dì"
+    "zhPinyin": "chā é ； yú dì",
+    "mixedExample": "原材料涨价使公司的利润 margin 变小了。"
   },
   {
     "word": "prescription",
@@ -4210,7 +4533,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pri'skripʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chǔ fāng"
+    "zhPinyin": "chǔ fāng",
+    "mixedExample": "药剂师解释了如何安全地按照 prescription 用药。"
   },
   {
     "word": "recruit",
@@ -4223,7 +4547,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'kru:t",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhāo pìn ； zhāo mù"
+    "zhPinyin": "zhāo pìn ； zhāo mù",
+    "mixedExample": "当地企业难以 recruit 具备技术技能的员工。"
   },
   {
     "word": "colonial",
@@ -4236,7 +4561,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә'lәunjәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhí mín shí qī de"
+    "zhPinyin": "zhí mín shí qī de",
+    "mixedExample": "博物馆研究了这座城市的 colonial 历史。"
   },
   {
     "word": "reinforce",
@@ -4249,7 +4575,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ri:in'fɒ:s",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiā qiáng ； gǒng gù"
+    "zhPinyin": "jiā qiáng ； gǒng gù",
+    "mixedExample": "实践练习 reinforce 了讲座中介绍的概念。"
   },
   {
     "word": "confusion",
@@ -4262,7 +4589,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'fju:ʒәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "kùn huò ； hùn luàn"
+    "zhPinyin": "kùn huò ； hùn luàn",
+    "mixedExample": "清晰的说明可以避免新用户感到 confusion 。"
   },
   {
     "word": "cognitive",
@@ -4275,7 +4603,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒgnitiv",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "rèn zhī de"
+    "zhPinyin": "rèn zhī de",
+    "mixedExample": "定期运动可能有助于维护老年人的 cognitive 健康。"
   },
   {
     "word": "attribute",
@@ -4288,7 +4617,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'tribju:t",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bǎ …… guī yīn yú"
+    "zhPinyin": "bǎ …… guī yīn yú",
+    "mixedExample": "我们不能把所有变化都 attribute to 同一个原因。"
   },
   {
     "word": "fitness",
@@ -4301,7 +4631,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fitnis",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiàn kāng ； tǐ néng"
+    "zhPinyin": "jiàn kāng ； tǐ néng",
+    "mixedExample": "每天步行无需昂贵设备就能改善 fitness 。"
   },
   {
     "word": "container",
@@ -4314,7 +4645,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'teinә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "róng qì ； jí zhuāng xiāng"
+    "zhPinyin": "róng qì ； jí zhuāng xiāng",
+    "mixedExample": "一个可重复使用的 container 可以替代多个一次性包装。"
   },
   {
     "word": "highlight",
@@ -4327,7 +4659,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hailait",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tū chū ； qiáng diào"
+    "zhPinyin": "tū chū ； qiáng diào",
+    "mixedExample": "结果 highlight 了改善公共信息的必要性。"
   },
   {
     "word": "decrease",
@@ -4340,7 +4673,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'di:kri:s",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiǎn shǎo"
+    "zhPinyin": "jiǎn shǎo",
+    "mixedExample": "节水措施实施后，城市用水量开始 decrease。"
   },
   {
     "word": "alliance",
@@ -4353,7 +4687,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'laiәns",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "lián méng"
+    "zhPinyin": "lián méng",
+    "mixedExample": "该 alliance 汇集了致力于粮食安全的组织。"
   },
   {
     "word": "compose",
@@ -4366,7 +4701,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәm'pәuz",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chuàng zuò ； zǔ chéng"
+    "zhPinyin": "chuàng zuò ； zǔ chéng",
+    "mixedExample": "学生使用传统乐器 compose 短曲。"
   },
   {
     "word": "counsel",
@@ -4379,7 +4715,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kaunsәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiàn yì ； fǎ lǜ gù wèn"
+    "zhPinyin": "jiàn yì ； fǎ lǜ gù wèn",
+    "mixedExample": "独立 counsel 帮助居民了解自身权利。"
   },
   {
     "word": "sculpture",
@@ -4392,7 +4729,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'skʌlptʃә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "diāo sù"
+    "zhPinyin": "diāo sù",
+    "mixedExample": "这座公共 sculpture 反映了该镇的工业遗产。"
   },
   {
     "word": "compound",
@@ -4405,7 +4743,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәm'paund",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "huà hé wù"
+    "zhPinyin": "huà hé wù",
+    "mixedExample": "这种 compound 在阳光下会自然分解。"
   },
   {
     "word": "integrate",
@@ -4418,7 +4757,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'intigreit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhěng hé ； róng rù"
+    "zhPinyin": "zhěng hé ； róng rù",
+    "mixedExample": "教师可以将数字资源 integrate 课堂活动。"
   },
   {
     "word": "subtle",
@@ -4431,7 +4771,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sʌtl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wēi miào de"
+    "zhPinyin": "wēi miào de",
+    "mixedExample": "措辞上的 subtle 差异可能改变人们对信息的理解。"
   },
   {
     "word": "curve",
@@ -4444,7 +4785,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kә:v",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qū xiàn"
+    "zhPinyin": "qū xiàn",
+    "mixedExample": "curve 显示了价格上涨时需求如何变化。"
   },
   {
     "word": "integrity",
@@ -4457,7 +4799,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'tegriti",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chéng xìn ； wán zhěng xìng"
+    "zhPinyin": "chéng xìn ； wán zhěng xìng",
+    "mixedExample": "科研 integrity 要求如实报告所有结果。"
   },
   {
     "word": "entitle",
@@ -4470,7 +4813,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'taitl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jǐ yǔ …… quán lì"
+    "zhPinyin": "jǐ yǔ …… quán lì",
+    "mixedExample": "这张会员卡会 entitle 持有人免费使用共享设施。"
   },
   {
     "word": "exclude",
@@ -4483,7 +4827,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "iks'klu:d",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "pái chú"
+    "zhPinyin": "pái chú",
+    "mixedExample": "该研究不 exclude 数字技能有限的参与者。"
   },
   {
     "word": "harsh",
@@ -4496,7 +4841,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "hɑ:ʃ",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yán kù de ； yán lì de"
+    "zhPinyin": "yán kù de ； yán lì de",
+    "mixedExample": "harsh 天气条件使该地区的农业生产十分困难。"
   },
   {
     "word": "interior",
@@ -4509,7 +4855,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'tiәriә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "nèi bù"
+    "zhPinyin": "nèi bù",
+    "mixedExample": "建筑 interior 利用自然光减少能源消耗。"
   },
   {
     "word": "reverse",
@@ -4522,7 +4869,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'vә:s",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "nì zhuǎn"
+    "zhPinyin": "nì zhuǎn",
+    "mixedExample": "恢复本地植被可以帮助 reverse 土壤退化。"
   },
   {
     "word": "initiate",
@@ -4535,7 +4883,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'niʃieit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fā qǐ ； kāi shǐ"
+    "zhPinyin": "fā qǐ ； kāi shǐ",
+    "mixedExample": "居民可以 initiate 项目来改善共享空间。"
   },
   {
     "word": "motivate",
@@ -4548,7 +4897,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mәutiveit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jī lì"
+    "zhPinyin": "jī lì",
+    "mixedExample": "有意义的反馈可以 motivate 学生继续练习。"
   },
   {
     "word": "render",
@@ -4561,7 +4911,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'rendә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shǐ chéng wéi"
+    "zhPinyin": "shǐ chéng wéi",
+    "mixedExample": "这次软件更新可能 render 旧设备无法正常使用。"
   },
   {
     "word": "seemingly",
@@ -4574,7 +4925,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'si:miŋli",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "kàn shì ； biǎo miàn shàng"
+    "zhPinyin": "kàn shì ； biǎo miàn shàng",
+    "mixedExample": "一个 seemingly 微小的变化可能带来重大后果。"
   },
   {
     "word": "enforce",
@@ -4587,7 +4939,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'fɒ:s",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhí xíng ； qiáng zhì shí shī"
+    "zhPinyin": "zhí xíng ； qiáng zhì shí shī",
+    "mixedExample": "地方当局必须一致地 enforce 建筑安全标准。"
   },
   {
     "word": "fraud",
@@ -4600,7 +4953,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "frɒ:d",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qī zhà"
+    "zhPinyin": "qī zhà",
+    "mixedExample": "明确的核验程序有助于保护客户免受 fraud 。"
   },
   {
     "word": "contend",
@@ -4613,7 +4967,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'tend",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhǔ zhāng ； yìng duì"
+    "zhPinyin": "zhǔ zhāng ； yìng duì",
+    "mixedExample": "一些专家 contend 小班教学能改善学习成果。"
   },
   {
     "word": "array",
@@ -4626,7 +4981,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'rei",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yī xì liè"
+    "zhPinyin": "yī xì liè",
+    "mixedExample": "实验室使用 array 传感器监测环境状况。"
   },
   {
     "word": "assemble",
@@ -4639,7 +4995,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'sembl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zǔ zhuāng ； jí hé"
+    "zhPinyin": "zǔ zhuāng ； jí hé",
+    "mixedExample": "工人在测试最终产品之前 assemble 零部件。"
   },
   {
     "word": "inevitable",
@@ -4652,7 +5009,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'evitәbl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bù kě bì miǎn de"
+    "zhPinyin": "bù kě bì miǎn de",
+    "mixedExample": "重大基础设施维修期间，一些干扰 inevitable 。"
   },
   {
     "word": "facilitate",
@@ -4665,7 +5023,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fә'siliteit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "cù jìn ； shǐ biàn lì"
+    "zhPinyin": "cù jìn ； shǐ biàn lì",
+    "mixedExample": "共享数字工具 facilitate 国际团队之间的沟通。"
   },
   {
     "word": "obstacle",
@@ -4678,7 +5037,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒbstәkl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhàng ài"
+    "zhPinyin": "zhàng ài",
+    "mixedExample": "获得信贷的机会有限仍是小企业面临的 obstacle 。"
   },
   {
     "word": "ownership",
@@ -4691,7 +5051,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'әunәʃip",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "suǒ yǒu quán"
+    "zhPinyin": "suǒ yǒu quán",
+    "mixedExample": "共同 ownership 可以使昂贵设备更易于获得。"
   },
   {
     "word": "supervisor",
@@ -4704,7 +5065,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".sju:pә'vaizә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhǔ guǎn ； dǎo shī"
+    "zhPinyin": "zhǔ guǎn ； dǎo shī",
+    "mixedExample": "supervisor 帮助学生完善了研究问题。"
   },
   {
     "word": "arena",
@@ -4717,7 +5079,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'ri:nә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "lǐng yù ； jìng jì chǎng"
+    "zhPinyin": "lǐng yù ； jìng jì chǎng",
+    "mixedExample": "这场辩论已进入国际 arena 。"
   },
   {
     "word": "consult",
@@ -4730,7 +5093,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'sʌlt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zī xún ； zhēng qiú yì jiàn"
+    "zhPinyin": "zī xún ； zhēng qiú yì jiàn",
+    "mixedExample": "改变公共空间之前，规划者应先 consult 当地居民。"
   },
   {
     "word": "drift",
@@ -4743,7 +5107,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "drift",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "piāo yí ； zhú jiàn piān lí"
+    "zhPinyin": "piāo yí ； zhú jiàn piān lí",
+    "mixedExample": "塑料垃圾可能随洋流 drift 到很远的地方。"
   },
   {
     "word": "drain",
@@ -4756,7 +5121,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "drein",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "pái shuǐ ； hào jìn"
+    "zhPinyin": "pái shuǐ ； hào jìn",
+    "mixedExample": "工人挖了一条沟，让积水可以顺利 drain 出去。"
   },
   {
     "word": "questionnaire",
@@ -4769,7 +5135,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kwestʃә'nєә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wèn juǎn"
+    "zhPinyin": "wèn juǎn",
+    "mixedExample": "questionnaire 询问居民的日常出行习惯。"
   },
   {
     "word": "privilege",
@@ -4782,7 +5149,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'privilidʒ",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tè quán ； tè shū dài yù"
+    "zhPinyin": "tè quán ； tè shū dài yù",
+    "mixedExample": "获得教育不应是少数人的 privilege 。"
   },
   {
     "word": "domain",
@@ -4795,7 +5163,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dәu'mein",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "lǐng yù"
+    "zhPinyin": "lǐng yù",
+    "mixedExample": "该工具运用了不止一个 domain 的知识。"
   },
   {
     "word": "minimum",
@@ -4808,7 +5177,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'minimәm",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zuì dī xiàn dù"
+    "zhPinyin": "zuì dī xiàn dù",
+    "mixedExample": "这项政策规定了住房质量必须达到的 minimum 标准。"
   },
   {
     "word": "database",
@@ -4821,7 +5191,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'deitәbeis",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shù jù kù"
+    "zhPinyin": "shù jù kù",
+    "mixedExample": "该 database 存储有关出行模式的匿名信息。"
   },
   {
     "word": "chronic",
@@ -4834,7 +5205,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'krɒnik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "màn xìng de ； cháng qī de"
+    "zhPinyin": "màn xìng de ； cháng qī de",
+    "mixedExample": "定期监测帮助患者管理 chronic 健康问题。"
   },
   {
     "word": "replacement",
@@ -4847,7 +5219,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'pleismәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tì dài pǐn ； gēng huàn"
+    "zhPinyin": "tì dài pǐn ； gēng huàn",
+    "mixedExample": "维修通常比完全 replacement 产生的浪费更少。"
   },
   {
     "word": "strain",
@@ -4860,7 +5233,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "strein",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yā lì ； fù dān"
+    "zhPinyin": "yā lì ； fù dān",
+    "mixedExample": "人口快速增长给公共服务带来 strain 。"
   },
   {
     "word": "administer",
@@ -4873,7 +5247,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "әd'ministә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "guǎn lǐ ； shí shī"
+    "zhPinyin": "guǎn lǐ ； shí shī",
+    "mixedExample": "地方组织 administer 社区项目的资助款项。"
   },
   {
     "word": "transmission",
@@ -4886,7 +5261,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "træns'miʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chuán bō ； chuán shū"
+    "zhPinyin": "chuán bō ； chuán shū",
+    "mixedExample": "加密保护信息在公共网络 transmission 过程中的安全。"
   },
   {
     "word": "trigger",
@@ -4899,7 +5275,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'trigә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yǐn fā"
+    "zhPinyin": "yǐn fā",
+    "mixedExample": "强降雨可能 trigger 低洼地区洪水。"
   },
   {
     "word": "virtual",
@@ -4912,7 +5289,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vә:tʃuәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xū nǐ de"
+    "zhPinyin": "xū nǐ de",
+    "mixedExample": "virtual 实验室让学生能够安全地练习实验。"
   },
   {
     "word": "indigenous",
@@ -4925,7 +5303,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'didʒinәs",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "běn tǔ de ； yuán zhù mín de"
+    "zhPinyin": "běn tǔ de ； yuán zhù mín de",
+    "mixedExample": "该项目通过社区录音保护 indigenous 语言。"
   },
   {
     "word": "particle",
@@ -4938,7 +5317,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pɑ:tikl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wēi lì"
+    "zhPinyin": "wēi lì",
+    "mixedExample": "一颗微小的塑料 particle 也可能进入食物链。"
   },
   {
     "word": "boost",
@@ -4951,7 +5331,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "bu:st",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "cù jìn ； tí gāo"
+    "zhPinyin": "cù jìn ； tí gāo",
+    "mixedExample": "改善铁路联系可以 boost 区域贸易。"
   },
   {
     "word": "undermine",
@@ -4964,7 +5345,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌndә'main",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xuē ruò"
+    "zhPinyin": "xuē ruò",
+    "mixedExample": "误导性信息可能 undermine 对公共机构的信任。"
   },
   {
     "word": "ballot",
@@ -4977,7 +5359,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bælәt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xuǎn piào ； tóu piào"
+    "zhPinyin": "xuǎn piào ； tóu piào",
+    "mixedExample": "每位成员都可以就拟议变更 ballot 。"
   },
   {
     "word": "rhetoric",
@@ -4990,7 +5373,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'retәrik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xiū cí ； cí lìng"
+    "zhPinyin": "xiū cí ； cí lìng",
+    "mixedExample": "有效的 rhetoric 可以在缺乏有力证据的情况下说服听众。"
   },
   {
     "word": "enthusiasm",
@@ -5003,7 +5387,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'θju:ziæzәm",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "rè qíng"
+    "zhPinyin": "rè qíng",
+    "mixedExample": "工作坊激发了对实践科学的 enthusiasm 。"
   },
   {
     "word": "wilderness",
@@ -5016,7 +5401,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'wildәnis",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "huāng yě"
+    "zhPinyin": "huāng yě",
+    "mixedExample": "负责任的旅游可以支持 wilderness 地区的保护。"
   },
   {
     "word": "mandate",
@@ -5029,7 +5415,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mændeit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shòu quán ； zhí zé"
+    "zhPinyin": "shòu quán ； zhí zé",
+    "mixedExample": "该机构负有保护消费者利益的 mandate 。"
   },
   {
     "word": "chaos",
@@ -5042,7 +5429,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'keiɒs",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "hùn luàn"
+    "zhPinyin": "hùn luàn",
+    "mixedExample": "协调不善可能在大型道路维修期间造成 chaos 。"
   },
   {
     "word": "format",
@@ -5055,7 +5443,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fɒ:mæt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gé shì ； xíng shì"
+    "zhPinyin": "gé shì ； xíng shì",
+    "mixedExample": "报告以易于理解的 format 呈现复杂信息。"
   },
   {
     "word": "canvas",
@@ -5068,7 +5457,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kænvәs",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "huà bù"
+    "zhPinyin": "huà bù",
+    "mixedExample": "艺术家使用一幅大 canvas 描绘城市变化。"
   },
   {
     "word": "lobby",
@@ -5081,7 +5471,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'lɒbi",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yóu shuì"
+    "zhPinyin": "yóu shuì",
+    "mixedExample": "社区团体 lobby 官员修建更安全的骑行路线。"
   },
   {
     "word": "trait",
@@ -5094,7 +5485,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "treit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tè zhēng"
+    "zhPinyin": "tè zhēng",
+    "mixedExample": "好奇心是科学研究者身上一种重要的 trait。"
   },
   {
     "word": "currency",
@@ -5107,7 +5499,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kʌrәnsi",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "huò bì"
+    "zhPinyin": "huò bì",
+    "mixedExample": "currency 贬值可以使出口产品更具竞争力。"
   },
   {
     "word": "doctrine",
@@ -5120,7 +5513,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dɒktrin",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "xué shuō ； xìn tiáo"
+    "zhPinyin": "xué shuō ； xìn tiáo",
+    "mixedExample": "讲座考察了一种经济 doctrine 及其局限性。"
   },
   {
     "word": "genuine",
@@ -5133,7 +5527,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dʒenjuin",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhēn zhèng de ； zhēn chéng de"
+    "zhPinyin": "zhēn zhèng de ； zhēn chéng de",
+    "mixedExample": "genuine 协商让居民有机会影响决策。"
   },
   {
     "word": "exclusive",
@@ -5146,7 +5541,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ik'sklu:siv",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "dú yǒu de ； zhuān yòng de"
+    "zhPinyin": "dú yǒu de ； zhuān yòng de",
+    "mixedExample": "这家公司获得了该产品的 exclusive 销售权。"
   },
   {
     "word": "scatter",
@@ -5159,7 +5555,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'skætә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "sàn bù ； fēn sàn"
+    "zhPinyin": "sàn bù ； fēn sàn",
+    "mixedExample": "强风会把种子 scatter 到周围的土地上。"
   },
   {
     "word": "convey",
@@ -5172,7 +5569,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'vei",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chuán dá"
+    "zhPinyin": "chuán dá",
+    "mixedExample": "简单的图示可以迅速 convey 复杂信息。"
   },
   {
     "word": "residence",
@@ -5185,7 +5583,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'rezidәns",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhù suǒ ； jū zhù"
+    "zhPinyin": "zhù suǒ ； jū zhù",
+    "mixedExample": "旧工厂已经被改造成学生的 residence。"
   },
   {
     "word": "signature",
@@ -5198,7 +5597,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'signәtʃә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qiān míng ； xiǎn zhù tè zhēng"
+    "zhPinyin": "qiān míng ； xiǎn zhù tè zhēng",
+    "mixedExample": "该协议需要每位合作伙伴 signature 。"
   },
   {
     "word": "suspend",
@@ -5211,7 +5611,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "sә'spend",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zàn tíng"
+    "zhPinyin": "zàn tíng",
+    "mixedExample": "市政委员会可能 suspend 施工，直到安全审查完成。"
   },
   {
     "word": "spouse",
@@ -5224,7 +5625,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "spauz",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "pèi ǒu"
+    "zhPinyin": "pèi ǒu",
+    "mixedExample": "该政策允许员工 spouse 获得支持服务。"
   },
   {
     "word": "fluid",
@@ -5237,7 +5639,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'flu:id",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bù duàn biàn huà de ； liú dòng de"
+    "zhPinyin": "bù duàn biàn huà de ； liú dòng de",
+    "mixedExample": "随着新行业出现，就业形势仍在 fluid 。"
   },
   {
     "word": "resume",
@@ -5250,7 +5653,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'zju:m",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "huī fù ； chóng xīn kāi shǐ"
+    "zhPinyin": "huī fù ； chóng xīn kāi shǐ",
+    "mixedExample": "维护工作完成后，铁路服务将 resume 。"
   },
   {
     "word": "compensation",
@@ -5263,7 +5667,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".kɒmpen'seiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bǔ cháng"
+    "zhPinyin": "bǔ cháng",
+    "mixedExample": "居民因暂时无法通行而获得 compensation 。"
   },
   {
     "word": "dedicate",
@@ -5276,7 +5681,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dedikeit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tóu rù ； zhì lì yú"
+    "zhPinyin": "tóu rù ； zhì lì yú",
+    "mixedExample": "研究人员 dedicate 多年时间调查复杂问题。"
   },
   {
     "word": "portfolio",
@@ -5289,7 +5695,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pɒ:t'fәuliәu",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zuò pǐn jí ； tóu zī zǔ hé"
+    "zhPinyin": "zuò pǐn jí ； tóu zī zǔ hé",
+    "mixedExample": "portfolio 展示了课程期间培养的实践技能。"
   },
   {
     "word": "invisible",
@@ -5302,7 +5709,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'vizәbl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "kàn bú jiàn de"
+    "zhPinyin": "kàn bú jiàn de",
+    "mixedExample": "某些有害污染物是肉眼 invisible 。"
   },
   {
     "word": "transaction",
@@ -5315,7 +5723,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "træn'sækʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiāo yì"
+    "zhPinyin": "jiāo yì",
+    "mixedExample": "每笔 transaction 都被记录下来，以确保财务透明。"
   },
   {
     "word": "counterpart",
@@ -5328,7 +5737,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kauntәpɑ:t",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "duì yìng de rén huò shì wù"
+    "zhPinyin": "duì yìng de rén huò shì wù",
+    "mixedExample": "这所城市学校比它在农村的 counterpart 拥有更多资源。"
   },
   {
     "word": "identical",
@@ -5341,7 +5751,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ai'dentikәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wán quán xiāng tóng de"
+    "zhPinyin": "wán quán xiāng tóng de",
+    "mixedExample": "两组在实验前收到 identical 指示。"
   },
   {
     "word": "precise",
@@ -5354,7 +5765,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pri'sais",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jīng què de"
+    "zhPinyin": "jīng què de",
+    "mixedExample": "precise 定义可以避免讨论中的混淆。"
   },
   {
     "word": "structural",
@@ -5367,7 +5779,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'strʌktʃәrәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jié gòu xìng de"
+    "zhPinyin": "jié gòu xìng de",
+    "mixedExample": "解决持续的不平等需要 structural 变革。"
   },
   {
     "word": "diagnose",
@@ -5380,7 +5793,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'daiәgnәuz",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhěn duàn"
+    "zhPinyin": "zhěn duàn",
+    "mixedExample": "新工具帮助医生在更早阶段 diagnose 疾病。"
   },
   {
     "word": "conscious",
@@ -5393,7 +5807,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒnʃәs",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yì shí dào de ； yǒu yì shí de"
+    "zhPinyin": "yì shí dào de ； yǒu yì shí de",
+    "mixedExample": "消费者越来越 conscious 包装的影响。"
   },
   {
     "word": "acquisition",
@@ -5406,7 +5821,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ækwi'ziʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "huò dé ； xí dé"
+    "zhPinyin": "huò dé ； xí dé",
+    "mixedExample": "定期对话有助于第二语言 acquisition 。"
   },
   {
     "word": "wildlife",
@@ -5419,7 +5835,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'waildlaif",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yě shēng shēng wù"
+    "zhPinyin": "yě shēng shēng wù",
+    "mixedExample": "绿色廊道帮助 wildlife 在保护区之间迁移。"
   },
   {
     "word": "equity",
@@ -5432,7 +5849,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ekwiti",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gōng píng ； gǔ quán"
+    "zhPinyin": "gōng píng ； gǔ quán",
+    "mixedExample": "教育政策应同时促进 equity 与效率。"
   },
   {
     "word": "decent",
@@ -5445,7 +5863,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'di:sәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tǐ miàn de ； xiàng yàng de"
+    "zhPinyin": "tǐ miàn de ； xiàng yàng de",
+    "mixedExample": "每个人都应能获得 decent 住房和基本服务。"
   },
   {
     "word": "endorse",
@@ -5458,7 +5877,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'dɒ:s",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhī chí ； rèn kě"
+    "zhPinyin": "zhī chí ； rèn kě",
+    "mixedExample": "独立专家 endorse 该提案对预防的重视。"
   },
   {
     "word": "thereby",
@@ -5471,7 +5891,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ðєәbai",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "cóng ér"
+    "zhPinyin": "cóng ér",
+    "mixedExample": "该系统重复利用热量， thereby 降低整体能源需求。"
   },
   {
     "word": "indicator",
@@ -5484,7 +5905,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'indikeitә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhǐ biāo"
+    "zhPinyin": "zhǐ biāo",
+    "mixedExample": "就业是衡量一个地区经济健康状况的 indicator 之一。"
   },
   {
     "word": "spectrum",
@@ -5497,7 +5919,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'spektrәm",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fàn wéi ； guāng pǔ"
+    "zhPinyin": "fàn wéi ； guāng pǔ",
+    "mixedExample": "调查收集了来自不同年龄人群的广泛意见，覆盖了完整的观点 spectrum。"
   },
   {
     "word": "expertise",
@@ -5510,7 +5933,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ekspә:'ti:z",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhuān yè zhī shí"
+    "zhPinyin": "zhuān yè zhī shí",
+    "mixedExample": "小企业可以受益于当地大学的 expertise 。"
   },
   {
     "word": "reluctant",
@@ -5523,7 +5947,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'lʌktәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bù qíng yuàn de"
+    "zhPinyin": "bù qíng yuàn de",
+    "mixedExample": "一些雇主对投资陌生技术仍然感到 reluctant。"
   },
   {
     "word": "realm",
@@ -5536,7 +5961,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "relm",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "lǐng yù"
+    "zhPinyin": "lǐng yù",
+    "mixedExample": "这个问题超出了经济学 realm 。"
   },
   {
     "word": "blend",
@@ -5549,7 +5975,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "blend",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "róng hé ； hùn hé"
+    "zhPinyin": "róng hé ； hùn hé",
+    "mixedExample": "该设计旨在将现代材料与传统形式 blend 。"
   },
   {
     "word": "therapist",
@@ -5562,7 +5989,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'θerәpist",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhì liáo shī"
+    "zhPinyin": "zhì liáo shī",
+    "mixedExample": "therapist 为每位患者制定运动计划。"
   },
   {
     "word": "recipient",
@@ -5575,7 +6003,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ri'sipiәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiē shòu zhě"
+    "zhPinyin": "jiē shòu zhě",
+    "mixedExample": "每位资助 recipient 都会收到一份资金使用指南。"
   },
   {
     "word": "metaphor",
@@ -5588,7 +6017,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'metәfә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yǐn yù ； bǐ yù"
+    "zhPinyin": "yǐn yù ； bǐ yù",
+    "mixedExample": "熟悉的 metaphor 可以帮助解释陌生的概念。"
   },
   {
     "word": "judicial",
@@ -5601,7 +6031,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dʒu:'diʃәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "sī fǎ de"
+    "zhPinyin": "sī fǎ de",
+    "mixedExample": "judicial 独立对公众信任法律十分重要。"
   },
   {
     "word": "entity",
@@ -5614,7 +6045,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'entiti",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shí tǐ"
+    "zhPinyin": "shí tǐ",
+    "mixedExample": "每个商业 entity 都必须公布准确的财务信息。"
   },
   {
     "word": "diminish",
@@ -5627,7 +6059,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'miniʃ",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiǎn shǎo ； jiǎn ruò"
+    "zhPinyin": "jiǎn shǎo ； jiǎn ruò",
+    "mixedExample": "长期干旱期间供水可能 diminish 。"
   },
   {
     "word": "isolate",
@@ -5640,7 +6073,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'aisәleit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gé lí ； fēn lí"
+    "zhPinyin": "gé lí ； fēn lí",
+    "mixedExample": "研究人员 isolate 单个因素，以了解它们的影响。"
   },
   {
     "word": "productive",
@@ -5653,7 +6087,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "prә'dʌktiv",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gāo xiào de ； fù yǒu chéng xiào de"
+    "zhPinyin": "gāo xiào de ； fù yǒu chéng xiào de",
+    "mixedExample": "安静的环境能让员工的工作更加 productive。"
   },
   {
     "word": "inventory",
@@ -5666,7 +6101,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'invәntәri",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "kù cún ； qīng dān"
+    "zhPinyin": "kù cún ； qīng dān",
+    "mixedExample": "准确的 inventory 记录帮助商店避免不必要的浪费。"
   },
   {
     "word": "civic",
@@ -5679,7 +6115,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sivik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gōng mín de ； chéng shì de"
+    "zhPinyin": "gōng mín de ； chéng shì de",
+    "mixedExample": "学校可以通过地方项目鼓励 civic 参与。"
   },
   {
     "word": "magnitude",
@@ -5692,7 +6129,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'mægnitju:d",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "guī mó ； chéng dù"
+    "zhPinyin": "guī mó ； chéng dù",
+    "mixedExample": "报告强调了住房短缺的严重 magnitude 。"
   },
   {
     "word": "dynamic",
@@ -5705,7 +6143,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dai'næmik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bù duàn biàn huà de ； yǒu huó lì de"
+    "zhPinyin": "bù duàn biàn huà de ； yǒu huó lì de",
+    "mixedExample": "一个 dynamic 的经济体会不断为新企业创造机会。"
   },
   {
     "word": "equation",
@@ -5718,7 +6157,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i'kweiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fāng chéng ； děng shì"
+    "zhPinyin": "fāng chéng ； děng shì",
+    "mixedExample": "该 equation 描述了价格与需求之间的关系。"
   },
   {
     "word": "shortage",
@@ -5731,7 +6171,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ʃɒ:tidʒ",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "duǎn quē"
+    "zhPinyin": "duǎn quē",
+    "mixedExample": "受过培训的员工 shortage 可能延误基本服务。"
   },
   {
     "word": "undertake",
@@ -5744,7 +6185,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".ʌndә'teik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chéng dān ； cóng shì"
+    "zhPinyin": "chéng dān ； cóng shì",
+    "mixedExample": "研究团队将 undertake 一项详细调查。"
   },
   {
     "word": "oversee",
@@ -5757,7 +6199,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".әuvә'si:",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiān dū"
+    "zhPinyin": "jiān dū",
+    "mixedExample": "一个独立委员会将 oversee 公共资金的使用。"
   },
   {
     "word": "nominee",
@@ -5770,7 +6213,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".nɒmi'ni:",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bèi tí míng zhě"
+    "zhPinyin": "bèi tí míng zhě",
+    "mixedExample": "每位 nominee 都必须向委员会解释自己的工作重点。"
   },
   {
     "word": "toxic",
@@ -5783,7 +6227,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tɒksik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yǒu dú de"
+    "zhPinyin": "yǒu dú de",
+    "mixedExample": "工厂必须防止 toxic 废物进入河流。"
   },
   {
     "word": "donate",
@@ -5796,7 +6241,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'dәuneit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "juān zèng"
+    "zhPinyin": "juān zèng",
+    "mixedExample": "当地企业向社区培训中心 donate 设备。"
   },
   {
     "word": "parental",
@@ -5809,7 +6255,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'rentәl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fù mǔ de"
+    "zhPinyin": "fù mǔ de",
+    "mixedExample": "parental 参与可以支持孩子在家的学习。"
   },
   {
     "word": "specialise",
@@ -5822,7 +6269,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'speʃә,laiz",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhuān mén cóng shì"
+    "zhPinyin": "zhuān mén cóng shì",
+    "mixedExample": "学生可以在第二学年开始 specialise in 环境政策。"
   },
   {
     "word": "dilemma",
@@ -5835,7 +6283,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'lemә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "liǎng nán chǔ jìng"
+    "zhPinyin": "liǎng nán chǔ jìng",
+    "mixedExample": "这座城市面临发展经济与保护环境之间的 dilemma。"
   },
   {
     "word": "liability",
@@ -5848,7 +6297,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "laiә'biliti",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "fǎ lǜ zé rèn ； fù zhài"
+    "zhPinyin": "fǎ lǜ zé rèn ； fù zhài",
+    "mixedExample": "合同明确规定了设备损坏时双方各自的 liability。"
   },
   {
     "word": "ancestor",
@@ -5861,7 +6311,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ænsestә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zǔ xiān"
+    "zhPinyin": "zǔ xiān",
+    "mixedExample": "展览探讨了每位 ancestor 如何塑造当地传统。"
   },
   {
     "word": "condemn",
@@ -5874,7 +6325,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'dem",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qiǎn zé"
+    "zhPinyin": "qiǎn zé",
+    "mixedExample": "消费者团体 condemn 有关产品安全的误导性宣传。"
   },
   {
     "word": "statute",
@@ -5887,7 +6339,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'stætju:t",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chéng wén fǎ ； fǎ guī"
+    "zhPinyin": "chéng wén fǎ ； fǎ guī",
+    "mixedExample": "这项 statute 确立了工作场所安全的最低标准。"
   },
   {
     "word": "hostile",
@@ -5900,7 +6353,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'hɒstail",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "dí duì de ； bù lì de"
+    "zhPinyin": "dí duì de ； bù lì de",
+    "mixedExample": "充满敌意的同事让工作环境变得十分 hostile。"
   },
   {
     "word": "conceive",
@@ -5913,7 +6367,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'si:v",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gòu xiǎng"
+    "zhPinyin": "gòu xiǎng",
+    "mixedExample": "设计师必须 conceive 满足不同用户需求的解决方案。"
   },
   {
     "word": "bonus",
@@ -5926,7 +6381,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'bәunәs",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiǎng jīn ； é wài hǎo chù"
+    "zhPinyin": "jiǎng jīn ； é wài hǎo chù",
+    "mixedExample": "这项 bonus 奖励减少材料浪费的员工。"
   },
   {
     "word": "vaccine",
@@ -5939,7 +6395,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'væksi:n",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yì miáo"
+    "zhPinyin": "yì miáo",
+    "mixedExample": "vaccine 项目旨在覆盖偏远社区。"
   },
   {
     "word": "orbit",
@@ -5952,7 +6409,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒ:bit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "guǐ dào"
+    "zhPinyin": "guǐ dào",
+    "mixedExample": "该卫星沿着能够定期观测气候的 orbit 运行。"
   },
   {
     "word": "revelation",
@@ -5965,7 +6423,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".revi'leiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "jiē shì ； bèi jiē lù de shì shí"
+    "zhPinyin": "jiē shì ； bèi jiē lù de shì shí",
+    "mixedExample": "有关资金去向的 revelation 促使公司展开内部调查。"
   },
   {
     "word": "concede",
@@ -5978,7 +6437,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәn'si:d",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chéng rèn ； ràng bù"
+    "zhPinyin": "chéng rèn ； ràng bù",
+    "mixedExample": "作者 concede 他们的样本相对较小。"
   },
   {
     "word": "spectacular",
@@ -5991,7 +6451,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "spek'tækjulә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhuàng guān de ； jīng rén de"
+    "zhPinyin": "zhuàng guān de ； jīng rén de",
+    "mixedExample": "spectacular 景色全年吸引着游客。"
   },
   {
     "word": "exotic",
@@ -6004,7 +6465,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ig'zɒtik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "wài lái de ； yì guó de"
+    "zhPinyin": "wài lái de ； yì guó de",
+    "mixedExample": "引入 exotic 植物可能扰乱当地生态系统。"
   },
   {
     "word": "secular",
@@ -6017,7 +6479,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'sekjulә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shì sú de ； fēi zōng jiào de"
+    "zhPinyin": "shì sú de ； fēi zōng jiào de",
+    "mixedExample": "博物馆同时探索宗教和 secular 传统。"
   },
   {
     "word": "flexible",
@@ -6030,7 +6493,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fleksәbl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "líng huó de"
+    "zhPinyin": "líng huó de",
+    "mixedExample": "flexible 时间安排帮助员工平衡工作与家庭责任。"
   },
   {
     "word": "manipulate",
@@ -6043,7 +6507,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mә'nipjuleit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "cāo zòng ； cāo zuò"
+    "zhPinyin": "cāo zòng ； cāo zuò",
+    "mixedExample": "误导性图像可以 manipulate 公众对事件的看法。"
   },
   {
     "word": "practitioner",
@@ -6056,7 +6521,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "præk'tiʃәnә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "cóng yè zhě"
+    "zhPinyin": "cóng yè zhě",
+    "mixedExample": "经验丰富的 practitioner 可以根据个人需要调整治疗。"
   },
   {
     "word": "isolation",
@@ -6069,7 +6535,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".aisә'leiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "gū lì ； gé lí"
+    "zhPinyin": "gū lì ； gé lí",
+    "mixedExample": "社区活动可以减少老年居民的社会 isolation 感。"
   },
   {
     "word": "ambition",
@@ -6082,7 +6549,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "æm'biʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bào fù ； zhì xiàng"
+    "zhPinyin": "bào fù ； zhì xiàng",
+    "mixedExample": "她的 ambition 是改善农村教育机会。"
   },
   {
     "word": "costly",
@@ -6095,7 +6563,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kɒstli",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "dài jià gāo de"
+    "zhPinyin": "dài jià gāo de",
+    "mixedExample": "推迟维护可能让未来的维修变得更加 costly。"
   },
   {
     "word": "ambitious",
@@ -6108,7 +6577,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "æm'biʃәs",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "yǒu xióng xīn de"
+    "zhPinyin": "yǒu xióng xīn de",
+    "mixedExample": "这座城市制定了一个 ambitious 的减排目标。"
   },
   {
     "word": "presumably",
@@ -6121,7 +6591,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pri'zu:mәbli",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "dà gài ； jù tuī cè"
+    "zhPinyin": "dà gài ； jù tuī cè",
+    "mixedExample": "这一差异 presumably 反映了培训机会的不平等。"
   },
   {
     "word": "metropolitan",
@@ -6134,7 +6605,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".metrә'pɒlitn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "dà dū shì de"
+    "zhPinyin": "dà dū shì de",
+    "mixedExample": "metropolitan 地区往往需要一体化的交通规划。"
   },
   {
     "word": "dissolve",
@@ -6147,7 +6619,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "di'zɒlv",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "róng jiě ； jiě sàn"
+    "zhPinyin": "róng jiě ； jiě sàn",
+    "mixedExample": "这种物质与温水混合后会 dissolve 。"
   },
   {
     "word": "aesthetic",
@@ -6160,7 +6633,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "i:s'θetik",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shěn měi de"
+    "zhPinyin": "shěn měi de",
+    "mixedExample": "该设计兼顾实际需要和 aesthetic 因素。"
   },
   {
     "word": "insert",
@@ -6173,7 +6647,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "in'sә:t",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chā rù"
+    "zhPinyin": "chā rù",
+    "mixedExample": "作者应在论证需要支撑的地方 insert 一个具体例子。"
   },
   {
     "word": "minimal",
@@ -6186,7 +6661,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'miniml",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zuì shǎo de ； jí xiǎo de"
+    "zhPinyin": "zuì shǎo de ； jí xiǎo de",
+    "mixedExample": "这栋建筑的设计目标是让它对环境的影响保持 minimal。"
   },
   {
     "word": "anonymous",
@@ -6199,7 +6675,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "ә'nɒnimәs",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "nì míng de"
+    "zhPinyin": "nì míng de",
+    "mixedExample": "anonymous 回答可以鼓励参与者分享真实看法。"
   },
   {
     "word": "momentum",
@@ -6212,7 +6689,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "mәu'mentәm",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shì tou ； dòng liàng"
+    "zhPinyin": "shì tou ； dòng liàng",
+    "mixedExample": "当地学校加入后，回收活动发展 momentum 增强。"
   },
   {
     "word": "donation",
@@ -6225,7 +6703,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dәu'neiʃәn",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "juān zèng"
+    "zhPinyin": "juān zèng",
+    "mixedExample": "这笔 donation 将帮助图书馆购买新设备。"
   },
   {
     "word": "interact",
@@ -6238,7 +6717,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": ".intәr'ækt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "hù dòng ； xiāng hù zuò yòng"
+    "zhPinyin": "hù dòng ； xiāng hù zuò yòng",
+    "mixedExample": "学生学习不同因素如何在生态系统中 interact 。"
   },
   {
     "word": "persist",
@@ -6251,7 +6731,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pә'sist",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chí xù ； jiān chí"
+    "zhPinyin": "chí xù ； jiān chí",
+    "mixedExample": "没有长期投资，区域不平等可能 persist 存在。"
   },
   {
     "word": "foster",
@@ -6264,7 +6745,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'fɒstә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "péi yǎng ； cù jìn"
+    "zhPinyin": "péi yǎng ； cù jìn",
+    "mixedExample": "小组项目可以 foster 合作精神和独立思考能力。"
   },
   {
     "word": "filter",
@@ -6277,7 +6759,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'filtә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "guò lǜ"
+    "zhPinyin": "guò lǜ",
+    "mixedExample": "该设备使用薄膜 filter 饮用水。"
   },
   {
     "word": "exploit",
@@ -6290,7 +6773,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'eksplɒit",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "lì yòng ； bō xuē"
+    "zhPinyin": "lì yòng ； bō xuē",
+    "mixedExample": "企业不得为了降低生产成本而 exploit 工人。"
   },
   {
     "word": "organism",
@@ -6303,7 +6787,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'ɒ:gәnizm",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shēng wù tǐ"
+    "zhPinyin": "shēng wù tǐ",
+    "mixedExample": "每个 organism 都在当地生态系统中发挥作用。"
   },
   {
     "word": "charter",
@@ -6316,7 +6801,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tʃɑ:tә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhāng chéng ； xiàn zhāng"
+    "zhPinyin": "zhāng chéng ； xiàn zhāng",
+    "mixedExample": "charter 规定了该组织对公众的责任。"
   },
   {
     "word": "comprise",
@@ -6329,7 +6815,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәm'praiz",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "bāo kuò ； yóu …… zǔ chéng"
+    "zhPinyin": "bāo kuò ； yóu …… zǔ chéng",
+    "mixedExample": "调查样本将 comprise 来自不同收入群体的家庭。"
   },
   {
     "word": "placement",
@@ -6342,7 +6829,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pleismәnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "shí xí ān pái ； ān zhì"
+    "zhPinyin": "shí xí ān pái ； ān zhì",
+    "mixedExample": "毕业前的工作 placement 帮助学生把课堂知识用于实践。"
   },
   {
     "word": "preliminary",
@@ -6355,7 +6843,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "pri'liminәri",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chū bù de"
+    "zhPinyin": "chū bù de",
+    "mixedExample": "preliminary 发现表明该干预措施改善了出勤情况。"
   },
   {
     "word": "patent",
@@ -6368,7 +6857,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'pætnt. 'peitnt",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhuān lì"
+    "zhPinyin": "zhuān lì",
+    "mixedExample": "该 patent 保护了一种新的储能方法。"
   },
   {
     "word": "gross",
@@ -6381,7 +6871,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "grәus",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zǒng de ； máo de"
+    "zhPinyin": "zǒng de ； máo de",
+    "mixedExample": "gross 收入未扣除税款和其他扣款。"
   },
   {
     "word": "texture",
@@ -6394,7 +6885,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'tekstʃә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "zhì dì ； wén lǐ"
+    "zhPinyin": "zhì dì ； wén lǐ",
+    "mixedExample": "材料的 texture 影响其触感的舒适程度。"
   },
   {
     "word": "frontier",
@@ -6407,7 +6899,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'frʌntjә",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "qián yán ； biān jiè"
+    "zhPinyin": "qián yán ； biān jiè",
+    "mixedExample": "储能是技术研究的重要 frontier 领域。"
   },
   {
     "word": "disclose",
@@ -6420,7 +6913,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "dis'klәuz",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "pī lù"
+    "zhPinyin": "pī lù",
+    "mixedExample": "企业必须 disclose 其经营活动的环境风险。"
   },
   {
     "word": "outline",
@@ -6433,7 +6927,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'autlain",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tí gāng ； gài shù"
+    "zhPinyin": "tí gāng ； gài shù",
+    "mixedExample": "清晰的 outline 帮助作者组织论点。"
   },
   {
     "word": "catalogue",
@@ -6446,7 +6941,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'kætәlɒg",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "mù lù"
+    "zhPinyin": "mù lù",
+    "mixedExample": "数字 catalogue 使历史记录更容易查找。"
   },
   {
     "word": "fleet",
@@ -6459,7 +6955,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "fli:t",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chē duì ； chuán duì"
+    "zhPinyin": "chē duì ； chuán duì",
+    "mixedExample": "该城市正在用电动车辆替换公交 fleet 。"
   },
   {
     "word": "vertical",
@@ -6472,7 +6969,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "'vә:tikl",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "chuí zhí de"
+    "zhPinyin": "chuí zhí de",
+    "mixedExample": "vertical 花园可以为建筑密集区增加绿意。"
   },
   {
     "word": "compel",
@@ -6485,7 +6983,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "kәm'pel",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "pò shǐ"
+    "zhPinyin": "pò shǐ",
+    "mixedExample": "明确的法规可以 compel 企业改善安全。"
   },
   {
     "word": "cease",
@@ -6498,7 +6997,8 @@ window.dailyEnglishQuestionBank = [
     "phonetic": "si:s",
     "exampleSource": "original",
     "selection": "雅思话题人工选词",
-    "zhPinyin": "tíng zhǐ"
+    "zhPinyin": "tíng zhǐ",
+    "mixedExample": "工厂必须 cease 运营，直到排放符合法律限制。"
   },
   {
     "id": "issue",
@@ -6512,7 +7012,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23775,
     "selection": "雅思标签选词",
-    "zhPinyin": "wèn tí"
+    "zhPinyin": "wèn tí",
+    "mixedExample": "关于这个 issue ，我觉得垃圾媒体只报道了很片面的信息。"
   },
   {
     "id": "political",
@@ -6526,7 +7027,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28422,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhèng zhì de"
+    "zhPinyin": "zhèng zhì de",
+    "mixedExample": "“中国人民 political 协商会议”的简称是“人民政协”。"
   },
   {
     "id": "former",
@@ -6540,7 +7042,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46328,
     "selection": "雅思标签选词",
-    "zhPinyin": "qián zhě de"
+    "zhPinyin": "qián zhě de",
+    "mixedExample": "两者都可以，但是 former 更简洁。"
   },
   {
     "id": "campaign",
@@ -6554,7 +7057,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11600,
     "selection": "雅思标签选词",
-    "zhPinyin": "yùn dòng"
+    "zhPinyin": "yùn dòng",
+    "mixedExample": "我们开始了一个反对吸烟 campaign 。"
   },
   {
     "id": "economy",
@@ -6568,7 +7072,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6078,
     "selection": "雅思标签选词",
-    "zhPinyin": "jīng jì"
+    "zhPinyin": "jīng jì",
+    "mixedExample": "这个岛的 economy 依靠的是渔业。"
   },
   {
     "id": "current",
@@ -6582,7 +7087,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49711,
     "selection": "雅思标签选词",
-    "zhPinyin": "dāng qián de"
+    "zhPinyin": "dāng qián de",
+    "mixedExample": "我们 current 危机绝非单纯的经济危机。"
   },
   {
     "id": "performance",
@@ -6596,7 +7102,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40222,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǎn chū"
+    "zhPinyin": "yǎn chū",
+    "mixedExample": "你喜欢昨晚的 performance 吧？"
   },
   {
     "id": "represent",
@@ -6610,7 +7117,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25923,
     "selection": "雅思标签选词",
-    "zhPinyin": "dài biǎo"
+    "zhPinyin": "dài biǎo",
+    "mixedExample": "地图上的红线 represent 铁路。"
   },
   {
     "id": "concern",
@@ -6624,7 +7132,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11956,
     "selection": "雅思标签选词",
-    "zhPinyin": "guān xīn"
+    "zhPinyin": "guān xīn",
+    "mixedExample": "我最 concern 的是你的安全。"
   },
   {
     "id": "decade",
@@ -6638,7 +7147,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2351,
     "selection": "雅思标签选词",
-    "zhPinyin": "shí nián"
+    "zhPinyin": "shí nián",
+    "mixedExample": "我们最近 decade 经历了很多变化。"
   },
   {
     "id": "stock",
@@ -6652,7 +7162,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17496,
     "selection": "雅思标签选词",
-    "zhPinyin": "gǔ piào"
+    "zhPinyin": "gǔ piào",
+    "mixedExample": "他玩 stock 赔了。"
   },
   {
     "id": "central",
@@ -6666,7 +7177,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32124,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhōng yāng de"
+    "zhPinyin": "zhōng yāng de",
+    "mixedExample": "这栋楼里面有 central 暖气系统吗？"
   },
   {
     "id": "approach",
@@ -6680,7 +7192,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9323,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiē jìn"
+    "zhPinyin": "jiē jìn",
+    "mixedExample": "总统很难 approach 。"
   },
   {
     "id": "occur",
@@ -6694,7 +7207,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2067,
     "selection": "雅思标签选词",
-    "zhPinyin": "fā shēng"
+    "zhPinyin": "fā shēng",
+    "mixedExample": "据一些学者称，现在可能随时 occur 一场特大地震。"
   },
   {
     "id": "pressure",
@@ -6708,7 +7222,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6453,
     "selection": "雅思标签选词",
-    "zhPinyin": "yā lì"
+    "zhPinyin": "yā lì",
+    "mixedExample": "计划受到舆论的 pressure 而被取消了。"
   },
   {
     "id": "resource",
@@ -6722,7 +7237,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2581,
     "selection": "雅思标签选词",
-    "zhPinyin": "zī yuán"
+    "zhPinyin": "zī yuán",
+    "mixedExample": "唯一比无论什么 resource 都珍贵的是土地。"
   },
   {
     "id": "staff",
@@ -6736,7 +7252,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6506,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhí yuán de"
+    "zhPinyin": "zhí yuán de",
+    "mixedExample": "公司的 staff 设法隐瞒，但真相不久便水落石出了。"
   },
   {
     "id": "growth",
@@ -6750,7 +7267,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42233,
     "selection": "雅思标签选词",
-    "zhPinyin": "zēng zhǎng"
+    "zhPinyin": "zēng zhǎng",
+    "mixedExample": "进口数量的急速 growth 让我们感到惊讶。"
   },
   {
     "id": "loss",
@@ -6764,7 +7282,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18216,
     "selection": "雅思标签选词",
-    "zhPinyin": "sǔn shī"
+    "zhPinyin": "sǔn shī",
+    "mixedExample": "为了这次的 loss ，他扛起责任，辞职了。"
   },
   {
     "id": "analysis",
@@ -6778,7 +7297,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2269,
     "selection": "雅思标签选词",
-    "zhPinyin": "fēn xī"
+    "zhPinyin": "fēn xī",
+    "mixedExample": "我们要详细的 analysis 一下意外发生的前因后果。"
   },
   {
     "id": "environmental",
@@ -6792,7 +7312,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2006,
     "selection": "雅思标签选词",
-    "zhPinyin": "huán jìng de"
+    "zhPinyin": "huán jìng de",
+    "mixedExample": "environmental 污染正造成异常的天气情况。"
   },
   {
     "id": "financial",
@@ -6806,7 +7327,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7218,
     "selection": "雅思标签选词",
-    "zhPinyin": "jīn róng de"
+    "zhPinyin": "jīn róng de",
+    "mixedExample": "如你所知，东京是全球 financial 中心之一。"
   },
   {
     "id": "authority",
@@ -6820,7 +7342,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6560,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhuān jiā"
+    "zhPinyin": "zhuān jiā",
+    "mixedExample": "那位医生是儿童疾病的 authority 。"
   },
   {
     "id": "various",
@@ -6834,7 +7357,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42287,
     "selection": "雅思标签选词",
-    "zhPinyin": "gè zhǒng de"
+    "zhPinyin": "gè zhǒng de",
+    "mixedExample": "我喜欢学习 various 各样的语言。"
   },
   {
     "id": "executive",
@@ -6848,7 +7372,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17090,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhí xíng zhě"
+    "zhPinyin": "zhí xíng zhě",
+    "mixedExample": "我们在任何公司都应该是 executive 。"
   },
   {
     "id": "claim",
@@ -6862,7 +7387,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16467,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhǔ zhāng"
+    "zhPinyin": "zhǔ zhāng",
+    "mixedExample": "他 claim 的是出生的先后次序和个性有很密切的关系。"
   },
   {
     "id": "legal",
@@ -6876,7 +7402,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42966,
     "selection": "雅思标签选词",
-    "zhPinyin": "fǎ lǜ de"
+    "zhPinyin": "fǎ lǜ de",
+    "mixedExample": "律师们会力劝家长们采取进一步的 legal 行动。"
   },
   {
     "id": "firm",
@@ -6890,7 +7417,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8019,
     "selection": "雅思标签选词",
-    "zhPinyin": "gōng sī"
+    "zhPinyin": "gōng sī",
+    "mixedExample": "我不太适应在这间 firm 工作。"
   },
   {
     "id": "management",
@@ -6904,7 +7432,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2199,
     "selection": "雅思标签选词",
-    "zhPinyin": "guǎn lǐ"
+    "zhPinyin": "guǎn lǐ",
+    "mixedExample": "management 一间公司和拥有一间公司是不能相提并论的两回事。"
   },
   {
     "id": "theory",
@@ -6918,7 +7447,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33352,
     "selection": "雅思标签选词",
-    "zhPinyin": "lǐ lùn"
+    "zhPinyin": "lǐ lùn",
+    "mixedExample": "你的 theory 并没有科学根据。"
   },
   {
     "id": "impact",
@@ -6932,7 +7462,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49569,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǐng xiǎng"
+    "zhPinyin": "yǐng xiǎng",
+    "mixedExample": "这场暴风雪已经对经济造成了严重的 impact 。"
   },
   {
     "id": "maintain",
@@ -6946,7 +7477,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21095,
     "selection": "雅思标签选词",
-    "zhPinyin": "wéi chí"
+    "zhPinyin": "wéi chí",
+    "mixedExample": "maintain 一个人的声誉是很难的。"
   },
   {
     "id": "charge",
@@ -6960,7 +7492,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37447,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhǔ guǎn"
+    "zhPinyin": "zhǔ guǎn",
+    "mixedExample": "我刚跟 charge 人谈过。"
   },
   {
     "id": "cultural",
@@ -6974,7 +7507,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43902,
     "selection": "雅思标签选词",
-    "zhPinyin": "wén huà de"
+    "zhPinyin": "wén huà de",
+    "mixedExample": "学生工作、 cultural 工作和学术工作应该同时推进。"
   },
   {
     "id": "measure",
@@ -6988,7 +7522,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15123,
     "selection": "雅思标签选词",
-    "zhPinyin": "fāng fǎ"
+    "zhPinyin": "fāng fǎ",
+    "mixedExample": "测速的 measure 有很多。"
   },
   {
     "id": "candidate",
@@ -7002,7 +7537,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1950,
     "selection": "雅思标签选词",
-    "zhPinyin": "hòu xuǎn rén"
+    "zhPinyin": "hòu xuǎn rén",
+    "mixedExample": "奇怪的是，谁也没有投那 candidate 一票。"
   },
   {
     "id": "production",
@@ -7016,7 +7552,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43498,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhì zào"
+    "zhPinyin": "zhì zào",
+    "mixedExample": "棕榈油 production 是导致印度尼西亚森林砍伐的主要原因。"
   },
   {
     "id": "range",
@@ -7030,7 +7567,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48872,
     "selection": "雅思标签选词",
-    "zhPinyin": "shān mài"
+    "zhPinyin": "shān mài",
+    "mixedExample": "喜马拉雅 range 是位于亚洲大陆的山脉。"
   },
   {
     "id": "challenge",
@@ -7044,7 +7582,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7914,
     "selection": "雅思标签选词",
-    "zhPinyin": "tiǎo zhàn"
+    "zhPinyin": "tiǎo zhàn",
+    "mixedExample": "这份工作没什么 challenge 性。"
   },
   {
     "id": "property",
@@ -7058,7 +7597,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17323,
     "selection": "雅思标签选词",
-    "zhPinyin": "cái chǎn"
+    "zhPinyin": "cái chǎn",
+    "mixedExample": "他在遗嘱里说要把他的 property 全部留给他的妻子。"
   },
   {
     "id": "stuff",
@@ -7072,7 +7612,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32586,
     "selection": "雅思标签选词",
-    "zhPinyin": "dōng xī"
+    "zhPinyin": "dōng xī",
+    "mixedExample": "我们的 stuff 被偷走了，而且我们错过了火车。"
   },
   {
     "id": "commercial",
@@ -7086,7 +7627,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47929,
     "selection": "雅思标签选词",
-    "zhPinyin": "shāng yè de"
+    "zhPinyin": "shāng yè de",
+    "mixedExample": "这位常驻科特迪瓦的经济学家兼统计学家表示，该地区的 commercial 贸易主要与法国进行。"
   },
   {
     "id": "investment",
@@ -7100,7 +7642,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43979,
     "selection": "雅思标签选词",
-    "zhPinyin": "tóu zī"
+    "zhPinyin": "tóu zī",
+    "mixedExample": "在我们看来，太阳能电池是一项很好的 investment 。"
   },
   {
     "id": "collection",
@@ -7114,7 +7657,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13364,
     "selection": "雅思标签选词",
-    "zhPinyin": "shōu jí"
+    "zhPinyin": "shōu jí",
+    "mixedExample": "我 collection 很多邮票。"
   },
   {
     "id": "budget",
@@ -7128,7 +7672,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49048,
     "selection": "雅思标签选词",
-    "zhPinyin": "yù suàn"
+    "zhPinyin": "yù suàn",
+    "mixedExample": "价格应该符合 budget 。"
   },
   {
     "id": "responsibility",
@@ -7142,7 +7687,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6187,
     "selection": "雅思标签选词",
-    "zhPinyin": "zé rèn ； fù dān"
+    "zhPinyin": "zé rèn ； fù dān",
+    "mixedExample": "那个责任对他是个 responsibility 。"
   },
   {
     "id": "attorney",
@@ -7156,7 +7702,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16062,
     "selection": "雅思标签选词",
-    "zhPinyin": "lǜ shī"
+    "zhPinyin": "lǜ shī",
+    "mixedExample": "这前所未闻, 犯罪嫌疑人的 attorney 竟然是真正的罪魁祸首。"
   },
   {
     "id": "account",
@@ -7170,7 +7717,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 754,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiě shì"
+    "zhPinyin": "jiě shì",
+    "mixedExample": "你怎么 account 你的迟到？"
   },
   {
     "id": "majority",
@@ -7184,7 +7732,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25269,
     "selection": "雅思标签选词",
-    "zhPinyin": "duō shù"
+    "zhPinyin": "duō shù",
+    "mixedExample": "民主主义是 majority 选举的独裁。"
   },
   {
     "id": "mission",
@@ -7198,7 +7747,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43211,
     "selection": "雅思标签选词",
-    "zhPinyin": "rèn wù"
+    "zhPinyin": "rèn wù",
+    "mixedExample": "美国的 mission 是将共产主义从世界上消除。"
   },
   {
     "id": "global",
@@ -7212,7 +7762,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28363,
     "selection": "雅思标签选词",
-    "zhPinyin": "quán qiú de"
+    "zhPinyin": "quán qiú de",
+    "mixedExample": "人们谈到 global 气候变化的时候，常常用到“温室效应”这个词。"
   },
   {
     "id": "reform",
@@ -7226,7 +7777,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 436,
     "selection": "雅思标签选词",
-    "zhPinyin": "gǎi gé"
+    "zhPinyin": "gǎi gé",
+    "mixedExample": "政治家以揭露政府官员的腐败来推动 reform 。"
   },
   {
     "id": "access",
@@ -7240,7 +7792,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14629,
     "selection": "雅思标签选词",
-    "zhPinyin": "jìn rù"
+    "zhPinyin": "jìn rù",
+    "mixedExample": "所有持有学生证的学生均可 access 图书馆。"
   },
   {
     "id": "release",
@@ -7254,7 +7807,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28816,
     "selection": "雅思标签选词",
-    "zhPinyin": "fā xíng"
+    "zhPinyin": "fā xíng",
+    "mixedExample": "学习语言随着Skype的 release 而变得更容易。"
   },
   {
     "id": "version",
@@ -7268,7 +7822,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28443,
     "selection": "雅思标签选词",
-    "zhPinyin": "bǎn běn"
+    "zhPinyin": "bǎn běn",
+    "mixedExample": "现代版的旗袍 version 因能突显女人的身材而闻名。"
   },
   {
     "id": "effective",
@@ -7282,7 +7837,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3220,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǒu xiào de"
+    "zhPinyin": "yǒu xiào de",
+    "mixedExample": "医生正寻找对这疾病 effective 药。"
   },
   {
     "id": "strike",
@@ -7296,7 +7852,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33271,
     "selection": "雅思标签选词",
-    "zhPinyin": "qǔ xiāo ； bà gōng"
+    "zhPinyin": "qǔ xiāo ； bà gōng",
+    "mixedExample": "他们已经 strike 了罢工。"
   },
   {
     "id": "freedom",
@@ -7310,7 +7867,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10551,
     "selection": "雅思标签选词",
-    "zhPinyin": "zì yóu"
+    "zhPinyin": "zì yóu",
+    "mixedExample": "现在言论 freedom 被当作是理所当然的事。"
   },
   {
     "id": "client",
@@ -7324,7 +7882,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49443,
     "selection": "雅思标签选词",
-    "zhPinyin": "kè hù"
+    "zhPinyin": "kè hù",
+    "mixedExample": "慧如那个简报档还没传喔？ client 在催。"
   },
   {
     "id": "investigation",
@@ -7338,7 +7897,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45364,
     "selection": "雅思标签选词",
-    "zhPinyin": "diào chá"
+    "zhPinyin": "diào chá",
+    "mixedExample": "正如我之前提到的，经过严格的 investigation 后，我们发现公司的管理层没有任何问题。"
   },
   {
     "id": "conflict",
@@ -7352,7 +7912,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48078,
     "selection": "雅思标签选词",
-    "zhPinyin": "chōng tū"
+    "zhPinyin": "chōng tū",
+    "mixedExample": "安乐死与希波克拉底誓言相 conflict 。"
   },
   {
     "id": "insurance",
@@ -7366,7 +7927,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29878,
     "selection": "雅思标签选词",
-    "zhPinyin": "bǎo xiǎn"
+    "zhPinyin": "bǎo xiǎn",
+    "mixedExample": "公司的医疗 insurance 覆盖了全部的医疗费用。"
   },
   {
     "id": "crisis",
@@ -7380,7 +7942,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27698,
     "selection": "雅思标签选词",
-    "zhPinyin": "wēi jī"
+    "zhPinyin": "wēi jī",
+    "mixedExample": "这部有关环境 crisis 的纪录片真是令人大开眼界。"
   },
   {
     "id": "status",
@@ -7394,7 +7957,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28652,
     "selection": "雅思标签选词",
-    "zhPinyin": "dì wèi"
+    "zhPinyin": "dì wèi",
+    "mixedExample": "社会 status 较高的公民被允许住在较靠近市中心的地方。"
   },
   {
     "id": "scale",
@@ -7408,7 +7972,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49666,
     "selection": "雅思标签选词",
-    "zhPinyin": "guī mó"
+    "zhPinyin": "guī mó",
+    "mixedExample": "许多公司都尝试过大 scale 生产这种复杂的零件，但目前只有我们成功了。"
   },
   {
     "id": "attempt",
@@ -7422,7 +7987,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45796,
     "selection": "雅思标签选词",
-    "zhPinyin": "cháng shì"
+    "zhPinyin": "cháng shì",
+    "mixedExample": "我没 attempt 和她交朋友。"
   },
   {
     "id": "spot",
@@ -7436,7 +8002,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6420,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiàn chǎng de"
+    "zhPinyin": "xiàn chǎng de",
+    "mixedExample": "spot 有10名警员。"
   },
   {
     "id": "lack",
@@ -7450,7 +8017,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38895,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù zú ； xū yào"
+    "zhPinyin": "bù zú ； xū yào",
+    "mixedExample": "由于人力 lack ，我们需要比预期更多的时间来承担这项任务。"
   },
   {
     "id": "sales",
@@ -7464,7 +8032,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10781,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiāo shòu de"
+    "zhPinyin": "xiāo shòu de",
+    "mixedExample": "公开此事会影响我们的 sales ，所以我们将忽略它一次。"
   },
   {
     "id": "presence",
@@ -7478,7 +8047,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49008,
     "selection": "雅思标签选词",
-    "zhPinyin": "cún zài"
+    "zhPinyin": "cún zài",
+    "mixedExample": "俄语动词的一个特征是 presence 体的范畴。"
   },
   {
     "id": "strength",
@@ -7492,7 +8062,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48403,
     "selection": "雅思标签选词",
-    "zhPinyin": "lì liàng"
+    "zhPinyin": "lì liàng",
+    "mixedExample": "他仅凭借精神 strength 和意志力就达到了他所想要的生活。"
   },
   {
     "id": "observe",
@@ -7506,7 +8077,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18498,
     "selection": "雅思标签选词",
-    "zhPinyin": "zūn shǒu"
+    "zhPinyin": "zūn shǒu",
+    "mixedExample": "他指出了 observe 法律的重要性。"
   },
   {
     "id": "block",
@@ -7520,7 +8092,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8940,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiē qū"
+    "zhPinyin": "jiē qū",
+    "mixedExample": "她住在一个 block 之外，名叫苏珊。"
   },
   {
     "id": "settle",
@@ -7534,7 +8107,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18783,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiě jué"
+    "zhPinyin": "jiě jué",
+    "mixedExample": "为了 settle 问题，他们尽了很大努力。"
   },
   {
     "id": "additional",
@@ -7548,7 +8122,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49385,
     "selection": "雅思标签选词",
-    "zhPinyin": "é wài de"
+    "zhPinyin": "é wài de",
+    "mixedExample": "购买新装置的用户可享有 additional 试用优惠。"
   },
   {
     "id": "faith",
@@ -7562,7 +8137,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 12780,
     "selection": "雅思标签选词",
-    "zhPinyin": "xìn rèn"
+    "zhPinyin": "xìn rèn",
+    "mixedExample": "我绝对 faith 我的医生。"
   },
   {
     "id": "technique",
@@ -7576,7 +8152,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34025,
     "selection": "雅思标签选词",
-    "zhPinyin": "fāng fǎ"
+    "zhPinyin": "fāng fǎ",
+    "mixedExample": "守宫砂是中国古代用来验证女人贞操的 technique ."
   },
   {
     "id": "border",
@@ -7590,7 +8167,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44300,
     "selection": "雅思标签选词",
-    "zhPinyin": "biān jìng"
+    "zhPinyin": "biān jìng",
+    "mixedExample": "border 上有一片农业区。"
   },
   {
     "id": "associate",
@@ -7604,7 +8182,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47285,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiāo wǎng"
+    "zhPinyin": "jiāo wǎng",
+    "mixedExample": "别跟轻易放弃的人 associate 。"
   },
   {
     "id": "failure",
@@ -7618,7 +8197,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11257,
     "selection": "雅思标签选词",
-    "zhPinyin": "shī bài"
+    "zhPinyin": "shī bài",
+    "mixedExample": "生意上的 failure 让我身无分文。"
   },
   {
     "id": "procedure",
@@ -7632,7 +8212,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37020,
     "selection": "雅思标签选词",
-    "zhPinyin": "chéng xù"
+    "zhPinyin": "chéng xù",
+    "mixedExample": "你不明白 procedure 。"
   },
   {
     "id": "religion",
@@ -7646,7 +8227,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39808,
     "selection": "雅思标签选词",
-    "zhPinyin": "zōng jiào"
+    "zhPinyin": "zōng jiào",
+    "mixedExample": "我在图尔库大学文化系学习 religion 学。"
   },
   {
     "id": "editor",
@@ -7660,7 +8242,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36086,
     "selection": "雅思标签选词",
-    "zhPinyin": "biān jí"
+    "zhPinyin": "biān jí",
+    "mixedExample": "你不想做 editor ？"
   },
   {
     "id": "commit",
@@ -7674,7 +8257,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4405,
     "selection": "雅思标签选词",
-    "zhPinyin": "fàn zuì"
+    "zhPinyin": "fàn zuì",
+    "mixedExample": "比尔没有 commit 。"
   },
   {
     "id": "youth",
@@ -7688,7 +8272,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47315,
     "selection": "雅思标签选词",
-    "zhPinyin": "nián qīng"
+    "zhPinyin": "nián qīng",
+    "mixedExample": "youth 人有自己的文化。"
   },
   {
     "id": "native",
@@ -7702,7 +8287,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24552,
     "selection": "雅思标签选词",
-    "zhPinyin": "běn dì rén"
+    "zhPinyin": "běn dì rén",
+    "mixedExample": "native 、外来人齐心共创上海新文明。"
   },
   {
     "id": "deny",
@@ -7716,7 +8302,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21720,
     "selection": "雅思标签选词",
-    "zhPinyin": "fǒu rèn"
+    "zhPinyin": "fǒu rèn",
+    "mixedExample": "但是歌手并不 deny 她的出身。"
   },
   {
     "id": "construction",
@@ -7730,7 +8317,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49585,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiàn zhù"
+    "zhPinyin": "jiàn zhù",
+    "mixedExample": "松科树木的木材因其优良的品质，在 construction 和家具制造领域备受推崇。"
   },
   {
     "id": "intelligence",
@@ -7744,7 +8332,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26082,
     "selection": "雅思标签选词",
-    "zhPinyin": "qíng bào"
+    "zhPinyin": "qíng bào",
+    "mixedExample": "如果你在 Facebook 注册，你的个人资料就会被送到 intelligence 机关的手里。"
   },
   {
     "id": "committee",
@@ -7758,7 +8347,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6562,
     "selection": "雅思标签选词",
-    "zhPinyin": "wěi yuán huì"
+    "zhPinyin": "wěi yuán huì",
+    "mixedExample": "committee 是由科学家和工程师组成的。"
   },
   {
     "id": "location",
@@ -7772,7 +8362,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9920,
     "selection": "雅思标签选词",
-    "zhPinyin": "wèi zhì"
+    "zhPinyin": "wèi zhì",
+    "mixedExample": "那家馆子物美价廉，美中不足的是他们糟糕的 location 。"
   },
   {
     "id": "aware",
@@ -7786,7 +8377,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 709,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhī dào de"
+    "zhPinyin": "zhī dào de",
+    "mixedExample": "你 aware 她有多么爱你吗?"
   },
   {
     "id": "function",
@@ -7800,7 +8392,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4333,
     "selection": "雅思标签选词",
-    "zhPinyin": "gōng néng"
+    "zhPinyin": "gōng néng",
+    "mixedExample": "刹车的 function 是使车停下。"
   },
   {
     "id": "chief",
@@ -7814,7 +8407,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 12506,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhǎng guān"
+    "zhPinyin": "zhǎng guān",
+    "mixedExample": "我认识了这位行政 chief 。"
   },
   {
     "id": "remind",
@@ -7828,7 +8422,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21112,
     "selection": "雅思标签选词",
-    "zhPinyin": "tí xǐng"
+    "zhPinyin": "tí xǐng",
+    "mixedExample": "请 remind 我明天把报告寄了。"
   },
   {
     "id": "academic",
@@ -7842,7 +8437,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39221,
     "selection": "雅思标签选词",
-    "zhPinyin": "xué shù de"
+    "zhPinyin": "xué shù de",
+    "mixedExample": "academic 造假比你想象的普遍。"
   },
   {
     "id": "historical",
@@ -7856,7 +8452,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49062,
     "selection": "雅思标签选词",
-    "zhPinyin": "lì shǐ de"
+    "zhPinyin": "lì shǐ de",
+    "mixedExample": "一座 historical 地标已经修复并将重新开放。"
   },
   {
     "id": "contact",
@@ -7870,7 +8467,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49392,
     "selection": "雅思标签选词",
-    "zhPinyin": "lián xì"
+    "zhPinyin": "lián xì",
+    "mixedExample": "如需媒体联络，请与当地客服中心或行销团队 contact 。"
   },
   {
     "id": "participate",
@@ -7884,7 +8482,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14808,
     "selection": "雅思标签选词",
-    "zhPinyin": "cān yù"
+    "zhPinyin": "cān yù",
+    "mixedExample": "政府将会对 participate 该项计划的企业提供无息贷款。"
   },
   {
     "id": "familiar",
@@ -7898,7 +8497,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18361,
     "selection": "雅思标签选词",
-    "zhPinyin": "shú xī de"
+    "zhPinyin": "shú xī de",
+    "mixedExample": "他 familiar 日本文化。"
   },
   {
     "id": "democracy",
@@ -7912,7 +8512,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25269,
     "selection": "雅思标签选词",
-    "zhPinyin": "mín zhǔ zhǔ yì"
+    "zhPinyin": "mín zhǔ zhǔ yì",
+    "mixedExample": "democracy 是多数选举的独裁。"
   },
   {
     "id": "exchange",
@@ -7926,7 +8527,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 35255,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiāo huàn"
+    "zhPinyin": "jiāo huàn",
+    "mixedExample": "我想用汉语 exchange 另一种语言."
   },
   {
     "id": "application",
@@ -7940,7 +8542,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32403,
     "selection": "雅思标签选词",
-    "zhPinyin": "yìng yòng ； yìng yòng chéng xù"
+    "zhPinyin": "yìng yòng ； yìng yòng chéng xù",
+    "mixedExample": "这项 application 能让你快速计算身高体重指数（BMI）。"
   },
   {
     "id": "damage",
@@ -7954,7 +8557,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10685,
     "selection": "雅思标签选词",
-    "zhPinyin": "sǔn hài"
+    "zhPinyin": "sǔn hài",
+    "mixedExample": "洪水造成了很大的 damage 。"
   },
   {
     "id": "otherwise",
@@ -7968,7 +8572,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38916,
     "selection": "雅思标签选词",
-    "zhPinyin": "fǒu zé"
+    "zhPinyin": "fǒu zé",
+    "mixedExample": "这个进程必须立即停止， otherwise 服务器会故障。"
   },
   {
     "id": "abuse",
@@ -7982,7 +8587,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31122,
     "selection": "雅思标签选词",
-    "zhPinyin": "làn yòng"
+    "zhPinyin": "làn yòng",
+    "mixedExample": "我们只能 abuse 善良的。"
   },
   {
     "id": "session",
@@ -7996,7 +8602,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48906,
     "selection": "雅思标签选词",
-    "zhPinyin": "huì yì"
+    "zhPinyin": "huì yì",
+    "mixedExample": "我会记 session 笔记，下次会议前可以回顾一下。"
   },
   {
     "id": "literature",
@@ -8010,7 +8617,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13415,
     "selection": "雅思标签选词",
-    "zhPinyin": "wén xué"
+    "zhPinyin": "wén xué",
+    "mixedExample": "我在大学主修美国 literature 。"
   },
   {
     "id": "desire",
@@ -8024,7 +8632,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32257,
     "selection": "雅思标签选词",
-    "zhPinyin": "yù wàng"
+    "zhPinyin": "yù wàng",
+    "mixedExample": "广告商最基本的工作就是把人的 desire 转化成需要。"
   },
   {
     "id": "fuel",
@@ -8038,7 +8647,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28407,
     "selection": "雅思标签选词",
-    "zhPinyin": "rán liào"
+    "zhPinyin": "rán liào",
+    "mixedExample": "二氧化碳是燃烧煤、石油或天然气这样的 fuel 时会产生的气体。"
   },
   {
     "id": "mental",
@@ -8052,7 +8662,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16542,
     "selection": "雅思标签选词",
-    "zhPinyin": "xīn lǐ de"
+    "zhPinyin": "xīn lǐ de",
+    "mixedExample": "他主要是 mental 问题。"
   },
   {
     "id": "educational",
@@ -8066,7 +8677,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5370,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiào yù de"
+    "zhPinyin": "jiào yù de",
+    "mixedExample": "有人说电视上的卡通本身是有 educational 意义的。"
   },
   {
     "id": "favorite",
@@ -8080,7 +8692,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27845,
     "selection": "雅思标签选词",
-    "zhPinyin": "xǐ ài de"
+    "zhPinyin": "xǐ ài de",
+    "mixedExample": "春天是我最 favorite 季节。"
   },
   {
     "id": "complex",
@@ -8094,7 +8707,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7238,
     "selection": "雅思标签选词",
-    "zhPinyin": "fù zá de"
+    "zhPinyin": "fù zá de",
+    "mixedExample": "电脑是个 complex 机器。"
   },
   {
     "id": "scientific",
@@ -8108,7 +8722,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10552,
     "selection": "雅思标签选词",
-    "zhPinyin": "kē xué de"
+    "zhPinyin": "kē xué de",
+    "mixedExample": "从严格的 scientific 观点来看，历史不能算是一门科学。"
   },
   {
     "id": "balance",
@@ -8122,7 +8737,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21457,
     "selection": "雅思标签选词",
-    "zhPinyin": "píng héng"
+    "zhPinyin": "píng héng",
+    "mixedExample": "从国际的观点看，应该考虑推行人口政策来 balance 两方的利益。"
   },
   {
     "id": "adopt",
@@ -8136,7 +8752,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23505,
     "selection": "雅思标签选词",
-    "zhPinyin": "cǎi yòng"
+    "zhPinyin": "cǎi yòng",
+    "mixedExample": "我认为 adopt 他的计划对我们比较好。"
   },
   {
     "id": "minority",
@@ -8150,7 +8767,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45604,
     "selection": "雅思标签选词",
-    "zhPinyin": "shǎo shù"
+    "zhPinyin": "shǎo shù",
+    "mixedExample": "汉满蒙回藏（以及中国的其他 minority 族裔们）一家亲。"
   },
   {
     "id": "jury",
@@ -8164,7 +8782,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16039,
     "selection": "雅思标签选词",
-    "zhPinyin": "péi shěn tuán"
+    "zhPinyin": "péi shěn tuán",
+    "mixedExample": "jury 作出的犯罪判决激起了很大的争论。"
   },
   {
     "id": "acknowledge",
@@ -8178,7 +8797,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 809,
     "selection": "雅思标签选词",
-    "zhPinyin": "chéng rèn"
+    "zhPinyin": "chéng rèn",
+    "mixedExample": "你应该 acknowledge 自己的失败。"
   },
   {
     "id": "theme",
@@ -8192,7 +8812,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16333,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhǔ tí"
+    "zhPinyin": "zhǔ tí",
+    "mixedExample": "他最后一本小说的 theme 是什么？"
   },
   {
     "id": "union",
@@ -8206,7 +8827,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28791,
     "selection": "雅思标签选词",
-    "zhPinyin": "gōng huì"
+    "zhPinyin": "gōng huì",
+    "mixedExample": "union 和企业一致同意了一份新的合同。"
   },
   {
     "id": "conclusion",
@@ -8220,7 +8842,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2307,
     "selection": "雅思标签选词",
-    "zhPinyin": "jié lùn"
+    "zhPinyin": "jié lùn",
+    "mixedExample": "我们的 conclusion 就是，那个传言是真的。"
   },
   {
     "id": "prime",
@@ -8234,7 +8857,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31490,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhǔ yào de"
+    "zhPinyin": "zhǔ yào de",
+    "mixedExample": "珊瑚礁是这个地区的 prime 景点。"
   },
   {
     "id": "obvious",
@@ -8248,7 +8872,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21182,
     "selection": "雅思标签选词",
-    "zhPinyin": "míng xiǎn de"
+    "zhPinyin": "míng xiǎn de",
+    "mixedExample": "事情如此 obvious 所以我们不需要证明。"
   },
   {
     "id": "generate",
@@ -8262,7 +8887,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15680,
     "selection": "雅思标签选词",
-    "zhPinyin": "chǎn shēng"
+    "zhPinyin": "chǎn shēng",
+    "mixedExample": "电流可以 generate 磁性。"
   },
   {
     "id": "propose",
@@ -8276,7 +8902,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19119,
     "selection": "雅思标签选词",
-    "zhPinyin": "dǎ suàn ； qiú hūn"
+    "zhPinyin": "dǎ suàn ； qiú hūn",
+    "mixedExample": "我 propose 向她求婚。"
   },
   {
     "id": "loan",
@@ -8290,7 +8917,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 873,
     "selection": "雅思标签选词",
-    "zhPinyin": "dài kuǎn"
+    "zhPinyin": "dài kuǎn",
+    "mixedExample": "你可以从银行 loan 。"
   },
   {
     "id": "beauty",
@@ -8304,7 +8932,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20291,
     "selection": "雅思标签选词",
-    "zhPinyin": "měi rén"
+    "zhPinyin": "měi rén",
+    "mixedExample": "她是一位真正的 beauty 。"
   },
   {
     "id": "unique",
@@ -8318,7 +8947,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23161,
     "selection": "雅思标签选词",
-    "zhPinyin": "dú tè de"
+    "zhPinyin": "dú tè de",
+    "mixedExample": "这些花有一种 unique 气味。"
   },
   {
     "id": "content",
@@ -8332,7 +8962,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33499,
     "selection": "雅思标签选词",
-    "zhPinyin": "nèi róng"
+    "zhPinyin": "nèi róng",
+    "mixedExample": "用自己的语言把课文 content 复述。"
   },
   {
     "id": "declare",
@@ -8346,7 +8977,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2358,
     "selection": "雅思标签选词",
-    "zhPinyin": "shēn bào"
+    "zhPinyin": "shēn bào",
+    "mixedExample": "你有任何要 declare 的东西吗？"
   },
   {
     "id": "appreciate",
@@ -8360,7 +8992,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28464,
     "selection": "雅思标签选词",
-    "zhPinyin": "xīn shǎng"
+    "zhPinyin": "xīn shǎng",
+    "mixedExample": "appreciate 生活中的小事，他们会把你带到更大的目标。"
   },
   {
     "id": "launch",
@@ -8374,7 +9007,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38631,
     "selection": "雅思标签选词",
-    "zhPinyin": "fā shè"
+    "zhPinyin": "fā shè",
+    "mixedExample": "launch 成功。我们正在离开太阳系。"
   },
   {
     "id": "file",
@@ -8388,7 +9022,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21678,
     "selection": "雅思标签选词",
-    "zhPinyin": "wén jiàn"
+    "zhPinyin": "wén jiàn",
+    "mixedExample": "我不知道如何使用.art file 。"
   },
   {
     "id": "outcome",
@@ -8402,7 +9037,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26156,
     "selection": "雅思标签选词",
-    "zhPinyin": "jié guǒ"
+    "zhPinyin": "jié guǒ",
+    "mixedExample": "不管你怎么做， outcome 都一样。"
   },
   {
     "id": "extent",
@@ -8416,7 +9052,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27682,
     "selection": "雅思标签选词",
-    "zhPinyin": "chéng dù"
+    "zhPinyin": "chéng dù",
+    "mixedExample": "要你在多大 extent 上同意或不同意这种说法？"
   },
   {
     "id": "component",
@@ -8430,7 +9067,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43157,
     "selection": "雅思标签选词",
-    "zhPinyin": "zǔ chéng de"
+    "zhPinyin": "zǔ chéng de",
+    "mixedExample": "宗族制度是中国传统文化的重要 component 部分。"
   },
   {
     "id": "capacity",
@@ -8444,7 +9082,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14672,
     "selection": "雅思标签选词",
-    "zhPinyin": "néng lì"
+    "zhPinyin": "néng lì",
+    "mixedExample": "人类适应环境变化的 capacity 很强。"
   },
   {
     "id": "slip",
@@ -8458,7 +9097,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15720,
     "selection": "雅思标签选词",
-    "zhPinyin": "huá dào"
+    "zhPinyin": "huá dào",
+    "mixedExample": "在冬天，很多老人在冰上 slip 。"
   },
   {
     "id": "soil",
@@ -8472,7 +9112,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7711,
     "selection": "雅思标签选词",
-    "zhPinyin": "tǔ rǎng"
+    "zhPinyin": "tǔ rǎng",
+    "mixedExample": "这个 soil 似乎长不出任何东西来。"
   },
   {
     "id": "surgery",
@@ -8486,7 +9127,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27024,
     "selection": "雅思标签选词",
-    "zhPinyin": "shǒu shù"
+    "zhPinyin": "shǒu shù",
+    "mixedExample": "大部份的保险计划不包含整容 surgery 。"
   },
   {
     "id": "blame",
@@ -8500,7 +9142,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15127,
     "selection": "雅思标签选词",
-    "zhPinyin": "guò shī"
+    "zhPinyin": "guò shī",
+    "mixedExample": "比尔承担了损失的 blame 责任。"
   },
   {
     "id": "estimate",
@@ -8514,7 +9157,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7179,
     "selection": "雅思标签选词",
-    "zhPinyin": "gū jì"
+    "zhPinyin": "gū jì",
+    "mixedExample": "我想这工作粗略 estimate 得花上两个星期的时间。"
   },
   {
     "id": "investigate",
@@ -8528,7 +9172,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23903,
     "selection": "雅思标签选词",
-    "zhPinyin": "diào chá"
+    "zhPinyin": "diào chá",
+    "mixedExample": "他宣布他将立刻来 investigate 此事。"
   },
   {
     "id": "branch",
@@ -8542,7 +9187,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3504,
     "selection": "雅思标签选词",
-    "zhPinyin": "shù zhī"
+    "zhPinyin": "shù zhī",
+    "mixedExample": "灯笼在 branch 上吊着。"
   },
   {
     "id": "motion",
@@ -8556,7 +9202,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 22826,
     "selection": "雅思标签选词",
-    "zhPinyin": "dòng zuò"
+    "zhPinyin": "dòng zuò",
+    "mixedExample": "他们用慢 motion 把那一幕播了出来。"
   },
   {
     "id": "equal",
@@ -8570,7 +9217,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26180,
     "selection": "雅思标签选词",
-    "zhPinyin": "píng děng de"
+    "zhPinyin": "píng děng de",
+    "mixedExample": "法律面前人人 equal 。"
   },
   {
     "id": "eliminate",
@@ -8584,7 +9232,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43211,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiāo chú"
+    "zhPinyin": "xiāo chú",
+    "mixedExample": "美国的任务是将共产主义从世界上 eliminate 。"
   },
   {
     "id": "regime",
@@ -8598,7 +9247,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16498,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhèng quán"
+    "zhPinyin": "zhèng quán",
+    "mixedExample": "他的 regime 必定会崩溃。"
   },
   {
     "id": "appeal",
@@ -8612,7 +9262,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11634,
     "selection": "雅思标签选词",
-    "zhPinyin": "hū yù"
+    "zhPinyin": "hū yù",
+    "mixedExample": "我们提出了请求支持的 appeal 。"
   },
   {
     "id": "length",
@@ -8626,7 +9277,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28803,
     "selection": "雅思标签选词",
-    "zhPinyin": "cháng dù"
+    "zhPinyin": "cháng dù",
+    "mixedExample": "她的头发长回原来的 length 了。"
   },
   {
     "id": "rely",
@@ -8640,7 +9292,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45922,
     "selection": "雅思标签选词",
-    "zhPinyin": "yī lài"
+    "zhPinyin": "yī lài",
+    "mixedExample": "阿尔及利亚能 rely 可再生能源吗？"
   },
   {
     "id": "association",
@@ -8654,7 +9307,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6510,
     "selection": "雅思标签选词",
-    "zhPinyin": "xié huì"
+    "zhPinyin": "xié huì",
+    "mixedExample": "我申请成为 association 会员。"
   },
   {
     "id": "confidence",
@@ -8668,7 +9322,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17214,
     "selection": "雅思标签选词",
-    "zhPinyin": "xìn xīn"
+    "zhPinyin": "xìn xīn",
+    "mixedExample": "他对自己没有多少 confidence 。"
   },
   {
     "id": "debt",
@@ -8682,7 +9337,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13249,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhài wù"
+    "zhPinyin": "zhài wù",
+    "mixedExample": "我必须偿还 debt 。"
   },
   {
     "id": "reference",
@@ -8696,7 +9352,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48909,
     "selection": "雅思标签选词",
-    "zhPinyin": "cān kǎo"
+    "zhPinyin": "cān kǎo",
+    "mixedExample": "我会将这则资讯记下来，以便未来 reference 。"
   },
   {
     "id": "grant",
@@ -8710,7 +9367,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2692,
     "selection": "雅思标签选词",
-    "zhPinyin": "chéng rèn"
+    "zhPinyin": "chéng rèn",
+    "mixedExample": "即使我 grant 你说的是真的，但这并不是借口。"
   },
   {
     "id": "minister",
@@ -8724,7 +9382,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44219,
     "selection": "雅思标签选词",
-    "zhPinyin": "gōng shǐ"
+    "zhPinyin": "gōng shǐ",
+    "mixedExample": "我完全无法接受这位 minister 的言论。"
   },
   {
     "id": "industrial",
@@ -8738,7 +9397,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15162,
     "selection": "雅思标签选词",
-    "zhPinyin": "gōng yè de"
+    "zhPinyin": "gōng yè de",
+    "mixedExample": "许多人在 industrial 城市工作。"
   },
   {
     "id": "volume",
@@ -8752,7 +9412,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26400,
     "selection": "雅思标签选词",
-    "zhPinyin": "yīn liàng"
+    "zhPinyin": "yīn liàng",
+    "mixedExample": "你可以把 volume 调低一点吗？"
   },
   {
     "id": "improvement",
@@ -8766,7 +9427,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14182,
     "selection": "雅思标签选词",
-    "zhPinyin": "gǎi shàn"
+    "zhPinyin": "gǎi shàn",
+    "mixedExample": "其实现时的方法还有很大的 improvement 空间。"
   },
   {
     "id": "oppose",
@@ -8780,7 +9442,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33840,
     "selection": "雅思标签选词",
-    "zhPinyin": "fǎn duì"
+    "zhPinyin": "fǎn duì",
+    "mixedExample": "市政府想建设专门的自行车道。但是，很多司机 oppose 这个主意。"
   },
   {
     "id": "essential",
@@ -8794,7 +9457,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31236,
     "selection": "雅思标签选词",
-    "zhPinyin": "bì yào de"
+    "zhPinyin": "bì yào de",
+    "mixedExample": "因为人类是一种群居动物，所以友情是生活里面一个 essential 方面。"
   },
   {
     "id": "resolution",
@@ -8808,7 +9472,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9059,
     "selection": "雅思标签选词",
-    "zhPinyin": "jué xīn"
+    "zhPinyin": "jué xīn",
+    "mixedExample": "到了最后的一刻，我的 resolution 突然动摇了。"
   },
   {
     "id": "witness",
@@ -8822,7 +9487,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33093,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhèng rén"
+    "zhPinyin": "zhèng rén",
+    "mixedExample": "你曾是一宗司法案件的 witness ？"
   },
   {
     "id": "barely",
@@ -8836,7 +9502,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4167,
     "selection": "雅思标签选词",
-    "zhPinyin": "jī hū bù"
+    "zhPinyin": "jī hū bù",
+    "mixedExample": "我 barely 能工作了。"
   },
   {
     "id": "sector",
@@ -8850,7 +9517,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47539,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù mén"
+    "zhPinyin": "bù mén",
+    "mixedExample": "阿尔及利亚需要对其公共 sector 员工进行新技术、沟通技巧和客服方面的培训。"
   },
   {
     "id": "emphasize",
@@ -8864,7 +9532,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4212,
     "selection": "雅思标签选词",
-    "zhPinyin": "qiáng diào"
+    "zhPinyin": "qiáng diào",
+    "mixedExample": "我想特别 emphasize 这一点。"
   },
   {
     "id": "representative",
@@ -8878,7 +9547,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 22438,
     "selection": "雅思标签选词",
-    "zhPinyin": "dài biǎo"
+    "zhPinyin": "dài biǎo",
+    "mixedExample": "他 representative 我们公司出席了会议。"
   },
   {
     "id": "mass",
@@ -8892,7 +9562,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15284,
     "selection": "雅思标签选词",
-    "zhPinyin": "dà liàng"
+    "zhPinyin": "dà liàng",
+    "mixedExample": "mass 生产降低许多商品的价格。"
   },
   {
     "id": "achievement",
@@ -8906,7 +9577,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10486,
     "selection": "雅思标签选词",
-    "zhPinyin": "chéng jiù"
+    "zhPinyin": "chéng jiù",
+    "mixedExample": "登月是一项里程碑式的 achievement 。"
   },
   {
     "id": "accuse",
@@ -8920,7 +9592,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1003,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhǐ zé"
+    "zhPinyin": "zhǐ zé",
+    "mixedExample": "你为什么 accuse 我儿子？"
   },
   {
     "id": "characteristic",
@@ -8934,7 +9607,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8866,
     "selection": "雅思标签选词",
-    "zhPinyin": "tè yǒu de"
+    "zhPinyin": "tè yǒu de",
+    "mixedExample": "极光是极地 characteristic 自然现象。"
   },
   {
     "id": "convince",
@@ -8948,7 +9622,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30967,
     "selection": "雅思标签选词",
-    "zhPinyin": "shuō fú"
+    "zhPinyin": "shuō fú",
+    "mixedExample": "她被要求 convince 他油漆房子。"
   },
   {
     "id": "physician",
@@ -8962,7 +9637,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42122,
     "selection": "雅思标签选词",
-    "zhPinyin": "yī shī"
+    "zhPinyin": "yī shī",
+    "mixedExample": "你是执业 physician 吗？"
   },
   {
     "id": "addition",
@@ -8976,7 +9652,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8928,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiā fǎ"
+    "zhPinyin": "jiā fǎ",
+    "mixedExample": "我的儿子还不懂 addition 。"
   },
   {
     "id": "sharp",
@@ -8990,7 +9667,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30269,
     "selection": "雅思标签选词",
-    "zhPinyin": "mǐn ruì de"
+    "zhPinyin": "mǐn ruì de",
+    "mixedExample": "他的观察是 sharp ，但他没有说太多。"
   },
   {
     "id": "campus",
@@ -9004,7 +9682,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15243,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiào yuán"
+    "zhPinyin": "xiào yuán",
+    "mixedExample": "创校人的雕像在大学 campus 的中心矗立著。"
   },
   {
     "id": "illegal",
@@ -9018,7 +9697,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30237,
     "selection": "雅思标签选词",
-    "zhPinyin": "wéi fǎ de"
+    "zhPinyin": "wéi fǎ de",
+    "mixedExample": "在我的城市的所有花园里，践踏花坛是 illegal 。"
   },
   {
     "id": "signal",
@@ -9032,7 +9712,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17796,
     "selection": "雅思标签选词",
-    "zhPinyin": "xìn hào"
+    "zhPinyin": "xìn hào",
+    "mixedExample": "他给了我们开始的 signal 。"
   },
   {
     "id": "assistance",
@@ -9046,7 +9727,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38288,
     "selection": "雅思标签选词",
-    "zhPinyin": "xié zhù"
+    "zhPinyin": "xié zhù",
+    "mixedExample": "您需要我们的 assistance 吗？"
   },
   {
     "id": "wrap",
@@ -9060,7 +9742,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28100,
     "selection": "雅思标签选词",
-    "zhPinyin": "bāo qǐ lái"
+    "zhPinyin": "bāo qǐ lái",
+    "mixedExample": "可以帮我 wrap 吗？我拿来送人的。"
   },
   {
     "id": "asset",
@@ -9074,7 +9757,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48913,
     "selection": "雅思标签选词",
-    "zhPinyin": "zī chǎn"
+    "zhPinyin": "zī chǎn",
+    "mixedExample": "川普是俄罗斯的 asset 。"
   },
   {
     "id": "suspect",
@@ -9088,7 +9772,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45510,
     "selection": "雅思标签选词",
-    "zhPinyin": "huái yí"
+    "zhPinyin": "huái yí",
+    "mixedExample": "我 suspect 那家酒馆的啤酒兑水了。"
   },
   {
     "id": "observation",
@@ -9102,7 +9787,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36248,
     "selection": "雅思标签选词",
-    "zhPinyin": "guān chá ； guān chá lì"
+    "zhPinyin": "guān chá ； guān chá lì",
+    "mixedExample": "她因为敏锐的 observation ，很适合当一名摄影师。"
   },
   {
     "id": "permit",
@@ -9116,7 +9802,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6669,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǔn xǔ"
+    "zhPinyin": "yǔn xǔ",
+    "mixedExample": "您 permit 我去吗？"
   },
   {
     "id": "priority",
@@ -9130,7 +9817,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49055,
     "selection": "雅思标签选词",
-    "zhPinyin": "yōu xiān"
+    "zhPinyin": "yōu xiān",
+    "mixedExample": "相机品质是我的 priority 考量。"
   },
   {
     "id": "emotion",
@@ -9144,7 +9832,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27669,
     "selection": "雅思标签选词",
-    "zhPinyin": "qíng xù"
+    "zhPinyin": "qíng xù",
+    "mixedExample": "任何 emotion ，只要它是真诚的，就说明它是发自内心的自然流露。"
   },
   {
     "id": "recover",
@@ -9158,7 +9847,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43980,
     "selection": "雅思标签选词",
-    "zhPinyin": "huī fù"
+    "zhPinyin": "huī fù",
+    "mixedExample": "你知道怎么 recover 已删除的文件吗？"
   },
   {
     "id": "violent",
@@ -9172,7 +9862,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23617,
     "selection": "雅思标签选词",
-    "zhPinyin": "bào lì de"
+    "zhPinyin": "bào lì de",
+    "mixedExample": "她现在很 violent 。最好避着点。"
   },
   {
     "id": "portion",
@@ -9186,7 +9877,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28267,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù fèn"
+    "zhPinyin": "bù fèn",
+    "mixedExample": "我们会把一 portion 筹得的款项用来帮助残疾儿童。"
   },
   {
     "id": "territory",
@@ -9200,7 +9892,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27223,
     "selection": "雅思标签选词",
-    "zhPinyin": "lǐng tǔ"
+    "zhPinyin": "lǐng tǔ",
+    "mixedExample": "一个完美的地图必须要像它所代表的 territory 一样大。"
   },
   {
     "id": "opponent",
@@ -9214,7 +9907,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18202,
     "selection": "雅思标签选词",
-    "zhPinyin": "duì shǒu"
+    "zhPinyin": "duì shǒu",
+    "mixedExample": "他把 opponent 击倒了。"
   },
   {
     "id": "tension",
@@ -9228,7 +9922,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49378,
     "selection": "雅思标签选词",
-    "zhPinyin": "yā lì"
+    "zhPinyin": "yā lì",
+    "mixedExample": "每一次转会谈判都是对眼光与耐性的考验，每一个比赛日都充满未知的挑战与 tension 。"
   },
   {
     "id": "bother",
@@ -9242,7 +9937,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40249,
     "selection": "雅思标签选词",
-    "zhPinyin": "má fán"
+    "zhPinyin": "má fán",
+    "mixedExample": "自己可以做的事情，他不喜欢去 bother 别人。"
   },
   {
     "id": "bend",
@@ -9256,7 +9952,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43479,
     "selection": "雅思标签选词",
-    "zhPinyin": "wān qū"
+    "zhPinyin": "wān qū",
+    "mixedExample": "爱因斯坦预测太阳的引力会 bend 光线。"
   },
   {
     "id": "preserve",
@@ -9270,7 +9967,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28659,
     "selection": "雅思标签选词",
-    "zhPinyin": "bǎo hù ； bǎo cún"
+    "zhPinyin": "bǎo hù ； bǎo cún",
+    "mixedExample": "最近，有些胡同被指定为保护区，以试图 preserve 这方面的中国文化历史。"
   },
   {
     "id": "transition",
@@ -9284,7 +9982,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48220,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhuǎn biàn"
+    "zhPinyin": "zhuǎn biàn",
+    "mixedExample": "由硬体到软体的 transition 是缓慢的。"
   },
   {
     "id": "existence",
@@ -9298,7 +9997,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33320,
     "selection": "雅思标签选词",
-    "zhPinyin": "cún zài"
+    "zhPinyin": "cún zài",
+    "mixedExample": "四分之三的美国人相信 existence 超自然现象。"
   },
   {
     "id": "deserve",
@@ -9312,7 +10012,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36130,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhí de"
+    "zhPinyin": "zhí de",
+    "mixedExample": "她的想法不 deserve 一听。"
   },
   {
     "id": "pose",
@@ -9326,7 +10027,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29936,
     "selection": "雅思标签选词",
-    "zhPinyin": "tí chū"
+    "zhPinyin": "tí chū",
+    "mixedExample": "当你 pose 一个问题，你期望得到答案。"
   },
   {
     "id": "resolve",
@@ -9340,7 +10042,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28487,
     "selection": "雅思标签选词",
-    "zhPinyin": "jué xīn"
+    "zhPinyin": "jué xīn",
+    "mixedExample": "如果你没 resolve 做好男人,那你就得不到好女人。"
   },
   {
     "id": "phase",
@@ -9354,7 +10057,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8584,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiē duàn"
+    "zhPinyin": "jiē duàn",
+    "mixedExample": "癌症如果在第一 phase 被发现的话是很容易治愈的。"
   },
   {
     "id": "dust",
@@ -9368,7 +10072,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25496,
     "selection": "雅思标签选词",
-    "zhPinyin": "huī chén ； huā fěn"
+    "zhPinyin": "huī chén ； huā fěn",
+    "mixedExample": "你可能对花粉或 dust 过敏。"
   },
   {
     "id": "practical",
@@ -9382,7 +10087,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14188,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiàn shí de"
+    "zhPinyin": "xiàn shí de",
+    "mixedExample": "从 practical 角度看，他的计划有很多缺点。"
   },
   {
     "id": "passion",
@@ -9396,7 +10102,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14010,
     "selection": "雅思标签选词",
-    "zhPinyin": "jī qíng"
+    "zhPinyin": "jī qíng",
+    "mixedExample": "诗人对他爱的女人表达了他火热的 passion 。"
   },
   {
     "id": "implement",
@@ -9410,7 +10117,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37822,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhí xíng"
+    "zhPinyin": "zhí xíng",
+    "mixedExample": "关于这个产品，我公司将 implement 新的价格标准。"
   },
   {
     "id": "gene",
@@ -9424,7 +10132,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27800,
     "selection": "雅思标签选词",
-    "zhPinyin": "jī yīn"
+    "zhPinyin": "jī yīn",
+    "mixedExample": "一些疾病的产生原因是 gene 缺陷。"
   },
   {
     "id": "independence",
@@ -9438,7 +10147,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33426,
     "selection": "雅思标签选词",
-    "zhPinyin": "dú lì"
+    "zhPinyin": "dú lì",
+    "mixedExample": "约阿夫行动是以色列 independence 战争中的一次作战行动。"
   },
   {
     "id": "shock",
@@ -9452,7 +10162,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20252,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhèn jīng"
+    "zhPinyin": "zhèn jīng",
+    "mixedExample": "她从她父亲过世的 shock 中恢复了。"
   },
   {
     "id": "competitive",
@@ -9466,7 +10177,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15903,
     "selection": "雅思标签选词",
-    "zhPinyin": "jìng zhēng de"
+    "zhPinyin": "jìng zhēng de",
+    "mixedExample": "日本在高科技产业方面的 competitive 力很强。"
   },
   {
     "id": "attach",
@@ -9480,7 +10192,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20466,
     "selection": "雅思标签选词",
-    "zhPinyin": "fù shàng"
+    "zhPinyin": "fù shàng",
+    "mixedExample": "请 attach 质量证明书。"
   },
   {
     "id": "complaint",
@@ -9494,7 +10207,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20484,
     "selection": "雅思标签选词",
-    "zhPinyin": "bào yuàn"
+    "zhPinyin": "bào yuàn",
+    "mixedExample": "没有理由 complaint 。"
   },
   {
     "id": "fundamental",
@@ -9508,7 +10222,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21543,
     "selection": "雅思标签选词",
-    "zhPinyin": "jī běn de"
+    "zhPinyin": "jī běn de",
+    "mixedExample": "无须多言， fundamental 人权应当被尊重。"
   },
   {
     "id": "poverty",
@@ -9522,7 +10237,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47174,
     "selection": "雅思标签选词",
-    "zhPinyin": "pín qióng"
+    "zhPinyin": "pín qióng",
+    "mixedExample": "我受够了你的反科学 poverty 。"
   },
   {
     "id": "entry",
@@ -9536,7 +10252,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31361,
     "selection": "雅思标签选词",
-    "zhPinyin": "jìn rù"
+    "zhPinyin": "jìn rù",
+    "mixedExample": "无视于\" 禁止 entry \" 的牌子，她推开了门走进去。"
   },
   {
     "id": "mood",
@@ -9550,7 +10267,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47817,
     "selection": "雅思标签选词",
-    "zhPinyin": "xīn qíng"
+    "zhPinyin": "xīn qíng",
+    "mixedExample": "你今天早上为什么 mood 这么差？"
   },
   {
     "id": "accomplish",
@@ -9564,7 +10282,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18433,
     "selection": "雅思标签选词",
-    "zhPinyin": "dá dào"
+    "zhPinyin": "dá dào",
+    "mixedExample": "他很肯定可以 accomplish 目标。"
   },
   {
     "id": "entertainment",
@@ -9578,7 +10297,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49411,
     "selection": "雅思标签选词",
-    "zhPinyin": "yú lè"
+    "zhPinyin": "yú lè",
+    "mixedExample": "韩国的 entertainment 文化在全球都很受欢迎。"
   },
   {
     "id": "concentrate",
@@ -9592,7 +10312,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11215,
     "selection": "雅思标签选词",
-    "zhPinyin": "jí zhōng"
+    "zhPinyin": "jí zhōng",
+    "mixedExample": "由于噪音，我无法 concentrate 精力工作了。"
   },
   {
     "id": "anger",
@@ -9606,7 +10327,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14280,
     "selection": "雅思标签选词",
-    "zhPinyin": "jī nù"
+    "zhPinyin": "jī nù",
+    "mixedExample": "总理的发言估计 anger 了在野党。"
   },
   {
     "id": "constant",
@@ -9620,7 +10342,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 415,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù biàn de"
+    "zhPinyin": "bù biàn de",
+    "mixedExample": "尽管庄不断发誓她 constant 爱情，斯宾塞仍然害怕有一天她会不爱他了。"
   },
   {
     "id": "clinic",
@@ -9634,7 +10357,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49063,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhěn suǒ"
+    "zhPinyin": "zhěn suǒ",
+    "mixedExample": "一家新的健康 clinic 将于下个月开幕。"
   },
   {
     "id": "exception",
@@ -9648,7 +10372,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10790,
     "selection": "雅思标签选词",
-    "zhPinyin": "lì wài"
+    "zhPinyin": "lì wài",
+    "mixedExample": "这个月一直都很热，但今天是个 exception 。"
   },
   {
     "id": "objective",
@@ -9662,7 +10387,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20829,
     "selection": "雅思标签选词",
-    "zhPinyin": "mù biāo"
+    "zhPinyin": "mù biāo",
+    "mixedExample": "法律的 objective 是正义。"
   },
   {
     "id": "reputation",
@@ -9676,7 +10402,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49846,
     "selection": "雅思标签选词",
-    "zhPinyin": "míng yù"
+    "zhPinyin": "míng yù",
+    "mixedExample": "媒体抹黑了他的 reputation 。"
   },
   {
     "id": "mixture",
@@ -9690,7 +10417,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1545,
     "selection": "雅思标签选词",
-    "zhPinyin": "hùn hé ； hùn hé wù"
+    "zhPinyin": "hùn hé ； hùn hé wù",
+    "mixedExample": "空气是由许多种气体组成的 mixture 。"
   },
   {
     "id": "pure",
@@ -9704,7 +10432,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48244,
     "selection": "雅思标签选词",
-    "zhPinyin": "chún jìng de"
+    "zhPinyin": "chún jìng de",
+    "mixedExample": "心灵 pure 时，喜悦便如影随形。"
   },
   {
     "id": "accompany",
@@ -9718,7 +10447,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19025,
     "selection": "雅思标签选词",
-    "zhPinyin": "bàn zòu"
+    "zhPinyin": "bàn zòu",
+    "mixedExample": "她会弹钢琴为我 accompany 。"
   },
   {
     "id": "retirement",
@@ -9732,7 +10462,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28324,
     "selection": "雅思标签选词",
-    "zhPinyin": "tuì xiū"
+    "zhPinyin": "tuì xiū",
+    "mixedExample": "从大学毕业到 retirement ，老王一直担任教学工作。"
   },
   {
     "id": "throat",
@@ -9746,7 +10477,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3205,
     "selection": "雅思标签选词",
-    "zhPinyin": "hóu lóng"
+    "zhPinyin": "hóu lóng",
+    "mixedExample": "医生检查了我的 throat 。"
   },
   {
     "id": "permanent",
@@ -9760,7 +10492,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1175,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǒng jiǔ de"
+    "zhPinyin": "yǒng jiǔ de",
+    "mixedExample": "请给我你的 permanent 地址。"
   },
   {
     "id": "phenomenon",
@@ -9774,7 +10507,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15865,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiàn xiàng"
+    "zhPinyin": "xiàn xiàng",
+    "mixedExample": "彩虹是一种自然 phenomenon 。"
   },
   {
     "id": "install",
@@ -9788,7 +10522,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6138,
     "selection": "雅思标签选词",
-    "zhPinyin": "ān zhuāng"
+    "zhPinyin": "ān zhuāng",
+    "mixedExample": "这男人试着 install 他自己的天线。"
   },
   {
     "id": "sensitive",
@@ -9802,7 +10537,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36092,
     "selection": "雅思标签选词",
-    "zhPinyin": "mǐn gǎn de"
+    "zhPinyin": "mǐn gǎn de",
+    "mixedExample": "这颗牙对冷的食物 sensitive 吗？"
   },
   {
     "id": "reasonable",
@@ -9816,7 +10552,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5491,
     "selection": "雅思标签选词",
-    "zhPinyin": "hé lǐ de"
+    "zhPinyin": "hé lǐ de",
+    "mixedExample": "这个价格不 reasonable 。"
   },
   {
     "id": "channel",
@@ -9830,7 +10567,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16743,
     "selection": "雅思标签选词",
-    "zhPinyin": "hǎi xiá"
+    "zhPinyin": "hǎi xiá",
+    "mixedExample": "他是游过英吉利 channel 的唯一一个美国人。"
   },
   {
     "id": "jail",
@@ -9844,7 +10582,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46648,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiān yù"
+    "zhPinyin": "jiān yù",
+    "mixedExample": "我不会那样做的，因为我不想进 jail 。"
   },
   {
     "id": "pace",
@@ -9858,7 +10597,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30678,
     "selection": "雅思标签选词",
-    "zhPinyin": "sù dù"
+    "zhPinyin": "sù dù",
+    "mixedExample": "看到这个以后，我不得不想到：北京的居民能跟上那么快的 pace 吗？"
   },
   {
     "id": "employment",
@@ -9872,7 +10612,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19465,
     "selection": "雅思标签选词",
-    "zhPinyin": "gōng zuò"
+    "zhPinyin": "gōng zuò",
+    "mixedExample": "她找到打字员的 employment 。"
   },
   {
     "id": "approval",
@@ -9886,7 +10627,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41858,
     "selection": "雅思标签选词",
-    "zhPinyin": "zàn chéng"
+    "zhPinyin": "zàn chéng",
+    "mixedExample": "就像马克·诺弗勒早期演唱的歌曲《金钱无用》一样，绝大多数的人依然高呼 approval “金钱无用论”。"
   },
   {
     "id": "depth",
@@ -9900,7 +10642,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47660,
     "selection": "雅思标签选词",
-    "zhPinyin": "shēn dù"
+    "zhPinyin": "shēn dù",
+    "mixedExample": "安娜引人注目的杏仁状眼睛继承了她的亚洲血统，散发著迷人的 depth 和一丝神秘感。"
   },
   {
     "id": "shell",
@@ -9914,7 +10657,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26403,
     "selection": "雅思标签选词",
-    "zhPinyin": "bèi ké"
+    "zhPinyin": "bèi ké",
+    "mixedExample": "我在海边捡了个漂亮 shell 。"
   },
   {
     "id": "effectively",
@@ -9928,7 +10672,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3250,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǒu xiào dì"
+    "zhPinyin": "yǒu xiào dì",
+    "mixedExample": "要和他们 effectively 沟通，只懂得说他们的语言是不够的，因为沟通的方式是由他们的文化来决定的。"
   },
   {
     "id": "deputy",
@@ -9942,7 +10687,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11436,
     "selection": "雅思标签选词",
-    "zhPinyin": "dài lǐ rén"
+    "zhPinyin": "dài lǐ rén",
+    "mixedExample": "我不在的时候，他将是我的 deputy 。"
   },
   {
     "id": "brand",
@@ -9956,7 +10702,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44193,
     "selection": "雅思标签选词",
-    "zhPinyin": "pái zi"
+    "zhPinyin": "pái zi",
+    "mixedExample": "这个 brand 的包包太贵了。"
   },
   {
     "id": "nevertheless",
@@ -9970,7 +10717,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13724,
     "selection": "雅思标签选词",
-    "zhPinyin": "rán ér"
+    "zhPinyin": "rán ér",
+    "mixedExample": "我很累,  nevertheless , 我必须完成我的回家作业。"
   },
   {
     "id": "ingredient",
@@ -9984,7 +10732,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47414,
     "selection": "雅思标签选词",
-    "zhPinyin": "chéng fèn"
+    "zhPinyin": "chéng fèn",
+    "mixedExample": "虽然配料表中未列出坚果和花生，但饼干中仍可能含有这些 ingredient 。。"
   },
   {
     "id": "fiber",
@@ -9998,7 +10747,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3627,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiān wéi"
+    "zhPinyin": "xiān wéi",
+    "mixedExample": "你要吃多点含膳食 fiber 的食物。"
   },
   {
     "id": "corporation",
@@ -10012,7 +10762,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29697,
     "selection": "雅思标签选词",
-    "zhPinyin": "gōng sī"
+    "zhPinyin": "gōng sī",
+    "mixedExample": "跨国 corporation 预料到了规模经济的实行。"
   },
   {
     "id": "switch",
@@ -10026,7 +10777,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19639,
     "selection": "雅思标签选词",
-    "zhPinyin": "kāi guān"
+    "zhPinyin": "kāi guān",
+    "mixedExample": "她摸黑摸不到灯的 switch 。"
   },
   {
     "id": "council",
@@ -10040,7 +10792,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42789,
     "selection": "雅思标签选词",
-    "zhPinyin": "wěi yuán huì"
+    "zhPinyin": "wěi yuán huì",
+    "mixedExample": "你应该去竞选城市 council 。"
   },
   {
     "id": "index",
@@ -10054,7 +10807,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32403,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhǐ shù"
+    "zhPinyin": "zhǐ shù",
+    "mixedExample": "这项应用程序能让你快速计算身高体重 index （BMI）。"
   },
   {
     "id": "advocate",
@@ -10068,7 +10822,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 35274,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhǔ zhāng"
+    "zhPinyin": "zhǔ zhāng",
+    "mixedExample": "中国 advocate 钓鱼岛的主权。"
   },
   {
     "id": "draft",
@@ -10082,7 +10837,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 12452,
     "selection": "雅思标签选词",
-    "zhPinyin": "cǎo gǎo"
+    "zhPinyin": "cǎo gǎo",
+    "mixedExample": "我在写演讲的 draft 。"
   },
   {
     "id": "rough",
@@ -10096,7 +10852,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6019,
     "selection": "雅思标签选词",
-    "zhPinyin": "cū cāo de"
+    "zhPinyin": "cū cāo de",
+    "mixedExample": "这件物件的表面颇为 rough 。"
   },
   {
     "id": "pregnant",
@@ -10110,7 +10867,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44408,
     "selection": "雅思标签选词",
-    "zhPinyin": "huái yùn de"
+    "zhPinyin": "huái yùn de",
+    "mixedExample": "她 pregnant 后仍然坚持工作。"
   },
   {
     "id": "satellite",
@@ -10124,7 +10882,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40270,
     "selection": "雅思标签选词",
-    "zhPinyin": "rén zào wèi xīng"
+    "zhPinyin": "rén zào wèi xīng",
+    "mixedExample": "satellite 从河内上空飞过。"
   },
   {
     "id": "yield",
@@ -10138,7 +10897,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21309,
     "selection": "雅思标签选词",
-    "zhPinyin": "qū fú"
+    "zhPinyin": "qū fú",
+    "mixedExample": "你不应该 yield 在诱惑之下。"
   },
   {
     "id": "survival",
@@ -10152,7 +10912,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15250,
     "selection": "雅思标签选词",
-    "zhPinyin": "shēng cún"
+    "zhPinyin": "shēng cún",
+    "mixedExample": "空气污染将会威胁我们的 survival 。"
   },
   {
     "id": "cooperation",
@@ -10166,7 +10927,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48848,
     "selection": "雅思标签选词",
-    "zhPinyin": "hé zuò"
+    "zhPinyin": "hé zuò",
+    "mixedExample": "市政府举行了一次大型公会，旨在促进跨部门 cooperation 。"
   },
   {
     "id": "ceremony",
@@ -10180,7 +10942,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20882,
     "selection": "雅思标签选词",
-    "zhPinyin": "lǐ jié"
+    "zhPinyin": "lǐ jié",
+    "mixedExample": "我们老师确实很讲究 ceremony ，不是吗？"
   },
   {
     "id": "unlikely",
@@ -10194,7 +10957,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45689,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù tài kě néng de"
+    "zhPinyin": "bù tài kě néng de",
+    "mixedExample": "我觉得汤姆 unlikely 会当选。"
   },
   {
     "id": "tissue",
@@ -10208,7 +10972,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40370,
     "selection": "雅思标签选词",
-    "zhPinyin": "zǔ zhī"
+    "zhPinyin": "zǔ zhī",
+    "mixedExample": "人体的 tissue 是由细胞构成的。"
   },
   {
     "id": "cabinet",
@@ -10222,7 +10987,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5441,
     "selection": "雅思标签选词",
-    "zhPinyin": "chú guì"
+    "zhPinyin": "chú guì",
+    "mixedExample": "桌布在 cabinet 里。"
   },
   {
     "id": "proceed",
@@ -10236,7 +11002,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1837,
     "selection": "雅思标签选词",
-    "zhPinyin": "jì xù jìn xíng ； jìn xíng"
+    "zhPinyin": "jì xù jìn xíng ； jìn xíng",
+    "mixedExample": "让我们 proceed 议程上的项目。"
   },
   {
     "id": "remarkable",
@@ -10250,7 +11017,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37149,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiǎn zhù de"
+    "zhPinyin": "xiǎn zhù de",
+    "mixedExample": "这家公司去年获得 remarkable 营业额增长。"
   },
   {
     "id": "encounter",
@@ -10264,7 +11032,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21614,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiāng yù"
+    "zhPinyin": "xiāng yù",
+    "mixedExample": "与她的 encounter 丰富了他的精神生活。"
   },
   {
     "id": "port",
@@ -10278,7 +11047,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49229,
     "selection": "雅思标签选词",
-    "zhPinyin": "gǎng kǒu"
+    "zhPinyin": "gǎng kǒu",
+    "mixedExample": "高雄是台湾的最大 port 城市。"
   },
   {
     "id": "genetic",
@@ -10292,7 +11062,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30044,
     "selection": "雅思标签选词",
-    "zhPinyin": "yí chuán de"
+    "zhPinyin": "yí chuán de",
+    "mixedExample": "通过 genetic 修饰，我们可以改良农作物。"
   },
   {
     "id": "solar",
@@ -10306,7 +11077,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21232,
     "selection": "雅思标签选词",
-    "zhPinyin": "tài yáng de"
+    "zhPinyin": "tài yáng de",
+    "mixedExample": "问题是,  solar 能太贵了。"
   },
   {
     "id": "interpret",
@@ -10320,7 +11092,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45180,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiě shì"
+    "zhPinyin": "jiě shì",
+    "mixedExample": "这几个字该怎么 interpret ？"
   },
   {
     "id": "champion",
@@ -10334,7 +11107,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9286,
     "selection": "雅思标签选词",
-    "zhPinyin": "guàn jūn"
+    "zhPinyin": "guàn jūn",
+    "mixedExample": "大家都渴望知道前 champion 得主发生了什么。"
   },
   {
     "id": "telescope",
@@ -10348,7 +11122,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10544,
     "selection": "雅思标签选词",
-    "zhPinyin": "wàng yuǎn jìng"
+    "zhPinyin": "wàng yuǎn jìng",
+    "mixedExample": "你知道显微镜和 telescope 有甚么分别吗？"
   },
   {
     "id": "tournament",
@@ -10362,7 +11137,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6165,
     "selection": "雅思标签选词",
-    "zhPinyin": "bǐ sài"
+    "zhPinyin": "bǐ sài",
+    "mixedExample": "那位选手在这次 tournament 中取得了三连胜。"
   },
   {
     "id": "recommendation",
@@ -10376,7 +11152,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47312,
     "selection": "雅思标签选词",
-    "zhPinyin": "tuī jiàn"
+    "zhPinyin": "tuī jiàn",
+    "mixedExample": "多亏了你的 recommendation ，汤姆得到了那份工作。"
   },
   {
     "id": "guarantee",
@@ -10390,7 +11167,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7812,
     "selection": "雅思标签选词",
-    "zhPinyin": "bǎo zhèng"
+    "zhPinyin": "bǎo zhèng",
+    "mixedExample": "我 guarantee 这些资料是无误的。"
   },
   {
     "id": "innocent",
@@ -10404,7 +11182,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44225,
     "selection": "雅思标签选词",
-    "zhPinyin": "wú zuì de"
+    "zhPinyin": "wú zuì de",
+    "mixedExample": "法庭宣判被告 innocent 。"
   },
   {
     "id": "boundary",
@@ -10418,7 +11197,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21489,
     "selection": "雅思标签选词",
-    "zhPinyin": "fēn jiè xiàn"
+    "zhPinyin": "fēn jiè xiàn",
+    "mixedExample": "我家和邻居家以院子之间的篱笆为 boundary 。"
   },
   {
     "id": "satisfaction",
@@ -10432,7 +11212,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33049,
     "selection": "雅思标签选词",
-    "zhPinyin": "mǎn zú"
+    "zhPinyin": "mǎn zú",
+    "mixedExample": "无论读书的目的是什么，书总会带给我们乐趣和 satisfaction 。"
   },
   {
     "id": "journal",
@@ -10446,7 +11227,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 22425,
     "selection": "雅思标签选词",
-    "zhPinyin": "rì jì"
+    "zhPinyin": "rì jì",
+    "mixedExample": "我爸爸每天都记 journal 。"
   },
   {
     "id": "deck",
@@ -10460,7 +11242,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20112,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiǎ bǎn"
+    "zhPinyin": "jiǎ bǎn",
+    "mixedExample": "她坐在 deck 上，长头发随风飞舞。"
   },
   {
     "id": "delivery",
@@ -10474,7 +11257,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37651,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiāo huò"
+    "zhPinyin": "jiāo huò",
+    "mixedExample": "已经错过了 delivery 时间了，接来下该怎么办？"
   },
   {
     "id": "diverse",
@@ -10488,7 +11272,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48258,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù tóng de"
+    "zhPinyin": "bù tóng de",
+    "mixedExample": "这是一片肥沃的土地，居住著 diverse 民族。"
   },
   {
     "id": "counter",
@@ -10502,7 +11287,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39320,
     "selection": "雅思标签选词",
-    "zhPinyin": "guì tái"
+    "zhPinyin": "guì tái",
+    "mixedExample": "我可以在哪个 counter 预约?"
   },
   {
     "id": "treaty",
@@ -10516,7 +11302,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42650,
     "selection": "雅思标签选词",
-    "zhPinyin": "tán pàn"
+    "zhPinyin": "tán pàn",
+    "mixedExample": "treaty 没有成功。"
   },
   {
     "id": "crash",
@@ -10530,7 +11317,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49767,
     "selection": "雅思标签选词",
-    "zhPinyin": "bēng kuì"
+    "zhPinyin": "bēng kuì",
+    "mixedExample": "为什么电脑一跑程序，就 crash ？还不是因为我没钱买好电脑。"
   },
   {
     "id": "fault",
@@ -10544,7 +11332,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7020,
     "selection": "雅思标签选词",
-    "zhPinyin": "máo bìng"
+    "zhPinyin": "máo bìng",
+    "mixedExample": "杰克很喜欢挑别人的 fault ，所以没有人愿意和他交朋友。"
   },
   {
     "id": "confident",
@@ -10558,7 +11347,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31694,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǒu xìn xīn de"
+    "zhPinyin": "yǒu xìn xīn de",
+    "mixedExample": "我们 confident 获胜。"
   },
   {
     "id": "shelter",
@@ -10572,7 +11362,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34368,
     "selection": "雅思标签选词",
-    "zhPinyin": "duǒ bì"
+    "zhPinyin": "duǒ bì",
+    "mixedExample": "一个牧羊人把赶着全身盖白雪的山羊进去被遗弃的山洞 shelter 暴风雪。"
   },
   {
     "id": "entrance",
@@ -10586,7 +11377,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6438,
     "selection": "雅思标签选词",
-    "zhPinyin": "rù kǒu"
+    "zhPinyin": "rù kǒu",
+    "mixedExample": "请在建筑的 entrance 处等我。"
   },
   {
     "id": "tragedy",
@@ -10600,7 +11392,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28414,
     "selection": "雅思标签选词",
-    "zhPinyin": "bēi jù"
+    "zhPinyin": "bēi jù",
+    "mixedExample": "这将是一个可怕的 tragedy 。"
   },
   {
     "id": "profession",
@@ -10614,7 +11407,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16482,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhí yè"
+    "zhPinyin": "zhí yè",
+    "mixedExample": "他的 profession 是医生。"
   },
   {
     "id": "constitute",
@@ -10628,7 +11422,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7345,
     "selection": "雅思标签选词",
-    "zhPinyin": "gòu chéng"
+    "zhPinyin": "gòu chéng",
+    "mixedExample": "这些东西 constitute 了一顿营养均衡的饭。"
   },
   {
     "id": "mask",
@@ -10642,7 +11437,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18163,
     "selection": "雅思标签选词",
-    "zhPinyin": "miàn jù"
+    "zhPinyin": "miàn jù",
+    "mixedExample": "他戴著 mask 以至于没有人认出他。"
   },
   {
     "id": "convert",
@@ -10656,7 +11452,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23131,
     "selection": "雅思标签选词",
-    "zhPinyin": "guī yī"
+    "zhPinyin": "guī yī",
+    "mixedExample": "他新近 convert 的天主教徒。"
   },
   {
     "id": "regardless",
@@ -10670,7 +11467,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36451,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù guǎn"
+    "zhPinyin": "bù guǎn",
+    "mixedExample": "regardless 您明天来不来，请通知我。"
   },
   {
     "id": "steady",
@@ -10684,7 +11482,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14679,
     "selection": "雅思标签选词",
-    "zhPinyin": "wěn dìng de"
+    "zhPinyin": "wěn dìng de",
+    "mixedExample": "人口 steady 地增加。"
   },
   {
     "id": "vital",
@@ -10698,7 +11497,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 521,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhòng yào de"
+    "zhPinyin": "zhòng yào de",
+    "mixedExample": "摩天大厦里的电梯是至关 vital 。"
   },
   {
     "id": "radical",
@@ -10712,7 +11512,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19458,
     "selection": "雅思标签选词",
-    "zhPinyin": "jī jìn de"
+    "zhPinyin": "jī jìn de",
+    "mixedExample": "她对于这个问题有很 radical 意见。"
   },
   {
     "id": "adapt",
@@ -10726,7 +11527,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14672,
     "selection": "雅思标签选词",
-    "zhPinyin": "shì yìng"
+    "zhPinyin": "shì yìng",
+    "mixedExample": "人类 adapt 环境变化的能力很强。"
   },
   {
     "id": "evolution",
@@ -10740,7 +11542,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2298,
     "selection": "雅思标签选词",
-    "zhPinyin": "jìn huà"
+    "zhPinyin": "jìn huà",
+    "mixedExample": "一提到 evolution 论，我们就会想起达尔文。"
   },
   {
     "id": "tribe",
@@ -10754,7 +11557,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30632,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù luò"
+    "zhPinyin": "bù luò",
+    "mixedExample": "埃翁多语是客麦隆埃翁多 tribe 所说的语言。"
   },
   {
     "id": "lawn",
@@ -10768,7 +11572,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15631,
     "selection": "雅思标签选词",
-    "zhPinyin": "cǎo píng"
+    "zhPinyin": "cǎo píng",
+    "mixedExample": "如果天气情况允许的话，我明天就去割 lawn 。"
   },
   {
     "id": "wisdom",
@@ -10782,7 +11587,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 388,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhì huì"
+    "zhPinyin": "zhì huì",
+    "mixedExample": "要用 wisdom 来理解智慧：如果听众是聋的话，那音乐什么都不是。"
   },
   {
     "id": "fantasy",
@@ -10796,7 +11602,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10568,
     "selection": "雅思标签选词",
-    "zhPinyin": "huàn xiǎng"
+    "zhPinyin": "huàn xiǎng",
+    "mixedExample": "现实和 fantasy 是很难区分的。"
   },
   {
     "id": "divorce",
@@ -10810,7 +11617,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8628,
     "selection": "雅思标签选词",
-    "zhPinyin": "lí hūn"
+    "zhPinyin": "lí hūn",
+    "mixedExample": "天主教教会反对 divorce 。"
   },
   {
     "id": "slight",
@@ -10824,7 +11632,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21318,
     "selection": "雅思标签选词",
-    "zhPinyin": "qīng wēi de"
+    "zhPinyin": "qīng wēi de",
+    "mixedExample": "我昨晚有 slight 头痛。"
   },
   {
     "id": "obligation",
@@ -10838,7 +11647,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15014,
     "selection": "雅思标签选词",
-    "zhPinyin": "yì wù"
+    "zhPinyin": "yì wù",
+    "mixedExample": "每一位选手都有 obligation 遵守规则。"
   },
   {
     "id": "differ",
@@ -10852,7 +11662,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9835,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù tóng"
+    "zhPinyin": "bù tóng",
+    "mixedExample": "恐怕就这点上，我和你持 differ 意见。"
   },
   {
     "id": "palm",
@@ -10866,7 +11677,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42837,
     "selection": "雅思标签选词",
-    "zhPinyin": "zōng lǘ"
+    "zhPinyin": "zōng lǘ",
+    "mixedExample": "palm 树最高是多高？"
   },
   {
     "id": "custom",
@@ -10880,7 +11692,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15517,
     "selection": "雅思标签选词",
-    "zhPinyin": "xí guàn"
+    "zhPinyin": "xí guàn",
+    "mixedExample": "我 custom 早餐之前出去散步。"
   },
   {
     "id": "efficient",
@@ -10894,7 +11707,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29984,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǒu xiào lǜ de"
+    "zhPinyin": "yǒu xiào lǜ de",
+    "mixedExample": "随著人们年龄的增长，其脑细胞就变得比较没 efficient 。"
   },
   {
     "id": "scheme",
@@ -10908,7 +11722,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6450,
     "selection": "雅思标签选词",
-    "zhPinyin": "jì huà"
+    "zhPinyin": "jì huà",
+    "mixedExample": "没有你帮忙， scheme 就不能成功了。"
   },
   {
     "id": "trace",
@@ -10922,7 +11737,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36176,
     "selection": "雅思标签选词",
-    "zhPinyin": "hén jì"
+    "zhPinyin": "hén jì",
+    "mixedExample": "桌子上有个 trace 。"
   },
   {
     "id": "appointment",
@@ -10936,7 +11752,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17714,
     "selection": "雅思标签选词",
-    "zhPinyin": "yuē huì"
+    "zhPinyin": "yuē huì",
+    "mixedExample": "他到了最后的一刻才取消了 appointment 。"
   },
   {
     "id": "explosion",
@@ -10950,7 +11767,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6051,
     "selection": "雅思标签选词",
-    "zhPinyin": "bào zhà"
+    "zhPinyin": "bào zhà",
+    "mixedExample": "这场 explosion 有可能是瓦斯外泄引起的。"
   },
   {
     "id": "admission",
@@ -10964,7 +11782,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7677,
     "selection": "雅思标签选词",
-    "zhPinyin": "rù chǎng fèi"
+    "zhPinyin": "rù chǎng fèi",
+    "mixedExample": "博物馆 admission 是三十美元。"
   },
   {
     "id": "infant",
@@ -10978,7 +11797,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6275,
     "selection": "雅思标签选词",
-    "zhPinyin": "yīng ér"
+    "zhPinyin": "yīng ér",
+    "mixedExample": "那个年轻女人手抱著 infant 。"
   },
   {
     "id": "tendency",
@@ -10992,7 +11812,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19100,
     "selection": "雅思标签选词",
-    "zhPinyin": "qīng xiàng"
+    "zhPinyin": "qīng xiàng",
+    "mixedExample": "在我看来，她有一种夸张的 tendency 。"
   },
   {
     "id": "reservation",
@@ -11006,7 +11827,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7529,
     "selection": "雅思标签选词",
-    "zhPinyin": "yù dìng"
+    "zhPinyin": "yù dìng",
+    "mixedExample": "我能 reservation 一下打高尔夫球吗？"
   },
   {
     "id": "scandal",
@@ -11020,7 +11842,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6613,
     "selection": "雅思标签选词",
-    "zhPinyin": "chǒu wén"
+    "zhPinyin": "chǒu wén",
+    "mixedExample": "scandal 让他付出了失去声誉的代价。"
   },
   {
     "id": "fabric",
@@ -11034,7 +11857,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27861,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhī wù"
+    "zhPinyin": "zhī wù",
+    "mixedExample": "这件衣服是由薄 fabric 制成的。"
   },
   {
     "id": "contest",
@@ -11048,7 +11872,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 22075,
     "selection": "雅思标签选词",
-    "zhPinyin": "jìng sài"
+    "zhPinyin": "jìng sài",
+    "mixedExample": "我爸爸参加了料理 contest 并得了第一名。"
   },
   {
     "id": "organic",
@@ -11062,7 +11887,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28515,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǒu jī de"
+    "zhPinyin": "yǒu jī de",
+    "mixedExample": "一些人只买 organic 食物，他们认为这样可以使他们的健康不受污染的损害。"
   },
   {
     "id": "strengthen",
@@ -11076,7 +11902,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49268,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiā qiáng"
+    "zhPinyin": "jiā qiáng",
+    "mixedExample": "文化交流计划可以 strengthen 邻国之间的友好关系。"
   },
   {
     "id": "myth",
@@ -11090,7 +11917,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6203,
     "selection": "雅思标签选词",
-    "zhPinyin": "shén huà"
+    "zhPinyin": "shén huà",
+    "mixedExample": "myth 让我们能透悉古文明。"
   },
   {
     "id": "sufficient",
@@ -11104,7 +11932,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28521,
     "selection": "雅思标签选词",
-    "zhPinyin": "zú gòu de"
+    "zhPinyin": "zú gòu de",
+    "mixedExample": "我还没有收集到 sufficient 材料来写一本书。"
   },
   {
     "id": "helicopter",
@@ -11118,7 +11947,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14809,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhí shēng jī"
+    "zhPinyin": "zhí shēng jī",
+    "mixedExample": "政府用 helicopter 把物资送到了那个小岛。"
   },
   {
     "id": "delay",
@@ -11132,7 +11962,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15645,
     "selection": "雅思标签选词",
-    "zhPinyin": "yán chí"
+    "zhPinyin": "yán chí",
+    "mixedExample": "因为天气的关系，赛跑比赛将会 delay 。"
   },
   {
     "id": "horizon",
@@ -11146,7 +11977,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5463,
     "selection": "雅思标签选词",
-    "zhPinyin": "dì píng xiàn"
+    "zhPinyin": "dì píng xiàn",
+    "mixedExample": "月亮已从 horizon 升起了。"
   },
   {
     "id": "downtown",
@@ -11160,7 +11992,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24435,
     "selection": "雅思标签选词",
-    "zhPinyin": "shì zhōng xīn de"
+    "zhPinyin": "shì zhōng xīn de",
+    "mixedExample": "比如说，我要到 downtown ，有什么车子可以坐吗？"
   },
   {
     "id": "absorb",
@@ -11174,7 +12007,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14294,
     "selection": "雅思标签选词",
-    "zhPinyin": "xī shōu"
+    "zhPinyin": "xī shōu",
+    "mixedExample": "树木排出氧气， absorb 二氧化碳。"
   },
   {
     "id": "principal",
@@ -11188,7 +12022,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24671,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiào zhǎng"
+    "zhPinyin": "xiào zhǎng",
+    "mixedExample": "我校 principal 很老了。"
   },
   {
     "id": "assignment",
@@ -11202,7 +12037,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37247,
     "selection": "雅思标签选词",
-    "zhPinyin": "rèn wù"
+    "zhPinyin": "rèn wù",
+    "mixedExample": "我们必须七手八脚完成这个 assignment 。"
   },
   {
     "id": "workshop",
@@ -11216,7 +12052,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34307,
     "selection": "雅思标签选词",
-    "zhPinyin": "chē jiān"
+    "zhPinyin": "chē jiān",
+    "mixedExample": "有人发现一个老工人在 workshop 修好机器。"
   },
   {
     "id": "temporary",
@@ -11230,7 +12067,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45706,
     "selection": "雅思标签选词",
-    "zhPinyin": "lín shí de"
+    "zhPinyin": "lín shí de",
+    "mixedExample": "正式工比 temporary 工要好。"
   },
   {
     "id": "cabin",
@@ -11244,7 +12082,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41253,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiǎo wū"
+    "zhPinyin": "xiǎo wū",
+    "mixedExample": "汤姆在他的 cabin 里等着。"
   },
   {
     "id": "edition",
@@ -11258,7 +12097,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23998,
     "selection": "雅思标签选词",
-    "zhPinyin": "bǎn běn"
+    "zhPinyin": "bǎn běn",
+    "mixedExample": "第一还是第二的 edition 比较齐全？"
   },
   {
     "id": "pitch",
@@ -11272,7 +12112,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18789,
     "selection": "雅思标签选词",
-    "zhPinyin": "dā zhàng péng"
+    "zhPinyin": "dā zhàng péng",
+    "mixedExample": "他们在找一个可以 pitch 的地方。"
   },
   {
     "id": "pine",
@@ -11286,7 +12127,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48513,
     "selection": "雅思标签选词",
-    "zhPinyin": "sōng shù"
+    "zhPinyin": "sōng shù",
+    "mixedExample": "他望向房子后面的那棵 pine 。"
   },
   {
     "id": "register",
@@ -11300,7 +12142,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45474,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhù cè"
+    "zhPinyin": "zhù cè",
+    "mixedExample": "我去 register 一家健身房。"
   },
   {
     "id": "heritage",
@@ -11314,7 +12157,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48272,
     "selection": "雅思标签选词",
-    "zhPinyin": "yí chǎn"
+    "zhPinyin": "yí chǎn",
+    "mixedExample": "铁桥峡谷是联合国教科文组织世界 heritage 。"
   },
   {
     "id": "submit",
@@ -11328,7 +12172,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30753,
     "selection": "雅思标签选词",
-    "zhPinyin": "tí jiāo"
+    "zhPinyin": "tí jiāo",
+    "mixedExample": "submit 工作内容之前请仔细检查，这里有疏忽的地方。"
   },
   {
     "id": "economics",
@@ -11342,7 +12187,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30349,
     "selection": "雅思标签选词",
-    "zhPinyin": "jīng jì xué"
+    "zhPinyin": "jīng jì xué",
+    "mixedExample": "他在大学读 economics 。"
   },
   {
     "id": "extension",
@@ -11356,7 +12202,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41020,
     "selection": "雅思标签选词",
-    "zhPinyin": "yán cháng"
+    "zhPinyin": "yán cháng",
+    "mixedExample": "这条 extension 线太短了。"
   },
   {
     "id": "battery",
@@ -11370,7 +12217,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26626,
     "selection": "雅思标签选词",
-    "zhPinyin": "diàn chí"
+    "zhPinyin": "diàn chí",
+    "mixedExample": "车发动不了因为 battery 没电了。"
   },
   {
     "id": "arrival",
@@ -11384,7 +12232,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43106,
     "selection": "雅思标签选词",
-    "zhPinyin": "dào dá"
+    "zhPinyin": "dào dá",
+    "mixedExample": "arrival 前，消防员们发现了起火的房子。"
   },
   {
     "id": "flame",
@@ -11398,7 +12247,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28613,
     "selection": "雅思标签选词",
-    "zhPinyin": "huǒ yàn"
+    "zhPinyin": "huǒ yàn",
+    "mixedExample": "我送了他一个在美国买的双 flame 的打火机。"
   },
   {
     "id": "garage",
@@ -11412,7 +12262,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48447,
     "selection": "雅思标签选词",
-    "zhPinyin": "chē kù"
+    "zhPinyin": "chē kù",
+    "mixedExample": "齐里在 garage 里装上了用来挂园艺工具的挂钩。"
   },
   {
     "id": "collapse",
@@ -11426,7 +12277,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24638,
     "selection": "雅思标签选词",
-    "zhPinyin": "dǎo tā"
+    "zhPinyin": "dǎo tā",
+    "mixedExample": "若有大地震，房屋会 collapse 呀！"
   },
   {
     "id": "weekly",
@@ -11440,7 +12292,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27347,
     "selection": "雅思标签选词",
-    "zhPinyin": "měi zhōu de"
+    "zhPinyin": "měi zhōu de",
+    "mixedExample": "我爸爸 weekly 给我零用钱，我会用来买漫画书和冰激凌。"
   },
   {
     "id": "ease",
@@ -11454,7 +12307,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45259,
     "selection": "雅思标签选词",
-    "zhPinyin": "ān yì"
+    "zhPinyin": "ān yì",
+    "mixedExample": "我从来不认为 ease 和享乐是人生本来的目的。"
   },
   {
     "id": "acid",
@@ -11468,7 +12322,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11247,
     "selection": "雅思标签选词",
-    "zhPinyin": "suān xìng de"
+    "zhPinyin": "suān xìng de",
+    "mixedExample": "acid 会腐蚀含有金属的物质。"
   },
   {
     "id": "medium",
@@ -11482,7 +12337,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4042,
     "selection": "雅思标签选词",
-    "zhPinyin": "méi jiè"
+    "zhPinyin": "méi jiè",
+    "mixedExample": "甚至在这些国家以外，英语也许比其他任何语言更广泛地被使用来当作国际交流的 medium 。"
   },
   {
     "id": "distinguish",
@@ -11496,7 +12352,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21563,
     "selection": "雅思标签选词",
-    "zhPinyin": "biàn bié"
+    "zhPinyin": "biàn bié",
+    "mixedExample": "我认为 distinguish 清楚意见和事实很重要。"
   },
   {
     "id": "artistic",
@@ -11510,7 +12367,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44614,
     "selection": "雅思标签选词",
-    "zhPinyin": "yì shù de ； yì shù jiā de"
+    "zhPinyin": "yì shù de ； yì shù jiā de",
+    "mixedExample": "此外，她有 artistic 天赋。"
   },
   {
     "id": "distinct",
@@ -11524,7 +12382,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6066,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù tóng de"
+    "zhPinyin": "bù tóng de",
+    "mixedExample": "这完全是两个 distinct 观点。"
   },
   {
     "id": "moderate",
@@ -11538,7 +12397,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26992,
     "selection": "雅思标签选词",
-    "zhPinyin": "shì dù de"
+    "zhPinyin": "shì dù de",
+    "mixedExample": "moderate 运动对身体健康是必要的。"
   },
   {
     "id": "miracle",
@@ -11552,7 +12412,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37101,
     "selection": "雅思标签选词",
-    "zhPinyin": "qí jì"
+    "zhPinyin": "qí jì",
+    "mixedExample": "我能期待 miracle ，不能吗？"
   },
   {
     "id": "venture",
@@ -11566,7 +12427,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6335,
     "selection": "雅思标签选词",
-    "zhPinyin": "fēng xiǎn"
+    "zhPinyin": "fēng xiǎn",
+    "mixedExample": "谁来为 venture 投资提供资金？"
   },
   {
     "id": "adequate",
@@ -11580,7 +12442,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11646,
     "selection": "雅思标签选词",
-    "zhPinyin": "zú gòu de"
+    "zhPinyin": "zú gòu de",
+    "mixedExample": "我们不止需要 adequate 食水，还需要干净的食水。"
   },
   {
     "id": "concrete",
@@ -11594,7 +12457,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37396,
     "selection": "雅思标签选词",
-    "zhPinyin": "jù tǐ de"
+    "zhPinyin": "jù tǐ de",
+    "mixedExample": "他一向只关心 concrete 问题。"
   },
   {
     "id": "defeat",
@@ -11608,7 +12472,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 22552,
     "selection": "雅思标签选词",
-    "zhPinyin": "jī bài"
+    "zhPinyin": "jī bài",
+    "mixedExample": "那些想要颠覆这个世界的人们，我们将 defeat 你们。"
   },
   {
     "id": "swear",
@@ -11622,7 +12487,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14929,
     "selection": "雅思标签选词",
-    "zhPinyin": "fā shì"
+    "zhPinyin": "fā shì",
+    "mixedExample": "我 swear 我不会做这种事。"
   },
   {
     "id": "occupation",
@@ -11636,7 +12502,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24516,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhí yè"
+    "zhPinyin": "zhí yè",
+    "mixedExample": "我喜欢画油画，但是我不想拿它做我的终身 occupation 。"
   },
   {
     "id": "sacred",
@@ -11650,7 +12517,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14617,
     "selection": "雅思标签选词",
-    "zhPinyin": "shén shèng de ； zhuāng yán de"
+    "zhPinyin": "shén shèng de ； zhuāng yán de",
+    "mixedExample": "一个神圣的仪式在 sacred 庙宇中举行。"
   },
   {
     "id": "formula",
@@ -11664,7 +12532,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49634,
     "selection": "雅思标签选词",
-    "zhPinyin": "gōng shì"
+    "zhPinyin": "gōng shì",
+    "mixedExample": "此 formula 对所有实部大于零的复数 z 均成立。"
   },
   {
     "id": "tunnel",
@@ -11678,7 +12547,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1994,
     "selection": "雅思标签选词",
-    "zhPinyin": "suì dào"
+    "zhPinyin": "suì dào",
+    "mixedExample": "观光巴士穿过了一条长长的 tunnel 。"
   },
   {
     "id": "defendant",
@@ -11692,7 +12562,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 435,
     "selection": "雅思标签选词",
-    "zhPinyin": "bèi gào"
+    "zhPinyin": "bèi gào",
+    "mixedExample": "该报文章中将 defendant 人描述成一个罪魁祸首，尽管他已经被证明是无辜的了。"
   },
   {
     "id": "rail",
@@ -11706,7 +12577,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16355,
     "selection": "雅思标签选词",
-    "zhPinyin": "lán gān"
+    "zhPinyin": "lán gān",
+    "mixedExample": "他的单车撞上了 rail 。"
   },
   {
     "id": "anniversary",
@@ -11720,7 +12592,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38688,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhōu nián jì niàn"
+    "zhPinyin": "zhōu nián jì niàn",
+    "mixedExample": "汤姆从没忘记在婚礼 anniversary 日送给他妻子花。"
   },
   {
     "id": "couch",
@@ -11734,7 +12607,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37844,
     "selection": "雅思标签选词",
-    "zhPinyin": "cháng shā fā"
+    "zhPinyin": "cháng shā fā",
+    "mixedExample": "汤姆在客厅，躺在 couch 上睡觉。"
   },
   {
     "id": "mess",
@@ -11748,7 +12622,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19570,
     "selection": "雅思标签选词",
-    "zhPinyin": "luàn qī bā zāo"
+    "zhPinyin": "luàn qī bā zāo",
+    "mixedExample": "她工作做得 mess 。"
   },
   {
     "id": "regulate",
@@ -11762,7 +12637,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10627,
     "selection": "雅思标签选词",
-    "zhPinyin": "kòng zhì"
+    "zhPinyin": "kòng zhì",
+    "mixedExample": "交通灯是用来 regulate 交通的。"
   },
   {
     "id": "remark",
@@ -11776,7 +12652,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15097,
     "selection": "雅思标签选词",
-    "zhPinyin": "píng lùn"
+    "zhPinyin": "píng lùn",
+    "mixedExample": "麻烦的开头是他草率的 remark 。"
   },
   {
     "id": "resign",
@@ -11790,7 +12667,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32777,
     "selection": "雅思标签选词",
-    "zhPinyin": "cí zhí"
+    "zhPinyin": "cí zhí",
+    "mixedExample": "据传总统下个月要 resign 了。"
   },
   {
     "id": "reward",
@@ -11804,7 +12682,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20807,
     "selection": "雅思标签选词",
-    "zhPinyin": "bào chóu"
+    "zhPinyin": "bào chóu",
+    "mixedExample": "让我们平分这个 reward 吧。"
   },
   {
     "id": "organ",
@@ -11818,7 +12697,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42834,
     "selection": "雅思标签选词",
-    "zhPinyin": "fēng qín"
+    "zhPinyin": "fēng qín",
+    "mixedExample": "你能演奏管 organ 吗？"
   },
   {
     "id": "ritual",
@@ -11832,7 +12712,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14617,
     "selection": "雅思标签选词",
-    "zhPinyin": "yí shì"
+    "zhPinyin": "yí shì",
+    "mixedExample": "一个神圣的 ritual 在庄严的庙宇中举行。"
   },
   {
     "id": "superior",
@@ -11846,7 +12727,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8972,
     "selection": "雅思标签选词",
-    "zhPinyin": "shàng jí"
+    "zhPinyin": "shàng jí",
+    "mixedExample": "现在父亲在他的办公室已经得到了一个 superior 的地位。"
   },
   {
     "id": "surgeon",
@@ -11860,7 +12742,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16579,
     "selection": "雅思标签选词",
-    "zhPinyin": "wài kē yī shēng"
+    "zhPinyin": "wài kē yī shēng",
+    "mixedExample": "他的圈子里有两人是医生，一个是 surgeon ，另一个是眼科医生。"
   },
   {
     "id": "hunt",
@@ -11874,7 +12757,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48286,
     "selection": "雅思标签选词",
-    "zhPinyin": "shòu liè"
+    "zhPinyin": "shòu liè",
+    "mixedExample": "你见过雪豹在山上 hunt 吗？"
   },
   {
     "id": "echo",
@@ -11888,7 +12772,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11486,
     "selection": "雅思标签选词",
-    "zhPinyin": "huí yīn"
+    "zhPinyin": "huí yīn",
+    "mixedExample": "我们听见自己说话的 echo 从山谷的另一边传了回来。"
   },
   {
     "id": "flour",
@@ -11902,7 +12787,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31351,
     "selection": "雅思标签选词",
-    "zhPinyin": "miàn fěn"
+    "zhPinyin": "miàn fěn",
+    "mixedExample": "过年时，小刘的单位给每位员工发一袋 flour 。"
   },
   {
     "id": "slope",
@@ -11916,7 +12802,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21609,
     "selection": "雅思标签选词",
-    "zhPinyin": "xié pō"
+    "zhPinyin": "xié pō",
+    "mixedExample": "这条小路沿著陡峭的 slope 蜿蜒而上。"
   },
   {
     "id": "sponsor",
@@ -11930,7 +12817,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45300,
     "selection": "雅思标签选词",
-    "zhPinyin": "zàn zhù"
+    "zhPinyin": "zàn zhù",
+    "mixedExample": "我觉得这个 sponsor 不太合适。"
   },
   {
     "id": "secondary",
@@ -11944,7 +12832,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14409,
     "selection": "雅思标签选词",
-    "zhPinyin": "cì yào de"
+    "zhPinyin": "cì yào de",
+    "mixedExample": "女性永远只能扮演 secondary 角色吗？"
   },
   {
     "id": "export",
@@ -11958,7 +12847,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49216,
     "selection": "雅思标签选词",
-    "zhPinyin": "chū kǒu"
+    "zhPinyin": "chū kǒu",
+    "mixedExample": "台湾是 export 导向的经济体。"
   },
   {
     "id": "experimental",
@@ -11972,7 +12862,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28669,
     "selection": "雅思标签选词",
-    "zhPinyin": "shí yàn de"
+    "zhPinyin": "shí yàn de",
+    "mixedExample": "experimental 构造是怎样的？它们是如何相连接的？"
   },
   {
     "id": "essence",
@@ -11986,7 +12877,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38827,
     "selection": "雅思标签选词",
-    "zhPinyin": "běn zhì"
+    "zhPinyin": "běn zhì",
+    "mixedExample": "这就是事情的 essence 。"
   },
   {
     "id": "logic",
@@ -12000,7 +12892,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44575,
     "selection": "雅思标签选词",
-    "zhPinyin": "luó jí"
+    "zhPinyin": "luó jí",
+    "mixedExample": "你不懂基本 logic 吗？"
   },
   {
     "id": "retail",
@@ -12014,7 +12907,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47906,
     "selection": "雅思标签选词",
-    "zhPinyin": "líng shòu"
+    "zhPinyin": "líng shòu",
+    "mixedExample": "目前，我正在寻找客服工作，最好是 retail 业。"
   },
   {
     "id": "unemployment",
@@ -12028,7 +12922,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43042,
     "selection": "雅思标签选词",
-    "zhPinyin": "shī yè"
+    "zhPinyin": "shī yè",
+    "mixedExample": "解决 unemployment 最好的办法是去工作"
   },
   {
     "id": "flash",
@@ -12042,7 +12937,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41636,
     "selection": "雅思标签选词",
-    "zhPinyin": "shǎn guāng"
+    "zhPinyin": "shǎn guāng",
+    "mixedExample": "因为 flash 灯坏了，他不能在黑暗中拍照。"
   },
   {
     "id": "humanity",
@@ -12056,7 +12952,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48421,
     "selection": "雅思标签选词",
-    "zhPinyin": "rén lèi"
+    "zhPinyin": "rén lèi",
+    "mixedExample": "由于科学技术的进步， humanity 现在很富裕。"
   },
   {
     "id": "excitement",
@@ -12070,7 +12967,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19762,
     "selection": "雅思标签选词",
-    "zhPinyin": "xīng fèn"
+    "zhPinyin": "xīng fèn",
+    "mixedExample": "她 excitement 地翻了翻书页。"
   },
   {
     "id": "deadly",
@@ -12084,7 +12982,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37756,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhì mìng de"
+    "zhPinyin": "zhì mìng de",
+    "mixedExample": "只能说， deadly 煤气的雾团中，也定会有阳光的。"
   },
   {
     "id": "suburb",
@@ -12098,7 +12997,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4270,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiāo qū"
+    "zhPinyin": "jiāo qū",
+    "mixedExample": "海伦和凯蒂在东京 suburb 租了个套间。"
   },
   {
     "id": "trunk",
@@ -12112,7 +13012,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30125,
     "selection": "雅思标签选词",
-    "zhPinyin": "shù gàn"
+    "zhPinyin": "shù gàn",
+    "mixedExample": "苹果掉落的地方不会离 trunk 很远。"
   },
   {
     "id": "swallow",
@@ -12126,7 +13027,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5462,
     "selection": "雅思标签选词",
-    "zhPinyin": "yàn zi"
+    "zhPinyin": "yàn zi",
+    "mixedExample": "swallow 飞得非常快。"
   },
   {
     "id": "trap",
@@ -12140,7 +13042,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11610,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiàn jǐng"
+    "zhPinyin": "xiàn jǐng",
+    "mixedExample": "我们设了个 trap 来抓狐狸。"
   },
   {
     "id": "cloth",
@@ -12154,7 +13057,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20054,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù liào"
+    "zhPinyin": "bù liào",
+    "mixedExample": "她买了一些 cloth ，打算为自己做一条裙子。"
   },
   {
     "id": "lens",
@@ -12168,7 +13072,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3456,
     "selection": "雅思标签选词",
-    "zhPinyin": "jìng piàn"
+    "zhPinyin": "jìng piàn",
+    "mixedExample": "图像在 lens 中呈反向。"
   },
   {
     "id": "monster",
@@ -12182,7 +13087,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34753,
     "selection": "雅思标签选词",
-    "zhPinyin": "guài wù"
+    "zhPinyin": "guài wù",
+    "mixedExample": "从山上走来一只巨大的 monster 。"
   },
   {
     "id": "herb",
@@ -12196,7 +13102,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29394,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiāng cǎo"
+    "zhPinyin": "xiāng cǎo",
+    "mixedExample": "用于那个义大利酱的 herb 可能是荷兰芹。"
   },
   {
     "id": "nightmare",
@@ -12210,7 +13117,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3292,
     "selection": "雅思标签选词",
-    "zhPinyin": "è mèng"
+    "zhPinyin": "è mèng",
+    "mixedExample": "我觉得我好像从 nightmare 中惊醒。"
   },
   {
     "id": "inspection",
@@ -12224,7 +13132,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15525,
     "selection": "雅思标签选词",
-    "zhPinyin": "shì chá"
+    "zhPinyin": "shì chá",
+    "mixedExample": "韩国允许了国际原子能总署的 inspection 。"
   },
   {
     "id": "forgive",
@@ -12238,7 +13147,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42474,
     "selection": "雅思标签选词",
-    "zhPinyin": "yuán liàng"
+    "zhPinyin": "yuán liàng",
+    "mixedExample": "我的工作是 forgive 你，我做到了。"
   },
   {
     "id": "basement",
@@ -12252,7 +13162,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39649,
     "selection": "雅思标签选词",
-    "zhPinyin": "dì xià shì"
+    "zhPinyin": "dì xià shì",
+    "mixedExample": "我知道我把它放在 basement 的某个地方了。"
   },
   {
     "id": "maximum",
@@ -12266,7 +13177,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23364,
     "selection": "雅思标签选词",
-    "zhPinyin": "zuì dà de"
+    "zhPinyin": "zuì dà de",
+    "mixedExample": "注意， maximum 值不总是存在的。"
   },
   {
     "id": "temple",
@@ -12280,7 +13192,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7893,
     "selection": "雅思标签选词",
-    "zhPinyin": "miào yǔ"
+    "zhPinyin": "miào yǔ",
+    "mixedExample": "您知道这座 temple 供奉的是哪个神吗？"
   },
   {
     "id": "random",
@@ -12294,7 +13207,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46137,
     "selection": "雅思标签选词",
-    "zhPinyin": "hú luàn de"
+    "zhPinyin": "hú luàn de",
+    "mixedExample": "你 random 打枪，会吓跑猎物的。"
   },
   {
     "id": "hence",
@@ -12308,7 +13222,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46451,
     "selection": "雅思标签选词",
-    "zhPinyin": "yīn cǐ"
+    "zhPinyin": "yīn cǐ",
+    "mixedExample": "hence ，我们必须自己照顾自己。"
   },
   {
     "id": "uncomfortable",
@@ -12322,7 +13237,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32808,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù shū fú de"
+    "zhPinyin": "bù shū fú de",
+    "mixedExample": "你哪儿 uncomfortable ？"
   },
   {
     "id": "ideology",
@@ -12336,7 +13252,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47472,
     "selection": "雅思标签选词",
-    "zhPinyin": "yì shí xíng tài"
+    "zhPinyin": "yì shí xíng tài",
+    "mixedExample": "在更极端的变体中，顺性别 ideology 可能包括否认阴阳人和跨性别者的现实经历。"
   },
   {
     "id": "colony",
@@ -12350,7 +13267,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33981,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhí mín dì"
+    "zhPinyin": "zhí mín dì",
+    "mixedExample": "有人说中国像是俄国的 colony 。"
   },
   {
     "id": "modify",
@@ -12364,7 +13282,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21648,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiū shì"
+    "zhPinyin": "xiū shì",
+    "mixedExample": "modify 名词的东西（形容词，或形容词相等语）。"
   },
   {
     "id": "accommodate",
@@ -12378,7 +13297,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7972,
     "selection": "雅思标签选词",
-    "zhPinyin": "róng nà"
+    "zhPinyin": "róng nà",
+    "mixedExample": "这间班房只能 accommodate 三十个学生。"
   },
   {
     "id": "profound",
@@ -12392,7 +13312,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31065,
     "selection": "雅思标签选词",
-    "zhPinyin": "shēn kè de"
+    "zhPinyin": "shēn kè de",
+    "mixedExample": "他的教导都包含在道教者看作关于宗教最后的权威的道德经那本 profound 书。"
   },
   {
     "id": "reserve",
@@ -12406,7 +13327,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6896,
     "selection": "雅思标签选词",
-    "zhPinyin": "yù dìng"
+    "zhPinyin": "yù dìng",
+    "mixedExample": "我想 reserve 一间单人房。"
   },
   {
     "id": "thumb",
@@ -12420,7 +13342,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31649,
     "selection": "雅思标签选词",
-    "zhPinyin": "mǔ zhǐ"
+    "zhPinyin": "mǔ zhǐ",
+    "mixedExample": "人的手有五个手指:  thumb 、食指、中指、无名指 和 小手指。"
   },
   {
     "id": "horrible",
@@ -12434,7 +13357,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14982,
     "selection": "雅思标签选词",
-    "zhPinyin": "kě pà de"
+    "zhPinyin": "kě pà de",
+    "mixedExample": "前几天，东京郊外发生了件 horrible 事情。"
   },
   {
     "id": "compromise",
@@ -12448,7 +13372,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23680,
     "selection": "雅思标签选词",
-    "zhPinyin": "tuǒ xié"
+    "zhPinyin": "tuǒ xié",
+    "mixedExample": "我们试著和他们 compromise 。"
   },
   {
     "id": "theoretical",
@@ -12462,7 +13387,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39346,
     "selection": "雅思标签选词",
-    "zhPinyin": "lǐ lùn de"
+    "zhPinyin": "lǐ lùn de",
+    "mixedExample": "希腊人建立了几何学的 theoretical 模型。"
   },
   {
     "id": "delicate",
@@ -12476,7 +13402,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5778,
     "selection": "雅思标签选词",
-    "zhPinyin": "wēi miào de"
+    "zhPinyin": "wēi miào de",
+    "mixedExample": "这是条很 delicate 问题。"
   },
   {
     "id": "shuttle",
@@ -12490,7 +13417,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33210,
     "selection": "雅思标签选词",
-    "zhPinyin": "chuān suō"
+    "zhPinyin": "chuān suō",
+    "mixedExample": "shuttle 班车到机场需要多长时间？"
   },
   {
     "id": "engagement",
@@ -12504,7 +13432,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18868,
     "selection": "雅思标签选词",
-    "zhPinyin": "hūn yuē"
+    "zhPinyin": "hūn yuē",
+    "mixedExample": "他们解除了 engagement 。"
   },
   {
     "id": "rescue",
@@ -12518,7 +13447,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37919,
     "selection": "雅思标签选词",
-    "zhPinyin": "yíng jiù"
+    "zhPinyin": "yíng jiù",
+    "mixedExample": "我要帮你 rescue 汤姆。"
   },
   {
     "id": "determination",
@@ -12532,7 +13462,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17330,
     "selection": "雅思标签选词",
-    "zhPinyin": "jué xīn"
+    "zhPinyin": "jué xīn",
+    "mixedExample": "他下定了 determination 要做医生。"
   },
   {
     "id": "guidance",
@@ -12546,7 +13477,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39524,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhǐ dǎo"
+    "zhPinyin": "zhǐ dǎo",
+    "mixedExample": "在老师的 guidance 下，我的学习有了很大的进步。"
   },
   {
     "id": "elevator",
@@ -12560,7 +13492,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20405,
     "selection": "雅思标签选词",
-    "zhPinyin": "diàn tī"
+    "zhPinyin": "diàn tī",
+    "mixedExample": "事故发生时，敬勿使用 elevator ，请使用楼梯。"
   },
   {
     "id": "statue",
@@ -12574,7 +13507,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6111,
     "selection": "雅思标签选词",
-    "zhPinyin": "diāo xiàng"
+    "zhPinyin": "diāo xiàng",
+    "mixedExample": "这座 statue 是由樱木雕刻而成。"
   },
   {
     "id": "pursuit",
@@ -12588,7 +13522,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28491,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhuī qiú"
+    "zhPinyin": "zhuī qiú",
+    "mixedExample": "其实爱情是人生唯一的、真正珍贵的;也是唯一的、真正值得 pursuit 的东西。"
   },
   {
     "id": "fist",
@@ -12602,7 +13537,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19794,
     "selection": "雅思标签选词",
-    "zhPinyin": "quán tou"
+    "zhPinyin": "quán tou",
+    "mixedExample": "她用 fist 拍了桌子。"
   },
   {
     "id": "destination",
@@ -12616,7 +13552,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5474,
     "selection": "雅思标签选词",
-    "zhPinyin": "mù biāo"
+    "zhPinyin": "mù biāo",
+    "mixedExample": "我们终于达到了我们的 destination 。"
   },
   {
     "id": "feedback",
@@ -12630,7 +13567,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41210,
     "selection": "雅思标签选词",
-    "zhPinyin": "fǎn kuì"
+    "zhPinyin": "fǎn kuì",
+    "mixedExample": "公司欢迎消费者对他们产品的 feedback"
   },
   {
     "id": "laser",
@@ -12644,7 +13582,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45952,
     "selection": "雅思标签选词",
-    "zhPinyin": "jī guāng"
+    "zhPinyin": "jī guāng",
+    "mixedExample": "这个诊所正在做 laser 手术。"
   },
   {
     "id": "practically",
@@ -12658,7 +13597,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34305,
     "selection": "雅思标签选词",
-    "zhPinyin": "jī hū"
+    "zhPinyin": "jī hū",
+    "mixedExample": "著名的酒店 practically 被大火烧毁了。"
   },
   {
     "id": "parade",
@@ -12672,7 +13612,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1919,
     "selection": "雅思标签选词",
-    "zhPinyin": "yuè bīng"
+    "zhPinyin": "yuè bīng",
+    "mixedExample": "在回家的路上，我看到一场 parade 式。"
   },
   {
     "id": "hint",
@@ -12686,7 +13627,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39360,
     "selection": "雅思标签选词",
-    "zhPinyin": "tí shì"
+    "zhPinyin": "tí shì",
+    "mixedExample": "你可以给我一个 hint 吗？"
   },
   {
     "id": "constitution",
@@ -12700,7 +13642,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11357,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiàn fǎ"
+    "zhPinyin": "xiàn fǎ",
+    "mixedExample": "思想自由为 constitution 所保障。"
   },
   {
     "id": "garbage",
@@ -12714,7 +13657,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47709,
     "selection": "雅思标签选词",
-    "zhPinyin": "lā jī"
+    "zhPinyin": "lā jī",
+    "mixedExample": "在街上乱丢 garbage 不是好习惯，记得吗？"
   },
   {
     "id": "diplomatic",
@@ -12728,7 +13672,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26739,
     "selection": "雅思标签选词",
-    "zhPinyin": "wài jiāo de"
+    "zhPinyin": "wài jiāo de",
+    "mixedExample": "必须有 diplomatic 解决的途径。"
   },
   {
     "id": "chin",
@@ -12742,7 +13687,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19910,
     "selection": "雅思标签选词",
-    "zhPinyin": "xià bā"
+    "zhPinyin": "xià bā",
+    "mixedExample": "她打了我的 chin 。"
   },
   {
     "id": "confess",
@@ -12756,7 +13702,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42531,
     "selection": "雅思标签选词",
-    "zhPinyin": "chéng rèn"
+    "zhPinyin": "chéng rèn",
+    "mixedExample": "我 confess 我很累。"
   },
   {
     "id": "gravity",
@@ -12770,7 +13717,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24145,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhòng lì"
+    "zhPinyin": "zhòng lì",
+    "mixedExample": "你如果能利用 gravity ，那就这么做吧。"
   },
   {
     "id": "prevention",
@@ -12784,7 +13732,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21339,
     "selection": "雅思标签选词",
-    "zhPinyin": "yù fáng"
+    "zhPinyin": "yù fáng",
+    "mixedExample": "prevention 胜于治疗。"
   },
   {
     "id": "intent",
@@ -12798,7 +13747,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26836,
     "selection": "雅思标签选词",
-    "zhPinyin": "yì tú"
+    "zhPinyin": "yì tú",
+    "mixedExample": "一个差劲的厨师和下毒者唯一的不同在于他们的 intent 。"
   },
   {
     "id": "steep",
@@ -12812,7 +13762,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21609,
     "selection": "雅思标签选词",
-    "zhPinyin": "dǒu qiào de"
+    "zhPinyin": "dǒu qiào de",
+    "mixedExample": "这条小路沿著 steep 斜坡蜿蜒而上。"
   },
   {
     "id": "precious",
@@ -12826,7 +13777,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25762,
     "selection": "雅思标签选词",
-    "zhPinyin": "bǎo guì de"
+    "zhPinyin": "bǎo guì de",
+    "mixedExample": "时间是世界上最 precious 东西。"
   },
   {
     "id": "prohibit",
@@ -12840,7 +13792,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47149,
     "selection": "雅思标签选词",
-    "zhPinyin": "jìn zhǐ"
+    "zhPinyin": "jìn zhǐ",
+    "mixedExample": "谁会 prohibit 这样的事情呢？"
   },
   {
     "id": "dawn",
@@ -12854,7 +13807,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13960,
     "selection": "雅思标签选词",
-    "zhPinyin": "lí míng"
+    "zhPinyin": "lí míng",
+    "mixedExample": "我们 dawn 时起床以避开交通堵塞。"
   },
   {
     "id": "automobile",
@@ -12868,7 +13822,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9235,
     "selection": "雅思标签选词",
-    "zhPinyin": "qì chē"
+    "zhPinyin": "qì chē",
+    "mixedExample": "在美国， automobile 并不是奢华的象征，而是生活的必需品。"
   },
   {
     "id": "abstract",
@@ -12882,7 +13837,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15489,
     "selection": "雅思标签选词",
-    "zhPinyin": "chōu xiàng de"
+    "zhPinyin": "chōu xiàng de",
+    "mixedExample": "一些 abstract 艺术是很难理解的。"
   },
   {
     "id": "cooperate",
@@ -12896,7 +13852,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45320,
     "selection": "雅思标签选词",
-    "zhPinyin": "hé zuò"
+    "zhPinyin": "hé zuò",
+    "mixedExample": "我们正在努力扩展 cooperate 。"
   },
   {
     "id": "hardware",
@@ -12910,7 +13867,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36259,
     "selection": "雅思标签选词",
-    "zhPinyin": "yìng jiàn"
+    "zhPinyin": "yìng jiàn",
+    "mixedExample": "用户应该拥有 hardware 和软件的使用自由，操作系统应该是开放的，而不是封闭的。"
   },
   {
     "id": "deadline",
@@ -12924,7 +13882,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40354,
     "selection": "雅思标签选词",
-    "zhPinyin": "zuì hòu qī xiàn"
+    "zhPinyin": "zuì hòu qī xiàn",
+    "mixedExample": "他们能不能在 deadline 之前完成这项工作?"
   },
   {
     "id": "verbal",
@@ -12938,7 +13897,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47290,
     "selection": "雅思标签选词",
-    "zhPinyin": "kǒu tóu de"
+    "zhPinyin": "kǒu tóu de",
+    "mixedExample": "我不需要你 verbal 上的温柔。"
   },
   {
     "id": "coastal",
@@ -12952,7 +13912,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34899,
     "selection": "雅思标签选词",
-    "zhPinyin": "yán hǎi de"
+    "zhPinyin": "yán hǎi de",
+    "mixedExample": "中国大陆的 coastal 城市普遍比内陆城市发达。"
   },
   {
     "id": "ridiculous",
@@ -12966,7 +13927,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14128,
     "selection": "雅思标签选词",
-    "zhPinyin": "huāng miù de"
+    "zhPinyin": "huāng miù de",
+    "mixedExample": "花光他们所有的钱会很 ridiculous 。"
   },
   {
     "id": "automatic",
@@ -12980,7 +13942,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21627,
     "selection": "雅思标签选词",
-    "zhPinyin": "zì dòng de"
+    "zhPinyin": "zì dòng de",
+    "mixedExample": "这女孩的眼睛闪烁著光亮, 这个暗示让她可爱的猫图案 automatic 铅笔越过了她的笔记本。"
   },
   {
     "id": "sentiment",
@@ -12994,7 +13957,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39566,
     "selection": "雅思标签选词",
-    "zhPinyin": "qíng xù"
+    "zhPinyin": "qíng xù",
+    "mixedExample": "缅甸反华 sentiment 正在增长。"
   },
   {
     "id": "inspiration",
@@ -13008,7 +13972,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21620,
     "selection": "雅思标签选词",
-    "zhPinyin": "líng gǎn"
+    "zhPinyin": "líng gǎn",
+    "mixedExample": "攀登富士山后，我得到了一首诗的 inspiration 。"
   },
   {
     "id": "genius",
@@ -13022,7 +13987,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30825,
     "selection": "雅思标签选词",
-    "zhPinyin": "tiān cái ； jīng shén"
+    "zhPinyin": "tiān cái ； jīng shén",
+    "mixedExample": "genius 与精神错乱之间只隔着成功。"
   },
   {
     "id": "quest",
@@ -13036,7 +14002,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8596,
     "selection": "雅思标签选词",
-    "zhPinyin": "xún qiú"
+    "zhPinyin": "xún qiú",
+    "mixedExample": "格列佛为 quest 探险而旅行。"
   },
   {
     "id": "sacrifice",
@@ -13050,7 +14017,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33873,
     "selection": "雅思标签选词",
-    "zhPinyin": "xī shēng"
+    "zhPinyin": "xī shēng",
+    "mixedExample": "父母为了确保孩子受到良好的教育常常 sacrifice 自己。"
   },
   {
     "id": "accuracy",
@@ -13064,7 +14032,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42437,
     "selection": "雅思标签选词",
-    "zhPinyin": "jīng què"
+    "zhPinyin": "jīng què",
+    "mixedExample": "不要把 accuracy 和准确搞错。"
   },
   {
     "id": "talented",
@@ -13078,7 +14047,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45356,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǒu cái néng de"
+    "zhPinyin": "yǒu cái néng de",
+    "mixedExample": "他是个富 talented 年轻导演。"
   },
   {
     "id": "tackle",
@@ -13092,7 +14062,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4045,
     "selection": "雅思标签选词",
-    "zhPinyin": "chǔ lǐ"
+    "zhPinyin": "chǔ lǐ",
+    "mixedExample": "首先我们必须 tackle 这个问题。"
   },
   {
     "id": "dignity",
@@ -13106,7 +14077,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36253,
     "selection": "雅思标签选词",
-    "zhPinyin": "zūn yán"
+    "zhPinyin": "zūn yán",
+    "mixedExample": "dignity 不值钱，却是我唯一真正拥有的！"
   },
   {
     "id": "barn",
@@ -13120,7 +14092,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21413,
     "selection": "雅思标签选词",
-    "zhPinyin": "gǔ cāng"
+    "zhPinyin": "gǔ cāng",
+    "mixedExample": "为躲避风暴，我们躲到了附近的一个 barn 内。"
   },
   {
     "id": "faint",
@@ -13134,7 +14107,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29448,
     "selection": "雅思标签选词",
-    "zhPinyin": "hūn dào"
+    "zhPinyin": "hūn dào",
+    "mixedExample": "我觉得我快 faint 了。"
   },
   {
     "id": "shallow",
@@ -13148,7 +14122,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8315,
     "selection": "雅思标签选词",
-    "zhPinyin": "fū qiǎn de"
+    "zhPinyin": "fū qiǎn de",
+    "mixedExample": "他思想 shallow ，这个我们知道就好。"
   },
   {
     "id": "lane",
@@ -13162,7 +14137,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14442,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiǎo lù"
+    "zhPinyin": "xiǎo lù",
+    "mixedExample": "lane 上舖满了落叶。"
   },
   {
     "id": "steam",
@@ -13176,7 +14152,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14741,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhēng qì"
+    "zhPinyin": "zhēng qì",
+    "mixedExample": "水沸腾后变为 steam 。"
   },
   {
     "id": "agriculture",
@@ -13190,7 +14167,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16008,
     "selection": "雅思标签选词",
-    "zhPinyin": "nóng yè"
+    "zhPinyin": "nóng yè",
+    "mixedExample": "agriculture 需要消耗的大量水。"
   },
   {
     "id": "jewelry",
@@ -13204,7 +14182,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5925,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhū bǎo"
+    "zhPinyin": "zhū bǎo",
+    "mixedExample": "老人用金钱和 jewelry 取得了少女的欢心。"
   },
   {
     "id": "sheer",
@@ -13218,7 +14197,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5798,
     "selection": "雅思标签选词",
-    "zhPinyin": "wán quán"
+    "zhPinyin": "wán quán",
+    "mixedExample": "这 sheer 是浪费时间。"
   },
   {
     "id": "immune",
@@ -13232,7 +14212,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7738,
     "selection": "雅思标签选词",
-    "zhPinyin": "miǎn yì de"
+    "zhPinyin": "miǎn yì de",
+    "mixedExample": "这个团体内的每个人，像是一个健康的人体内 immune 系统里的细胞。"
   },
   {
     "id": "tender",
@@ -13246,7 +14227,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20196,
     "selection": "雅思标签选词",
-    "zhPinyin": "wēn róu de"
+    "zhPinyin": "wēn róu de",
+    "mixedExample": "她给了他一个 tender 吻。"
   },
   {
     "id": "conspiracy",
@@ -13260,7 +14242,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45542,
     "selection": "雅思标签选词",
-    "zhPinyin": "yīn móu"
+    "zhPinyin": "yīn móu",
+    "mixedExample": "我的朋友相信 conspiracy 论，我该试着向他指出他错了吗？"
   },
   {
     "id": "instinct",
@@ -13274,7 +14257,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14488,
     "selection": "雅思标签选词",
-    "zhPinyin": "běn néng"
+    "zhPinyin": "běn néng",
+    "mixedExample": "欢笑是人之 instinct ，有了欢笑， 就没了文化隔阂。"
   },
   {
     "id": "verdict",
@@ -13288,7 +14272,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42480,
     "selection": "雅思标签选词",
-    "zhPinyin": "jié lùn"
+    "zhPinyin": "jié lùn",
+    "mixedExample": "对意外死亡 verdict 作出了调查。"
   },
   {
     "id": "breeze",
@@ -13302,7 +14287,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48340,
     "selection": "雅思标签选词",
-    "zhPinyin": "wēi fēng"
+    "zhPinyin": "wēi fēng",
+    "mixedExample": "breeze 吹荡着湖面。"
   },
   {
     "id": "royal",
@@ -13316,7 +14302,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6869,
     "selection": "雅思标签选词",
-    "zhPinyin": "huáng jiā de"
+    "zhPinyin": "huáng jiā de",
+    "mixedExample": "苏在 royal 饭店登记投宿。"
   },
   {
     "id": "panic",
@@ -13330,7 +14317,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6118,
     "selection": "雅思标签选词",
-    "zhPinyin": "kǒng huāng"
+    "zhPinyin": "kǒng huāng",
+    "mixedExample": "地震后人们普遍觉得 panic 。"
   },
   {
     "id": "cliff",
@@ -13344,7 +14332,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3080,
     "selection": "雅思标签选词",
-    "zhPinyin": "xuán yá"
+    "zhPinyin": "xuán yá",
+    "mixedExample": "只迈一步，你就会落下 cliff 。"
   },
   {
     "id": "illusion",
@@ -13358,7 +14347,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17972,
     "selection": "雅思标签选词",
-    "zhPinyin": "huàn xiǎng"
+    "zhPinyin": "huàn xiǎng",
+    "mixedExample": "他 illusion 自己是个天才。"
   },
   {
     "id": "decorate",
@@ -13372,7 +14362,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29027,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhuāng shì"
+    "zhPinyin": "zhuāng shì",
+    "mixedExample": "为了增添节日的气氛 ，那里的人用盆栽 decorate 他们的家。"
   },
   {
     "id": "equivalent",
@@ -13386,7 +14377,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9216,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiāng dāng de"
+    "zhPinyin": "xiāng dāng de",
+    "mixedExample": "去美国旅行一次 equivalent 于她两年的工资。"
   },
   {
     "id": "irony",
@@ -13400,7 +14392,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49303,
     "selection": "雅思标签选词",
-    "zhPinyin": "fěng cì"
+    "zhPinyin": "fěng cì",
+    "mixedExample": "作家路易斯・费尔南多・沃瑞西莫在巴西阿雷格里港去世，他是位专栏作家，能以 irony 、精确、敏感的文笔团结几代读者。"
   },
   {
     "id": "rival",
@@ -13414,7 +14407,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33704,
     "selection": "雅思标签选词",
-    "zhPinyin": "jìng zhēng de"
+    "zhPinyin": "jìng zhēng de",
+    "mixedExample": "他被 rival 公司挖去了。"
   },
   {
     "id": "heal",
@@ -13428,7 +14422,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27063,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhì yù"
+    "zhPinyin": "zhì yù",
+    "mixedExample": "时间会 heal 一切伤痛。"
   },
   {
     "id": "consent",
@@ -13442,7 +14437,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6213,
     "selection": "雅思标签选词",
-    "zhPinyin": "tóng yì"
+    "zhPinyin": "tóng yì",
+    "mixedExample": "我们只会在那样的条件下 consent 。"
   },
   {
     "id": "attendance",
@@ -13456,7 +14452,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15032,
     "selection": "雅思标签选词",
-    "zhPinyin": "chū xí"
+    "zhPinyin": "chū xí",
+    "mixedExample": "全员均须 attendance 。"
   },
   {
     "id": "stimulate",
@@ -13470,7 +14467,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10559,
     "selection": "雅思标签选词",
-    "zhPinyin": "cì jī"
+    "zhPinyin": "cì jī",
+    "mixedExample": "减税常被用作 stimulate 经济的主要财政手段。"
   },
   {
     "id": "hike",
@@ -13484,7 +14482,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27487,
     "selection": "雅思标签选词",
-    "zhPinyin": "yuǎn zú"
+    "zhPinyin": "yuǎn zú",
+    "mixedExample": "我们应该取消这次 hike 。"
   },
   {
     "id": "scent",
@@ -13498,7 +14497,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49493,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiāng wèi"
+    "zhPinyin": "xiāng wèi",
+    "mixedExample": "乡间小路上，微风拂过，夜来香的 scent 让人想起童年的夜晚。"
   },
   {
     "id": "textbook",
@@ -13512,7 +14512,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7975,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiào kē shū"
+    "zhPinyin": "jiào kē shū",
+    "mixedExample": "这本 textbook 对我来说太深了。"
   },
   {
     "id": "shrink",
@@ -13526,7 +14527,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34399,
     "selection": "雅思标签选词",
-    "zhPinyin": "shōu suō"
+    "zhPinyin": "shōu suō",
+    "mixedExample": "水果放久了，就会 shrink 。"
   },
   {
     "id": "unfair",
@@ -13540,7 +14542,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26474,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù gōng píng de"
+    "zhPinyin": "bù gōng píng de",
+    "mixedExample": "你本该拒绝一个那么 unfair 提议。"
   },
   {
     "id": "discount",
@@ -13554,7 +14557,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36832,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhé kòu"
+    "zhPinyin": "zhé kòu",
+    "mixedExample": "用现金付的话会有 discount 吗?"
   },
   {
     "id": "jungle",
@@ -13568,7 +14572,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3530,
     "selection": "雅思标签选词",
-    "zhPinyin": "cóng lín"
+    "zhPinyin": "cóng lín",
+    "mixedExample": "狮子是 jungle 的王。"
   },
   {
     "id": "hurricane",
@@ -13582,7 +14587,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27878,
     "selection": "雅思标签选词",
-    "zhPinyin": "bào fēng ； bào fēng yǔ"
+    "zhPinyin": "bào fēng ； bào fēng yǔ",
+    "mixedExample": "hurricane 过后，他们的房子成了废墟。"
   },
   {
     "id": "classify",
@@ -13596,7 +14602,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36433,
     "selection": "雅思标签选词",
-    "zhPinyin": "fēn lèi"
+    "zhPinyin": "fēn lèi",
+    "mixedExample": "我们在扔掉之前得 classify 。"
   },
   {
     "id": "skip",
@@ -13610,7 +14617,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41737,
     "selection": "雅思标签选词",
-    "zhPinyin": "tiào guò"
+    "zhPinyin": "tiào guò",
+    "mixedExample": "无论如何都不要 skip 这一步。"
   },
   {
     "id": "ambassador",
@@ -13624,7 +14632,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42434,
     "selection": "雅思标签选词",
-    "zhPinyin": "dà shǐ"
+    "zhPinyin": "dà shǐ",
+    "mixedExample": "我和波兰 ambassador 说了话。"
   },
   {
     "id": "sphere",
@@ -13638,7 +14647,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15431,
     "selection": "雅思标签选词",
-    "zhPinyin": "qiú tǐ"
+    "zhPinyin": "qiú tǐ",
+    "mixedExample": "地球只不过是悬浮在太空中的一个 sphere 。"
   },
   {
     "id": "partial",
@@ -13652,7 +14662,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47099,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù fèn de"
+    "zhPinyin": "bù fèn de",
+    "mixedExample": "离开是 partial 死亡，而死亡不仅仅是离开。"
   },
   {
     "id": "cure",
@@ -13666,7 +14677,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27893,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhì liáo"
+    "zhPinyin": "zhì liáo",
+    "mixedExample": "科学家们还没有找到癌症的 cure 方法。"
   },
   {
     "id": "fame",
@@ -13680,7 +14692,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13731,
     "selection": "雅思标签选词",
-    "zhPinyin": "míng shēng"
+    "zhPinyin": "míng shēng",
+    "mixedExample": "我不关心财富和 fame 。"
   },
   {
     "id": "suspicious",
@@ -13694,7 +14707,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29235,
     "selection": "雅思标签选词",
-    "zhPinyin": "huái yí de"
+    "zhPinyin": "huái yí de",
+    "mixedExample": "我 suspicious 这是辆黑车。"
   },
   {
     "id": "blink",
@@ -13708,7 +14722,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39309,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhǎ yǎn"
+    "zhPinyin": "zhǎ yǎn",
+    "mixedExample": "它发生在一 blink 之间。"
   },
   {
     "id": "eligible",
@@ -13722,7 +14737,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16622,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǒu zī gé dāng xuǎn de"
+    "zhPinyin": "yǒu zī gé dāng xuǎn de",
+    "mixedExample": "他 eligible 总统。"
   },
   {
     "id": "chill",
@@ -13736,7 +14752,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48986,
     "selection": "雅思标签选词",
-    "zhPinyin": "hán yì"
+    "zhPinyin": "hán yì",
+    "mixedExample": "他穿过公园时，一阵 chill 顺著脊背蔓延而下。"
   },
   {
     "id": "auction",
@@ -13750,7 +14767,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25585,
     "selection": "雅思标签选词",
-    "zhPinyin": "pāi mài"
+    "zhPinyin": "pāi mài",
+    "mixedExample": "她没有准备烛光晚餐，而是把她的男友放到Ebay上 auction 。"
   },
   {
     "id": "triumph",
@@ -13764,7 +14782,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33857,
     "selection": "雅思标签选词",
-    "zhPinyin": "dé shèng"
+    "zhPinyin": "dé shèng",
+    "mixedExample": "只要好人袖手旁观，恶人就会 triumph 。"
   },
   {
     "id": "interval",
@@ -13778,7 +14797,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16213,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiàn gé"
+    "zhPinyin": "jiàn gé",
+    "mixedExample": "他 interval 了很久才作答。"
   },
   {
     "id": "calendar",
@@ -13792,7 +14812,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36847,
     "selection": "雅思标签选词",
-    "zhPinyin": "rì lì"
+    "zhPinyin": "rì lì",
+    "mixedExample": "在西班牙 calendar 中，一周的开始是周一。"
   },
   {
     "id": "brake",
@@ -13806,7 +14827,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4333,
     "selection": "雅思标签选词",
-    "zhPinyin": "shā chē"
+    "zhPinyin": "shā chē",
+    "mixedExample": "brake 的功能是使车停下。"
   },
   {
     "id": "fragile",
@@ -13820,7 +14842,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48917,
     "selection": "雅思标签选词",
-    "zhPinyin": "yì suì de"
+    "zhPinyin": "yì suì de",
+    "mixedExample": "他践踏那箱 fragile 品，毁坏了里面的物品。"
   },
   {
     "id": "exhaust",
@@ -13834,7 +14857,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15247,
     "selection": "雅思标签选词",
-    "zhPinyin": "fèi qì"
+    "zhPinyin": "fèi qì",
+    "mixedExample": "空气被 exhaust 污染了。"
   },
   {
     "id": "objection",
@@ -13848,7 +14872,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24707,
     "selection": "雅思标签选词",
-    "zhPinyin": "fǎn duì"
+    "zhPinyin": "fǎn duì",
+    "mixedExample": "如果必要的话，我不 objection 付特别费用。"
   },
   {
     "id": "blast",
@@ -13862,7 +14887,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27824,
     "selection": "雅思标签选词",
-    "zhPinyin": "bào zhà"
+    "zhPinyin": "bào zhà",
+    "mixedExample": "收音机广播充斥著有关最近 blast 的新闻。"
   },
   {
     "id": "prevail",
@@ -13876,7 +14902,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41936,
     "selection": "雅思标签选词",
-    "zhPinyin": "shèng xíng"
+    "zhPinyin": "shèng xíng",
+    "mixedExample": "在哥伦比亚，天主教习俗 prevail 。"
   },
   {
     "id": "denial",
@@ -13890,7 +14917,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47472,
     "selection": "雅思标签选词",
-    "zhPinyin": "fǒu rèn"
+    "zhPinyin": "fǒu rèn",
+    "mixedExample": "在更极端的变体中，顺性别意识形态可能包括 denial 阴阳人和跨性别者的现实经历。"
   },
   {
     "id": "rental",
@@ -13904,7 +14932,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48691,
     "selection": "雅思标签选词",
-    "zhPinyin": "zū lìn de"
+    "zhPinyin": "zū lìn de",
+    "mixedExample": "这家汽车 rental 公司提供了优质的客服业务。"
   },
   {
     "id": "suitable",
@@ -13918,7 +14947,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1528,
     "selection": "雅思标签选词",
-    "zhPinyin": "shì dàng de"
+    "zhPinyin": "shì dàng de",
+    "mixedExample": "请在空格上填上 suitable 字词。"
   },
   {
     "id": "mansion",
@@ -13932,7 +14962,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48649,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhái dǐ"
+    "zhPinyin": "zhái dǐ",
+    "mixedExample": "他住在大 mansion 里。"
   },
   {
     "id": "cottage",
@@ -13946,7 +14977,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1679,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiǎo wū"
+    "zhPinyin": "xiǎo wū",
+    "mixedExample": "桥对面有一间 cottage 。"
   },
   {
     "id": "update",
@@ -13960,7 +14992,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8143,
     "selection": "雅思标签选词",
-    "zhPinyin": "gēng xīn"
+    "zhPinyin": "gēng xīn",
+    "mixedExample": "你可以帮我 update 这份资料吗？"
   },
   {
     "id": "fatigue",
@@ -13974,7 +15007,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2349,
     "selection": "雅思标签选词",
-    "zhPinyin": "pí láo"
+    "zhPinyin": "pí láo",
+    "mixedExample": "他 fatigue 过度，又睡眠不足，最后便病倒了。"
   },
   {
     "id": "preach",
@@ -13988,7 +15022,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21018,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiǎng dào"
+    "zhPinyin": "jiǎng dào",
+    "mixedExample": "牧师的主要职责是在教堂里 preach 。"
   },
   {
     "id": "depart",
@@ -14002,7 +15037,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4639,
     "selection": "雅思标签选词",
-    "zhPinyin": "chū fā"
+    "zhPinyin": "chū fā",
+    "mixedExample": "去纽约的火车几点 depart ？"
   },
   {
     "id": "technician",
@@ -14016,7 +15052,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45135,
     "selection": "雅思标签选词",
-    "zhPinyin": "jì shī"
+    "zhPinyin": "jì shī",
+    "mixedExample": "那位 technician 技术很好。"
   },
   {
     "id": "riot",
@@ -14030,7 +15067,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20857,
     "selection": "雅思标签选词",
-    "zhPinyin": "bào dòng"
+    "zhPinyin": "bào dòng",
+    "mixedExample": "riot 开始时只有一位监狱长值班。"
   },
   {
     "id": "convenience",
@@ -14044,7 +15082,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5368,
     "selection": "雅思标签选词",
-    "zhPinyin": "fāng biàn"
+    "zhPinyin": "fāng biàn",
+    "mixedExample": "电视的优点在于它给体育爱好者提供了更大的 convenience 。"
   },
   {
     "id": "summary",
@@ -14058,7 +15097,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3273,
     "selection": "雅思标签选词",
-    "zhPinyin": "gài yào"
+    "zhPinyin": "gài yào",
+    "mixedExample": "下面是总统讲话的 summary 。"
   },
   {
     "id": "diplomat",
@@ -14072,7 +15112,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29709,
     "selection": "雅思标签选词",
-    "zhPinyin": "wài jiāo guān"
+    "zhPinyin": "wài jiāo guān",
+    "mixedExample": "他将要成为中国驻法国大使馆的 diplomat 。"
   },
   {
     "id": "trim",
@@ -14086,7 +15127,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48296,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiū jiǎn"
+    "zhPinyin": "xiū jiǎn",
+    "mixedExample": "你 trim 过苹果树吗？"
   },
   {
     "id": "warehouse",
@@ -14100,7 +15142,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15060,
     "selection": "雅思标签选词",
-    "zhPinyin": "cāng kù"
+    "zhPinyin": "cāng kù",
+    "mixedExample": "是谁忘了把 warehouse 的门锁上？"
   },
   {
     "id": "accelerate",
@@ -14114,7 +15157,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33900,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiā sù"
+    "zhPinyin": "jiā sù",
+    "mixedExample": "车子继续 accelerate 。"
   },
   {
     "id": "bronze",
@@ -14128,7 +15172,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42339,
     "selection": "雅思标签选词",
-    "zhPinyin": "qīng tóng"
+    "zhPinyin": "qīng tóng",
+    "mixedExample": "5元硬币是黄铜，10元硬币是 bronze 做的。"
   },
   {
     "id": "drown",
@@ -14142,7 +15187,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46714,
     "selection": "雅思标签选词",
-    "zhPinyin": "yān sǐ"
+    "zhPinyin": "yān sǐ",
+    "mixedExample": "我想看你 drown 。"
   },
   {
     "id": "manual",
@@ -14156,7 +15202,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19677,
     "selection": "雅思标签选词",
-    "zhPinyin": "shǒu cè"
+    "zhPinyin": "shǒu cè",
+    "mixedExample": "她正在读一本园艺 manual 。"
   },
   {
     "id": "betray",
@@ -14170,7 +15217,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45967,
     "selection": "雅思标签选词",
-    "zhPinyin": "chū mài"
+    "zhPinyin": "chū mài",
+    "mixedExample": "他害怕牺牲生命，不得不 betray 组织。"
   },
   {
     "id": "bureaucracy",
@@ -14184,7 +15232,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45855,
     "selection": "雅思标签选词",
-    "zhPinyin": "guān liáo"
+    "zhPinyin": "guān liáo",
+    "mixedExample": "阿尔及利亚需要摆脱 bureaucracy 主义。"
   },
   {
     "id": "beneficial",
@@ -14198,7 +15247,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1863,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǒu yì de"
+    "zhPinyin": "yǒu yì de",
+    "mixedExample": "多运动 beneficial 健康。"
   },
   {
     "id": "editorial",
@@ -14212,7 +15262,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4389,
     "selection": "雅思标签选词",
-    "zhPinyin": "biān jí de"
+    "zhPinyin": "biān jí de",
+    "mixedExample": "比尔在 editorial 部工作。"
   },
   {
     "id": "surrender",
@@ -14226,7 +15277,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41633,
     "selection": "雅思标签选词",
-    "zhPinyin": "tóu xiáng"
+    "zhPinyin": "tóu xiáng",
+    "mixedExample": "我们要向这个怪兽 surrender 吗？"
   },
   {
     "id": "scar",
@@ -14240,7 +15292,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42166,
     "selection": "雅思标签选词",
-    "zhPinyin": "bā hén"
+    "zhPinyin": "bā hén",
+    "mixedExample": "他额头上的 scar 很醒目。"
   },
   {
     "id": "clarify",
@@ -14254,7 +15307,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8288,
     "selection": "雅思标签选词",
-    "zhPinyin": "chǎn míng"
+    "zhPinyin": "chǎn míng",
+    "mixedExample": "我们必须 clarify 这个观点，在运动项目上，业余选手和专业选手的界限开始消失了。"
   },
   {
     "id": "sketch",
@@ -14268,7 +15322,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23385,
     "selection": "雅思标签选词",
-    "zhPinyin": "cǎo tú"
+    "zhPinyin": "cǎo tú",
+    "mixedExample": "请你帮我在这张纸上画个 sketch 。"
   },
   {
     "id": "strive",
@@ -14282,7 +15337,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28314,
     "selection": "雅思标签选词",
-    "zhPinyin": "nǔ lì"
+    "zhPinyin": "nǔ lì",
+    "mixedExample": "不管我怎么 strive ，也达不到父母的要求。"
   },
   {
     "id": "neglect",
@@ -14296,7 +15352,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32750,
     "selection": "雅思标签选词",
-    "zhPinyin": "hū shì"
+    "zhPinyin": "hū shì",
+    "mixedExample": "那两个人不是因为过于上网而 neglect 他们的孩子。"
   },
   {
     "id": "dull",
@@ -14310,7 +15367,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47263,
     "selection": "雅思标签选词",
-    "zhPinyin": "wú qù de"
+    "zhPinyin": "wú qù de",
+    "mixedExample": "我以前觉得这很 dull 。"
   },
   {
     "id": "morality",
@@ -14324,7 +15382,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31163,
     "selection": "雅思标签选词",
-    "zhPinyin": "dào dé"
+    "zhPinyin": "dào dé",
+    "mixedExample": "良善和喜乐比 morality 更加重要，是我们所应尽的绝对义务。"
   },
   {
     "id": "fancy",
@@ -14338,7 +15397,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21439,
     "selection": "雅思标签选词",
-    "zhPinyin": "huàn xiǎng"
+    "zhPinyin": "huàn xiǎng",
+    "mixedExample": "龙是人 fancy 出来的动物。"
   },
   {
     "id": "junk",
@@ -14352,7 +15412,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11371,
     "selection": "雅思标签选词",
-    "zhPinyin": "lā jī"
+    "zhPinyin": "lā jī",
+    "mixedExample": "父亲生前留下来的老古董，原来只是一堆不值钱的 junk 。"
   },
   {
     "id": "manufacture",
@@ -14366,7 +15427,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 995,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhì zào"
+    "zhPinyin": "zhì zào",
+    "mixedExample": "你不得不 manufacture 一些借口。"
   },
   {
     "id": "breakdown",
@@ -14380,7 +15442,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38916,
     "selection": "雅思标签选词",
-    "zhPinyin": "gù zhàng"
+    "zhPinyin": "gù zhàng",
+    "mixedExample": "这个进程必须立即停止，否则服务器会 breakdown 。"
   },
   {
     "id": "conceal",
@@ -14394,7 +15457,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5872,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǐn mán"
+    "zhPinyin": "yǐn mán",
+    "mixedExample": "不要 conceal 你对此的想法。"
   },
   {
     "id": "destiny",
@@ -14408,7 +15472,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14646,
     "selection": "雅思标签选词",
-    "zhPinyin": "mìng yùn"
+    "zhPinyin": "mìng yùn",
+    "mixedExample": "每个人都应该是自己 destiny 的主宰。"
   },
   {
     "id": "solo",
@@ -14422,7 +15487,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30066,
     "selection": "雅思标签选词",
-    "zhPinyin": "dú zòu"
+    "zhPinyin": "dú zòu",
+    "mixedExample": "我希望你练习了你的长笛 solo ！"
   },
   {
     "id": "parliament",
@@ -14436,7 +15502,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47409,
     "selection": "雅思标签选词",
-    "zhPinyin": "guó huì"
+    "zhPinyin": "guó huì",
+    "mixedExample": "总统不得解散 parliament 。"
   },
   {
     "id": "snack",
@@ -14450,7 +15517,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38374,
     "selection": "雅思标签选词",
-    "zhPinyin": "diǎn xīn"
+    "zhPinyin": "diǎn xīn",
+    "mixedExample": "月饼是中国 snack 的一种。"
   },
   {
     "id": "pledge",
@@ -14464,7 +15532,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24932,
     "selection": "雅思标签选词",
-    "zhPinyin": "bǎo zhèng"
+    "zhPinyin": "bǎo zhèng",
+    "mixedExample": "团结、公正和自由是幸福的 pledge 。"
   },
   {
     "id": "appetite",
@@ -14478,7 +15547,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5489,
     "selection": "雅思标签选词",
-    "zhPinyin": "shí yù"
+    "zhPinyin": "shí yù",
+    "mixedExample": "散散步将会给你很好的 appetite 吃早餐。"
   },
   {
     "id": "bleed",
@@ -14492,7 +15562,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16546,
     "selection": "雅思标签选词",
-    "zhPinyin": "liú xiě"
+    "zhPinyin": "liú xiě",
+    "mixedExample": "他受伤的脚又开始 bleed 了。"
   },
   {
     "id": "prejudice",
@@ -14506,7 +15577,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2121,
     "selection": "雅思标签选词",
-    "zhPinyin": "piān jiàn"
+    "zhPinyin": "piān jiàn",
+    "mixedExample": "我对外籍员工没有 prejudice 。"
   },
   {
     "id": "certificate",
@@ -14520,7 +15592,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20466,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhèng míng shū"
+    "zhPinyin": "zhèng míng shū",
+    "mixedExample": "请附上质量 certificate 。"
   },
   {
     "id": "diameter",
@@ -14534,7 +15607,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26520,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhí jìng"
+    "zhPinyin": "zhí jìng",
+    "mixedExample": "用圆周能不能求得 diameter ？"
   },
   {
     "id": "acute",
@@ -14548,7 +15622,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27395,
     "selection": "雅思标签选词",
-    "zhPinyin": "jí xìng de"
+    "zhPinyin": "jí xìng de",
+    "mixedExample": "他一生为 acute 疼痛所苦。"
   },
   {
     "id": "juvenile",
@@ -14562,7 +15637,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32499,
     "selection": "雅思标签选词",
-    "zhPinyin": "shào nián"
+    "zhPinyin": "shào nián",
+    "mixedExample": "juvenile 犯罪最近一直在增长。"
   },
   {
     "id": "halt",
@@ -14576,7 +15652,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21508,
     "selection": "雅思标签选词",
-    "zhPinyin": "tíng zhǐ"
+    "zhPinyin": "tíng zhǐ",
+    "mixedExample": "当列车 halt 时，所有的乘客都想知道发生了什么。"
   },
   {
     "id": "comic",
@@ -14590,7 +15667,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9348,
     "selection": "雅思标签选词",
-    "zhPinyin": "xǐ jù yǎn yuán"
+    "zhPinyin": "xǐ jù yǎn yuán",
+    "mixedExample": "那个 comic 说的全都是我们以前已经听过的老笑话。"
   },
   {
     "id": "revenge",
@@ -14604,7 +15682,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39299,
     "selection": "雅思标签选词",
-    "zhPinyin": "fù chóu"
+    "zhPinyin": "fù chóu",
+    "mixedExample": "没有什么东西比 revenge 更昂贵，更无益。"
   },
   {
     "id": "cane",
@@ -14618,7 +15697,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47469,
     "selection": "雅思标签选词",
-    "zhPinyin": "téng tiáo"
+    "zhPinyin": "téng tiáo",
+    "mixedExample": "梭罗垂涎于这种植物强壮的紫色茎秆，将其制成 cane ，而知更鸟则以深红色汁液的浆果为食。"
   },
   {
     "id": "slim",
@@ -14632,7 +15712,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40199,
     "selection": "雅思标签选词",
-    "zhPinyin": "miáo tiáo de"
+    "zhPinyin": "miáo tiáo de",
+    "mixedExample": "我奶奶年轻的时候身材很 slim ，现在年纪大了就发福了。"
   },
   {
     "id": "avenue",
@@ -14646,7 +15727,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43732,
     "selection": "雅思标签选词",
-    "zhPinyin": "dà jiē"
+    "zhPinyin": "dà jiē",
+    "mixedExample": "我喜欢在纽约第五 avenue 购物。"
   },
   {
     "id": "choir",
@@ -14660,7 +15742,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47728,
     "selection": "雅思标签选词",
-    "zhPinyin": "hé chàng"
+    "zhPinyin": "hé chàng",
+    "mixedExample": "你还在 choir 团里面吗？"
   },
   {
     "id": "theft",
@@ -14674,7 +15757,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10441,
     "selection": "雅思标签选词",
-    "zhPinyin": "dào qiè"
+    "zhPinyin": "dào qiè",
+    "mixedExample": "警察起诉他 theft 。"
   },
   {
     "id": "convenient",
@@ -14688,7 +15772,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26022,
     "selection": "雅思标签选词",
-    "zhPinyin": "fāng biàn de"
+    "zhPinyin": "fāng biàn de",
+    "mixedExample": "这个城市的交通 convenient 得很。"
   },
   {
     "id": "registration",
@@ -14702,7 +15787,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15700,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhù cè"
+    "zhPinyin": "zhù cè",
+    "mixedExample": "我可以免费获取一份 registration 表格。"
   },
   {
     "id": "canal",
@@ -14716,7 +15802,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28424,
     "selection": "雅思标签选词",
-    "zhPinyin": "yùn hé"
+    "zhPinyin": "yùn hé",
+    "mixedExample": "船开过苏伊士 canal 。"
   },
   {
     "id": "optimism",
@@ -14730,7 +15817,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27190,
     "selection": "雅思标签选词",
-    "zhPinyin": "lè guān zhǔ yì ； lè guān"
+    "zhPinyin": "lè guān zhǔ yì ； lè guān",
+    "mixedExample": "optimism 仅仅是一种信息的匮乏的产物。"
   },
   {
     "id": "abundance",
@@ -14744,7 +15832,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30633,
     "selection": "雅思标签选词",
-    "zhPinyin": "dà liàng"
+    "zhPinyin": "dà liàng",
+    "mixedExample": "我偏爱繁体字。因为有 abundance 的简体字的阅读材料，我也认识很多简体字。"
   },
   {
     "id": "despair",
@@ -14758,7 +15847,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48920,
     "selection": "雅思标签选词",
-    "zhPinyin": "jué wàng"
+    "zhPinyin": "jué wàng",
+    "mixedExample": "她 despair 地看著小偷践踏她花园里的植物。"
   },
   {
     "id": "contradiction",
@@ -14772,7 +15862,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37147,
     "selection": "雅思标签选词",
-    "zhPinyin": "máo dùn"
+    "zhPinyin": "máo dùn",
+    "mixedExample": "希望与现实之间的 contradiction ，因何而起？"
   },
   {
     "id": "gorgeous",
@@ -14786,7 +15877,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44604,
     "selection": "雅思标签选词",
-    "zhPinyin": "huá lì de"
+    "zhPinyin": "huá lì de",
+    "mixedExample": "她穿著 gorgeous 丝绸服饰。"
   },
   {
     "id": "semester",
@@ -14800,7 +15892,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45033,
     "selection": "雅思标签选词",
-    "zhPinyin": "xué qī"
+    "zhPinyin": "xué qī",
+    "mixedExample": "新的 semester 开始了。"
   },
   {
     "id": "precision",
@@ -14814,7 +15907,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36302,
     "selection": "雅思标签选词",
-    "zhPinyin": "jīng què"
+    "zhPinyin": "jīng què",
+    "mixedExample": "老师性喜精准——她总是要求 precision 的答案。"
   },
   {
     "id": "ambulance",
@@ -14828,7 +15922,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24499,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiù hù chē"
+    "zhPinyin": "jiù hù chē",
+    "mixedExample": "请你们快点来一辆 ambulance ，快！"
   },
   {
     "id": "peculiar",
@@ -14842,7 +15937,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8084,
     "selection": "雅思标签选词",
-    "zhPinyin": "tè shū de"
+    "zhPinyin": "tè shū de",
+    "mixedExample": "这牛奶有 peculiar 气味。"
   },
   {
     "id": "enthusiastic",
@@ -14856,7 +15952,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7590,
     "selection": "雅思标签选词",
-    "zhPinyin": "rè xīn de"
+    "zhPinyin": "rè xīn de",
+    "mixedExample": "这本书是他 enthusiastic 研究的成果。"
   },
   {
     "id": "visa",
@@ -14870,7 +15967,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3709,
     "selection": "雅思标签选词",
-    "zhPinyin": "qiān zhèng"
+    "zhPinyin": "qiān zhèng",
+    "mixedExample": "你想去美国读书的话，一定要先申请一张学生 visa 。"
   },
   {
     "id": "undoubtedly",
@@ -14884,7 +15982,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41652,
     "selection": "雅思标签选词",
-    "zhPinyin": "wú yí"
+    "zhPinyin": "wú yí",
+    "mixedExample": "电脑 undoubtedly 是一项有价值的工具。"
   },
   {
     "id": "omit",
@@ -14898,7 +15997,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32054,
     "selection": "雅思标签选词",
-    "zhPinyin": "yí lòu"
+    "zhPinyin": "yí lòu",
+    "mixedExample": "用法语，很少会 omit 主语。"
   },
   {
     "id": "vocabulary",
@@ -14912,7 +16012,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5980,
     "selection": "雅思标签选词",
-    "zhPinyin": "cí huì"
+    "zhPinyin": "cí huì",
+    "mixedExample": "你读那本书需要大量 vocabulary 。"
   },
   {
     "id": "utterly",
@@ -14926,7 +16027,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6367,
     "selection": "雅思标签选词",
-    "zhPinyin": "jué duì"
+    "zhPinyin": "jué duì",
+    "mixedExample": "这份工作 utterly 没有可能在一个月之内完成。"
   },
   {
     "id": "microphone",
@@ -14940,7 +16042,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36,
     "selection": "雅思标签选词",
-    "zhPinyin": "mài kè fēng"
+    "zhPinyin": "mài kè fēng",
+    "mixedExample": "刚才我的 microphone 没起作用，不知道为什么。"
   },
   {
     "id": "meadow",
@@ -14954,7 +16057,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21361,
     "selection": "雅思标签选词",
-    "zhPinyin": "cǎo dì"
+    "zhPinyin": "cǎo dì",
+    "mixedExample": "羊群在 meadow 上吃着草。"
   },
   {
     "id": "plug",
@@ -14968,7 +16072,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46896,
     "selection": "雅思标签选词",
-    "zhPinyin": "chā tóu"
+    "zhPinyin": "chā tóu",
+    "mixedExample": "你拔了 plug 了吗？"
   },
   {
     "id": "suitcase",
@@ -14982,7 +16087,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28337,
     "selection": "雅思标签选词",
-    "zhPinyin": "shǒu tí xiāng"
+    "zhPinyin": "shǒu tí xiāng",
+    "mixedExample": "你无法把这个 suitcase 关上，因为你已经塞了太多东西进去了。"
   },
   {
     "id": "triangle",
@@ -14996,7 +16102,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24501,
     "selection": "雅思标签选词",
-    "zhPinyin": "sān jiǎo xíng"
+    "zhPinyin": "sān jiǎo xíng",
+    "mixedExample": "他上身长得呈倒 triangle ，站在那里看上去特帅！"
   },
   {
     "id": "eternal",
@@ -15010,7 +16117,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23338,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǒng yuǎn de"
+    "zhPinyin": "yǒng yuǎn de",
+    "mixedExample": "当说到爱情，女人是专家而男人 eternal 是新手。"
   },
   {
     "id": "clan",
@@ -15024,7 +16132,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43157,
     "selection": "雅思标签选词",
-    "zhPinyin": "zōng zú"
+    "zhPinyin": "zōng zú",
+    "mixedExample": "clan 制度是中国传统文化的重要组成部分。"
   },
   {
     "id": "ashamed",
@@ -15038,7 +16147,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16734,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiū chǐ de"
+    "zhPinyin": "xiū chǐ de",
+    "mixedExample": "他为自己的行为感到非常 ashamed 。"
   },
   {
     "id": "useless",
@@ -15052,7 +16162,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26623,
     "selection": "雅思标签选词",
-    "zhPinyin": "wú yòng de"
+    "zhPinyin": "wú yòng de",
+    "mixedExample": "自然中没有什么是 useless 。"
   },
   {
     "id": "thoughtful",
@@ -15066,7 +16177,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17105,
     "selection": "雅思标签选词",
-    "zhPinyin": "tǐ tiē de"
+    "zhPinyin": "tǐ tiē de",
+    "mixedExample": "他是个很 thoughtful 人。"
   },
   {
     "id": "passive",
@@ -15080,7 +16192,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49450,
     "selection": "雅思标签选词",
-    "zhPinyin": "bèi dòng de"
+    "zhPinyin": "bèi dòng de",
+    "mixedExample": "子翔那个人太老实了，谈恋爱都 passive 得要命。"
   },
   {
     "id": "embassy",
@@ -15094,7 +16207,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24175,
     "selection": "雅思标签选词",
-    "zhPinyin": "dà shǐ guǎn"
+    "zhPinyin": "dà shǐ guǎn",
+    "mixedExample": "在法国，你在 embassy 工作还是领事馆？"
   },
   {
     "id": "injection",
@@ -15108,7 +16222,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15577,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhù shè"
+    "zhPinyin": "zhù shè",
+    "mixedExample": "我会给你 injection 止痛药。"
   },
   {
     "id": "excess",
@@ -15122,7 +16237,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6605,
     "selection": "雅思标签选词",
-    "zhPinyin": "chāo guò"
+    "zhPinyin": "chāo guò",
+    "mixedExample": "货车的载货量 excess 了三吨。"
   },
   {
     "id": "antique",
@@ -15136,7 +16252,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17577,
     "selection": "雅思标签选词",
-    "zhPinyin": "gǔ dǒng"
+    "zhPinyin": "gǔ dǒng",
+    "mixedExample": "他偶然在 antique 店里发现了这个旧硬币。"
   },
   {
     "id": "intersection",
@@ -15150,7 +16267,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17648,
     "selection": "雅思标签选词",
-    "zhPinyin": "shí zì lù kǒu"
+    "zhPinyin": "shí zì lù kǒu",
+    "mixedExample": "他没有看见 intersection 的停止标志，和一辆迎面而来的汽车撞个正著。"
   },
   {
     "id": "resignation",
@@ -15164,7 +16282,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2539,
     "selection": "雅思标签选词",
-    "zhPinyin": "cí zhí"
+    "zhPinyin": "cí zhí",
+    "mixedExample": "resignation 是人生的第一课。"
   },
   {
     "id": "miserable",
@@ -15178,7 +16297,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8471,
     "selection": "雅思标签选词",
-    "zhPinyin": "tòng kǔ de"
+    "zhPinyin": "tòng kǔ de",
+    "mixedExample": "凯特看了克里斯一眼，然后不理睬他，使他感到 miserable 。"
   },
   {
     "id": "erase",
@@ -15192,7 +16312,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 494,
     "selection": "雅思标签选词",
-    "zhPinyin": "mǒ qù"
+    "zhPinyin": "mǒ qù",
+    "mixedExample": "他希望 erase 不好的记忆。"
   },
   {
     "id": "shave",
@@ -15206,7 +16327,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14353,
     "selection": "雅思标签选词",
-    "zhPinyin": "guā hú zi"
+    "zhPinyin": "guā hú zi",
+    "mixedExample": "离开前我必须 shave 。"
   },
   {
     "id": "ignorance",
@@ -15220,7 +16342,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 589,
     "selection": "雅思标签选词",
-    "zhPinyin": "wú zhī"
+    "zhPinyin": "wú zhī",
+    "mixedExample": "如果你认为教育是昂贵的, 那么你等著看 ignorance 让你付出的代价。"
   },
   {
     "id": "amateur",
@@ -15234,7 +16357,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44147,
     "selection": "雅思标签选词",
-    "zhPinyin": "wài háng"
+    "zhPinyin": "wài háng",
+    "mixedExample": "我那时还是个 amateur 。"
   },
   {
     "id": "primitive",
@@ -15248,7 +16372,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14285,
     "selection": "雅思标签选词",
-    "zhPinyin": "yuán shǐ de"
+    "zhPinyin": "yuán shǐ de",
+    "mixedExample": "巫术在 primitive 社会扮演重要角色。"
   },
   {
     "id": "worship",
@@ -15262,7 +16387,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28113,
     "selection": "雅思标签选词",
-    "zhPinyin": "lǐ bài"
+    "zhPinyin": "lǐ bài",
+    "mixedExample": "当你进入 worship 堂时，把你的帽子脱下来。"
   },
   {
     "id": "harmful",
@@ -15276,7 +16402,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37598,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǒu hài de"
+    "zhPinyin": "yǒu hài de",
+    "mixedExample": "这个药没有 harmful 副作用效果。"
   },
   {
     "id": "coincidence",
@@ -15290,7 +16417,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39009,
     "selection": "雅思标签选词",
-    "zhPinyin": "qiǎo hé"
+    "zhPinyin": "qiǎo hé",
+    "mixedExample": "可能只是 coincidence 。"
   },
   {
     "id": "repetition",
@@ -15304,7 +16432,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27639,
     "selection": "雅思标签选词",
-    "zhPinyin": "chóng fù"
+    "zhPinyin": "chóng fù",
+    "mixedExample": "repetition 是记忆之母。"
   },
   {
     "id": "propaganda",
@@ -15318,7 +16447,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30012,
     "selection": "雅思标签选词",
-    "zhPinyin": "xuān chuán"
+    "zhPinyin": "xuān chuán",
+    "mixedExample": "propaganda 由我来负责。"
   },
   {
     "id": "parallel",
@@ -15332,7 +16462,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15623,
     "selection": "雅思标签选词",
-    "zhPinyin": "píng xíng"
+    "zhPinyin": "píng xíng",
+    "mixedExample": "铁路与公路 parallel 。"
   },
   {
     "id": "obscure",
@@ -15346,7 +16477,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6018,
     "selection": "雅思标签选词",
-    "zhPinyin": "mó hú de"
+    "zhPinyin": "mó hú de",
+    "mixedExample": "这句句子意思 obscure 。"
   },
   {
     "id": "recreation",
@@ -15360,7 +16492,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45591,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiū xī"
+    "zhPinyin": "xiū xī",
+    "mixedExample": "没工夫 recreation 的人，早晚会有工夫生病的。"
   },
   {
     "id": "integral",
@@ -15374,7 +16507,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49645,
     "selection": "雅思标签选词",
-    "zhPinyin": "jī fēn"
+    "zhPinyin": "jī fēn",
+    "mixedExample": "integral 与反导函数是以两种不同的方式定义的，而微积分基本定理阐述了两者之间的关系。"
   },
   {
     "id": "absurd",
@@ -15388,7 +16522,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1479,
     "selection": "雅思标签选词",
-    "zhPinyin": "huāng miù de"
+    "zhPinyin": "huāng miù de",
+    "mixedExample": "你那么做真是太过 absurd 了."
   },
   {
     "id": "temptation",
@@ -15402,7 +16537,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5466,
     "selection": "雅思标签选词",
-    "zhPinyin": "yòu huò"
+    "zhPinyin": "yòu huò",
+    "mixedExample": "她终于受不了 temptation ，吃掉了整件蛋糕。"
   },
   {
     "id": "sway",
@@ -15416,7 +16552,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 35946,
     "selection": "雅思标签选词",
-    "zhPinyin": "yáo dòng"
+    "zhPinyin": "yáo dòng",
+    "mixedExample": "从那时起，他的信仰开始 sway 了。"
   },
   {
     "id": "refusal",
@@ -15430,7 +16567,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13705,
     "selection": "雅思标签选词",
-    "zhPinyin": "jù jué"
+    "zhPinyin": "jù jué",
+    "mixedExample": "我认为她的沉默就是表示 refusal 。"
   },
   {
     "id": "defect",
@@ -15444,7 +16582,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 88,
     "selection": "雅思标签选词",
-    "zhPinyin": "quē diǎn"
+    "zhPinyin": "quē diǎn",
+    "mixedExample": "要变得完美，她就是少了一个 defect 。"
   },
   {
     "id": "subjective",
@@ -15458,7 +16597,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16553,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhǔ guān de"
+    "zhPinyin": "zhǔ guān de",
+    "mixedExample": "他写文章写得很 subjective 。"
   },
   {
     "id": "humble",
@@ -15472,7 +16612,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6421,
     "selection": "雅思标签选词",
-    "zhPinyin": "qiān xùn de"
+    "zhPinyin": "qiān xùn de",
+    "mixedExample": "那个 humble 男人跟邻里相处得很好。"
   },
   {
     "id": "thesis",
@@ -15486,7 +16627,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39896,
     "selection": "雅思标签选词",
-    "zhPinyin": "lùn wén"
+    "zhPinyin": "lùn wén",
+    "mixedExample": "下个月就要进行硕士 thesis 答辩了。"
   },
   {
     "id": "audio",
@@ -15500,7 +16642,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26828,
     "selection": "雅思标签选词",
-    "zhPinyin": "yīn pín de"
+    "zhPinyin": "yīn pín de",
+    "mixedExample": "audio 功能仅适用在某些语言的句子中，如中文，荷兰语，法语，德语和上海话。"
   },
   {
     "id": "lottery",
@@ -15514,7 +16657,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23976,
     "selection": "雅思标签选词",
-    "zhPinyin": "cǎi piào"
+    "zhPinyin": "cǎi piào",
+    "mixedExample": "如果你 lottery 中一千万美金的话，你会用那点钱干什么？"
   },
   {
     "id": "hedge",
@@ -15528,7 +16672,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15989,
     "selection": "雅思标签选词",
-    "zhPinyin": "shù lí"
+    "zhPinyin": "shù lí",
+    "mixedExample": "猫从 hedge 穿过去。"
   },
   {
     "id": "lease",
@@ -15542,7 +16687,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37571,
     "selection": "雅思标签选词",
-    "zhPinyin": "zū yuē"
+    "zhPinyin": "zū yuē",
+    "mixedExample": "我今天签了 lease 。"
   },
   {
     "id": "circus",
@@ -15556,7 +16702,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45980,
     "selection": "雅思标签选词",
-    "zhPinyin": "mǎ xì tuán ； mǎ xì"
+    "zhPinyin": "mǎ xì tuán ； mǎ xì",
+    "mixedExample": "汤姆在一个 circus 当训象师。"
   },
   {
     "id": "hail",
@@ -15570,7 +16717,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21558,
     "selection": "雅思标签选词",
-    "zhPinyin": "bīng báo"
+    "zhPinyin": "bīng báo",
+    "mixedExample": "你什么时候看见过 hail 吗？"
   },
   {
     "id": "notify",
@@ -15584,7 +16732,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20467,
     "selection": "雅思标签选词",
-    "zhPinyin": "tōng zhī"
+    "zhPinyin": "tōng zhī",
+    "mixedExample": "货物运到，我会 notify 你们的。"
   },
   {
     "id": "arctic",
@@ -15598,7 +16747,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10132,
     "selection": "雅思标签选词",
-    "zhPinyin": "běi jí de"
+    "zhPinyin": "běi jí de",
+    "mixedExample": "数月后，牠们回到了 arctic 繁殖地。"
   },
   {
     "id": "turnover",
@@ -15612,7 +16762,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37149,
     "selection": "雅思标签选词",
-    "zhPinyin": "yíng yè é"
+    "zhPinyin": "yíng yè é",
+    "mixedExample": "这家公司去年获得显著的 turnover 增长。"
   },
   {
     "id": "sensible",
@@ -15626,7 +16777,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9853,
     "selection": "雅思标签选词",
-    "zhPinyin": "míng zhì de"
+    "zhPinyin": "míng zhì de",
+    "mixedExample": "你听从她的忠告是 sensible 。"
   },
   {
     "id": "decoration",
@@ -15640,7 +16792,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28656,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhuāng shì"
+    "zhPinyin": "zhuāng shì",
+    "mixedExample": "他们的四合院要小得多，设计和 decoration 也比较简单，胡同也比较窄。"
   },
   {
     "id": "clash",
@@ -15654,7 +16807,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43290,
     "selection": "雅思标签选词",
-    "zhPinyin": "chōng tū"
+    "zhPinyin": "chōng tū",
+    "mixedExample": "他们有时候有矛盾 clash"
   },
   {
     "id": "mammal",
@@ -15668,7 +16822,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10447,
     "selection": "雅思标签选词",
-    "zhPinyin": "bǔ rǔ dòng wù"
+    "zhPinyin": "bǔ rǔ dòng wù",
+    "mixedExample": "鲸是被公认为最大的 mammal 。"
   },
   {
     "id": "imitate",
@@ -15682,7 +16837,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11339,
     "selection": "雅思标签选词",
-    "zhPinyin": "mó fǎng"
+    "zhPinyin": "mó fǎng",
+    "mixedExample": "比起父母，儿童更喜欢 imitate 自己的同龄人。"
   },
   {
     "id": "notorious",
@@ -15696,7 +16852,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46808,
     "selection": "雅思标签选词",
-    "zhPinyin": "chòu míng zhāo zhù de"
+    "zhPinyin": "chòu míng zhāo zhù de",
+    "mixedExample": "这个路口因频繁的事故而 notorious 。"
   },
   {
     "id": "stereo",
@@ -15710,7 +16867,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6782,
     "selection": "雅思标签选词",
-    "zhPinyin": "lì tǐ de"
+    "zhPinyin": "lì tǐ de",
+    "mixedExample": "往 stereo 声音响上放一枚唱片。"
   },
   {
     "id": "toast",
@@ -15724,7 +16882,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45941,
     "selection": "雅思标签选词",
-    "zhPinyin": "gān bēi"
+    "zhPinyin": "gān bēi",
+    "mixedExample": "请诸位斟满酒，为新郎和新娘 toast ！"
   },
   {
     "id": "deprive",
@@ -15738,7 +16897,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7641,
     "selection": "雅思标签选词",
-    "zhPinyin": "bō duó"
+    "zhPinyin": "bō duó",
+    "mixedExample": "这项法律会 deprive 我们的基本权利。"
   },
   {
     "id": "flourish",
@@ -15752,7 +16912,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3974,
     "selection": "雅思标签选词",
-    "zhPinyin": "fán róng"
+    "zhPinyin": "fán róng",
+    "mixedExample": "玛雅文明 flourish 了多久？"
   },
   {
     "id": "shiver",
@@ -15766,7 +16927,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10271,
     "selection": "雅思标签选词",
-    "zhPinyin": "chàn dǒu"
+    "zhPinyin": "chàn dǒu",
+    "mixedExample": "他边 shiver 边说：「那座城堡有鬼。」"
   },
   {
     "id": "occurrence",
@@ -15780,7 +16942,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7260,
     "selection": "雅思标签选词",
-    "zhPinyin": "fā shēng"
+    "zhPinyin": "fā shēng",
+    "mixedExample": "这种事每天也会 occurrence 。"
   },
   {
     "id": "marital",
@@ -15794,7 +16957,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41857,
     "selection": "雅思标签选词",
-    "zhPinyin": "hūn yīn de"
+    "zhPinyin": "hūn yīn de",
+    "mixedExample": "能告诉我你的 marital 状况吗？"
   },
   {
     "id": "leisure",
@@ -15808,7 +16972,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 12882,
     "selection": "雅思标签选词",
-    "zhPinyin": "xián xiá"
+    "zhPinyin": "xián xiá",
+    "mixedExample": "我常常在我的 leisure 时候听广播。"
   },
   {
     "id": "exaggerate",
@@ -15822,7 +16987,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19100,
     "selection": "雅思标签选词",
-    "zhPinyin": "kuā zhāng"
+    "zhPinyin": "kuā zhāng",
+    "mixedExample": "在我看来，她有一种 exaggerate 的倾向。"
   },
   {
     "id": "volcano",
@@ -15836,7 +17002,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3330,
     "selection": "雅思标签选词",
-    "zhPinyin": "huǒ shān"
+    "zhPinyin": "huǒ shān",
+    "mixedExample": "我们坐在，一如往常， volcano 口上。"
   },
   {
     "id": "jealous",
@@ -15850,7 +17017,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33118,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiàn mù de"
+    "zhPinyin": "xiàn mù de",
+    "mixedExample": "我很 jealous 你现在的生活。"
   },
   {
     "id": "pasture",
@@ -15864,7 +17032,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25933,
     "selection": "雅思标签选词",
-    "zhPinyin": "mù chǎng"
+    "zhPinyin": "mù chǎng",
+    "mixedExample": "那个 pasture 有十英亩大。"
   },
   {
     "id": "deliberate",
@@ -15878,7 +17047,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 35896,
     "selection": "雅思标签选词",
-    "zhPinyin": "shēn sī shú lǜ de"
+    "zhPinyin": "shēn sī shú lǜ de",
+    "mixedExample": "该实验的每一步都是经过 deliberate 。"
   },
   {
     "id": "oath",
@@ -15892,7 +17062,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48078,
     "selection": "雅思标签选词",
-    "zhPinyin": "shì yán"
+    "zhPinyin": "shì yán",
+    "mixedExample": "安乐死与希波克拉底 oath 相冲突。"
   },
   {
     "id": "cement",
@@ -15906,7 +17077,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6701,
     "selection": "雅思标签选词",
-    "zhPinyin": "shuǐ ní"
+    "zhPinyin": "shuǐ ní",
+    "mixedExample": "cement 会在数个小时内凝固。"
   },
   {
     "id": "underestimate",
@@ -15920,7 +17092,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37547,
     "selection": "雅思标签选词",
-    "zhPinyin": "dī gū"
+    "zhPinyin": "dī gū",
+    "mixedExample": "不要 underestimate 自己的实力。"
   },
   {
     "id": "ecology",
@@ -15934,7 +17107,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19055,
     "selection": "雅思标签选词",
-    "zhPinyin": "shēng tài xué"
+    "zhPinyin": "shēng tài xué",
+    "mixedExample": "她开始对 ecology 感兴趣，是受到他的影响。"
   },
   {
     "id": "temper",
@@ -15948,7 +17122,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29065,
     "selection": "雅思标签选词",
-    "zhPinyin": "pí qì"
+    "zhPinyin": "pí qì",
+    "mixedExample": "老师很容易对学生发 temper 。"
   },
   {
     "id": "spur",
@@ -15962,7 +17137,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1700,
     "selection": "雅思标签选词",
-    "zhPinyin": "cì jī"
+    "zhPinyin": "cì jī",
+    "mixedExample": "更多投资在教育的钱将会 spur 经济成长。"
   },
   {
     "id": "whistle",
@@ -15976,7 +17152,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40391,
     "selection": "雅思标签选词",
-    "zhPinyin": "kǒu shào"
+    "zhPinyin": "kǒu shào",
+    "mixedExample": "裁判吹响了 whistle ，判定他手球。"
   },
   {
     "id": "astronomy",
@@ -15990,7 +17167,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18307,
     "selection": "雅思标签选词",
-    "zhPinyin": "tiān wén xué"
+    "zhPinyin": "tiān wén xué",
+    "mixedExample": "他好像对 astronomy 挺有兴趣。"
   },
   {
     "id": "receipt",
@@ -16004,7 +17182,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21484,
     "selection": "雅思标签选词",
-    "zhPinyin": "shōu jù"
+    "zhPinyin": "shōu jù",
+    "mixedExample": "麻烦我要一张 receipt 。"
   },
   {
     "id": "uneasy",
@@ -16018,7 +17197,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27111,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù zì zài de"
+    "zhPinyin": "bù zì zài de",
+    "mixedExample": "我无论是甚么东西也要记进笔记本里；没有了笔记本，我就会浑身 uneasy 。"
   },
   {
     "id": "tractor",
@@ -16032,7 +17212,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44176,
     "selection": "雅思标签选词",
-    "zhPinyin": "tuō lā jī"
+    "zhPinyin": "tuō lā jī",
+    "mixedExample": "我发动不了我的 tractor 。"
   },
   {
     "id": "bloom",
@@ -16046,7 +17227,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29026,
     "selection": "雅思标签选词",
-    "zhPinyin": "kāi huā"
+    "zhPinyin": "kāi huā",
+    "mixedExample": "春季的时候，中国北边很冷，所以在外边的花不 bloom 。"
   },
   {
     "id": "perfume",
@@ -16060,7 +17242,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39188,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiāng shuǐ"
+    "zhPinyin": "xiāng shuǐ",
+    "mixedExample": "你知道男孩子送女孩子 perfume 代表什么吗？"
   },
   {
     "id": "oval",
@@ -16074,7 +17257,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41813,
     "selection": "雅思标签选词",
-    "zhPinyin": "tuǒ yuán xíng"
+    "zhPinyin": "tuǒ yuán xíng",
+    "mixedExample": "由于轨道是 oval 的，行星和太阳之间的距离不会总是相同。"
   },
   {
     "id": "rigorous",
@@ -16088,7 +17272,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45364,
     "selection": "雅思标签选词",
-    "zhPinyin": "yán gé de"
+    "zhPinyin": "yán gé de",
+    "mixedExample": "正如我之前提到的，经过 rigorous 调查后，我们发现公司的管理层没有任何问题。"
   },
   {
     "id": "anthropology",
@@ -16102,7 +17287,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30272,
     "selection": "雅思标签选词",
-    "zhPinyin": "rén lèi xué"
+    "zhPinyin": "rén lèi xué",
+    "mixedExample": "我是 anthropology 的研究学生，课题是“在英国的中医”。"
   },
   {
     "id": "conquer",
@@ -16116,7 +17302,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29189,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhēng fú"
+    "zhPinyin": "zhēng fú",
+    "mixedExample": "如果他们必须先学拉丁文的话，是没有机会让罗马人 conquer 世界的对吧。"
   },
   {
     "id": "width",
@@ -16130,7 +17317,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26509,
     "selection": "雅思标签选词",
-    "zhPinyin": "kuān dù"
+    "zhPinyin": "kuān dù",
+    "mixedExample": "这条路的 width 是多少？"
   },
   {
     "id": "barbecue",
@@ -16144,7 +17332,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2179,
     "selection": "雅思标签选词",
-    "zhPinyin": "kǎo ròu ； shāo kǎo"
+    "zhPinyin": "kǎo ròu ； shāo kǎo",
+    "mixedExample": "我们要在海边在烧烤架上 barbecue 。"
   },
   {
     "id": "polar",
@@ -16158,7 +17347,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28412,
     "selection": "雅思标签选词",
-    "zhPinyin": "jí dì de"
+    "zhPinyin": "jí dì de",
+    "mixedExample": "融化中的 polar 冰盖也可以使海平面上涨的势态更加严重。"
   },
   {
     "id": "paradise",
@@ -16172,7 +17362,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49196,
     "selection": "雅思标签选词",
-    "zhPinyin": "tiān táng"
+    "zhPinyin": "tiān táng",
+    "mixedExample": "我们会把人间变成 paradise 。"
   },
   {
     "id": "mimic",
@@ -16186,7 +17377,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8878,
     "selection": "雅思标签选词",
-    "zhPinyin": "mó fǎng de"
+    "zhPinyin": "mó fǎng de",
+    "mixedExample": "鹦鹉会 mimic 人的声音。"
   },
   {
     "id": "atmospheric",
@@ -16200,7 +17392,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46677,
     "selection": "雅思标签选词",
-    "zhPinyin": "dà qì de"
+    "zhPinyin": "dà qì de",
+    "mixedExample": "气压表是一种用来测量 atmospheric 压力的仪器，主要用于研究气候和测量高度。"
   },
   {
     "id": "dwarf",
@@ -16214,7 +17407,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34885,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhū rú"
+    "zhPinyin": "zhū rú",
+    "mixedExample": "从前有个 dwarf 住在森林里。"
   },
   {
     "id": "surpass",
@@ -16228,7 +17422,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30297,
     "selection": "雅思标签选词",
-    "zhPinyin": "chāo yuè"
+    "zhPinyin": "chāo yuè",
+    "mixedExample": "南北朝在他们的统治之下失败了的原因是他们让文学的光辉 surpass 了实质内容。"
   },
   {
     "id": "infinite",
@@ -16242,7 +17437,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7576,
     "selection": "雅思标签选词",
-    "zhPinyin": "wú xiàn"
+    "zhPinyin": "wú xiàn",
+    "mixedExample": "这些 infinite 空间的永恒沉默使我恐惧。"
   },
   {
     "id": "gossip",
@@ -16256,7 +17452,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24645,
     "selection": "雅思标签选词",
-    "zhPinyin": "xián liáo ； liú yán"
+    "zhPinyin": "xián liáo ； liú yán",
+    "mixedExample": "人们不喜欢 gossip 蜚语的唯一时间是当你闲聊他们的事。"
   },
   {
     "id": "evacuate",
@@ -16270,7 +17467,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27592,
     "selection": "雅思标签选词",
-    "zhPinyin": "shū sàn"
+    "zhPinyin": "shū sàn",
+    "mixedExample": "我们有不到五分钟来 evacuate 整栋楼的人。"
   },
   {
     "id": "excel",
@@ -16284,7 +17482,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45640,
     "selection": "雅思标签选词",
-    "zhPinyin": "shàn cháng"
+    "zhPinyin": "shàn cháng",
+    "mixedExample": "澳大利亚人 excel 体育和娱乐。"
   },
   {
     "id": "gratitude",
@@ -16298,7 +17497,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19159,
     "selection": "雅思标签选词",
-    "zhPinyin": "gǎn jī zhī qíng"
+    "zhPinyin": "gǎn jī zhī qíng",
+    "mixedExample": "她的心流露著 gratitude 。"
   },
   {
     "id": "emperor",
@@ -16312,7 +17512,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27984,
     "selection": "雅思标签选词",
-    "zhPinyin": "huáng dì"
+    "zhPinyin": "huáng dì",
+    "mixedExample": "从来就没有什么救世主， 也不靠神仙 emperor ！"
   },
   {
     "id": "cylinder",
@@ -16326,7 +17527,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34377,
     "selection": "雅思标签选词",
-    "zhPinyin": "qì gāng"
+    "zhPinyin": "qì gāng",
+    "mixedExample": "这个活塞不接触 cylinder 盖。"
   },
   {
     "id": "cafeteria",
@@ -16340,7 +17542,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8609,
     "selection": "雅思标签选词",
-    "zhPinyin": "zì zhù cān tīng"
+    "zhPinyin": "zì zhù cān tīng",
+    "mixedExample": "cafeteria 是一种自助式的餐厅。"
   },
   {
     "id": "energetic",
@@ -16354,7 +17557,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40722,
     "selection": "雅思标签选词",
-    "zhPinyin": "jī jí de"
+    "zhPinyin": "jī jí de",
+    "mixedExample": "这小伙子既能干又 energetic ，真是没说的。"
   },
   {
     "id": "arouse",
@@ -16368,7 +17572,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26477,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǐn qǐ"
+    "zhPinyin": "yǐn qǐ",
+    "mixedExample": "如何 arouse 女人的渴望？"
   },
   {
     "id": "wreck",
@@ -16382,7 +17587,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6795,
     "selection": "雅思标签选词",
-    "zhPinyin": "cán hái"
+    "zhPinyin": "cán hái",
+    "mixedExample": "一名空姐从飞机 wreck 中被救出来了。"
   },
   {
     "id": "masculine",
@@ -16396,7 +17602,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39969,
     "selection": "雅思标签选词",
-    "zhPinyin": "nán xìng"
+    "zhPinyin": "nán xìng",
+    "mixedExample": "所谓的＂ masculine 特色教育学＂根本就不存在。"
   },
   {
     "id": "allegiance",
@@ -16410,7 +17617,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2748,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiào zhōng"
+    "zhPinyin": "xiào zhōng",
+    "mixedExample": "骑士宣誓 allegiance 于国王。"
   },
   {
     "id": "orchard",
@@ -16424,7 +17632,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 12161,
     "selection": "雅思标签选词",
-    "zhPinyin": "guǒ yuán"
+    "zhPinyin": "guǒ yuán",
+    "mixedExample": "我乐意每年秋季去苹 orchard 。"
   },
   {
     "id": "starve",
@@ -16438,7 +17647,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15748,
     "selection": "雅思标签选词",
-    "zhPinyin": "è sǐ"
+    "zhPinyin": "è sǐ",
+    "mixedExample": "我宁愿 starve ，也不会去偷东西。"
   },
   {
     "id": "sewer",
@@ -16452,7 +17662,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49334,
     "selection": "雅思标签选词",
-    "zhPinyin": "xià shuǐ dào"
+    "zhPinyin": "xià shuǐ dào",
+    "mixedExample": "sewer 位于道路下方。"
   },
   {
     "id": "fertile",
@@ -16466,7 +17677,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8243,
     "selection": "雅思标签选词",
-    "zhPinyin": "féi wò de"
+    "zhPinyin": "féi wò de",
+    "mixedExample": "这里的土壤 fertile 。"
   },
   {
     "id": "timely",
@@ -16480,7 +17692,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45171,
     "selection": "雅思标签选词",
-    "zhPinyin": "shì shí de"
+    "zhPinyin": "shì shí de",
+    "mixedExample": "有时候，真希望自己可以 timely 穿越回去，去见见那个还是个小孩子的自己。"
   },
   {
     "id": "layout",
@@ -16494,7 +17707,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 441,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù jú"
+    "zhPinyin": "bù jú",
+    "mixedExample": "我改了一下我的网站的 layout 。"
   },
   {
     "id": "capsule",
@@ -16508,7 +17722,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10286,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiāo náng"
+    "zhPinyin": "jiāo náng",
+    "mixedExample": "那个建筑物是男女都可以住宿的 capsule 酒店。"
   },
   {
     "id": "mock",
@@ -16522,7 +17737,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21074,
     "selection": "雅思标签选词",
-    "zhPinyin": "mó nǐ de"
+    "zhPinyin": "mó nǐ de",
+    "mixedExample": "未来飞行员将在 mock 操作室中训练。"
   },
   {
     "id": "stubborn",
@@ -16536,7 +17752,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47958,
     "selection": "雅思标签选词",
-    "zhPinyin": "wán gù de"
+    "zhPinyin": "wán gù de",
+    "mixedExample": "烤箱内如有液体洒出，应立即清理，以免留下 stubborn 污渍。"
   },
   {
     "id": "deteriorate",
@@ -16550,7 +17767,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45830,
     "selection": "雅思标签选词",
-    "zhPinyin": "è huà"
+    "zhPinyin": "è huà",
+    "mixedExample": "如果汤姆不服用处方药，他的健康状况可能会 deteriorate 。"
   },
   {
     "id": "reap",
@@ -16564,7 +17782,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30135,
     "selection": "雅思标签选词",
-    "zhPinyin": "shōu huò"
+    "zhPinyin": "shōu huò",
+    "mixedExample": "种的是风，而 reap 的是旋风。"
   },
   {
     "id": "arrogant",
@@ -16578,7 +17797,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9318,
     "selection": "雅思标签选词",
-    "zhPinyin": "zì dà de"
+    "zhPinyin": "zì dà de",
+    "mixedExample": "那个女孩因为长得漂亮所以很 arrogant 。"
   },
   {
     "id": "dubious",
@@ -16592,7 +17812,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46008,
     "selection": "雅思标签选词",
-    "zhPinyin": "kě yí de"
+    "zhPinyin": "kě yí de",
+    "mixedExample": "汤姆在 dubious 网站上看视频的时候中了电脑病毒。"
   },
   {
     "id": "eclipse",
@@ -16606,7 +17827,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10485,
     "selection": "雅思标签选词",
-    "zhPinyin": "yuè shí"
+    "zhPinyin": "yuè shí",
+    "mixedExample": "eclipse 是一种罕见的现象。"
   },
   {
     "id": "briefcase",
@@ -16620,7 +17842,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4572,
     "selection": "雅思标签选词",
-    "zhPinyin": "gōng shì bāo"
+    "zhPinyin": "gōng shì bāo",
+    "mixedExample": "我把我的 briefcase 留在公车上了。"
   },
   {
     "id": "brink",
@@ -16634,7 +17857,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33802,
     "selection": "雅思标签选词",
-    "zhPinyin": "biān yuán"
+    "zhPinyin": "biān yuán",
+    "mixedExample": "在人类自我毁灭的 brink ，第一次接触成了福音。"
   },
   {
     "id": "symphony",
@@ -16648,7 +17872,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3420,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiāo xiǎng yuè"
+    "zhPinyin": "jiāo xiǎng yuè",
+    "mixedExample": "你知道伦敦 symphony 团的演奏会行程吗？"
   },
   {
     "id": "cellar",
@@ -16662,7 +17887,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46975,
     "selection": "雅思标签选词",
-    "zhPinyin": "dì xià shì"
+    "zhPinyin": "dì xià shì",
+    "mixedExample": "cellar 里的信号很差。"
   },
   {
     "id": "allowance",
@@ -16676,7 +17902,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27347,
     "selection": "雅思标签选词",
-    "zhPinyin": "líng yòng qián"
+    "zhPinyin": "líng yòng qián",
+    "mixedExample": "我爸爸每周给我 allowance ，我会用来买漫画书和冰激凌。"
   },
   {
     "id": "masterpiece",
@@ -16690,7 +17917,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23630,
     "selection": "雅思标签选词",
-    "zhPinyin": "jié zuò"
+    "zhPinyin": "jié zuò",
+    "mixedExample": "萨尔曼·鲁西迪的《撒旦诗篇》是现代文学的真正的 masterpiece"
   },
   {
     "id": "ordeal",
@@ -16704,7 +17932,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42310,
     "selection": "雅思标签选词",
-    "zhPinyin": "yán kù kǎo yàn"
+    "zhPinyin": "yán kù kǎo yàn",
+    "mixedExample": "汤姆的 ordeal 远没有结束。"
   },
   {
     "id": "slippery",
@@ -16718,7 +17947,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27880,
     "selection": "雅思标签选词",
-    "zhPinyin": "guāng huá de"
+    "zhPinyin": "guāng huá de",
+    "mixedExample": "在 slippery 路上开车会导致车祸。"
   },
   {
     "id": "splendid",
@@ -16732,7 +17962,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30123,
     "selection": "雅思标签选词",
-    "zhPinyin": "càn làn de"
+    "zhPinyin": "càn làn de",
+    "mixedExample": "寒冷干燥， splendid 阳光，多么美丽的冬日天气!"
   },
   {
     "id": "foul",
@@ -16746,7 +17977,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 22475,
     "selection": "雅思标签选词",
-    "zhPinyin": "è chòu de"
+    "zhPinyin": "è chòu de",
+    "mixedExample": "我刚打开锅盖，一股 foul 就扑鼻而来。"
   },
   {
     "id": "parcel",
@@ -16760,7 +17992,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8181,
     "selection": "雅思标签选词",
-    "zhPinyin": "bāo guǒ"
+    "zhPinyin": "bāo guǒ",
+    "mixedExample": "这个 parcel 上的地址是错的。"
   },
   {
     "id": "nationality",
@@ -16774,7 +18007,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9354,
     "selection": "雅思标签选词",
-    "zhPinyin": "guó jí"
+    "zhPinyin": "guó jí",
+    "mixedExample": "这家公司不分种族、宗教或 nationality 雇用人。"
   },
   {
     "id": "compute",
@@ -16788,7 +18022,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2422,
     "selection": "雅思标签选词",
-    "zhPinyin": "jì suàn"
+    "zhPinyin": "jì suàn",
+    "mixedExample": "科学家们可以很容易地 compute 出行星之间的距离。"
   },
   {
     "id": "coarse",
@@ -16802,7 +18037,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19141,
     "selection": "雅思标签选词",
-    "zhPinyin": "cū cāo de"
+    "zhPinyin": "cū cāo de",
+    "mixedExample": "她的裙子是用 coarse 羊毛造的。"
   },
   {
     "id": "aviation",
@@ -16816,7 +18052,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43293,
     "selection": "雅思标签选词",
-    "zhPinyin": "háng kōng"
+    "zhPinyin": "háng kōng",
+    "mixedExample": "他的梦想是成为航天 aviation 工程师。"
   },
   {
     "id": "imaginative",
@@ -16830,7 +18067,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18198,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiǎng xiàng de"
+    "zhPinyin": "xiǎng xiàng de",
+    "mixedExample": "他曾经是一个富有 imaginative 力的男孩。"
   },
   {
     "id": "compass",
@@ -16844,7 +18082,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14106,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhǐ nán zhēn"
+    "zhPinyin": "zhǐ nán zhēn",
+    "mixedExample": "compass 的指针指向北边。"
   },
   {
     "id": "institute",
@@ -16858,7 +18097,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34309,
     "selection": "雅思标签选词",
-    "zhPinyin": "xué yuàn"
+    "zhPinyin": "xué yuàn",
+    "mixedExample": "去年我们 institute 建了一个新教学楼。"
   },
   {
     "id": "yearn",
@@ -16872,7 +18112,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42783,
     "selection": "雅思标签选词",
-    "zhPinyin": "kě wàng"
+    "zhPinyin": "kě wàng",
+    "mixedExample": "我 yearn 上大学。"
   },
   {
     "id": "sociology",
@@ -16886,7 +18127,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4348,
     "selection": "雅思标签选词",
-    "zhPinyin": "shè huì xué"
+    "zhPinyin": "shè huì xué",
+    "mixedExample": "弗兰克在大学主修 sociology 。"
   },
   {
     "id": "unify",
@@ -16900,7 +18142,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18620,
     "selection": "雅思标签选词",
-    "zhPinyin": "tǒng yī"
+    "zhPinyin": "tǒng yī",
+    "mixedExample": "他试著 unify 不同的团体。"
   },
   {
     "id": "spiral",
@@ -16914,7 +18157,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34422,
     "selection": "雅思标签选词",
-    "zhPinyin": "luó xuán xíng de"
+    "zhPinyin": "luó xuán xíng de",
+    "mixedExample": "蜗牛壳是 spiral ."
   },
   {
     "id": "flirt",
@@ -16928,7 +18172,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45270,
     "selection": "雅思标签选词",
-    "zhPinyin": "tiáo qíng"
+    "zhPinyin": "tiáo qíng",
+    "mixedExample": "不要和顾客 flirt 。"
   },
   {
     "id": "delete",
@@ -16942,7 +18187,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43587,
     "selection": "雅思标签选词",
-    "zhPinyin": "shān chú"
+    "zhPinyin": "shān chú",
+    "mixedExample": "你现在可以 delete 它。"
   },
   {
     "id": "carpenter",
@@ -16956,7 +18202,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39223,
     "selection": "雅思标签选词",
-    "zhPinyin": "mù jiàng"
+    "zhPinyin": "mù jiàng",
+    "mixedExample": "carpenter 带著他的工具。"
   },
   {
     "id": "souvenir",
@@ -16970,7 +18217,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 261,
     "selection": "雅思标签选词",
-    "zhPinyin": "jì niàn pǐn"
+    "zhPinyin": "jì niàn pǐn",
+    "mixedExample": "这将是我环绕美国旅行中一个很好的 souvenir 。"
   },
   {
     "id": "nostalgia",
@@ -16984,7 +18232,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34967,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiāng chóu"
+    "zhPinyin": "xiāng chóu",
+    "mixedExample": "你可知道 nostalgia 的滋味？"
   },
   {
     "id": "thunder",
@@ -16998,7 +18247,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21394,
     "selection": "雅思标签选词",
-    "zhPinyin": "léi shēng"
+    "zhPinyin": "léi shēng",
+    "mixedExample": "光传播得比声音快，所以我们先看到闪电，然后才会听见 thunder 。"
   },
   {
     "id": "waterfall",
@@ -17012,7 +18262,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 22184,
     "selection": "雅思标签选词",
-    "zhPinyin": "pù bù"
+    "zhPinyin": "pù bù",
+    "mixedExample": "我看见那儿有个很美的 waterfall 。"
   },
   {
     "id": "patriotism",
@@ -17026,7 +18277,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26851,
     "selection": "雅思标签选词",
-    "zhPinyin": "ài guó zhǔ yì"
+    "zhPinyin": "ài guó zhǔ yì",
+    "mixedExample": "有没有一个国家比美国更提倡 patriotism ？"
   },
   {
     "id": "idle",
@@ -17040,7 +18292,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7710,
     "selection": "雅思标签选词",
-    "zhPinyin": "làng fèi"
+    "zhPinyin": "làng fèi",
+    "mixedExample": "让土地闲置著很 idle 。"
   },
   {
     "id": "scenery",
@@ -17054,7 +18307,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6080,
     "selection": "雅思标签选词",
-    "zhPinyin": "jǐng sè"
+    "zhPinyin": "jǐng sè",
+    "mixedExample": "这座城市的 scenery 让我想起了伦敦。"
   },
   {
     "id": "abnormal",
@@ -17068,7 +18322,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45159,
     "selection": "雅思标签选词",
-    "zhPinyin": "jī xíng de"
+    "zhPinyin": "jī xíng de",
+    "mixedExample": "他的婚姻观很 abnormal 。"
   },
   {
     "id": "pianist",
@@ -17082,7 +18337,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3372,
     "selection": "雅思标签选词",
-    "zhPinyin": "gāng qín jiā"
+    "zhPinyin": "gāng qín jiā",
+    "mixedExample": "我有一个朋友，他的父亲是位名 pianist 。"
   },
   {
     "id": "superficial",
@@ -17096,7 +18352,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27546,
     "selection": "雅思标签选词",
-    "zhPinyin": "biǎo miàn"
+    "zhPinyin": "biǎo miàn",
+    "mixedExample": "你要学的是实实在在的技能，而不单是 superficial 的知识。"
   },
   {
     "id": "cucumber",
@@ -17110,7 +18367,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45414,
     "selection": "雅思标签选词",
-    "zhPinyin": "huáng guā"
+    "zhPinyin": "huáng guā",
+    "mixedExample": "她床头有一根 cucumber 。"
   },
   {
     "id": "liable",
@@ -17124,7 +18382,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9639,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǒu yì wù de"
+    "zhPinyin": "yǒu yì wù de",
+    "mixedExample": "你 liable 还债。"
   },
   {
     "id": "heroine",
@@ -17138,7 +18397,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7659,
     "selection": "雅思标签选词",
-    "zhPinyin": "nǚ zhǔ jué"
+    "zhPinyin": "nǚ zhǔ jué",
+    "mixedExample": "这个故事的 heroine 是一个小女孩。"
   },
   {
     "id": "cricket",
@@ -17152,7 +18412,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27563,
     "selection": "雅思标签选词",
-    "zhPinyin": "xī shuài"
+    "zhPinyin": "xī shuài",
+    "mixedExample": "笼子里的 cricket 吃得跟野生的蟋蟀一样多。"
   },
   {
     "id": "deceive",
@@ -17166,7 +18427,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24192,
     "selection": "雅思标签选词",
-    "zhPinyin": "qī piàn"
+    "zhPinyin": "qī piàn",
+    "mixedExample": "自然从不会 deceive 我们，骗我们的永远是我们自己。"
   },
   {
     "id": "irregular",
@@ -17180,7 +18442,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 362,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù guī zé de"
+    "zhPinyin": "bù guī zé de",
+    "mixedExample": "我不喜欢学习 irregular 动词。"
   },
   {
     "id": "butcher",
@@ -17194,7 +18457,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40632,
     "selection": "雅思标签选词",
-    "zhPinyin": "tú fū"
+    "zhPinyin": "tú fū",
+    "mixedExample": "butcher 的刀子在抽屉里"
   },
   {
     "id": "nylon",
@@ -17208,7 +18472,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44594,
     "selection": "雅思标签选词",
-    "zhPinyin": "ní lóng"
+    "zhPinyin": "ní lóng",
+    "mixedExample": "她买了一打 nylon 袜。"
   },
   {
     "id": "diploma",
@@ -17222,7 +18487,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10683,
     "selection": "雅思标签选词",
-    "zhPinyin": "bì yè zhèng shū"
+    "zhPinyin": "bì yè zhèng shū",
+    "mixedExample": "校长向每个毕业生颁发了 diploma 。"
   },
   {
     "id": "envy",
@@ -17236,7 +18502,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10617,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiàn mù"
+    "zhPinyin": "xiàn mù",
+    "mixedExample": "你们家去北海道旅游是真的么？我 envy 你。"
   },
   {
     "id": "customary",
@@ -17250,7 +18517,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27336,
     "selection": "雅思标签选词",
-    "zhPinyin": "xí guàn de"
+    "zhPinyin": "xí guàn de",
+    "mixedExample": "在亚洲文化里， customary 在进一个房子或一座寺庙前先脱鞋子。"
   },
   {
     "id": "referee",
@@ -17264,7 +18532,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40388,
     "selection": "雅思标签选词",
-    "zhPinyin": "cái pàn"
+    "zhPinyin": "cái pàn",
+    "mixedExample": "referee 吹哨两次，向大家宣布已经终场。"
   },
   {
     "id": "reckless",
@@ -17278,7 +18547,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37059,
     "selection": "雅思标签选词",
-    "zhPinyin": "lǔ mǎng de"
+    "zhPinyin": "lǔ mǎng de",
+    "mixedExample": "reckless 开车容易造成交通事故"
   },
   {
     "id": "drawback",
@@ -17292,7 +18562,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27210,
     "selection": "雅思标签选词",
-    "zhPinyin": "quē diǎn"
+    "zhPinyin": "quē diǎn",
+    "mixedExample": "天才们有一个重要的 drawback ：　他们不会输。"
   },
   {
     "id": "handicap",
@@ -17306,7 +18577,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3251,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhàng ài"
+    "zhPinyin": "zhàng ài",
+    "mixedExample": "没有愿望是最大的 handicap 。"
   },
   {
     "id": "cradle",
@@ -17320,7 +18592,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3574,
     "selection": "雅思标签选词",
-    "zhPinyin": "yáo lán"
+    "zhPinyin": "yáo lán",
+    "mixedExample": "cradle 里学的带到坟墓。"
   },
   {
     "id": "cherish",
@@ -17334,7 +18607,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44630,
     "selection": "雅思标签选词",
-    "zhPinyin": "ài hù"
+    "zhPinyin": "ài hù",
+    "mixedExample": "cherish 文物, 人人有责。"
   },
   {
     "id": "trumpet",
@@ -17348,7 +18622,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5407,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiǎo hào"
+    "zhPinyin": "xiǎo hào",
+    "mixedExample": "泰德喜欢吹 trumpet 。"
   },
   {
     "id": "indispensable",
@@ -17362,7 +18637,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14738,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù kě quē shǎo de"
+    "zhPinyin": "bù kě quē shǎo de",
+    "mixedExample": "水是生命所 indispensable 。"
   },
   {
     "id": "oriental",
@@ -17376,7 +18652,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20662,
     "selection": "雅思标签选词",
-    "zhPinyin": "dōng fāng de"
+    "zhPinyin": "dōng fāng de",
+    "mixedExample": "那篇关于佛教的文章勾起了我对 oriental 宗教的兴趣。"
   },
   {
     "id": "clasp",
@@ -17390,7 +18667,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31051,
     "selection": "雅思标签选词",
-    "zhPinyin": "jǐn wò"
+    "zhPinyin": "jǐn wò",
+    "mixedExample": "他 clasp 她的手。"
   },
   {
     "id": "vegetarian",
@@ -17404,7 +18682,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40906,
     "selection": "雅思标签选词",
-    "zhPinyin": "sù shí zhě"
+    "zhPinyin": "sù shí zhě",
+    "mixedExample": "汤姆可能是 vegetarian 。"
   },
   {
     "id": "equilibrium",
@@ -17418,7 +18697,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31389,
     "selection": "雅思标签选词",
-    "zhPinyin": "píng héng"
+    "zhPinyin": "píng héng",
+    "mixedExample": "我们可以把间断 equilibrium 理论应用到语言上。"
   },
   {
     "id": "tutor",
@@ -17432,7 +18712,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41695,
     "selection": "雅思标签选词",
-    "zhPinyin": "dǎo shī"
+    "zhPinyin": "dǎo shī",
+    "mixedExample": "他是数学系的 tutor 。"
   },
   {
     "id": "barber",
@@ -17446,7 +18727,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21415,
     "selection": "雅思标签选词",
-    "zhPinyin": "lǐ fà shī"
+    "zhPinyin": "lǐ fà shī",
+    "mixedExample": "barber 是为男人刮胡子和剪头发的人。"
   },
   {
     "id": "malaria",
@@ -17460,7 +18742,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3967,
     "selection": "雅思标签选词",
-    "zhPinyin": "nüè jí"
+    "zhPinyin": "nüè jí",
+    "mixedExample": "malaria 是由蚊子传染的。"
   },
   {
     "id": "gamble",
@@ -17474,7 +18757,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38613,
     "selection": "雅思标签选词",
-    "zhPinyin": "dǔ bó"
+    "zhPinyin": "dǔ bó",
+    "mixedExample": "汤姆失业后，为了排遣郁闷的心情而开始了 gamble 。"
   },
   {
     "id": "dread",
@@ -17488,7 +18772,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38871,
     "selection": "雅思标签选词",
-    "zhPinyin": "kě pà de"
+    "zhPinyin": "kě pà de",
+    "mixedExample": "我的书桌，一个 dread 地方：难以置信地多的，难以置信地有用的抽屉——合并在难以置信的一点伸腿的地方。"
   },
   {
     "id": "dissertation",
@@ -17502,7 +18787,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28276,
     "selection": "雅思标签选词",
-    "zhPinyin": "lùn wén"
+    "zhPinyin": "lùn wén",
+    "mixedExample": "我最近真忙于我的毕业 dissertation 。"
   },
   {
     "id": "extinct",
@@ -17516,7 +18802,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23570,
     "selection": "雅思标签选词",
-    "zhPinyin": "miè jué de"
+    "zhPinyin": "miè jué de",
+    "mixedExample": "赌博网站让用户投注在将 extinct 物种上，因为墨西哥湾漏油。"
   },
   {
     "id": "prophecy",
@@ -17530,7 +18817,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19112,
     "selection": "雅思标签选词",
-    "zhPinyin": "yù yán"
+    "zhPinyin": "yù yán",
+    "mixedExample": "她有 prophecy 的能力。"
   },
   {
     "id": "bandage",
@@ -17544,7 +18832,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27655,
     "selection": "雅思标签选词",
-    "zhPinyin": "bēng dài"
+    "zhPinyin": "bēng dài",
+    "mixedExample": "他用 bandage 包扎了伤口。"
   },
   {
     "id": "vicinity",
@@ -17558,7 +18847,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24260,
     "selection": "雅思标签选词",
-    "zhPinyin": "fù jìn"
+    "zhPinyin": "fù jìn",
+    "mixedExample": "我们住在学校 vicinity 。"
   },
   {
     "id": "traveling",
@@ -17572,7 +18862,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3557,
     "selection": "雅思标签选词",
-    "zhPinyin": "lǚ xíng de"
+    "zhPinyin": "lǚ xíng de",
+    "mixedExample": "我去欧洲 traveling 时候，在火车上给人偷了东西。"
   },
   {
     "id": "ultraviolet",
@@ -17586,7 +18877,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14005,
     "selection": "雅思标签选词",
-    "zhPinyin": "zǐ wài xiàn de"
+    "zhPinyin": "zǐ wài xiàn de",
+    "mixedExample": "ultraviolet 可导致皮肤癌。"
   },
   {
     "id": "unhealthy",
@@ -17600,7 +18892,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19522,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù jiàn kāng de"
+    "zhPinyin": "bù jiàn kāng de",
+    "mixedExample": "她佷美， 可是看起来 unhealthy 。"
   },
   {
     "id": "bilingual",
@@ -17614,7 +18907,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34241,
     "selection": "雅思标签选词",
-    "zhPinyin": "shuāng yǔ de"
+    "zhPinyin": "shuāng yǔ de",
+    "mixedExample": "现在有些幼儿园推行的是 bilingual 教学，小朋友们都能滴里嘟噜地说上几句英语。"
   },
   {
     "id": "robber",
@@ -17628,7 +18922,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49533,
     "selection": "雅思标签选词",
-    "zhPinyin": "qiáng dào"
+    "zhPinyin": "qiáng dào",
+    "mixedExample": "当我们其他人辛苦工作时， robber 贵族却用镀金餐具吃饭。"
   },
   {
     "id": "voltage",
@@ -17642,7 +18937,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31335,
     "selection": "雅思标签选词",
-    "zhPinyin": "diàn yā"
+    "zhPinyin": "diàn yā",
+    "mixedExample": "为了这次的测试，我特地买了 voltage 测试仪。"
   },
   {
     "id": "racket",
@@ -17656,7 +18952,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15668,
     "selection": "雅思标签选词",
-    "zhPinyin": "qiú pāi"
+    "zhPinyin": "qiú pāi",
+    "mixedExample": "我把我的网 racket 落在火车上了。"
   },
   {
     "id": "paralysis",
@@ -17670,7 +18967,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41571,
     "selection": "雅思标签选词",
-    "zhPinyin": "tān huàn"
+    "zhPinyin": "tān huàn",
+    "mixedExample": "他的 paralysis 正在恶化，不久他就不能下床了。"
   },
   {
     "id": "statesman",
@@ -17684,7 +18982,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6194,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhèng zhì jiā"
+    "zhPinyin": "zhèng zhì jiā",
+    "mixedExample": "这位 statesman 的名字在日本人人皆知。"
   },
   {
     "id": "metric",
@@ -17698,7 +18997,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32406,
     "selection": "雅思标签选词",
-    "zhPinyin": "gōng zhì de"
+    "zhPinyin": "gōng zhì de",
+    "mixedExample": "要把 metric 单位换算成英制或反过来操作，须点击“菜单”按钮。"
   },
   {
     "id": "crocodile",
@@ -17712,7 +19012,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43094,
     "selection": "雅思标签选词",
-    "zhPinyin": "è yú"
+    "zhPinyin": "è yú",
+    "mixedExample": "木头或许能在水里呆上十年，但它终究不可能变成一条 crocodile 。"
   },
   {
     "id": "gleam",
@@ -17726,7 +19027,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2803,
     "selection": "雅思标签选词",
-    "zhPinyin": "wēi guāng"
+    "zhPinyin": "wēi guāng",
+    "mixedExample": "我们看到了远方灯塔的 gleam 。"
   },
   {
     "id": "adept",
@@ -17740,7 +19042,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24534,
     "selection": "雅思标签选词",
-    "zhPinyin": "nèi háng"
+    "zhPinyin": "nèi háng",
+    "mixedExample": "他好像对音乐剧什么的很感兴趣，而且还非常 adept 。"
   },
   {
     "id": "nourish",
@@ -17754,7 +19057,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46036,
     "selection": "雅思标签选词",
-    "zhPinyin": "zī yǎng"
+    "zhPinyin": "zī yǎng",
+    "mixedExample": "胎盘的角色是 nourish 胎儿。"
   },
   {
     "id": "rust",
@@ -17768,7 +19072,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3013,
     "selection": "雅思标签选词",
-    "zhPinyin": "shēng xiù"
+    "zhPinyin": "shēng xiù",
+    "mixedExample": "如果你把自行车留在雨中，它会 rust 的。"
   },
   {
     "id": "oasis",
@@ -17782,7 +19087,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46128,
     "selection": "雅思标签选词",
-    "zhPinyin": "lǜ zhōu"
+    "zhPinyin": "lǜ zhōu",
+    "mixedExample": "沙漠中有 oasis 。"
   },
   {
     "id": "misfortune",
@@ -17796,7 +19102,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14161,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù xìng"
+    "zhPinyin": "bù xìng",
+    "mixedExample": "有什么比失明更 misfortune 的呢？"
   },
   {
     "id": "fuse",
@@ -17810,7 +19117,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5042,
     "selection": "雅思标签选词",
-    "zhPinyin": "bǎo xiǎn sī"
+    "zhPinyin": "bǎo xiǎn sī",
+    "mixedExample": "汤姆一打开电视， fuse 就烧了。"
   },
   {
     "id": "extravagant",
@@ -17824,7 +19132,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8146,
     "selection": "雅思标签选词",
-    "zhPinyin": "shē chǐ de"
+    "zhPinyin": "shē chǐ de",
+    "mixedExample": "我觉得这钻石戒指太 extravagant 了。"
   },
   {
     "id": "remorse",
@@ -17838,7 +19147,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40667,
     "selection": "雅思标签选词",
-    "zhPinyin": "ào huǐ"
+    "zhPinyin": "ào huǐ",
+    "mixedExample": "反社会者极少为他们的罪行显露 remorse 或有罪恶的感觉。"
   },
   {
     "id": "disco",
@@ -17852,7 +19162,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32015,
     "selection": "雅思标签选词",
-    "zhPinyin": "dí sī kē"
+    "zhPinyin": "dí sī kē",
+    "mixedExample": "他们什么也没解释就把他踢出 disco 了。"
   },
   {
     "id": "booklet",
@@ -17866,7 +19177,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7823,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiǎo cè zi"
+    "zhPinyin": "xiǎo cè zi",
+    "mixedExample": "这本 booklet 是免费的。"
   },
   {
     "id": "dialect",
@@ -17880,7 +19192,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31114,
     "selection": "雅思标签选词",
-    "zhPinyin": "fāng yán"
+    "zhPinyin": "fāng yán",
+    "mixedExample": "他嘴里一口 dialect 。"
   },
   {
     "id": "thirst",
@@ -17894,7 +19207,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3387,
     "selection": "雅思标签选词",
-    "zhPinyin": "kě wàng"
+    "zhPinyin": "kě wàng",
+    "mixedExample": "我们的人民 thirst 独立。"
   },
   {
     "id": "prolific",
@@ -17908,7 +19222,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40435,
     "selection": "雅思标签选词",
-    "zhPinyin": "duō chǎn de"
+    "zhPinyin": "duō chǎn de",
+    "mixedExample": "罗纳尔多是一个 prolific 射手，基本上他能在每一场比赛中进球。"
   },
   {
     "id": "shabby",
@@ -17922,7 +19237,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6030,
     "selection": "雅思标签选词",
-    "zhPinyin": "pò jiù de"
+    "zhPinyin": "pò jiù de",
+    "mixedExample": "房间除了一张 shabby 床以外，就甚么也没有了。"
   },
   {
     "id": "renaissance",
@@ -17936,7 +19252,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29959,
     "selection": "雅思标签选词",
-    "zhPinyin": "fù xīng ； wén yì fù xīng"
+    "zhPinyin": "fù xīng ； wén yì fù xīng",
+    "mixedExample": "随著 renaissance ，学院派的想法被积极的想法取而代之了。"
   },
   {
     "id": "burglar",
@@ -17950,7 +19267,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15614,
     "selection": "雅思标签选词",
-    "zhPinyin": "qiè zéi"
+    "zhPinyin": "qiè zéi",
+    "mixedExample": "burglar 是从这扇门进到屋子里的。"
   },
   {
     "id": "pastime",
@@ -17964,7 +19282,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4862,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiāo qiǎn"
+    "zhPinyin": "xiāo qiǎn",
+    "mixedExample": "打牌是一种流行的 pastime 方式。"
   },
   {
     "id": "bookshelf",
@@ -17978,7 +19297,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23560,
     "selection": "雅思标签选词",
-    "zhPinyin": "shū jià"
+    "zhPinyin": "shū jià",
+    "mixedExample": "bookshelf 上都是书。"
   },
   {
     "id": "ferocious",
@@ -17992,7 +19312,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29537,
     "selection": "雅思标签选词",
-    "zhPinyin": "xiōng měng de"
+    "zhPinyin": "xiōng měng de",
+    "mixedExample": "老虎是一种非常 ferocious 动物。"
   },
   {
     "id": "inland",
@@ -18006,7 +19327,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34899,
     "selection": "雅思标签选词",
-    "zhPinyin": "nèi lù de"
+    "zhPinyin": "nèi lù de",
+    "mixedExample": "中国大陆的沿海城市普遍比 inland 城市发达。"
   },
   {
     "id": "economical",
@@ -18020,7 +19342,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14434,
     "selection": "雅思标签选词",
-    "zhPinyin": "jīng jì de"
+    "zhPinyin": "jīng jì de",
+    "mixedExample": "小车比大车 economical 。"
   },
   {
     "id": "trample",
@@ -18034,7 +19357,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14194,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiàn tà"
+    "zhPinyin": "jiàn tà",
+    "mixedExample": "不要 trample 草地。"
   },
   {
     "id": "taboo",
@@ -18048,7 +19372,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27389,
     "selection": "雅思标签选词",
-    "zhPinyin": "jìn jì"
+    "zhPinyin": "jìn jì",
+    "mixedExample": "它的确存在, 但是因为人们将它视为 taboo 而不去谈论它, 也就不需要多说什么了。"
   },
   {
     "id": "vulgar",
@@ -18062,7 +19387,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36074,
     "selection": "雅思标签选词",
-    "zhPinyin": "cū sú de"
+    "zhPinyin": "cū sú de",
+    "mixedExample": "她的行为很 vulgar 。"
   },
   {
     "id": "picturesque",
@@ -18076,7 +19402,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4715,
     "selection": "雅思标签选词",
-    "zhPinyin": "rú huà de"
+    "zhPinyin": "rú huà de",
+    "mixedExample": "那不勒斯是一个风景 picturesque 城市。"
   },
   {
     "id": "veterinarian",
@@ -18090,7 +19417,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20049,
     "selection": "雅思标签选词",
-    "zhPinyin": "shòu yī"
+    "zhPinyin": "shòu yī",
+    "mixedExample": "她长大后成为了一名 veterinarian 。"
   },
   {
     "id": "superstition",
@@ -18104,7 +19432,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48733,
     "selection": "雅思标签选词",
-    "zhPinyin": "mí xìn"
+    "zhPinyin": "mí xìn",
+    "mixedExample": "宗教不过是有组织的 superstition 加上一本畅销书。"
   },
   {
     "id": "fluent",
@@ -18118,7 +19447,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24243,
     "selection": "雅思标签选词",
-    "zhPinyin": "liú lì de"
+    "zhPinyin": "liú lì de",
+    "mixedExample": "尽管她在日本长大，她说一口 fluent 英语。"
   },
   {
     "id": "strait",
@@ -18132,7 +19462,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7772,
     "selection": "雅思标签选词",
-    "zhPinyin": "hǎi xiá"
+    "zhPinyin": "hǎi xiá",
+    "mixedExample": "这艘船航行通过了直布罗陀 strait 。"
   },
   {
     "id": "temperate",
@@ -18146,7 +19477,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2330,
     "selection": "雅思标签选词",
-    "zhPinyin": "wēn dài de"
+    "zhPinyin": "wēn dài de",
+    "mixedExample": "我国是 temperate 气候。"
   },
   {
     "id": "bookcase",
@@ -18160,7 +19492,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38620,
     "selection": "雅思标签选词",
-    "zhPinyin": "shū jià"
+    "zhPinyin": "shū jià",
+    "mixedExample": "bookcase 和桌子齐平。"
   },
   {
     "id": "cunning",
@@ -18174,7 +19507,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37153,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiǎo huá de"
+    "zhPinyin": "jiǎo huá de",
+    "mixedExample": "人们说，狐狸比其他动物要 cunning 。"
   },
   {
     "id": "rendezvous",
@@ -18188,7 +19522,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47419,
     "selection": "雅思标签选词",
-    "zhPinyin": "yuē huì"
+    "zhPinyin": "yuē huì",
+    "mixedExample": "汤姆为 rendezvous 买了一束花和一些礼物。"
   },
   {
     "id": "transistor",
@@ -18202,7 +19537,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4864,
     "selection": "雅思标签选词",
-    "zhPinyin": "jīng tǐ guǎn"
+    "zhPinyin": "jīng tǐ guǎn",
+    "mixedExample": "transistor 的发明标志著一个新时代的开始。"
   },
   {
     "id": "piston",
@@ -18216,7 +19552,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34377,
     "selection": "雅思标签选词",
-    "zhPinyin": "huó sāi"
+    "zhPinyin": "huó sāi",
+    "mixedExample": "这个 piston 不接触汽缸盖。"
   },
   {
     "id": "pretext",
@@ -18230,7 +19567,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49561,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiè kǒu"
+    "zhPinyin": "jiè kǒu",
+    "mixedExample": "乔纳斯以去洗手间为 pretext 离开了。"
   },
   {
     "id": "malice",
@@ -18244,7 +19582,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19131,
     "selection": "雅思标签选词",
-    "zhPinyin": "è yì"
+    "zhPinyin": "è yì",
+    "mixedExample": "她的话没有 malice 。"
   },
   {
     "id": "agreeable",
@@ -18258,7 +19597,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19184,
     "selection": "雅思标签选词",
-    "zhPinyin": "lìng rén yú kuài de"
+    "zhPinyin": "lìng rén yú kuài de",
+    "mixedExample": "她的声音 agreeable 。"
   },
   {
     "id": "malnutrition",
@@ -18272,7 +19612,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 330,
     "selection": "雅思标签选词",
-    "zhPinyin": "yíng yǎng bù liáng"
+    "zhPinyin": "yíng yǎng bù liáng",
+    "mixedExample": "尼日尔仍然有50万孩子面临着 malnutrition 。"
   },
   {
     "id": "obligatory",
@@ -18286,7 +19627,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40609,
     "selection": "雅思标签选词",
-    "zhPinyin": "bì xū de"
+    "zhPinyin": "bì xū de",
+    "mixedExample": "租车是 obligatory 吗？"
   },
   {
     "id": "blot",
@@ -18300,7 +19642,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8171,
     "selection": "雅思标签选词",
-    "zhPinyin": "wū diǎn"
+    "zhPinyin": "wū diǎn",
+    "mixedExample": "这 blot 擦不掉。"
   },
   {
     "id": "rainwater",
@@ -18314,7 +19657,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39900,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǔ shuǐ"
+    "zhPinyin": "yǔ shuǐ",
+    "mixedExample": "上个月我们收集了五升 rainwater 。"
   },
   {
     "id": "diligent",
@@ -18328,7 +19672,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25956,
     "selection": "雅思标签选词",
-    "zhPinyin": "yòng gōng de"
+    "zhPinyin": "yòng gōng de",
+    "mixedExample": "就我所知，他是个很 diligent 学生。"
   },
   {
     "id": "maiden",
@@ -18342,7 +19687,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33001,
     "selection": "雅思标签选词",
-    "zhPinyin": "chǔ nǚ"
+    "zhPinyin": "chǔ nǚ",
+    "mixedExample": "泰塔尼克号的 maiden 航不是很好的。"
   },
   {
     "id": "sportsman",
@@ -18356,7 +19702,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16911,
     "selection": "雅思标签选词",
-    "zhPinyin": "yùn dòng yuán"
+    "zhPinyin": "yùn dòng yuán",
+    "mixedExample": "他看起来像个 sportsman ，但是其实是个作家。"
   },
   {
     "id": "eyesight",
@@ -18370,7 +19717,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42542,
     "selection": "雅思标签选词",
-    "zhPinyin": "shì lì"
+    "zhPinyin": "shì lì",
+    "mixedExample": "要是你老打游戏的话，你的 eyesight 会下降的。"
   },
   {
     "id": "stationery",
@@ -18384,7 +19732,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28432,
     "selection": "雅思标签选词",
-    "zhPinyin": "wén jù"
+    "zhPinyin": "wén jù",
+    "mixedExample": "这些都是他的 stationery 。"
   },
   {
     "id": "vogue",
@@ -18398,7 +19747,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24476,
     "selection": "雅思标签选词",
-    "zhPinyin": "shí máo"
+    "zhPinyin": "shí máo",
+    "mixedExample": "虽然 vogue 一点，但是价钱太大！"
   },
   {
     "id": "phobia",
@@ -18412,7 +19762,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42739,
     "selection": "雅思标签选词",
-    "zhPinyin": "kǒng jù zhèng"
+    "zhPinyin": "kǒng jù zhèng",
+    "mixedExample": "你有深海 phobia 吗？"
   },
   {
     "id": "departmental",
@@ -18426,7 +19777,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48848,
     "selection": "雅思标签选词",
-    "zhPinyin": "bù mén de"
+    "zhPinyin": "bù mén de",
+    "mixedExample": "市政府举行了一次大型公会，旨在促进跨 departmental 合作。"
   },
   {
     "id": "fickle",
@@ -18440,7 +19792,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42610,
     "selection": "雅思标签选词",
-    "zhPinyin": "bó qíng de"
+    "zhPinyin": "bó qíng de",
+    "mixedExample": "女人 fickle 善变。"
   },
   {
     "id": "concise",
@@ -18454,7 +19807,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16539,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiǎn jié de"
+    "zhPinyin": "jiǎn jié de",
+    "mixedExample": "他的评论 concise 且击中要害。"
   },
   {
     "id": "monsoon",
@@ -18468,7 +19822,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26151,
     "selection": "雅思标签选词",
-    "zhPinyin": "jì fēng"
+    "zhPinyin": "jì fēng",
+    "mixedExample": "这是 monsoon 季节。"
   },
   {
     "id": "remittance",
@@ -18482,7 +19837,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24458,
     "selection": "雅思标签选词",
-    "zhPinyin": "huì kuǎn"
+    "zhPinyin": "huì kuǎn",
+    "mixedExample": "对不起，没有身份证是不能领 remittance 的。"
   },
   {
     "id": "monotonous",
@@ -18496,7 +19852,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13425,
     "selection": "雅思标签选词",
-    "zhPinyin": "dān diào de"
+    "zhPinyin": "dān diào de",
+    "mixedExample": "我厌倦了现在 monotonous 生活。"
   },
   {
     "id": "synonym",
@@ -18510,7 +19867,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41953,
     "selection": "雅思标签选词",
-    "zhPinyin": "tóng yì cí"
+    "zhPinyin": "tóng yì cí",
+    "mixedExample": "反义词这个单词是 synonym 的反义词"
   },
   {
     "id": "everlasting",
@@ -18524,7 +19882,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49228,
     "selection": "雅思标签选词",
-    "zhPinyin": "yǒng héng de"
+    "zhPinyin": "yǒng héng de",
+    "mixedExample": "贞子意识到，在生命将尽之际，曾经平凡无奇的事物，也会散发 everlasting 美。"
   },
   {
     "id": "considerate",
@@ -18538,7 +19897,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11464,
     "selection": "雅思标签选词",
-    "zhPinyin": "kǎo lǜ zhōu dào de"
+    "zhPinyin": "kǎo lǜ zhōu dào de",
+    "mixedExample": "你 considerate ，没有打扰我们。"
   },
   {
     "id": "invalid",
@@ -18552,7 +19912,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47528,
     "selection": "雅思标签选词",
-    "zhPinyin": "wú xiào de"
+    "zhPinyin": "wú xiào de",
+    "mixedExample": "我的信用卡 invalid 。"
   },
   {
     "id": "deadlock",
@@ -18566,7 +19927,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3326,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiāng jú"
+    "zhPinyin": "jiāng jú",
+    "mixedExample": "我们必须设法打破这个 deadlock 。"
   },
   {
     "id": "alphabetical",
@@ -18580,7 +19942,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43265,
     "selection": "雅思标签选词",
-    "zhPinyin": "zì mǔ de"
+    "zhPinyin": "zì mǔ de",
+    "mixedExample": "你能把这清单按 alphabetical 顺序排列吗？"
   },
   {
     "id": "naught",
@@ -18594,7 +19957,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33977,
     "selection": "雅思标签选词",
-    "zhPinyin": "wú yòng de"
+    "zhPinyin": "wú yòng de",
+    "mixedExample": "没有仁爱的美丽毫 naught 处"
   },
   {
     "id": "abbreviation",
@@ -18608,7 +19972,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32068,
     "selection": "雅思标签选词",
-    "zhPinyin": "suō xiě"
+    "zhPinyin": "suō xiě",
+    "mixedExample": "UK是英国的 abbreviation 。"
   },
   {
     "id": "pliable",
@@ -18622,7 +19987,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27674,
     "selection": "雅思标签选词",
-    "zhPinyin": "róu shùn de"
+    "zhPinyin": "róu shùn de",
+    "mixedExample": "事实是倔强的，但统计是 pliable 。"
   },
   {
     "id": "bookshop",
@@ -18636,7 +20002,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43526,
     "selection": "雅思标签选词",
-    "zhPinyin": "shū diàn"
+    "zhPinyin": "shū diàn",
+    "mixedExample": "明天我在一家 bookshop 买书。"
   },
   {
     "id": "typhoon",
@@ -18650,7 +20017,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15224,
     "selection": "雅思标签选词",
-    "zhPinyin": "tái fēng"
+    "zhPinyin": "tái fēng",
+    "mixedExample": "typhoon 造成了河水泛滥。"
   },
   {
     "id": "obstinate",
@@ -18664,7 +20032,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17720,
     "selection": "雅思标签选词",
-    "zhPinyin": "wán gù de"
+    "zhPinyin": "wán gù de",
+    "mixedExample": "他年纪越大变得越 obstinate 。"
   },
   {
     "id": "matrimony",
@@ -18678,7 +20047,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30403,
     "selection": "雅思标签选词",
-    "zhPinyin": "jié hūn"
+    "zhPinyin": "jié hūn",
+    "mixedExample": "女人的思维很有跳跃性：从仰慕到爱慕，从爱慕到 matrimony 都是一眨眼间的事。"
   },
   {
     "id": "punctual",
@@ -18692,7 +20062,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30865,
     "selection": "雅思标签选词",
-    "zhPinyin": "zhǔn shí de"
+    "zhPinyin": "zhǔn shí de",
+    "mixedExample": "与她的妹妹相比，她不是很 punctual 。"
   },
   {
     "id": "existent",
@@ -18706,7 +20077,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48201,
     "selection": "雅思标签选词",
-    "zhPinyin": "cún zài de"
+    "zhPinyin": "cún zài de",
+    "mixedExample": "例如，如果没有蜜蜂授粉，加州的杏仁作物就不会 existent 。"
   },
   {
     "id": "favour",
@@ -18720,7 +20092,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9870,
     "selection": "雅思标签选词",
-    "zhPinyin": "zàn chéng"
+    "zhPinyin": "zàn chéng",
+    "mixedExample": "你 favour 也好，不赞成也好，我也会推荐他当主席的。"
   },
   {
     "id": "antonym",
@@ -18734,7 +20107,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41953,
     "selection": "雅思标签选词",
-    "zhPinyin": "fǎn yì cí"
+    "zhPinyin": "fǎn yì cí",
+    "mixedExample": "antonym 这个单词是同义词的反义词"
   },
   {
     "id": "calorie",
@@ -18748,7 +20122,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27096,
     "selection": "雅思标签选词",
-    "zhPinyin": "kǎ lù lǐ"
+    "zhPinyin": "kǎ lù lǐ",
+    "mixedExample": "高 calorie 的食物对我的身体不好。"
   },
   {
     "id": "criterion",
@@ -18762,7 +20137,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49841,
     "selection": "雅思标签选词",
-    "zhPinyin": "biāo zhǔn"
+    "zhPinyin": "biāo zhǔn",
+    "mixedExample": "一个理论的科学地位的 criterion 是它的可证伪性、可反驳性或可检验性。"
   },
   {
     "id": "invigilate",
@@ -18776,7 +20152,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27268,
     "selection": "雅思标签选词",
-    "zhPinyin": "jiān kǎo"
+    "zhPinyin": "jiān kǎo",
+    "mixedExample": "我们今天去一所中学 invigilate 了。"
   },
   {
     "id": "odour",
@@ -18790,7 +20167,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37205,
     "selection": "雅思标签选词",
-    "zhPinyin": "qì wèi"
+    "zhPinyin": "qì wèi",
+    "mixedExample": "这种 odour 真可怕。"
   },
   {
     "id": "sydney",
@@ -18804,7 +20182,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7072,
     "selection": "雅思标签选词",
-    "zhPinyin": "xī ní"
+    "zhPinyin": "xī ní",
+    "mixedExample": "sydney 是澳洲最大的城市。"
   },
   {
     "id": "tyre",
@@ -18818,7 +20197,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46747,
     "selection": "雅思标签选词",
-    "zhPinyin": "lún tāi"
+    "zhPinyin": "lún tāi",
+    "mixedExample": "她拔出了一根儿扎在 tyre 里的刺。"
   },
   {
     "id": "nation",
@@ -18832,7 +20212,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40228,
     "selection": "学术英语补充",
-    "zhPinyin": "guó jiā"
+    "zhPinyin": "guó jiā",
+    "mixedExample": "为了缓解就业压力， nation 已经制定了一系列相关政策。"
   },
   {
     "id": "military",
@@ -18846,7 +20227,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29824,
     "selection": "学术英语补充",
-    "zhPinyin": "jūn duì"
+    "zhPinyin": "jūn duì",
+    "mixedExample": "日本 military 看来强大得不可阻挡。"
   },
   {
     "id": "official",
@@ -18860,7 +20242,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39607,
     "selection": "学术英语补充",
-    "zhPinyin": "guān fāng de"
+    "zhPinyin": "guān fāng de",
+    "mixedExample": "请立即将世界语订为欧洲联盟的 official 语言"
   },
   {
     "id": "court",
@@ -18874,7 +20257,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15257,
     "selection": "学术英语补充",
-    "zhPinyin": "fǎ yuàn"
+    "zhPinyin": "fǎ yuàn",
+    "mixedExample": "大使馆就在最高 court 旁边。"
   },
   {
     "id": "security",
@@ -18888,7 +20272,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38900,
     "selection": "学术英语补充",
-    "zhPinyin": "ān quán ； ān quán xìng"
+    "zhPinyin": "ān quán ； ān quán xìng",
+    "mixedExample": "因此，必须进行额外的测试以确保完整的 security 。"
   },
   {
     "id": "seek",
@@ -18902,7 +20287,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42237,
     "selection": "学术英语补充",
-    "zhPinyin": "xún qiú"
+    "zhPinyin": "xún qiú",
+    "mixedExample": "有些人喜欢循规蹈矩，而有些人总喜欢 seek 刺激。"
   },
   {
     "id": "shoot",
@@ -18916,7 +20302,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40411,
     "selection": "学术英语补充",
-    "zhPinyin": "shè mén"
+    "zhPinyin": "shè mén",
+    "mixedExample": "当里奥梅西 shoot 时，球员们筑起一道人墙。"
   },
   {
     "id": "thus",
@@ -18930,7 +20317,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36220,
     "selection": "学术英语补充",
-    "zhPinyin": "yīn cǐ"
+    "zhPinyin": "yīn cǐ",
+    "mixedExample": "thus 我跟你说，你不要一个人去。"
   },
   {
     "id": "fund",
@@ -18944,7 +20332,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20838,
     "selection": "学术英语补充",
-    "zhPinyin": "jī jīn"
+    "zhPinyin": "jī jīn",
+    "mixedExample": "该法案的说客把游说贿款汇入了竞选 fund 。"
   },
   {
     "id": "particularly",
@@ -18958,7 +20347,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21635,
     "selection": "学术英语补充",
-    "zhPinyin": "tè bié"
+    "zhPinyin": "tè bié",
+    "mixedExample": "他只不过是个普普通通的中学生，不算 particularly 聪明。"
   },
   {
     "id": "election",
@@ -18972,7 +20362,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11664,
     "selection": "学术英语补充",
-    "zhPinyin": "xuǎn jǔ"
+    "zhPinyin": "xuǎn jǔ",
+    "mixedExample": "我们或多或少对这次的 election 感到失望。"
   },
   {
     "id": "indeed",
@@ -18986,7 +20377,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40332,
     "selection": "学术英语补充",
-    "zhPinyin": "shí zài"
+    "zhPinyin": "shí zài",
+    "mixedExample": "吐鲁番 indeed 太热了，连政府也控制不了这里的温度。"
   },
   {
     "id": "democratic",
@@ -19000,7 +20392,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32379,
     "selection": "学术英语补充",
-    "zhPinyin": "mín zhǔ de"
+    "zhPinyin": "mín zhǔ de",
+    "mixedExample": "美国有两大政党，一是较为保守的共和党，一是较为自由的 democratic 党。"
   },
   {
     "id": "entire",
@@ -19014,7 +20407,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30045,
     "selection": "学术英语补充",
-    "zhPinyin": "quán bù"
+    "zhPinyin": "quán bù",
+    "mixedExample": "这个新的市场可能改良 entire 的工业。"
   },
   {
     "id": "religious",
@@ -19028,7 +20422,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13302,
     "selection": "学术英语补充",
-    "zhPinyin": "qián chéng de"
+    "zhPinyin": "qián chéng de",
+    "mixedExample": "我是一个 religious 教徒，我相信死后的生命。"
   },
   {
     "id": "cell",
@@ -19042,7 +20437,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7738,
     "selection": "学术英语补充",
-    "zhPinyin": "xì bāo"
+    "zhPinyin": "xì bāo",
+    "mixedExample": "这个团体内的每个人，像是一个健康的人体内免疫系统里的 cell 。"
   },
   {
     "id": "democrat",
@@ -19056,7 +20452,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 350,
     "selection": "学术英语补充",
-    "zhPinyin": "mín zhǔ zhǔ yì zhě"
+    "zhPinyin": "mín zhǔ zhǔ yì zhě",
+    "mixedExample": "democrat 是屈服于大部分人的自由公民。"
   },
   {
     "id": "politics",
@@ -19070,7 +20467,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32746,
     "selection": "学术英语补充",
-    "zhPinyin": "zhèng zhì"
+    "zhPinyin": "zhèng zhì",
+    "mixedExample": "这个好像说一个人上瘾了“交通”，“艺术”或“ politics ”。"
   },
   {
     "id": "treat",
@@ -19084,7 +20482,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43077,
     "selection": "学术英语补充",
-    "zhPinyin": "duì dài"
+    "zhPinyin": "duì dài",
+    "mixedExample": "这样 treat 他似乎不太公平。"
   },
   {
     "id": "reflect",
@@ -19098,7 +20497,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9179,
     "selection": "学术英语补充",
-    "zhPinyin": "fǎn yìng"
+    "zhPinyin": "fǎn yìng",
+    "mixedExample": "一个国家的风俗习惯 reflect 了它的文化。"
   },
   {
     "id": "generation",
@@ -19112,7 +20512,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33309,
     "selection": "学术英语补充",
-    "zhPinyin": "yí dài"
+    "zhPinyin": "yí dài",
+    "mixedExample": "我们应当把文化传承到下 generation 。"
   },
   {
     "id": "violence",
@@ -19126,7 +20527,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20858,
     "selection": "学术英语补充",
-    "zhPinyin": "bào lì"
+    "zhPinyin": "bào lì",
+    "mixedExample": "violence 是社会的癌症。"
   },
   {
     "id": "civil",
@@ -19140,7 +20542,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14300,
     "selection": "学术英语补充",
-    "zhPinyin": "shì mín de"
+    "zhPinyin": "shì mín de",
+    "mixedExample": "州政府剥夺了 civil 权利。"
   },
   {
     "id": "threat",
@@ -19154,7 +20557,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16400,
     "selection": "学术英语补充",
-    "zhPinyin": "wēi xié"
+    "zhPinyin": "wēi xié",
+    "mixedExample": "我们觉得他的 threat 只是一个玩笑。"
   },
   {
     "id": "vote",
@@ -19168,7 +20572,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9228,
     "selection": "学术英语补充",
-    "zhPinyin": "xuǎn jǔ ； xuǎn jǔ quán"
+    "zhPinyin": "xuǎn jǔ ； xuǎn jǔ quán",
+    "mixedExample": "美国妇女没有 vote 。"
   },
   {
     "id": "debate",
@@ -19182,7 +20587,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43520,
     "selection": "学术英语补充",
-    "zhPinyin": "biàn lùn"
+    "zhPinyin": "biàn lùn",
+    "mixedExample": "我相信 debate 会继续进行。"
   },
   {
     "id": "citizen",
@@ -19196,7 +20602,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19676,
     "selection": "学术英语补充",
-    "zhPinyin": "gōng mín"
+    "zhPinyin": "gōng mín",
+    "mixedExample": "她是一个英国 citizen ，但她是在法国出生的。"
   },
   {
     "id": "admit",
@@ -19210,7 +20617,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14810,
     "selection": "学术英语补充",
-    "zhPinyin": "chéng rèn"
+    "zhPinyin": "chéng rèn",
+    "mixedExample": "尽管政府拒绝 admit ，它的经济政策还是失败了。"
   },
   {
     "id": "judge",
@@ -19224,7 +20632,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29846,
     "selection": "学术英语补充",
-    "zhPinyin": "pàn duàn"
+    "zhPinyin": "pàn duàn",
+    "mixedExample": "你应该自己 judge 什么时候喝了太多酒。"
   },
   {
     "id": "income",
@@ -19238,7 +20647,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10864,
     "selection": "学术英语补充",
-    "zhPinyin": "shōu rù"
+    "zhPinyin": "shōu rù",
+    "mixedExample": "我现在的 income 比两年前多了一倍。"
   },
   {
     "id": "directly",
@@ -19252,7 +20662,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46915,
     "selection": "学术英语补充",
-    "zhPinyin": "zhí jiē dì"
+    "zhPinyin": "zhí jiē dì",
+    "mixedExample": "他没有 directly 回答她的问题。"
   },
   {
     "id": "concept",
@@ -19266,7 +20677,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30711,
     "selection": "学术英语补充",
-    "zhPinyin": "gài niàn"
+    "zhPinyin": "gài niàn",
+    "mixedExample": "他们到位了实行新 concept 的广告策略。"
   },
   {
     "id": "powerful",
@@ -19280,7 +20692,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8074,
     "selection": "学术英语补充",
-    "zhPinyin": "qiáng dà de"
+    "zhPinyin": "qiáng dà de",
+    "mixedExample": "这盏灯发出了一个 powerful 光束。"
   },
   {
     "id": "therefore",
@@ -19294,7 +20707,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18695,
     "selection": "学术英语补充",
-    "zhPinyin": "suǒ yǐ"
+    "zhPinyin": "suǒ yǐ",
+    "mixedExample": "那国家的人口正在增长， therefore 他们需要的食物量也愈来愈大。"
   },
   {
     "id": "conduct",
@@ -19308,7 +20722,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1265,
     "selection": "学术英语补充",
-    "zhPinyin": "xíng wéi"
+    "zhPinyin": "xíng wéi",
+    "mixedExample": "你的 conduct 完全合法。"
   },
   {
     "id": "announce",
@@ -19322,7 +20737,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38967,
     "selection": "学术英语补充",
-    "zhPinyin": "xuān bù"
+    "zhPinyin": "xuān bù",
+    "mixedExample": "首先，我想 announce 几条新制度。"
   },
   {
     "id": "press",
@@ -19336,7 +20752,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27296,
     "selection": "学术英语补充",
-    "zhPinyin": "jì zhě"
+    "zhPinyin": "jì zhě",
+    "mixedExample": "房间挤满了等待发布会开始的 press 。"
   },
   {
     "id": "battle",
@@ -19350,7 +20767,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8346,
     "selection": "学术英语补充",
-    "zhPinyin": "zhàn yì"
+    "zhPinyin": "zhàn yì",
+    "mixedExample": "这里是黑斯廷斯 battle 发生的地方。"
   },
   {
     "id": "generally",
@@ -19364,7 +20782,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15104,
     "selection": "学术英语补充",
-    "zhPinyin": "tōng cháng"
+    "zhPinyin": "tōng cháng",
+    "mixedExample": "人们送礼 generally 都不会送钱，但是也会有例外的情况。"
   },
   {
     "id": "element",
@@ -19378,7 +20797,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38455,
     "selection": "学术英语补充",
-    "zhPinyin": "yào sù"
+    "zhPinyin": "yào sù",
+    "mixedExample": "自信是伟大事业的第一 element 。"
   },
   {
     "id": "vision",
@@ -19392,7 +20812,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27235,
     "selection": "学术英语补充",
-    "zhPinyin": "shì lì"
+    "zhPinyin": "shì lì",
+    "mixedExample": "可能会引起 vision 模糊、呼吸急促等副作用。"
   },
   {
     "id": "handle",
@@ -19406,7 +20827,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7989,
     "selection": "学术英语补充",
-    "zhPinyin": "cāo zuò"
+    "zhPinyin": "cāo zuò",
+    "mixedExample": "这台机器很容易 handle 。"
   },
   {
     "id": "gain",
@@ -19420,7 +20842,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27794,
     "selection": "学术英语补充",
-    "zhPinyin": "dé dào"
+    "zhPinyin": "dé dào",
+    "mixedExample": "上大学的时候，你 gain 的比付出的还多。"
   },
   {
     "id": "demand",
@@ -19434,7 +20857,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2311,
     "selection": "学术英语补充",
-    "zhPinyin": "xū qiú"
+    "zhPinyin": "xū qiú",
+    "mixedExample": "我们必须降低能源 demand 。"
   },
   {
     "id": "leadership",
@@ -19448,7 +20872,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48456,
     "selection": "学术英语补充",
-    "zhPinyin": "lǐng dǎo néng lì"
+    "zhPinyin": "lǐng dǎo néng lì",
+    "mixedExample": "他天生具有 leadership 。"
   },
   {
     "id": "operate",
@@ -19462,7 +20887,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7243,
     "selection": "学术英语补充",
-    "zhPinyin": "cāo zuò"
+    "zhPinyin": "cāo zuò",
+    "mixedExample": "你知道怎么 operate 电脑吗？"
   },
   {
     "id": "protection",
@@ -19476,7 +20902,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23477,
     "selection": "学术英语补充",
-    "zhPinyin": "bǎo hù"
+    "zhPinyin": "bǎo hù",
+    "mixedExample": "发展经济和 protection 环境哪一个更重要?"
   },
   {
     "id": "principle",
@@ -19490,7 +20917,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31229,
     "selection": "学术英语补充",
-    "zhPinyin": "yuán zé"
+    "zhPinyin": "yuán zé",
+    "mixedExample": "不过，除了佛教者以外，没有任何人可以一直遵循这个 principle 。"
   },
   {
     "id": "survive",
@@ -19504,7 +20932,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29459,
     "selection": "学术英语补充",
-    "zhPinyin": "shēng cún"
+    "zhPinyin": "shēng cún",
+    "mixedExample": "许多网路公司为求 survive 而需要新颖的商业模式。"
   },
   {
     "id": "limit",
@@ -19518,7 +20947,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33555,
     "selection": "学术英语补充",
-    "zhPinyin": "xiàn zhì"
+    "zhPinyin": "xiàn zhì",
+    "mixedExample": "怎么用路由器 limit 网速？"
   },
   {
     "id": "aspect",
@@ -19532,7 +20962,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24520,
     "selection": "学术英语补充",
-    "zhPinyin": "fāng miàn"
+    "zhPinyin": "fāng miàn",
+    "mixedExample": "你认为可以胜任那些 aspect 个工作？"
   },
   {
     "id": "affair",
@@ -19546,7 +20977,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3328,
     "selection": "学术英语补充",
-    "zhPinyin": "shì jiàn"
+    "zhPinyin": "shì jiàn",
+    "mixedExample": "我们必须总体地研究这 affair 。"
   },
   {
     "id": "responsible",
@@ -19560,7 +20992,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4569,
     "selection": "学术英语补充",
-    "zhPinyin": "yǒu zé rèn de"
+    "zhPinyin": "yǒu zé rèn de",
+    "mixedExample": "巴士司机 responsible 保护乘客的安全。"
   },
   {
     "id": "ignore",
@@ -19574,7 +21007,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40118,
     "selection": "学术英语补充",
-    "zhPinyin": "hū lüè"
+    "zhPinyin": "hū lüè",
+    "mixedExample": "如果我是你，我就 ignore 它。"
   },
   {
     "id": "belief",
@@ -19588,7 +21022,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24077,
     "selection": "学术英语补充",
-    "zhPinyin": "xìn niàn ； xiāng xìn"
+    "zhPinyin": "xìn niàn ； xiāng xìn",
+    "mixedExample": "不要害怕活着。要相信生命是有价值的，你的 belief 会使之成真。"
   },
   {
     "id": "threaten",
@@ -19602,7 +21037,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49553,
     "selection": "学术英语补充",
-    "zhPinyin": "wēi xié"
+    "zhPinyin": "wēi xié",
+    "mixedExample": "用这种好事来 threaten 我？我巴不得呢。"
   },
   {
     "id": "reaction",
@@ -19616,7 +21052,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39190,
     "selection": "学术英语补充",
-    "zhPinyin": "fǎn yìng"
+    "zhPinyin": "fǎn yìng",
+    "mixedExample": "他来找你的时候，当时你是什么 reaction ？"
   },
   {
     "id": "neighbor",
@@ -19630,7 +21067,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40992,
     "selection": "学术英语补充",
-    "zhPinyin": "lín jū"
+    "zhPinyin": "lín jū",
+    "mixedExample": "很不幸地，我得 neighbor 被卷入交通事故，呈现昏迷状态。"
   },
   {
     "id": "moral",
@@ -19644,7 +21082,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39305,
     "selection": "学术英语补充",
-    "zhPinyin": "dào dé"
+    "zhPinyin": "dào dé",
+    "mixedExample": "moral 上的恶乃是无知的后果。"
   },
   {
     "id": "justice",
@@ -19658,7 +21097,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41920,
     "selection": "学术英语补充",
-    "zhPinyin": "gōng zhèng"
+    "zhPinyin": "gōng zhèng",
+    "mixedExample": "他们的目标和活动的主要思想是真正的四海一家和各民族的普遍 justice 。"
   },
   {
     "id": "intend",
@@ -19672,7 +21112,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13842,
     "selection": "学术英语补充",
-    "zhPinyin": "dǎ suàn"
+    "zhPinyin": "dǎ suàn",
+    "mixedExample": "我 intend 明年去美国留学。"
   },
   {
     "id": "respect",
@@ -19686,7 +21127,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20828,
     "selection": "学术英语补充",
-    "zhPinyin": "zūn zhòng"
+    "zhPinyin": "zūn zhòng",
+    "mixedExample": "respect 法律是我们社会的基础。"
   },
   {
     "id": "importance",
@@ -19700,7 +21142,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17543,
     "selection": "学术英语补充",
-    "zhPinyin": "zhòng yào ； zhòng yào xìng"
+    "zhPinyin": "zhòng yào ； zhòng yào xìng",
+    "mixedExample": "他强调了教育的 importance 。"
   },
   {
     "id": "software",
@@ -19714,7 +21157,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26777,
     "selection": "学术英语补充",
-    "zhPinyin": "ruǎn jiàn"
+    "zhPinyin": "ruǎn jiàn",
+    "mixedExample": "我的刻录 software 显示了一个错误信息。"
   },
   {
     "id": "urban",
@@ -19728,7 +21172,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10624,
     "selection": "学术英语补充",
-    "zhPinyin": "dū shì de"
+    "zhPinyin": "dū shì de",
+    "mixedExample": "交通是 urban 一个主要问题。"
   },
   {
     "id": "obtain",
@@ -19742,7 +21187,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7941,
     "selection": "学术英语补充",
-    "zhPinyin": "huò dé"
+    "zhPinyin": "huò dé",
+    "mixedExample": "必须 obtain 有关当局的批准才能进入这座建筑物。"
   },
   {
     "id": "soul",
@@ -19756,7 +21202,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5711,
     "selection": "学术英语补充",
-    "zhPinyin": "líng hún"
+    "zhPinyin": "líng hún",
+    "mixedExample": "从那时起，他就把他整个 soul 投入到他的工作。"
   },
   {
     "id": "emotional",
@@ -19770,7 +21217,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2427,
     "selection": "学术英语补充",
-    "zhPinyin": "qíng xù de"
+    "zhPinyin": "qíng xù de",
+    "mixedExample": "对一个科学家来说， emotional 化是不好的。"
   },
   {
     "id": "proposal",
@@ -19784,7 +21232,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9722,
     "selection": "学术英语补充",
-    "zhPinyin": "tí yì"
+    "zhPinyin": "tí yì",
+    "mixedExample": "你的 proposal 值得考虑。"
   },
   {
     "id": "shadow",
@@ -19798,7 +21247,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17165,
     "selection": "学术英语补充",
-    "zhPinyin": "yǐng zi"
+    "zhPinyin": "yǐng zi",
+    "mixedExample": "他怕自己的 shadow 。"
   },
   {
     "id": "struggle",
@@ -19812,7 +21262,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10587,
     "selection": "学术英语补充",
-    "zhPinyin": "dòu zhēng"
+    "zhPinyin": "dòu zhēng",
+    "mixedExample": "他提出了一个勇敢而孤独的 struggle ，但这些沉重的打击，他的赔率不能得到他的商业计划接受。"
   },
   {
     "id": "possibly",
@@ -19826,7 +21277,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8223,
     "selection": "学术英语补充",
-    "zhPinyin": "kě néng"
+    "zhPinyin": "kě néng",
+    "mixedExample": "我父亲 possibly 会乘下一列火车来。"
   },
   {
     "id": "currently",
@@ -19840,7 +21292,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34989,
     "selection": "学术英语补充",
-    "zhPinyin": "xiàn zài"
+    "zhPinyin": "xiàn zài",
+    "mixedExample": "我 currently 在这所学校任教。"
   },
   {
     "id": "muscle",
@@ -19854,7 +21307,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42806,
     "selection": "学术英语补充",
-    "zhPinyin": "jī ròu"
+    "zhPinyin": "jī ròu",
+    "mixedExample": "勇气是非常重要的。比如 muscle ，经常使用才得以加强。"
   },
   {
     "id": "root",
@@ -19868,7 +21322,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30718,
     "selection": "学术英语补充",
-    "zhPinyin": "yuán yú"
+    "zhPinyin": "yuán yú",
+    "mixedExample": "所有的罪恶 root 金钱的不足"
   },
   {
     "id": "actual",
@@ -19882,7 +21337,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49390,
     "selection": "学术英语补充",
-    "zhPinyin": "shí jì de"
+    "zhPinyin": "shí jì de",
+    "mixedExample": "actual 提供内容可能因地区与装置相容性而异。"
   },
   {
     "id": "ensure",
@@ -19896,7 +21352,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49058,
     "selection": "学术英语补充",
-    "zhPinyin": "què dìng"
+    "zhPinyin": "què dìng",
+    "mixedExample": "我想要 ensure 手机能有优秀的客户服务。"
   },
   {
     "id": "politician",
@@ -19910,7 +21367,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14038,
     "selection": "学术英语补充",
-    "zhPinyin": "zhèng zhì jiā"
+    "zhPinyin": "zhèng zhì jiā",
+    "mixedExample": "发生了那件事以后，那位 politician 一直没有公开露面。"
   },
   {
     "id": "pursue",
@@ -19924,7 +21382,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2191,
     "selection": "学术英语补充",
-    "zhPinyin": "zhuī qiú"
+    "zhPinyin": "zhuī qiú",
+    "mixedExample": "有些人只 pursue 快乐。"
   },
   {
     "id": "governor",
@@ -19938,7 +21397,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49558,
     "selection": "学术英语补充",
-    "zhPinyin": "zhōu zhǎng"
+    "zhPinyin": "zhōu zhǎng",
+    "mixedExample": "governor 最近的丑闻玷污了她原本完美无瑕的政绩。"
   },
   {
     "id": "meanwhile",
@@ -19952,7 +21412,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45932,
     "selection": "学术英语补充",
-    "zhPinyin": "tóng shí"
+    "zhPinyin": "tóng shí",
+    "mixedExample": "与此 meanwhile 江琴分散了江枫的哥哥燕大侠的注意力。"
   },
   {
     "id": "division",
@@ -19966,7 +21427,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38082,
     "selection": "学术英语补充",
-    "zhPinyin": "chú fǎ"
+    "zhPinyin": "chú fǎ",
+    "mixedExample": "孩子们还没上过 division 。"
   },
   {
     "id": "attract",
@@ -19980,7 +21442,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47909,
     "selection": "学术英语补充",
-    "zhPinyin": "xī yǐn"
+    "zhPinyin": "xī yǐn",
+    "mixedExample": "黑色星期五促销活动 attract 了许多购物者。"
   },
   {
     "id": "opposition",
@@ -19994,7 +21457,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18683,
     "selection": "学术英语补充",
-    "zhPinyin": "fǎn duì"
+    "zhPinyin": "fǎn duì",
+    "mixedExample": "虽然受到他们的强烈 opposition ，但我们还是实行了我们的计划。"
   },
   {
     "id": "gray",
@@ -20008,7 +21472,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49022,
     "selection": "学术英语补充",
-    "zhPinyin": "huī sè"
+    "zhPinyin": "huī sè",
+    "mixedExample": "他的行为既不违法也不完全合乎道德，介于一种 gray 地带之间。"
   },
   {
     "id": "league",
@@ -20022,7 +21487,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43879,
     "selection": "学术英语补充",
-    "zhPinyin": "lián méng"
+    "zhPinyin": "lián méng",
+    "mixedExample": "汤姆不在你的 league 里。"
   },
   {
     "id": "vast",
@@ -20036,7 +21502,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18363,
     "selection": "学术英语补充",
-    "zhPinyin": "fēi cháng de"
+    "zhPinyin": "fēi cháng de",
+    "mixedExample": "他对日本的历史 vast 感兴趣。我们很惊讶他在这方面的丰富知识。"
   },
   {
     "id": "household",
@@ -20050,7 +21517,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30979,
     "selection": "学术英语补充",
-    "zhPinyin": "jiā tíng"
+    "zhPinyin": "jiā tíng",
+    "mixedExample": "不过，我从来没有在一个小气的英国 household 做过客。"
   },
   {
     "id": "incident",
@@ -20064,7 +21532,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10830,
     "selection": "学术英语补充",
-    "zhPinyin": "shì jiàn"
+    "zhPinyin": "shì jiàn",
+    "mixedExample": "这个 incident 过后我对他的评价很高。"
   },
   {
     "id": "tone",
@@ -20078,7 +21547,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27134,
     "selection": "学术英语补充",
-    "zhPinyin": "yǔ qì"
+    "zhPinyin": "yǔ qì",
+    "mixedExample": "你有没有发现他说话的 tone 有点古怪？"
   },
   {
     "id": "talent",
@@ -20092,7 +21562,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41935,
     "selection": "学术英语补充",
-    "zhPinyin": "cái néng"
+    "zhPinyin": "cái néng",
+    "mixedExample": "他的儿子有 talent ，但是考不上大学。"
   },
   {
     "id": "escape",
@@ -20106,7 +21577,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24532,
     "selection": "学术英语补充",
-    "zhPinyin": "liū zǒu"
+    "zhPinyin": "liū zǒu",
+    "mixedExample": "下班时间还没，大家就想 escape 。"
   },
   {
     "id": "approve",
@@ -20120,7 +21592,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34334,
     "selection": "学术英语补充",
-    "zhPinyin": "zàn tóng"
+    "zhPinyin": "zàn tóng",
+    "mixedExample": "那是我不 approve 你的计划的原因。"
   },
   {
     "id": "honor",
@@ -20134,7 +21607,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13232,
     "selection": "学术英语补充",
-    "zhPinyin": "míng yù"
+    "zhPinyin": "míng yù",
+    "mixedExample": "我觉得我的 honor 受到了威胁。"
   },
   {
     "id": "guilty",
@@ -20148,7 +21622,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16039,
     "selection": "学术英语补充",
-    "zhPinyin": "fàn zuì de"
+    "zhPinyin": "fàn zuì de",
+    "mixedExample": "陪审团作出的 guilty 判决激起了很大的争论。"
   },
   {
     "id": "forever",
@@ -20162,7 +21637,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49399,
     "selection": "学术英语补充",
-    "zhPinyin": "yǒng yuǎn"
+    "zhPinyin": "yǒng yuǎn",
+    "mixedExample": "然后又把各书名揭示通衢， forever 禁止贩卖。"
   },
   {
     "id": "criticism",
@@ -20176,7 +21652,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 35941,
     "selection": "学术英语补充",
-    "zhPinyin": "pī píng"
+    "zhPinyin": "pī píng",
+    "mixedExample": "工作越公开， criticism 就越多。"
   },
   {
     "id": "scholar",
@@ -20190,7 +21667,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15294,
     "selection": "学术英语补充",
-    "zhPinyin": "xué zhě"
+    "zhPinyin": "xué zhě",
+    "mixedExample": "Tani 先生与其说是 scholar ，倒不如说是新闻工作者。"
   },
   {
     "id": "graduate",
@@ -20204,7 +21682,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41815,
     "selection": "学术英语补充",
-    "zhPinyin": "yán jiū shēng de ； bì yè de"
+    "zhPinyin": "yán jiū shēng de ； bì yè de",
+    "mixedExample": "大学毕业以后我也想考 graduate 。"
   },
   {
     "id": "universe",
@@ -20218,7 +21697,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3053,
     "selection": "学术英语补充",
-    "zhPinyin": "yǔ zhòu ； xīng xì"
+    "zhPinyin": "yǔ zhòu ； xīng xì",
+    "mixedExample": "在 universe 中有很多星系。"
   },
   {
     "id": "unable",
@@ -20232,7 +21712,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21355,
     "selection": "学术英语补充",
-    "zhPinyin": "bù néng de"
+    "zhPinyin": "bù néng de",
+    "mixedExample": "洋子 unable 买电脑。"
   },
   {
     "id": "purchase",
@@ -20246,7 +21727,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49385,
     "selection": "学术英语补充",
-    "zhPinyin": "gòu mǎi"
+    "zhPinyin": "gòu mǎi",
+    "mixedExample": "purchase 新装置的用户可享有额外试用优惠。"
   },
   {
     "id": "self",
@@ -20260,7 +21742,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21695,
     "selection": "学术英语补充",
-    "zhPinyin": "zì jǐ"
+    "zhPinyin": "zì jǐ",
+    "mixedExample": "举例说，如果一个老师警告学生不要吸烟，但 self 却每天吸个不停，那么这个警告就是自相矛盾的了。"
   },
   {
     "id": "widely",
@@ -20274,7 +21757,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4042,
     "selection": "学术英语补充",
-    "zhPinyin": "guǎng fàn dì"
+    "zhPinyin": "guǎng fàn dì",
+    "mixedExample": "甚至在这些国家以外，英语也许比其他任何语言更 widely 被使用来当作国际交流的媒介。"
   },
   {
     "id": "inform",
@@ -20288,7 +21772,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4808,
     "selection": "学术英语补充",
-    "zhPinyin": "tōng zhī"
+    "zhPinyin": "tōng zhī",
+    "mixedExample": "如果情况有任何变化，请务必 inform 我。"
   },
   {
     "id": "abandon",
@@ -20302,7 +21787,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 22301,
     "selection": "学术英语补充",
-    "zhPinyin": "fàng qì"
+    "zhPinyin": "fàng qì",
+    "mixedExample": "我们必须 abandon 这个计划。"
   },
   {
     "id": "atmosphere",
@@ -20316,7 +21802,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44764,
     "selection": "学术英语补充",
-    "zhPinyin": "dà qì"
+    "zhPinyin": "dà qì",
+    "mixedExample": "atmosphere 与海洋对于地球环境的影响十分重要。"
   },
   {
     "id": "consistent",
@@ -20330,7 +21817,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16531,
     "selection": "学术英语补充",
-    "zhPinyin": "yí zhì de"
+    "zhPinyin": "yí zhì de",
+    "mixedExample": "他的日常行为并不和他的原则相 consistent 。"
   },
   {
     "id": "racial",
@@ -20344,7 +21832,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14688,
     "selection": "学术英语补充",
-    "zhPinyin": "zhǒng zú de"
+    "zhPinyin": "zhǒng zú de",
+    "mixedExample": "人们有关心 racial 问题。"
   },
   {
     "id": "philosophy",
@@ -20358,7 +21847,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 12150,
     "selection": "学术英语补充",
-    "zhPinyin": "zhé xué"
+    "zhPinyin": "zhé xué",
+    "mixedExample": "我在大学主修 philosophy 。"
   },
   {
     "id": "quote",
@@ -20372,7 +21862,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32289,
     "selection": "学术英语补充",
-    "zhPinyin": "yǐn yòng"
+    "zhPinyin": "yǐn yòng",
+    "mixedExample": "你中文真好，都能 quote 俗语了。"
   },
   {
     "id": "foundation",
@@ -20386,7 +21877,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29417,
     "selection": "学术英语补充",
-    "zhPinyin": "jī chǔ"
+    "zhPinyin": "jī chǔ",
+    "mixedExample": "数学是所有科学的 foundation 。"
   },
   {
     "id": "urge",
@@ -20400,7 +21892,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42966,
     "selection": "学术英语补充",
-    "zhPinyin": "lì quàn"
+    "zhPinyin": "lì quàn",
+    "mixedExample": "律师们会 urge 家长们采取进一步的法律行动。"
   },
   {
     "id": "substance",
@@ -20414,7 +21907,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6020,
     "selection": "学术英语补充",
-    "zhPinyin": "wù zhì"
+    "zhPinyin": "wù zhì",
+    "mixedExample": "这种 substance 很轻，可以浮在水面上。"
   },
   {
     "id": "priest",
@@ -20428,7 +21922,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27295,
     "selection": "学术英语补充",
-    "zhPinyin": "mù shī"
+    "zhPinyin": "mù shī",
+    "mixedExample": "我放弃了。爱尔兰 priest 和非洲巫婆有什么共同点？"
   },
   {
     "id": "advance",
@@ -20442,7 +21937,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2328,
     "selection": "学术英语补充",
-    "zhPinyin": "qián jìn"
+    "zhPinyin": "qián jìn",
+    "mixedExample": "我们的计划是向都市 advance 。"
   },
   {
     "id": "retire",
@@ -20456,7 +21952,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20513,
     "selection": "学术英语补充",
-    "zhPinyin": "tuì xiū"
+    "zhPinyin": "tuì xiū",
+    "mixedExample": "我父亲六十岁就要 retire 了。"
   },
   {
     "id": "congressional",
@@ -20470,7 +21967,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27530,
     "selection": "学术英语补充",
-    "zhPinyin": "yì huì de"
+    "zhPinyin": "yì huì de",
+    "mixedExample": "议员受到了 congressional 道德委员会的谴责。"
   },
   {
     "id": "previously",
@@ -20484,7 +21982,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 22883,
     "selection": "学术英语补充",
-    "zhPinyin": "yǐ qián"
+    "zhPinyin": "yǐ qián",
+    "mixedExample": "previously 的人以为地球是平的。"
   },
   {
     "id": "mystery",
@@ -20498,7 +21997,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26122,
     "selection": "学术英语补充",
-    "zhPinyin": "shén mì"
+    "zhPinyin": "shén mì",
+    "mixedExample": "今天我们来揭开英文虚拟式的 mystery 面纱。"
   },
   {
     "id": "emphasis",
@@ -20512,7 +22012,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37437,
     "selection": "学术英语补充",
-    "zhPinyin": "qiáng diào"
+    "zhPinyin": "qiáng diào",
+    "mixedExample": "我想特别 emphasis 这一点。"
   },
   {
     "id": "creature",
@@ -20526,7 +22027,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40119,
     "selection": "学术英语补充",
-    "zhPinyin": "shēng wù"
+    "zhPinyin": "shēng wù",
+    "mixedExample": "没有水，没有 creature 能够存活。"
   },
   {
     "id": "wire",
@@ -20540,7 +22042,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49730,
     "selection": "学术英语补充",
-    "zhPinyin": "diàn xiàn"
+    "zhPinyin": "diàn xiàn",
+    "mixedExample": "wire 有没有电？我一摸就知道。"
   },
   {
     "id": "command",
@@ -20554,7 +22057,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31607,
     "selection": "学术英语补充",
-    "zhPinyin": "mìng lìng"
+    "zhPinyin": "mìng lìng",
+    "mixedExample": "你知道怎样使用这些 command 行工具吗？"
   },
   {
     "id": "interpretation",
@@ -20568,7 +22072,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33894,
     "selection": "学术英语补充",
-    "zhPinyin": "jiě shì"
+    "zhPinyin": "jiě shì",
+    "mixedExample": "这件事靠个人的立场来 interpretation 。"
   },
   {
     "id": "capable",
@@ -20582,7 +22087,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16906,
     "selection": "学术英语补充",
-    "zhPinyin": "yǒu néng lì de"
+    "zhPinyin": "yǒu néng lì de",
+    "mixedExample": "他 capable 教授西班牙文。"
   },
   {
     "id": "pray",
@@ -20596,7 +22102,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 35789,
     "selection": "学术英语补充",
-    "zhPinyin": "qí dǎo"
+    "zhPinyin": "qí dǎo",
+    "mixedExample": "我们一起 pray 这样的事别再发生了"
   },
   {
     "id": "nearby",
@@ -20610,7 +22117,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1636,
     "selection": "学术英语补充",
-    "zhPinyin": "fù jìn de"
+    "zhPinyin": "fù jìn de",
+    "mixedExample": "虽然我住在她家 nearby ，可是也很少见到她。"
   },
   {
     "id": "implication",
@@ -20624,7 +22132,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28644,
     "selection": "学术英语补充",
-    "zhPinyin": "hán yì"
+    "zhPinyin": "hán yì",
+    "mixedExample": "implication 是哪里有水井，哪里就有居民。"
   },
   {
     "id": "recognition",
@@ -20638,7 +22147,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11725,
     "selection": "学术英语补充",
-    "zhPinyin": "rèn kě"
+    "zhPinyin": "rèn kě",
+    "mixedExample": "她给了我一个 recognition 的微笑。"
   },
   {
     "id": "recovery",
@@ -20652,7 +22162,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16134,
     "selection": "学术英语补充",
-    "zhPinyin": "quán yù"
+    "zhPinyin": "quán yù",
+    "mixedExample": "他没有希望 recovery 了。"
   },
   {
     "id": "unlike",
@@ -20666,7 +22177,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46170,
     "selection": "学术英语补充",
-    "zhPinyin": "bù xiàng de"
+    "zhPinyin": "bù xiàng de",
+    "mixedExample": "詹妮弗在小村过平静的日子， unlike 我们在城市忙碌的生活。"
   },
   {
     "id": "resist",
@@ -20680,7 +22192,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21633,
     "selection": "学术英语补充",
-    "zhPinyin": "dǐ zhì"
+    "zhPinyin": "dǐ zhì",
+    "mixedExample": "我们ACME有限公司，特此宣布，我们将尽我们的力量 resist 这种恶意收购。"
   },
   {
     "id": "assist",
@@ -20694,7 +22207,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16839,
     "selection": "学术英语补充",
-    "zhPinyin": "xié zhù"
+    "zhPinyin": "xié zhù",
+    "mixedExample": "他将 assist 这个计划。"
   },
   {
     "id": "mayor",
@@ -20708,7 +22222,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11351,
     "selection": "学术英语补充",
-    "zhPinyin": "shì zhǎng"
+    "zhPinyin": "shì zhǎng",
+    "mixedExample": "mayor 一家人一整天不断遭到了恐吓电话的骚扰。"
   },
   {
     "id": "consideration",
@@ -20722,7 +22237,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4048,
     "selection": "学术英语补充",
-    "zhPinyin": "kǎo lǜ"
+    "zhPinyin": "kǎo lǜ",
+    "mixedExample": "你应该 consideration 的第一件事是时间。"
   },
   {
     "id": "secure",
@@ -20736,7 +22252,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16251,
     "selection": "学术英语补充",
-    "zhPinyin": "ān quán de"
+    "zhPinyin": "ān quán de",
+    "mixedExample": "我和他在一起时很有 secure 感。"
   },
   {
     "id": "constantly",
@@ -20750,7 +22267,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40317,
     "selection": "学术英语补充",
-    "zhPinyin": "bù duàn dì"
+    "zhPinyin": "bù duàn dì",
+    "mixedExample": "红十字会 constantly 给灾区提供食物援助。"
   },
   {
     "id": "preparation",
@@ -20764,7 +22282,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34412,
     "selection": "学术英语补充",
-    "zhPinyin": "zhǔn bèi"
+    "zhPinyin": "zhǔn bèi",
+    "mixedExample": "他们卖掉了房子和汽车 preparation 出国."
   },
   {
     "id": "absence",
@@ -20778,7 +22297,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17523,
     "selection": "学术英语补充",
-    "zhPinyin": "quē xí"
+    "zhPinyin": "quē xí",
+    "mixedExample": "在长时间的 absence 后，他终于来上学了。"
   },
   {
     "id": "impression",
@@ -20792,7 +22312,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 35153,
     "selection": "学术英语补充",
-    "zhPinyin": "yìn xiàng"
+    "zhPinyin": "yìn xiàng",
+    "mixedExample": "中国让人 impression 最深的就是中国菜."
   },
   {
     "id": "specialist",
@@ -20806,7 +22327,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36511,
     "selection": "学术英语补充",
-    "zhPinyin": "zhuān jiā"
+    "zhPinyin": "zhuān jiā",
+    "mixedExample": "他是经济学的 specialist 。"
   },
   {
     "id": "criticize",
@@ -20820,7 +22342,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19003,
     "selection": "学术英语补充",
-    "zhPinyin": "pī píng"
+    "zhPinyin": "pī píng",
+    "mixedExample": "很少有人会 criticize 他，即使有也不多。"
   },
   {
     "id": "conventional",
@@ -20834,7 +22357,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4351,
     "selection": "学术英语补充",
-    "zhPinyin": "chuán tǒng de"
+    "zhPinyin": "chuán tǒng de",
+    "mixedExample": "塑料代替了许多 conventional 原料。"
   },
   {
     "id": "highway",
@@ -20848,7 +22372,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40658,
     "selection": "学术英语补充",
-    "zhPinyin": "gōng lù"
+    "zhPinyin": "gōng lù",
+    "mixedExample": "今天早上高速 highway 上的交通状况正常。"
   },
   {
     "id": "clinical",
@@ -20862,7 +22387,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45860,
     "selection": "学术英语补充",
-    "zhPinyin": "lín chuáng de"
+    "zhPinyin": "lín chuáng de",
+    "mixedExample": "不是所有的 clinical 研究都是假设驱动的。"
   },
   {
     "id": "wage",
@@ -20876,7 +22402,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37402,
     "selection": "学术英语补充",
-    "zhPinyin": "gōng zī"
+    "zhPinyin": "gōng zī",
+    "mixedExample": "工人拿不到基本 wage 。"
   },
   {
     "id": "valuable",
@@ -20890,7 +22417,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21036,
     "selection": "学术英语补充",
-    "zhPinyin": "yǒu jià zhí de"
+    "zhPinyin": "yǒu jià zhí de",
+    "mixedExample": "真正的友谊比金钱更 valuable 。"
   },
   {
     "id": "chemical",
@@ -20904,7 +22432,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34210,
     "selection": "学术英语补充",
-    "zhPinyin": "huà xué de"
+    "zhPinyin": "huà xué de",
+    "mixedExample": "把水加热不改变它的 chemical 成分。"
   },
   {
     "id": "label",
@@ -20918,7 +22447,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16055,
     "selection": "学术英语补充",
-    "zhPinyin": "biāo qiān"
+    "zhPinyin": "biāo qiān",
+    "mixedExample": "箱子的内容在 label 上面写着。"
   },
   {
     "id": "extraordinary",
@@ -20932,7 +22462,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26718,
     "selection": "学术英语补充",
-    "zhPinyin": "fēi fán de"
+    "zhPinyin": "fēi fán de",
+    "mixedExample": "苹果是 extraordinary 手机。"
   },
   {
     "id": "yell",
@@ -20946,7 +22477,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43666,
     "selection": "学术英语补充",
-    "zhPinyin": "dà jiào"
+    "zhPinyin": "dà jiào",
+    "mixedExample": "别在我耳边 yell 。"
   },
   {
     "id": "fence",
@@ -20960,7 +22492,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46702,
     "selection": "学术英语补充",
-    "zhPinyin": "zhà lán"
+    "zhPinyin": "zhà lán",
+    "mixedExample": "我们的球越过了 fence ，掉到了工地里。"
   },
   {
     "id": "portrait",
@@ -20974,7 +22507,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48985,
     "selection": "学术英语补充",
-    "zhPinyin": "xiào xiàng"
+    "zhPinyin": "xiào xiàng",
+    "mixedExample": "国王的 portrait 揭晓，收获了热烈的掌声。"
   },
   {
     "id": "burden",
@@ -20988,7 +22522,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6187,
     "selection": "学术英语补充",
-    "zhPinyin": "fù dān ； zé rèn"
+    "zhPinyin": "fù dān ； zé rèn",
+    "mixedExample": "那个责任对他是个 burden 。"
   },
   {
     "id": "destruction",
@@ -21002,7 +22537,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33802,
     "selection": "学术英语补充",
-    "zhPinyin": "huǐ miè"
+    "zhPinyin": "huǐ miè",
+    "mixedExample": "在人类自我 destruction 的边缘，第一次接触成了福音。"
   },
   {
     "id": "literary",
@@ -21016,7 +22552,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49492,
     "selection": "学术英语补充",
-    "zhPinyin": "wén xué de"
+    "zhPinyin": "wén xué de",
+    "mixedExample": "literary 作品中常用夜来香来象征思念与柔情。"
   },
   {
     "id": "fortune",
@@ -21030,7 +22567,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17778,
     "selection": "学术英语补充",
-    "zhPinyin": "cái fù"
+    "zhPinyin": "cái fù",
+    "mixedExample": "他死前累积了庞大的 fortune 。"
   },
   {
     "id": "initially",
@@ -21044,7 +22582,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24810,
     "selection": "学术英语补充",
-    "zhPinyin": "zuì chū"
+    "zhPinyin": "zuì chū",
+    "mixedExample": "事情比我们 initially 想象的更严重。"
   },
   {
     "id": "latter",
@@ -21058,7 +22597,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42733,
     "selection": "学术英语补充",
-    "zhPinyin": "hòu zhě de"
+    "zhPinyin": "hòu zhě de",
+    "mixedExample": "独立的句子和文章中的句子的区别在于 latter 具备上下文。"
   },
   {
     "id": "revolution",
@@ -21072,7 +22612,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41852,
     "selection": "学术英语补充",
-    "zhPinyin": "gé mìng"
+    "zhPinyin": "gé mìng",
+    "mixedExample": "有人说，玛丽·安托瓦内特对法国大 revolution 有着不可推卸的责任。"
   },
   {
     "id": "reflection",
@@ -21086,7 +22627,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37548,
     "selection": "学术英语补充",
-    "zhPinyin": "yìng xiàng"
+    "zhPinyin": "yìng xiàng",
+    "mixedExample": "我在窗户上看见了我的 reflection 。"
   },
   {
     "id": "pause",
@@ -21100,7 +22642,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18204,
     "selection": "学术英语补充",
-    "zhPinyin": "tíng dùn"
+    "zhPinyin": "tíng dùn",
+    "mixedExample": "他不 pause 地说了十分钟。"
   },
   {
     "id": "remote",
@@ -21114,7 +22657,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47500,
     "selection": "学术英语补充",
-    "zhPinyin": "piān pì de"
+    "zhPinyin": "piān pì de",
+    "mixedExample": "那个位置很 remote 。"
   },
   {
     "id": "testify",
@@ -21128,7 +22672,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45020,
     "selection": "学术英语补充",
-    "zhPinyin": "zuò zhèng"
+    "zhPinyin": "zuò zhèng",
+    "mixedExample": "他不愿意为同胞 testify 。"
   },
   {
     "id": "imply",
@@ -21142,7 +22687,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16430,
     "selection": "学术英语补充",
-    "zhPinyin": "àn shì"
+    "zhPinyin": "àn shì",
+    "mixedExample": "他的话 imply 着什么？"
   },
   {
     "id": "unknown",
@@ -21156,7 +22702,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32645,
     "selection": "学术英语补充",
-    "zhPinyin": "wèi zhī de"
+    "zhPinyin": "wèi zhī de",
+    "mixedExample": "恐惧来源于 unknown 。"
   },
   {
     "id": "tire",
@@ -21170,7 +22717,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5646,
     "selection": "学术英语补充",
-    "zhPinyin": "lún tāi"
+    "zhPinyin": "lún tāi",
+    "mixedExample": "我得推我的自行车，因为有个 tire 漏气了。"
   },
   {
     "id": "shortly",
@@ -21184,7 +22732,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14044,
     "selection": "学术英语补充",
-    "zhPinyin": "bù jiǔ"
+    "zhPinyin": "bù jiǔ",
+    "mixedExample": "事故发生后 shortly ，警察来了。"
   },
   {
     "id": "originally",
@@ -21198,7 +22747,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42808,
     "selection": "学术英语补充",
-    "zhPinyin": "běn lái"
+    "zhPinyin": "běn lái",
+    "mixedExample": "我 originally 什么也不知道啊！"
   },
   {
     "id": "proof",
@@ -21212,7 +22762,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21637,
     "selection": "学术英语补充",
-    "zhPinyin": "zhèng míng"
+    "zhPinyin": "zhèng míng",
+    "mixedExample": "就好像那 proof 了英语是正确的。"
   },
   {
     "id": "imagination",
@@ -21226,7 +22777,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15061,
     "selection": "学术英语补充",
-    "zhPinyin": "xiǎng xiàng ； xiǎng xiàng lì"
+    "zhPinyin": "xiǎng xiàng ； xiǎng xiàng lì",
+    "mixedExample": "imagination 是一切文明的根源。"
   },
   {
     "id": "stable",
@@ -21240,7 +22792,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10402,
     "selection": "学术英语补充",
-    "zhPinyin": "wěn dìng de"
+    "zhPinyin": "wěn dìng de",
+    "mixedExample": "经济繁荣 stable ，是每个政府都想达到的目标。"
   },
   {
     "id": "fate",
@@ -21254,7 +22807,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34772,
     "selection": "学术英语补充",
-    "zhPinyin": "mìng yùn"
+    "zhPinyin": "mìng yùn",
+    "mixedExample": "那个时代，医生的 fate 掌握在不懂医术的人的手里。"
   },
   {
     "id": "poet",
@@ -21268,7 +22822,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7465,
     "selection": "学术英语补充",
-    "zhPinyin": "shī rén"
+    "zhPinyin": "shī rén",
+    "mixedExample": "这是这个 poet 出生的村子。"
   },
   {
     "id": "comfort",
@@ -21282,7 +22837,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17451,
     "selection": "学术英语补充",
-    "zhPinyin": "shū shì"
+    "zhPinyin": "shū shì",
+    "mixedExample": "他努力工作为了让他的家人可以过 comfort 的生活。"
   },
   {
     "id": "significance",
@@ -21296,7 +22852,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 35370,
     "selection": "学术英语补充",
-    "zhPinyin": "yì yì"
+    "zhPinyin": "yì yì",
+    "mixedExample": "我没有领会这个 significance 。"
   },
   {
     "id": "leather",
@@ -21310,7 +22867,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5750,
     "selection": "学术英语补充",
-    "zhPinyin": "pí gé"
+    "zhPinyin": "pí gé",
+    "mixedExample": "它们是用粗糙的褐色 leather 制成的。"
   },
   {
     "id": "garlic",
@@ -21324,7 +22882,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6209,
     "selection": "学术英语补充",
-    "zhPinyin": "dà suàn"
+    "zhPinyin": "dà suàn",
+    "mixedExample": "这个食物尝起来有一点 garlic 味。"
   },
   {
     "id": "capability",
@@ -21338,7 +22897,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37684,
     "selection": "学术英语补充",
-    "zhPinyin": "néng lì"
+    "zhPinyin": "néng lì",
+    "mixedExample": "小明同学管理 capability 很强。"
   },
   {
     "id": "pipe",
@@ -21352,7 +22912,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17657,
     "selection": "学术英语补充",
-    "zhPinyin": "yān dǒu"
+    "zhPinyin": "yān dǒu",
+    "mixedExample": "他口里含着 pipe ,坐在那儿."
   },
   {
     "id": "athletic",
@@ -21366,7 +22927,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7121,
     "selection": "学术英语补充",
-    "zhPinyin": "yùn dòng de"
+    "zhPinyin": "yùn dòng de",
+    "mixedExample": "Jane在 athletic 会之前把头发剃短了。"
   },
   {
     "id": "angle",
@@ -21380,7 +22942,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5879,
     "selection": "学术英语补充",
-    "zhPinyin": "jiǎo dù"
+    "zhPinyin": "jiǎo dù",
+    "mixedExample": "这个 angle 会过于狭窄。"
   },
   {
     "id": "pile",
@@ -21394,7 +22957,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49591,
     "selection": "学术英语补充",
-    "zhPinyin": "dà duī"
+    "zhPinyin": "dà duī",
+    "mixedExample": "他将一 pile 东西捐赠给博物馆。"
   },
   {
     "id": "consume",
@@ -21408,7 +22972,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32996,
     "selection": "学术英语补充",
-    "zhPinyin": "xiāo hào"
+    "zhPinyin": "xiāo hào",
+    "mixedExample": "瑞士人 consume 不少啤酒。"
   },
   {
     "id": "survivor",
@@ -21422,7 +22987,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42749,
     "selection": "学术英语补充",
-    "zhPinyin": "xìng cún zhě"
+    "zhPinyin": "xìng cún zhě",
+    "mixedExample": "这场灾难的唯一 survivor 是一个婴儿。"
   },
   {
     "id": "painful",
@@ -21436,7 +23002,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10042,
     "selection": "学术英语补充",
-    "zhPinyin": "tòng kǔ de"
+    "zhPinyin": "tòng kǔ de",
+    "mixedExample": "这五年 painful 癌症治疗他终于坚持下来了。"
   },
   {
     "id": "calculate",
@@ -21450,7 +23017,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30140,
     "selection": "学术英语补充",
-    "zhPinyin": "jì suàn"
+    "zhPinyin": "jì suàn",
+    "mixedExample": "不先与我们的承包商讨论的话我无法 calculate 出最后的费用。"
   },
   {
     "id": "scope",
@@ -21464,7 +23032,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7399,
     "selection": "学术英语补充",
-    "zhPinyin": "fàn wéi"
+    "zhPinyin": "fàn wéi",
+    "mixedExample": "这超出了我的想像 scope 。"
   },
   {
     "id": "handful",
@@ -21478,7 +23047,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14465,
     "selection": "学术英语补充",
-    "zhPinyin": "yī bǎ"
+    "zhPinyin": "yī bǎ",
+    "mixedExample": "男孩收集了 handful 花生，然后把它们放到了一个小箱子里。"
   },
   {
     "id": "punishment",
@@ -21492,7 +23062,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27864,
     "selection": "学术英语补充",
-    "zhPinyin": "chéng fá"
+    "zhPinyin": "chéng fá",
+    "mixedExample": "在一些国家，叛国罪的 punishment 可以是终身监禁。"
   },
   {
     "id": "curious",
@@ -21506,7 +23077,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19809,
     "selection": "学术英语补充",
-    "zhPinyin": "hào qí de"
+    "zhPinyin": "hào qí de",
+    "mixedExample": "她太过 curious ，以至于打开了盒子。"
   },
   {
     "id": "eager",
@@ -21520,7 +23092,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25610,
     "selection": "学术英语补充",
-    "zhPinyin": "kě wàng de"
+    "zhPinyin": "kě wàng de",
+    "mixedExample": "他以为他们 eager 荣耀。"
   },
   {
     "id": "romantic",
@@ -21534,7 +23107,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17103,
     "selection": "学术英语补充",
-    "zhPinyin": "làng màn de"
+    "zhPinyin": "làng màn de",
+    "mixedExample": "他是个非常 romantic 男友，每晚都给我带花。"
   },
   {
     "id": "blade",
@@ -21548,7 +23122,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6601,
     "selection": "学术英语补充",
-    "zhPinyin": "dāo fēng"
+    "zhPinyin": "dāo fēng",
+    "mixedExample": "这把刀的 blade 很利。"
   },
   {
     "id": "absolute",
@@ -21562,7 +23137,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7242,
     "selection": "学术英语补充",
-    "zhPinyin": "jué duì de"
+    "zhPinyin": "jué duì de",
+    "mixedExample": "电脑现在是一个 absolute 必要的东西了。"
   },
   {
     "id": "offensive",
@@ -21576,7 +23152,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27828,
     "selection": "学术英语补充",
-    "zhPinyin": "gōng jī xìng de"
+    "zhPinyin": "gōng jī xìng de",
+    "mixedExample": "发言人的评论极有 offensive 。"
   },
   {
     "id": "appoint",
@@ -21590,7 +23167,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29859,
     "selection": "学术英语补充",
-    "zhPinyin": "rèn mìng"
+    "zhPinyin": "rèn mìng",
+    "mixedExample": "董事会一致决定 appoint 她为执行总裁。"
   },
   {
     "id": "successfully",
@@ -21604,7 +23182,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36778,
     "selection": "学术英语补充",
-    "zhPinyin": "chéng gōng"
+    "zhPinyin": "chéng gōng",
+    "mixedExample": "successfully 地解决了这个问题，对此他感到十分高兴。"
   },
   {
     "id": "cope",
@@ -21618,7 +23197,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21233,
     "selection": "学术英语补充",
-    "zhPinyin": "yìng fù"
+    "zhPinyin": "yìng fù",
+    "mixedExample": "问题是我们如何 cope 目前的困难。"
   },
   {
     "id": "furthermore",
@@ -21632,7 +23212,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30988,
     "selection": "学术英语补充",
-    "zhPinyin": "ér qiě"
+    "zhPinyin": "ér qiě",
+    "mixedExample": "furthermore ，我还是认为这准不是个巨大的文化区别。"
   },
   {
     "id": "consciousness",
@@ -21646,7 +23227,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28876,
     "selection": "学术英语补充",
-    "zhPinyin": "zhī jué"
+    "zhPinyin": "zhī jué",
+    "mixedExample": "他在麻醉剂的作用下，他失去了 consciousness 。"
   },
   {
     "id": "powder",
@@ -21660,7 +23242,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25829,
     "selection": "学术英语补充",
-    "zhPinyin": "fěn mò"
+    "zhPinyin": "fěn mò",
+    "mixedExample": "桌上布满了 powder 。"
   },
   {
     "id": "admire",
@@ -21674,7 +23257,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19180,
     "selection": "学术英语补充",
-    "zhPinyin": "chēng zàn"
+    "zhPinyin": "chēng zàn",
+    "mixedExample": "记得 admire 她的新洋装。"
   },
   {
     "id": "turkey",
@@ -21688,7 +23272,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33521,
     "selection": "学术英语补充",
-    "zhPinyin": "tǔ ěr qí"
+    "zhPinyin": "tǔ ěr qí",
+    "mixedExample": "你在 turkey 哪儿生活?"
   },
   {
     "id": "nonetheless",
@@ -21702,7 +23287,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 22059,
     "selection": "学术英语补充",
-    "zhPinyin": "rán ér"
+    "zhPinyin": "rán ér",
+    "mixedExample": "家乐福的火腿剩料一点都不贵， nonetheless 却很好吃。"
   },
   {
     "id": "horror",
@@ -21716,7 +23302,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27572,
     "selection": "学术英语补充",
-    "zhPinyin": "kǒng bù"
+    "zhPinyin": "kǒng bù",
+    "mixedExample": "这部 horror 片很吓人，我一看就睡不着觉了。"
   },
   {
     "id": "collective",
@@ -21730,7 +23317,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45261,
     "selection": "学术英语补充",
-    "zhPinyin": "jí tǐ de"
+    "zhPinyin": "jí tǐ de",
+    "mixedExample": "他在利用 collective 名义，为自己谋利。"
   },
   {
     "id": "virtue",
@@ -21744,7 +23332,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27518,
     "selection": "学术英语补充",
-    "zhPinyin": "měi dé"
+    "zhPinyin": "měi dé",
+    "mixedExample": "在这个社会里一切都是用完即丢, 用东西直到它磨损是一种 virtue 。"
   },
   {
     "id": "makeup",
@@ -21758,7 +23347,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36366,
     "selection": "学术英语补充",
-    "zhPinyin": "huà zhuāng pǐn"
+    "zhPinyin": "huà zhuāng pǐn",
+    "mixedExample": "你很美, 甚至不必使用 makeup 。"
   },
   {
     "id": "interrupt",
@@ -21772,7 +23362,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11445,
     "selection": "学术英语补充",
-    "zhPinyin": "chā zuǐ"
+    "zhPinyin": "chā zuǐ",
+    "mixedExample": "我说话的时候请你不要 interrupt 。"
   },
   {
     "id": "continuous",
@@ -21786,7 +23377,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45686,
     "selection": "学术英语补充",
-    "zhPinyin": "lián xù de ； lián xù bù duàn de"
+    "zhPinyin": "lián xù de ； lián xù bù duàn de",
+    "mixedExample": "小脑需要 continuous 血液供给。"
   },
   {
     "id": "evil",
@@ -21800,7 +23392,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1594,
     "selection": "学术英语补充",
-    "zhPinyin": "zuì è"
+    "zhPinyin": "zuì è",
+    "mixedExample": "金钱是一切 evil 之源。"
   },
   {
     "id": "civilization",
@@ -21814,7 +23407,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45798,
     "selection": "学术英语补充",
-    "zhPinyin": "wén míng"
+    "zhPinyin": "wén míng",
+    "mixedExample": "你知道人类 civilization 有多少年的历史吗？"
   },
   {
     "id": "evident",
@@ -21828,7 +23422,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40414,
     "selection": "学术英语补充",
-    "zhPinyin": "míng xiǎn de"
+    "zhPinyin": "míng xiǎn de",
+    "mixedExample": "马德里竞技遭遇失败后，很 evident 大家都很生气。"
   },
   {
     "id": "corridor",
@@ -21842,7 +23437,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30890,
     "selection": "学术英语补充",
-    "zhPinyin": "zǒu láng"
+    "zhPinyin": "zǒu láng",
+    "mixedExample": "corridor 每天早上都清扫得干干净净。"
   },
   {
     "id": "weakness",
@@ -21856,7 +23452,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6175,
     "selection": "学术英语补充",
-    "zhPinyin": "ruò diǎn"
+    "zhPinyin": "ruò diǎn",
+    "mixedExample": "战士知道自己的力量和 weakness 。"
   },
   {
     "id": "rumor",
@@ -21870,7 +23467,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25949,
     "selection": "学术英语补充",
-    "zhPinyin": "yáo yán"
+    "zhPinyin": "yáo yán",
+    "mixedExample": "据我所知，这个 rumor 不是真的。"
   },
   {
     "id": "administrative",
@@ -21884,7 +23482,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48852,
     "selection": "学术英语补充",
-    "zhPinyin": "xíng zhèng de"
+    "zhPinyin": "xíng zhèng de",
+    "mixedExample": "第三性别的出现增加了法律和 administrative 上的麻烦，徒增无谓的负担。"
   },
   {
     "id": "nail",
@@ -21898,7 +23497,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8516,
     "selection": "学术英语补充",
-    "zhPinyin": "dīng zi"
+    "zhPinyin": "dīng zi",
+    "mixedExample": "车胎被 nail 刺穿了。"
   },
   {
     "id": "motive",
@@ -21912,7 +23512,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17000,
     "selection": "学术英语补充",
-    "zhPinyin": "dòng jī"
+    "zhPinyin": "dòng jī",
+    "mixedExample": "他那样做有甚么 motive ？"
   },
   {
     "id": "flood",
@@ -21926,7 +23527,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2550,
     "selection": "学术英语补充",
-    "zhPinyin": "hóng shuǐ"
+    "zhPinyin": "hóng shuǐ",
+    "mixedExample": "好几间小屋被 flood 孤立起来了。"
   },
   {
     "id": "warrior",
@@ -21940,7 +23542,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24078,
     "selection": "学术英语补充",
-    "zhPinyin": "zhàn shì"
+    "zhPinyin": "zhàn shì",
+    "mixedExample": "一名伟大的 warrior 放射出力量。他不用死战。"
   },
   {
     "id": "prediction",
@@ -21954,7 +23557,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20481,
     "selection": "学术英语补充",
-    "zhPinyin": "yù yán"
+    "zhPinyin": "yù yán",
+    "mixedExample": "说来奇怪，他的 prediction 竟然真的灵验了。"
   },
   {
     "id": "wrist",
@@ -21968,7 +23572,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23133,
     "selection": "学术英语补充",
-    "zhPinyin": "shǒu wàn"
+    "zhPinyin": "shǒu wàn",
+    "mixedExample": "那个男人抓住了这个年轻女孩的 wrist 。"
   },
   {
     "id": "guilt",
@@ -21982,7 +23587,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19095,
     "selection": "学术英语补充",
-    "zhPinyin": "nèi jiù"
+    "zhPinyin": "nèi jiù",
+    "mixedExample": "她隐约地有一种的 guilt 感。"
   },
   {
     "id": "railroad",
@@ -21996,7 +23602,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21156,
     "selection": "学术英语补充",
-    "zhPinyin": "tiě lù"
+    "zhPinyin": "tiě lù",
+    "mixedExample": "railroad 工人明天将继续进行罢工。"
   },
   {
     "id": "endure",
@@ -22010,7 +23617,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28619,
     "selection": "学术英语补充",
-    "zhPinyin": "rěn shòu"
+    "zhPinyin": "rěn shòu",
+    "mixedExample": "法国人的自以为是真是让人难以 endure 。"
   },
   {
     "id": "harm",
@@ -22024,7 +23632,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11902,
     "selection": "学术英语补充",
-    "zhPinyin": "shāng hài"
+    "zhPinyin": "shāng hài",
+    "mixedExample": "不要担心我的狗，它不会 harm 你。"
   },
   {
     "id": "horn",
@@ -22038,7 +23647,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27333,
     "selection": "学术英语补充",
-    "zhPinyin": "lǎ bā"
+    "zhPinyin": "lǎ bā",
+    "mixedExample": "火车在快到交叉路口的时候减速、按 horn 。"
   },
   {
     "id": "peaceful",
@@ -22052,7 +23662,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24271,
     "selection": "学术英语补充",
-    "zhPinyin": "hé píng de"
+    "zhPinyin": "hé píng de",
+    "mixedExample": "我梦见的是一个没有战争的、 peaceful 世界。"
   },
   {
     "id": "grateful",
@@ -22066,7 +23677,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45608,
     "selection": "学术英语补充",
-    "zhPinyin": "gǎn jī de"
+    "zhPinyin": "gǎn jī de",
+    "mixedExample": "如您能借我些钱，不胜 grateful 。"
   },
   {
     "id": "sweat",
@@ -22080,7 +23692,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2044,
     "selection": "学术英语补充",
-    "zhPinyin": "hàn shuǐ"
+    "zhPinyin": "hàn shuǐ",
+    "mixedExample": "sweat 从我的额头上滴落。"
   },
   {
     "id": "republic",
@@ -22094,7 +23707,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30082,
     "selection": "学术英语补充",
-    "zhPinyin": "gòng hé guó"
+    "zhPinyin": "gòng hé guó",
+    "mixedExample": "瓜地马拉曾经被称作香蕉 republic 。"
   },
   {
     "id": "govern",
@@ -22108,7 +23722,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33498,
     "selection": "学术英语补充",
-    "zhPinyin": "tǒng zhì"
+    "zhPinyin": "tǒng zhì",
+    "mixedExample": "govern 一个国家不是一件简单的工作。"
   },
   {
     "id": "vitamin",
@@ -22122,7 +23737,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8811,
     "selection": "学术英语补充",
-    "zhPinyin": "wéi shēng sù"
+    "zhPinyin": "wéi shēng sù",
+    "mixedExample": "橙子含有大量的 vitamin  C。"
   },
   {
     "id": "mechanical",
@@ -22136,7 +23752,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34311,
     "selection": "学术英语补充",
-    "zhPinyin": "jī xiè de"
+    "zhPinyin": "jī xiè de",
+    "mixedExample": "mechanical 力代替人力, 这是蒸汽机发明的结果。"
   },
   {
     "id": "apologize",
@@ -22150,7 +23767,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14207,
     "selection": "学术英语补充",
-    "zhPinyin": "dào qiàn"
+    "zhPinyin": "dào qiàn",
+    "mixedExample": "我没发现任何我该 apologize 的理由。"
   },
   {
     "id": "corruption",
@@ -22164,7 +23782,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 436,
     "selection": "学术英语补充",
-    "zhPinyin": "fǔ bài"
+    "zhPinyin": "fǔ bài",
+    "mixedExample": "政治家以揭露政府官员的 corruption 来推动改革。"
   },
   {
     "id": "complexity",
@@ -22178,7 +23797,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32661,
     "selection": "学术英语补充",
-    "zhPinyin": "fù zá ； fù zá xìng"
+    "zhPinyin": "fù zá ； fù zá xìng",
+    "mixedExample": "他思考着现代生活的 complexity 。"
   },
   {
     "id": "suspicion",
@@ -22192,7 +23812,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16901,
     "selection": "学术英语补充",
-    "zhPinyin": "huái yí"
+    "zhPinyin": "huái yí",
+    "mixedExample": "人们 suspicion 他是间谍。"
   },
   {
     "id": "relieve",
@@ -22206,7 +23827,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4819,
     "selection": "学术英语补充",
-    "zhPinyin": "jiǎn qīng"
+    "zhPinyin": "jiǎn qīng",
+    "mixedExample": "没有什么话语能 relieve 她深深的悲伤。"
   },
   {
     "id": "meaningful",
@@ -22220,7 +23842,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19193,
     "selection": "学术英语补充",
-    "zhPinyin": "yì wèi shēn cháng de"
+    "zhPinyin": "yì wèi shēn cháng de",
+    "mixedExample": "她 meaningful 地看了我一眼。"
   },
   {
     "id": "rebel",
@@ -22234,7 +23857,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23930,
     "selection": "学术英语补充",
-    "zhPinyin": "fǎn pàn zhě"
+    "zhPinyin": "fǎn pàn zhě",
+    "mixedExample": "谁不喜欢一个 rebel ？"
   },
   {
     "id": "exit",
@@ -22248,7 +23872,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34221,
     "selection": "学术英语补充",
-    "zhPinyin": "chū kǒu"
+    "zhPinyin": "chū kǒu",
+    "mixedExample": "有紧急情况时，必须通过这个 exit 跑出房子。"
   },
   {
     "id": "needle",
@@ -22262,7 +23887,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26260,
     "selection": "学术英语补充",
-    "zhPinyin": "féng rèn"
+    "zhPinyin": "féng rèn",
+    "mixedExample": "你有没有 needle 针？"
   },
   {
     "id": "mild",
@@ -22276,7 +23902,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2110,
     "selection": "学术英语补充",
-    "zhPinyin": "wēn hé de"
+    "zhPinyin": "wēn hé de",
+    "mixedExample": "总体上说，日本的气候 mild 。"
   },
   {
     "id": "anxious",
@@ -22290,7 +23917,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1378,
     "selection": "学术英语补充",
-    "zhPinyin": "kě wàng de"
+    "zhPinyin": "kě wàng de",
+    "mixedExample": "我 anxious 见到你。"
   },
   {
     "id": "liberty",
@@ -22304,7 +23932,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 394,
     "selection": "学术英语补充",
-    "zhPinyin": "zì yóu"
+    "zhPinyin": "zì yóu",
+    "mixedExample": "liberty 旨在能够做所有不伤害其他人的事。"
   },
   {
     "id": "opera",
@@ -22318,7 +23947,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34294,
     "selection": "学术英语补充",
-    "zhPinyin": "gē jù"
+    "zhPinyin": "gē jù",
+    "mixedExample": "他们经常在一块儿，去看 opera 或者浏览画廊。"
   },
   {
     "id": "departure",
@@ -22332,7 +23962,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29229,
     "selection": "学术英语补充",
-    "zhPinyin": "chū fā"
+    "zhPinyin": "chū fā",
+    "mixedExample": "在中国，人人必须去 departure 的火车站买车票。"
   },
   {
     "id": "hesitate",
@@ -22346,7 +23977,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34388,
     "selection": "学术英语补充",
-    "zhPinyin": "yóu yù"
+    "zhPinyin": "yóu yù",
+    "mixedExample": "面对这个机会不能 hesitate ，要赶快行动。"
   },
   {
     "id": "necessity",
@@ -22360,7 +23992,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21527,
     "selection": "学术英语补充",
-    "zhPinyin": "xū yào"
+    "zhPinyin": "xū yào",
+    "mixedExample": "劳动不仅是一种 necessity ，而还是一种愉快。"
   },
   {
     "id": "performer",
@@ -22374,7 +24007,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2303,
     "selection": "学术英语补充",
-    "zhPinyin": "biǎo yǎn zhě"
+    "zhPinyin": "biǎo yǎn zhě",
+    "mixedExample": "我们为 performer 鼓掌。"
   },
   {
     "id": "photography",
@@ -22388,7 +24022,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13237,
     "selection": "学术英语补充",
-    "zhPinyin": "shè yǐng"
+    "zhPinyin": "shè yǐng",
+    "mixedExample": "我对 photography 感兴趣。"
   },
   {
     "id": "outstanding",
@@ -22402,7 +24037,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34207,
     "selection": "学术英语补充",
-    "zhPinyin": "jié chū de"
+    "zhPinyin": "jié chū de",
+    "mixedExample": "我们对史密斯先生 outstanding ，给人启发的讲话表示感激。"
   },
   {
     "id": "lately",
@@ -22416,7 +24052,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11070,
     "selection": "学术英语补充",
-    "zhPinyin": "zuì jìn"
+    "zhPinyin": "zuì jìn",
+    "mixedExample": "我已经搭了 lately 比较早一点的火车来上班。"
   },
   {
     "id": "diamond",
@@ -22430,7 +24067,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7359,
     "selection": "学术英语补充",
-    "zhPinyin": "zuàn shí"
+    "zhPinyin": "zuàn shí",
+    "mixedExample": "这可能不是一颗真的 diamond 。"
   },
   {
     "id": "import",
@@ -22444,7 +24082,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3386,
     "selection": "学术英语补充",
-    "zhPinyin": "jìn kǒu"
+    "zhPinyin": "jìn kǒu",
+    "mixedExample": "我们从印度 import 茶叶。"
   },
   {
     "id": "mysterious",
@@ -22458,7 +24097,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 22349,
     "selection": "学术英语补充",
-    "zhPinyin": "shén mì de"
+    "zhPinyin": "shén mì de",
+    "mixedExample": "这个地方的气氛很 mysterious 。"
   },
   {
     "id": "rocket",
@@ -22472,7 +24112,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3439,
     "selection": "学术英语补充",
-    "zhPinyin": "huǒ jiàn"
+    "zhPinyin": "huǒ jiàn",
+    "mixedExample": "rocket 发射进入太空。"
   },
   {
     "id": "tightly",
@@ -22486,7 +24127,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29386,
     "selection": "学术英语补充",
-    "zhPinyin": "jǐn jǐn dì"
+    "zhPinyin": "jǐn jǐn dì",
+    "mixedExample": "我 tightly 抱著他哭。"
   },
   {
     "id": "glory",
@@ -22500,7 +24142,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16576,
     "selection": "学术英语补充",
-    "zhPinyin": "guāng róng"
+    "zhPinyin": "guāng róng",
+    "mixedExample": "他英勇的行为带给了他 glory 。"
   },
   {
     "id": "nest",
@@ -22514,7 +24157,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32949,
     "selection": "学术英语补充",
-    "zhPinyin": "zhù cháo"
+    "zhPinyin": "zhù cháo",
+    "mixedExample": "很明显的，他们房前的树上 nest 。"
   },
   {
     "id": "optimistic",
@@ -22528,7 +24172,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45703,
     "selection": "学术英语补充",
-    "zhPinyin": "lè guān de"
+    "zhPinyin": "lè guān de",
+    "mixedExample": "我不像你那么 optimistic 。"
   },
   {
     "id": "unite",
@@ -22542,7 +24187,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33002,
     "selection": "学术英语补充",
-    "zhPinyin": "lián hé"
+    "zhPinyin": "lián hé",
+    "mixedExample": "全世界无产者， unite 起来！"
   },
   {
     "id": "patience",
@@ -22556,7 +24202,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15981,
     "selection": "学术英语补充",
-    "zhPinyin": "rěn nài"
+    "zhPinyin": "rěn nài",
+    "mixedExample": "patience 是最美的美德。"
   },
   {
     "id": "grasp",
@@ -22570,7 +24217,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40236,
     "selection": "学术英语补充",
-    "zhPinyin": "bǎ wò"
+    "zhPinyin": "bǎ wò",
+    "mixedExample": "买房要量力而行，但也要 grasp 时机。"
   },
   {
     "id": "calm",
@@ -22584,7 +24232,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43618,
     "selection": "学术英语补充",
-    "zhPinyin": "lěng jìng de"
+    "zhPinyin": "lěng jìng de",
+    "mixedExample": "你们 calm 下来，从头开始跟我说。"
   },
   {
     "id": "afterward",
@@ -22598,7 +24247,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 12190,
     "selection": "学术英语补充",
-    "zhPinyin": "rán hòu"
+    "zhPinyin": "rán hòu",
+    "mixedExample": "我学习了两个多小时， afterward 就去睡觉了。"
   },
   {
     "id": "ruin",
@@ -22612,7 +24262,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 22003,
     "selection": "学术英语补充",
-    "zhPinyin": "pò huài"
+    "zhPinyin": "pò huài",
+    "mixedExample": "我认为考试 ruin 教育。"
   },
   {
     "id": "empire",
@@ -22626,7 +24277,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18731,
     "selection": "学术英语补充",
-    "zhPinyin": "dì guó"
+    "zhPinyin": "dì guó",
+    "mixedExample": "他们大约五百年前在秘鲁建立了 empire 。"
   },
   {
     "id": "neutral",
@@ -22640,7 +24292,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6892,
     "selection": "学术英语补充",
-    "zhPinyin": "zhōng lì de"
+    "zhPinyin": "zhōng lì de",
+    "mixedExample": "瑞士是一个 neutral 国家。"
   },
   {
     "id": "tragic",
@@ -22654,7 +24307,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27863,
     "selection": "学术英语补充",
-    "zhPinyin": "bēi jù de"
+    "zhPinyin": "bēi jù de",
+    "mixedExample": "听到这件 tragic ，他俩尽皆哭泣。"
   },
   {
     "id": "earthquake",
@@ -22668,7 +24322,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15442,
     "selection": "学术英语补充",
-    "zhPinyin": "dì zhèn"
+    "zhPinyin": "dì zhèn",
+    "mixedExample": "一条主要水管被 earthquake 震裂了。"
   },
   {
     "id": "safely",
@@ -22682,7 +24337,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10715,
     "selection": "学术英语补充",
-    "zhPinyin": "ān quán dì"
+    "zhPinyin": "ān quán dì",
+    "mixedExample": "迷路的渔船 safely 返回了港口。"
   },
   {
     "id": "sympathy",
@@ -22696,7 +24352,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5550,
     "selection": "学术英语补充",
-    "zhPinyin": "tóng qíng"
+    "zhPinyin": "tóng qíng",
+    "mixedExample": "每个人都对囚犯表示 sympathy 。"
   },
   {
     "id": "influential",
@@ -22710,7 +24367,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28252,
     "selection": "学术英语补充",
-    "zhPinyin": "yǒu yǐng xiǎng de"
+    "zhPinyin": "yǒu yǐng xiǎng de",
+    "mixedExample": "卢梭是疯狂的, 但 influential 力; 休谟是理智的, 但没有追随者。"
   },
   {
     "id": "translation",
@@ -22724,7 +24382,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30199,
     "selection": "学术英语补充",
-    "zhPinyin": "fān yì"
+    "zhPinyin": "fān yì",
+    "mixedExample": "translation 是欧洲的语言。"
   },
   {
     "id": "uncertain",
@@ -22738,7 +24397,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29992,
     "selection": "学术英语补充",
-    "zhPinyin": "bù què dìng de"
+    "zhPinyin": "bù què dìng de",
+    "mixedExample": "父亲总是 uncertain 。"
   },
   {
     "id": "waist",
@@ -22752,7 +24412,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17679,
     "selection": "学术英语补充",
-    "zhPinyin": "yāo bù"
+    "zhPinyin": "yāo bù",
+    "mixedExample": "他从 waist 到膝盖都湿了。"
   },
   {
     "id": "pulse",
@@ -22766,7 +24427,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3214,
     "selection": "学术英语补充",
-    "zhPinyin": "mài bó"
+    "zhPinyin": "mài bó",
+    "mixedExample": "医生认为病人的 pulse 有点快。"
   },
   {
     "id": "icon",
@@ -22780,7 +24442,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26024,
     "selection": "学术英语补充",
-    "zhPinyin": "tú biāo"
+    "zhPinyin": "tú biāo",
+    "mixedExample": "您已添加了评论，而不是一个翻译。要添加一个翻译，点击这句话上面的«あ→а» icon 。"
   },
   {
     "id": "liquid",
@@ -22794,7 +24457,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14737,
     "selection": "学术英语补充",
-    "zhPinyin": "yè tǐ"
+    "zhPinyin": "yè tǐ",
+    "mixedExample": "水是 liquid 。冻起来就成了固体。"
   },
   {
     "id": "sensation",
@@ -22808,7 +24472,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4461,
     "selection": "学术英语补充",
-    "zhPinyin": "hōng dòng"
+    "zhPinyin": "hōng dòng",
+    "mixedExample": "披头士的发型引起了 sensation 。"
   },
   {
     "id": "alike",
@@ -22822,7 +24487,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36340,
     "selection": "学术英语补充",
-    "zhPinyin": "yī yàng"
+    "zhPinyin": "yī yàng",
+    "mixedExample": "这两个双胞胎兄弟长得一模 alike 。"
   },
   {
     "id": "trash",
@@ -22836,7 +24502,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14995,
     "selection": "学术英语补充",
-    "zhPinyin": "lā jī"
+    "zhPinyin": "lā jī",
+    "mixedExample": "河对岸有很多的 trash 。"
   },
   {
     "id": "interfere",
@@ -22850,7 +24517,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9475,
     "selection": "学术英语补充",
-    "zhPinyin": "gān shè"
+    "zhPinyin": "gān shè",
+    "mixedExample": "你没有 interfere 他人事务的权力。"
   },
   {
     "id": "innovative",
@@ -22864,7 +24532,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29696,
     "selection": "学术英语补充",
-    "zhPinyin": "chuàng xīn de"
+    "zhPinyin": "chuàng xīn de",
+    "mixedExample": "这是个 innovative 解法。"
   },
   {
     "id": "shark",
@@ -22878,7 +24547,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7170,
     "selection": "学术英语补充",
-    "zhPinyin": "shā yú"
+    "zhPinyin": "shā yú",
+    "mixedExample": "shark 的皮比鲔鱼的皮粗糙多了。"
   },
   {
     "id": "sensitivity",
@@ -22892,7 +24562,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49303,
     "selection": "学术英语补充",
-    "zhPinyin": "mǐn gǎn"
+    "zhPinyin": "mǐn gǎn",
+    "mixedExample": "作家路易斯・费尔南多・沃瑞西莫在巴西阿雷格里港去世，他是位专栏作家，能以讽刺、精确、 sensitivity 的文笔团结几代读者。"
   },
   {
     "id": "curiosity",
@@ -22906,7 +24577,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30671,
     "selection": "学术英语补充",
-    "zhPinyin": "hào qí xīn"
+    "zhPinyin": "hào qí xīn",
+    "mixedExample": "现代的北京给了我深刻的印象，也激起了我的 curiosity 。"
   },
   {
     "id": "aggression",
@@ -22920,7 +24592,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49070,
     "selection": "学术英语补充",
-    "zhPinyin": "qīn lüè"
+    "zhPinyin": "qīn lüè",
+    "mixedExample": "俄罗斯对乌克兰发动了非法、不公义的 aggression 战争，而俄罗斯应该终止这一切。"
   },
   {
     "id": "feather",
@@ -22934,7 +24607,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27473,
     "selection": "学术英语补充",
-    "zhPinyin": "yǔ máo"
+    "zhPinyin": "yǔ máo",
+    "mixedExample": "我感觉像 feather 一样轻飘。"
   },
   {
     "id": "strictly",
@@ -22948,7 +24622,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10554,
     "selection": "学术英语补充",
-    "zhPinyin": "yán gé dì"
+    "zhPinyin": "yán gé dì",
+    "mixedExample": "strictly 讲,这句话语法上有错误。"
   },
   {
     "id": "specialty",
@@ -22962,7 +24637,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24393,
     "selection": "学术英语补充",
-    "zhPinyin": "zhuān yè"
+    "zhPinyin": "zhuān yè",
+    "mixedExample": "书桌上一叠 specialty 书里有几本卡通书混在里面。"
   },
   {
     "id": "lightning",
@@ -22976,7 +24652,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3074,
     "selection": "学术英语补充",
-    "zhPinyin": "shǎn diàn"
+    "zhPinyin": "shǎn diàn",
+    "mixedExample": "lightning 常常伴随著雷鸣。"
   },
   {
     "id": "disappointment",
@@ -22990,7 +24667,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42439,
     "selection": "学术英语补充",
-    "zhPinyin": "shī wàng"
+    "zhPinyin": "shī wàng",
+    "mixedExample": "汤姆不能掩饰他的 disappointment 。"
   },
   {
     "id": "sleeve",
@@ -23004,7 +24682,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3064,
     "selection": "学术英语补充",
-    "zhPinyin": "xiù zi"
+    "zhPinyin": "xiù zi",
+    "mixedExample": "卷起你右边的 sleeve 。"
   },
   {
     "id": "mineral",
@@ -23018,7 +24697,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6387,
     "selection": "学术英语补充",
-    "zhPinyin": "kuàng wù"
+    "zhPinyin": "kuàng wù",
+    "mixedExample": "那个国家拥有丰富的 mineral 资源。"
   },
   {
     "id": "hunger",
@@ -23032,7 +24712,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21528,
     "selection": "学术英语补充",
-    "zhPinyin": "jī è"
+    "zhPinyin": "jī è",
+    "mixedExample": "许多工人死于 hunger 。"
   },
   {
     "id": "equality",
@@ -23046,7 +24727,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34212,
     "selection": "学术英语补充",
-    "zhPinyin": "píng děng"
+    "zhPinyin": "píng děng",
+    "mixedExample": "中国处理于其他国家的联系中，我们欢迎他们重视国与国 equality 的原则。"
   },
   {
     "id": "refuge",
@@ -23060,7 +24742,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 12057,
     "selection": "学术英语补充",
-    "zhPinyin": "bì nàn suǒ ； bì nàn"
+    "zhPinyin": "bì nàn suǒ ； bì nàn",
+    "mixedExample": "我的房间是不可侵犯的 refuge 。"
   },
   {
     "id": "calculation",
@@ -23074,7 +24757,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38904,
     "selection": "学术英语补充",
-    "zhPinyin": "jì suàn"
+    "zhPinyin": "jì suàn",
+    "mixedExample": "明年预算的 calculation 是基于今年的成本的。"
   },
   {
     "id": "commerce",
@@ -23088,7 +24772,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15255,
     "selection": "学术英语补充",
-    "zhPinyin": "shāng yè"
+    "zhPinyin": "shāng yè",
+    "mixedExample": "大坂是日本的 commerce 中心。"
   },
   {
     "id": "formerly",
@@ -23102,7 +24787,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14867,
     "selection": "学术英语补充",
-    "zhPinyin": "yǐ qián"
+    "zhPinyin": "yǐ qián",
+    "mixedExample": "这幢楼 formerly 是医院。"
   },
   {
     "id": "widow",
@@ -23116,7 +24802,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29499,
     "selection": "学术英语补充",
-    "zhPinyin": "guǎ fù"
+    "zhPinyin": "guǎ fù",
+    "mixedExample": "widow 为她的丈夫哀悼了很久。"
   },
   {
     "id": "forbid",
@@ -23130,7 +24817,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28468,
     "selection": "学术英语补充",
-    "zhPinyin": "jìn zhǐ"
+    "zhPinyin": "jìn zhǐ",
+    "mixedExample": "我不能 forbid 一个人娶好几个妻子，因为这与圣经不矛盾。"
   },
   {
     "id": "globe",
@@ -23144,7 +24832,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46531,
     "selection": "学术英语补充",
-    "zhPinyin": "dì qiú yí"
+    "zhPinyin": "dì qiú yí",
+    "mixedExample": "地理课上，老师向同学们展示了 globe 。"
   },
   {
     "id": "clay",
@@ -23158,7 +24847,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4901,
     "selection": "学术英语补充",
-    "zhPinyin": "nián tǔ"
+    "zhPinyin": "nián tǔ",
+    "mixedExample": "汤姆把 clay 塑成了一个花瓶。"
   },
   {
     "id": "prince",
@@ -23172,7 +24862,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28404,
     "selection": "学术英语补充",
-    "zhPinyin": "wáng zǐ"
+    "zhPinyin": "wáng zǐ",
+    "mixedExample": "威廉 prince 是英国王位第二顺位继承人"
   },
   {
     "id": "favorable",
@@ -23186,7 +24877,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21071,
     "selection": "学术英语补充",
-    "zhPinyin": "yǒu lì de"
+    "zhPinyin": "yǒu lì de",
+    "mixedExample": "环境完全对我们 favorable 。"
   },
   {
     "id": "steadily",
@@ -23200,7 +24892,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2012,
     "selection": "学术英语补充",
-    "zhPinyin": "wěn dìng dì"
+    "zhPinyin": "wěn dìng dì",
+    "mixedExample": "这个病人正在 steadily 康复中。"
   },
   {
     "id": "harvest",
@@ -23214,7 +24907,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46455,
     "selection": "学术英语补充",
-    "zhPinyin": "shōu gē"
+    "zhPinyin": "shōu gē",
+    "mixedExample": "下周我会为你 harvest 。"
   },
   {
     "id": "severely",
@@ -23228,7 +24922,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 12267,
     "selection": "学术英语补充",
-    "zhPinyin": "yán lì"
+    "zhPinyin": "yán lì",
+    "mixedExample": "我被那位老师 severely 斥责了。"
   },
   {
     "id": "sovereignty",
@@ -23242,7 +24937,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49208,
     "selection": "学术英语补充",
-    "zhPinyin": "zhǔ quán"
+    "zhPinyin": "zhǔ quán",
+    "mixedExample": "我们需要保卫台湾的 sovereignty 。"
   },
   {
     "id": "specify",
@@ -23256,7 +24952,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30282,
     "selection": "学术英语补充",
-    "zhPinyin": "zhǐ dìng"
+    "zhPinyin": "zhǐ dìng",
+    "mixedExample": "如果您有关于这份问卷信息的使用条件，请在这里 specify 。"
   },
   {
     "id": "terribly",
@@ -23270,7 +24967,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23835,
     "selection": "学术英语补充",
-    "zhPinyin": "fēi cháng"
+    "zhPinyin": "fēi cháng",
+    "mixedExample": "我对他的问题感到 terribly 迷惑。"
   },
   {
     "id": "delight",
@@ -23284,7 +24982,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34375,
     "selection": "学术英语补充",
-    "zhPinyin": "gāo xìng"
+    "zhPinyin": "gāo xìng",
+    "mixedExample": "我收到了你的来信，很 delight 地读了。"
   },
   {
     "id": "academy",
@@ -23298,7 +24997,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48476,
     "selection": "学术英语补充",
-    "zhPinyin": "xué yuàn"
+    "zhPinyin": "xué yuàn",
+    "mixedExample": "我是杜宇，是一名来自齐鲁工业大学（山东省科 academy ）计算机科学与技术学部的学生。"
   },
   {
     "id": "skilled",
@@ -23312,7 +25012,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28694,
     "selection": "学术英语补充",
-    "zhPinyin": "shú liàn de"
+    "zhPinyin": "shú liàn de",
+    "mixedExample": "skilled 士兵知道怎么以他们的环境为武器。"
   },
   {
     "id": "apology",
@@ -23326,7 +25027,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1088,
     "selection": "学术英语补充",
-    "zhPinyin": "dào qiàn"
+    "zhPinyin": "dào qiàn",
+    "mixedExample": "关于那件事你欠我一个 apology 。"
   },
   {
     "id": "brass",
@@ -23340,7 +25042,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1612,
     "selection": "学术英语补充",
-    "zhPinyin": "huáng tóng"
+    "zhPinyin": "huáng tóng",
+    "mixedExample": "金的颜色和 brass 很相似。"
   },
   {
     "id": "unfortunate",
@@ -23354,7 +25057,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8961,
     "selection": "学术英语补充",
-    "zhPinyin": "bù xìng de"
+    "zhPinyin": "bù xìng de",
+    "mixedExample": "由于诸多 unfortunate 因素，单亲家庭在增长中。"
   },
   {
     "id": "composer",
@@ -23368,7 +25072,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9750,
     "selection": "学术英语补充",
-    "zhPinyin": "zuò qǔ jiā"
+    "zhPinyin": "zuò qǔ jiā",
+    "mixedExample": "你最喜欢哪一个 composer ？"
   },
   {
     "id": "merger",
@@ -23382,7 +25087,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21454,
     "selection": "学术英语补充",
-    "zhPinyin": "hé bìng"
+    "zhPinyin": "hé bìng",
+    "mixedExample": "昨天突然传出了两间公司 merger 的消息。"
   },
   {
     "id": "inspect",
@@ -23396,7 +25102,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42994,
     "selection": "学术英语补充",
-    "zhPinyin": "jiǎn chá"
+    "zhPinyin": "jiǎn chá",
+    "mixedExample": "“我必须 inspect 下伤口，”医生说道。"
   },
   {
     "id": "countless",
@@ -23410,7 +25117,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32744,
     "selection": "学术英语补充",
-    "zhPinyin": "wú shù de"
+    "zhPinyin": "wú shù de",
+    "mixedExample": "实际上，网络的作用有着 countless 多种多样的。"
   },
   {
     "id": "warfare",
@@ -23424,7 +25132,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1630,
     "selection": "学术英语补充",
-    "zhPinyin": "zhàn dòu"
+    "zhPinyin": "zhàn dòu",
+    "mixedExample": "现代战术并无指明士兵必须全副武装上阵才能发挥其最大的 warfare 力。"
   },
   {
     "id": "biologist",
@@ -23438,7 +25147,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40016,
     "selection": "学术英语补充",
-    "zhPinyin": "shēng wù xué jiā"
+    "zhPinyin": "shēng wù xué jiā",
+    "mixedExample": "汤姆正在学习以成为海洋 biologist 。"
   },
   {
     "id": "worthy",
@@ -23452,7 +25162,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16486,
     "selection": "学术英语补充",
-    "zhPinyin": "zhí de de"
+    "zhPinyin": "zhí de de",
+    "mixedExample": "他的行为 worthy 尊重。"
   },
   {
     "id": "hopeful",
@@ -23466,7 +25177,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13278,
     "selection": "学术英语补充",
-    "zhPinyin": "yǒu xī wàng de"
+    "zhPinyin": "yǒu xī wàng de",
+    "mixedExample": "我对未来感到 hopeful 。"
   },
   {
     "id": "philosopher",
@@ -23480,7 +25192,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40049,
     "selection": "学术英语补充",
-    "zhPinyin": "zhé xué jiā"
+    "zhPinyin": "zhé xué jiā",
+    "mixedExample": "philosopher 苏格拉底在监狱里和他的朋友们讨论死亡。"
   },
   {
     "id": "greenhouse",
@@ -23494,7 +25207,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28408,
     "selection": "学术英语补充",
-    "zhPinyin": "wēn shì"
+    "zhPinyin": "wēn shì",
+    "mixedExample": "有的科学家认为 greenhouse 效应是虚构的。"
   },
   {
     "id": "atom",
@@ -23508,7 +25222,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14755,
     "selection": "学术英语补充",
-    "zhPinyin": "yuán zi"
+    "zhPinyin": "yuán zi",
+    "mixedExample": "一个水分子是由两个氢 atom 和一个氧原子组成的。"
   },
   {
     "id": "temporarily",
@@ -23522,7 +25237,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40229,
     "selection": "学术英语补充",
-    "zhPinyin": "zàn shí"
+    "zhPinyin": "zàn shí",
+    "mixedExample": "这种药可以 temporarily 缓解身体的疼痛，你需要的话就拿去吧。"
   },
   {
     "id": "persistent",
@@ -23536,7 +25252,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14876,
     "selection": "学术英语补充",
-    "zhPinyin": "jiān chí de"
+    "zhPinyin": "jiān chí de",
+    "mixedExample": "耐心地 persistent 下去，这些事急不来。"
   },
   {
     "id": "fortunate",
@@ -23550,7 +25267,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1061,
     "selection": "学术英语补充",
-    "zhPinyin": "xìng yùn de"
+    "zhPinyin": "xìng yùn de",
+    "mixedExample": "你们很 fortunate 有这样的朋友们。"
   },
   {
     "id": "alert",
@@ -23564,7 +25282,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30310,
     "selection": "学术英语补充",
-    "zhPinyin": "jǐng bào"
+    "zhPinyin": "jǐng bào",
+    "mixedExample": "海啸的 alert 解除了。"
   },
   {
     "id": "urgent",
@@ -23578,7 +25297,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 9808,
     "selection": "学术英语补充",
-    "zhPinyin": "jǐn jí de"
+    "zhPinyin": "jǐn jí de",
+    "mixedExample": "你有一个 urgent 讯息。"
   },
   {
     "id": "subway",
@@ -23592,7 +25312,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45283,
     "selection": "学术英语补充",
-    "zhPinyin": "dì tiě"
+    "zhPinyin": "dì tiě",
+    "mixedExample": "抱歉， subway 几号线去市中心？"
   },
   {
     "id": "unnecessary",
@@ -23606,7 +25327,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41090,
     "selection": "学术英语补充",
-    "zhPinyin": "bù bì yào de"
+    "zhPinyin": "bù bì yào de",
+    "mixedExample": "我相信这是 unnecessary 。"
   },
   {
     "id": "pope",
@@ -23620,7 +25342,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26818,
     "selection": "学术英语补充",
-    "zhPinyin": "luó mǎ jiào huáng"
+    "zhPinyin": "luó mǎ jiào huáng",
+    "mixedExample": "pope 无权结婚。"
   },
   {
     "id": "separately",
@@ -23634,7 +25357,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7464,
     "selection": "学术英语补充",
-    "zhPinyin": "fēn kāi"
+    "zhPinyin": "fēn kāi",
+    "mixedExample": "这个问题必须 separately 讨论。"
   },
   {
     "id": "contrary",
@@ -23648,7 +25372,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 89,
     "selection": "学术英语补充",
-    "zhPinyin": "xiāng fǎn de"
+    "zhPinyin": "xiāng fǎn de",
+    "mixedExample": "然而， contrary 理论往往也是真的。"
   },
   {
     "id": "sadness",
@@ -23662,7 +25387,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23165,
     "selection": "学术英语补充",
-    "zhPinyin": "bēi shāng"
+    "zhPinyin": "bēi shāng",
+    "mixedExample": "她帮助他平抚了他的 sadness 。"
   },
   {
     "id": "modification",
@@ -23676,7 +25402,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30044,
     "selection": "学术英语补充",
-    "zhPinyin": "xiū shì"
+    "zhPinyin": "xiū shì",
+    "mixedExample": "通过遗传 modification ，我们可以改良农作物。"
   },
   {
     "id": "fireplace",
@@ -23690,7 +25417,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15405,
     "selection": "学术英语补充",
-    "zhPinyin": "bì lú"
+    "zhPinyin": "bì lú",
+    "mixedExample": "时钟在 fireplace 的上方。"
   },
   {
     "id": "peach",
@@ -23704,7 +25432,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34075,
     "selection": "学术英语补充",
-    "zhPinyin": "táo shù"
+    "zhPinyin": "táo shù",
+    "mixedExample": "正在开花 peach 很美。"
   },
   {
     "id": "poison",
@@ -23718,7 +25447,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7554,
     "selection": "学术英语补充",
-    "zhPinyin": "dú yào"
+    "zhPinyin": "dú yào",
+    "mixedExample": "这 poison 用来治蟑螂很有效。"
   },
   {
     "id": "wool",
@@ -23732,7 +25462,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49792,
     "selection": "学术英语补充",
-    "zhPinyin": "yáng máo"
+    "zhPinyin": "yáng máo",
+    "mixedExample": "wool 出在猪身上，狗来买单。"
   },
   {
     "id": "salesman",
@@ -23746,7 +25477,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 22381,
     "selection": "学术英语补充",
-    "zhPinyin": "shòu huò yuán"
+    "zhPinyin": "shòu huò yuán",
+    "mixedExample": "客人和 salesman 打了2小时电话。"
   },
   {
     "id": "accordingly",
@@ -23760,7 +25492,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21571,
     "selection": "学术英语补充",
-    "zhPinyin": "yīn cǐ"
+    "zhPinyin": "yīn cǐ",
+    "mixedExample": "accordingly ，除了名词的变格之外，也存在比现代英语多的动词的各种变型。"
   },
   {
     "id": "socialist",
@@ -23774,7 +25507,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24796,
     "selection": "学术英语补充",
-    "zhPinyin": "shè huì zhǔ yì zhě"
+    "zhPinyin": "shè huì zhǔ yì zhě",
+    "mixedExample": "这个政客是典型的香槟 socialist 。"
   },
   {
     "id": "verify",
@@ -23788,7 +25522,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 35090,
     "selection": "学术英语补充",
-    "zhPinyin": "zhèng shí"
+    "zhPinyin": "zhèng shí",
+    "mixedExample": "我自己能够 verify 那是真的。"
   },
   {
     "id": "diplomacy",
@@ -23802,7 +25537,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2922,
     "selection": "学术英语补充",
-    "zhPinyin": "wài jiāo"
+    "zhPinyin": "wài jiāo",
+    "mixedExample": "英语在 diplomacy 和旅游业方面很有用。"
   },
   {
     "id": "obey",
@@ -23816,7 +25552,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18741,
     "selection": "学术英语补充",
-    "zhPinyin": "fú cóng"
+    "zhPinyin": "fú cóng",
+    "mixedExample": "他们并不总是 obey 他们的父母。"
   },
   {
     "id": "permanently",
@@ -23830,7 +25567,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40676,
     "selection": "学术英语补充",
-    "zhPinyin": "yǒng jiǔ"
+    "zhPinyin": "yǒng jiǔ",
+    "mixedExample": "你还年轻，可是没有 permanently 。"
   },
   {
     "id": "cigar",
@@ -23844,7 +25582,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13621,
     "selection": "学术英语补充",
-    "zhPinyin": "xuě jiā"
+    "zhPinyin": "xuě jiā",
+    "mixedExample": "我看著一轮烟圈从他的 cigar 里冒出来，飘到了空气中。"
   },
   {
     "id": "weep",
@@ -23858,7 +25597,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20765,
     "selection": "学术英语补充",
-    "zhPinyin": "kū qì"
+    "zhPinyin": "kū qì",
+    "mixedExample": "我的母亲只是默默地 weep 。"
   },
   {
     "id": "emergence",
@@ -23872,7 +25612,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48852,
     "selection": "学术英语补充",
-    "zhPinyin": "chū xiàn"
+    "zhPinyin": "chū xiàn",
+    "mixedExample": "第三性别的 emergence 增加了法律和行政上的麻烦，徒增无谓的负担。"
   },
   {
     "id": "sunset",
@@ -23886,7 +25627,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34455,
     "selection": "学术英语补充",
-    "zhPinyin": "rì luò"
+    "zhPinyin": "rì luò",
+    "mixedExample": "甚至在 sunset 之后，气温也不见降低。"
   },
   {
     "id": "gardener",
@@ -23900,7 +25642,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15598,
     "selection": "学术英语补充",
-    "zhPinyin": "yuán dīng"
+    "zhPinyin": "yuán dīng",
+    "mixedExample": "gardener 在花园的中央种了一棵玫瑰树。"
   },
   {
     "id": "foolish",
@@ -23914,7 +25657,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31231,
     "selection": "学术英语补充",
-    "zhPinyin": "yú chǔn de"
+    "zhPinyin": "yú chǔn de",
+    "mixedExample": "声称钱不是幸福的一个要素是 foolish 。"
   },
   {
     "id": "inexpensive",
@@ -23928,7 +25672,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 23524,
     "selection": "学术英语补充",
-    "zhPinyin": "pián yi de"
+    "zhPinyin": "pián yi de",
+    "mixedExample": "大家说这家饭馆儿的菜又好吃又 inexpensive 。"
   },
   {
     "id": "microwave",
@@ -23942,7 +25687,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47372,
     "selection": "学术英语补充",
-    "zhPinyin": "wēi bō"
+    "zhPinyin": "wēi bō",
+    "mixedExample": "那一年的流行语是「数位」：数位钟、数位 microwave 炉，甚至还有数位笔。"
   },
   {
     "id": "respective",
@@ -23956,7 +25702,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2103,
     "selection": "学术英语补充",
-    "zhPinyin": "gè zì de"
+    "zhPinyin": "gè zì de",
+    "mixedExample": "请回到你们 respective 座位。"
   },
   {
     "id": "upgrade",
@@ -23970,7 +25717,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38955,
     "selection": "学术英语补充",
-    "zhPinyin": "shēng jí"
+    "zhPinyin": "shēng jí",
+    "mixedExample": "这次 upgrade 的一个明显影响是用户会被强制重置密码。"
   },
   {
     "id": "navy",
@@ -23984,7 +25732,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 12902,
     "selection": "学术英语补充",
-    "zhPinyin": "hǎi jūn"
+    "zhPinyin": "hǎi jūn",
+    "mixedExample": "我加入了 navy 。"
   },
   {
     "id": "stool",
@@ -23998,7 +25747,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7707,
     "selection": "学术英语补充",
-    "zhPinyin": "dèng zi"
+    "zhPinyin": "dèng zi",
+    "mixedExample": "站在这个 stool 上的话，你可以摸到衣柜顶。"
   },
   {
     "id": "princess",
@@ -24012,7 +25762,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3308,
     "selection": "学术英语补充",
-    "zhPinyin": "gōng zhǔ"
+    "zhPinyin": "gōng zhǔ",
+    "mixedExample": "最后，马里奥设法赢得 princess 的爱。"
   },
   {
     "id": "coral",
@@ -24026,7 +25777,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31490,
     "selection": "学术英语补充",
-    "zhPinyin": "shān hú"
+    "zhPinyin": "shān hú",
+    "mixedExample": "coral 礁是这个地区的主要景点。"
   },
   {
     "id": "viewpoint",
@@ -24040,7 +25792,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21457,
     "selection": "学术英语补充",
-    "zhPinyin": "guān diǎn"
+    "zhPinyin": "guān diǎn",
+    "mixedExample": "从国际的 viewpoint 看，应该考虑推行人口政策来平衡两方的利益。"
   },
   {
     "id": "mustard",
@@ -24054,7 +25807,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27531,
     "selection": "学术英语补充",
-    "zhPinyin": "jiè mò"
+    "zhPinyin": "jiè mò",
+    "mixedExample": "吃午饭的时候，一坨 mustard 酱滴下来弄脏了我的领带。"
   },
   {
     "id": "ramp",
@@ -24068,7 +25822,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49654,
     "selection": "学术英语补充",
-    "zhPinyin": "pō dào"
+    "zhPinyin": "pō dào",
+    "mixedExample": "这栋建筑尚未符合法规，因为还缺少轮椅 ramp 。"
   },
   {
     "id": "naive",
@@ -24082,7 +25837,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5680,
     "selection": "学术英语补充",
-    "zhPinyin": "yòu zhì de"
+    "zhPinyin": "yòu zhì de",
+    "mixedExample": "打消这种 naive 念头吧。"
   },
   {
     "id": "pyramid",
@@ -24096,7 +25852,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27191,
     "selection": "学术英语补充",
-    "zhPinyin": "jīn zì tǎ"
+    "zhPinyin": "jīn zì tǎ",
+    "mixedExample": "在墨西哥有一座 pyramid 比在埃及的任何一座都大。"
   },
   {
     "id": "bachelor",
@@ -24110,7 +25867,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49339,
     "selection": "学术英语补充",
-    "zhPinyin": "dān shēn hàn"
+    "zhPinyin": "dān shēn hàn",
+    "mixedExample": "《 bachelor 》这个电视节目的基本设定是什么？"
   },
   {
     "id": "interface",
@@ -24124,7 +25882,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33282,
     "selection": "学术英语补充",
-    "zhPinyin": "jiè miàn"
+    "zhPinyin": "jiè miàn",
+    "mixedExample": "我的朋友正在为新的操作系统设计一个用户 interface 。"
   },
   {
     "id": "tomb",
@@ -24138,7 +25897,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3574,
     "selection": "学术英语补充",
-    "zhPinyin": "fén mù"
+    "zhPinyin": "fén mù",
+    "mixedExample": "摇篮里学的带到 tomb 。"
   },
   {
     "id": "honesty",
@@ -24152,7 +25912,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27294,
     "selection": "学术英语补充",
-    "zhPinyin": "chéng shí"
+    "zhPinyin": "chéng shí",
+    "mixedExample": "父母试图将 honesty 和工作的重要性灌输给孩子。"
   },
   {
     "id": "mainland",
@@ -24166,7 +25927,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44379,
     "selection": "学术英语补充",
-    "zhPinyin": "dà lù"
+    "zhPinyin": "dà lù",
+    "mixedExample": "中国 mainland 的沿海有渤海，黄海，东海和南海。"
   },
   {
     "id": "lobster",
@@ -24180,7 +25942,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41404,
     "selection": "学术英语补充",
-    "zhPinyin": "lóng xiā"
+    "zhPinyin": "lóng xiā",
+    "mixedExample": "让我们点 lobster ！听说是这里的招牌菜。"
   },
   {
     "id": "abundant",
@@ -24194,7 +25957,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20709,
     "selection": "学术英语补充",
-    "zhPinyin": "fēng fù de"
+    "zhPinyin": "fēng fù de",
+    "mixedExample": "美国的自然资源很 abundant 。"
   },
   {
     "id": "fond",
@@ -24208,7 +25972,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 12259,
     "selection": "学术英语补充",
-    "zhPinyin": "xǐ huān de"
+    "zhPinyin": "xǐ huān de",
+    "mixedExample": "我没有你那么 fond 音乐。"
   },
   {
     "id": "acquaintance",
@@ -24222,7 +25987,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20322,
     "selection": "学术英语补充",
-    "zhPinyin": "rèn shí"
+    "zhPinyin": "rèn shí",
+    "mixedExample": "与其说她是我的朋友，不如说她只是一个我 acquaintance 的人。"
   },
   {
     "id": "unusually",
@@ -24236,7 +26002,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42230,
     "selection": "学术英语补充",
-    "zhPinyin": "fēi cháng"
+    "zhPinyin": "fēi cháng",
+    "mixedExample": "天气 unusually 寒冷。"
   },
   {
     "id": "sorrow",
@@ -24250,7 +26017,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40116,
     "selection": "学术英语补充",
-    "zhPinyin": "bēi shāng ； yí hàn"
+    "zhPinyin": "bēi shāng ； yí hàn",
+    "mixedExample": "他母亲的离世带给他 sorrow 和遗憾。"
   },
   {
     "id": "decisive",
@@ -24264,7 +26032,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46138,
     "selection": "学术英语补充",
-    "zhPinyin": "jué dìng xìng de"
+    "zhPinyin": "jué dìng xìng de",
+    "mixedExample": "这些考虑没有一项是 decisive 。"
   },
   {
     "id": "reactor",
@@ -24278,7 +26047,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48351,
     "selection": "学术英语补充",
-    "zhPinyin": "fǎn yìng duī"
+    "zhPinyin": "fǎn yìng duī",
+    "mixedExample": "原子 reactor 发出大量的热能。"
   },
   {
     "id": "flashlight",
@@ -24292,7 +26062,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38285,
     "selection": "学术英语补充",
-    "zhPinyin": "shǒu diàn tǒng"
+    "zhPinyin": "shǒu diàn tǒng",
+    "mixedExample": "汤姆给了玛丽一把 flashlight 。"
   },
   {
     "id": "marathon",
@@ -24306,7 +26077,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6583,
     "selection": "学术英语补充",
-    "zhPinyin": "mǎ lā sōng"
+    "zhPinyin": "mǎ lā sōng",
+    "mixedExample": "150个人参加了 marathon 比赛。"
   },
   {
     "id": "diesel",
@@ -24320,7 +26092,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30325,
     "selection": "学术英语补充",
-    "zhPinyin": "chái yóu"
+    "zhPinyin": "chái yóu",
+    "mixedExample": "这个取暖装置用 diesel 作为燃料。"
   },
   {
     "id": "muddy",
@@ -24334,7 +26107,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40401,
     "selection": "学术英语补充",
-    "zhPinyin": "ní nìng de"
+    "zhPinyin": "ní nìng de",
+    "mixedExample": "球队已经训练了几天，所以这个足球场有些 muddy ，不太好用了。"
   },
   {
     "id": "thereafter",
@@ -24348,7 +26122,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6404,
     "selection": "学术英语补充",
-    "zhPinyin": "cóng nà shí yǐ hòu"
+    "zhPinyin": "cóng nà shí yǐ hòu",
+    "mixedExample": "thereafter ，我们再也没听到他的任何音讯。"
   },
   {
     "id": "mathematical",
@@ -24362,7 +26137,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18474,
     "selection": "学术英语补充",
-    "zhPinyin": "shù xué de"
+    "zhPinyin": "shù xué de",
+    "mixedExample": "他擅长解答 mathematical 难题。"
   },
   {
     "id": "imaginary",
@@ -24376,7 +26152,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 994,
     "selection": "学术英语补充",
-    "zhPinyin": "xū gòu de"
+    "zhPinyin": "xū gòu de",
+    "mixedExample": "你说尼斯湖水怪是 imaginary ，但我觉得它真实存在。"
   },
   {
     "id": "necklace",
@@ -24390,7 +26167,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46168,
     "selection": "学术英语补充",
-    "zhPinyin": "xiàng liàn"
+    "zhPinyin": "xiàng liàn",
+    "mixedExample": "我至今还珍惜你十年前给我的 necklace 。"
   },
   {
     "id": "lettuce",
@@ -24404,7 +26182,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47689,
     "selection": "学术英语补充",
-    "zhPinyin": "shēng cài"
+    "zhPinyin": "shēng cài",
+    "mixedExample": "我只想要一些 lettuce 。"
   },
   {
     "id": "canoe",
@@ -24418,7 +26197,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11518,
     "selection": "学术英语补充",
-    "zhPinyin": "dú mù zhōu"
+    "zhPinyin": "dú mù zhōu",
+    "mixedExample": "我们乘著 canoe 向河的下游而行。"
   },
   {
     "id": "voyage",
@@ -24432,7 +26212,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18649,
     "selection": "学术英语补充",
-    "zhPinyin": "háng chéng"
+    "zhPinyin": "háng chéng",
+    "mixedExample": "他开始了他历史性的 voyage 。"
   },
   {
     "id": "pact",
@@ -24446,7 +26227,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33966,
     "selection": "学术英语补充",
-    "zhPinyin": "tiáo yuē"
+    "zhPinyin": "tiáo yuē",
+    "mixedExample": "明明签订了互不侵犯 pact ，竟然还来攻击我们。"
   },
   {
     "id": "vest",
@@ -24460,7 +26242,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46842,
     "selection": "学术英语补充",
-    "zhPinyin": "bèi xīn"
+    "zhPinyin": "bèi xīn",
+    "mixedExample": "你的 vest 里外反了，来翻出来。"
   },
   {
     "id": "linguistic",
@@ -24474,7 +26257,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26113,
     "selection": "学术英语补充",
-    "zhPinyin": "yǔ yán de"
+    "zhPinyin": "yǔ yán de",
+    "mixedExample": "我和他用世界语沟通，觉得最少从 linguistic 观点来看，我和他的程度是差不多的。"
   },
   {
     "id": "landlord",
@@ -24488,7 +26272,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15238,
     "selection": "学术英语补充",
-    "zhPinyin": "dì zhǔ"
+    "zhPinyin": "dì zhǔ",
+    "mixedExample": "landlord 说他要提高租金。"
   },
   {
     "id": "dictator",
@@ -24502,7 +26287,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6636,
     "selection": "学术英语补充",
-    "zhPinyin": "dú cái zhě"
+    "zhPinyin": "dú cái zhě",
+    "mixedExample": "可怜的人民任凭残暴的 dictator 处置。"
   },
   {
     "id": "vacant",
@@ -24516,7 +26302,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17208,
     "selection": "学术英语补充",
-    "zhPinyin": "máng rán de"
+    "zhPinyin": "máng rán de",
+    "mixedExample": "他站在那里,一脸 vacant 。"
   },
   {
     "id": "hillside",
@@ -24530,7 +26317,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40641,
     "selection": "学术英语补充",
-    "zhPinyin": "shān pō"
+    "zhPinyin": "shān pō",
+    "mixedExample": "hillside 让滔滔的洪水往西流"
   },
   {
     "id": "millionaire",
@@ -24544,7 +26332,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40735,
     "selection": "学术英语补充",
-    "zhPinyin": "bǎi wàn fù wēng"
+    "zhPinyin": "bǎi wàn fù wēng",
+    "mixedExample": "他不久前是 millionaire 。"
   },
   {
     "id": "nowadays",
@@ -24558,7 +26347,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11072,
     "selection": "学术英语补充",
-    "zhPinyin": "xiàn zài"
+    "zhPinyin": "xiàn zài",
+    "mixedExample": "nowadays 很多人开车去旅行。"
   },
   {
     "id": "puppy",
@@ -24572,7 +26362,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28152,
     "selection": "学术英语补充",
-    "zhPinyin": "xiǎo gǒu"
+    "zhPinyin": "xiǎo gǒu",
+    "mixedExample": "他爱他的狗，那只 puppy 真的很可爱。"
   },
   {
     "id": "dislike",
@@ -24586,7 +26377,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29558,
     "selection": "学术英语补充",
-    "zhPinyin": "bù xǐ huān"
+    "zhPinyin": "bù xǐ huān",
+    "mixedExample": "老实说, 我已经渐渐地 dislike 这里的生活。"
   },
   {
     "id": "syrup",
@@ -24600,7 +26392,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28015,
     "selection": "学术英语补充",
-    "zhPinyin": "táng jiāng"
+    "zhPinyin": "táng jiāng",
+    "mixedExample": "咳嗽 syrup 有股甘草的味道。"
   },
   {
     "id": "clown",
@@ -24614,7 +26407,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47063,
     "selection": "学术英语补充",
-    "zhPinyin": "xiǎo chǒu"
+    "zhPinyin": "xiǎo chǒu",
+    "mixedExample": "他衣着像个绅士，言行举止却像个 clown 。"
   },
   {
     "id": "comprehend",
@@ -24628,7 +26422,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 35067,
     "selection": "学术英语补充",
-    "zhPinyin": "lǐ jiě"
+    "zhPinyin": "lǐ jiě",
+    "mixedExample": "很多人无法 comprehend 黑客们的行为。"
   },
   {
     "id": "admiration",
@@ -24642,7 +26437,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16485,
     "selection": "学术英语补充",
-    "zhPinyin": "qīn pèi"
+    "zhPinyin": "qīn pèi",
+    "mixedExample": "我很 admiration 他的慷慨大方。"
   },
   {
     "id": "lumber",
@@ -24656,7 +26452,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18896,
     "selection": "学术英语补充",
-    "zhPinyin": "mù cái"
+    "zhPinyin": "mù cái",
+    "mixedExample": "他们要发送 lumber 给我们。"
   },
   {
     "id": "autobiography",
@@ -24670,7 +26467,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18389,
     "selection": "学术英语补充",
-    "zhPinyin": "zì zhuàn"
+    "zhPinyin": "zì zhuàn",
+    "mixedExample": "他晚年致力于写 autobiography 。"
   },
   {
     "id": "vase",
@@ -24684,7 +26482,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41629,
     "selection": "学术英语补充",
-    "zhPinyin": "huā píng"
+    "zhPinyin": "huā píng",
+    "mixedExample": "你需要往 vase 里加更多的水。"
   },
   {
     "id": "accidentally",
@@ -24698,7 +26497,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27266,
     "selection": "学术英语补充",
-    "zhPinyin": "yì wài dì"
+    "zhPinyin": "yì wài dì",
+    "mixedExample": "人孔是圆的，因为这样人孔盖就不会 accidentally 掉进洞里。"
   },
   {
     "id": "communism",
@@ -24712,7 +26512,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1719,
     "selection": "学术英语补充",
-    "zhPinyin": "gòng chǎn zhǔ yì"
+    "zhPinyin": "gòng chǎn zhǔ yì",
+    "mixedExample": "communism 是在苏联被实行的制度。"
   },
   {
     "id": "plaza",
@@ -24726,7 +26527,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 35732,
     "selection": "学术英语补充",
-    "zhPinyin": "guǎng chǎng"
+    "zhPinyin": "guǎng chǎng",
+    "mixedExample": "plaza 东边有一家电影院，从这儿到大概要走十分钟。"
   },
   {
     "id": "unstable",
@@ -24740,7 +26542,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43583,
     "selection": "学术英语补充",
-    "zhPinyin": "bù wěn dìng de"
+    "zhPinyin": "bù wěn dìng de",
+    "mixedExample": "人们的感情生活越来越 unstable 。"
   },
   {
     "id": "insufficient",
@@ -24754,7 +26557,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14195,
     "selection": "学术英语补充",
-    "zhPinyin": "bù gòu de"
+    "zhPinyin": "bù gòu de",
+    "mixedExample": "拍照片光线 insufficient 亮。"
   },
   {
     "id": "antenna",
@@ -24768,7 +26572,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6138,
     "selection": "学术英语补充",
-    "zhPinyin": "tiān xiàn"
+    "zhPinyin": "tiān xiàn",
+    "mixedExample": "这男人试着安装他自己的 antenna 。"
   },
   {
     "id": "affluent",
@@ -24782,7 +26587,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48421,
     "selection": "学术英语补充",
-    "zhPinyin": "fù yù de"
+    "zhPinyin": "fù yù de",
+    "mixedExample": "由于科学技术的进步，人类现在很 affluent 。"
   },
   {
     "id": "cozy",
@@ -24796,7 +26602,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27511,
     "selection": "学术英语补充",
-    "zhPinyin": "shū shì de"
+    "zhPinyin": "shū shì de",
+    "mixedExample": "他住在一个 cozy 小房子里。"
   },
   {
     "id": "spinach",
@@ -24810,7 +26617,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40600,
     "selection": "学术英语补充",
-    "zhPinyin": "bō cài"
+    "zhPinyin": "bō cài",
+    "mixedExample": "巧克力的铁质含量比 spinach 还要多。"
   },
   {
     "id": "dusk",
@@ -24824,7 +26632,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49528,
     "selection": "学术英语补充",
-    "zhPinyin": "bàng wǎn"
+    "zhPinyin": "bàng wǎn",
+    "mixedExample": "dusk 时分，天空泛著紫色的光。"
   },
   {
     "id": "mankind",
@@ -24838,7 +26647,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30719,
     "selection": "学术英语补充",
-    "zhPinyin": "rén lèi"
+    "zhPinyin": "rén lèi",
+    "mixedExample": "语言是 mankind 最重大的发明之一。"
   },
   {
     "id": "sunrise",
@@ -24852,7 +26662,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25703,
     "selection": "学术英语补充",
-    "zhPinyin": "rì chū"
+    "zhPinyin": "rì chū",
+    "mixedExample": "我们起得很早为了看到 sunrise 。"
   },
   {
     "id": "extraordinarily",
@@ -24866,7 +26677,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30812,
     "selection": "学术英语补充",
-    "zhPinyin": "fēi cháng"
+    "zhPinyin": "fēi cháng",
+    "mixedExample": "问心无愧是一个 extraordinarily 柔软的枕头。"
   },
   {
     "id": "luggage",
@@ -24880,7 +26692,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11642,
     "selection": "学术英语补充",
-    "zhPinyin": "xíng lǐ"
+    "zhPinyin": "xíng lǐ",
+    "mixedExample": "我们往车里装了很多 luggage 。"
   },
   {
     "id": "prosperous",
@@ -24894,7 +26707,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48353,
     "selection": "学术英语补充",
-    "zhPinyin": "fán shèng de"
+    "zhPinyin": "fán shèng de",
+    "mixedExample": "这个城市越来越 prosperous 了。"
   },
   {
     "id": "ignorant",
@@ -24908,7 +26722,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15151,
     "selection": "学术英语补充",
-    "zhPinyin": "bù zhī dào de"
+    "zhPinyin": "bù zhī dào de",
+    "mixedExample": "很多经济学家都 ignorant 这点。"
   },
   {
     "id": "lipstick",
@@ -24922,7 +26737,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26433,
     "selection": "学术英语补充",
-    "zhPinyin": "kǒu hóng"
+    "zhPinyin": "kǒu hóng",
+    "mixedExample": "布莱恩买了一些 lipstick 给凯特。"
   },
   {
     "id": "selfish",
@@ -24936,7 +26752,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2095,
     "selection": "学术英语补充",
-    "zhPinyin": "zì sī de"
+    "zhPinyin": "zì sī de",
+    "mixedExample": "她确实很漂亮，但她很 selfish 。"
   },
   {
     "id": "merry",
@@ -24950,7 +26767,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8491,
     "selection": "学术英语补充",
-    "zhPinyin": "kuài lè de"
+    "zhPinyin": "kuài lè de",
+    "mixedExample": "祝你圣诞节 merry 。"
   },
   {
     "id": "presently",
@@ -24964,7 +26782,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15278,
     "selection": "学术英语补充",
-    "zhPinyin": "mù qián"
+    "zhPinyin": "mù qián",
+    "mixedExample": "总统 presently 在迈阿密。"
   },
   {
     "id": "impatient",
@@ -24978,7 +26797,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15211,
     "selection": "学术英语补充",
-    "zhPinyin": "bù nài fán de"
+    "zhPinyin": "bù nài fán de",
+    "mixedExample": "我们越等越 impatient 。"
   },
   {
     "id": "prose",
@@ -24992,7 +26812,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17929,
     "selection": "学术英语补充",
-    "zhPinyin": "sǎn wén"
+    "zhPinyin": "sǎn wén",
+    "mixedExample": "他不是诗人；他是个 prose 作家。"
   },
   {
     "id": "accidental",
@@ -25006,7 +26827,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6042,
     "selection": "学术英语补充",
-    "zhPinyin": "ǒu rán de"
+    "zhPinyin": "ǒu rán de",
+    "mixedExample": "那个发现纯属 accidental 。"
   },
   {
     "id": "orphan",
@@ -25020,7 +26842,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25020,
     "selection": "学术英语补充",
-    "zhPinyin": "gū ér"
+    "zhPinyin": "gū ér",
+    "mixedExample": "十岁时他就成了 orphan 。"
   },
   {
     "id": "enlarge",
@@ -25034,7 +26857,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18158,
     "selection": "学术英语补充",
-    "zhPinyin": "kuò dà"
+    "zhPinyin": "kuò dà",
+    "mixedExample": "他试图 enlarge 自己的势力范围。"
   },
   {
     "id": "outdoors",
@@ -25048,7 +26872,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19308,
     "selection": "学术英语补充",
-    "zhPinyin": "hù wài"
+    "zhPinyin": "hù wài",
+    "mixedExample": "她没有常到 outdoors 。"
   },
   {
     "id": "patriotic",
@@ -25062,7 +26887,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28646,
     "selection": "学术英语补充",
-    "zhPinyin": "ài guó de"
+    "zhPinyin": "ài guó de",
+    "mixedExample": "中国人的胃最 patriotic 了。"
   },
   {
     "id": "lessen",
@@ -25076,7 +26902,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33048,
     "selection": "学术英语补充",
-    "zhPinyin": "jiǎn shǎo"
+    "zhPinyin": "jiǎn shǎo",
+    "mixedExample": "开心时，书可以给你增加快乐；忧伤时，书可以给你 lessen 哀愁。"
   },
   {
     "id": "fashionable",
@@ -25090,7 +26917,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24477,
     "selection": "学术英语补充",
-    "zhPinyin": "shí máo de"
+    "zhPinyin": "shí máo de",
+    "mixedExample": "虽然 fashionable 一点，但是价钱太大！"
   },
   {
     "id": "kindness",
@@ -25104,7 +26932,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19181,
     "selection": "学术英语补充",
-    "zhPinyin": "rén cí"
+    "zhPinyin": "rén cí",
+    "mixedExample": "我深深地被她的 kindness 所感动。"
   },
   {
     "id": "periodic",
@@ -25118,7 +26947,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28430,
     "selection": "学术英语补充",
-    "zhPinyin": "zhōu qī de"
+    "zhPinyin": "zhōu qī de",
+    "mixedExample": "他背 periodic 表只是为了好玩。"
   },
   {
     "id": "sunshine",
@@ -25132,7 +26962,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15782,
     "selection": "学术英语补充",
-    "zhPinyin": "yáng guāng"
+    "zhPinyin": "yáng guāng",
+    "mixedExample": "动物需要食物和饮料，而植物则需要雨水和 sunshine 。"
   },
   {
     "id": "tailor",
@@ -25146,7 +26977,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49701,
     "selection": "学术英语补充",
-    "zhPinyin": "cái féng"
+    "zhPinyin": "cái féng",
+    "mixedExample": "tailor 师要帮我重新修裤脚。"
   },
   {
     "id": "comprehension",
@@ -25160,7 +26992,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30908,
     "selection": "学术英语补充",
-    "zhPinyin": "lǐ jiě"
+    "zhPinyin": "lǐ jiě",
+    "mixedExample": "那超出了我的 comprehension 。"
   },
   {
     "id": "generosity",
@@ -25174,7 +27007,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16485,
     "selection": "学术英语补充",
-    "zhPinyin": "kāng kǎi"
+    "zhPinyin": "kāng kǎi",
+    "mixedExample": "我很钦佩他的 generosity 大方。"
   },
   {
     "id": "repay",
@@ -25188,7 +27022,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13249,
     "selection": "学术英语补充",
-    "zhPinyin": "cháng huán"
+    "zhPinyin": "cháng huán",
+    "mixedExample": "我必须 repay 债务。"
   },
   {
     "id": "irresponsible",
@@ -25202,7 +27037,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16565,
     "selection": "学术英语补充",
-    "zhPinyin": "bù fù zé rèn de"
+    "zhPinyin": "bù fù zé rèn de",
+    "mixedExample": "我对你 irresponsible 态度感到惊讶。"
   },
   {
     "id": "stimulation",
@@ -25216,7 +27052,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14628,
     "selection": "学术英语补充",
-    "zhPinyin": "cì jī"
+    "zhPinyin": "cì jī",
+    "mixedExample": "正如身体需要锻炼，所以心灵需要 stimulation 才能保持健康。"
   },
   {
     "id": "honeymoon",
@@ -25230,7 +27067,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8620,
     "selection": "学术英语补充",
-    "zhPinyin": "mì yuè"
+    "zhPinyin": "mì yuè",
+    "mixedExample": "去加拿大渡 honeymoon 要花很多钱。"
   },
   {
     "id": "jealousy",
@@ -25244,7 +27082,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 601,
     "selection": "学术英语补充",
-    "zhPinyin": "dù jì"
+    "zhPinyin": "dù jì",
+    "mixedExample": "没有 jealousy 就没有爱情。"
   },
   {
     "id": "dolphin",
@@ -25258,7 +27097,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8966,
     "selection": "学术英语补充",
-    "zhPinyin": "hǎi tún"
+    "zhPinyin": "hǎi tún",
+    "mixedExample": "dolphin 是十分聪明的动物。"
   },
   {
     "id": "cosmos",
@@ -25272,7 +27112,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44737,
     "selection": "学术英语补充",
-    "zhPinyin": "yǔ zhòu"
+    "zhPinyin": "yǔ zhòu",
+    "mixedExample": "cosmos 的实际大小至今无人知道。"
   },
   {
     "id": "courageous",
@@ -25286,7 +27127,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 40007,
     "selection": "学术英语补充",
-    "zhPinyin": "yǒng gǎn de"
+    "zhPinyin": "yǒng gǎn de",
+    "mixedExample": "汤姆非常 courageous ，不是么？"
   },
   {
     "id": "arrogance",
@@ -25300,7 +27142,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29078,
     "selection": "学术英语补充",
-    "zhPinyin": "zì dà"
+    "zhPinyin": "zì dà",
+    "mixedExample": "我为他傲慢 arrogance 对他发火。"
   },
   {
     "id": "memorize",
@@ -25314,7 +27157,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43476,
     "selection": "学术英语补充",
-    "zhPinyin": "jì zhù"
+    "zhPinyin": "jì zhù",
+    "mixedExample": "如果你学习了新的单词，就多多去用它们，这样能够更快地帮你 memorize 它们。"
   },
   {
     "id": "satisfactory",
@@ -25328,7 +27172,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6104,
     "selection": "学术英语补充",
-    "zhPinyin": "mǎn yì de"
+    "zhPinyin": "mǎn yì de",
+    "mixedExample": "调查的结果十分令人 satisfactory 。"
   },
   {
     "id": "asphalt",
@@ -25342,7 +27187,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 6097,
     "selection": "学术英语补充",
-    "zhPinyin": "bǎi yóu"
+    "zhPinyin": "bǎi yóu",
+    "mixedExample": "这条街铺上了 asphalt 。"
   },
   {
     "id": "subscription",
@@ -25356,7 +27202,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49383,
     "selection": "学术英语补充",
-    "zhPinyin": "dìng yuè"
+    "zhPinyin": "dìng yuè",
+    "mixedExample": "此 subscription 服务的月费为固定金额，并提供免费试用一个月。"
   },
   {
     "id": "dorm",
@@ -25370,7 +27217,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37408,
     "selection": "学术英语补充",
-    "zhPinyin": "sù shè"
+    "zhPinyin": "sù shè",
+    "mixedExample": "他一放学就回 dorm 了。"
   },
   {
     "id": "overtime",
@@ -25384,7 +27232,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37682,
     "selection": "学术英语补充",
-    "zhPinyin": "jiā bān"
+    "zhPinyin": "jiā bān",
+    "mixedExample": "公司为了削减成本，拒绝让员工自行 overtime 。"
   },
   {
     "id": "bitterness",
@@ -25398,7 +27247,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36852,
     "selection": "学术英语补充",
-    "zhPinyin": "kǔ wèi"
+    "zhPinyin": "kǔ wèi",
+    "mixedExample": "他受不了咖啡的 bitterness 。"
   },
   {
     "id": "chimney",
@@ -25412,7 +27262,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2810,
     "selection": "学术英语补充",
-    "zhPinyin": "yān cōng"
+    "zhPinyin": "yān cōng",
+    "mixedExample": "烟从 chimney 上升。"
   },
   {
     "id": "cruelty",
@@ -25426,7 +27277,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36008,
     "selection": "学术英语补充",
-    "zhPinyin": "cán kù"
+    "zhPinyin": "cán kù",
+    "mixedExample": "我不忍目睹这种 cruelty 的行径。"
   },
   {
     "id": "trot",
@@ -25440,7 +27292,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31706,
     "selection": "学术英语补充",
-    "zhPinyin": "kuài bù"
+    "zhPinyin": "kuài bù",
+    "mixedExample": "老人 trot 走开了。"
   },
   {
     "id": "compression",
@@ -25454,7 +27307,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32998,
     "selection": "学术英语补充",
-    "zhPinyin": "yā suō"
+    "zhPinyin": "yā suō",
+    "mixedExample": "compression 数据的算法能分为两种：一种会造成数据损失，另一种则不会。"
   },
   {
     "id": "respectful",
@@ -25468,7 +27322,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24550,
     "selection": "学术英语补充",
-    "zhPinyin": "yǒu lǐ mào de"
+    "zhPinyin": "yǒu lǐ mào de",
+    "mixedExample": "开口要 respectful ，不讲下流话。"
   },
   {
     "id": "abide",
@@ -25482,7 +27337,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39145,
     "selection": "学术英语补充",
-    "zhPinyin": "zūn shǒu"
+    "zhPinyin": "zūn shǒu",
+    "mixedExample": "父母教育我要 abide 承诺。"
   },
   {
     "id": "tasty",
@@ -25496,7 +27352,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42305,
     "selection": "学术英语补充",
-    "zhPinyin": "hǎo chī de"
+    "zhPinyin": "hǎo chī de",
+    "mixedExample": "我喜欢和朋友一起讨论 tasty 。"
   },
   {
     "id": "haircut",
@@ -25510,7 +27367,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 11240,
     "selection": "学术英语补充",
-    "zhPinyin": "lǐ fà"
+    "zhPinyin": "lǐ fà",
+    "mixedExample": "你到了该去 haircut 的时候了。"
   },
   {
     "id": "handkerchief",
@@ -25524,7 +27382,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 17158,
     "selection": "学术英语补充",
-    "zhPinyin": "shǒu pà"
+    "zhPinyin": "shǒu pà",
+    "mixedExample": "他用 handkerchief 把手抹干净。"
   },
   {
     "id": "pudding",
@@ -25538,7 +27397,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45929,
     "selection": "学术英语补充",
-    "zhPinyin": "bù dīng"
+    "zhPinyin": "bù dīng",
+    "mixedExample": "你刚刚吃了四十份 pudding 吗？"
   },
   {
     "id": "dissatisfaction",
@@ -25552,7 +27412,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44673,
     "selection": "学术英语补充",
-    "zhPinyin": "bù mǎn"
+    "zhPinyin": "bù mǎn",
+    "mixedExample": "她的言论引起了舆论的 dissatisfaction 。"
   },
   {
     "id": "volcanic",
@@ -25566,7 +27427,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32303,
     "selection": "学术英语补充",
-    "zhPinyin": "huǒ shān de"
+    "zhPinyin": "huǒ shān de",
+    "mixedExample": "volcanic 灰阻碍航运。"
   },
   {
     "id": "epic",
@@ -25580,7 +27442,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13276,
     "selection": "学术英语补充",
-    "zhPinyin": "shǐ shī"
+    "zhPinyin": "shǐ shī",
+    "mixedExample": "我喜欢抒情诗多于 epic 。"
   },
   {
     "id": "meteor",
@@ -25594,7 +27457,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32488,
     "selection": "学术英语补充",
-    "zhPinyin": "liú xīng"
+    "zhPinyin": "liú xīng",
+    "mixedExample": "明天要看 meteor 雨啊！"
   },
   {
     "id": "mislead",
@@ -25608,7 +27472,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41558,
     "selection": "学术英语补充",
-    "zhPinyin": "wù dǎo"
+    "zhPinyin": "wù dǎo",
+    "mixedExample": "我不想 mislead 任何人。"
   },
   {
     "id": "cedar",
@@ -25622,7 +27487,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47744,
     "selection": "学术英语补充",
-    "zhPinyin": "xuě sōng"
+    "zhPinyin": "xuě sōng",
+    "mixedExample": "阁楼是一个狭长的低矮房间，光线昏暗，弥漫著 cedar 的香气。"
   },
   {
     "id": "popcorn",
@@ -25636,7 +27502,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4185,
     "selection": "学术英语补充",
-    "zhPinyin": "bào mǐ huā"
+    "zhPinyin": "bào mǐ huā",
+    "mixedExample": "将融化了的奶油倒入 popcorn 中。"
   },
   {
     "id": "worthless",
@@ -25650,7 +27517,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10003,
     "selection": "学术英语补充",
-    "zhPinyin": "wú jià zhí de"
+    "zhPinyin": "wú jià zhí de",
+    "mixedExample": "一辆车龄八年的车子几乎是毫 worthless 。"
   },
   {
     "id": "verb",
@@ -25664,7 +27532,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 22893,
     "selection": "学术英语补充",
-    "zhPinyin": "dòng cí"
+    "zhPinyin": "dòng cí",
+    "mixedExample": "这个 verb 通常只用在第三人称。"
   },
   {
     "id": "peninsula",
@@ -25678,7 +27547,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26381,
     "selection": "学术英语补充",
-    "zhPinyin": "bàn dǎo"
+    "zhPinyin": "bàn dǎo",
+    "mixedExample": "你去过朝鲜 peninsula 吗？"
   },
   {
     "id": "puddle",
@@ -25692,7 +27562,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48922,
     "selection": "学术英语补充",
-    "zhPinyin": "shuǐ kēng"
+    "zhPinyin": "shuǐ kēng",
+    "mixedExample": "他愤怒地践踏 puddle ，弄得泥水四溅。"
   },
   {
     "id": "jelly",
@@ -25706,7 +27577,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13752,
     "selection": "学术英语补充",
-    "zhPinyin": "guǒ dòng"
+    "zhPinyin": "guǒ dòng",
+    "mixedExample": "我最喜欢吃葡萄 jelly 。"
   },
   {
     "id": "lineage",
@@ -25720,7 +27592,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47660,
     "selection": "学术英语补充",
-    "zhPinyin": "xuè tǒng"
+    "zhPinyin": "xuè tǒng",
+    "mixedExample": "安娜引人注目的杏仁状眼睛继承了她的亚洲 lineage ，散发著迷人的深度和一丝神秘感。"
   },
   {
     "id": "pineapple",
@@ -25734,7 +27607,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 22064,
     "selection": "学术英语补充",
-    "zhPinyin": "bō luó"
+    "zhPinyin": "bō luó",
+    "mixedExample": "这种水果形状像橙子，味道像 pineapple 。"
   },
   {
     "id": "insulin",
@@ -25748,7 +27622,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29117,
     "selection": "学术英语补充",
-    "zhPinyin": "yí dǎo sù"
+    "zhPinyin": "yí dǎo sù",
+    "mixedExample": "你最后一次注射 insulin 之后有正常饮食吗?"
   },
   {
     "id": "midday",
@@ -25762,7 +27637,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38932,
     "selection": "学术英语补充",
-    "zhPinyin": "zhōng wǔ"
+    "zhPinyin": "zhōng wǔ",
+    "mixedExample": "他们会在今天 midday 之前联系我们。"
   },
   {
     "id": "cartridge",
@@ -25776,7 +27652,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26166,
     "selection": "学术英语补充",
-    "zhPinyin": "mò fěn gǔ"
+    "zhPinyin": "mò fěn gǔ",
+    "mixedExample": "请把打印机里面的空的 cartridge 换掉。"
   },
   {
     "id": "tolerant",
@@ -25790,7 +27667,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28987,
     "selection": "学术英语补充",
-    "zhPinyin": "kuān róng de"
+    "zhPinyin": "kuān róng de",
+    "mixedExample": "人们常说荷兰人很 tolerant 。"
   },
   {
     "id": "alphabet",
@@ -25804,7 +27682,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7680,
     "selection": "学术英语补充",
-    "zhPinyin": "zì mǔ"
+    "zhPinyin": "zì mǔ",
+    "mixedExample": "在这个密码里，每个数字取代了一个 alphabet 。"
   },
   {
     "id": "pollute",
@@ -25818,7 +27697,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2007,
     "selection": "学术英语补充",
-    "zhPinyin": "wū rǎn"
+    "zhPinyin": "wū rǎn",
+    "mixedExample": "我们应该尽力不要 pollute 环境。"
   },
   {
     "id": "scripture",
@@ -25832,7 +27712,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28468,
     "selection": "学术英语补充",
-    "zhPinyin": "shèng jīng"
+    "zhPinyin": "shèng jīng",
+    "mixedExample": "我不能禁止一个人娶好几个妻子，因为这与 scripture 不矛盾。"
   },
   {
     "id": "stray",
@@ -25846,7 +27727,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48676,
     "selection": "学术英语补充",
-    "zhPinyin": "liú làng"
+    "zhPinyin": "liú làng",
+    "mixedExample": "他对 stray 狗很小心。"
   },
   {
     "id": "terminology",
@@ -25860,7 +27742,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29041,
     "selection": "学术英语补充",
-    "zhPinyin": "shù yǔ"
+    "zhPinyin": "shù yǔ",
+    "mixedExample": "法律 terminology 是大多数普通人无法理解的。"
   },
   {
     "id": "gorilla",
@@ -25874,7 +27757,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43273,
     "selection": "学术英语补充",
-    "zhPinyin": "dà xīng xīng"
+    "zhPinyin": "dà xīng xīng",
+    "mixedExample": "你爸爸是一个 gorilla 。"
   },
   {
     "id": "humility",
@@ -25888,7 +27772,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16066,
     "selection": "学术英语补充",
-    "zhPinyin": "qiān xùn"
+    "zhPinyin": "qiān xùn",
+    "mixedExample": "过度的 humility 就是骄傲。"
   },
   {
     "id": "persuasion",
@@ -25902,7 +27787,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24903,
     "selection": "学术英语补充",
-    "zhPinyin": "shuō fú"
+    "zhPinyin": "shuō fú",
+    "mixedExample": "我天生具有希伯来人的 persuasion 才能，但当我年纪大了的时候，我把它转换成了自恋。"
   },
   {
     "id": "sulfur",
@@ -25916,7 +27802,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21437,
     "selection": "学术英语补充",
-    "zhPinyin": "liú huáng"
+    "zhPinyin": "liú huáng",
+    "mixedExample": "sulfur 燃烧著蓝色的火焰。"
   },
   {
     "id": "treadmill",
@@ -25930,7 +27817,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43561,
     "selection": "学术英语补充",
-    "zhPinyin": "tà chē"
+    "zhPinyin": "tà chē",
+    "mixedExample": "我没有脚 treadmill 。"
   },
   {
     "id": "ventilation",
@@ -25944,7 +27832,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49007,
     "selection": "学术英语补充",
-    "zhPinyin": "tōng fēng"
+    "zhPinyin": "tōng fēng",
+    "mixedExample": "这里的 ventilation 很差呢。"
   },
   {
     "id": "troublesome",
@@ -25958,7 +27847,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3598,
     "selection": "学术英语补充",
-    "zhPinyin": "má fán de"
+    "zhPinyin": "má fán de",
+    "mixedExample": "第一步是最 troublesome 。"
   },
   {
     "id": "managerial",
@@ -25972,7 +27862,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37684,
     "selection": "学术英语补充",
-    "zhPinyin": "guǎn lǐ de"
+    "zhPinyin": "guǎn lǐ de",
+    "mixedExample": "小明同学 managerial 能力很强。"
   },
   {
     "id": "typewriter",
@@ -25986,7 +27877,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39902,
     "selection": "学术英语补充",
-    "zhPinyin": "dǎ zì jī"
+    "zhPinyin": "dǎ zì jī",
+    "mixedExample": "汤姆还用 typewriter 。"
   },
   {
     "id": "blizzard",
@@ -26000,7 +27892,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21192,
     "selection": "学术英语补充",
-    "zhPinyin": "bào fēng xuě"
+    "zhPinyin": "bào fēng xuě",
+    "mixedExample": "我们路上一帆风顺，直到遇上 blizzard 。"
   },
   {
     "id": "beware",
@@ -26014,7 +27907,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 43945,
     "selection": "学术英语补充",
-    "zhPinyin": "xiǎo xīn"
+    "zhPinyin": "xiǎo xīn",
+    "mixedExample": "要 beware 那些说自己客观的人。"
   },
   {
     "id": "botanical",
@@ -26028,7 +27922,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48531,
     "selection": "学术英语补充",
-    "zhPinyin": "zhí wù xué de"
+    "zhPinyin": "zhí wù xué de",
+    "mixedExample": "botanical 界众多争论之一是关于山核桃的问题——在我看来，它是水果，而不是坚果。"
   },
   {
     "id": "bland",
@@ -26042,7 +27937,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48084,
     "selection": "学术英语补充",
-    "zhPinyin": "fá wèi de"
+    "zhPinyin": "fá wèi de",
+    "mixedExample": "这本小说太 bland 了。"
   },
   {
     "id": "pickle",
@@ -26056,7 +27952,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31048,
     "selection": "学术英语补充",
-    "zhPinyin": "pào cài"
+    "zhPinyin": "pào cài",
+    "mixedExample": "你知道如果你把 pickle 插入电源插座，它会发光并且发出嗡嗡的声音吗？"
   },
   {
     "id": "poisonous",
@@ -26070,7 +27967,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46522,
     "selection": "学术英语补充",
-    "zhPinyin": "yǒu dú de"
+    "zhPinyin": "yǒu dú de",
+    "mixedExample": "我喜欢郁金香和猫，可是郁金香对猫咪 poisonous ，我该如何取舍呢？"
   },
   {
     "id": "stairway",
@@ -26084,7 +27982,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20405,
     "selection": "学术英语补充",
-    "zhPinyin": "lóu tī"
+    "zhPinyin": "lóu tī",
+    "mixedExample": "事故发生时，敬勿使用电梯，请使用 stairway 。"
   },
   {
     "id": "innate",
@@ -26098,7 +27997,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 18167,
     "selection": "学术英语补充",
-    "zhPinyin": "tiān shēng de"
+    "zhPinyin": "tiān shēng de",
+    "mixedExample": "他 innate 热爱冒险。"
   },
   {
     "id": "obese",
@@ -26112,7 +28012,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 32405,
     "selection": "学术英语补充",
-    "zhPinyin": "féi pàng de"
+    "zhPinyin": "féi pàng de",
+    "mixedExample": "总读数表的身高体重指数分类（体重过轻、超重或 obese ）不适用于运动员、儿童、老人和体弱者。"
   },
   {
     "id": "gymnastics",
@@ -26126,7 +28027,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 14383,
     "selection": "学术英语补充",
-    "zhPinyin": "tǐ cāo"
+    "zhPinyin": "tǐ cāo",
+    "mixedExample": "我起初觉得广播 gymnastics 很无聊，但是现在却喜欢上了。"
   },
   {
     "id": "viral",
@@ -26140,7 +28042,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 33090,
     "selection": "学术英语补充",
-    "zhPinyin": "bìng dú de"
+    "zhPinyin": "bìng dú de",
+    "mixedExample": "这些点都是 viral 集中的地方。"
   },
   {
     "id": "patriot",
@@ -26154,7 +28057,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36252,
     "selection": "学术英语补充",
-    "zhPinyin": "ài guó zhě"
+    "zhPinyin": "ài guó zhě",
+    "mixedExample": "patriot 的责任就是保护国家不受政府侵犯。"
   },
   {
     "id": "humid",
@@ -26168,7 +28072,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4502,
     "selection": "学术英语补充",
-    "zhPinyin": "cháo shī de"
+    "zhPinyin": "cháo shī de",
+    "mixedExample": "12月份巴厘岛极其炎热和 humid 。"
   },
   {
     "id": "synonymous",
@@ -26182,7 +28087,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 31394,
     "selection": "学术英语补充",
-    "zhPinyin": "tóng yì cí de ； tóng yì de"
+    "zhPinyin": "tóng yì cí de ； tóng yì de",
+    "mixedExample": "英格兰是足球、鱼和薯片，还有女王的 synonymous 。"
   },
   {
     "id": "splendor",
@@ -26196,7 +28102,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30297,
     "selection": "学术英语补充",
-    "zhPinyin": "guāng huī"
+    "zhPinyin": "guāng huī",
+    "mixedExample": "南北朝在他们的统治之下失败了的原因是他们让文学的 splendor 超越了实质内容。"
   },
   {
     "id": "pane",
@@ -26210,7 +28117,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 4928,
     "selection": "学术英语补充",
-    "zhPinyin": "chuāng bō lí"
+    "zhPinyin": "chuāng bō lí",
+    "mixedExample": "汤姆把 pane 打烂了。"
   },
   {
     "id": "infancy",
@@ -26224,7 +28132,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3052,
     "selection": "学术英语补充",
-    "zhPinyin": "yòu ér qī"
+    "zhPinyin": "yòu ér qī",
+    "mixedExample": "空间技术还在 infancy 。"
   },
   {
     "id": "dormitory",
@@ -26238,7 +28147,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 46291,
     "selection": "学术英语补充",
-    "zhPinyin": "sù shè"
+    "zhPinyin": "sù shè",
+    "mixedExample": "明天晚上我们都去 dormitory 玩儿，你能不能去？"
   },
   {
     "id": "treasurer",
@@ -26252,7 +28162,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27840,
     "selection": "学术英语补充",
-    "zhPinyin": "sī kù"
+    "zhPinyin": "sī kù",
+    "mixedExample": "我辞去了俱乐部 treasurer 的职位。"
   },
   {
     "id": "shortcut",
@@ -26266,7 +28177,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44092,
     "selection": "学术英语补充",
-    "zhPinyin": "jié jìng"
+    "zhPinyin": "jié jìng",
+    "mixedExample": "这通常是我去学校的 shortcut 。"
   },
   {
     "id": "frigid",
@@ -26280,7 +28192,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42229,
     "selection": "学术英语补充",
-    "zhPinyin": "hán lěng de"
+    "zhPinyin": "hán lěng de",
+    "mixedExample": "天气非常 frigid 。"
   },
   {
     "id": "landslide",
@@ -26294,7 +28207,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8641,
     "selection": "学术英语补充",
-    "zhPinyin": "shān bēng"
+    "zhPinyin": "shān bēng",
+    "mixedExample": "交通被 landslide 所阻断。"
   },
   {
     "id": "timid",
@@ -26308,7 +28222,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45021,
     "selection": "学术英语补充",
-    "zhPinyin": "dǎn xiǎo de"
+    "zhPinyin": "dǎn xiǎo de",
+    "mixedExample": "他是个 timid 怕事的人。"
   },
   {
     "id": "ambush",
@@ -26322,7 +28237,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27406,
     "selection": "学术英语补充",
-    "zhPinyin": "mái fú"
+    "zhPinyin": "mái fú",
+    "mixedExample": "我们刚刚收到情报，敌方正在前方两英里处 ambush 。"
   },
   {
     "id": "adversity",
@@ -26336,7 +28252,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1818,
     "selection": "学术英语补充",
-    "zhPinyin": "nì jìng"
+    "zhPinyin": "nì jìng",
+    "mixedExample": "尽管有 adversity ，建筑师还是获得了享誉全球的荣誉。"
   },
   {
     "id": "immortal",
@@ -26350,7 +28267,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27984,
     "selection": "学术英语补充",
-    "zhPinyin": "shén xiān"
+    "zhPinyin": "shén xiān",
+    "mixedExample": "从来就没有什么救世主， 也不靠 immortal 皇帝！"
   },
   {
     "id": "converse",
@@ -26364,7 +28282,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28672,
     "selection": "学术英语补充",
-    "zhPinyin": "jiāo tán"
+    "zhPinyin": "jiāo tán",
+    "mixedExample": "和她 converse 很愉快。"
   },
   {
     "id": "barley",
@@ -26378,7 +28297,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 762,
     "selection": "学术英语补充",
-    "zhPinyin": "dà mài"
+    "zhPinyin": "dà mài",
+    "mixedExample": "你能辨别小麦和 barley 吗？"
   },
   {
     "id": "calculator",
@@ -26392,7 +28312,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5431,
     "selection": "学术英语补充",
-    "zhPinyin": "jì suàn qì"
+    "zhPinyin": "jì suàn qì",
+    "mixedExample": "桌上的 calculator 是我的。"
   },
   {
     "id": "unavoidable",
@@ -26406,7 +28327,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 39310,
     "selection": "学术英语补充",
-    "zhPinyin": "bù kě bì miǎn de"
+    "zhPinyin": "bù kě bì miǎn de",
+    "mixedExample": "这里发生的 unavoidable 。"
   },
   {
     "id": "spaceship",
@@ -26420,7 +28342,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28360,
     "selection": "学术英语补充",
-    "zhPinyin": "yǔ zhòu fēi chuán"
+    "zhPinyin": "yǔ zhòu fēi chuán",
+    "mixedExample": "谣传一架 spaceship 在上海附近被见到了。"
   },
   {
     "id": "tyrant",
@@ -26434,7 +28357,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 34206,
     "selection": "学术英语补充",
-    "zhPinyin": "bào jūn"
+    "zhPinyin": "bào jūn",
+    "mixedExample": "尽管受到 tyrant 的迫害，英雄还顽强地斗争。"
   },
   {
     "id": "beggar",
@@ -26448,7 +28372,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13032,
     "selection": "学术英语补充",
-    "zhPinyin": "qǐ gài"
+    "zhPinyin": "qǐ gài",
+    "mixedExample": "我把身上的钱全都给了那个 beggar 。"
   },
   {
     "id": "shameful",
@@ -26462,7 +28387,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1487,
     "selection": "学术英语补充",
-    "zhPinyin": "kě chǐ de"
+    "zhPinyin": "kě chǐ de",
+    "mixedExample": "你的行为是绝对 shameful 。"
   },
   {
     "id": "jack",
@@ -26476,7 +28402,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44003,
     "selection": "学术英语补充",
-    "zhPinyin": "qiān jīn dǐng"
+    "zhPinyin": "qiān jīn dǐng",
+    "mixedExample": "把 jack 拿过来，我要把汽车撑起来。"
   },
   {
     "id": "exhale",
@@ -26490,7 +28417,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28711,
     "selection": "学术英语补充",
-    "zhPinyin": "hū qì"
+    "zhPinyin": "hū qì",
+    "mixedExample": "如果 exhale 的时候能看到自己的气，你就知道天气很冷。"
   },
   {
     "id": "optimist",
@@ -26504,7 +28432,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13347,
     "selection": "学术英语补充",
-    "zhPinyin": "lè guān zhǔ yì zhě"
+    "zhPinyin": "lè guān zhǔ yì zhě",
+    "mixedExample": "我天生是一个 optimist 。"
   },
   {
     "id": "modesty",
@@ -26518,7 +28447,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16413,
     "selection": "学术英语补充",
-    "zhPinyin": "qiān xùn"
+    "zhPinyin": "qiān xùn",
+    "mixedExample": "他的 modesty 值得尊敬。"
   },
   {
     "id": "waterproof",
@@ -26532,7 +28462,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49046,
     "selection": "学术英语补充",
-    "zhPinyin": "fáng shuǐ de"
+    "zhPinyin": "fáng shuǐ de",
+    "mixedExample": "waterproof 功能可以加分。"
   },
   {
     "id": "shrill",
@@ -26546,7 +28477,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15832,
     "selection": "学术英语补充",
-    "zhPinyin": "jiān ruì de"
+    "zhPinyin": "jiān ruì de",
+    "mixedExample": "突然间她开始用 shrill 声音大喊。"
   },
   {
     "id": "proficient",
@@ -26560,7 +28492,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29849,
     "selection": "学术英语补充",
-    "zhPinyin": "jīng tōng de"
+    "zhPinyin": "jīng tōng de",
+    "mixedExample": "他 proficient 波斯语。"
   },
   {
     "id": "gorge",
@@ -26574,7 +28507,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48272,
     "selection": "学术英语补充",
-    "zhPinyin": "xiá gǔ"
+    "zhPinyin": "xiá gǔ",
+    "mixedExample": "铁桥 gorge 是联合国教科文组织世界遗产。"
   },
   {
     "id": "crimson",
@@ -26588,7 +28522,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47469,
     "selection": "学术英语补充",
-    "zhPinyin": "shēn hóng sè"
+    "zhPinyin": "shēn hóng sè",
+    "mixedExample": "梭罗垂涎于这种植物强壮的紫色茎秆，将其制成藤条，而知更鸟则以 crimson 汁液的浆果为食。"
   },
   {
     "id": "telegram",
@@ -26602,7 +28537,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 1350,
     "selection": "学术英语补充",
-    "zhPinyin": "diàn bào"
+    "zhPinyin": "diàn bào",
+    "mixedExample": "我正想打电话给你，你的 telegram 就送来了。"
   },
   {
     "id": "seaside",
@@ -26616,7 +28552,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47828,
     "selection": "学术英语补充",
-    "zhPinyin": "hǎi biān de ； hǎi bīn de"
+    "zhPinyin": "hǎi biān de ； hǎi bīn de",
+    "mixedExample": "进入这座 seaside 小镇的车辆大多是前往海边度假营地的。"
   },
   {
     "id": "toad",
@@ -26630,7 +28567,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26274,
     "selection": "学术英语补充",
-    "zhPinyin": "chán chú"
+    "zhPinyin": "chán chú",
+    "mixedExample": "我无法区分青蛙和 toad 。"
   },
   {
     "id": "lighthouse",
@@ -26644,7 +28582,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2803,
     "selection": "学术英语补充",
-    "zhPinyin": "dēng tǎ"
+    "zhPinyin": "dēng tǎ",
+    "mixedExample": "我们看到了远方 lighthouse 的微光。"
   },
   {
     "id": "shopkeeper",
@@ -26658,7 +28597,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29244,
     "selection": "学术英语补充",
-    "zhPinyin": "diàn zhǔ"
+    "zhPinyin": "diàn zhǔ",
+    "mixedExample": "shopkeeper 担心地跑过去跪在迪马身旁, 迪马沉重地喘著气, 他的额头覆著一层汗。"
   },
   {
     "id": "sneeze",
@@ -26672,7 +28612,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 439,
     "selection": "学术英语补充",
-    "zhPinyin": "pēn tì"
+    "zhPinyin": "pēn tì",
+    "mixedExample": "我想我要打 sneeze 了。。。给我张纸巾。"
   },
   {
     "id": "windmill",
@@ -26686,7 +28627,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8822,
     "selection": "学术英语补充",
-    "zhPinyin": "fēng chē"
+    "zhPinyin": "fēng chē",
+    "mixedExample": "在我去荷兰之前，我从没见过 windmill 。"
   },
   {
     "id": "teapot",
@@ -26700,7 +28642,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 24395,
     "selection": "学术英语补充",
-    "zhPinyin": "chá hú"
+    "zhPinyin": "chá hú",
+    "mixedExample": "teapot 里再冲点水在里面。"
   },
   {
     "id": "wasteful",
@@ -26714,7 +28657,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 7710,
     "selection": "学术英语补充",
-    "zhPinyin": "làng fèi de"
+    "zhPinyin": "làng fèi de",
+    "mixedExample": "让土地闲置著很 wasteful 。"
   },
   {
     "id": "treason",
@@ -26728,7 +28672,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27864,
     "selection": "学术英语补充",
-    "zhPinyin": "pàn guó zuì"
+    "zhPinyin": "pàn guó zuì",
+    "mixedExample": "在一些国家， treason 的惩罚可以是终身监禁。"
   },
   {
     "id": "proverb",
@@ -26742,7 +28687,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8948,
     "selection": "学术英语补充",
-    "zhPinyin": "yàn yǔ"
+    "zhPinyin": "yàn yǔ",
+    "mixedExample": "在威尔斯，我们有一个句 proverb 。"
   },
   {
     "id": "sarcastic",
@@ -26756,7 +28702,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 42471,
     "selection": "学术英语补充",
-    "zhPinyin": "fěng cì de"
+    "zhPinyin": "fěng cì de",
+    "mixedExample": "你不觉得这个名字很 sarcastic 吗，「神圣的战争」？"
   },
   {
     "id": "mouthful",
@@ -26770,7 +28717,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37384,
     "selection": "学术英语补充",
-    "zhPinyin": "yī kǒu"
+    "zhPinyin": "yī kǒu",
+    "mixedExample": "她 mouthful 气喝下多半杯凉茶。"
   },
   {
     "id": "abate",
@@ -26784,7 +28732,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21410,
     "selection": "学术英语补充",
-    "zhPinyin": "jiǎn ruò"
+    "zhPinyin": "jiǎn ruò",
+    "mixedExample": "风暴几个小时没有 abate 了。"
   },
   {
     "id": "adventurer",
@@ -26798,7 +28747,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28725,
     "selection": "学术英语补充",
-    "zhPinyin": "mào xiǎn jiā"
+    "zhPinyin": "mào xiǎn jiā",
+    "mixedExample": "有外口袋的卡其短裤不能把你变成 adventurer 。"
   },
   {
     "id": "leisurely",
@@ -26812,7 +28762,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 30693,
     "selection": "学术英语补充",
-    "zhPinyin": "yōu xián de"
+    "zhPinyin": "yōu xián de",
+    "mixedExample": "我意识到虽然中国发展得很快，中国人还有比较 leisurely 生活。"
   },
   {
     "id": "kerosene",
@@ -26826,7 +28777,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 22278,
     "selection": "学术英语补充",
-    "zhPinyin": "méi yóu"
+    "zhPinyin": "méi yóu",
+    "mixedExample": "在下雪很多的地方， kerosene 是不可或缺的东西。"
   },
   {
     "id": "perseverance",
@@ -26840,7 +28792,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15979,
     "selection": "学术英语补充",
-    "zhPinyin": "yì lì"
+    "zhPinyin": "yì lì",
+    "mixedExample": "就像你们知道的那样， perseverance 是成功的关键。"
   },
   {
     "id": "unlucky",
@@ -26854,7 +28807,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 10113,
     "selection": "学术英语补充",
-    "zhPinyin": "bù xìng de"
+    "zhPinyin": "bù xìng de",
+    "mixedExample": "4在日本是一个 unlucky 数字。"
   },
   {
     "id": "noun",
@@ -26868,7 +28822,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 36899,
     "selection": "学术英语补充",
-    "zhPinyin": "míng cí"
+    "zhPinyin": "míng cí",
+    "mixedExample": "在这种情况下，形容词放在 noun 前面。"
   },
   {
     "id": "disband",
@@ -26882,7 +28837,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 47409,
     "selection": "学术英语补充",
-    "zhPinyin": "jiě sàn"
+    "zhPinyin": "jiě sàn",
+    "mixedExample": "总统不得 disband 国会。"
   },
   {
     "id": "impeach",
@@ -26896,7 +28852,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48959,
     "selection": "学术英语补充",
-    "zhPinyin": "tán hé"
+    "zhPinyin": "tán hé",
+    "mixedExample": "你们美国人也可以 impeach 你们的总统。"
   },
   {
     "id": "hoarse",
@@ -26910,7 +28867,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 3928,
     "selection": "学术英语补充",
-    "zhPinyin": "shā yǎ de"
+    "zhPinyin": "shā yǎ de",
+    "mixedExample": "他们全都叫到 hoarse 了。"
   },
   {
     "id": "nimble",
@@ -26924,7 +28882,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38600,
     "selection": "学术英语补充",
-    "zhPinyin": "mǐn jié de"
+    "zhPinyin": "mǐn jié de",
+    "mixedExample": "可怜的猫！ 她无法抓住 nimble 老鼠。"
   },
   {
     "id": "hare",
@@ -26938,7 +28897,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27450,
     "selection": "学术英语补充",
-    "zhPinyin": "yě tù"
+    "zhPinyin": "yě tù",
+    "mixedExample": "空手赤拳抓 hare 并不容易。"
   },
   {
     "id": "judgement",
@@ -26952,7 +28912,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16059,
     "selection": "学术英语补充",
-    "zhPinyin": "pàn jué"
+    "zhPinyin": "pàn jué",
+    "mixedExample": "judgement 对政府不利。"
   },
   {
     "id": "diligence",
@@ -26966,7 +28927,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 16495,
     "selection": "学术英语补充",
-    "zhPinyin": "qín fèn"
+    "zhPinyin": "qín fèn",
+    "mixedExample": "他的字典里没有 diligence 这个词。"
   },
   {
     "id": "tram",
@@ -26980,7 +28942,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45943,
     "selection": "学术英语补充",
-    "zhPinyin": "chéng diàn chē"
+    "zhPinyin": "chéng diàn chē",
+    "mixedExample": "我每天 tram 去办公室。"
   },
   {
     "id": "harmonize",
@@ -26994,7 +28957,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15286,
     "selection": "学术英语补充",
-    "zhPinyin": "xié tiáo"
+    "zhPinyin": "xié tiáo",
+    "mixedExample": "他的第三点说明的是，埃米特试图 harmonize 现实与他的理论设计。"
   },
   {
     "id": "lyric",
@@ -27008,7 +28972,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 13276,
     "selection": "学术英语补充",
-    "zhPinyin": "shū qíng shī"
+    "zhPinyin": "shū qíng shī",
+    "mixedExample": "我喜欢 lyric 多于史诗。"
   },
   {
     "id": "locust",
@@ -27022,7 +28987,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25302,
     "selection": "学术英语补充",
-    "zhPinyin": "huáng chóng"
+    "zhPinyin": "huáng chóng",
+    "mixedExample": "那不是蚂蚱。是 locust ！"
   },
   {
     "id": "envious",
@@ -27036,7 +29002,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 19341,
     "selection": "学术英语补充",
-    "zhPinyin": "xiàn mù de"
+    "zhPinyin": "xiàn mù de",
+    "mixedExample": "她 envious 她表哥的成功。"
   },
   {
     "id": "queue",
@@ -27050,7 +29017,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29236,
     "selection": "学术英语补充",
-    "zhPinyin": "pái duì"
+    "zhPinyin": "pái duì",
+    "mixedExample": "“我的车不需要 queue 阿，”他提议。"
   },
   {
     "id": "compatriot",
@@ -27064,7 +29032,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45020,
     "selection": "学术英语补充",
-    "zhPinyin": "tóng bāo de"
+    "zhPinyin": "tóng bāo de",
+    "mixedExample": "他不愿意为 compatriot 作证。"
   },
   {
     "id": "bondage",
@@ -27078,7 +29047,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21615,
     "selection": "学术英语补充",
-    "zhPinyin": "shù fù"
+    "zhPinyin": "shù fù",
+    "mixedExample": "我想她想要的是 bondage 与支配。"
   },
   {
     "id": "dialog",
@@ -27092,7 +29062,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25613,
     "selection": "学术英语补充",
-    "zhPinyin": "duì huà"
+    "zhPinyin": "duì huà",
+    "mixedExample": "我没有参与 dialog 。"
   },
   {
     "id": "collusion",
@@ -27106,7 +29077,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27533,
     "selection": "学术英语补充",
-    "zhPinyin": "gōu jié"
+    "zhPinyin": "gōu jié",
+    "mixedExample": "在这个时候，体育世界应当减少犯罪组织的 collusion 。"
   },
   {
     "id": "woodpecker",
@@ -27120,7 +29092,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45999,
     "selection": "学术英语补充",
-    "zhPinyin": "zhuó mù niǎo"
+    "zhPinyin": "zhuó mù niǎo",
+    "mixedExample": "woodpecker 正在使劲地啄树干。"
   },
   {
     "id": "woolen",
@@ -27134,7 +29107,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 2715,
     "selection": "学术英语补充",
-    "zhPinyin": "yáng máo de"
+    "zhPinyin": "yáng máo de",
+    "mixedExample": "我想找一件温暖的 woolen 裙。"
   },
   {
     "id": "moat",
@@ -27148,7 +29122,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 44779,
     "selection": "学术英语补充",
-    "zhPinyin": "hù chéng hé"
+    "zhPinyin": "hù chéng hé",
+    "mixedExample": "城堡外面的河叫做 moat 。"
   },
   {
     "id": "rote",
@@ -27162,7 +29137,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 27508,
     "selection": "学术英语补充",
-    "zhPinyin": "sǐ jì yìng bèi"
+    "zhPinyin": "sǐ jì yìng bèi",
+    "mixedExample": "你应该宁可用词汇来造句，也不要试着 rote 。"
   },
   {
     "id": "drowsy",
@@ -27176,7 +29152,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 20332,
     "selection": "学术英语补充",
-    "zhPinyin": "hūn hūn yù shuì de"
+    "zhPinyin": "hūn hūn yù shuì de",
+    "mixedExample": "晚饭后她变得 drowsy 。"
   },
   {
     "id": "theorem",
@@ -27190,7 +29167,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 49645,
     "selection": "学术英语补充",
-    "zhPinyin": "dìng lǐ"
+    "zhPinyin": "dìng lǐ",
+    "mixedExample": "积分与反导函数是以两种不同的方式定义的，而微积分基本 theorem 阐述了两者之间的关系。"
   },
   {
     "id": "innermost",
@@ -27204,7 +29182,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37784,
     "selection": "学术英语补充",
-    "zhPinyin": "nèi xīn de"
+    "zhPinyin": "nèi xīn de",
+    "mixedExample": "梦虽然不会告诉你现实中将要发生什么，却能告诉你 innermost 真实想法。"
   },
   {
     "id": "exponential",
@@ -27218,7 +29197,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25908,
     "selection": "学术英语补充",
-    "zhPinyin": "zhǐ shù de"
+    "zhPinyin": "zhǐ shù de",
+    "mixedExample": "嗨，先生，黑板上的不是 exponential 函数，而是三角函数。"
   },
   {
     "id": "magnetism",
@@ -27232,7 +29212,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15680,
     "selection": "学术英语补充",
-    "zhPinyin": "cí xìng"
+    "zhPinyin": "cí xìng",
+    "mixedExample": "电流可以产生 magnetism 。"
   },
   {
     "id": "readjust",
@@ -27246,7 +29227,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38898,
     "selection": "学术英语补充",
-    "zhPinyin": "chóng xīn tiáo zhěng"
+    "zhPinyin": "chóng xīn tiáo zhěng",
+    "mixedExample": "由于两个竞争对手的一项新协议，我们需要 readjust 战略。"
   },
   {
     "id": "aurora",
@@ -27260,7 +29242,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 8866,
     "selection": "学术英语补充",
-    "zhPinyin": "jí guāng"
+    "zhPinyin": "jí guāng",
+    "mixedExample": "aurora 是极地特有的自然现象。"
   },
   {
     "id": "dragonfly",
@@ -27274,7 +29257,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 15624,
     "selection": "学术英语补充",
-    "zhPinyin": "qīng tíng"
+    "zhPinyin": "qīng tíng",
+    "mixedExample": "天花板上有一只 dragonfly 。"
   },
   {
     "id": "curt",
@@ -27288,7 +29272,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21195,
     "selection": "学术英语补充",
-    "zhPinyin": "jiǎn duǎn de"
+    "zhPinyin": "jiǎn duǎn de",
+    "mixedExample": "你回答得这么 curt ，不觉得有点没礼貌吗？"
   },
   {
     "id": "grammatical",
@@ -27302,7 +29287,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 41790,
     "selection": "学术英语补充",
-    "zhPinyin": "yǔ fǎ de"
+    "zhPinyin": "yǔ fǎ de",
+    "mixedExample": "一开始会有很多不认识的单词和 grammatical 形式，但是不要害怕。"
   },
   {
     "id": "stingy",
@@ -27316,7 +29302,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 37278,
     "selection": "学术英语补充",
-    "zhPinyin": "xiǎo qì de"
+    "zhPinyin": "xiǎo qì de",
+    "mixedExample": "那个人那么 stingy ，连谷壳都不让老鼠吃。"
   },
   {
     "id": "crafty",
@@ -27330,7 +29317,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 234,
     "selection": "学术英语补充",
-    "zhPinyin": "guǐ jì duō duān de"
+    "zhPinyin": "guǐ jì duō duān de",
+    "mixedExample": "德国人 crafty 。"
   },
   {
     "id": "jellyfish",
@@ -27344,7 +29332,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45990,
     "selection": "学术英语补充",
-    "zhPinyin": "shuǐ mǔ"
+    "zhPinyin": "shuǐ mǔ",
+    "mixedExample": "渔民用他的网捕到了一只紫色的 jellyfish 。"
   },
   {
     "id": "anesthetic",
@@ -27358,7 +29347,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28876,
     "selection": "学术英语补充",
-    "zhPinyin": "má zuì jì"
+    "zhPinyin": "má zuì jì",
+    "mixedExample": "他在 anesthetic 的作用下，他失去了知觉。"
   },
   {
     "id": "thirdly",
@@ -27372,7 +29362,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 38971,
     "selection": "学术英语补充",
-    "zhPinyin": "dì sān"
+    "zhPinyin": "dì sān",
+    "mixedExample": "thirdly ，请每个项目主管报告进度。"
   },
   {
     "id": "lavatory",
@@ -27386,7 +29377,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 5518,
     "selection": "学术英语补充",
-    "zhPinyin": "cè suǒ"
+    "zhPinyin": "cè suǒ",
+    "mixedExample": "我们刚打扫了 lavatory 。"
   },
   {
     "id": "hazel",
@@ -27400,7 +29392,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 25513,
     "selection": "学术英语补充",
-    "zhPinyin": "dàn hè sè"
+    "zhPinyin": "dàn hè sè",
+    "mixedExample": "你有如此美丽的 hazel 眼睛。"
   },
   {
     "id": "radioactivity",
@@ -27414,7 +29407,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26298,
     "selection": "学术英语补充",
-    "zhPinyin": "fàng shè xìng"
+    "zhPinyin": "fàng shè xìng",
+    "mixedExample": "“ radioactivity ”是一个化学术语。"
   },
   {
     "id": "culpable",
@@ -27428,7 +29422,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 29407,
     "selection": "学术英语补充",
-    "zhPinyin": "yǒu zuì de"
+    "zhPinyin": "yǒu zuì de",
+    "mixedExample": "根据她所说的, 他是 culpable 。"
   },
   {
     "id": "seashore",
@@ -27442,7 +29437,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 45853,
     "selection": "学术英语补充",
-    "zhPinyin": "hǎi bīn"
+    "zhPinyin": "hǎi bīn",
+    "mixedExample": "阿尔及尔有一条美丽的 seashore 长廊。"
   },
   {
     "id": "swampy",
@@ -27456,7 +29452,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 26386,
     "selection": "学术英语补充",
-    "zhPinyin": "zhǎo zé de"
+    "zhPinyin": "zhǎo zé de",
+    "mixedExample": "你不能在 swampy 地上建造建筑物。"
   },
   {
     "id": "pollination",
@@ -27470,7 +29467,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 48201,
     "selection": "学术英语补充",
-    "zhPinyin": "shòu fěn"
+    "zhPinyin": "shòu fěn",
+    "mixedExample": "例如，如果没有蜜蜂 pollination ，加州的杏仁作物就不会存在。"
   },
   {
     "id": "walkout",
@@ -27484,7 +29482,8 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 21156,
     "selection": "学术英语补充",
-    "zhPinyin": "bà gōng"
+    "zhPinyin": "bà gōng",
+    "mixedExample": "铁路工人明天将继续进行 walkout 。"
   },
   {
     "id": "cuckoo",
@@ -27498,6 +29497,7 @@ window.dailyEnglishQuestionBank = [
     "exampleSource": "tatoeba",
     "sourceRow": 28977,
     "selection": "学术英语补充",
-    "zhPinyin": "bù gǔ niǎo"
+    "zhPinyin": "bù gǔ niǎo",
+    "mixedExample": "人们把这种鸟叫做 cuckoo 。"
   }
 ];

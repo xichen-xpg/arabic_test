@@ -5,10 +5,16 @@ const vm = require("node:vm");
 const { Scheduler, addDays, normalize, STORAGE_KEY } = require("../games/english-scheduler.js");
 const { matchesMeaning } = require("../games/english-scheduler.js");
 const { exampleParts } = require("../games/english-scheduler.js");
-test("mixed examples replace a complete Chinese meaning and retain sentence order", () => {
-  const word = { word: "depletion", zh: "消耗；枯竭", cn: "过度灌溉可能导致地下水枯竭。", en: "Excessive irrigation can lead to the depletion of groundwater." };
+test("stored mixed examples retain sentence order for bilingual speech", () => {
+  const word = { word: "depletion", mixedExample: "过度灌溉可能导致地下水depletion。" };
   assert.deepEqual(exampleParts(word), [{ text: "过度灌溉可能导致地下水", lang: "zh-CN" }, { text: "depletion", lang: "en-GB" }, { text: "。", lang: "zh-CN" }]);
-  assert.deepEqual(exampleParts({ ...word, zh: "耗尽" }), [{ text: word.en, lang: "en-GB" }]);
+  const context = { window: {} };
+  vm.runInNewContext(fs.readFileSync(require.resolve("../games/daily-english.js"), "utf8"), context);
+  for (const entry of context.window.dailyEnglishQuestionBank) {
+    assert.match(entry.mixedExample, /\p{Script=Han}/u);
+    assert.ok(entry.mixedExample.includes(entry.word));
+    assert.equal(exampleParts(entry).map(part => part.text).join(""), entry.mixedExample);
+  }
 });
 test("Chinese learning accepts a complete individual meaning, not a substring", () => {
   assert.equal(matchesMeaning("分配", "分配；拨出"), true);
