@@ -23,6 +23,14 @@
     const typed = normalize(answer, "zh");
     return Boolean(typed) && [meaning, ...meaning.split(/[；;，,、/／|\n]+/)].some(part => normalize(part, "zh") === typed);
   }
+  function exampleParts(word) {
+    const meaning = word.zh.split(/[；;，,、/／|\n]+/).map(part => part.trim())
+      .filter(part => part.length >= 2 && word.cn.includes(part)).sort((a, b) => b.length - a.length)[0];
+    if (!meaning) return [{ text: word.en, lang: "en-GB" }];
+    const index = word.cn.indexOf(meaning);
+    return [{ text: word.cn.slice(0, index), lang: "zh-CN" }, { text: word.word, lang: "en-GB" },
+      { text: word.cn.slice(index + meaning.length), lang: "zh-CN" }].filter(part => part.text);
+  }
   class Scheduler {
     constructor(bank, storage, clock = today) {
       this.bank = bank;
@@ -267,7 +275,7 @@
           ? plan.completed.length === plan.fresh.length + plan.review.length : Boolean(plan.test?.checkedIn) || this.testSummary(date, create).done };
     }
   }
-  const api = { Scheduler, today, normalize, matchesMeaning, addDays, STORAGE_KEY, INTERVALS, DAILY_LIMIT, NEW_LIMIT, REVIEW_LIMIT };
+  const api = { Scheduler, today, normalize, matchesMeaning, exampleParts, addDays, STORAGE_KEY, INTERVALS, DAILY_LIMIT, NEW_LIMIT, REVIEW_LIMIT };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.EnglishLearning = api;
 })(typeof window !== "undefined" ? window : globalThis);

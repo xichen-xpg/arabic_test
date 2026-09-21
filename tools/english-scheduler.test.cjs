@@ -4,6 +4,12 @@ const fs = require("node:fs");
 const vm = require("node:vm");
 const { Scheduler, addDays, normalize, STORAGE_KEY } = require("../games/english-scheduler.js");
 const { matchesMeaning } = require("../games/english-scheduler.js");
+const { exampleParts } = require("../games/english-scheduler.js");
+test("mixed examples replace a complete Chinese meaning and retain sentence order", () => {
+  const word = { word: "depletion", zh: "消耗；枯竭", cn: "过度灌溉可能导致地下水枯竭。", en: "Excessive irrigation can lead to the depletion of groundwater." };
+  assert.deepEqual(exampleParts(word), [{ text: "过度灌溉可能导致地下水", lang: "zh-CN" }, { text: "depletion", lang: "en-GB" }, { text: "。", lang: "zh-CN" }]);
+  assert.deepEqual(exampleParts({ ...word, zh: "耗尽" }), [{ text: word.en, lang: "en-GB" }]);
+});
 test("Chinese learning accepts a complete individual meaning, not a substring", () => {
   assert.equal(matchesMeaning("分配", "分配；拨出"), true);
   assert.equal(matchesMeaning("拨出", "分配；拨出"), true);

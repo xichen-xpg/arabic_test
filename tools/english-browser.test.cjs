@@ -89,8 +89,12 @@ const server = http.createServer((req, res) => {
     const wrongWord = (await wrong.innerText()).replace(/^[1-4]\.\s*/, "");
     await wrong.click();
     assert.equal(await page.evaluate(() => testSpeech.at(-1).text), wrongWord);
+    await page.evaluate(() => { window.testSpeech = []; });
     await chooseWithKeyboard(first);
     const expectedSpeech = [{ text: first.word, lang: "en-GB" }, { text: first.zh, lang: "zh-CN" }];
+    const exampleSpeech = await page.evaluate(() => EnglishLearning.exampleParts(englishPractice.current).filter(part => /[\p{L}\p{N}]/u.test(part.text)));
+    assert.deepEqual(await page.evaluate(() => testSpeech), [...exampleSpeech, ...expectedSpeech]);
+    assert.equal(await page.locator(".english-example").innerText(), await page.evaluate(() => EnglishLearning.exampleParts(englishPractice.current).map(part => part.text).join("")));
     assert.deepEqual(await page.evaluate(() => testSpeech.slice(-2)), expectedSpeech);
     await page.evaluate(() => { window.testSpeech = []; });
     await page.locator(".english-speak-word").click();

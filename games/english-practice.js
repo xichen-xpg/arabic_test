@@ -18,6 +18,7 @@
           <div class="english-choices choices" aria-label="英文单词选项"></div>
           <label class="english-choice-entry">输入 1–4，按回车选择<input class="english-choice-number" type="text" inputmode="numeric" maxlength="1" autocomplete="off" aria-label="选项编号"></label>
           <div class="english-entry" hidden>
+            <p class="english-example"></p>
             <p class="english-word"></p>
             <div class="actions">
               <button class="secondary english-speak-word" type="button">🔊 单词发音</button>
@@ -57,7 +58,7 @@
         if (event === "test-page-passed" || event === "test-updated" && scheduler.plan().test.active?.failed) this.container.querySelector(".english-overview").scrollIntoView({ block: "start" });
         onChange(event);
       }, ensureDate);
-      for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "input", "feedback", "next", "restart", "task", "audio-status", "credit", "open-test", "back-study", "choice-entry", "choice-number"]) {
+      for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "input", "feedback", "next", "restart", "task", "audio-status", "credit", "open-test", "back-study", "choice-entry", "choice-number", "example"]) {
         this.el[name] = container.querySelector(`.english-${name}`);
       }
       container.querySelector(".english-speak-word").addEventListener("click", () => this.speak(this.current.word, this.current.zh));
@@ -175,6 +176,14 @@
         this.el.feedback.textContent = "必须重新学完本页全部单词才能重考：选对后输入英文单词和一个中文释义。";
       }
       this.el.prompt.textContent = this.current.zh;
+      this.example = EnglishLearning.exampleParts(this.current);
+      this.el.example.replaceChildren();
+      for (const part of this.example) {
+        const span = document.createElement(part.lang === "en-GB" && part.text === this.current.word ? "mark" : "span");
+        span.lang = part.lang;
+        span.textContent = part.text;
+        this.el.example.append(span);
+      }
       if (this.current.zhPinyin) {
         const pinyin = document.createElement("span");
         pinyin.className = "english-pinyin";
@@ -223,7 +232,7 @@
         if (this.selected && option.id === this.current.id) button.classList.add("correct");
         button.addEventListener("click", () => {
           if (this.ensureDate() || this.selected) return;
-          this.speak(option.word, option.id === this.current.id ? this.current.zh : "");
+          this.speak(option.word, option.id === this.current.id ? this.current.zh : "", option.id === this.current.id ? this.example : []);
           if (option.id !== this.current.id) {
             button.classList.add("wrong");
             button.disabled = true;
@@ -286,31 +295,26 @@
       this.status();
       this.onChange(result === "completed" ? "question-completed" : "word-retry");
     }
-    speak(text, chineseText = "") {
+    speak(text, chineseText = "", example = []) {
       if (!("speechSynthesis" in window)) {
         this.el["audio-status"].textContent = "当前浏览器不支持朗读，仍可继续答题。";
         return;
       }
       const synth = window.speechSynthesis;
       synth.cancel();
-      const voice = new SpeechSynthesisUtterance(text);
-      const english = synth.getVoices().filter(item => /^en[-_]/i.test(item.lang));
-      voice.voice = english.find(item => /^en[-_]GB$/i.test(item.lang)) || english[0] || null;
-      voice.lang = voice.voice?.lang || "en-GB";
-      voice.rate = 0.85;
       this.el["audio-status"].textContent = "";
-      voice.onerror = event => {
-        if (!["canceled", "interrupted"].includes(event.error)) this.el["audio-status"].textContent = "朗读暂不可用，请检查设备是否安装对应语言的语音后重试。";
-      };
-      synth.speak(voice);
-      if (chineseText) {
-        const chineseVoice = new SpeechSynthesisUtterance(chineseText);
-        const chinese = synth.getVoices().filter(item => /^zh[-_]/i.test(item.lang));
-        chineseVoice.voice = chinese.find(item => /^zh[-_]CN$/i.test(item.lang)) || chinese[0] || null;
-        chineseVoice.lang = chineseVoice.voice?.lang || "zh-CN";
-        chineseVoice.rate = 0.85;
-        chineseVoice.onerror = voice.onerror;
-        synth.speak(chineseVoice);
+      const parts = [...example, { text, lang: "en-GB" }, ...(chineseText ? [{ text: chineseText, lang: "zh-CN" }] : [])];
+      for (const part of parts) {
+        if (!/[\p{L}\p{N}]/u.test(part.text)) continue;
+        const voice = new SpeechSynthesisUtterance(part.text);
+        const voices = synth.getVoices().filter(item => item.lang.slice(0, 2).toLowerCase() === part.lang.slice(0, 2));
+        voice.voice = voices.find(item => item.lang.replace("_", "-").toLowerCase() === part.lang.toLowerCase()) || voices[0] || null;
+        voice.lang = voice.voice?.lang || part.lang;
+        voice.rate = 0.85;
+        voice.onerror = event => {
+          if (!["canceled", "interrupted"].includes(event.error)) this.el["audio-status"].textContent = "朗读暂不可用，请检查设备是否安装对应语言的语音后重试。";
+        };
+        synth.speak(voice);
       }
     }
   }
