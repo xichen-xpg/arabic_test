@@ -232,7 +232,7 @@
         if (this.selected && option.id === this.current.id) button.classList.add("correct");
         button.addEventListener("click", () => {
           if (this.ensureDate() || this.selected) return;
-          this.speak(option.word, option.id === this.current.id ? this.current.zh : "", option.id === this.current.id ? this.example : []);
+          this.speak(option.word, option.id === this.current.id ? this.current.zh : "");
           if (option.id !== this.current.id) {
             button.classList.add("wrong");
             button.disabled = true;
@@ -295,7 +295,7 @@
       this.status();
       this.onChange(result === "completed" ? "question-completed" : "word-retry");
     }
-    speak(text, chineseText = "", example = []) {
+    speak(text, chineseText = "") {
       if (!("speechSynthesis" in window)) {
         this.el["audio-status"].textContent = "当前浏览器不支持朗读，仍可继续答题。";
         return;
@@ -303,7 +303,7 @@
       const synth = window.speechSynthesis;
       synth.cancel();
       this.el["audio-status"].textContent = "";
-      const parts = [...example, { text, lang: "en-GB" }, ...(chineseText ? [{ text: chineseText, lang: "zh-CN" }] : [])];
+      const parts = [{ text, lang: "en-GB" }, ...(chineseText ? [{ text: chineseText, lang: "zh-CN" }] : [])];
       for (const part of parts) {
         if (!/[\p{L}\p{N}]/u.test(part.text)) continue;
         const voice = new SpeechSynthesisUtterance(part.text);
