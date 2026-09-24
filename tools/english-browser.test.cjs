@@ -40,7 +40,7 @@ const server = http.createServer((req, res) => {
     await page.selectOption("#categorySelect", "source:daily-english");
     await page.locator(".english-choices button").first().waitFor();
     assert.equal(await page.locator(".english-choices button").count(), 4);
-    assert.match(await page.locator(".english-progress").innerText(), /新词 0\/30/);
+    assert.match(await page.locator(".english-progress").innerText(), /新词 0\/20/);
     let first = await page.evaluate(() => englishPractice.current);
     assert.equal(await page.locator(".english-pinyin").innerText(), `（${first.zhPinyin}）`);
     assert.ok(first.zhPinyin.length > 0);
@@ -81,7 +81,7 @@ const server = http.createServer((req, res) => {
     await page.reload();
     await page.selectOption("#categorySelect", "source:daily-english");
     await relearnPage();
-    assert.match(await page.locator(".english-progress").innerText(), /新词 10\/30/);
+    assert.match(await page.locator(".english-progress").innerText(), /新词 10\/20/);
     assert.match(await page.locator(".english-progress").innerText(), /已学 10\/2000/);
     await page.getByRole("button", { name: "返回单词练习", exact: true }).click();
     first = await page.evaluate(() => englishPractice.current);
@@ -118,14 +118,14 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 10);
     await page.keyboard.press("Enter");
     assert.notEqual(await page.evaluate(() => englishPractice.current.id), first.id);
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 10; i++) {
       const word = await page.evaluate(() => englishPractice.current);
       await chooseWithKeyboard(word);
       await page.locator(".english-input").fill(word.word);
       await page.locator(".english-chinese-input").fill(word.zh.split(/[；;，,、/／|\n]+/)[0]);
       await page.keyboard.press("Enter");
     }
-    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 30);
+    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 20);
     assert.equal(await page.locator(".english-test-table").count(), 0);
     assert.equal(await page.locator(".english-test-start").innerText(), "重做本页（25 秒）");
     assert.equal(await page.evaluate(() => englishScheduler.summary().done), false);
@@ -163,23 +163,23 @@ const server = http.createServer((req, res) => {
       englishPractice.test.draw();
     });
     await relearnPage();
-    for (let batch = 0; batch < 6; batch++) {
+    for (let batch = 0; batch < 4; batch++) {
       await page.locator(".english-test-start").click();
       const answers = await page.evaluate(() => {
         const test = englishScheduler.plan().test;
-        return test.active.rows.map(row => englishScheduler.words.get(row.id)[test.passed >= 3 ? "word" : "zh"]);
+        return test.active.rows.map(row => englishScheduler.words.get(row.id)[test.passed >= 2 ? "word" : "zh"]);
       });
       for (let row = 0; row < answers.length; row++) {
         await page.locator(".english-test-table tr").nth(row).getByRole("button", { name: answers[row], exact: true }).click();
       }
-      assert.equal(await page.evaluate(() => englishScheduler.summary().done), batch === 5);
-      assert.equal(await page.locator(".english-test-start").innerText(), batch === 5 ? "重新测试" : batch === 2 ? "开始第二组测试" : "下一页测试");
-      if (batch < 5) assert.match(await page.locator(".english-test-feedback").innerText(), /上一页测试已通过/);
-      assert.equal(await page.evaluate(() => loadCheckins()[localDateKey()]?.includes(englishSourceKey) || false), batch === 5);
+      assert.equal(await page.evaluate(() => englishScheduler.summary().done), batch === 3);
+      assert.equal(await page.locator(".english-test-start").innerText(), batch === 3 ? "重新测试" : batch === 1 ? "开始第二组测试" : "下一页测试");
+      if (batch < 3) assert.match(await page.locator(".english-test-feedback").innerText(), /上一页测试已通过/);
+      assert.equal(await page.evaluate(() => loadCheckins()[localDateKey()]?.includes(englishSourceKey) || false), batch === 3);
       await page.evaluate(() => renderCalendar());
       const englishCheckin = page.locator(".calendar-day.today .calendar-source").filter({ hasText: "完成英语测试" });
       assert.equal(await englishCheckin.count(), 1);
-      assert.match(await englishCheckin.locator(".calendar-source-count").textContent(), batch === 5 ? /^✓.*平均.*🚩/ : /^未完成$/);
+      assert.match(await englishCheckin.locator(".calendar-source-count").textContent(), batch === 3 ? /^✓.*平均.*🚩/ : /^未完成$/);
     }
     assert.match(await page.locator(".english-test-title").innerText(), /英文每日打卡完成/);
     const savedLearning = await page.evaluate(() => localStorage.getItem(EnglishLearning.STORAGE_KEY));
@@ -187,7 +187,7 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.locator(".english-choices button").count(), 4);
     const replayWord = await page.evaluate(() => englishPractice.current);
     await page.locator(".english-choices button").filter({ hasNotText: replayWord.word }).first().click();
-    for (let i = 0; i < 31; i++) {
+    for (let i = 0; i < 21; i++) {
       const word = await page.evaluate(() => englishPractice.current);
       await page.getByRole("button", { name: word.word, exact: true }).click();
       await page.locator(".english-input").fill(word.word);
@@ -200,7 +200,7 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.evaluate(() => englishPractice.current.id), replayWord.id);
     await page.reload();
     await page.selectOption("#categorySelect", "source:daily-english");
-    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 30);
+    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 20);
     await page.locator("#checkinLink").click();
     const today = page.locator(".calendar-day.today");
     assert.match(await today.innerText(), /每日阿语50题/);
@@ -217,11 +217,11 @@ const server = http.createServer((req, res) => {
     // Force a page-open midnight rollover, keeping real-time clock deterministic.
     await page.evaluate(() => { practiceDate = "2000-01-01"; ensurePracticeDate(); });
     assert.match(await page.locator(".english-test-title").innerText(), /英文每日打卡完成/);
-    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 30);
+    assert.equal(await page.evaluate(() => englishScheduler.summary().completed), 20);
     await page.setViewportSize({ width: 390, height: 844 });
     const checkinsBeforeRepeat = await page.evaluate(() => localStorage.getItem(checkinStorageKey));
     await page.getByRole("button", { name: "重新测试", exact: true }).click();
-    assert.match(await page.locator(".english-test-title").innerText(), /第一组.*第 1\/3 页/);
+    assert.match(await page.locator(".english-test-title").innerText(), /第一组.*第 1\/2 页/);
     assert.equal(await page.locator(".english-test-table tr").count(), 10);
     await page.reload();
     await page.selectOption("#categorySelect", "source:daily-english");
@@ -232,7 +232,7 @@ const server = http.createServer((req, res) => {
     assert.match(await page.locator(".calendar-day.today .calendar-source").filter({ hasText: "完成英语测试" }).locator(".calendar-source-count").innerText(), /^✓.*🚩/);
     await page.evaluate(() => {
       const state = englishScheduler.load();
-      state.days[localDateKey()].testTiming = { pages: 10, totalMs: 120000 };
+      state.days[localDateKey()].testTiming = { pages: 4, totalMs: 48000 };
       englishScheduler.save(state);
       renderCalendar();
     });
@@ -241,22 +241,22 @@ const server = http.createServer((req, res) => {
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     if (process.env.ENGLISH_SCREENSHOT) await page.screenshot({ path: process.env.ENGLISH_SCREENSHOT, fullPage: true });
     const rows = page.locator(".english-overview-row");
-    assert.equal(await rows.count(), 6);
-    await rows.nth(4).getByRole("button", { name: "测试", exact: true }).click();
-    assert.equal(await page.evaluate(() => englishScheduler.plan().test.active.index), 4);
+    assert.equal(await rows.count(), 4);
+    await rows.nth(3).getByRole("button", { name: "测试", exact: true }).click();
+    assert.equal(await page.evaluate(() => englishScheduler.plan().test.active.index), 3);
     const selectedWords = await page.evaluate(() => englishScheduler.plan().test.active.rows.map(row => englishScheduler.words.get(row.id).word));
     for (let i = 0; i < selectedWords.length; i++) {
       await page.locator(".english-test-table tr").nth(i).getByRole("button", { name: selectedWords[i], exact: true }).click();
     }
-    assert.match(await rows.nth(4).innerText(), /已通过 ✓/);
-    assert.match(await rows.nth(4).innerText(), /\d+\.\d{2} 秒/);
+    assert.match(await rows.nth(3).innerText(), /已通过 ✓/);
+    assert.match(await rows.nth(3).innerText(), /\d+\.\d{2} 秒/);
     assert.equal(await page.locator(".english-study-next").isVisible(), true);
     await page.locator(".english-study-next").click();
     assert.equal(await page.evaluate(() => englishPractice.replay.testIndex), 0);
     await rows.nth(2).getByRole("button", { name: "学习", exact: true }).click();
     assert.equal(await page.evaluate(() => englishPractice.replay.testIndex), 2);
     assert.equal(await page.evaluate(() => englishPractice.replay.queue.length), 10);
-    assert.equal(await page.evaluate(() => englishPractice.current.id), await page.evaluate(() => englishScheduler.questions()[20].id));
+    assert.equal(await page.evaluate(() => englishPractice.current.id), await page.evaluate(() => englishScheduler.questions()[0].id));
     assert.equal(await page.evaluate(() => englishScheduler.summary().done), true);
     assert.deepEqual(errors, []);
     console.log("Browser checks passed: choices/audio, live word typing, retries, reload, calendar, Arabic/poems, rollover, mobile layout.");

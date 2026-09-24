@@ -4,11 +4,11 @@
   const STORAGE_KEY = "arabic-test:english-learning:v1";
   // Successful early reviews fall on days 1, 2, 4, 7, 15, 30.
   // Mature words expand to 30/60/120/180-day gaps so reviews cannot crowd
-  // out the remaining new words forever under the 50-word daily limit.
+  // out the remaining new words forever under the 30-word daily limit.
   const INTERVALS = [1, 1, 2, 3, 8, 15, 30, 60, 120, 180];
-  const DAILY_LIMIT = 50;
-  const NEW_LIMIT = 30;
-  const REVIEW_LIMIT = 20;
+  const DAILY_LIMIT = 30;
+  const NEW_LIMIT = 20;
+  const REVIEW_LIMIT = 10;
   const addDays = (date, days) => new Date(Date.parse(`${date}T00:00:00Z`) + days * 86400000).toISOString().slice(0, 10);
   function today() {
     const parts = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Dubai", year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(new Date());
@@ -48,11 +48,15 @@
       if (state.days[date]) {
         const existing = state.days[date];
         if (create && !existing.test) { existing.test = { passed: 0 }; this.save(state); }
-        if (create && (existing.dailyLimit !== DAILY_LIMIT || existing.newLimit !== NEW_LIMIT || existing.reviewLimit !== REVIEW_LIMIT)) {
+        // Keep started plans stable: test page indices refer to their original words.
+        const started = existing.completed.length || existing.failed.length || existing.retry.length || Object.keys(existing.drafts).length ||
+          existing.test?.passed || existing.test?.active || existing.test?.checkedIn || Object.keys(existing.test?.attempts || {}).length;
+        if (create && !started && (existing.dailyLimit !== DAILY_LIMIT || existing.newLimit !== NEW_LIMIT || existing.reviewLimit !== REVIEW_LIMIT)) {
           const completed = new Set(existing.completed);
           const completedReviews = existing.review.filter(id => completed.has(id));
           const pendingReviews = existing.review.filter(id => !completed.has(id));
           existing.review = [...completedReviews, ...pendingReviews.slice(0, Math.max(0, REVIEW_LIMIT - completedReviews.length))];
+          existing.fresh = existing.fresh.slice(0, NEW_LIMIT);
           const scheduled = new Set([...existing.review, ...existing.fresh]);
           const due = Object.entries(state.records)
             .filter(([id, record]) => this.words.has(id) && record.due <= date && !scheduled.has(id) && !completed.has(id))
