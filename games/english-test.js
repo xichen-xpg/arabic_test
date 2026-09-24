@@ -43,6 +43,8 @@
         const study = document.createElement("button");
         study.type = "button";
         study.textContent = "学习";
+        study.disabled = !attempt && !summary.completed.includes(index);
+        study.title = study.disabled ? "请先尝试本页测试" : "学习本页单词";
         study.addEventListener("click", () => this.onChange("test-study", index));
         row.append(label, status, time, challenge, study);
         rows.append(row);

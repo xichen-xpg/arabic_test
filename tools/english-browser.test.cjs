@@ -42,6 +42,9 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.locator(".english-choices button").count(), 4);
     assert.match(await page.locator(".english-progress").innerText(), /新词 0\/20/);
     let first = await page.evaluate(() => englishPractice.current);
+    const studyButtons = page.locator(".english-overview-row").getByRole("button", { name: "学习", exact: true });
+    assert.equal(await studyButtons.count(), 4);
+    for (const button of await studyButtons.all()) assert.equal(await button.isDisabled(), true);
     assert.equal(await page.locator(".english-pinyin").innerText(), `（${first.zhPinyin}）`);
     assert.ok(first.zhPinyin.length > 0);
     async function chooseWithKeyboard(word) {
@@ -81,6 +84,8 @@ const server = http.createServer((req, res) => {
     await page.reload();
     await page.selectOption("#categorySelect", "source:daily-english");
     await relearnPage();
+    assert.equal(await studyButtons.nth(0).isEnabled(), true);
+    assert.equal(await studyButtons.nth(1).isDisabled(), true);
     assert.match(await page.locator(".english-progress").innerText(), /新词 10\/20/);
     assert.match(await page.locator(".english-progress").innerText(), /已学 10\/2000/);
     await page.getByRole("button", { name: "返回单词练习", exact: true }).click();
@@ -253,10 +258,11 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.locator(".english-study-next").isVisible(), true);
     await page.locator(".english-study-next").click();
     assert.equal(await page.evaluate(() => englishPractice.replay.testIndex), 0);
-    await rows.nth(2).getByRole("button", { name: "学习", exact: true }).click();
-    assert.equal(await page.evaluate(() => englishPractice.replay.testIndex), 2);
+    assert.equal(await rows.nth(2).getByRole("button", { name: "学习", exact: true }).isDisabled(), true);
+    await rows.nth(3).getByRole("button", { name: "学习", exact: true }).click();
+    assert.equal(await page.evaluate(() => englishPractice.replay.testIndex), 3);
     assert.equal(await page.evaluate(() => englishPractice.replay.queue.length), 10);
-    assert.equal(await page.evaluate(() => englishPractice.current.id), await page.evaluate(() => englishScheduler.questions()[0].id));
+    assert.equal(await page.evaluate(() => englishPractice.current.id), await page.evaluate(() => englishScheduler.questions()[10].id));
     assert.equal(await page.evaluate(() => englishScheduler.summary().done), true);
     assert.deepEqual(errors, []);
     console.log("Browser checks passed: choices/audio, live word typing, retries, reload, calendar, Arabic/poems, rollover, mobile layout.");
