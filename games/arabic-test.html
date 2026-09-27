@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>每日语言练习</title>
   <base href="../">
-  <link rel="stylesheet" href="games/english-practice.css?v=20260921examples">
+  <link rel="stylesheet" href="games/english-practice.css?v=20260927arabic">
   <style>
     :root {
       color-scheme: light;
@@ -832,7 +832,7 @@
         <div class="meta-row">
           <span id="categoryTag" class="tag">基础问候</span>
           <select id="categorySelect" class="select" aria-label="题库分类">
-            <option value="source:daily-arabic" selected>每日阿语50题</option>
+            <option value="source:daily-arabic" selected>每日阿语 · 最多30词</option>
             <option value="source:daily-english">每日雅思英语 · 最多30词</option>
             <option value="source:restaurant">餐厅题库</option>
             <option value="source:best-friend">Best Friend 题库</option>
@@ -847,6 +847,7 @@
         </div>
 
         <div id="englishPanel" hidden></div>
+        <div id="arabicPanel" hidden></div>
         <div class="question">
           <p class="question-label">中文</p>
           <p id="chinesePrompt" class="chinese">你好</p>
@@ -913,12 +914,12 @@
     </section>
   </main>
 
-  <script src="games/daily-arabic.js"></script>
+  <script src="games/daily-arabic.js?v=20260927arabic"></script>
   <script src="games/daily-poems.js"></script>
   <script src="games/daily-english.js?v=20260921mixed"></script>
-  <script src="games/english-scheduler.js?v=20260924limits"></script>
-  <script src="games/english-test.js?v=20260924study"></script>
-  <script src="games/english-practice.js?v=20260924limits"></script>
+  <script src="games/english-scheduler.js?v=20260927arabic"></script>
+  <script src="games/english-test.js?v=20260927arabic"></script>
+  <script src="games/english-practice.js?v=20260927arabic"></script>
   <script>
     const questions = [
       { category: "基础问候", zh: "你好", ar: "مرحبا", rom: "marhaban" },
@@ -1310,6 +1311,11 @@
     const dailyArabicSourceKey = "daily-arabic";
     const englishSourceKey = "daily-english";
     const englishScheduler = new EnglishLearning.Scheduler(window.dailyEnglishQuestionBank, localStorage);
+    const arabicStorageKey = "arabic-test:arabic-learning:v1";
+    const arabicLearningBank = [...dailyArabicBank, ...allQuestions].filter((word, index, bank) => bank.findIndex(item => item.ar === word.ar) === index)
+      .map(word => ({ ...word, id: `arabic:${word.ar}`, word: word.ar, phonetic: word.rom, source: dailyArabicSourceKey }));
+    const arabicScheduler = new EnglishLearning.Scheduler(arabicLearningBank, localStorage, EnglishLearning.today,
+      { storageKey: arabicStorageKey, languageName: "阿语", languageCode: "ar" });
     const dailyArabicRotationStartKey = "2026-09-03";
     const dailyArabicNewCount = 3;
     const dailyArabicRecentDays = 5;
@@ -1333,7 +1339,7 @@
         puzzleImages: []
       },
       [dailyArabicSourceKey]: {
-        label: "每日阿语50题",
+        label: "每日阿语",
         puzzleImages: []
       },
       restaurant: {
@@ -1631,6 +1637,32 @@
     const dailyProgressStorageKey = "arabic-test:daily-progress";
     let calendarMonth = new Date();
     let practiceDate = dubaiDateKey();
+    // Import completed legacy words once without changing the old progress or check-in saves.
+    if (!localStorage.getItem(arabicStorageKey)) {
+      const state = arabicScheduler.load();
+      const progress = loadDailyProgress();
+      const checkins = loadCheckins();
+      const dates = [...new Set([...Object.keys(progress), ...Object.keys(checkins)])].sort();
+      for (const date of dates) {
+        if (date > localDateKey()) continue;
+        const checkedIn = checkins[date]?.includes(dailyArabicSourceKey);
+        const indexes = progress[date]?.[dailyArabicSourceKey] || [];
+        if (!checkedIn && !indexes.length) continue;
+        const words = dailyArabicQuestions(date);
+        for (const index of checkedIn ? words.map((_, i) => i) : indexes) {
+          const word = words[index];
+          const id = word && `arabic:${word.ar}`;
+          if (arabicScheduler.words.has(id)) state.records[id] = { stage: 0, due: EnglishLearning.addDays(date, 1), lastCompleted: date, trouble: false };
+        }
+      }
+      arabicScheduler.save(state);
+      if (checkins[localDateKey()]?.includes(dailyArabicSourceKey)) {
+        arabicScheduler.plan();
+        const saved = arabicScheduler.load();
+        saved.days[localDateKey()].test.checkedIn = true;
+        arabicScheduler.save(saved);
+      }
+    }
     const englishPractice = new EnglishPractice(document.querySelector("#englishPanel"), englishScheduler, (eventName) => {
       current = englishPractice.current;
       if (englishScheduler.summary().done) markDailyCheckin(englishSourceKey);
@@ -1642,6 +1674,13 @@
           saveCheckins(checkins);
         }
       }
+      emitMetrics(eventName);
+      if (window.location.hash === "#checkin") renderCalendar();
+    }, ensurePracticeDate);
+
+    const arabicPractice = new EnglishPractice(document.querySelector("#arabicPanel"), arabicScheduler, eventName => {
+      current = arabicPractice.current;
+      if (arabicScheduler.summary().done) markDailyCheckin(dailyArabicSourceKey);
       emitMetrics(eventName);
       if (window.location.hash === "#checkin") renderCalendar();
     }, ensurePracticeDate);
@@ -1825,7 +1864,7 @@
       if (byDate && typeof byDate === "object") {
         Object.entries(byDate).forEach(([source, indexes]) => {
           if (!Array.isArray(indexes)) return;
-          const sourceTotal = sourceQuestions(source).length;
+          const sourceTotal = source === dailyArabicSourceKey ? dailyArabicQuestions(dateKey).length : sourceQuestions(source).length;
           result[source] = indexes.filter((index) => Number.isInteger(index) && index >= 0 && index < sourceTotal);
         });
       }
@@ -1853,7 +1892,13 @@
         : new Set((byDate[source] || []).filter((index) => Number.isInteger(index) && index >= 0 && index < total)).size;
 
       const result = [];
-      if (completedCount > 0 || completedSources.has(source) || dateKey === localDateKey()) result.push({
+      const arabic = arabicScheduler.summary(dateKey);
+      if (arabic) {
+        const timing = arabicScheduler.testSummary(dateKey);
+        const done = arabic.done || completedSources.has(source);
+        const timeLabel = done && timing.fast ? ` · 平均 ${timing.averageSeconds.toFixed(2)} 秒 🚩` : "";
+        result.push({ source, label: "完成阿语测试", checkOnly: true, done, timeLabel });
+      } else if (completedCount > 0 || completedSources.has(source)) result.push({
         source,
         label: sourceConfig[source]?.label || source,
         completedCount,
@@ -1953,8 +1998,8 @@
       const completed = completedSet();
       const total = activeQuestions().length;
       const allTotal = allQuestions.length;
-      const completedTokens = [...completed].map((index) => activeSource() === englishSourceKey
-        ? `${englishSourceKey}:${localDateKey()}:${activeQuestions()[index].id}` : `${progressKey()}:${index}`);
+      const completedTokens = [...completed].map((index) => [englishSourceKey, dailyArabicSourceKey].includes(activeSource())
+        ? `${activeSource()}:${localDateKey()}:${activeQuestions()[index].id}` : `${progressKey()}:${index}`);
       window.parent.postMessage({
         type: "arabic-test:metrics",
         payload: {
@@ -2670,7 +2715,7 @@
 
     function sourceQuestions(source) {
       if (source === englishSourceKey) return englishScheduler.questions();
-      if (isDailyArabicSource(source)) return dailyArabicQuestions();
+      if (isDailyArabicSource(source)) return arabicScheduler.questions();
       if (isPoemSource(source)) return dailyPoemQuestions();
       return allQuestions.filter((item) => item.source === source);
     }
@@ -2680,6 +2725,10 @@
     }
 
     function completedSet(key = progressKey()) {
+      if (key === dailyArabicSourceKey) {
+        const plan = arabicScheduler.plan();
+        return new Set(arabicScheduler.questions().map((word, index) => plan.completed.includes(word.id) ? index : -1).filter(index => index >= 0));
+      }
       if (key === englishSourceKey) {
         const plan = englishScheduler.plan();
         return new Set(englishScheduler.questions().map((word, index) => plan.completed.includes(word.id) ? index : -1).filter(index => index >= 0));
@@ -2860,19 +2909,24 @@
     function drawQuestion() {
       if (ensurePracticeDate()) return;
       const english = activeSource() === englishSourceKey;
-      elements.gamePanel.classList.toggle("english-mode", english);
+      const arabic = activeSource() === dailyArabicSourceKey;
+      englishPractice.test.hide();
+      arabicPractice.test.hide();
+      elements.gamePanel.classList.toggle("english-mode", english || arabic);
       document.querySelector("#englishPanel").hidden = !english;
+      document.querySelector("#arabicPanel").hidden = !arabic;
       document.querySelector("#practiceDescription").textContent = english
         ? "看中文选英文单词，点击带发音。选对后输入英文单词和一个中文释义。"
         : "看中文选发音，选对后输入阿语。提示会给出下一个阿语字符和 Arabic 101 键盘按键。";
       if (currentAudio) { currentAudio.pause(); currentAudio = null; }
       window.speechSynthesis?.cancel();
       if (completionSpeechTimer) { clearTimeout(completionSpeechTimer); completionSpeechTimer = null; }
-      if (english) {
-        elements.categoryTag.textContent = "雅思核心2000词";
+      if (english || arabic) {
+        elements.categoryTag.textContent = english ? "雅思核心2000词" : "每日阿语 · 新词与复习";
+        if (arabic) document.querySelector("#practiceDescription").textContent = "每天20个新词、最多10个到期复习词。通过阿语选中文、中文选阿语两组测试完成打卡。";
         elements.gamePanel.classList.remove("poem-mode");
         resetPoemHints();
-        englishPractice.draw();
+        (english ? englishPractice : arabicPractice).draw();
         return;
       }
       const pending = incompleteQuestions();
@@ -3343,6 +3397,7 @@
     document.addEventListener("visibilitychange", () => { if (!document.hidden) ensurePracticeDate(); });
     window.addEventListener("storage", event => {
       if (event.key === EnglishLearning.STORAGE_KEY && activeSource() === englishSourceKey) drawQuestion();
+      if (event.key === arabicStorageKey && activeSource() === dailyArabicSourceKey) drawQuestion();
       if (window.location.hash === "#checkin") renderCalendar();
     });
 

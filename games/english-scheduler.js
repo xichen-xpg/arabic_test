@@ -29,20 +29,23 @@
       { text: word.mixedExample.slice(index + word.word.length), lang: "zh-CN" }].filter(part => part.text);
   }
   class Scheduler {
-    constructor(bank, storage, clock = today) {
+    constructor(bank, storage, clock = today, options = {}) {
       this.bank = bank;
       this.storage = storage;
       this.clock = clock;
+      this.storageKey = options.storageKey || STORAGE_KEY;
+      this.languageName = options.languageName || "英文";
+      this.languageCode = options.languageCode || "en-GB";
       this.words = new Map(bank.map(word => [word.id, word]));
     }
     load() {
       try {
-        const value = JSON.parse(this.storage.getItem(STORAGE_KEY));
+        const value = JSON.parse(this.storage.getItem(this.storageKey));
         if (value?.version === 1 && value.records && value.days) return value;
       } catch { /* An absent or damaged save starts a fresh plan. */ }
       return { version: 1, records: {}, days: {} };
     }
-    save(state) { this.storage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+    save(state) { this.storage.setItem(this.storageKey, JSON.stringify(state)); }
     plan(date = this.clock(), create = date === this.clock()) {
       const state = this.load();
       if (state.days[date]) {

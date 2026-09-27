@@ -143,5 +143,18 @@ window.dailyArabicQuestionBank = [
   { category: "日常动作", zh: "请打开门", ar: "افتح الباب من فضلك", rom: "iftah al-bab min fadlik" },
   { category: "日常动作", zh: "请关上门", ar: "أغلق الباب من فضلك", rom: "aghliq al-bab min fadlik" },
   { category: "日常动作", zh: "我们走吧", ar: "هيا بنا", rom: "hayya bina" },
-  { category: "日常动作", zh: "快点", ar: "أسرع", rom: "asri" }
+  { category: "日常动作", zh: "快点", ar: "أسرع", rom: "asri" },
+  { category: "大小与形状", zh: "大", ar: "كبير", rom: "kabir", exampleAr: "هذا الصندوق كبير، هل تساعدني في حمله؟", exampleZh: "这个箱子很大，你能帮我搬一下吗？" },
+  { category: "大小与形状", zh: "小", ar: "صغير", rom: "saghir", exampleAr: "أحتاج إلى كوب صغير للقهوة.", exampleZh: "我需要一个小杯子喝咖啡。" },
+  { category: "大小与形状", zh: "长方形", ar: "مستطيل", rom: "mustatil", exampleAr: "ارسم مستطيلا حول اسمك.", exampleZh: "在你的名字周围画一个长方形。" },
+  { category: "大小与形状", zh: "正方形", ar: "مربع", rom: "murabba", exampleAr: "قص الورقة على شكل مربع.", exampleZh: "把纸剪成正方形。" },
+  { category: "大小与形状", zh: "圆", ar: "دائرة", rom: "da'ira", exampleAr: "ضع دائرة حول الإجابة الصحيحة.", exampleZh: "在正确答案周围画个圆。" },
+  { category: "大小与形状", zh: "三角形", ar: "مثلث", rom: "muthallath", exampleAr: "قطعة الجبن هذه على شكل مثلث.", exampleZh: "这块奶酪是三角形的。" },
+  { category: "大小与形状", zh: "球形", ar: "كروي", rom: "kurawi", exampleAr: "اشتريت مصباحا كروي الشكل لغرفتي.", exampleZh: "我给房间买了一盏球形的灯。" },
+  { category: "运动", zh: "保龄球", ar: "البولينج", rom: "al-buling", exampleAr: "حجزنا مسارا للبولينج مساء الجمعة.", exampleZh: "我们订了周五晚上的保龄球球道。" },
+  { category: "运动", zh: "台球", ar: "البلياردو", rom: "al-bilyardu", exampleAr: "هل توجد طاولة بلياردو في هذا الفندق؟", exampleZh: "这家酒店有台球桌吗？" },
+  { category: "运动", zh: "足球", ar: "كرة القدم", rom: "kurat al-qadam", exampleAr: "تبدأ مباراة كرة القدم بعد العشاء.", exampleZh: "足球比赛在晚饭后开始。" },
+  { category: "运动", zh: "网球", ar: "التنس", rom: "at-tinis", exampleAr: "نسيت مضرب التنس في السيارة.", exampleZh: "我把网球拍忘在车里了。" },
+  { category: "运动", zh: "乒乓球", ar: "كرة الطاولة", rom: "kurat at-tawila", exampleAr: "نلعب كرة الطاولة خلال الاستراحة.", exampleZh: "我们在休息时间打乒乓球。" },
+  { category: "运动", zh: "篮球", ar: "كرة السلة", rom: "kurat as-salla", exampleAr: "أختي تتدرب مع فريق كرة السلة كل سبت.", exampleZh: "我姐姐每周六和篮球队一起训练。" }
 ];

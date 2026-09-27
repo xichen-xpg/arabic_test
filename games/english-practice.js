@@ -11,11 +11,11 @@
         <section class="english-overview" aria-label="今日测试记录"></section>
         <button class="secondary english-open-test" type="button">开始测试</button>
         <button class="secondary english-back-study" type="button" hidden>返回单词练习</button>
-        <p class="english-note">每天固定学习 20 个新词，另安排最多 10 个复习词，仅来自前几天学过且到期的词。当天错词再练不增加复习数量。选对后输入英文单词，再输入一个中文释义。</p>
+        <p class="english-note">每天固定学习 20 个新词，另安排最多 10 个复习词，仅来自前几天学过且到期的词。当天错词再练不增加复习数量。选对后输入${this.scheduler.languageName}单词，再输入一个中文释义。</p>
         <div class="english-task">
           <p class="english-kind question-label"></p>
           <p class="english-prompt chinese"></p>
-          <div class="english-choices choices" aria-label="英文单词选项"></div>
+          <div class="english-choices choices" aria-label="${this.scheduler.languageName}单词选项"></div>
           <label class="english-choice-entry">输入 1–4，按回车选择<input class="english-choice-number" type="text" inputmode="numeric" maxlength="1" autocomplete="off" aria-label="选项编号"></label>
           <div class="english-entry" hidden>
             <p class="english-example"></p>
@@ -23,9 +23,9 @@
             <div class="actions">
               <button class="secondary english-speak-word" type="button">🔊 单词发音</button>
             </div>
-            <label>输入英文单词<input class="english-input" lang="en" dir="ltr" type="text" spellcheck="false" autocomplete="off" autocapitalize="none"></label>
+            <label>输入${this.scheduler.languageName}单词<input class="english-input" lang="en" dir="ltr" type="text" spellcheck="false" autocomplete="off" autocapitalize="none"></label>
             <label>输入中文释义（多个释义任选一个）<input class="english-chinese-input" lang="zh-CN" type="text" autocomplete="off" disabled></label>
-            <p class="english-note">英文拼对后自动进入中文输入框；中文答对后按回车进入下一词。</p>
+            <p class="english-note">${this.scheduler.languageName}拼对后自动进入中文输入框；中文答对后按回车进入下一词。</p>
             <details class="english-credit"><summary>词条来源</summary><p></p><a target="_blank" rel="noopener" href="games/english-sources.html">查看题库选词规则与来源</a></details>
           </div>
         </div>
@@ -35,6 +35,10 @@
         <button class="ghost english-next" type="button" hidden>下一词</button>
         <button class="secondary english-restart" type="button" hidden>重新学习</button>`;
       this.el = {};
+      const wordInput = container.querySelector(".english-input");
+      wordInput.lang = scheduler.languageCode;
+      wordInput.dir = scheduler.languageCode === "ar" ? "rtl" : "ltr";
+      container.querySelector(".english-credit").hidden = scheduler.languageCode === "ar";
       this.chineseInput = container.querySelector(".english-chinese-input");
       this.test = new EnglishTest(container.querySelector(".english-test"), scheduler, (event, index) => {
         if (event === "test-open") { this.openTest(index); return; }
@@ -52,7 +56,7 @@
         }
         if (event === "test-relearn-required") { this.relearning = true; this.draw(); return; }
         this.status();
-        if (scheduler.summary().done) this.el.feedback.textContent = "两组测试已通过 ✓ 今日英文打卡完成。";
+        if (scheduler.summary().done) this.el.feedback.textContent = `两组测试已通过 ✓ 今日${this.scheduler.languageName}打卡完成。`;
         else if (event === "test-page-passed") this.el.feedback.textContent = "";
         if (event === "test-page-passed" && scheduler.testSummary().done) this.el.restart.hidden = false;
         if (event === "test-page-passed" || event === "test-updated" && scheduler.plan().test.active?.failed) this.container.querySelector(".english-overview").scrollIntoView({ block: "start" });
@@ -150,8 +154,8 @@
       this.el["back-study"].hidden = true;
       this.el.restart.hidden = Boolean(this.current) || !this.scheduler.summary().total;
       if (!this.current) {
-        this.el.feedback.textContent = this.replay ? "重新学习已完成 ✓ 打卡数据保持不变，可再次练习。" : "今日单词学习已完成，请通过两组限时测试完成英文打卡。";
-        if (!this.replay && this.scheduler.summary().done) this.el.feedback.textContent = "两组测试已通过 ✓ 今日英文打卡完成。";
+        this.el.feedback.textContent = this.replay ? "重新学习已完成 ✓ 打卡数据保持不变，可再次练习。" : `今日单词学习已完成，请通过两组限时测试完成${this.scheduler.languageName}打卡。`;
+        if (!this.replay && this.scheduler.summary().done) this.el.feedback.textContent = `两组测试已通过 ✓ 今日${this.scheduler.languageName}打卡完成。`;
         if (wasRelearning) {
           this.el.feedback.textContent = "本页单词已重新学完，可以重考。";
           this.el["back-study"].hidden = !this.scheduler.next();
@@ -173,10 +177,10 @@
       if (this.replay) this.el.kind.textContent = `重新学习 · ${this.current.category} · ${this.current.pos}`;
       if (this.relearning) {
         this.el.kind.textContent = `测试未过关 · 本页重新学习 · 剩余 ${studyWords.length} 词`;
-        this.el.feedback.textContent = "必须重新学完本页全部单词才能重考：选对后输入英文单词和一个中文释义。";
+        this.el.feedback.textContent = `必须重新学完本页全部单词才能重考：选对后输入${this.scheduler.languageName}单词和一个中文释义。`;
       }
       this.el.prompt.textContent = this.current.zh;
-      this.example = EnglishLearning.exampleParts(this.current);
+      this.example = this.scheduler.languageCode === "ar" ? [{ text: this.current.exampleAr || "", lang: "ar" }, { text: this.current.exampleZh || "", lang: "zh-CN" }] : EnglishLearning.exampleParts(this.current);
       this.el.example.replaceChildren();
       for (const part of this.example) {
         const span = document.createElement(part.lang === "en-GB" && part.text === this.current.word ? "mark" : "span");
@@ -192,6 +196,7 @@
         this.el.prompt.append(pinyin);
       }
       this.el.word.textContent = `${this.current.word}${this.current.phonetic ? ` /${this.current.phonetic}/` : ""}`;
+      this.el.word.dir = this.scheduler.languageCode === "ar" ? "rtl" : "ltr";
       this.el.credit.querySelector("p").textContent = `本词条：${this.current.selection}。`;
       const draftAnswer = draft.answer || "";
       this.lastValidInput = this.current.word.toLowerCase().startsWith(draftAnswer.toLowerCase()) ? draftAnswer : "";
@@ -222,7 +227,8 @@
         const button = document.createElement("button");
         button.type = "button";
         button.className = "choice";
-        button.lang = "en";
+        button.lang = this.scheduler.languageCode;
+        button.dir = this.scheduler.languageCode === "ar" ? "rtl" : "ltr";
         button.textContent = option.word;
         const number = document.createElement("span");
         number.textContent = `${index + 1}. `;
@@ -246,7 +252,7 @@
             this.el.choices.querySelectorAll("button").forEach(choice => { choice.disabled = true; });
             this.el.entry.hidden = false;
             this.el["choice-entry"].hidden = true;
-            this.el.feedback.textContent = "选对了，请完整输入这个英文单词。";
+            this.el.feedback.textContent = `选对了，请完整输入这个${this.scheduler.languageName}单词。`;
             this.el.input.focus();
           }
           this.saveDraft();
@@ -267,7 +273,7 @@
       this.el.input.readOnly = true;
       this.chineseInput.disabled = false;
       this.chineseInput.focus();
-      this.el.feedback.textContent = "英文正确，请输入中文释义，多个释义任选一个即可。";
+      this.el.feedback.textContent = `${this.scheduler.languageName}正确，请输入中文释义，多个释义任选一个即可。`;
     }
     completeAnswer() {
       if (this.ensureDate() || !this.current || !this.selected || this.finished || this.chineseInput.disabled) return;
@@ -303,7 +309,7 @@
       const synth = window.speechSynthesis;
       synth.cancel();
       this.el["audio-status"].textContent = "";
-      const parts = [{ text, lang: "en-GB" }, ...(chineseText ? [{ text: chineseText, lang: "zh-CN" }] : [])];
+      const parts = [{ text, lang: this.scheduler.languageCode }, ...(chineseText ? [{ text: chineseText, lang: "zh-CN" }] : [])];
       for (const part of parts) {
         if (!/[\p{L}\p{N}]/u.test(part.text)) continue;
         const voice = new SpeechSynthesisUtterance(part.text);
