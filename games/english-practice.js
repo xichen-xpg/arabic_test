@@ -4,6 +4,7 @@
     constructor(container, scheduler, onChange, ensureDate) {
       this.container = container;
       this.scheduler = scheduler;
+      this.requireChinese = scheduler.languageCode !== "ar";
       this.onChange = onChange;
       this.ensureDate = ensureDate;
       container.innerHTML = `
@@ -11,7 +12,7 @@
         <section class="english-overview" aria-label="今日测试记录"></section>
         <button class="secondary english-open-test" type="button">开始测试</button>
         <button class="secondary english-back-study" type="button" hidden>返回单词练习</button>
-        <p class="english-note">每天固定学习 20 个新词，另安排最多 10 个复习词，仅来自前几天学过且到期的词。当天错词再练不增加复习数量。选对后输入${this.scheduler.languageName}单词，再输入一个中文释义。</p>
+        <p class="english-note">每天固定学习 20 个新词，另安排最多 10 个复习词，仅来自前几天学过且到期的词。当天错词再练不增加复习数量。选对后输入${this.scheduler.languageName}单词${this.requireChinese ? "，再输入一个中文释义" : "即可完成"}。</p>
         <div class="english-task">
           <p class="english-kind question-label"></p>
           <p class="english-prompt chinese"></p>
@@ -24,8 +25,8 @@
               <button class="secondary english-speak-word" type="button">🔊 单词发音</button>
             </div>
             <label>输入${this.scheduler.languageName}单词<input class="english-input" lang="en" dir="ltr" type="text" spellcheck="false" autocomplete="off" autocapitalize="none"></label>
-            <label>输入中文释义（多个释义任选一个）<input class="english-chinese-input" lang="zh-CN" type="text" autocomplete="off" disabled></label>
-            <p class="english-note">${this.scheduler.languageName}拼对后自动进入中文输入框；中文答对后按回车进入下一词。</p>
+            <label ${this.requireChinese ? "" : "hidden"}>输入中文释义（多个释义任选一个）<input class="english-chinese-input" lang="zh-CN" type="text" autocomplete="off" disabled></label>
+            <p class="english-note">${this.requireChinese ? "英文拼对后自动进入中文输入框；中文答对后按回车进入下一词。" : "阿语拼对后完成本词，按回车进入下一词。"}</p>
             <details class="english-credit"><summary>词条来源</summary><p></p><a target="_blank" rel="noopener" href="games/english-sources.html">查看题库选词规则与来源</a></details>
           </div>
         </div>
@@ -177,7 +178,7 @@
       if (this.replay) this.el.kind.textContent = `重新学习 · ${this.current.category} · ${this.current.pos}`;
       if (this.relearning) {
         this.el.kind.textContent = `测试未过关 · 本页重新学习 · 剩余 ${studyWords.length} 词`;
-        this.el.feedback.textContent = `必须重新学完本页全部单词才能重考：选对后输入${this.scheduler.languageName}单词和一个中文释义。`;
+        this.el.feedback.textContent = `必须重新学完本页全部单词才能重考：选对后输入${this.scheduler.languageName}单词${this.requireChinese ? "和一个中文释义" : ""}。`;
       }
       this.el.prompt.textContent = this.current.zh;
       this.example = this.scheduler.languageCode === "ar" ? [{ text: this.current.exampleAr || "", lang: "ar" }, { text: this.current.exampleZh || "", lang: "zh-CN" }] : EnglishLearning.exampleParts(this.current);
@@ -210,7 +211,8 @@
       this.el["choice-entry"].hidden = this.selected;
       this.el["choice-number"].value = "";
       this.renderChoices();
-      (this.selected ? this.chineseInput.disabled ? this.el.input : this.chineseInput : this.el["choice-number"]).focus({ preventScroll: true });
+      (this.selected ? !this.requireChinese || this.chineseInput.disabled ? this.el.input : this.chineseInput : this.el["choice-number"]).focus({ preventScroll: true });
+      if (!this.requireChinese && this.selected) this.updateInput();
       this.onChange("question-loaded");
     }
     renderChoices() {
@@ -271,13 +273,14 @@
       this.saveDraft();
       if (typed.toLowerCase() !== this.current.word.toLowerCase()) return;
       this.el.input.readOnly = true;
+      if (!this.requireChinese) { this.completeAnswer(); return; }
       this.chineseInput.disabled = false;
       this.chineseInput.focus();
       this.el.feedback.textContent = `${this.scheduler.languageName}正确，请输入中文释义，多个释义任选一个即可。`;
     }
     completeAnswer() {
-      if (this.ensureDate() || !this.current || !this.selected || this.finished || this.chineseInput.disabled) return;
-      if (this.el.input.value.toLowerCase() !== this.current.word.toLowerCase() || !EnglishLearning.matchesMeaning(this.chineseInput.value, this.current.zh)) return;
+      if (this.ensureDate() || !this.current || !this.selected || this.finished || this.requireChinese && this.chineseInput.disabled) return;
+      if (this.el.input.value.toLowerCase() !== this.current.word.toLowerCase() || this.requireChinese && !EnglishLearning.matchesMeaning(this.chineseInput.value, this.current.zh)) return;
       let result;
       if (this.relearning) {
         if (!this.wrong) this.scheduler.completeTestStudy(this.current.id);

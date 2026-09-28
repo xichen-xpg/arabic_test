@@ -75,8 +75,9 @@ const server = http.createServer((req, res) => {
       const word = await page.evaluate(() => arabicPractice.current);
       await panel.getByRole("button", { name: word.word, exact: true }).click();
       await panel.locator(".english-input").fill(word.word);
-      await panel.locator(".english-chinese-input").fill(word.zh);
-      await panel.locator(".english-chinese-input").press("Enter");
+      assert.equal(await panel.locator(".english-chinese-input").isHidden(), true);
+      assert.equal(await page.evaluate(() => arabicPractice.finished), true);
+      await panel.locator(".english-input").press("Enter");
     }
     assert.deepEqual((await page.evaluate(() => testSpeech.slice(-2))).map(part => part.lang), ["ar", "zh-CN"]);
     for (let index = 0; index < 6; index++) {
