@@ -1312,10 +1312,19 @@
     const englishSourceKey = "daily-english";
     const englishScheduler = new EnglishLearning.Scheduler(window.dailyEnglishQuestionBank, localStorage);
     const arabicStorageKey = "arabic-test:arabic-learning:v1";
-    const arabicLearningBank = [...dailyArabicBank, ...allQuestions].filter((word, index, bank) => bank.findIndex(item => item.ar === word.ar) === index)
+    const arabicLearningBank = [...dailyArabicBank].reverse().concat([...allQuestions].reverse()).filter((word, index, bank) => bank.findIndex(item => item.ar === word.ar) === index)
       .map(word => ({ ...word, id: `arabic:${word.ar}`, word: word.ar, phonetic: word.rom, source: dailyArabicSourceKey }));
     const arabicScheduler = new EnglishLearning.Scheduler(arabicLearningBank, localStorage, EnglishLearning.today,
       { storageKey: arabicStorageKey, languageName: "阿语", languageCode: "ar" });
+    // Rebuild today's saved plan once when switching to newest-first learning.
+    if (arabicScheduler.load().selectionOrder !== "newest-first-v1") {
+      const date = arabicScheduler.clock();
+      if (arabicScheduler.load().days[date]) arabicScheduler.syncTestLearning();
+      const state = arabicScheduler.load();
+      delete state.days[date];
+      state.selectionOrder = "newest-first-v1";
+      arabicScheduler.save(state);
+    }
     const dailyArabicRotationStartKey = "2026-09-03";
     const dailyArabicNewCount = 3;
     const dailyArabicRecentDays = 5;

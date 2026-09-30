@@ -1,0 +1,44 @@
+const { test } = require("node:test");
+const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const vm = require("node:vm");
+const { Scheduler } = require("../games/english-scheduler.js");
+
+test("newest-first migration rebuilds today once and retains learned words and history", () => {
+  const context = { window: {}, allQuestions: [], dailyArabicSourceKey: "daily-arabic" };
+  vm.createContext(context);
+  vm.runInContext(fs.readFileSync(require.resolve("../games/daily-arabic.js"), "utf8"), context);
+  const html = fs.readFileSync(require.resolve("../games/arabic-test.html"), "utf8");
+  const declaration = html.match(/const arabicLearningBank = [\s\S]*?;\r?\n/)[0];
+  vm.runInContext(`const dailyArabicBank = window.dailyArabicQuestionBank; ${declaration}
+    globalThis.bank = arabicLearningBank;`, context);
+  const data = new Map();
+  const storage = { getItem: key => data.get(key), setItem: (key, value) => data.set(key, value) };
+  let date = "2026-09-29";
+  const old = new Scheduler([...context.bank].reverse(), storage, () => date);
+  old.plan();
+  const history = JSON.stringify(old.load().days[date]);
+  date = "2026-09-30";
+  const original = old.plan();
+  old.complete(original.fresh[0]);
+  const passed = old.load();
+  passed.days[date].test.completed = [0];
+  old.save(passed);
+  context.arabicScheduler = new Scheduler(context.bank, storage, () => date);
+  const migration = html.slice(html.indexOf('    if (arabicScheduler.load().selectionOrder'), html.indexOf('    const dailyArabicRotationStartKey'));
+  vm.runInContext(migration, context);
+  const scheduler = context.arabicScheduler;
+  const state = scheduler.load();
+  original.fresh.slice(0, 10).forEach(id => assert.ok(state.records[id]));
+  assert.equal(JSON.stringify(state.days["2026-09-29"]), history);
+  const expected = Array.from(context.bank).filter(word => !state.records[word.id]).slice(0, 20).map(word => word.id);
+  assert.deepEqual(Array.from(scheduler.plan().fresh), expected);
+  assert.equal(scheduler.plan().test.passed, 0);
+  scheduler.complete(expected[0]);
+  const saved = JSON.stringify(scheduler.load());
+  vm.runInContext(migration, context);
+  assert.equal(JSON.stringify(scheduler.load()), saved);
+  date = "2026-10-01";
+  assert.ok(!scheduler.plan().fresh.includes(expected[0]));
+  assert.equal(scheduler.plan().fresh[0], expected[1]);
+});

@@ -40,6 +40,14 @@ const server = http.createServer((req, res) => {
     assert.equal(await panel.isVisible(), true);
     assert.match(await panel.locator(".english-progress").innerText(), /新词 0\/20 · 复习 0\/0/);
     assert.equal(await panel.locator(".english-input").getAttribute("dir"), "rtl");
+    const selection = await page.evaluate(() => ({
+      expected: [...new Set([...dailyArabicBank].reverse().map(word => `arabic:${word.ar}`))].slice(0, 20),
+      actual: arabicScheduler.plan().fresh,
+      lastWord: dailyArabicBank[dailyArabicBank.length - 1].ar,
+      firstWord: arabicLearningBank[0].ar
+    }));
+    assert.deepEqual(selection.actual, selection.expected);
+    assert.equal(selection.firstWord, selection.lastWord);
     const added = await page.evaluate(() => dailyArabicBank.filter(word => word.exampleAr));
     assert.equal(added.length, 13);
     assert.equal(new Set(added.map(word => word.exampleAr)).size, 13);
