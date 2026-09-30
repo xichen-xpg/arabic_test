@@ -22,13 +22,16 @@ test("newest-first migration rebuilds today once and retains learned words and h
   const original = old.plan();
   old.complete(original.fresh[0]);
   const passed = old.load();
+  passed.selectionOrder = "newest-first-v1";
   passed.days[date].test.completed = [0];
   old.save(passed);
   context.arabicScheduler = new Scheduler(context.bank, storage, () => date);
-  const migration = html.slice(html.indexOf('    if (arabicScheduler.load().selectionOrder'), html.indexOf('    const dailyArabicRotationStartKey'));
+  const migration = html.slice(html.indexOf('    if (arabicScheduler.load().selectionOrder'), html.indexOf('    const englishPractice'));
+  assert.ok(html.indexOf('if (!localStorage.getItem(arabicStorageKey))') < html.indexOf(migration));
   vm.runInContext(migration, context);
   const scheduler = context.arabicScheduler;
   const state = scheduler.load();
+  assert.equal(state.selectionOrder, "newest-first-v2");
   original.fresh.slice(0, 10).forEach(id => assert.ok(state.records[id]));
   assert.equal(JSON.stringify(state.days["2026-09-29"]), history);
   const expected = Array.from(context.bank).filter(word => !state.records[word.id]).slice(0, 20).map(word => word.id);
