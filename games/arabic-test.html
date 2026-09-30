@@ -1663,15 +1663,6 @@
         arabicScheduler.save(saved);
       }
     }
-    // Import legacy progress before rebuilding today's plan with the current bank.
-    if (arabicScheduler.load().selectionOrder !== "newest-first-v2") {
-      const date = arabicScheduler.clock();
-      if (arabicScheduler.load().days[date]) arabicScheduler.syncTestLearning();
-      const state = arabicScheduler.load();
-      delete state.days[date];
-      state.selectionOrder = "newest-first-v2";
-      arabicScheduler.save(state);
-    }
     const englishPractice = new EnglishPractice(document.querySelector("#englishPanel"), englishScheduler, (eventName) => {
       current = englishPractice.current;
       if (englishScheduler.summary().done) markDailyCheckin(englishSourceKey);
