@@ -2,6 +2,18 @@
   const $ = id => document.getElementById(id);
   let lesson, state = null, connected = false, busy = false, offset = 0;
   const reportKey = 'math:reports';
+  const downloadKey = 'math:downloads';
+  const today = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Dubai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+  function localPlan() {
+    const records = JSON.parse(localStorage.getItem(downloadKey) || '{}');
+    const date = today();
+    state = records[date] || null;
+    const last = Object.keys(records).sort().at(-1);
+    const index = state?.lessonIndex ?? (last ? records[last].lessonIndex + 1 : 0);
+    lesson = bank.lessons[index] || null;
+    $('lessonMeta').textContent = `${date} · ${lesson?.questions.length || 0} 道单选题 · 下载后开始30分钟计时`;
+    return { records, date, index };
+  }
   $('apiBase').value = window.mathConfig.apiBase || localStorage.getItem('math:api') || '';
   $('accessCode').value = sessionStorage.getItem('math:access') || '';
   const notice = message => { $('notice').textContent = message; };
@@ -44,12 +56,17 @@
     const remaining = state ? Math.max(0, state.deadline - (state.sentAt || Date.now() + offset)) : 1800000;
     const seconds = Math.ceil(remaining / 1000);
     $('timer').textContent = `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`;
-    $('download').disabled = busy || !connected || !lesson;
+    $('download').disabled = busy || !lesson;
     $('download').textContent = state ? '重新下载 PPT（不重置计时）' : '开始并下载 PPT';
     $('send').disabled = busy || !connected || !state || !!state.sentAt;
+    $('submitForm').hidden = !connected;
+    $('automaticNote').hidden = !connected;
+    $('manualMail').hidden = connected;
+    const title = state?.title || `${today().replaceAll('-', '')}_${lesson?.title || '数学作业'}`;
+    $('emailLink').href = `mailto:xichen.app@gmail.com?subject=${encodeURIComponent(title)}&body=${encodeURIComponent('数学作业见附件。请在发送前添加已完成的PPTX文件。')}`;
     $('result').textContent = state?.sentAt
       ? `${state.onTime ? '今日数学完成 ✓' : '超时提交，未获得按时完成打卡'} · 用时 ${Math.ceil((state.sentAt - state.startedAt) / 1000)} 秒 · 邮件已发送`
-      : state && remaining === 0 ? '30分钟已到，仍可发送作业，但不计按时完成。' : '';
+      : state && remaining === 0 ? (connected ? '30分钟已到，仍可发送作业，但不计按时完成。' : '30分钟已到。答完后仍可通过邮箱发送作业。') : '';
   }
   async function connect() {
     connected = false; tick();
@@ -72,9 +89,9 @@
   try {
     const response = await fetch('../data/math/lessons.json');
     if (!response.ok) throw new Error('学习材料加载失败。');
-    bank = await response.json(); lesson = bank.lessons[0]; draw();
+    bank = await response.json(); localPlan(); draw();
     if ($('apiBase').value && $('accessCode').value) await connect();
-    else { $('connection').open = true; notice('可先阅读。下载计时与发邮件需要先连接作业服务。'); }
+    else notice(lesson ? '直接点击下载即可，无需登录或连接服务。答完后将PPTX作为邮件附件发送。' : '当前五课已下载完，后续课程待补充。');
   } catch (error) { notice(error.message); }
   $('connectForm').addEventListener('submit', async event => {
     event.preventDefault(); if (busy) return; busy = true; tick();
@@ -85,14 +102,24 @@
     if (busy) return; busy = true; tick();
     try {
       if (!state) {
-        state = await api('/start', { method: 'POST' });
+        if (connected) state = await api('/start', { method: 'POST' });
+        else {
+          const plan = localPlan();
+          if (!lesson) throw new Error('当前课程已完成。');
+          if (!state) {
+            const startedAt = Date.now();
+            state = { manual: true, date: plan.date, lessonIndex: plan.index, title: `${plan.date.replaceAll('-', '')}_${lesson.title}`, startedAt, deadline: startedAt + 1800000 };
+            plan.records[plan.date] = state;
+            localStorage.setItem(downloadKey, JSON.stringify(plan.records));
+          }
+        }
         lesson = bank.lessons[state.lessonIndex];
         $('lessonMeta').textContent = `${state.date} · ${lesson.questions.length} 道单选题 · 30分钟`;
       }
-      sessionStorage.setItem('math:active', state.id);
-      saveReport(state); draw();
+      if (connected) { sessionStorage.setItem('math:active', state.id); saveReport(state); }
+      draw();
       await window.MathPpt.create(lesson, state.title).writeFile({ fileName: `${state.title}.pptx`, compression: true });
-      notice('下载已发起，计时中。作答后上传并发送；重复下载不会重置计时。');
+      notice(connected ? '下载已发起，计时中。作答后上传并发送；重复下载不会重置计时。' : 'PPTX已开始下载。请在PowerPoint中作答，保存后作为附件发邮件；重复下载不会重置计时。');
     } catch (error) { notice(`${error.message} 如下载失败，可重新下载，原计时仍保留。`); }
     finally { busy = false; tick(); }
   });

@@ -9,15 +9,7 @@
 <body>
   <main>
     <nav><a href="arabic-test.html">返回练习</a><a href="arabic-test.html#checkin">每日打卡</a></nav>
-    <header><p class="eyebrow">初一数学 · 每天一课</p><h1 id="lessonTitle">正数和负数</h1><p id="lessonMeta">先阅读，再下载PPT作答。请在30分钟内上传并发送邮件。</p></header>
-    <details id="connection"><summary>连接作业服务</summary>
-      <form id="connectForm">
-        <label>作业服务地址<input id="apiBase" type="url" placeholder="https://你的作业服务地址" required></label>
-        <label>家庭访问码<input id="accessCode" type="password" autocomplete="current-password" required minlength="16"></label>
-        <button type="submit">连接并恢复进度</button>
-      </form>
-      <p>访问码由家长在后端设置，不是邮箱密码；仅在当前浏览器会话中保存。</p>
-    </details>
+    <header><p class="eyebrow">初一数学 · 每天一课</p><h1 id="lessonTitle">正数和负数</h1><p id="lessonMeta">阅读材料 → 下载答题PPTX → 在PPT中作答 → 发邮件</p></header>
     <p id="notice" role="status" aria-live="polite">正在加载学习材料…</p>
     <section id="materials" aria-label="学习材料"></section>
     <section class="assignment" aria-label="今日作业">
@@ -26,17 +18,30 @@
       <p class="clock">剩余时间 <strong id="timer">30:00</strong></p>
       <button id="download" disabled>开始并下载 PPT</button>
       <p id="filename"></p>
-      <form id="submitForm">
+      <div id="manualMail">
+        <p>答完并保存后，发送到 <strong>xichen.app@gmail.com</strong>，邮件主题与PPT文件名一致（不含.pptx）。</p>
+        <a id="emailLink" href="mailto:xichen.app@gmail.com">打开邮箱写邮件</a>
+        <p>请手动添加完成的PPTX附件。网页不能自动添加附件，也无法确认手动发送时间；倒计时供作答参考，不会据此自动打卡。</p>
+      </div>
+      <form id="submitForm" hidden>
         <label>选择作答文件（PPTX，不超过10MB）<input id="answerFile" type="file" accept=".pptx,application/vnd.openxmlformats-officedocument.presentationml.presentation" required></label>
         <button id="send" type="submit" disabled>上传并发送邮件</button>
       </form>
-      <p>发送到 xichen.app@gmail.com。邮件服务确认成功后停止计时；30分钟内完成即打卡，超时仍可发送。这里只记录提交，不批改答案。</p>
+      <p id="automaticNote" hidden>发送到 xichen.app@gmail.com。邮件服务确认成功后停止计时；30分钟内完成即打卡，超时仍可发送。这里只记录提交，不批改答案。</p>
       <p id="result" role="status"></p>
     </section>
+    <details id="connection"><summary>可选：连接自动发信服务</summary>
+      <form id="connectForm">
+        <label>作业服务地址<input id="apiBase" type="url" placeholder="https://你的作业服务地址" required></label>
+        <label>家庭访问码<input id="accessCode" type="password" autocomplete="current-password" required minlength="16"></label>
+        <button type="submit">连接并恢复进度</button>
+      </form>
+      <p>仅自动发信和核验打卡需要连接；下载PPT不需要。访问码不是邮箱密码。</p>
+    </details>
   </main>
   <script src="../assets/vendor/pptxgen.bundle.js"></script>
   <script src="math-config.js"></script>
   <script src="math-ppt.js"></script>
-  <script src="daily-math.js"></script>
+  <script src="daily-math.js?v=20261005-direct-download"></script>
 </body>
 </html>
