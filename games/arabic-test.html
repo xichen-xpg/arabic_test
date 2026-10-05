@@ -844,6 +844,7 @@
             <option value="games/pikachu-volleyball/zh/index.html?v=20260614life">Pikachu</option>
           </select>
           <a id="checkinLink" class="checkin-link" href="#checkin">每日打卡</a>
+          <a class="checkin-link" href="games/daily-math.html">每日数学 · PPT作业</a>
         </div>
 
         <div id="englishPanel" hidden></div>
@@ -1892,6 +1893,14 @@
         : new Set((byDate[source] || []).filter((index) => Number.isInteger(index) && index >= 0 && index < total)).size;
 
       const result = [];
+      try {
+        const math = JSON.parse(localStorage.getItem("math:reports") || "{}")[dateKey];
+        if (math || dateKey === localDateKey()) result.push({
+          source: "daily-math", label: "数学完成", checkOnly: true,
+          done: !!math?.onTime,
+          timeLabel: math?.sentAt ? (math.onTime ? " · 按时发送" : " · 超时提交") : ""
+        });
+      } catch { /* Keep the other subjects available if local math data is damaged. */ }
       const arabic = arabicScheduler.summary(dateKey);
       if (arabic) {
         const timing = arabicScheduler.testSummary(dateKey);

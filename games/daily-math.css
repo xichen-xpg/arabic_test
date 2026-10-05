@@ -1,0 +1,23 @@
+:root { color-scheme: light; font-family: "Microsoft YaHei", "Segoe UI", sans-serif; color: #17202a; background: #f4f7fb; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 900px; margin: auto; padding: 24px; }
+nav { display: flex; gap: 24px; }
+a { color: #0f766e; }
+header { margin: 36px 0 24px; }
+h1 { font-size: 34px; margin: 10px 0; }
+h2 { font-size: 22px; }
+p { line-height: 1.85; }
+.eyebrow { color: #0f766e; font-weight: 700; }
+#materials article { background: #fff; border-left: 4px solid #0f766e; padding: 12px 24px; margin: 18px 0; }
+.assignment { margin-top: 28px; padding: 24px; border: 1px solid #d7dee8; border-radius: 12px; background: white; }
+details { border-bottom: 1px solid #d7dee8; padding-bottom: 16px; }
+summary { cursor: pointer; }
+label { display: block; margin: 16px 0; line-height: 1.6; }
+input { display: block; margin-top: 6px; width: 100%; padding: 10px; border: 1px solid #bbc5d1; border-radius: 6px; font: inherit; }
+button { background: #0f766e; color: white; border: 0; border-radius: 8px; padding: 13px 20px; font: inherit; font-weight: 700; cursor: pointer; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.clock strong { font-size: 32px; font-variant-numeric: tabular-nums; margin-left: 12px; }
+#notice, #result { color: #92400e; overflow-wrap: anywhere; }
+#filename { overflow-wrap: anywhere; color: #667085; }
+@media(max-width: 480px) { main { padding: 16px; } .assignment { padding: 16px; } h1 { font-size: 28px; } }

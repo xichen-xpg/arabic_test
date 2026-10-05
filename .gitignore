@@ -1,3 +1,7 @@
 .work-english/
 __pycache__/
 *.pyc
+.math-server/
+.math-test/
+.env
+server/.env
