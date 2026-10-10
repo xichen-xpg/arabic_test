@@ -20,7 +20,7 @@
     save();
     $('readingTitle').textContent = reading.title;
     const category = { modern: '现代文', classical_prose: '文言文', classical_poetry: '古诗词' }[reading.category];
-    $('readingMeta').textContent = `${date} · 第 ${state.index + 1}/${bank.readings.length} 篇 · ${reading.author} · ${category}`;
+    $('readingMeta').textContent = `${date} · 第 ${state.index + 1}/${bank.readings.length} 篇 · ${reading.author} · ${category} · 预计${reading.estimatedMinutes}分钟`;
     $('readingText').textContent = reading.text;
     $('notice').textContent = '先读原文，再完成五道单选题。提交后查看答案与解析。';
     function showResult() {

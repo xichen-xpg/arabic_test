@@ -209,7 +209,9 @@ def attach_teaching(bank):
         key = (question['subject'], question['number'])
         question['teaching'] = {**modules[key], 'method': question['knowledge']}
         used.add(key)
-    assert used == set(modules), ('Unused teaching', set(modules) - used)
+    active = {s['id'] for s in bank['subjects']}
+    expected = {key for key in modules if key[0] in active}
+    assert used == expected, ('Unused teaching', expected - used)
     return bank
 
 

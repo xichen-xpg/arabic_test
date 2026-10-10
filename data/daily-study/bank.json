@@ -1,31 +1,7 @@
 {
-  "version": "nine-subjects-20261010",
+  "version": "eight-subjects-20261010",
   "minutes": 60,
   "subjects": [
-    {
-      "id": "chinese",
-      "name": "语文",
-      "short": [
-        "chinese-2023-2-short",
-        "chinese-2023-3-short",
-        "chinese-2023-4-short",
-        "chinese-2023-5-short",
-        "chinese-2023-6-short",
-        "chinese-2023-7-short",
-        "chinese-2023-8-short",
-        "chinese-2023-9-short",
-        "chinese-2023-11-short",
-        "chinese-2023-12-short"
-      ],
-      "focus": [
-        "chinese-2023-10-focus",
-        "chinese-2023-13-focus",
-        "chinese-2023-14-focus",
-        "chinese-2023-17-focus",
-        "chinese-2023-21-focus",
-        "chinese-2023-24-focus"
-      ]
-    },
     {
       "id": "math",
       "name": "数学",
@@ -302,709 +278,6 @@
     }
   ],
   "questions": {
-    "chinese-2023-2-short": {
-      "id": "chinese-2023-2-short",
-      "subject": "chinese",
-      "topic": "字形与词义",
-      "knowledge": "把词语放回语境，依据词义辨别同音字。",
-      "source": "2023年北京中考语文 第2题",
-      "number": 2,
-      "numbers": [
-        2
-      ],
-      "year": 2023,
-      "kind": "short",
-      "ranges": [
-        [
-          10,
-          17
-        ]
-      ],
-      "question": "questions/chinese-2023-2-short.html",
-      "answer": "answers/chinese-2023-2-short.html",
-      "pages": [
-        {
-          "src": "pages/chinese-2023-2-short-1.png",
-          "width": 1000,
-          "height": 369
-        },
-        {
-          "src": "pages/chinese-2023-2-short-2.png",
-          "width": 1000,
-          "height": 195
-        }
-      ],
-      "teaching": {
-        "concept": "辨析字形要用词义检验字义。同音字声音相同，但所表示的意思可能不同；先解释整个词，再看其中的字能否表达这个意思，必要时联系偏旁和常见搭配。",
-        "example": "“迫不及待”表示急迫得不能再等待，“及”有达到、赶上的意思；写成“迫不急待”虽然读音相近，却混用了“急”。“及格”同样用“及”，表示达到标准。",
-        "pitfall": "不能只凭读音选字，也不要见到熟悉词形就跳过词义核对。",
-        "exampleLabel": "原创讲解例子（非中考真题）",
-        "method": "把词语放回语境，依据词义辨别同音字。"
-      }
-    },
-    "chinese-2023-3-short": {
-      "id": "chinese-2023-3-short",
-      "subject": "chinese",
-      "topic": "成语运用",
-      "knowledge": "判断成语的含义、感情色彩和适用对象是否符合语境。",
-      "source": "2023年北京中考语文 第3题",
-      "number": 3,
-      "numbers": [
-        3
-      ],
-      "year": 2023,
-      "kind": "short",
-      "ranges": [
-        [
-          18,
-          22
-        ]
-      ],
-      "question": "questions/chinese-2023-3-short.html",
-      "answer": "answers/chinese-2023-3-short.html",
-      "pages": [
-        {
-          "src": "pages/chinese-2023-3-short-1.png",
-          "width": 1000,
-          "height": 380
-        },
-        {
-          "src": "pages/chinese-2023-3-short-2.png",
-          "width": 1000,
-          "height": 11
-        }
-      ],
-      "teaching": {
-        "concept": "成语有固定含义、使用对象和感情色彩。判断是否合适，要依次检查句子所说的事、成语适用的对象，以及褒贬和程度是否一致。",
-        "example": "“队员配合默契，终于力挽狂澜。”若上下文说球队从大比分落后到逆转，成语恰当；若只是轻松赢球，就没有“挽救危急局势”的条件。",
-        "pitfall": "成语中的单个字不能代替整个成语的含义。",
-        "exampleLabel": "原创讲解例子（非中考真题）",
-        "method": "判断成语的含义、感情色彩和适用对象是否符合语境。"
-      }
-    },
-    "chinese-2023-4-short": {
-      "id": "chinese-2023-4-short",
-      "subject": "chinese",
-      "topic": "词语的语境义",
-      "knowledge": "联系词典基本义和上下文，分析词义的引申。",
-      "source": "2023年北京中考语文 第4题",
-      "number": 4,
-      "numbers": [
-        4
-      ],
-      "year": 2023,
-      "kind": "short",
-      "ranges": [
-        [
-          23,
-          27
-        ]
-      ],
-      "question": "questions/chinese-2023-4-short.html",
-      "answer": "answers/chinese-2023-4-short.html",
-      "pages": [
-        {
-          "src": "pages/chinese-2023-4-short-1.png",
-          "width": 1000,
-          "height": 365
-        },
-        {
-          "src": "pages/chinese-2023-4-short-2.png",
-          "width": 1000,
-          "height": 178
-        }
-      ],
-      "teaching": {
-        "concept": "词语的意思由字义和上下文共同决定。辨字形时，把容易混淆的字放回词中，检查偏旁与含义；解释语境义时，先说本义，再说明它在句中指什么。",
-        "example": "“这条小路连接了两代人的记忆。”连接本指相互衔接；这里连接的是记忆，说明小路承载共同经历，使两代人产生情感联系。不能只解释为“连在一起”。",
-        "pitfall": "不要脱离语境机械抄词典释义，也不要只凭读音判断字形。",
-        "exampleLabel": "原创讲解例子（非中考真题）",
-        "method": "联系词典基本义和上下文，分析词义的引申。"
-      }
-    },
-    "chinese-2023-5-short": {
-      "id": "chinese-2023-5-short",
-      "subject": "chinese",
-      "topic": "病句修改",
-      "knowledge": "检查主语与谓语是否搭配，删改后保持原意。",
-      "source": "2023年北京中考语文 第5题",
-      "number": 5,
-      "numbers": [
-        5
-      ],
-      "year": 2023,
-      "kind": "short",
-      "ranges": [
-        [
-          23,
-          25
-        ],
-        [
-          28,
-          28
-        ]
-      ],
-      "question": "questions/chinese-2023-5-short.html",
-      "answer": "answers/chinese-2023-5-short.html",
-      "pages": [
-        {
-          "src": "pages/chinese-2023-5-short-1.png",
-          "width": 1000,
-          "height": 365
-        },
-        {
-          "src": "pages/chinese-2023-5-short-2.png",
-          "width": 1000,
-          "height": 51
-        }
-      ],
-      "teaching": {
-        "concept": "病句修改先抓主干：谁，做什么，怎么样。检查成分是否缺失、主谓宾是否搭配，再检查关联词、语序及前后逻辑。修改时保留原意。",
-        "example": "“通过这次活动，使我理解了合作。”先找主语，发现“通过”和“使”让句子缺少主语。删去“通过”，成为“这次活动使我理解了合作”。",
-        "pitfall": "不要为了改病句额外增加原文没有的信息。",
-        "exampleLabel": "原创讲解例子（非中考真题）",
-        "method": "检查主语与谓语是否搭配，删改后保持原意。"
-      }
-    },
-    "chinese-2023-6-short": {
-      "id": "chinese-2023-6-short",
-      "subject": "chinese",
-      "topic": "句式与表达",
-      "knowledge": "并列内容应结构一致、意义连贯，避免中途更换主语。",
-      "source": "2023年北京中考语文 第6题",
-      "number": 6,
-      "numbers": [
-        6
-      ],
-      "year": 2023,
-      "kind": "short",
-      "ranges": [
-        [
-          29,
-          35
-        ]
-      ],
-      "question": "questions/chinese-2023-6-short.html",
-      "answer": "answers/chinese-2023-6-short.html",
-      "pages": [
-        {
-          "src": "pages/chinese-2023-6-short-1.png",
-          "width": 1000,
-          "height": 380
-        },
-        {
-          "src": "pages/chinese-2023-6-short-2.png",
-          "width": 1000,
-          "height": 57
-        }
-      ],
-      "teaching": {
-        "concept": "连贯表达要求话题一致、指代明确、逻辑衔接。补句先看上下句分别谈什么，再判断空缺处承担总领、承接、转折还是总结作用。",
-        "example": "“院里很静。____。我放轻了脚步。”补“只有树叶在风中轻响”既延续安静的环境，又解释后句动作；补突然热闹的场景则破坏衔接。",
-        "pitfall": "句子单独通顺不代表放进语段就恰当。",
-        "exampleLabel": "原创讲解例子（非中考真题）",
-        "method": "并列内容应结构一致、意义连贯，避免中途更换主语。"
-      }
-    },
-    "chinese-2023-7-short": {
-      "id": "chinese-2023-7-short",
-      "subject": "chinese",
-      "topic": "语段补写",
-      "knowledge": "承接前文的研究过程，使用指定词语，补足逻辑链。",
-      "source": "2023年北京中考语文 第7题",
-      "number": 7,
-      "numbers": [
-        7
-      ],
-      "year": 2023,
-      "kind": "short",
-      "ranges": [
-        [
-          36,
-          38
-        ]
-      ],
-      "question": "questions/chinese-2023-7-short.html",
-      "answer": "answers/chinese-2023-7-short.html",
-      "pages": [
-        {
-          "src": "pages/chinese-2023-7-short-1.png",
-          "width": 1000,
-          "height": 326
-        }
-      ],
-      "teaching": {
-        "concept": "连贯表达要求话题一致、指代明确、逻辑衔接。补句先看上下句分别谈什么，再判断空缺处承担总领、承接、转折还是总结作用。",
-        "example": "“院里很静。____。我放轻了脚步。”补“只有树叶在风中轻响”既延续安静的环境，又解释后句动作；补突然热闹的场景则破坏衔接。",
-        "pitfall": "句子单独通顺不代表放进语段就恰当。",
-        "exampleLabel": "原创讲解例子（非中考真题）",
-        "method": "承接前文的研究过程，使用指定词语，补足逻辑链。"
-      }
-    },
-    "chinese-2023-8-short": {
-      "id": "chinese-2023-8-short",
-      "subject": "chinese",
-      "topic": "古诗文默写",
-      "knowledge": "理解情境要求再默写，检查易错字和句子出处。",
-      "source": "2023年北京中考语文 第8题",
-      "number": 8,
-      "numbers": [
-        8
-      ],
-      "year": 2023,
-      "kind": "short",
-      "ranges": [
-        [
-          41,
-          44
-        ]
-      ],
-      "question": "questions/chinese-2023-8-short.html",
-      "answer": "answers/chinese-2023-8-short.html",
-      "pages": [
-        {
-          "src": "pages/chinese-2023-8-short-1.png",
-          "width": 1000,
-          "height": 254
-        }
-      ],
-      "teaching": {
-        "concept": "理解性默写先把题干中的情境对应到诗文意思，再回忆准确原句。书写时逐字核对同音字、形近字和虚词，不能用自己的话替代原句。",
-        "example": "自拟要求：写出孟浩然《春晓》中从听觉描写春晨的诗句。先抓“听觉”对应鸟鸣，再回忆“处处闻啼鸟”；最后核对“啼”表示鸟叫，不写成“提”。",
-        "pitfall": "背得流利不等于写得准确；订正后应隔一段时间再默写。",
-        "exampleLabel": "原创讲解例子（非中考真题）",
-        "method": "理解情境要求再默写，检查易错字和句子出处。"
-      }
-    },
-    "chinese-2023-9-short": {
-      "id": "chinese-2023-9-short",
-      "subject": "chinese",
-      "topic": "诗歌内容概括",
-      "knowledge": "按诗句顺序概括所写的事，分清出行目的、沿途所见和结尾消息。",
-      "source": "2023年北京中考语文 第9题",
-      "number": 9,
-      "numbers": [
-        9
-      ],
-      "year": 2023,
-      "kind": "short",
-      "ranges": [
-        [
-          46,
-          54
-        ]
-      ],
-      "question": "questions/chinese-2023-9-short.html",
-      "answer": "answers/chinese-2023-9-short.html",
-      "pages": [
-        {
-          "src": "pages/chinese-2023-9-short-1.png",
-          "width": 1000,
-          "height": 354
-        },
-        {
-          "src": "pages/chinese-2023-9-short-2.png",
-          "width": 1000,
-          "height": 138
-        }
-      ],
-      "teaching": {
-        "concept": "诗歌先读人物、时间、地点和意象，形成画面，再结合动作与语气判断情感。赏析词句要说明具体写出了什么，怎样写，为什么能传达这种情感。",
-        "example": "自拟句“暮色里，归鸟掠过空院”：暮色交代傍晚，归鸟的动与空院的静相衬；“空”突出无人，营造清寂氛围。若谈思念，还要有上下文依据。",
-        "pitfall": "不能看到月亮就一律答思乡；情感必须由诗句和语境支持。",
-        "exampleLabel": "原创讲解例子（非中考真题）",
-        "method": "按诗句顺序概括所写的事，分清出行目的、沿途所见和结尾消息。"
-      }
-    },
-    "chinese-2023-11-short": {
-      "id": "chinese-2023-11-short",
-      "subject": "chinese",
-      "topic": "文言实词",
-      "knowledge": "结合句法和语境理解实词，比较古今义及一词多义。",
-      "source": "2023年北京中考语文 第11题",
-      "number": 11,
-      "numbers": [
-        11
-      ],
-      "year": 2023,
-      "kind": "short",
-      "ranges": [
-        [
-          57,
-          62
-        ]
-      ],
-      "question": "questions/chinese-2023-11-short.html",
-      "answer": "answers/chinese-2023-11-short.html",
-      "pages": [
-        {
-          "src": "pages/chinese-2023-11-short-1.png",
-          "width": 1000,
-          "height": 380
-        },
-        {
-          "src": "pages/chinese-2023-11-short-2.png",
-          "width": 1000,
-          "height": 13
-        }
-      ],
-      "teaching": {
-        "concept": "文言实词常有古今异义、一词多义和词类活用。先确定句中位置及搭配，再用候选义替换，检查整句是否合理；翻译要把省略成分补清楚。",
-        "example": "“友人走而告之”中，“走”若译为“步行”，不一定符合急告情境；古义可为“跑”。“之”指谁还需回看上文，不能一律译成“的”。",
-        "pitfall": "熟悉的现代意思未必是文中的意思。",
-        "exampleLabel": "原创讲解例子（非中考真题）",
-        "method": "结合句法和语境理解实词，比较古今义及一词多义。"
-      }
-    },
-    "chinese-2023-12-short": {
-      "id": "chinese-2023-12-short",
-      "subject": "chinese",
-      "topic": "文言情感理解",
-      "knowledge": "结合作者处境和景物描写，区分闲适、豁达与消沉。",
-      "source": "2023年北京中考语文 第12题",
-      "number": 12,
-      "numbers": [
-        12
-      ],
-      "year": 2023,
-      "kind": "short",
-      "ranges": [
-        [
-          57,
-          60
-        ],
-        [
-          63,
-          67
-        ]
-      ],
-      "question": "questions/chinese-2023-12-short.html",
-      "answer": "answers/chinese-2023-12-short.html",
-      "pages": [
-        {
-          "src": "pages/chinese-2023-12-short-1.png",
-          "width": 1000,
-          "height": 380
-        },
-        {
-          "src": "pages/chinese-2023-12-short-2.png",
-          "width": 1000,
-          "height": 152
-        }
-      ],
-      "teaching": {
-        "concept": "文言阅读先还原人物做了什么、为什么做，再从行为与评价中概括情感。比较两文时，围绕同一问题分别找证据，最后说相同点和差异。",
-        "example": "甲文写某人冒雨访师，乙文写某人反复请教。共同点是求学诚恳；甲侧重克服外部困难，乙侧重主动求知。结论要各有行为作证。",
-        "pitfall": "比较不能只复述两篇故事，也不能只用“品质高尚”等空泛评价。",
-        "exampleLabel": "原创讲解例子（非中考真题）",
-        "method": "结合作者处境和景物描写，区分闲适、豁达与消沉。"
-      }
-    },
-    "chinese-2023-10-focus": {
-      "id": "chinese-2023-10-focus",
-      "subject": "chinese",
-      "topic": "诗歌语言赏析",
-      "knowledge": "指出修辞，列出对应词语，再说明画面与情感上的效果。",
-      "source": "2023年北京中考语文 第10题",
-      "number": 10,
-      "numbers": [
-        10
-      ],
-      "year": 2023,
-      "kind": "focus",
-      "ranges": [
-        [
-          46,
-          52
-        ],
-        [
-          55,
-          55
-        ]
-      ],
-      "question": "questions/chinese-2023-10-focus.html",
-      "answer": "answers/chinese-2023-10-focus.html",
-      "pages": [
-        {
-          "src": "pages/chinese-2023-10-focus-1.png",
-          "width": 1000,
-          "height": 354
-        },
-        {
-          "src": "pages/chinese-2023-10-focus-2.png",
-          "width": 1000,
-          "height": 51
-        }
-      ],
-      "teaching": {
-        "concept": "对偶把字数相等、结构相近、意义相关的两个短语或句子配对。赏析时先逐项找对应词，再说明两个画面或意思如何互相补充，以及句式整齐、节奏鲜明的效果。",
-        "example": "自拟句“春风拂柳，细雨润花”：春风对细雨，拂对润，柳对花，结构都是主语＋动词＋宾语。两句合写春景，动作温柔，呈现润泽生机，句式也整齐。",
-        "pitfall": "不能只写“运用对偶、生动形象”；须指出对应词和具体表达内容。",
-        "exampleLabel": "原创讲解例子（非中考真题）",
-        "method": "指出修辞，列出对应词语，再说明画面与情感上的效果。"
-      }
-    },
-    "chinese-2023-13-focus": {
-      "id": "chinese-2023-13-focus",
-      "subject": "chinese",
-      "topic": "文言比较阅读",
-      "knowledge": "先疏通各篇意思，再寻找共同情境与不同感受，引用须准确。",
-      "source": "2023年北京中考语文 第13题",
-      "number": 13,
-      "numbers": [
-        13
-      ],
-      "year": 2023,
-      "kind": "focus",
-      "ranges": [
-        [
-          57,
-          60
-        ],
-        [
-          68,
-          75
-        ]
-      ],
-      "question": "questions/chinese-2023-13-focus.html",
-      "answer": "answers/chinese-2023-13-focus.html",
-      "pages": [
-        {
-          "src": "pages/chinese-2023-13-focus-1.png",
-          "width": 1000,
-          "height": 380
-        },
-        {
-          "src": "pages/chinese-2023-13-focus-2.png",
-          "width": 1000,
-          "height": 362
-        },
-        {
-          "src": "pages/chinese-2023-13-focus-3.png",
-          "width": 1000,
-          "height": 170
-        }
-      ],
-      "teaching": {
-        "concept": "文言阅读先还原人物做了什么、为什么做，再从行为与评价中概括情感。比较两文时，围绕同一问题分别找证据，最后说相同点和差异。",
-        "example": "甲文写某人冒雨访师，乙文写某人反复请教。共同点是求学诚恳；甲侧重克服外部困难，乙侧重主动求知。结论要各有行为作证。",
-        "pitfall": "比较不能只复述两篇故事，也不能只用“品质高尚”等空泛评价。",
-        "exampleLabel": "原创讲解例子（非中考真题）",
-        "method": "先疏通各篇意思，再寻找共同情境与不同感受，引用须准确。"
-      }
-    },
-    "chinese-2023-14-focus": {
-      "id": "chinese-2023-14-focus",
-      "subject": "chinese",
-      "topic": "名著人物",
-      "knowledge": "用具体情节支撑人物特征，避免只写评价词。",
-      "source": "2023年北京中考语文 第14题",
-      "number": 14,
-      "numbers": [
-        14
-      ],
-      "year": 2023,
-      "kind": "focus",
-      "ranges": [
-        [
-          77,
-          77
-        ]
-      ],
-      "question": "questions/chinese-2023-14-focus.html",
-      "answer": "answers/chinese-2023-14-focus.html",
-      "pages": [
-        {
-          "src": "pages/chinese-2023-14-focus-1.png",
-          "width": 1000,
-          "height": 151
-        }
-      ],
-      "teaching": {
-        "concept": "名著人物分析要把判断放回具体情节。先指出人物的选择和行动，再解释它体现的性格；人物在不同阶段可能变化，不能只贴一个标签。",
-        "example": "自拟故事中，主人公起初推卸值日，后来主动补做。可据“主动补做”说他开始承担责任，但不能据结尾就说他一直负责。",
-        "pitfall": "不要混淆人物、作品和情节；观点必须有书中事实支撑。",
-        "exampleLabel": "原创讲解例子（非中考真题）",
-        "method": "用具体情节支撑人物特征，避免只写评价词。"
-      }
-    },
-    "chinese-2023-17-focus": {
-      "id": "chinese-2023-17-focus",
-      "subject": "chinese",
-      "topic": "非连续性文本",
-      "knowledge": "分别概括每则材料的中心，保留不同角度，形成并列答案。",
-      "source": "2023年北京中考语文 第17题",
-      "number": 17,
-      "numbers": [
-        17
-      ],
-      "year": 2023,
-      "kind": "focus",
-      "ranges": [
-        [
-          80,
-          91
-        ],
-        [
-          100,
-          100
-        ]
-      ],
-      "question": "questions/chinese-2023-17-focus.html",
-      "answer": "answers/chinese-2023-17-focus.html",
-      "pages": [
-        {
-          "src": "pages/chinese-2023-17-focus-1.png",
-          "width": 1000,
-          "height": 353
-        },
-        {
-          "src": "pages/chinese-2023-17-focus-2.png",
-          "width": 1000,
-          "height": 380
-        },
-        {
-          "src": "pages/chinese-2023-17-focus-3.png",
-          "width": 1000,
-          "height": 365
-        },
-        {
-          "src": "pages/chinese-2023-17-focus-4.png",
-          "width": 1000,
-          "height": 372
-        },
-        {
-          "src": "pages/chinese-2023-17-focus-5.png",
-          "width": 1000,
-          "height": 52
-        }
-      ],
-      "teaching": {
-        "concept": "非连续性文本常把信息分在文字、图表和说明中。先明确问题，再定位材料，注意统计对象、单位、年份及比较口径，最后整合共同结论。",
-        "example": "甲图显示参与人数从100增到150，乙文说增设两个活动点。可写“参与人数增加50%，活动点增设可能提供便利”；仅凭并列材料不能断言唯一原因。",
-        "pitfall": "数量增长与比例增长不同；相关信息不自动构成因果。",
-        "exampleLabel": "原创讲解例子（非中考真题）",
-        "method": "分别概括每则材料的中心，保留不同角度，形成并列答案。"
-      }
-    },
-    "chinese-2023-21-focus": {
-      "id": "chinese-2023-21-focus",
-      "subject": "chinese",
-      "topic": "散文词句与情感",
-      "knowledge": "同一词语在不同段落可指向不同对象，结合上下文解释再归纳情感。",
-      "source": "2023年北京中考语文 第21题",
-      "number": 21,
-      "numbers": [
-        21
-      ],
-      "year": 2023,
-      "kind": "focus",
-      "ranges": [
-        [
-          102,
-          117
-        ],
-        [
-          121,
-          121
-        ]
-      ],
-      "question": "questions/chinese-2023-21-focus.html",
-      "answer": "answers/chinese-2023-21-focus.html",
-      "pages": [
-        {
-          "src": "pages/chinese-2023-21-focus-1.png",
-          "width": 1000,
-          "height": 369
-        },
-        {
-          "src": "pages/chinese-2023-21-focus-2.png",
-          "width": 1000,
-          "height": 380
-        },
-        {
-          "src": "pages/chinese-2023-21-focus-3.png",
-          "width": 1000,
-          "height": 373
-        },
-        {
-          "src": "pages/chinese-2023-21-focus-4.png",
-          "width": 1000,
-          "height": 380
-        },
-        {
-          "src": "pages/chinese-2023-21-focus-5.png",
-          "width": 1000,
-          "height": 380
-        },
-        {
-          "src": "pages/chinese-2023-21-focus-6.png",
-          "width": 1000,
-          "height": 100
-        }
-      ],
-      "teaching": {
-        "concept": "散文中的词句既描写眼前事物，也可能承载人物心理和前后照应。解释时先说表层内容，再联系人物处境说明情感，最后看它在结构中的作用。",
-        "example": "自拟句“父亲把那把旧伞擦了又擦”，重复动作表现珍视；若前文写伞由远行的孩子留下，便可进一步理解为思念。证据来自动作和背景。",
-        "pitfall": "不要把所有句子的作用都套成“承上启下”。",
-        "exampleLabel": "原创讲解例子（非中考真题）",
-        "method": "同一词语在不同段落可指向不同对象，结合上下文解释再归纳情感。"
-      }
-    },
-    "chinese-2023-24-focus": {
-      "id": "chinese-2023-24-focus",
-      "subject": "chinese",
-      "topic": "议论文论证",
-      "knowledge": "识别论点、论据和论证过程，用材料说明理由如何支持观点。",
-      "source": "2023年北京中考语文 第24题",
-      "number": 24,
-      "numbers": [
-        24
-      ],
-      "year": 2023,
-      "kind": "focus",
-      "ranges": [
-        [
-          123,
-          129
-        ],
-        [
-          136,
-          136
-        ]
-      ],
-      "question": "questions/chinese-2023-24-focus.html",
-      "answer": "answers/chinese-2023-24-focus.html",
-      "pages": [
-        {
-          "src": "pages/chinese-2023-24-focus-1.png",
-          "width": 1000,
-          "height": 353
-        },
-        {
-          "src": "pages/chinese-2023-24-focus-2.png",
-          "width": 1000,
-          "height": 373
-        },
-        {
-          "src": "pages/chinese-2023-24-focus-3.png",
-          "width": 1000,
-          "height": 364
-        },
-        {
-          "src": "pages/chinese-2023-24-focus-4.png",
-          "width": 1000,
-          "height": 226
-        }
-      ],
-      "teaching": {
-        "concept": "议论文的论点是作者要证明的判断，论据是支持判断的事实或道理。分析论证要说清用了什么材料、材料与观点有什么联系、证明了哪一层意思。",
-        "example": "观点“练习应及时反馈”，例子写学生订正错误后同类题失误减少。它用结果变化说明反馈能纠正方法，从而支持观点；不能只答“举例论证，很有说服力”。",
-        "pitfall": "例子中的事件本身通常不是文章的中心论点。",
-        "exampleLabel": "原创讲解例子（非中考真题）",
-        "method": "识别论点、论据和论证过程，用材料说明理由如何支持观点。"
-      }
-    },
     "math-2023-1-short": {
       "id": "math-2023-1-short",
       "subject": "math",
@@ -9634,20 +8907,10 @@
     {
       "day": 1,
       "focus": [
-        "chinese",
-        "math"
+        "math",
+        "english"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-2-short",
-          "repeat": false,
-          "minutes": 3
-        },
-        {
-          "id": "chinese-2023-10-focus",
-          "repeat": false,
-          "minutes": 14
-        },
         {
           "id": "math-2023-1-short",
           "repeat": false,
@@ -9656,12 +8919,17 @@
         {
           "id": "math-2023-17-focus",
           "repeat": false,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "english-2023-1-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "english-2023-13-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "physics-2023-1-short",
@@ -9694,20 +8962,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 2,
       "focus": [
-        "english",
-        "physics"
+        "physics",
+        "chemistry"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-3-short",
-          "repeat": false,
-          "minutes": 3
-        },
         {
           "id": "math-2023-2-short",
           "repeat": false,
@@ -9719,11 +8982,6 @@
           "minutes": 3
         },
         {
-          "id": "english-2023-13-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "physics-2023-2-short",
           "repeat": false,
           "minutes": 3
@@ -9731,12 +8989,17 @@
         {
           "id": "physics-2023-20-focus",
           "repeat": false,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "chemistry-2023-2-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "chemistry-2023-28-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "biology-2023-2-short",
@@ -9759,20 +9022,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 3,
       "focus": [
-        "chemistry",
-        "biology"
+        "biology",
+        "politics"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-4-short",
-          "repeat": false,
-          "minutes": 3
-        },
         {
           "id": "math-2023-3-short",
           "repeat": false,
@@ -9794,11 +9052,6 @@
           "minutes": 3
         },
         {
-          "id": "chemistry-2023-28-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "biology-2023-3-short",
           "repeat": false,
           "minutes": 3
@@ -9806,12 +9059,17 @@
         {
           "id": "biology-2023-26-focus",
           "repeat": false,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "politics-2023-4-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "politics-2023-16-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "history-2024-3-short",
@@ -9824,20 +9082,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 4,
       "focus": [
-        "politics",
-        "history"
+        "history",
+        "geography"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-5-short",
-          "repeat": false,
-          "minutes": 3
-        },
         {
           "id": "math-2023-4-short",
           "repeat": false,
@@ -9869,11 +9122,6 @@
           "minutes": 3
         },
         {
-          "id": "politics-2023-16-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "history-2024-4-short",
           "repeat": false,
           "minutes": 3
@@ -9881,42 +9129,47 @@
         {
           "id": "history-2024-21-focus",
           "repeat": false,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "geography-2023-4-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "geography-2023-26-focus",
+          "repeat": false,
+          "minutes": 15
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 5,
       "focus": [
-        "geography",
-        "chinese"
+        "math",
+        "english"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-6-short",
-          "repeat": false,
-          "minutes": 3
-        },
-        {
-          "id": "chinese-2023-13-focus",
-          "repeat": false,
-          "minutes": 14
-        },
         {
           "id": "math-2023-5-short",
           "repeat": false,
           "minutes": 3
         },
         {
+          "id": "math-2023-18-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "english-2023-5-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "english-2023-21-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "physics-2023-5-short",
@@ -9947,36 +9200,21 @@
           "id": "geography-2023-5-short",
           "repeat": false,
           "minutes": 3
-        },
-        {
-          "id": "geography-2023-26-focus",
-          "repeat": false,
-          "minutes": 14
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 6,
       "focus": [
-        "math",
-        "english"
+        "physics",
+        "chemistry"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-7-short",
-          "repeat": false,
-          "minutes": 3
-        },
         {
           "id": "math-2023-6-short",
           "repeat": false,
           "minutes": 3
-        },
-        {
-          "id": "math-2023-18-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "english-2023-6-short",
@@ -9984,19 +9222,24 @@
           "minutes": 3
         },
         {
-          "id": "english-2023-21-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "physics-2023-6-short",
           "repeat": false,
           "minutes": 3
         },
         {
+          "id": "physics-2023-21-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "chemistry-2023-6-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "chemistry-2023-31-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "biology-2023-6-short",
@@ -10019,20 +9262,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 7,
       "focus": [
-        "physics",
-        "chemistry"
+        "biology",
+        "politics"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-8-short",
-          "repeat": false,
-          "minutes": 3
-        },
         {
           "id": "math-2023-7-short",
           "repeat": false,
@@ -10049,19 +9287,9 @@
           "minutes": 3
         },
         {
-          "id": "physics-2023-21-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "chemistry-2023-7-short",
           "repeat": false,
           "minutes": 3
-        },
-        {
-          "id": "chemistry-2023-31-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "biology-2023-7-short",
@@ -10069,9 +9297,19 @@
           "minutes": 3
         },
         {
+          "id": "biology-2023-27-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "politics-2023-8-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "politics-2023-17-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "history-2024-7-short",
@@ -10084,20 +9322,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 8,
       "focus": [
-        "biology",
-        "politics"
+        "history",
+        "geography"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-9-short",
-          "repeat": false,
-          "minutes": 3
-        },
         {
           "id": "math-2023-8-short",
           "repeat": false,
@@ -10124,19 +9357,9 @@
           "minutes": 3
         },
         {
-          "id": "biology-2023-27-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "politics-2023-9-short",
           "repeat": false,
           "minutes": 3
-        },
-        {
-          "id": "politics-2023-17-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "history-2024-8-short",
@@ -10144,34 +9367,49 @@
           "minutes": 3
         },
         {
+          "id": "history-2024-22-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "geography-2023-8-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "geography-2023-27-focus",
+          "repeat": false,
+          "minutes": 15
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 9,
       "focus": [
-        "history",
-        "geography"
+        "math",
+        "english"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-11-short",
-          "repeat": false,
-          "minutes": 3
-        },
         {
           "id": "math-2023-9-short",
           "repeat": false,
           "minutes": 3
         },
         {
+          "id": "math-2023-19-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "english-2023-9-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "english-2023-24-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "physics-2023-9-short",
@@ -10199,49 +9437,24 @@
           "minutes": 3
         },
         {
-          "id": "history-2024-22-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "geography-2023-9-short",
           "repeat": false,
           "minutes": 3
-        },
-        {
-          "id": "geography-2023-27-focus",
-          "repeat": false,
-          "minutes": 14
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 10,
       "focus": [
-        "chinese",
-        "math"
+        "physics",
+        "chemistry"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-12-short",
-          "repeat": false,
-          "minutes": 3
-        },
-        {
-          "id": "chinese-2023-14-focus",
-          "repeat": false,
-          "minutes": 14
-        },
         {
           "id": "math-2023-10-short",
           "repeat": false,
           "minutes": 3
-        },
-        {
-          "id": "math-2023-19-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "english-2023-10-short",
@@ -10254,9 +9467,19 @@
           "minutes": 3
         },
         {
+          "id": "physics-2023-22-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "chemistry-2023-10-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "chemistry-2023-32-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "biology-2023-10-short",
@@ -10279,20 +9502,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 11,
       "focus": [
-        "english",
-        "physics"
+        "biology",
+        "politics"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-2-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-11-short",
           "repeat": false,
@@ -10304,19 +9522,9 @@
           "minutes": 3
         },
         {
-          "id": "english-2023-24-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "physics-2023-11-short",
           "repeat": false,
           "minutes": 3
-        },
-        {
-          "id": "physics-2023-22-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "chemistry-2023-11-short",
@@ -10329,9 +9537,19 @@
           "minutes": 3
         },
         {
+          "id": "biology-2023-28-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "politics-2023-12-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "politics-2023-18-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "history-2024-11-short",
@@ -10344,20 +9562,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 12,
       "focus": [
-        "chemistry",
-        "biology"
+        "history",
+        "geography"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-3-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-12-short",
           "repeat": false,
@@ -10379,19 +9592,9 @@
           "minutes": 3
         },
         {
-          "id": "chemistry-2023-32-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "biology-2023-12-short",
           "repeat": false,
           "minutes": 3
-        },
-        {
-          "id": "biology-2023-28-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "politics-2023-13-short",
@@ -10404,34 +9607,49 @@
           "minutes": 3
         },
         {
+          "id": "history-2024-23-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "geography-2023-12-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "geography-2023-28-focus",
+          "repeat": false,
+          "minutes": 15
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 13,
       "focus": [
-        "politics",
-        "history"
+        "math",
+        "english"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-4-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-13-short",
           "repeat": false,
           "minutes": 3
         },
         {
+          "id": "math-2023-20-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "english-2023-1-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "english-2023-27-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "physics-2023-13-short",
@@ -10454,19 +9672,9 @@
           "minutes": 3
         },
         {
-          "id": "politics-2023-18-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "history-2024-13-short",
           "repeat": false,
           "minutes": 3
-        },
-        {
-          "id": "history-2024-23-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "geography-2023-13-short",
@@ -10474,25 +9682,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 14,
       "focus": [
-        "geography",
-        "chinese"
+        "physics",
+        "chemistry"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-5-short",
-          "repeat": true,
-          "minutes": 3
-        },
-        {
-          "id": "chinese-2023-17-focus",
-          "repeat": false,
-          "minutes": 14
-        },
         {
           "id": "math-2023-14-short",
           "repeat": false,
@@ -10509,9 +9707,19 @@
           "minutes": 3
         },
         {
+          "id": "physics-2023-23-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "chemistry-2023-14-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "chemistry-2023-33-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "biology-2023-14-short",
@@ -10532,46 +9740,26 @@
           "id": "geography-2023-14-short",
           "repeat": false,
           "minutes": 3
-        },
-        {
-          "id": "geography-2023-28-focus",
-          "repeat": false,
-          "minutes": 14
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 15,
       "focus": [
-        "math",
-        "english"
+        "biology",
+        "politics"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-6-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-15-short",
           "repeat": false,
           "minutes": 3
         },
         {
-          "id": "math-2023-20-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "english-2023-3-short",
           "repeat": true,
           "minutes": 3
-        },
-        {
-          "id": "english-2023-27-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "physics-2023-15-short",
@@ -10589,9 +9777,19 @@
           "minutes": 3
         },
         {
+          "id": "biology-2023-29-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "politics-2023-2-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "politics-2023-19-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "history-2024-15-short",
@@ -10604,20 +9802,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 16,
       "focus": [
-        "physics",
-        "chemistry"
+        "history",
+        "geography"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-7-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-16-short",
           "repeat": false,
@@ -10634,19 +9827,9 @@
           "minutes": 3
         },
         {
-          "id": "physics-2023-23-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "chemistry-2023-16-short",
           "repeat": false,
           "minutes": 3
-        },
-        {
-          "id": "chemistry-2023-33-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "biology-2023-16-short",
@@ -10664,34 +9847,49 @@
           "minutes": 3
         },
         {
+          "id": "history-2024-24-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "geography-2023-16-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "geography-2023-29-focus",
+          "repeat": false,
+          "minutes": 15
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 17,
       "focus": [
-        "biology",
-        "politics"
+        "math",
+        "english"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-8-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-1-short",
           "repeat": true,
           "minutes": 3
         },
         {
+          "id": "math-2023-21-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "english-2023-5-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "english-2023-30-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "physics-2023-17-short",
@@ -10709,19 +9907,9 @@
           "minutes": 3
         },
         {
-          "id": "biology-2023-29-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "politics-2023-4-short",
           "repeat": true,
           "minutes": 3
-        },
-        {
-          "id": "politics-2023-19-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "history-2024-17-short",
@@ -10734,20 +9922,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 18,
       "focus": [
-        "history",
-        "geography"
+        "physics",
+        "chemistry"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-9-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-2-short",
           "repeat": true,
@@ -10764,9 +9947,19 @@
           "minutes": 3
         },
         {
+          "id": "physics-2023-24-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "chemistry-2023-18-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "chemistry-2023-34-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "biology-2023-18-short",
@@ -10784,49 +9977,24 @@
           "minutes": 3
         },
         {
-          "id": "history-2024-24-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "geography-2023-18-short",
           "repeat": false,
           "minutes": 3
-        },
-        {
-          "id": "geography-2023-29-focus",
-          "repeat": false,
-          "minutes": 14
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 19,
       "focus": [
-        "chinese",
-        "math"
+        "biology",
+        "politics"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-11-short",
-          "repeat": true,
-          "minutes": 3
-        },
-        {
-          "id": "chinese-2023-21-focus",
-          "repeat": false,
-          "minutes": 14
-        },
         {
           "id": "math-2023-3-short",
           "repeat": true,
           "minutes": 3
-        },
-        {
-          "id": "math-2023-21-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "english-2023-7-short",
@@ -10849,9 +10017,19 @@
           "minutes": 3
         },
         {
+          "id": "biology-2023-30-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "politics-2023-6-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "politics-2023-20-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "history-2024-19-short",
@@ -10864,20 +10042,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 20,
       "focus": [
-        "english",
-        "physics"
+        "history",
+        "geography"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-12-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-4-short",
           "repeat": true,
@@ -10889,19 +10062,9 @@
           "minutes": 3
         },
         {
-          "id": "english-2023-30-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "physics-2023-1-short",
           "repeat": true,
           "minutes": 3
-        },
-        {
-          "id": "physics-2023-24-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "chemistry-2023-20-short",
@@ -10924,34 +10087,49 @@
           "minutes": 3
         },
         {
+          "id": "history-2024-21-focus",
+          "repeat": true,
+          "minutes": 15
+        },
+        {
           "id": "geography-2023-20-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "geography-2023-26-focus",
+          "repeat": true,
+          "minutes": 15
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 21,
       "focus": [
-        "chemistry",
-        "biology"
+        "math",
+        "english"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-2-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-5-short",
           "repeat": true,
           "minutes": 3
         },
         {
+          "id": "math-2023-22-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "english-2023-9-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "english-2023-34-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "physics-2023-2-short",
@@ -10964,19 +10142,9 @@
           "minutes": 3
         },
         {
-          "id": "chemistry-2023-34-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "biology-2023-21-short",
           "repeat": false,
           "minutes": 3
-        },
-        {
-          "id": "biology-2023-30-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "politics-2023-8-short",
@@ -10994,20 +10162,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 22,
       "focus": [
-        "politics",
-        "history"
+        "physics",
+        "chemistry"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-3-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-6-short",
           "repeat": true,
@@ -11024,9 +10187,19 @@
           "minutes": 3
         },
         {
+          "id": "physics-2023-25-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "chemistry-2023-22-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "chemistry-2023-35-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "biology-2023-22-short",
@@ -11039,19 +10212,9 @@
           "minutes": 3
         },
         {
-          "id": "politics-2023-20-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "history-2024-2-short",
           "repeat": true,
           "minutes": 3
-        },
-        {
-          "id": "history-2024-21-focus",
-          "repeat": true,
-          "minutes": 14
         },
         {
           "id": "geography-2023-22-short",
@@ -11059,25 +10222,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 23,
       "focus": [
-        "geography",
-        "chinese"
+        "biology",
+        "politics"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-4-short",
-          "repeat": true,
-          "minutes": 3
-        },
-        {
-          "id": "chinese-2023-24-focus",
-          "repeat": false,
-          "minutes": 14
-        },
         {
           "id": "math-2023-7-short",
           "repeat": true,
@@ -11104,9 +10257,19 @@
           "minutes": 3
         },
         {
+          "id": "biology-2023-31-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "politics-2023-10-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "politics-2023-16-focus",
+          "repeat": true,
+          "minutes": 15
         },
         {
           "id": "history-2024-3-short",
@@ -11117,46 +10280,26 @@
           "id": "geography-2023-23-short",
           "repeat": false,
           "minutes": 3
-        },
-        {
-          "id": "geography-2023-26-focus",
-          "repeat": true,
-          "minutes": 14
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 24,
       "focus": [
-        "math",
-        "english"
+        "history",
+        "geography"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-5-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-8-short",
           "repeat": true,
           "minutes": 3
         },
         {
-          "id": "math-2023-22-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "english-2023-12-short",
           "repeat": true,
           "minutes": 3
-        },
-        {
-          "id": "english-2023-34-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "physics-2023-5-short",
@@ -11184,29 +10327,39 @@
           "minutes": 3
         },
         {
+          "id": "history-2024-22-focus",
+          "repeat": true,
+          "minutes": 15
+        },
+        {
           "id": "geography-2023-24-short",
           "repeat": false,
           "minutes": 3
+        },
+        {
+          "id": "geography-2023-27-focus",
+          "repeat": true,
+          "minutes": 15
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 25,
       "focus": [
-        "physics",
-        "chemistry"
+        "math",
+        "english"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-6-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-9-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "math-2023-23-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "english-2023-1-short",
@@ -11214,24 +10367,19 @@
           "minutes": 3
         },
         {
+          "id": "english-2023-13-focus",
+          "repeat": true,
+          "minutes": 15
+        },
+        {
           "id": "physics-2023-6-short",
           "repeat": true,
           "minutes": 3
         },
         {
-          "id": "physics-2023-25-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "chemistry-2023-25-short",
           "repeat": false,
           "minutes": 3
-        },
-        {
-          "id": "chemistry-2023-35-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "biology-2023-25-short",
@@ -11254,20 +10402,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 26,
       "focus": [
-        "biology",
-        "politics"
+        "physics",
+        "chemistry"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-7-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-10-short",
           "repeat": true,
@@ -11284,9 +10427,19 @@
           "minutes": 3
         },
         {
+          "id": "physics-2023-27-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "chemistry-2023-1-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "chemistry-2023-36-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "biology-2023-1-short",
@@ -11294,19 +10447,9 @@
           "minutes": 3
         },
         {
-          "id": "biology-2023-31-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "politics-2023-13-short",
           "repeat": true,
           "minutes": 3
-        },
-        {
-          "id": "politics-2023-16-focus",
-          "repeat": true,
-          "minutes": 14
         },
         {
           "id": "history-2024-6-short",
@@ -11319,20 +10462,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 27,
       "focus": [
-        "history",
-        "geography"
+        "biology",
+        "politics"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-8-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-11-short",
           "repeat": true,
@@ -11359,9 +10497,19 @@
           "minutes": 3
         },
         {
+          "id": "biology-2023-32-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "politics-2023-14-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "politics-2023-17-focus",
+          "repeat": true,
+          "minutes": 15
         },
         {
           "id": "history-2024-7-short",
@@ -11369,49 +10517,24 @@
           "minutes": 3
         },
         {
-          "id": "history-2024-22-focus",
-          "repeat": true,
-          "minutes": 14
-        },
-        {
           "id": "geography-2023-2-short",
           "repeat": true,
           "minutes": 3
-        },
-        {
-          "id": "geography-2023-27-focus",
-          "repeat": true,
-          "minutes": 14
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 28,
       "focus": [
-        "chinese",
-        "math"
+        "history",
+        "geography"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-9-short",
-          "repeat": true,
-          "minutes": 3
-        },
-        {
-          "id": "chinese-2023-10-focus",
-          "repeat": true,
-          "minutes": 14
-        },
         {
           "id": "math-2023-12-short",
           "repeat": true,
           "minutes": 3
-        },
-        {
-          "id": "math-2023-23-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "english-2023-4-short",
@@ -11444,29 +10567,39 @@
           "minutes": 3
         },
         {
-          "id": "geography-2023-3-short",
+          "id": "history-2024-23-focus",
           "repeat": true,
-          "minutes": 3
-        }
-      ],
-      "checkMinutes": 5
-    },
-    {
-      "day": 29,
-      "focus": [
-        "english",
-        "physics"
-      ],
-      "tasks": [
+          "minutes": 15
+        },
         {
-          "id": "chinese-2023-11-short",
+          "id": "geography-2023-3-short",
           "repeat": true,
           "minutes": 3
         },
         {
+          "id": "geography-2023-28-focus",
+          "repeat": true,
+          "minutes": 15
+        }
+      ],
+      "checkMinutes": 6
+    },
+    {
+      "day": 29,
+      "focus": [
+        "math",
+        "english"
+      ],
+      "tasks": [
+        {
           "id": "math-2023-13-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "math-2023-24-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "english-2023-5-short",
@@ -11474,19 +10607,14 @@
           "minutes": 3
         },
         {
-          "id": "english-2023-13-focus",
+          "id": "english-2023-21-focus",
           "repeat": true,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "physics-2023-10-short",
           "repeat": true,
           "minutes": 3
-        },
-        {
-          "id": "physics-2023-27-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "chemistry-2023-4-short",
@@ -11514,20 +10642,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 30,
       "focus": [
-        "chemistry",
-        "biology"
+        "physics",
+        "chemistry"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-12-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-14-short",
           "repeat": true,
@@ -11544,24 +10667,24 @@
           "minutes": 3
         },
         {
+          "id": "physics-2023-28-focus",
+          "repeat": false,
+          "minutes": 15
+        },
+        {
           "id": "chemistry-2023-5-short",
           "repeat": true,
           "minutes": 3
         },
         {
-          "id": "chemistry-2023-36-focus",
+          "id": "chemistry-2023-37-focus",
           "repeat": false,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "biology-2023-5-short",
           "repeat": true,
           "minutes": 3
-        },
-        {
-          "id": "biology-2023-32-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "politics-2023-3-short",
@@ -11579,20 +10702,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 31,
       "focus": [
-        "politics",
-        "history"
+        "biology",
+        "politics"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-2-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-15-short",
           "repeat": true,
@@ -11619,14 +10737,19 @@
           "minutes": 3
         },
         {
+          "id": "biology-2023-26-focus",
+          "repeat": true,
+          "minutes": 15
+        },
+        {
           "id": "politics-2023-4-short",
           "repeat": true,
           "minutes": 3
         },
         {
-          "id": "politics-2023-17-focus",
+          "id": "politics-2023-18-focus",
           "repeat": true,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "history-2024-11-short",
@@ -11634,35 +10757,20 @@
           "minutes": 3
         },
         {
-          "id": "history-2024-23-focus",
-          "repeat": true,
-          "minutes": 14
-        },
-        {
           "id": "geography-2023-6-short",
           "repeat": true,
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 32,
       "focus": [
-        "geography",
-        "chinese"
+        "history",
+        "geography"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-3-short",
-          "repeat": true,
-          "minutes": 3
-        },
-        {
-          "id": "chinese-2023-13-focus",
-          "repeat": true,
-          "minutes": 14
-        },
         {
           "id": "math-2023-16-short",
           "repeat": true,
@@ -11699,17 +10807,22 @@
           "minutes": 3
         },
         {
+          "id": "history-2024-24-focus",
+          "repeat": true,
+          "minutes": 15
+        },
+        {
           "id": "geography-2023-7-short",
           "repeat": true,
           "minutes": 3
         },
         {
-          "id": "geography-2023-28-focus",
+          "id": "geography-2023-29-focus",
           "repeat": true,
-          "minutes": 14
+          "minutes": 15
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 33,
@@ -11719,19 +10832,14 @@
       ],
       "tasks": [
         {
-          "id": "chinese-2023-4-short",
-          "repeat": true,
-          "minutes": 3
-        },
-        {
           "id": "math-2023-1-short",
           "repeat": true,
           "minutes": 3
         },
         {
-          "id": "math-2023-24-focus",
+          "id": "math-2023-25-focus",
           "repeat": false,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "english-2023-9-short",
@@ -11739,9 +10847,9 @@
           "minutes": 3
         },
         {
-          "id": "english-2023-21-focus",
+          "id": "english-2023-24-focus",
           "repeat": true,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "physics-2023-14-short",
@@ -11774,7 +10882,7 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 34,
@@ -11783,11 +10891,6 @@
         "chemistry"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-5-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-2-short",
           "repeat": true,
@@ -11804,9 +10907,9 @@
           "minutes": 3
         },
         {
-          "id": "physics-2023-28-focus",
-          "repeat": false,
-          "minutes": 14
+          "id": "physics-2023-20-focus",
+          "repeat": true,
+          "minutes": 15
         },
         {
           "id": "chemistry-2023-9-short",
@@ -11814,9 +10917,9 @@
           "minutes": 3
         },
         {
-          "id": "chemistry-2023-37-focus",
+          "id": "chemistry-2023-38-focus",
           "repeat": false,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "biology-2023-9-short",
@@ -11839,7 +10942,7 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 35,
@@ -11848,11 +10951,6 @@
         "politics"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-6-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-3-short",
           "repeat": true,
@@ -11879,9 +10977,9 @@
           "minutes": 3
         },
         {
-          "id": "biology-2023-26-focus",
+          "id": "biology-2023-27-focus",
           "repeat": true,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "politics-2023-8-short",
@@ -11889,9 +10987,9 @@
           "minutes": 3
         },
         {
-          "id": "politics-2023-18-focus",
+          "id": "politics-2023-19-focus",
           "repeat": true,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "history-2024-15-short",
@@ -11904,7 +11002,7 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 36,
@@ -11913,11 +11011,6 @@
         "geography"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-7-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-4-short",
           "repeat": true,
@@ -11954,9 +11047,9 @@
           "minutes": 3
         },
         {
-          "id": "history-2024-24-focus",
+          "id": "history-2024-21-focus",
           "repeat": true,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "geography-2023-11-short",
@@ -11964,44 +11057,39 @@
           "minutes": 3
         },
         {
-          "id": "geography-2023-29-focus",
+          "id": "geography-2023-26-focus",
           "repeat": true,
-          "minutes": 14
+          "minutes": 15
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 37,
       "focus": [
-        "chinese",
-        "math"
+        "math",
+        "english"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-8-short",
-          "repeat": true,
-          "minutes": 3
-        },
-        {
-          "id": "chinese-2023-14-focus",
-          "repeat": true,
-          "minutes": 14
-        },
         {
           "id": "math-2023-5-short",
           "repeat": true,
           "minutes": 3
         },
         {
-          "id": "math-2023-25-focus",
+          "id": "math-2023-26-focus",
           "repeat": false,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "english-2023-1-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "english-2023-27-focus",
+          "repeat": true,
+          "minutes": 15
         },
         {
           "id": "physics-2023-18-short",
@@ -12034,20 +11122,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 38,
       "focus": [
-        "english",
-        "physics"
+        "physics",
+        "chemistry"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-9-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-6-short",
           "repeat": true,
@@ -12059,24 +11142,24 @@
           "minutes": 3
         },
         {
-          "id": "english-2023-24-focus",
-          "repeat": true,
-          "minutes": 14
-        },
-        {
           "id": "physics-2023-19-short",
           "repeat": true,
           "minutes": 3
         },
         {
-          "id": "physics-2023-20-focus",
+          "id": "physics-2023-21-focus",
           "repeat": true,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "chemistry-2023-13-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "chemistry-2023-39-focus",
+          "repeat": false,
+          "minutes": 15
         },
         {
           "id": "biology-2023-13-short",
@@ -12099,20 +11182,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 39,
       "focus": [
-        "chemistry",
-        "biology"
+        "biology",
+        "politics"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-11-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-7-short",
           "repeat": true,
@@ -12134,24 +11212,24 @@
           "minutes": 3
         },
         {
-          "id": "chemistry-2023-38-focus",
-          "repeat": false,
-          "minutes": 14
-        },
-        {
           "id": "biology-2023-14-short",
           "repeat": true,
           "minutes": 3
         },
         {
-          "id": "biology-2023-27-focus",
+          "id": "biology-2023-28-focus",
           "repeat": true,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "politics-2023-12-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "politics-2023-20-focus",
+          "repeat": true,
+          "minutes": 15
         },
         {
           "id": "history-2024-19-short",
@@ -12164,20 +11242,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 40,
       "focus": [
-        "politics",
-        "history"
+        "history",
+        "geography"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-12-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-8-short",
           "repeat": true,
@@ -12209,54 +11282,54 @@
           "minutes": 3
         },
         {
-          "id": "politics-2023-19-focus",
-          "repeat": true,
-          "minutes": 14
-        },
-        {
           "id": "history-2024-20-short",
           "repeat": true,
           "minutes": 3
         },
         {
-          "id": "history-2024-21-focus",
+          "id": "history-2024-22-focus",
           "repeat": true,
-          "minutes": 14
+          "minutes": 15
         },
         {
           "id": "geography-2023-15-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "geography-2023-27-focus",
+          "repeat": true,
+          "minutes": 15
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 41,
       "focus": [
-        "geography",
-        "chinese"
+        "math",
+        "english"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-2-short",
-          "repeat": true,
-          "minutes": 3
-        },
-        {
-          "id": "chinese-2023-17-focus",
-          "repeat": true,
-          "minutes": 14
-        },
         {
           "id": "math-2023-9-short",
           "repeat": true,
           "minutes": 3
         },
         {
+          "id": "math-2023-17-focus",
+          "repeat": true,
+          "minutes": 15
+        },
+        {
           "id": "english-2023-5-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "english-2023-30-focus",
+          "repeat": true,
+          "minutes": 15
         },
         {
           "id": "physics-2023-3-short",
@@ -12287,36 +11360,21 @@
           "id": "geography-2023-16-short",
           "repeat": true,
           "minutes": 3
-        },
-        {
-          "id": "geography-2023-26-focus",
-          "repeat": true,
-          "minutes": 14
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 42,
       "focus": [
-        "math",
-        "english"
+        "physics",
+        "chemistry"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-3-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-10-short",
           "repeat": true,
           "minutes": 3
-        },
-        {
-          "id": "math-2023-26-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "english-2023-6-short",
@@ -12324,19 +11382,24 @@
           "minutes": 3
         },
         {
-          "id": "english-2023-27-focus",
-          "repeat": true,
-          "minutes": 14
-        },
-        {
           "id": "physics-2023-4-short",
           "repeat": true,
           "minutes": 3
         },
         {
+          "id": "physics-2023-22-focus",
+          "repeat": true,
+          "minutes": 15
+        },
+        {
           "id": "chemistry-2023-17-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "chemistry-2023-28-focus",
+          "repeat": true,
+          "minutes": 15
         },
         {
           "id": "biology-2023-17-short",
@@ -12359,20 +11422,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 43,
       "focus": [
-        "physics",
-        "chemistry"
+        "biology",
+        "politics"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-4-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-11-short",
           "repeat": true,
@@ -12389,19 +11447,9 @@
           "minutes": 3
         },
         {
-          "id": "physics-2023-21-focus",
-          "repeat": true,
-          "minutes": 14
-        },
-        {
           "id": "chemistry-2023-18-short",
           "repeat": true,
           "minutes": 3
-        },
-        {
-          "id": "chemistry-2023-39-focus",
-          "repeat": false,
-          "minutes": 14
         },
         {
           "id": "biology-2023-18-short",
@@ -12409,9 +11457,19 @@
           "minutes": 3
         },
         {
+          "id": "biology-2023-29-focus",
+          "repeat": true,
+          "minutes": 15
+        },
+        {
           "id": "politics-2023-2-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "politics-2023-16-focus",
+          "repeat": true,
+          "minutes": 15
         },
         {
           "id": "history-2024-3-short",
@@ -12424,20 +11482,15 @@
           "minutes": 3
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 44,
       "focus": [
-        "biology",
-        "politics"
+        "history",
+        "geography"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-5-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-12-short",
           "repeat": true,
@@ -12464,19 +11517,9 @@
           "minutes": 3
         },
         {
-          "id": "biology-2023-28-focus",
-          "repeat": true,
-          "minutes": 14
-        },
-        {
           "id": "politics-2023-3-short",
           "repeat": true,
           "minutes": 3
-        },
-        {
-          "id": "politics-2023-20-focus",
-          "repeat": true,
-          "minutes": 14
         },
         {
           "id": "history-2024-4-short",
@@ -12484,34 +11527,49 @@
           "minutes": 3
         },
         {
+          "id": "history-2024-23-focus",
+          "repeat": true,
+          "minutes": 15
+        },
+        {
           "id": "geography-2023-19-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "geography-2023-28-focus",
+          "repeat": true,
+          "minutes": 15
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     },
     {
       "day": 45,
       "focus": [
-        "history",
-        "geography"
+        "math",
+        "english"
       ],
       "tasks": [
-        {
-          "id": "chinese-2023-6-short",
-          "repeat": true,
-          "minutes": 3
-        },
         {
           "id": "math-2023-13-short",
           "repeat": true,
           "minutes": 3
         },
         {
+          "id": "math-2023-18-focus",
+          "repeat": true,
+          "minutes": 15
+        },
+        {
           "id": "english-2023-9-short",
           "repeat": true,
           "minutes": 3
+        },
+        {
+          "id": "english-2023-34-focus",
+          "repeat": true,
+          "minutes": 15
         },
         {
           "id": "physics-2023-7-short",
@@ -12539,33 +11597,15 @@
           "minutes": 3
         },
         {
-          "id": "history-2024-22-focus",
-          "repeat": true,
-          "minutes": 14
-        },
-        {
           "id": "geography-2023-20-short",
           "repeat": true,
           "minutes": 3
-        },
-        {
-          "id": "geography-2023-27-focus",
-          "repeat": true,
-          "minutes": 14
         }
       ],
-      "checkMinutes": 5
+      "checkMinutes": 6
     }
   ],
   "sources": [
-    {
-      "subject": "chinese",
-      "year": 2023,
-      "paper": "2023年北京市中考语文真题（空白卷）.docx",
-      "paperSha256": "b828b11e920698ff8e5efc1ab475b7a6d261c3327143fe1f9759696ecabc4969",
-      "answers": "2023年北京市中考语文真题（解析）.docx",
-      "answersSha256": "800f95690615746b4e7734aebfe670028ef744a7652e5c3a2246368958656eb3"
-    },
     {
       "subject": "math",
       "year": 2023,

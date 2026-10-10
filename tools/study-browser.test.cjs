@@ -3,7 +3,7 @@ const fs=require('node:fs');
 const path=require('node:path');
 const http=require('node:http');
 const assert=require('node:assert/strict');
-const root=path.resolve(__dirname,'..'),output=path.join(root,'.math-test/study');fs.mkdirSync(output,{recursive:true});
+const root=path.resolve(__dirname,'..'),output=path.join(root,'.math-test/study-eight');fs.mkdirSync(output,{recursive:true});
 const server=http.createServer((req,res)=>{
   const file=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));
   if(!file.startsWith(root+path.sep) || !fs.existsSync(file) || !fs.statSync(file).isFile()){res.writeHead(404);return res.end();}
@@ -15,8 +15,10 @@ const server=http.createServer((req,res)=>{
   try {
     const page=await browser.newPage({viewport:{width:1100,height:1000}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto(`${site}/games/daily-study.html`);await page.waitForSelector('#tasks .subject');
-    assert.equal(await page.locator('#tasks .subject').count(),9);
-    assert.equal(await page.locator('#tasks .lesson').count(),11);
+    assert.equal(await page.locator('#tasks .subject').count(),8);
+    assert.equal(await page.locator('#tasks .lesson').count(),10);
+    assert.doesNotMatch(await page.locator('#tasks').textContent(),/北京中考语文/);
+    assert.equal(await page.locator('#checks input[value=chinese]').count(),0);
     assert.deepEqual(await page.locator('#tasks .lesson').first().locator('h3').allTextContents(),['1 · 知识点讲解','解题方法','2 · 例子推演','易错点','3 · 真题检查']);
     assert.equal(await page.locator('#tasks .lesson').first().getByText('原创讲解例子（非中考真题）',{exact:true}).isVisible(),true);
     for (const width of [390,1100]) {
@@ -45,21 +47,42 @@ const server=http.createServer((req,res)=>{
     await page.reload();await page.waitForSelector('#tasks .subject');
     assert.equal((await page.evaluate(()=>StudySession.plan(localStorage).state)).startedAt,started.startedAt);
     await page.locator('#checks input[value=math]').check();await page.click('#completion button');
-    assert.match(await page.locator('#result').textContent(),/1\/9/);
+    assert.match(await page.locator('#result').textContent(),/1\/8/);
     await page.screenshot({path:path.join(output,'study-page.png'),fullPage:true});
     for(const input of await page.locator('#checks input').all())await input.check();
     await page.fill('#interruptions','2');await page.click('#completion button');
-    assert.match(await page.locator('#result').textContent(),/9\/9.*60分钟内完成/);
+    assert.match(await page.locator('#result').textContent(),/8\/8.*60分钟内完成/);
     assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('math:reports'))['2026-01-01'].onTime),true);
     await page.goto(`${site}/games/arabic-test.html#checkin`);
     await page.waitForSelector('.calendar-day.today .calendar-source');
     assert.equal(await page.locator('.calendar-day.today .calendar-source').count(),12);
     assert.doesNotMatch(await page.locator('#todayProgressSummary').textContent(),/undefined/);
-    assert.equal(await page.locator('.calendar-day.today .calendar-source.done').count(),9);
+    assert.equal(await page.locator('.calendar-day.today .calendar-source.done').count(),8);
     assert.equal(await page.locator('.calendar-day.today .calendar-all-done').count(),0);
-    assert.match(await page.locator('#categorySelect').textContent(),/每日九科/);
+    assert.match(await page.locator('#categorySelect').textContent(),/每日八科/);
+    assert.match(await page.locator('#categorySelect').textContent(),/语文阅读 · 每天一篇/);
     assert.doesNotMatch(await page.locator('#categorySelect').textContent(),/餐厅题库|好朋友题库/);
     await page.screenshot({path:path.join(output,'checkin.png'),fullPage:true});
+    // The reading is independent: completing the PPT does not check it off.
+    await page.click('#practiceLink');
+    await page.selectOption('#categorySelect','page:daily-chinese');await page.waitForURL('**/games/daily-chinese.html');
+    await page.waitForSelector('#questions fieldset');
+    const reading=await page.evaluate(async()=>{
+      const b=await(await fetch('../data/chinese-reading/bank.json')).json();
+      return b.readings[JSON.parse(localStorage.getItem('chinese:readings'))[StudySessionDate()].index];
+      function StudySessionDate(){return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Dubai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());}
+    });
+    assert.equal(await page.locator('#readingText').textContent(),reading.text);
+    assert.equal(await page.locator('#questions fieldset').count(),5);
+    assert.equal((await page.locator('.feedback').allTextContents()).join(''),'');
+    for(const q of reading.questions)await page.locator(`input[name="${q.id}"][value="${q.answer}"]`).check();
+    await page.click('#submit');assert.match(await page.locator('#result').textContent(),/答对 5\/5/);
+    await page.reload();await page.waitForSelector('#questions fieldset');
+    assert.match(await page.locator('#result').textContent(),/答对 5\/5/);
+    await page.screenshot({path:path.join(output,'chinese-reading.png'),fullPage:true});
+    await page.goto(`${site}/games/arabic-test.html#checkin`);await page.waitForSelector('.calendar-day.today .calendar-source');
+    assert.equal(await page.locator('.calendar-day.today .calendar-source').count(),12);
+    assert.equal(await page.locator('.calendar-day.today .calendar-source.done').count(),9);
     await page.click('#practiceLink');
     await page.selectOption('#categorySelect','page:daily-study');await page.waitForURL('**/games/daily-study.html');
     await page.waitForSelector('#tasks .subject');
@@ -74,7 +97,7 @@ const server=http.createServer((req,res)=>{
         paths.sort((a,b)=>Number(a.match(/slide(\d+)/)[1])-Number(b.match(/slide(\d+)/)[1]));
         for(const p of paths){
           const xml=await zip.file(p).async('string');if(xml.includes('我的答案与依据'))answers++;
-          if(xml.includes('【答案】') || xml.includes('【解析】'))leak=true;
+          if(xml.includes('【答案】') || xml.includes('【解析】') || xml.includes('北京中考语文') || xml.includes('语文 ·') || xml.includes('语文 作答页'))leak=true;
           const doc=new DOMParser().parseFromString(xml,'application/xml');
           const texts=Array.from(doc.getElementsByTagName('a:t'),t=>t.textContent);
           if(texts.some(t=>t.includes('· 知识点讲解'))){sequence.push('concept');teaching.push(texts);}
@@ -96,13 +119,13 @@ const server=http.createServer((req,res)=>{
         return {bytes:[1,9,20,45].includes(n)?bytes:null,size:Math.floor(bytes.length*.75),slides:paths.length,answers,leak,overflow,
           completeTeaching,sequence,expectedSequence,expected:2+d.tasks.reduce((n,t)=>n+b.questions[t.id].pages.length+3,0)};
       },day);
-      assert.equal(result.slides,result.expected);assert.equal(result.answers,11);assert.equal(result.leak,false);assert.deepEqual(result.overflow,[]);
+      assert.equal(result.slides,result.expected);assert.equal(result.answers,10);assert.equal(result.leak,false);assert.deepEqual(result.overflow,[]);
       assert.equal(result.completeTeaching,true);assert.deepEqual(result.sequence,result.expectedSequence);
       assert.ok(result.size<10*1024*1024,`day ${day} exceeds 10MB`);
       if(result.bytes)fs.writeFileSync(path.join(output,`day-${String(day).padStart(2,'0')}.pptx`),Buffer.from(result.bytes,'base64'));
       if(day%9===0)console.log(`Validated ${day}/45 decks`);
     }
     assert.deepEqual(errors,[]);
-    console.log('Browser checks passed: failure recovery, preview, download, timer restoration, completion, 12 check-ins, navigation, 45 PPTs.');
+    console.log('Browser checks passed: independent Chinese reading, 8-subject completion, 12 check-ins, preview, timer restoration, navigation, 45 PPTs without Chinese.');
   } finally {await browser.close();await new Promise(r=>server.close(r));}
 })().catch(e=>{console.error(e);process.exitCode=1;server.close();});

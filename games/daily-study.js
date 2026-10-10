@@ -3,7 +3,7 @@
   let bank,day,state,busy=false,preview=false;
   const notice=message=>{$('notice').textContent=message;};
   function link(text,href) {const a=document.createElement('a');a.textContent=text;a.href=href;a.target='_blank';a.rel='noopener';return a;}
-  const filename=()=>`${state?.date || StudySession.today()}_九科复习_第${day.day}天`;
+  const filename=()=>`${state?.date || StudySession.today()}_八科复习_第${day.day}天`;
   function tick() {
     const left=state ? Math.max(0,state.deadline-(state.finishedAt || Date.now())) : 3600000;
     const seconds=Math.ceil(left/1000);
@@ -12,7 +12,7 @@
     $('download').textContent=preview?'下载预览 PPT（不计时）':state?'重新下载 PPT（不重置计时）':'开始并下载合并 PPT';
     $('completionFields').disabled=busy || !state || preview;
     $('emailLink').hidden=preview || !state;
-    $('result').textContent=state ? `${Object.keys(state.completed).length}/9 科已确认${state.finishedAt?` · ${state.onTime?'60分钟内完成':'超时完成'} · 用时${Math.ceil((state.finishedAt-state.startedAt)/60000)}分钟` : left===0?' · 60分钟已到，可继续作答并如实记录':''} · 中断${state.interruptions}次` : '';
+    $('result').textContent=state ? `${bank.subjects.filter(s=>state.completed[s.id]).length}/8 科已确认${state.finishedAt?` · ${state.onTime?'60分钟内完成':'超时完成'} · 用时${Math.ceil((state.finishedAt-state.startedAt)/60000)}分钟` : left===0?' · 60分钟已到，可继续作答并如实记录':''} · 中断${state.interruptions}次` : '';
   }
   function draw() {
     $('tasks').replaceChildren();$('answers').replaceChildren();$('checks').replaceChildren();
@@ -48,12 +48,12 @@
     });
     $('interruptions').value=state?.interruptions || 0;
     $('filename').textContent=state?`${filename()}.pptx`:'';
-    $('emailLink').href=`mailto:xichen.app@gmail.com?subject=${encodeURIComponent(filename())}&body=${encodeURIComponent('九科作业见附件。请手动添加已完成的PPTX。')}`;
+    $('emailLink').href=`mailto:xichen.app@gmail.com?subject=${encodeURIComponent(filename())}&body=${encodeURIComponent('八科作业见附件。请手动添加已完成的PPTX。')}`;
     tick();
   }
   function current() {const p=StudySession.plan(localStorage);day=bank.days[p.day-1];state=p.state;preview=false;draw();}
   try {
-    const response=await fetch('../data/daily-study/bank.json?v=20261010-teaching');
+    const response=await fetch('../data/daily-study/bank.json?v=20261010-eight');
     if (!response.ok) throw new Error('题库加载失败，请刷新。');bank=await response.json();
     for (const d of bank.days) {const option=document.createElement('option');option.value=d.day;option.textContent=`第${d.day}天`; $('daySelect').append(option);}
     current();notice('每个题组先讲知识点、演示例子，再用北京真题检查。讲解和原创例子不属于原卷；网页下方与合并PPT均可阅读。');

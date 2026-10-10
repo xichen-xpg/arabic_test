@@ -1,4 +1,4 @@
-"""Build a traceable nine-subject bank from the family's supplied exam papers.
+"""Build a traceable eight-subject PPT bank from the family's supplied papers.
 
 Question selections are explicit inclusive Word body ranges, preserving shared
 reading passages, maps, formula images and original question numbers.
@@ -160,6 +160,7 @@ def save_html(path, title, body):
 
 def build():
     selections=json.loads((ROOT/'tools/daily_study_selections.json').read_text(encoding='utf-8'))
+    selections=[s for s in selections if s['id']!='chinese']
     prepare_vectors(selections)
     subjects=[]; questions={}; sources=[]
     for subject in selections:
@@ -185,9 +186,6 @@ def build():
                 # Some supplied solutions answer a whole reading/diagram group
                 # after its final question, rather than after each question.
                 last=max(numbers)
-                if sid=='chinese':
-                    for group in [list(range(1,8)),[9,10],[11,12,13],[15,16,17],[18,19,20,21],[22,23,24]]:
-                        if n in group: last=max(last,max(group))
                 if sid=='geography' and n<=25:
                     for group in [[1,2],[3,4],[5,6,7],[8,9,10],[11,12,13],[14,15,16],[17,18,19],[20,21,22],[23,24,25]]:
                         if n in group: last=max(group)
@@ -203,33 +201,23 @@ def build():
                 groups[kind].append(key)
         subjects.append({'id':sid,'name':name,**groups})
         print(name,len(groups['short']),len(groups['focus']),flush=True)
-    # 45 study days; each subject receives exactly ten focus slots.
-    focus_counts={s['id']:0 for s in subjects}; days=[]
-    seen=set()
-    for day in range(45):
-        focus=[subjects[(2*day+i)%9]['id'] for i in range(2)]
-        tasks=[]
-        for s in subjects:
-            q=s['short'][day%len(s['short'])]
-            tasks.append({'id':q,'repeat':q in seen,'minutes':3});seen.add(q)
-            if s['id'] in focus:
-                q=s['focus'][focus_counts[s['id']]%len(s['focus'])]
-                tasks.append({'id':q,'repeat':q in seen,'minutes':14});seen.add(q)
-                focus_counts[s['id']]+=1
-        days.append({'day':day+1,'focus':focus,'tasks':tasks,'checkMinutes':5})
-    assert set(focus_counts.values())=={10}
-    bank={'version':'nine-subjects-20261010','minutes':60,'subjects':subjects,'questions':questions,'days':days,'sources':sources}
+    days=make_days(subjects)
+    bank={'version':'eight-subjects-20261010','minutes':60,'subjects':subjects,'questions':questions,'days':days,'sources':sources}
     attach_teaching(bank)
+    save_bank(bank)
+
+def save_bank(bank):
+    subjects=bank['subjects']; questions=bank['questions']; days=bank['days']
     (OUT/'bank.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2),encoding='utf-8')
-    lines=['九科每日复习整体规划','45个学习日；每天九科短题各3分钟、轮换两科重点题各14分钟、检查保存5分钟。','雅思、阿语、古诗词另计时间。',
+    lines=['八科每日复习整体规划','45个学习日；每天八科短题各3分钟、轮换两科重点题各15分钟、检查保存6分钟。','语文阅读单独在阅读页面完成，不进入PPT；与雅思、阿语、古诗词一样另计时间。',
            '每个题组依次学习概念讲解、方法、原创例子与易错点，再独立完成真题；讲解与例子为本项目编写，非中考原题。',
-           '短题3分钟建议讲解1分钟、检查2分钟；重点14分钟建议讲解3分钟、检查11分钟；均包含在60分钟内。',
+           '短题3分钟建议讲解1分钟、检查2分钟；重点15分钟建议讲解3分钟、检查12分钟；均包含在60分钟内。',
            '检查题目及解析来自家庭提供的原卷与解析文件，保留原题号、材料、公式和图表。',
            '按实际开始日期推进；缺勤不跳课。同一天再次下载不重置60分钟计时。',
            '这是主要知识点的练习轮换，不是所有考点逐项穷尽的保证。作文整篇写作、英语听说和实物实验须另做专项。',
            '短题用时是练习预算；综合题超时可继续完成并记录实际用时。完成打卡由本人确认，不等于自动批改或邮件发送核验。',
            '题量采用间隔重做：重复题明确标记，不把重复练习计作新增真题。旧数学45课保留为专项加练。',
-           f'共{len(questions)}个选题条目、{len(set((q["subject"],q["year"],n) for q in questions.values() for n in q["numbers"]))}道不同原题；45天共495次练习。','']
+           f'共{len(questions)}个选题条目、{len(set((q["subject"],q["year"],n) for q in questions.values() for n in q["numbers"]))}道不同原题；45天共450次练习。','']
     names={s['id']:s['name'] for s in subjects}
     for d in days:
         lines.append(f'第{d["day"]:02}天｜重点：'+ '、'.join(names[s] for s in d['focus']))
@@ -238,6 +226,24 @@ def build():
             lines.append(f'  {names[q["subject"]]}｜{q["topic"]}｜{q["source"]}｜{t["minutes"]}分钟'+('｜间隔重做' if t['repeat'] else ''))
         lines.append('')
     (OUT/'overall-plan.txt').write_text('\n'.join(lines),encoding='utf-8')
-    print('Total',len(questions),'selections; 45 days; 495 assignments')
+    print('Total',len(questions),'selections; 45 days; 450 assignments')
+
+def make_days(subjects):
+    # Two rotating focus subjects among the eight PPT subjects.
+    focus_counts={s['id']:0 for s in subjects}; days=[]
+    seen=set()
+    for day in range(45):
+        focus=[subjects[(2*day+i)%len(subjects)]['id'] for i in range(2)]
+        tasks=[]
+        for s in subjects:
+            q=s['short'][day%len(s['short'])]
+            tasks.append({'id':q,'repeat':q in seen,'minutes':3});seen.add(q)
+            if s['id'] in focus:
+                q=s['focus'][focus_counts[s['id']]%len(s['focus'])]
+                tasks.append({'id':q,'repeat':q in seen,'minutes':15});seen.add(q)
+                focus_counts[s['id']]+=1
+        days.append({'day':day+1,'focus':focus,'tasks':tasks,'checkMinutes':6})
+    assert max(focus_counts.values())-min(focus_counts.values())<=1
+    return days
 
 if __name__=='__main__': build()

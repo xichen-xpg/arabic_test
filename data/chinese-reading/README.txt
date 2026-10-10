@@ -5,10 +5,10 @@
 现代文选自朱自清、鲁迅、许地山、徐志摩、郁达夫的作品。
 收录全文或组文中独立题名的完整分篇，不用摘要替代阅读原文。
 古文选篇属于大部头古籍的完整选章，不代表收录整部古籍。
-目前为用户审阅稿，尚未接入网页。
+已接入games/daily-chinese.html，作为下拉菜单“语文阅读”的独立项目，不进入合并PPT。
 
 文件
-bank.json：唯一规范数据源；后续网页可直接读取 readings 数组。
+bank.json：唯一规范数据源；语文阅读网页直接读取 readings 数组。
 catalog.txt：100篇目录、正文汉字数、难度、预计阅读答题时长。
 review.txt：全部原文、题目、参考答案、解析、原文依据及来源。
 beijing-reference.json：北京试卷参考文件、文件哈希、题号与同类命题考点。
@@ -17,7 +17,7 @@ beijing-review-notes.txt：本轮参考范围、修订方式和校验说明。
 字段
 id：稳定篇目编号；questions[].id 为稳定题目编号。
 category：modern / classical_prose / classical_poetry。
-text：未来页面实际展示的阅读正文，以换行分段。
+text：页面实际展示的阅读正文，以换行分段。
 textExtent、textNote：全文或独立分篇的范围说明。
 characterCount：正文汉字数量，不计标点、空白、字母和数字。
 estimatedMinutes：按每分钟250汉字阅读再加5分钟答题粗估。
