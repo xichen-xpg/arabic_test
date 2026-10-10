@@ -3,7 +3,7 @@ const fs=require('node:fs');
 const path=require('node:path');
 const http=require('node:http');
 const assert=require('node:assert/strict');
-const root=path.resolve(__dirname,'..'),output=path.join(root,'.math-test/study-eight');fs.mkdirSync(output,{recursive:true});
+const root=path.resolve(__dirname,'..'),output=path.join(root,'.math-test/study-student');fs.mkdirSync(output,{recursive:true});
 const server=http.createServer((req,res)=>{
   const file=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));
   if(!file.startsWith(root+path.sep) || !fs.existsSync(file) || !fs.statSync(file).isFile()){res.writeHead(404);return res.end();}
@@ -14,6 +14,25 @@ const server=http.createServer((req,res)=>{
   const site=`http://127.0.0.1:${server.address().port}`,browser=await chromium.launch({channel:'chrome',headless:true});
   try {
     const page=await browser.newPage({viewport:{width:1100,height:1000}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+    await page.goto(`${site}/index.html`);
+    const home=page.frameLocator('#arabicFrame');
+    await home.locator('.calendar-day.today .calendar-source').first().waitFor();
+    assert.equal(await page.locator('.game-pane').isVisible(),false);
+    assert.deepEqual(await home.locator('.calendar-day.today .calendar-source-name').allTextContents(),['PPT','英语','阅读','阿语','古诗词']);
+    assert.equal(await home.locator('#todayProgressSummary').count(),0);
+    await home.locator('.study-links a[href="#english"]').click();
+    await home.locator('.main-view:not(.hidden)').waitFor();
+    assert.equal(await home.locator('#categorySelect').inputValue(),'source:daily-english');
+    assert.equal(await page.locator('.game-pane').isVisible(),true);
+    await home.locator('#checkinLink').click();
+    await home.locator('#calendarView.active').waitFor();
+    await page.screenshot({path:path.join(output,'home-desktop.png'),fullPage:true});
+    await page.setViewportSize({width:390,height:844});
+    assert.equal(await home.locator('body').evaluate(e=>e.scrollWidth<=innerWidth),true);
+    const todayBounds=await home.locator('.calendar-day.today').boundingBox();
+    assert.ok(todayBounds.x+todayBounds.width<390);
+    await page.screenshot({path:path.join(output,'home-mobile.png'),fullPage:true});
+    await page.setViewportSize({width:1100,height:1000});
     await page.goto(`${site}/games/daily-study.html`);await page.waitForSelector('#tasks .subject');
     assert.equal(await page.locator('#tasks .subject').count(),8);
     assert.equal(await page.locator('#tasks .lesson').count(),10);
@@ -34,6 +53,7 @@ const server=http.createServer((req,res)=>{
     assert.equal(await page.evaluate(()=>localStorage.getItem(StudySession.key)),null);
     await page.unroute('**/data/daily-study/pages/*.png');
     // Preview is downloadable without creating a session.
+    await page.locator('summary').filter({hasText:'复习其他作业'}).click();
     await page.selectOption('#daySelect','8');await page.click('#preview');
     let download=page.waitForEvent('download');await page.click('#download');await download;
     await page.waitForFunction(()=>!document.querySelector('#download').disabled);
@@ -46,21 +66,21 @@ const server=http.createServer((req,res)=>{
     assert.equal(started.deadline-started.startedAt,3600000);
     await page.reload();await page.waitForSelector('#tasks .subject');
     assert.equal((await page.evaluate(()=>StudySession.plan(localStorage).state)).startedAt,started.startedAt);
-    await page.locator('#checks input[value=math]').check();await page.click('#completion button');
-    assert.match(await page.locator('#result').textContent(),/1\/8/);
-    await page.screenshot({path:path.join(output,'study-page.png'),fullPage:true});
-    for(const input of await page.locator('#checks input').all())await input.check();
+    assert.equal(await page.locator('#checks input').count(),1);
+    await page.click('#completion button');
+    assert.equal(await page.evaluate(()=>!!StudySession.plan(localStorage).state.finishedAt),false);
+    await page.locator('#checks input[value=ppt]').check();
     await page.fill('#interruptions','2');await page.click('#completion button');
-    assert.match(await page.locator('#result').textContent(),/8\/8.*60分钟内完成/);
+    assert.match(await page.locator('#result').textContent(),/PPT已完成/);
+    await page.screenshot({path:path.join(output,'study-page.png'),fullPage:true});
     assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('math:reports'))['2026-01-01'].onTime),true);
     await page.goto(`${site}/games/arabic-test.html#checkin`);
     await page.waitForSelector('.calendar-day.today .calendar-source');
-    assert.equal(await page.locator('.calendar-day.today .calendar-source').count(),12);
-    assert.doesNotMatch(await page.locator('#todayProgressSummary').textContent(),/undefined/);
-    assert.equal(await page.locator('.calendar-day.today .calendar-source.done').count(),8);
+    assert.equal(await page.locator('.calendar-day.today .calendar-source').count(),5);
+    assert.equal(await page.locator('#todayProgressSummary').count(),0);
+    assert.equal(await page.locator('.calendar-day.today .calendar-source.done').count(),1);
     assert.equal(await page.locator('.calendar-day.today .calendar-all-done').count(),0);
-    assert.match(await page.locator('#categorySelect').textContent(),/每日八科/);
-    assert.match(await page.locator('#categorySelect').textContent(),/语文阅读 · 每天一篇/);
+    assert.deepEqual(await page.locator('#categorySelect option').allTextContents(),['阿语','英语','PPT','阅读','古诗词']);
     assert.doesNotMatch(await page.locator('#categorySelect').textContent(),/餐厅题库|好朋友题库/);
     await page.screenshot({path:path.join(output,'checkin.png'),fullPage:true});
     // The reading is independent: completing the PPT does not check it off.
@@ -81,8 +101,15 @@ const server=http.createServer((req,res)=>{
     assert.match(await page.locator('#result').textContent(),/答对 5\/5/);
     await page.screenshot({path:path.join(output,'chinese-reading.png'),fullPage:true});
     await page.goto(`${site}/games/arabic-test.html#checkin`);await page.waitForSelector('.calendar-day.today .calendar-source');
-    assert.equal(await page.locator('.calendar-day.today .calendar-source').count(),12);
-    assert.equal(await page.locator('.calendar-day.today .calendar-source.done').count(),9);
+    assert.equal(await page.locator('.calendar-day.today .calendar-source').count(),5);
+    assert.equal(await page.locator('.calendar-day.today .calendar-source.done').count(),2);
+    await page.evaluate(()=>{
+      const records=JSON.parse(localStorage.getItem('arabic-test:daily-checkins'));
+      records[localDateKey()]=[...(records[localDateKey()] || []),englishSourceKey,dailyArabicSourceKey,poemSourceKey];
+      localStorage.setItem('arabic-test:daily-checkins',JSON.stringify(records));renderCalendar();
+    });
+    assert.equal(await page.locator('.calendar-day.today .calendar-source.done').count(),5);
+    assert.equal(await page.locator('.calendar-day.today .calendar-all-done').count(),1);
     await page.click('#practiceLink');
     await page.selectOption('#categorySelect','page:daily-study');await page.waitForURL('**/games/daily-study.html');
     await page.waitForSelector('#tasks .subject');
@@ -97,7 +124,7 @@ const server=http.createServer((req,res)=>{
         paths.sort((a,b)=>Number(a.match(/slide(\d+)/)[1])-Number(b.match(/slide(\d+)/)[1]));
         for(const p of paths){
           const xml=await zip.file(p).async('string');if(xml.includes('我的答案与依据'))answers++;
-          if(xml.includes('【答案】') || xml.includes('【解析】') || xml.includes('北京中考语文') || xml.includes('语文 ·') || xml.includes('语文 作答页'))leak=true;
+          if(xml.includes('【答案】') || xml.includes('【解析】') || xml.includes('八科') || xml.includes('8科') || xml.includes('北京中考语文') || xml.includes('语文 ·') || xml.includes('语文 作答页'))leak=true;
           const doc=new DOMParser().parseFromString(xml,'application/xml');
           const texts=Array.from(doc.getElementsByTagName('a:t'),t=>t.textContent);
           if(texts.some(t=>t.includes('· 知识点讲解'))){sequence.push('concept');teaching.push(texts);}
@@ -126,6 +153,6 @@ const server=http.createServer((req,res)=>{
       if(day%9===0)console.log(`Validated ${day}/45 decks`);
     }
     assert.deepEqual(errors,[]);
-    console.log('Browser checks passed: independent Chinese reading, 8-subject completion, 12 check-ins, preview, timer restoration, navigation, 45 PPTs without Chinese.');
+    console.log('Browser checks passed: independent reading, single PPT completion, five check-ins, preview, timer restoration, navigation, 45 PPTs without Chinese.');
   } finally {await browser.close();await new Promise(r=>server.close(r));}
 })().catch(e=>{console.error(e);process.exitCode=1;server.close();});

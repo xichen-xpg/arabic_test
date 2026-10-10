@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-CN">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>每日八科 · 60分钟</title><link rel="stylesheet" href="daily-math.css">
+<title>PPT作业</title><link rel="stylesheet" href="daily-math.css">
 <style>
 .subject{padding:18px 0;border-bottom:1px solid #d7dee8}.subject h2{margin:0}.subject p{margin:8px 0}
 .subject a{margin-right:16px}#completion label{display:flex;align-items:center;gap:12px}input[type=checkbox]{width:20px;margin:0}
@@ -9,24 +9,20 @@
 .lesson{padding:16px 0}.lesson+.lesson{border-top:1px dashed #d7dee8}.lesson h3{font-size:1.05rem;color:#0f766e;margin:20px 0 8px}.lesson p{line-height:1.8;overflow-wrap:anywhere}
 </style></head>
 <body><main>
-<nav><a href="arabic-test.html#checkin">每日打卡</a><a href="arabic-test.html">语言练习</a></nav>
-<header><p class="eyebrow">中考知识点与真题 · 45个学习日</p><h1>每日八科 · 60分钟</h1>
-<p>数学、英语、物理、化学、生物、道德与法治、历史、地理。每天各有短题，轮换两科重点练习。</p>
-<p>语文阅读、雅思、阿语、古诗词继续在原练习页完成，另计时间。</p>
-<p><a href="../data/daily-study/overall-plan.txt" target="_blank">查看45天整体规划</a> · <a href="daily-math.html">数学专项加练</a> · <a href="daily-chinese.html">语文阅读（单独完成）</a></p></header>
+<nav><a href="arabic-test.html#checkin">每日打卡</a></nav>
+<header><h1>PPT作业</h1><p>先学知识点，再完成练习。共60分钟。</p></header>
 <p id="notice" role="status" aria-live="polite">正在加载题库…</p>
 <section class="assignment"><h2 id="dayTitle">今日安排</h2><p id="focus"></p>
-<p>每题组先学知识点、看例子，再独立做真题。短题各3分钟（讲解1＋检查2），重点各15分钟（讲解3＋检查12），最后检查保存6分钟，合计60分钟。</p>
-<p><a href="#tasks">阅读今日知识点讲解与例子 ↓</a> · 合并PPT包含相同讲解，真题解析另附家长版。</p>
+<p><a href="#tasks">知识点讲解与练习 ↓</a></p>
 <p class="clock">剩余时间 <strong id="timer">60:00</strong></p>
-<div class="actions"><button id="download" disabled>开始并下载合并 PPT</button><a id="emailLink" href="mailto:xichen.app@gmail.com">打开邮箱发送作业</a></div>
-<p id="filename"></p><p class="muted">计时从成功生成作业后开始，刷新、重下或跨日继续均不重置。发邮件时请自行添加已完成的PPT附件；网页不会核验邮件或自动批改答案。</p>
-<form id="completion"><fieldset disabled id="completionFields"><legend>完成作答并保存PPT后，确认相应科目</legend><div id="checks"></div>
+<div class="actions"><button id="download" disabled>开始并下载PPT</button><a id="emailLink" href="mailto:xichen.app@gmail.com">发送作业（需添加附件）</a></div>
+<p id="filename"></p>
+<form id="completion"><fieldset disabled id="completionFields"><legend>完成作业</legend><div id="checks"></div>
 <label>中断次数 <input id="interruptions" type="number" min="0" step="1" value="0" required style="width:100px"></label>
-<button type="submit">保存完成记录</button></fieldset></form><p id="result" role="status"></p></section>
+<button type="submit">保存打卡</button></fieldset></form><p id="result" role="status"></p></section>
 <section id="tasks" aria-label="今日知识点与真题"></section>
-<details><summary>家长版：原卷解析与来源</summary><p>作答后再核对。以下为提供资料中的解析，部分包含同一材料题组的其他小题；请按题号查看。</p><div id="answers"></div></details>
-<section class="assignment"><h2>课程目录</h2><label>选择学习日 <select id="daySelect"></select></label>
+<details><summary>答案解析</summary><div id="answers"></div></details>
+<details class="assignment"><summary>复习其他作业</summary><label>选择学习日 <select id="daySelect"></select></label>
 <button id="preview">查看该日安排</button><button id="backToday">返回当前作业</button>
-<p class="muted">目录预览不改变进度。全部完成当前作业后，下一个实际学习日进入下一课；未完成作业可跨日继续。</p></section>
-</main><script src="../assets/vendor/pptxgen.bundle.js"></script><script src="study-session.js"></script><script src="study-ppt.js?v=20261010-eight"></script><script src="daily-study.js?v=20261010-eight"></script></body></html>
+</details>
+</main><script src="../assets/vendor/pptxgen.bundle.js"></script><script src="study-session.js"></script><script src="study-ppt.js?v=20261010student"></script><script src="daily-study.js?v=20261010student"></script></body></html>

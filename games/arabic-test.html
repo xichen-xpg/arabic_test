@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>每日语言练习</title>
+  <title>每日打卡</title>
   <base href="../">
   <link rel="stylesheet" href="games/english-practice.css?v=20260927arabic">
   <style>
@@ -686,22 +686,6 @@
       align-items: center;
     }
 
-    .calendar-summary {
-      display: inline-flex;
-      align-items: center;
-      min-height: 30px;
-      padding: 4px 9px;
-      border: 1px solid #9bd7b1;
-      border-radius: 7px;
-      background: #ecfdf3;
-      color: var(--success);
-      font-size: 13px;
-      font-weight: 800;
-      white-space: normal;
-      flex: 1 1 100%;
-      line-height: 1.7;
-    }
-
     .calendar-grid {
       display: grid;
       min-width: 770px;
@@ -823,6 +807,13 @@
         padding: 5px;
       }
     }
+    .study-links{display:flex;gap:10px;flex-wrap:wrap}
+    @media(max-width:600px){
+      .app{padding:10px}.calendar-view{padding:10px}
+      .calendar-grid{min-width:0;gap:3px}.calendar-day{padding:3px;min-height:90px}
+      .calendar-source{font-size:9px;gap:1px}.calendar-source-name{overflow:visible}
+      .calendar-date{font-size:11px}
+    }
   </style>
 </head>
 <body>
@@ -839,12 +830,11 @@
         <div class="meta-row">
           <span id="categoryTag" class="tag">基础问候</span>
           <select id="categorySelect" class="select" aria-label="题库分类">
-            <option value="source:daily-arabic" selected>每日阿语 · 最多30词</option>
-            <option value="source:daily-english">每日雅思英语 · 20新词+30旧词</option>
-            <option value="page:daily-study">每日八科 · 合并PPT · 60分钟</option>
-            <option value="page:daily-chinese">语文阅读 · 每天一篇</option>
-            <option value="page:daily-math">数学专项加练 · PPT作业</option>
-            <option value="source:daily-poems">每日古诗词</option>
+            <option value="source:daily-arabic" selected>阿语</option>
+            <option value="source:daily-english">英语</option>
+            <option value="page:daily-study">PPT</option>
+            <option value="page:daily-chinese">阅读</option>
+            <option value="source:daily-poems">古诗词</option>
           </select>
           <select id="gameSelect" class="select game-select" aria-label="选择游戏">
             <option value="games/space-shooter.html">雷电</option>
@@ -911,12 +901,16 @@
       <div class="calendar-header">
         <h2 id="calendarTitle">每日打卡</h2>
         <div class="calendar-actions">
-          <span id="todayProgressSummary" class="calendar-summary">今天已做 0 题</span>
           <button id="prevMonthButton" class="ghost" type="button" aria-label="上个月">&lt;</button>
           <button id="todayButton" class="secondary" type="button">今天</button>
           <button id="nextMonthButton" class="ghost" type="button" aria-label="下个月">&gt;</button>
-          <a id="practiceLink" class="checkin-link" href="#">返回练习</a>
-          <a class="checkin-link" href="games/daily-study.html">八科合并PPT · 60分钟</a>
+          <nav class="study-links" aria-label="学习项目">
+            <a class="checkin-link" href="games/daily-study.html">PPT</a>
+            <a class="checkin-link" href="#english">英语</a>
+            <a class="checkin-link" href="games/daily-chinese.html">阅读</a>
+            <a id="practiceLink" class="checkin-link" href="#arabic">阿语</a>
+            <a class="checkin-link" href="#poems">古诗词</a>
+          </nav>
         </div>
       </div>
       <div id="calendarGrid" class="calendar-grid" aria-live="polite"></div>
@@ -928,8 +922,8 @@
   <script src="games/daily-poems.js"></script>
   <script src="games/daily-english.js?v=20260921mixed"></script>
   <script src="games/english-scheduler.js?v=20261010english50"></script>
-  <script src="games/english-test.js?v=20260927arabic"></script>
-  <script src="games/english-practice.js?v=20261010english50"></script>
+  <script src="games/english-test.js?v=20261010student"></script>
+  <script src="games/english-practice.js?v=20261010student"></script>
   <script>
     const questions = [
       { category: "基础问候", zh: "你好", ar: "مرحبا", rom: "marhaban" },
@@ -1600,7 +1594,6 @@
       categorySelect: document.querySelector("#categorySelect"),
       gameSelect: document.querySelector("#gameSelect"),
       checkinLink: document.querySelector("#checkinLink"),
-      practiceLink: document.querySelector("#practiceLink"),
       chinesePrompt: document.querySelector("#chinesePrompt"),
       poemHints: document.querySelector("#poemHints"),
       choices: document.querySelector("#choices"),
@@ -1619,7 +1612,6 @@
       mainView: document.querySelector(".main-view"),
       calendarView: document.querySelector("#calendarView"),
       calendarTitle: document.querySelector("#calendarTitle"),
-      todayProgressSummary: document.querySelector("#todayProgressSummary"),
       calendarGrid: document.querySelector("#calendarGrid"),
       prevMonthButton: document.querySelector("#prevMonthButton"),
       todayButton: document.querySelector("#todayButton"),
@@ -1893,75 +1885,20 @@
 
     function dailyProgressSummaries(dateKey) {
       const byDate = dailyProgressBySource(dateKey);
-      const checkins = loadCheckins();
-      const completedSources = new Set(Array.isArray(checkins[dateKey]) ? checkins[dateKey] : []);
-      const source = dailyArabicSourceKey;
-      const total = dailyArabicQuestions(dateKey).length;
-      const completedCount = completedSources.has(source)
-        ? total
-        : new Set((byDate[source] || []).filter((index) => Number.isInteger(index) && index >= 0 && index < total)).size;
-
-      const result = [];
-      if (dateKey === localDateKey() || completedSources.has("daily-chinese")) result.push({
-        source: "daily-chinese", label: "语文完成", checkOnly: true,
-        done: completedSources.has("daily-chinese")
-      });
-      try {
-        const math = JSON.parse(localStorage.getItem("math:reports") || "{}")[dateKey];
-        if (math || dateKey === localDateKey()) result.push({
-          source: "daily-math", label: "数学完成", checkOnly: true,
-          done: !!math?.onTime,
-          timeLabel: math?.sentAt ? (math.onTime ? " · 按时发送" : " · 超时提交") : ""
-        });
-      } catch { /* Keep the other subjects available if local math data is damaged. */ }
-      const arabic = arabicScheduler.summary(dateKey);
-      if (arabic) {
-        const timing = arabicScheduler.testSummary(dateKey);
-        const done = arabic.done || completedSources.has(source);
-        const timeLabel = done && timing.fast ? ` · 平均 ${timing.averageSeconds.toFixed(2)} 秒 🚩` : "";
-        result.push({ source, label: "完成阿语测试", checkOnly: true, done, timeLabel });
-      } else if (completedCount > 0 || completedSources.has(source)) result.push({
-        source,
-        label: sourceConfig[source]?.label || source,
-        completedCount,
-        total,
-        done: total > 0 && completedCount >= total
-      });
-      const english = englishScheduler.summary(dateKey);
-      if (english) {
-        if (dateKey < localDateKey() && !englishScheduler.plan(dateKey, false).test) {
-          result.push({ source: englishSourceKey, label: "英语新词", completedCount: english.freshDone, total: english.fresh, done: english.freshDone === english.fresh });
-          result.push({ source: englishSourceKey, label: "英语复习", completedCount: english.reviewDone, total: english.review, done: english.reviewDone === english.review });
-        } else {
-          const timing = englishScheduler.testSummary(dateKey);
-          const timeLabel = english.done && timing.fast ? ` · 平均 ${timing.averageSeconds.toFixed(2)} 秒 🚩` : "";
-          result.push({ source: englishSourceKey, label: "雅思英语测试", checkOnly: true, done: english.done, timeLabel });
-        }
-      }
+      const completed = new Set(loadCheckins()[dateKey] || []);
       let study;
-      try { study = JSON.parse(localStorage.getItem("daily-study:sessions:v1") || "{}")[dateKey]; } catch { /* Preserve existing progress if a local record cannot be read. */ }
-      if (study || dateKey === localDateKey()) {
-        // Chinese reading is completed on its own page, independently of the PPT.
-        const subjects = [["math","数学"],["english","英语"],["physics","物理"],["chemistry","化学"],["biology","生物"],["politics","道德与法治"],["history","历史"],["geography","地理"]];
-        const extras = result.filter(item => !["daily-chinese","daily-math"].includes(item.source));
-        result.length = 0;
-        result.push({source:"daily-chinese",label:"语文阅读",checkOnly:true,
-          done:completedSources.has("daily-chinese") || (dateKey < localDateKey() && !!study?.completed?.chinese)});
-        subjects.forEach(([id,name]) => result.push({ source:`study-${id}`, label:`${name}完成`, checkOnly:true, done:!!study?.completed?.[id],
-          timeLabel:study?.completed?.[id] ? " · 本人确认" : "" }));
-        result.push(...extras);
-        if (!result.some(item=>item.source===dailyArabicSourceKey)) result.push({source:dailyArabicSourceKey,label:"阿语测试",checkOnly:true,done:completedSources.has(dailyArabicSourceKey)});
-        if (!result.some(item=>item.source===englishSourceKey)) result.push({source:englishSourceKey,label:"雅思英语测试",checkOnly:true,done:completedSources.has(englishSourceKey)});
-      }
-      const poemDone = completedSources.has(poemSourceKey);
-      if (dateKey === localDateKey() || poemDone || byDate[poemSourceKey]?.length) result.push({source:poemSourceKey,label:"古诗词完成",checkOnly:true,done:poemDone});
-      return result;
-    }
-
-    function dailyProgressSummaryText(dateKey) {
-      const summaries = dailyProgressSummaries(dateKey);
-      if (!summaries.length) return "今天已做 0 题";
-      return `今天：${summaries.map((item) => item.checkOnly ? `${item.label} ${item.done ? "✓" : "未完成"}${item.timeLabel || ""}` : `${item.label} ${item.completedCount}/${item.total}`).join(" · ")}${summaries.some(item => item.source === dailyArabicSourceKey) && summaries.some(item => item.source === englishSourceKey) && summaries.every(item => item.done) ? " · 今日全部完成 ✓" : ""}`;
+      try { study = JSON.parse(localStorage.getItem("daily-study:sessions:v1") || "{}")[dateKey]; } catch { /* Keep other records available. */ }
+      const english = englishScheduler.summary(dateKey);
+      const arabic = arabicScheduler.summary(dateKey);
+      if (dateKey !== localDateKey() && !study && !completed.size && !Object.keys(byDate).length && !english && !arabic) return [];
+      const pptSubjects = ["math","english","physics","chemistry","biology","politics","history","geography"];
+      return [
+        { source:"daily-study", label:"PPT", done:pptSubjects.every(id=>!!study?.completed?.[id]) },
+        { source:englishSourceKey, label:"英语", done:!!english?.done || completed.has(englishSourceKey) },
+        { source:"daily-chinese", label:"阅读", done:completed.has("daily-chinese") || (dateKey < localDateKey() && !!study?.completed?.chinese) },
+        { source:dailyArabicSourceKey, label:"阿语", done:!!arabic?.done || completed.has(dailyArabicSourceKey) },
+        { source:poemSourceKey, label:"古诗词", done:completed.has(poemSourceKey) }
+      ].map(item=>({...item,checkOnly:true}));
     }
 
     function renderCalendar() {
@@ -1973,7 +1910,6 @@
       const weekdays = ["日", "一", "二", "三", "四", "五", "六"];
 
       elements.calendarTitle.textContent = `每日打卡 · ${year}年${month + 1}月`;
-      elements.todayProgressSummary.textContent = dailyProgressSummaryText(todayKey);
       elements.calendarGrid.replaceChildren();
       weekdays.forEach((weekday) => {
         const cell = document.createElement("div");
@@ -2009,7 +1945,7 @@
             name.textContent = summary.label;
             const count = document.createElement("span");
             count.className = "calendar-source-count";
-            count.textContent = summary.checkOnly ? `${summary.done ? "✓" : "未完成"}${summary.timeLabel || ""}` : `${summary.done ? "✓ " : ""}${summary.completedCount}/${summary.total}`;
+            count.textContent = summary.checkOnly ? (summary.done ? "✓" : "○") : `${summary.done ? "✓ " : ""}${summary.completedCount}/${summary.total}`;
             item.append(name, count);
             list.append(item);
           });
@@ -2027,7 +1963,13 @@
     }
 
     function syncViewFromHash() {
-      const showCalendar = window.location.hash === "#checkin";
+      const showCalendar = !window.location.hash || window.location.hash === "#checkin";
+      const source = {"#english":englishSourceKey,"#arabic":dailyArabicSourceKey,"#poems":poemSourceKey}[window.location.hash];
+      if (source && elements.categorySelect.value !== `source:${source}`) {
+        elements.categorySelect.value = `source:${source}`;
+        pool = []; drawQuestion();
+      }
+      window.parent.postMessage({type:"study:view", practice:!showCalendar}, window.location.origin);
       elements.mainView.classList.toggle("hidden", showCalendar);
       elements.calendarView.classList.toggle("active", showCalendar);
       if (showCalendar) renderCalendar();
@@ -2961,8 +2903,8 @@
       window.speechSynthesis?.cancel();
       if (completionSpeechTimer) { clearTimeout(completionSpeechTimer); completionSpeechTimer = null; }
       if (english || arabic) {
-        elements.categoryTag.textContent = english ? "雅思核心2000词" : "每日阿语 · 新词与复习";
-        if (arabic) document.querySelector("#practiceDescription").textContent = "每天20个新词、最多10个到期复习词。通过阿语选中文、中文选阿语两组测试完成打卡。";
+        elements.categoryTag.textContent = english ? "英语" : "阿语";
+        if (arabic) document.querySelector("#practiceDescription").textContent = "完成两组测试后打卡。";
         elements.gamePanel.classList.remove("poem-mode");
         resetPoemHints();
         (english ? englishPractice : arabicPractice).draw();
@@ -3371,11 +3313,11 @@
       window.location.hash = "checkin";
       syncViewFromHash();
     });
-    elements.practiceLink.addEventListener("click", (event) => {
+    document.querySelectorAll('.study-links a[href^="#"]').forEach(link => link.addEventListener("click", (event) => {
       event.preventDefault();
-      history.replaceState(null, "", window.location.pathname + window.location.search);
+      window.location.hash = link.getAttribute('href');
       syncViewFromHash();
-    });
+    }));
     elements.prevMonthButton.addEventListener("click", () => {
       calendarMonth = new Date(calendarMonth.getFullYear(), calendarMonth.getMonth() - 1, 1);
       renderCalendar();

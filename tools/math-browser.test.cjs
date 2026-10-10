@@ -93,13 +93,14 @@ const staticServer = http.createServer((req, res) => {
     await page.screenshot({ path: path.join(output, 'math-page.png'), fullPage: true });
     await page.goto(`${site}/games/arabic-test.html#checkin`);
     // Optional subject exercises retain their records; they do not complete
-    // the separate nine-subject timed assignment.
-    await page.waitForFunction(() => document.querySelector('#todayProgressSummary').textContent.includes('数学完成 未完成'));
+    // the separate PPT assignment.
+    await page.waitForSelector('.calendar-day.today .calendar-source');
+    assert.equal(await page.locator('.calendar-day.today .calendar-source').filter({hasText:'PPT'}).locator('.calendar-source-count').textContent(),'○');
     assert.ok(await page.evaluate(() => Object.values(JSON.parse(localStorage.getItem('math:reports'))).some(record => record.onTime)));
-    assert.equal(await page.locator('#categorySelect option[value="page:daily-math"]').count(), 1);
+    assert.equal(await page.locator('#categorySelect option[value="page:daily-study"]').count(), 1);
     assert.equal(await page.locator('#categorySelect option[value="source:restaurant"], #categorySelect option[value="source:best-friend"]').count(), 0);
     await page.screenshot({ path: path.join(output, 'checkin.png'), fullPage: true });
-    await page.goto(`${site}/games/arabic-test.html`);
+    await page.goto(`${site}/games/arabic-test.html#practice`);
     await page.selectOption('#categorySelect', 'page:daily-chinese');
     await page.waitForURL('**/games/daily-chinese.html');
     await page.waitForSelector('#questions input');
@@ -116,11 +117,10 @@ const staticServer = http.createServer((req, res) => {
     await page.waitForFunction(() => document.querySelector('#result').textContent.includes('今日语文完成'));
     assert.equal(await page.locator('#submit').isDisabled(), true);
     await page.goto(`${site}/games/arabic-test.html#checkin`);
-    await page.waitForFunction(() => document.querySelector('#todayProgressSummary').textContent.includes('语文完成 未完成'));
+    await page.waitForSelector('.calendar-day.today .calendar-source');
+    assert.equal(await page.locator('.calendar-day.today .calendar-source').filter({hasText:'阅读'}).locator('.calendar-source-count').textContent(),'✓');
     assert.ok(await page.evaluate(() => Object.values(JSON.parse(localStorage.getItem('arabic-test:daily-checkins'))).some(sources => sources.includes('daily-chinese'))));
-    await page.goto(`${site}/games/arabic-test.html`);
-    await page.selectOption('#categorySelect', 'page:daily-math');
-    await page.waitForURL('**/games/daily-math.html');
+    await page.goto(`${site}/games/daily-math.html`);
     await page.waitForSelector('#materials article');
     assert.deepEqual(errors, []);
     console.log('PASS: connection, PPT download, reload timer, all 45 lesson decks, email, calendar.', file);

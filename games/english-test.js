@@ -69,7 +69,7 @@
         return;
       }
       this.container.innerHTML = `<h3 class="english-test-title"></h3>
-        <p class="english-note">每页最多 10 题，25 秒内全部选对才过关。选错或超时必须先重新学习本页全部单词，再重考；已通过的页会保留。全部${this.scheduler.languageName}测试通过后才统计平均用时和红旗。</p>
+        <p class="english-note">25秒内全部选对。答错或超时后，复习再试。</p>
         <p class="english-test-clock" role="timer"></p>
         <div class="english-test-scroll"><table class="english-test-table"><tbody></tbody></table></div>
         <p class="english-test-feedback" role="status"></p>

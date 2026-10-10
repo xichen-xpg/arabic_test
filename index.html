@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Arabic Shooter</title>
+  <title>每日打卡</title>
   <style>
     * {
       box-sizing: border-box;
@@ -122,11 +122,14 @@
         height: 594px;
       }
     }
+    .layout.home-mode{grid-template-columns:minmax(0,1fr)}
+    .layout.home-mode .game-pane{display:none}
+    .layout.home-mode iframe{height:calc(100dvh - 20px);min-height:0}
   </style>
 </head>
 <body>
   <main class="shell">
-    <section class="layout">
+    <section class="layout home-mode">
       <section class="pane game-pane">
         <nav class="game-tabs" aria-label="选择游戏">
           <button class="game-tab active" type="button" data-game="shooter">雷电</button>
@@ -136,7 +139,7 @@
         <iframe id="mainGameFrame" title="game" src="games/space-shooter.html?v=20260710start-layout"></iframe>
       </section>
       <aside class="pane">
-        <iframe id="arabicFrame" title="每日学习打卡" src="games/arabic-test.html?v=20261010eight#checkin" allow="autoplay"></iframe>
+        <iframe id="arabicFrame" title="每日学习打卡" src="games/arabic-test.html?v=20261010student#checkin" allow="autoplay"></iframe>
       </aside>
     </section>
   </main>
@@ -259,7 +262,17 @@
       mainGameFrame.src = activeGameSource;
     }
 
+    document.querySelector("#arabicFrame").addEventListener("load", () => {
+      const frame = document.querySelector("#arabicFrame");
+      const location = frame.contentWindow.location;
+      const practice = location.pathname.endsWith('/arabic-test.html') && ['#practice','#english','#arabic','#poems'].includes(location.hash);
+      layout.classList.toggle('home-mode', !practice);
+    });
     window.addEventListener("message", (event) => {
+      if (event.origin === window.location.origin && event.source === document.querySelector("#arabicFrame").contentWindow && event.data?.type === "study:view") {
+        layout.classList.toggle("home-mode", !event.data.practice);
+        return;
+      }
       if (event.data?.type === "hub:pikachu-key") {
         forwardPikachuKey(event.data.payload);
         return;

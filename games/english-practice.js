@@ -12,7 +12,7 @@
         <section class="english-overview" aria-label="今日测试记录"></section>
         <button class="secondary english-open-test" type="button">开始测试</button>
         <button class="secondary english-back-study" type="button" hidden>返回单词练习</button>
-        <p class="english-note">每天固定学习 20 个新词，另安排最多 ${this.scheduler.reviewLimit} 个复习词，仅来自前几天学过且到期的词。当天错词再练不增加复习数量。选对后输入${this.scheduler.languageName}单词${this.requireChinese ? "，再输入一个中文释义" : "即可完成"}。</p>
+        <p class="english-note">选对后输入${this.scheduler.languageName}单词${this.requireChinese ? "，再输入一个中文释义" : ""}。</p>
         <div class="english-task">
           <p class="english-kind question-label"></p>
           <p class="english-prompt chinese"></p>
