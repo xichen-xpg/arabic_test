@@ -35,19 +35,19 @@ function fixture(count = 2000) {
   return { scheduler, storage, bank, advance(days = 1) { date = addDays(date, days); }, finish() { scheduler.questions().forEach(word => scheduler.complete(word.id)); } };
 }
 
-test("six timed pages earn a flag strictly below 15 seconds and retain the first record", () => {
+test("eight timed pages earn a flag strictly below 15 seconds and retain the first record", () => {
   for (const duration of [14900, 15000, 16000]) {
     const f = fixture(100);
     f.bank.forEach((word, index) => { word.word = `word ${index}`; word.zh = `意思 ${index}`; });
     f.finish();
     f.advance();
-    assert.equal(f.scheduler.testSummary().pages, 3);
-    for (let page = 0; page < 6; page++) {
+    assert.equal(f.scheduler.testSummary().pages, 4);
+    for (let page = 0; page < 8; page++) {
       f.scheduler.startTest(100000);
       const rows = f.scheduler.plan().test.active.rows;
       const reload = new Scheduler(f.bank, f.storage, () => f.scheduler.clock());
       rows.forEach((row, i) => reload.answerTest(i, row.id, 100000 + duration));
-      if (page < 5) {
+      if (page < 7) {
         assert.equal(reload.testSummary().averageSeconds, null);
         assert.equal(reload.testSummary().fast, false);
         assert.equal(reload.plan().testTiming, undefined);
@@ -74,25 +74,25 @@ test("individual tests may pass out of order and retries do not inflate completi
     f.scheduler.startTest(100000, index);
     f.scheduler.plan().test.active.rows.forEach((row, i) => f.scheduler.answerTest(i, row.id, 100000 + duration));
   };
-  finishPage(5);
-  assert.deepEqual(f.scheduler.testSummary().completed, [5]);
+  finishPage(7);
+  assert.deepEqual(f.scheduler.testSummary().completed, [7]);
   assert.equal(f.scheduler.summary().freshDone, 10);
   assert.equal(f.scheduler.summary().reviewDone, 0);
-  finishPage(5, 12000);
+  finishPage(7, 12000);
   assert.equal(f.scheduler.testSummary().passed, 1);
-  assert.equal(f.scheduler.plan().test.latestTimes[5], 12000);
-  assert.equal(f.scheduler.plan().test.times[5], 10000);
+  assert.equal(f.scheduler.plan().test.latestTimes[7], 12000);
+  assert.equal(f.scheduler.plan().test.times[7], 10000);
   f.scheduler.startTest(100000, 2);
   f.scheduler.answerTest(-1, null, 125000);
   finishPage(1);
   f.scheduler.startTest(130000, 2);
   assert.equal(f.scheduler.plan().test.active.failed, true);
   f.scheduler.testStudyWords().forEach(id => f.scheduler.completeTestStudy(id));
-  for (const index of [4, 3, 2, 0]) finishPage(index);
+  for (const index of [6, 5, 4, 3, 2, 0]) finishPage(index);
   assert.equal(f.scheduler.summary().done, true);
   const timing = JSON.stringify(f.scheduler.plan().testTiming);
-  finishPage(5, 15000);
-  assert.equal(f.scheduler.testSummary().passed, 6);
+  finishPage(7, 15000);
+  assert.equal(f.scheduler.testSummary().passed, 8);
   assert.equal(JSON.stringify(f.scheduler.plan().testTiming), timing);
 });
 
@@ -167,12 +167,12 @@ test("past test passes sync learning once and review backlog is current", () => 
   f.finish();
   f.advance();
   const plan = f.scheduler.plan();
-  assert.equal(f.scheduler.summary().deferred, 10);
+  assert.equal(f.scheduler.summary().deferred, 0);
   const state = f.scheduler.load();
-  state.days[plan.date].test = { passed: 6 };
+  state.days[plan.date].test = { passed: 8 };
   f.scheduler.save(state);
   f.scheduler.syncTestLearning();
-  assert.equal(f.scheduler.summary().reviewDone, 10);
+  assert.equal(f.scheduler.summary().reviewDone, 20);
   assert.equal(f.scheduler.summary().freshDone, 20);
   assert.equal(Object.keys(f.scheduler.load().records).length, 40);
   const after = JSON.stringify(f.scheduler.load());
@@ -238,7 +238,7 @@ test("same-day mistakes stay in their original category; reviews only use earlie
   f.advance();
   const second = f.scheduler.plan();
   assert.equal(second.fresh.length, 20);
-  assert.equal(second.review.length, 10);
+  assert.equal(second.review.length, 20);
   assert.ok(second.review.every(word => first.completed.includes(word) || first.fresh.includes(word)));
   assert.ok(second.review.every(word => f.scheduler.load().records[word].lastCompleted < second.date));
   const freshId = second.fresh[0];
@@ -262,7 +262,7 @@ test("overdue backlog is capped while 20 new words remain, historical reads do n
   const history = f.scheduler.summary("2026-09-09", false);
   f.advance(100);
   const plan = f.scheduler.plan();
-  assert.equal(plan.review.length, 10);
+  assert.equal(plan.review.length, 30);
   assert.equal(plan.fresh.length, 20);
   assert.ok(plan.deferred > 0);
   const snapshot = f.storage.getItem(STORAGE_KEY);
@@ -300,7 +300,7 @@ test("2,000-word bank integrity and source metadata", () => {
   }
 });
 
-test("each full day has 20 new words plus at most 10 reviews", () => {
+test("each full day has 20 new words plus at most 30 reviews", () => {
   // Keep serialization cheap for the long simulation without changing scheduler behaviour.
   let date = "2026-09-09";
   const scheduler = new Scheduler(Array.from({ length: 2000 }, (_, i) => ({ id: `word-${i}` })), {} , () => date);
@@ -312,14 +312,14 @@ test("each full day has 20 new words plus at most 10 reviews", () => {
     const plan = scheduler.plan();
     const learnedBeforeToday = Object.keys(state.records).length;
     assert.equal(plan.fresh.length, Math.min(20, 2000 - learnedBeforeToday));
-    assert.ok(plan.review.length <= 10);
-    assert.ok(plan.fresh.length + plan.review.length <= 30);
+    assert.ok(plan.review.length <= 30);
+    assert.ok(plan.fresh.length + plan.review.length <= 50);
     scheduler.questions().forEach(word => scheduler.complete(word.id));
     if (Object.keys(state.records).length === 2000) { firstPass = day + 1; break; }
     date = addDays(date, 1);
   }
   assert.ok(firstPass, "New words must not be permanently starved by reviews");
-  console.log(`Simulated first pass: ${firstPass} study days at the 30-word cap.`);
+  console.log(`Simulated first pass: ${firstPass} study days at the 50-word cap.`);
 });
 
 test("an untouched 30-new plan shrinks to 20 new words", () => {
@@ -330,9 +330,9 @@ test("an untouched 30-new plan shrinks to 20 new words", () => {
   const upgraded = f.scheduler.plan();
   assert.equal(upgraded.fresh.length, 20);
   assert.equal(upgraded.review.length, 0);
-  assert.equal(upgraded.dailyLimit, 30);
+  assert.equal(upgraded.dailyLimit, 50);
   assert.equal(upgraded.newLimit, 20);
-  assert.equal(upgraded.reviewLimit, 10);
+  assert.equal(upgraded.reviewLimit, 30);
 });
 
 test("started plans retain word order, test progress and check-in records", () => {
@@ -354,14 +354,48 @@ test("started plans retain word order, test progress and check-in records", () =
   }
 });
 
-test("a review-heavy existing plan migrates to 20 new plus 10 pending reviews", () => {
+test("a review-heavy existing plan migrates to 20 new plus 30 pending reviews", () => {
   const f = fixture();
   const state = f.scheduler.load();
   for (let i = 0; i < 50; i++) state.records[`word-${i}`] = { stage: 0, due: "2026-09-09", trouble: false };
   state.days["2026-09-09"] = { date: "2026-09-09", review: f.bank.slice(0, 50).map(word => word.id), fresh: [], completed: [], failed: [], retry: [], drafts: {}, deferred: 0, dailyLimit: 50, newLimit: 30 };
   f.scheduler.save(state);
   const upgraded = f.scheduler.plan();
-  assert.equal(upgraded.review.length, 10);
+  assert.equal(upgraded.review.length, 30);
   assert.equal(upgraded.fresh.length, 20);
-  assert.equal(upgraded.deferred, 40);
+  assert.equal(upgraded.deferred, 20);
+});
+
+test("Arabic keeps its separate 10-review limit", () => {
+  const f = fixture(100);
+  const scheduler = new Scheduler(f.bank, f.storage, f.scheduler.clock, { reviewLimit: 10 });
+  const state = scheduler.load();
+  for (let i = 0; i < 40; i++) state.records[`word-${i}`] = { stage: 0, due: scheduler.clock(), trouble: false };
+  scheduler.save(state);
+  assert.equal(scheduler.plan().review.length, 10);
+  assert.equal(scheduler.plan().fresh.length, 20);
+  assert.equal(scheduler.plan().dailyLimit, 30);
+});
+
+test("today's started English plan expands without losing completed tests", () => {
+  const f = fixture(100);
+  const old = new Scheduler(f.bank, f.storage, f.scheduler.clock, { reviewLimit: 10 });
+  const state = old.load();
+  for (let i = 0; i < 40; i++) state.records[`word-${i}`] = { stage: 0, due: old.clock(), trouble: false };
+  old.save(state);
+  const plan = old.plan();
+  old.complete(plan.review[0]);
+  const saved = old.load();
+  saved.days[plan.date].test = { passed: 2, completed: [0, 4], times: { 0: 12000, 4: 13000 }, checkedIn: true };
+  old.save(saved);
+  const upgraded = f.scheduler.plan();
+  assert.equal(upgraded.review.length, 30);
+  assert.equal(upgraded.fresh.length, 20);
+  assert.ok(upgraded.completed.includes(plan.review[0]));
+  assert.deepEqual(upgraded.test.completed, [0, 8]);
+  assert.equal(upgraded.test.times[8], 13000);
+  assert.equal(upgraded.test.checkedIn, true);
+  f.scheduler.syncTestLearning();
+  assert.equal(f.scheduler.summary().reviewDone, 10);
+  assert.deepEqual(f.scheduler.plan().review, upgraded.review);
 });

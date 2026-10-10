@@ -833,7 +833,7 @@
           <span id="categoryTag" class="tag">基础问候</span>
           <select id="categorySelect" class="select" aria-label="题库分类">
             <option value="source:daily-arabic" selected>每日阿语 · 最多30词</option>
-            <option value="source:daily-english">每日雅思英语 · 最多30词</option>
+            <option value="source:daily-english">每日雅思英语 · 20新词+30旧词</option>
             <option value="page:daily-chinese">每日语文 · 阅读作答</option>
             <option value="page:daily-math">每日数学 · PPT作业</option>
             <option value="source:daily-poems">每日古诗词</option>
@@ -917,9 +917,9 @@
   <script src="games/daily-arabic.js?v=20260930newest2"></script>
   <script src="games/daily-poems.js"></script>
   <script src="games/daily-english.js?v=20260921mixed"></script>
-  <script src="games/english-scheduler.js?v=20260927arabic"></script>
+  <script src="games/english-scheduler.js?v=20261010english50"></script>
   <script src="games/english-test.js?v=20260927arabic"></script>
-  <script src="games/english-practice.js?v=20260928arabic"></script>
+  <script src="games/english-practice.js?v=20261010english50"></script>
   <script>
     const questions = [
       { category: "基础问候", zh: "你好", ar: "مرحبا", rom: "marhaban" },
@@ -1315,7 +1315,7 @@
     const arabicLearningBank = [...dailyArabicBank].reverse().concat([...allQuestions].reverse()).filter((word, index, bank) => bank.findIndex(item => item.ar === word.ar) === index)
       .map(word => ({ ...word, id: `arabic:${word.ar}`, word: word.ar, phonetic: word.rom, source: dailyArabicSourceKey }));
     const arabicScheduler = new EnglishLearning.Scheduler(arabicLearningBank, localStorage, EnglishLearning.today,
-      { storageKey: arabicStorageKey, languageName: "阿语", languageCode: "ar" });
+      { storageKey: arabicStorageKey, languageName: "阿语", languageCode: "ar", reviewLimit: 10 });
     const dailyArabicRotationStartKey = "2026-09-03";
     const dailyArabicNewCount = 3;
     const dailyArabicRecentDays = 5;

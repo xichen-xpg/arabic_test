@@ -4,11 +4,11 @@
   const STORAGE_KEY = "arabic-test:english-learning:v1";
   // Successful early reviews fall on days 1, 2, 4, 7, 15, 30.
   // Mature words expand to 30/60/120/180-day gaps so reviews cannot crowd
-  // out the remaining new words forever under the 30-word daily limit.
+  // out the remaining new words forever under the 50-word daily limit.
   const INTERVALS = [1, 1, 2, 3, 8, 15, 30, 60, 120, 180];
-  const DAILY_LIMIT = 30;
+  const DAILY_LIMIT = 50;
   const NEW_LIMIT = 20;
-  const REVIEW_LIMIT = 10;
+  const REVIEW_LIMIT = 30;
   const addDays = (date, days) => new Date(Date.parse(`${date}T00:00:00Z`) + days * 86400000).toISOString().slice(0, 10);
   function today() {
     const parts = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Dubai", year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(new Date());
@@ -36,6 +36,7 @@
       this.storageKey = options.storageKey || STORAGE_KEY;
       this.languageName = options.languageName || "英文";
       this.languageCode = options.languageCode || "en-GB";
+      this.reviewLimit = options.reviewLimit ?? REVIEW_LIMIT;
       this.words = new Map(bank.map(word => [word.id, word]));
     }
     load() {
@@ -47,6 +48,8 @@
     }
     save(state) { this.storage.setItem(this.storageKey, JSON.stringify(state)); }
     plan(date = this.clock(), create = date === this.clock()) {
+      const REVIEW_LIMIT = this.reviewLimit;
+      const DAILY_LIMIT = NEW_LIMIT + REVIEW_LIMIT;
       const state = this.load();
       if (state.days[date]) {
         const existing = state.days[date];
@@ -54,6 +57,46 @@
         // Keep started plans stable: test page indices refer to their original words.
         const started = existing.completed.length || existing.failed.length || existing.retry.length || Object.keys(existing.drafts).length ||
           existing.test?.passed || existing.test?.active || existing.test?.checkedIn || Object.keys(existing.test?.attempts || {}).length;
+        // Upgrade today's former English quota, retaining only tests with identical words.
+        if (create && started && this.reviewLimit === 30 && existing.newLimit === 20 && existing.reviewLimit === 10) {
+          const oldIds = [...existing.review, ...existing.fresh];
+          const oldPages = Math.ceil(oldIds.length / 10);
+          const test = existing.test || { passed: 0 };
+          const completed = test.completed || Array.from({ length: test.passed || 0 }, (_, i) => i);
+          const checkedIn = test.checkedIn || completed.length === oldPages * 2;
+          const due = Object.entries(state.records)
+            .filter(([id, record]) => this.words.has(id) && record.due <= date && !oldIds.includes(id))
+            .sort((a, b) => Number(b[1].trouble) - Number(a[1].trouble) || a[1].due.localeCompare(b[1].due) || a[0].localeCompare(b[0]));
+          existing.review.push(...due.slice(0, Math.max(0, REVIEW_LIMIT - existing.review.length)).map(([id]) => id));
+          const ids = [...existing.review, ...existing.fresh];
+          const pages = Math.ceil(ids.length / 10);
+          const remap = index => {
+            const words = oldIds.slice((index % oldPages) * 10, (index % oldPages + 1) * 10);
+            for (let page = 0; page < pages; page++) {
+              if (JSON.stringify(words) === JSON.stringify(ids.slice(page * 10, (page + 1) * 10))) return page + (index >= oldPages ? pages : 0);
+            }
+            return -1;
+          };
+          const remapValues = values => Object.fromEntries(Object.entries(values || {}).flatMap(([index, value]) => {
+            const next = remap(Number(index));
+            return next < 0 ? [] : [[next, value]];
+          }));
+          test.completed = completed.map(remap).filter(index => index >= 0);
+          test.passed = test.completed.length;
+          test.times = remapValues(test.times);
+          test.latestTimes = remapValues(test.latestTimes);
+          test.attempts = remapValues(test.attempts);
+          Object.entries(test.attempts).forEach(([index, attempt]) => { attempt.index = Number(index); });
+          if (test.active) {
+            const index = remap(test.active.index ?? completed.length);
+            if (index < 0) delete test.active; else test.active.index = index;
+          }
+          if (checkedIn) { test.checkedIn = true; test.checkedInWords = oldIds; }
+          existing.test = test;
+          existing.dailyLimit = DAILY_LIMIT;
+          existing.reviewLimit = REVIEW_LIMIT;
+          this.save(state);
+        }
         if (create && !started && (existing.dailyLimit !== DAILY_LIMIT || existing.newLimit !== NEW_LIMIT || existing.reviewLimit !== REVIEW_LIMIT)) {
           const completed = new Set(existing.completed);
           const completedReviews = existing.review.filter(id => completed.has(id));
@@ -221,7 +264,7 @@
       const ids = [...plan.review, ...plan.fresh];
       const summary = this.testSummary();
       const passedWords = summary.completed.flatMap(index => ids.slice((index % summary.pages) * 10, (index % summary.pages + 1) * 10));
-      const learned = new Set([...(plan.test?.checkedIn ? ids : passedWords), ...(plan.test?.active?.learned || [])]);
+      const learned = new Set([...(plan.test?.checkedIn ? [...(plan.test.checkedInWords || ids), ...passedWords] : passedWords), ...(plan.test?.active?.learned || [])]);
       [...learned].filter(id => !plan.completed.includes(id)).forEach(id => this.complete(id));
     }
     answerTest(rowIndex, optionId, now = Date.now()) {
