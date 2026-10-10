@@ -567,11 +567,11 @@ for day, line in challenges.items():
 
 assert len(lessons) == 50
 for lesson in lessons[:5]:
-    lesson['unit'] = '前五课重做'
+    lesson['unit'] = '数与式'
 bank['lessons'] = lessons
 bank['version'] = 3
 bank['revision'] = '2026-10-10-full-review'
-bank['sequence'] = '已学过初中内容的中考专题复习强化：50个学习日，每日6题，共300题。前五课重做→数与式→方程与不等式→函数→几何→统计与概率→综合强化。'
+bank['sequence'] = '已学过初中内容的中考专题复习强化：50个学习日，每日6题，共300题。数与式→方程与不等式→函数→几何→统计与概率→综合强化。'
 bank['scope'] = {
     'mode': 'topic_review', 'days': 50, 'questions': 300,
     'audience': '已完成初中数学基础学习的学生，不作为三年新授课替代品。',

@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "sequence": "已学过初中内容的中考专题复习强化：50个学习日，每日6题，共300题。前五课重做→数与式→方程与不等式→函数→几何→统计与概率→综合强化。",
+  "sequence": "已学过初中内容的中考专题复习强化：50个学习日，每日6题，共300题。数与式→方程与不等式→函数→几何→统计与概率→综合强化。",
   "lessons": [
     {
       "id": "positive-negative",
@@ -115,7 +115,7 @@
           "origin": "original_practice"
         }
       ],
-      "unit": "前五课重做",
+      "unit": "数与式",
       "day": 1,
       "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
     },
@@ -232,7 +232,7 @@
           "origin": "original_practice"
         }
       ],
-      "unit": "前五课重做",
+      "unit": "数与式",
       "day": 2,
       "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
     },
@@ -349,7 +349,7 @@
           "origin": "original_practice"
         }
       ],
-      "unit": "前五课重做",
+      "unit": "数与式",
       "day": 3,
       "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
     },
@@ -466,7 +466,7 @@
           "origin": "original_practice"
         }
       ],
-      "unit": "前五课重做",
+      "unit": "数与式",
       "day": 4,
       "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
     },
@@ -583,7 +583,7 @@
           "origin": "original_practice"
         }
       ],
-      "unit": "前五课重做",
+      "unit": "数与式",
       "day": 5,
       "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
     },
