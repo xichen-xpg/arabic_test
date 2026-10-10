@@ -16,6 +16,13 @@ const server=http.createServer((req,res)=>{
     const page=await browser.newPage({viewport:{width:1100,height:1000}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto(`${site}/games/daily-study.html`);await page.waitForSelector('#tasks .subject');
     assert.equal(await page.locator('#tasks .subject').count(),9);
+    assert.equal(await page.locator('#tasks .lesson').count(),11);
+    assert.deepEqual(await page.locator('#tasks .lesson').first().locator('h3').allTextContents(),['1 · 知识点讲解','解题方法','2 · 例子推演','易错点','3 · 真题检查']);
+    assert.equal(await page.locator('#tasks .lesson').first().getByText('原创讲解例子（非中考真题）',{exact:true}).isVisible(),true);
+    for (const width of [390,1100]) {
+      await page.setViewportSize({width,height:1000});
+      assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+    }
     assert.equal(await page.locator('#timer').textContent(),'60:00');
     assert.equal(await page.locator('#completion button').isDisabled(),true);
     await page.evaluate(()=>{localStorage.setItem('math:reports',JSON.stringify({'2026-01-01':{onTime:true}}));localStorage.setItem('math:restart:topics-20261010','yes');});
@@ -63,20 +70,34 @@ const server=http.createServer((req,res)=>{
         const images=await StudyPpt.prepare(b,d),deck=StudyPpt.create(b,d,`预览_第${n}天`,images);
         const bytes=await deck.write({outputType:'base64',compression:true}),zip=await JSZip.loadAsync(bytes,{base64:true});
         const paths=Object.keys(zip.files).filter(p=>/^ppt\/slides\/slide\d+\.xml$/.test(p));
-        let answers=0,overflow=[],leak=false;
+        let answers=0,overflow=[],leak=false,sequence=[],teaching=[];
+        paths.sort((a,b)=>Number(a.match(/slide(\d+)/)[1])-Number(b.match(/slide(\d+)/)[1]));
         for(const p of paths){
           const xml=await zip.file(p).async('string');if(xml.includes('我的答案与依据'))answers++;
           if(xml.includes('【答案】') || xml.includes('【解析】'))leak=true;
           const doc=new DOMParser().parseFromString(xml,'application/xml');
+          const texts=Array.from(doc.getElementsByTagName('a:t'),t=>t.textContent);
+          if(texts.some(t=>t.includes('· 知识点讲解'))){sequence.push('concept');teaching.push(texts);}
+          else if(texts.some(t=>t.includes('· 例子推演'))){sequence.push('example');teaching.push(texts);}
+          else if(texts.some(t=>t.includes('· 真题检查')))sequence.push('question');
+          else if(xml.includes('我的答案与依据'))sequence.push('answer');
           for(const transform of doc.getElementsByTagName('a:xfrm')){
             const off=transform.getElementsByTagName('a:off')[0],ext=transform.getElementsByTagName('a:ext')[0];
             if(off && ext && (+off.getAttribute('y') + +ext.getAttribute('cy') > 6858000 || +off.getAttribute('x') + +ext.getAttribute('cx')>12192000))overflow.push(p);
           }
         }
+        const expectedSequence=d.tasks.flatMap(t=>['concept','example',...b.questions[t.id].pages.map(()=> 'question'),'answer']);
+        const completeTeaching=d.tasks.every((t,i)=>{
+          const q=b.questions[t.id];
+          return teaching[2*i].includes(q.teaching.concept) && teaching[2*i].includes(q.teaching.method)
+            && teaching[2*i+1].includes(q.teaching.example) && teaching[2*i+1].includes(q.teaching.pitfall)
+            && teaching[2*i+1].includes(q.teaching.exampleLabel);
+        });
         return {bytes:[1,9,20,45].includes(n)?bytes:null,size:Math.floor(bytes.length*.75),slides:paths.length,answers,leak,overflow,
-          expected:2+d.tasks.reduce((n,t)=>n+b.questions[t.id].pages.length+1,0)};
+          completeTeaching,sequence,expectedSequence,expected:2+d.tasks.reduce((n,t)=>n+b.questions[t.id].pages.length+3,0)};
       },day);
       assert.equal(result.slides,result.expected);assert.equal(result.answers,11);assert.equal(result.leak,false);assert.deepEqual(result.overflow,[]);
+      assert.equal(result.completeTeaching,true);assert.deepEqual(result.sequence,result.expectedSequence);
       assert.ok(result.size<10*1024*1024,`day ${day} exceeds 10MB`);
       if(result.bytes)fs.writeFileSync(path.join(output,`day-${String(day).padStart(2,'0')}.pptx`),Buffer.from(result.bytes,'base64'));
       if(day%9===0)console.log(`Validated ${day}/45 decks`);

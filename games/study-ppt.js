@@ -28,21 +28,35 @@
     }
     let s=slide(`第${day.day}天 九科复习`);
     text(s,`今日重点：${day.focus.map(id=>names[id]).join('、')}`,.8,1.45,11.7,.6,28);
-    text(s,'九科短题各3分钟，共27分钟\n两个重点题组各14分钟，共28分钟\n检查漏题、保存作业5分钟\n总时限60分钟，按科目连续作答',.8,2.4,11.7,2.8,24,{paraSpaceAfterPt:14});
-    text(s,'答案与步骤填写在每题组后的作答页。真题材料分页展示，续页属于同一题组。\n雅思、阿语、古诗词另计时间。完成后返回网页逐科确认。',.8,5.8,11.7,1,17,{color:'667085'});
+    text(s,'先学知识点 → 看例子 → 独立做真题\n九科短题各3分钟：讲解1分钟＋检查2分钟\n两个重点题组各14分钟：讲解3分钟＋检查11分钟\n最后检查保存5分钟，合计60分钟',.8,2.4,11.7,2.8,24,{paraSpaceAfterPt:14});
+    text(s,'讲解与例子为项目编写，例子不是中考真题。真题检查保留原卷材料与题号。\n作答页填写答案与步骤；雅思、阿语、古诗词另计时间。完成后返回网页确认。',.8,5.8,11.7,1,17,{color:'667085'});
     day.tasks.forEach(task=>{
       const q=bank.questions[task.id];
       const type=q.kind==='focus'?'重点题组':'短题';
+      const teaching=q.teaching;
+      const budget=`${type} 共${task.minutes}分钟（含讲解${q.kind==='focus'?3:1}分钟）${task.repeat?' 间隔重做':''}`;
+      s=slide(`${names[q.subject]} · 知识点讲解`,budget);
+      text(s,q.topic,.8,1.15,11.7,.6,25,{bold:true});
+      text(s,teaching.concept,.8,2,11.7,2.1,24,{breakLine:false});
+      text(s,'解题方法',.8,4.4,11.7,.45,21,{bold:true,color:'0F766E'});
+      text(s,teaching.method,.8,5.08,11.7,1.4,22);
+      s.addNotes(`对应检查：${q.source}。本页讲解为项目编写，不是原卷内容。`);
+      s=slide(`${names[q.subject]} · 例子推演`,budget);
+      text(s,teaching.exampleLabel,.8,1.15,11.7,.45,18,{color:'667085'});
+      text(s,teaching.example,.8,2,11.7,2.2,24);
+      text(s,'易错点',.8,4.5,11.7,.45,21,{bold:true,color:'0F766E'});
+      text(s,teaching.pitfall,.8,5.15,11.7,1.25,22);
+      s.addNotes(`对应检查：${q.source}。本页为原创教学示例；下一页起独立完成原卷真题。`);
       q.pages.forEach((p,i)=>{
-        s=slide(`${names[q.subject]} ${q.topic}`,`${type} ${task.minutes}分钟${task.repeat?' 间隔重做':''}`);
+        s=slide(`${names[q.subject]} · 真题检查`,budget);
         text(s,`${q.source}  材料 ${i+1}/${q.pages.length}`,.75,1.05,11.8,.35,14,{color:'667085'});
-        text(s,`知识点：${q.knowledge}`,.75,1.48,11.8,.85,18);
+        text(s,`${q.topic}\n先独立作答，再到家长版核对解析；需要回看讲解时，记下还不熟悉的知识点。`,.75,1.48,11.8,.85,18);
         const width=11.8, height=width*p.height/p.width;
         s.addImage({data:images[p.src],x:.75,y:2.38,w:width,h:height});
         s.addNotes(`${q.source}\n题目文件：data/daily-study/${q.question}\n原卷文件及SHA256见data/daily-study/bank.json的sources。`);
       });
       s=slide(`${names[q.subject]} 作答页`,q.source);
-      text(s,`${q.topic}  ${type}  ${task.minutes}分钟`,.8,1.2,11.7,.5,22);
+      text(s,`${q.topic}  ${type}  共${task.minutes}分钟（含讲解）`,.8,1.2,11.7,.5,22);
       text(s,'我的答案与依据（题组请按原题号逐项作答）：',.8,2,11.7,.5,20);
       text(s,'在此输入答案、步骤或插入公式与图形。',.8,2.7,11.7,3.9,20,{color:'667085'});
     });

@@ -13,6 +13,7 @@ from pathlib import Path
 from zipfile import ZipFile
 from lxml import etree as ET
 from PIL import Image
+from daily_study_teaching import attach_teaching
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = Path('C:/Users/xiche/Downloads/北京中考')
@@ -218,9 +219,12 @@ def build():
         days.append({'day':day+1,'focus':focus,'tasks':tasks,'checkMinutes':5})
     assert set(focus_counts.values())=={10}
     bank={'version':'nine-subjects-20261010','minutes':60,'subjects':subjects,'questions':questions,'days':days,'sources':sources}
+    attach_teaching(bank)
     (OUT/'bank.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2),encoding='utf-8')
     lines=['九科每日复习整体规划','45个学习日；每天九科短题各3分钟、轮换两科重点题各14分钟、检查保存5分钟。','雅思、阿语、古诗词另计时间。',
-           '知识点提示为本项目整理；题目及解析来自家庭提供的原卷与解析文件，保留原题号、材料、公式和图表。',
+           '每个题组依次学习概念讲解、方法、原创例子与易错点，再独立完成真题；讲解与例子为本项目编写，非中考原题。',
+           '短题3分钟建议讲解1分钟、检查2分钟；重点14分钟建议讲解3分钟、检查11分钟；均包含在60分钟内。',
+           '检查题目及解析来自家庭提供的原卷与解析文件，保留原题号、材料、公式和图表。',
            '按实际开始日期推进；缺勤不跳课。同一天再次下载不重置60分钟计时。',
            '这是主要知识点的练习轮换，不是所有考点逐项穷尽的保证。作文整篇写作、英语听说和实物实验须另做专项。',
            '短题用时是练习预算；综合题超时可继续完成并记录实际用时。完成打卡由本人确认，不等于自动批改或邮件发送核验。',

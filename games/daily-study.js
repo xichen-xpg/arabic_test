@@ -25,9 +25,21 @@
       const h=document.createElement('h2');h.textContent=subject.name;article.append(h);
       day.tasks.filter(t=>bank.questions[t.id].subject===subject.id).forEach(task=>{
         const q=bank.questions[task.id],p=document.createElement('p');
-        p.textContent=`${q.kind==='focus'?'重点题组':'短题'} · ${task.minutes}分钟 · ${q.topic}${task.repeat?' · 间隔重做':''}`;
-        const knowledge=document.createElement('p');knowledge.textContent=q.knowledge;
-        article.append(p,knowledge,link(q.source,`../data/daily-study/${q.question}`));
+        const lesson=document.createElement('section');lesson.className='lesson';
+        p.textContent=`${q.kind==='focus'?'重点题组':'短题'} · 共${task.minutes}分钟（含讲解${q.kind==='focus'?3:1}分钟） · ${q.topic}${task.repeat?' · 间隔重做':''}`;
+        lesson.append(p);
+        for (const [heading,content] of [
+          ['1 · 知识点讲解',q.teaching.concept],['解题方法',q.teaching.method],
+          ['2 · 例子推演',q.teaching.example],['易错点',q.teaching.pitfall]
+        ]) {
+          const h=document.createElement('h3'),body=document.createElement('p');
+          h.textContent=heading;body.textContent=content;lesson.append(h);
+          if (heading==='2 · 例子推演') {const label=document.createElement('p');label.className='muted';label.textContent=q.teaching.exampleLabel;lesson.append(label);}
+          lesson.append(body);
+        }
+        const check=document.createElement('h3');check.textContent='3 · 真题检查';
+        const instruction=document.createElement('p');instruction.textContent='先独立作答，再核对家长版解析；需要回看讲解时，记下还不熟悉的知识点。';
+        lesson.append(check,instruction,link(q.source,`../data/daily-study/${q.question}`));article.append(lesson);
         const answer=document.createElement('p');answer.append(link(`${q.source}：${q.topic}`,`../data/daily-study/${q.answer}`));$('answers').append(answer);
       });
       $('tasks').append(article);
@@ -41,10 +53,10 @@
   }
   function current() {const p=StudySession.plan(localStorage);day=bank.days[p.day-1];state=p.state;preview=false;draw();}
   try {
-    const response=await fetch('../data/daily-study/bank.json?v=20261010-nine');
+    const response=await fetch('../data/daily-study/bank.json?v=20261010-teaching');
     if (!response.ok) throw new Error('题库加载失败，请刷新。');bank=await response.json();
     for (const d of bank.days) {const option=document.createElement('option');option.value=d.day;option.textContent=`第${d.day}天`; $('daySelect').append(option);}
-    current();notice('知识点为复习提示，题目来自本地提供的北京真题。先准备好PowerPoint，再开始下载。');
+    current();notice('每个题组先讲知识点、演示例子，再用北京真题检查。讲解和原创例子不属于原卷；网页下方与合并PPT均可阅读。');
   } catch(error) {notice(error.message);}
   $('download').addEventListener('click',async()=>{
     if (busy || !day) return;busy=true;tick();notice('正在准备真题图片并生成合并PPT…');

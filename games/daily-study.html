@@ -6,6 +6,7 @@
 .subject{padding:18px 0;border-bottom:1px solid #d7dee8}.subject h2{margin:0}.subject p{margin:8px 0}
 .subject a{margin-right:16px}#completion label{display:flex;align-items:center;gap:12px}input[type=checkbox]{width:20px;margin:0}
 .actions{display:flex;gap:16px;flex-wrap:wrap}select{padding:8px;font:inherit;max-width:100%}.muted{color:#667085}
+.lesson{padding:16px 0}.lesson+.lesson{border-top:1px dashed #d7dee8}.lesson h3{font-size:1.05rem;color:#0f766e;margin:20px 0 8px}.lesson p{line-height:1.8;overflow-wrap:anywhere}
 </style></head>
 <body><main>
 <nav><a href="arabic-test.html#checkin">每日打卡</a><a href="arabic-test.html">语言练习</a></nav>
@@ -15,7 +16,8 @@
 <p><a href="../data/daily-study/overall-plan.txt" target="_blank">查看45天整体规划</a> · <a href="daily-math.html">数学专项加练</a> · <a href="daily-chinese.html">语文阅读加练</a></p></header>
 <p id="notice" role="status" aria-live="polite">正在加载题库…</p>
 <section class="assignment"><h2 id="dayTitle">今日安排</h2><p id="focus"></p>
-<p>九科短题共27分钟，重点题组共28分钟，检查保存5分钟。题目与原图保留在合并PPT中，答案另附家长版。</p>
+<p>每题组先学知识点、看例子，再独立做真题。短题各3分钟（讲解1＋检查2），重点各14分钟（讲解3＋检查11），最后检查保存5分钟，合计60分钟。</p>
+<p><a href="#tasks">阅读今日知识点讲解与例子 ↓</a> · 合并PPT包含相同讲解，真题解析另附家长版。</p>
 <p class="clock">剩余时间 <strong id="timer">60:00</strong></p>
 <div class="actions"><button id="download" disabled>开始并下载合并 PPT</button><a id="emailLink" href="mailto:xichen.app@gmail.com">打开邮箱发送作业</a></div>
 <p id="filename"></p><p class="muted">计时从成功生成作业后开始，刷新、重下或跨日继续均不重置。发邮件时请自行添加已完成的PPT附件；网页不会核验邮件或自动批改答案。</p>
@@ -27,4 +29,4 @@
 <section class="assignment"><h2>课程目录</h2><label>选择学习日 <select id="daySelect"></select></label>
 <button id="preview">查看该日安排</button><button id="backToday">返回当前作业</button>
 <p class="muted">目录预览不改变进度。全部完成当前作业后，下一个实际学习日进入下一课；未完成作业可跨日继续。</p></section>
-</main><script src="../assets/vendor/pptxgen.bundle.js"></script><script src="study-session.js"></script><script src="study-ppt.js"></script><script src="daily-study.js"></script></body></html>
+</main><script src="../assets/vendor/pptxgen.bundle.js"></script><script src="study-session.js"></script><script src="study-ppt.js?v=20261010-teaching"></script><script src="daily-study.js?v=20261010-teaching"></script></body></html>

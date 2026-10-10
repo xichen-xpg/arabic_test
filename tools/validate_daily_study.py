@@ -3,9 +3,11 @@ import json
 from pathlib import Path
 from lxml import html
 from PIL import Image
+from daily_study_teaching import attach_teaching
 
 root=Path(__file__).resolve().parents[1]/'data/daily-study'
 bank=json.loads((root/'bank.json').read_text(encoding='utf-8'))
+expected_teaching=attach_teaching(json.loads((root/'bank.json').read_text(encoding='utf-8')))
 ids={s['id'] for s in bank['subjects']}
 assert len(ids)==9 and len(bank['days'])==45 and len(bank['sources'])==9
 counts={s:0 for s in ids};seen=set();pages=0
@@ -20,6 +22,9 @@ assert set(counts.values())=={10}
 assert seen==set(bank['questions'])
 for q in bank['questions'].values():
     assert q['knowledge'] and q['source'] and q['numbers']
+    assert q['teaching']==expected_teaching['questions'][q['id']]['teaching'],q['id']
+    assert all(q['teaching'][field].strip() for field in ['concept','method','example','pitfall'])
+    assert q['teaching']['exampleLabel']=='原创讲解例子（非中考真题）'
     for kind in ['question','answer']:
         file=root/q[kind]; doc=html.fromstring(file.read_text(encoding='utf-8'))
         if kind=='question':
@@ -35,4 +40,4 @@ for q in bank['questions'].values():
             # Chromium may round the document's final CSS pixel before scaling.
             assert im.width==1500 and abs(im.height-p['height']*1.5)<=2
         pages+=1
-print(f'Validated {len(seen)} selections, {pages} image pages, 45 days, 9 subjects, 60 minutes, balanced focus and marked repeats.')
+print(f'Validated {len(seen)} selections with teaching, worked examples and pitfalls, {pages} image pages, 45 days, 9 subjects, 60 minutes, balanced focus and marked repeats.')
