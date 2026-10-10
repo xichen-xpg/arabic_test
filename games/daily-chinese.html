@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>每日语文 · 阅读作答</title>
+  <link rel="stylesheet" href="daily-math.css">
+  <style>
+    #readingText { white-space: pre-wrap; }
+    fieldset { margin: 24px 0; border: 1px solid #d7dee8; border-radius: 8px; padding: 16px; }
+    legend { line-height: 1.7; font-weight: 700; }
+    input[type="radio"] { display: inline; width: auto; margin-right: 8px; }
+    .feedback { color: #0f766e; }
+  </style>
+</head>
+<body>
+  <main>
+    <nav><a href="arabic-test.html">返回练习</a><a href="arabic-test.html#checkin">每日打卡</a></nav>
+    <header><p class="eyebrow">每日语文 · 每天一篇</p><h1 id="readingTitle">阅读作答</h1><p id="readingMeta"></p></header>
+    <p id="notice" role="status">正在加载题库…</p>
+    <section id="materials" aria-label="阅读原文"><article><p id="readingText"></p></article></section>
+    <form id="assignment" class="assignment" hidden>
+      <h2>阅读后回答下面五道题</h2>
+      <div id="questions"></div>
+      <button id="submit" type="submit">提交答案</button>
+      <p id="result" role="status"></p>
+    </form>
+  </main>
+  <script src="daily-chinese.js"></script>
+</body>
+</html>

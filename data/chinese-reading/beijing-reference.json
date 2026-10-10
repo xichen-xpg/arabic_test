@@ -1,0 +1,189 @@
+{
+  "version": 1,
+  "description": "用户提供的北京中考文件作为考点与命题方式参考。关联表示同类命题思路，不代表逐题改编或实际考试出处。",
+  "analysisScope": "重点精读2022—2026文件中的阅读设问和相关解析；文件年份依文件名记录，未独立鉴真。",
+  "sources": {
+    "beijing-chinese-2022": {
+      "filename": "2022年北京市中考语文真题（解析）.docx",
+      "sha256": "f6a7b82b5a70d6de52f1d2fac21567b196d2a81756d85af7498a4bc9ef2e7d28",
+      "providedFolder": "C:\\Users\\xiche\\Downloads\\北京中考\\北京中考-语文",
+      "fileLabelYear": 2022,
+      "verification": "user_supplied_file; not independently authenticated",
+      "usage": "命题方式参考；不把本题库标为该年真题，不复制其现代阅读材料。"
+    },
+    "beijing-chinese-2023": {
+      "filename": "2023年北京市中考语文真题（解析）.docx",
+      "sha256": "800f95690615746b4e7734aebfe670028ef744a7652e5c3a2246368958656eb3",
+      "providedFolder": "C:\\Users\\xiche\\Downloads\\北京中考\\北京中考-语文",
+      "fileLabelYear": 2023,
+      "verification": "user_supplied_file; not independently authenticated",
+      "usage": "命题方式参考；不把本题库标为该年真题，不复制其现代阅读材料。"
+    },
+    "beijing-chinese-2024": {
+      "filename": "2024年北京市中考语文真题（解析）.docx",
+      "sha256": "d687985274b66d01a1901b9d6ff76c2f67673fc01b74bbd43152d4e8c9c6af2c",
+      "providedFolder": "C:\\Users\\xiche\\Downloads\\北京中考\\北京中考-语文",
+      "fileLabelYear": 2024,
+      "verification": "user_supplied_file; not independently authenticated",
+      "usage": "命题方式参考；不把本题库标为该年真题，不复制其现代阅读材料。"
+    },
+    "beijing-chinese-2025": {
+      "filename": "2025年北京市中考语文真题（解析版）.docx",
+      "sha256": "f7d3cc86a69c8a19fe2523e82a78e31f5e8dc26285d3f949660b453d17201fe3",
+      "providedFolder": "C:\\Users\\xiche\\Downloads\\北京中考\\北京中考-语文",
+      "fileLabelYear": 2025,
+      "verification": "user_supplied_file; not independently authenticated",
+      "usage": "命题方式参考；不把本题库标为该年真题，不复制其现代阅读材料。"
+    },
+    "beijing-chinese-2026": {
+      "filename": "2026年北京市中考语文试题（解析版）.docx",
+      "sha256": "39e92f4ecb10fa444bd6f61864c3df9be32a238dad320f7578122ea1de7e2957",
+      "providedFolder": "C:\\Users\\xiche\\Downloads\\北京中考\\北京中考-语文",
+      "fileLabelYear": 2026,
+      "verification": "user_supplied_file; not independently authenticated",
+      "usage": "命题方式参考；不把本题库标为该年真题，不复制其现代阅读材料。"
+    }
+  },
+  "patterns": {
+    "I22-14": {
+      "sourceId": "beijing-chinese-2022",
+      "questionNumber": 14,
+      "pattern": "多材料信息辨析：识别与材料不符或扩大范围的陈述"
+    },
+    "M22-19": {
+      "sourceId": "beijing-chinese-2022",
+      "questionNumber": 19,
+      "pattern": "结合上下文分析词语的表达效果"
+    },
+    "M22-20": {
+      "sourceId": "beijing-chinese-2022",
+      "questionNumber": 20,
+      "pattern": "依据具体行为概括人物精神品质"
+    },
+    "A22-22": {
+      "sourceId": "beijing-chinese-2022",
+      "questionNumber": 22,
+      "pattern": "判断补充论据是否支持论点"
+    },
+    "A22-23": {
+      "sourceId": "beijing-chinese-2022",
+      "questionNumber": 23,
+      "pattern": "分析对比等论证方法及其作用"
+    },
+    "P22-8": {
+      "sourceId": "beijing-chinese-2022",
+      "questionNumber": 8,
+      "pattern": "依据全诗理解并提取诗句内容"
+    },
+    "P22-9": {
+      "sourceId": "beijing-chinese-2022",
+      "questionNumber": 9,
+      "pattern": "由诗句、景物描绘诗人的理想生活与心境"
+    },
+    "M23-21": {
+      "sourceId": "beijing-chinese-2023",
+      "questionNumber": 21,
+      "pattern": "比较前后关键词义及其情感作用"
+    },
+    "A23-24": {
+      "sourceId": "beijing-chinese-2023",
+      "questionNumber": 24,
+      "pattern": "分析补充限制、正反说理如何使论证推进"
+    },
+    "C23-12": {
+      "sourceId": "beijing-chinese-2023",
+      "questionNumber": 12,
+      "pattern": "辨析语境中多层含义，选出理解不正确的一项"
+    },
+    "P23-10": {
+      "sourceId": "beijing-chinese-2023",
+      "questionNumber": 10,
+      "pattern": "联系意象与句式分析表达效果"
+    },
+    "M24-18": {
+      "sourceId": "beijing-chinese-2024",
+      "questionNumber": 18,
+      "pattern": "分析跨时段叙事及详略安排的作用"
+    },
+    "M24-19": {
+      "sourceId": "beijing-chinese-2024",
+      "questionNumber": 19,
+      "pattern": "联系上下文辨析词语在不同位置的含义"
+    },
+    "M24-20": {
+      "sourceId": "beijing-chinese-2024",
+      "questionNumber": 20,
+      "pattern": "联系文章分析比喻、动作词及其表达效果"
+    },
+    "M24-21": {
+      "sourceId": "beijing-chinese-2024",
+      "questionNumber": 21,
+      "pattern": "由具体内容获得有依据的精神启示"
+    },
+    "C24-11": {
+      "sourceId": "beijing-chinese-2024",
+      "questionNumber": 11,
+      "pattern": "结合词语使用辨析文言实词含义"
+    },
+    "C24-12": {
+      "sourceId": "beijing-chinese-2024",
+      "questionNumber": 12,
+      "pattern": "结合环境与语境理解文言关键词句"
+    },
+    "A24-24": {
+      "sourceId": "beijing-chinese-2024",
+      "questionNumber": 24,
+      "pattern": "梳理论证过程及各层内容之间的关系"
+    },
+    "M25-14": {
+      "sourceId": "beijing-chinese-2025",
+      "questionNumber": 14,
+      "pattern": "关联并比较人物形象，以深入理解主题"
+    },
+    "M25-18": {
+      "sourceId": "beijing-chinese-2025",
+      "questionNumber": 18,
+      "pattern": "梳理人物经历、成长过程与精神变化"
+    },
+    "M25-19": {
+      "sourceId": "beijing-chinese-2025",
+      "questionNumber": 19,
+      "pattern": "分析句式特点及表达效果"
+    },
+    "M25-20": {
+      "sourceId": "beijing-chinese-2025",
+      "questionNumber": 20,
+      "pattern": "联系全文理解精神追求在经历中的作用"
+    },
+    "A25-23": {
+      "sourceId": "beijing-chinese-2025",
+      "questionNumber": 23,
+      "pattern": "辨析限制词、关联词与表达的准确严密性"
+    },
+    "A25-24": {
+      "sourceId": "beijing-chinese-2025",
+      "questionNumber": 24,
+      "pattern": "梳理各部分如何组织为完整行文思路"
+    },
+    "C25-12": {
+      "sourceId": "beijing-chinese-2025",
+      "questionNumber": 12,
+      "pattern": "结合语境辨析文言语句的理解"
+    },
+    "P25-10": {
+      "sourceId": "beijing-chinese-2025",
+      "questionNumber": 10,
+      "pattern": "从关键字到景物特征，再到诗人情感的炼字分析"
+    },
+    "P26-10": {
+      "sourceId": "beijing-chinese-2026",
+      "questionNumber": 10,
+      "pattern": "结合情感变化分析关键词语的丰富意蕴"
+    },
+    "M26-19": {
+      "sourceId": "beijing-chinese-2026",
+      "questionNumber": 19,
+      "pattern": "联系前后文分析某段材料的安排用意"
+    }
+  }
+}
