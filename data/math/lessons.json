@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "sequence": "初一上册有理数单元：正数和负数 → 有理数 → 数轴 → 相反数 → 绝对值。原创材料与练习，按人教版常见教学顺序编排。",
+  "version": 3,
+  "sequence": "已学过初中内容的中考专题复习强化：50个学习日，每日6题，共300题。前五课重做→数与式→方程与不等式→函数→几何→统计与概率→综合强化。",
   "lessons": [
     {
       "id": "positive-negative",
@@ -35,7 +35,9 @@
             "只看记录无法求实际分数"
           ],
           "answer": 1,
-          "explanation": "先还原：甲为85分，乙为87分。不同标准下的记录不能直接比较，乙比甲高2分。"
+          "explanation": "先还原：甲为85分，乙为87分。不同标准下的记录不能直接比较，乙比甲高2分。",
+          "id": "math-01-1",
+          "origin": "original_practice"
         },
         {
           "level": "巩固",
@@ -48,7 +50,9 @@
             "−2厘米"
           ],
           "answer": 2,
-          "explanation": "甲记录−2说明实际长98厘米。它比乙标准104厘米短6厘米；乙规定不足为正，故记＋6。"
+          "explanation": "甲记录−2说明实际长98厘米。它比乙标准104厘米短6厘米；乙规定不足为正，故记＋6。",
+          "id": "math-01-2",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -61,7 +65,9 @@
             "低2厘米"
           ],
           "answer": 0,
-          "explanation": "甲标准比实际长度低3厘米，乙标准比实际长度高5厘米，因此乙标准比甲标准高3＋5＝8厘米。"
+          "explanation": "甲标准比实际长度低3厘米，乙标准比实际长度高5厘米，因此乙标准比甲标准高3＋5＝8厘米。",
+          "id": "math-01-3",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -74,7 +80,9 @@
             "−2至＋3"
           ],
           "answer": 3,
-          "explanation": "98毫米对应＋3，103毫米对应−2。实际长度越长记录越小，故范围为−2至＋3，两端均包含。"
+          "explanation": "98毫米对应＋3，103毫米对应−2。实际长度越长记录越小，故范围为−2至＋3，两端均包含。",
+          "id": "math-01-4",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -87,7 +95,9 @@
             "＋1℃"
           ],
           "answer": 1,
-          "explanation": "乙标准固定，原来低于乙标准3℃，升高2℃后仍低1℃，故为−1。不能因温度升高便判记录为正。"
+          "explanation": "乙标准固定，原来低于乙标准3℃，升高2℃后仍低1℃，故为−1。不能因温度升高便判记录为正。",
+          "id": "math-01-5",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -100,9 +110,14 @@
             "−2℃"
           ],
           "answer": 2,
-          "explanation": "要记录相同，温度须在20与24的中间且距两标准相等，即22℃；两种规则都记＋2℃。区间外两记录异号，不可能相等。"
+          "explanation": "要记录相同，温度须在20与24的中间且距两标准相等，即22℃；两种规则都记＋2℃。区间外两记录异号，不可能相等。",
+          "id": "math-01-6",
+          "origin": "original_practice"
         }
-      ]
+      ],
+      "unit": "前五课重做",
+      "day": 1,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
     },
     {
       "id": "rational-numbers",
@@ -137,7 +152,9 @@
             "4个，1个"
           ],
           "answer": 3,
-          "explanation": "先化简：−6/3＝−2、7/7＝1。整数为−2、0、1、−4共4个；负分数只有−0.25，共1个。"
+          "explanation": "先化简：−6/3＝−2、7/7＝1。整数为−2、0、1、−4共4个；负分数只有−0.25，共1个。",
+          "id": "math-02-1",
+          "origin": "original_practice"
         },
         {
           "level": "巩固",
@@ -150,7 +167,9 @@
             "没有问题"
           ],
           "answer": 0,
-          "explanation": "−1既是整数又是负数，被重复归类；1/2既不是整数又不是负数，被遗漏。零属于整数，并未遗漏。"
+          "explanation": "−1既是整数又是负数，被重复归类；1/2既不是整数又不是负数，被遗漏。零属于整数，并未遗漏。",
+          "id": "math-02-2",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -163,7 +182,9 @@
             "−2、−1、0、1"
           ],
           "answer": 1,
-          "explanation": "不等式表示n在−6与4之间，不含端点。n/2非整数要求n是奇数，故n＝−5、−3、−1、1、3，对应五个值。"
+          "explanation": "不等式表示n在−6与4之间，不含端点。n/2非整数要求n是奇数，故n＝−5、−3、−1、1、3，对应五个值。",
+          "id": "math-02-3",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -176,7 +197,9 @@
             "5个"
           ],
           "answer": 2,
-          "explanation": "负数条件给出n＝−5、−4、−3、−2、−1；其中−3/3＝−1是整数，要排除，剩4个。"
+          "explanation": "负数条件给出n＝−5、−4、−3、−2、−1；其中−3/3＝−1是整数，要排除，剩4个。",
+          "id": "math-02-4",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -189,7 +212,9 @@
             "0/5"
           ],
           "answer": 3,
-          "explanation": "0/5＝0，虽然采用分数写法但表示整数，且0既不正也不负。其余选项至少不能否定第二句话。"
+          "explanation": "0/5＝0，虽然采用分数写法但表示整数，且0既不正也不负。其余选项至少不能否定第二句话。",
+          "id": "math-02-5",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -202,9 +227,14 @@
             "8个"
           ],
           "answer": 0,
-          "explanation": "要使商为整数，n必须整除6；要商为负数，n须为负。可能为−1、−2、−3、−6，共4个，不能只列正约数。"
+          "explanation": "要使商为整数，n必须整除6；要商为负数，n须为负。可能为−1、−2、−3、−6，共4个，不能只列正约数。",
+          "id": "math-02-6",
+          "origin": "original_practice"
         }
-      ]
+      ],
+      "unit": "前五课重做",
+      "day": 2,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
     },
     {
       "id": "number-line",
@@ -239,7 +269,9 @@
             "−6"
           ],
           "answer": 1,
-          "explanation": "A到B跨8个单位，每单位2厘米。C在B左侧3个单位，表示2。要把厘米先换成单位，不能直接用5减6。"
+          "explanation": "A到B跨8个单位，每单位2厘米。C在B左侧3个单位，表示2。要把厘米先换成单位，不能直接用5减6。",
+          "id": "math-03-1",
+          "origin": "original_practice"
         },
         {
           "level": "巩固",
@@ -252,7 +284,9 @@
             "0或6"
           ],
           "answer": 2,
-          "explanation": "P在AB之间时，AP＋PB＝6且AP＝2PB，得AP＝4，P表示2。P在B右侧时，AP＝AB＋BP＝6＋BP，又AP＝2BP，得BP＝6，P表示10。"
+          "explanation": "P在AB之间时，AP＋PB＝6且AP＝2PB，得AP＝4，P表示2。P在B右侧时，AP＝AB＋BP＝6＋BP，又AP＝2BP，得BP＝6，P表示10。",
+          "id": "math-03-2",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -265,7 +299,9 @@
             "4"
           ],
           "answer": 0,
-          "explanation": "新原点在旧3处，旧−1点位于它左侧4个单位，因此新坐标为−4。每单位的物理长度不改变这个单位数。"
+          "explanation": "新原点在旧3处，旧−1点位于它左侧4个单位，因此新坐标为−4。每单位的物理长度不改变这个单位数。",
+          "id": "math-03-3",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -278,7 +314,9 @@
             "3"
           ],
           "answer": 3,
-          "explanation": "旧−4位于新原点旧2的左侧6个旧单位，即3个新单位；向左是新正方向，故表示3。"
+          "explanation": "旧−4位于新原点旧2的左侧6个旧单位，即3个新单位；向左是新正方向，故表示3。",
+          "id": "math-03-4",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -291,7 +329,9 @@
             "6个"
           ],
           "answer": 1,
-          "explanation": "AB中点表示1。距A更近意味着P在中点左侧，又须严格在AB内部，所以P为−3、−2、−1、0，共4个；1处两距离相等。"
+          "explanation": "AB中点表示1。距A更近意味着P在中点左侧，又须严格在AB内部，所以P为−3、−2、−1、0，共4个；1处两距离相等。",
+          "id": "math-03-5",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -304,9 +344,14 @@
             "3和9"
           ],
           "answer": 2,
-          "explanation": "经过−2→4→1，路程为6＋3＝9；最终在1处，到原点距离为1。路程、起终点间距离、到原点距离是不同量。"
+          "explanation": "经过−2→4→1，路程为6＋3＝9；最终在1处，到原点距离为1。路程、起终点间距离、到原点距离是不同量。",
+          "id": "math-03-6",
+          "origin": "original_practice"
         }
-      ]
+      ],
+      "unit": "前五课重做",
+      "day": 3,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
     },
     {
       "id": "opposite-numbers",
@@ -341,7 +386,9 @@
             "a＜b＜0"
           ],
           "answer": 1,
-          "explanation": "负数的相反数是正数，所以a＜0＜b。符号−a表示取相反数，不能直接判成负数。"
+          "explanation": "负数的相反数是正数，所以a＜0＜b。符号−a表示取相反数，不能直接判成负数。",
+          "id": "math-04-1",
+          "origin": "original_practice"
         },
         {
           "level": "巩固",
@@ -354,7 +401,9 @@
             "0"
           ],
           "answer": 2,
-          "explanation": "互为相反数且不相等的两点关于0对称。每点到0距离为7/2，较小的a在左侧，因此a＝−7/2。"
+          "explanation": "互为相反数且不相等的两点关于0对称。每点到0距离为7/2，较小的a在左侧，因此a＝−7/2。",
+          "id": "math-04-2",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -367,7 +416,9 @@
             "−5"
           ],
           "answer": 0,
-          "explanation": "第一轮：−3取相反数为3，再右移2得5；第二轮：5取相反数为−5，再右移2得−3。两轮循环，2027为奇数，最后为5。"
+          "explanation": "第一轮：−3取相反数为3，再右移2得5；第二轮：5取相反数为−5，再右移2得−3。两轮循环，2027为奇数，最后为5。",
+          "id": "math-04-3",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -380,7 +431,9 @@
             "2"
           ],
           "answer": 3,
-          "explanation": "新原点须为AB中点。−2到6相距8，中点在−2右侧4处，即旧2处；此时新坐标分别为−4和4。"
+          "explanation": "新原点须为AB中点。−2到6相距8，中点在−2右侧4处，即旧2处；此时新坐标分别为−4和4。",
+          "id": "math-04-4",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -393,7 +446,9 @@
             "a为整数"
           ],
           "answer": 1,
-          "explanation": "一对非零相反数中必有一个负数。若两个都不是负数，只能都为0。其他条件均允许非零相反数。"
+          "explanation": "一对非零相反数中必有一个负数。若两个都不是负数，只能都为0。其他条件均允许非零相反数。",
+          "id": "math-04-5",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -406,9 +461,14 @@
             "−5"
           ],
           "answer": 0,
-          "explanation": "倒着看：5关于3的对称点为1，因为它们分别在3的两侧且距离2；1关于0的对称点为−1。正向检查−1→1→5。"
+          "explanation": "倒着看：5关于3的对称点为1，因为它们分别在3的两侧且距离2；1关于0的对称点为−1。正向检查−1→1→5。",
+          "id": "math-04-6",
+          "origin": "original_practice"
         }
-      ]
+      ],
+      "unit": "前五课重做",
+      "day": 4,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
     },
     {
       "id": "absolute-value",
@@ -443,7 +503,9 @@
             "−4或4"
           ],
           "answer": 2,
-          "explanation": "a＝−4，b可为−2或2，二者都在−4右侧，不能看到“右侧”就只选正数。"
+          "explanation": "a＝−4，b可为−2或2，二者都在−4右侧，不能看到“右侧”就只选正数。",
+          "id": "math-05-1",
+          "origin": "original_practice"
         },
         {
           "level": "巩固",
@@ -456,7 +518,9 @@
             "−2或4"
           ],
           "answer": 0,
-          "explanation": "到1距离3的点是−2和4；再用|x|＜3筛选，只有−2符合，4到原点距离太大。"
+          "explanation": "到1距离3的点是−2和4；再用|x|＜3筛选，只有−2符合，4到原点距离太大。",
+          "id": "math-05-2",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -469,7 +533,9 @@
             "2，−3"
           ],
           "answer": 3,
-          "explanation": "两个绝对值都非负，和为0要求分别为0。因此a−2＝0，b＋3＝0，得a＝2，b＝−3。"
+          "explanation": "两个绝对值都非负，和为0要求分别为0。因此a−2＝0，b＋3＝0，得a＝2，b＝−3。",
+          "id": "math-05-3",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -482,7 +548,9 @@
             "无穷多个"
           ],
           "answer": 1,
-          "explanation": "左式为x到−1和3的距离之和。在两点之间（含端点）恰好为4，外侧会多走往返的一段。整数为−1、0、1、2、3，共5个。"
+          "explanation": "左式为x到−1和3的距离之和。在两点之间（含端点）恰好为4，外侧会多走往返的一段。整数为−1、0、1、2、3，共5个。",
+          "id": "math-05-4",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -495,7 +563,9 @@
             "a＞b"
           ],
           "answer": 2,
-          "explanation": "由−3＜a＜−2知2＜|a|＜3，而1＜|b|＜2，所以|a|＞|b|。即使不知道具体值，也能用不重叠的范围判断。"
+          "explanation": "由−3＜a＜−2知2＜|a|＜3，而1＜|b|＜2，所以|a|＞|b|。即使不知道具体值，也能用不重叠的范围判断。",
+          "id": "math-05-5",
+          "origin": "original_practice"
         },
         {
           "level": "挑战",
@@ -508,12 +578,5102 @@
             "0"
           ],
           "answer": 0,
-          "explanation": "到两端−3和5的距离之和至少为8，且P在两端之间时取8；还要加到1的距离，令P在1处该项为0，故最小值为8。"
+          "explanation": "到两端−3和5的距离之和至少为8，且P在两端之间时取8；还要加到1的距离，令P在1处该项为0，故最小值为8。",
+          "id": "math-05-6",
+          "origin": "original_practice"
         }
-      ]
+      ],
+      "unit": "前五课重做",
+      "day": 5,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-06",
+      "title": "有理数运算与科学记数法",
+      "unit": "数与式",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "先乘方，再乘除，后加减；同级从左到右。负号与乘方的作用范围由括号决定。科学记数法为a×10ⁿ，其中1≤绝对值a＜10，n是整数。近似数的精确位取决于最后保留的数位。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "运算前先标出每个负号属于底数还是取相反数。混合分数运算优先约分，分配律须乘到每一项。科学记数法的小数点移动方向与指数正负相对应，不能只数零。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：−2²＋(−2)²＝−4＋4＝0。0.00072＝7.2×10⁻⁴；72000精确到千位为7.2×10⁴，不能写成精确到个位的72000而不说明精度。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "−3²＋(−2)³的值是？",
+          "options": [
+            "17",
+            "−17",
+            "1",
+            "−1"
+          ],
+          "answer": 1,
+          "explanation": "−3²＝−9，(−2)³＝−8，相加为−17。",
+          "id": "math-06-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "0.000503用科学记数法表示为？",
+          "options": [
+            "50.3×10⁻⁵",
+            "0.503×10⁻³",
+            "5.03×10⁻⁴",
+            "5.03×10⁻³"
+          ],
+          "answer": 2,
+          "explanation": "小数点右移4位得到5.03，指数为−4；系数须在1至10之间。",
+          "id": "math-06-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "(−3/4)×(8/9)÷(−2/3)的值是？",
+          "options": [
+            "−1",
+            "4/9",
+            "−4/9",
+            "1"
+          ],
+          "answer": 3,
+          "explanation": "前两项乘积为−2/3，再除以−2/3得1。",
+          "id": "math-06-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "一个数四舍五入精确到十分位是2.3，原数可能是？",
+          "options": [
+            "2.349",
+            "2.350",
+            "2.249",
+            "2.401"
+          ],
+          "answer": 0,
+          "explanation": "正数四舍五入后为2.3的范围是2.25≤x＜2.35；只有2.349符合。",
+          "id": "math-06-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "1−2＋3−4＋…＋99−100的值是？",
+          "options": [
+            "0",
+            "−50",
+            "50",
+            "−100"
+          ],
+          "answer": 1,
+          "explanation": "每相邻两项为−1，共50组，故为−50。",
+          "id": "math-06-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "整数n满足−2≤n≤2，使(−1)ⁿ＋n²＝0的n有几个？",
+          "options": [
+            "3",
+            "0",
+            "2",
+            "1"
+          ],
+          "answer": 2,
+          "explanation": "逐一检查：n＝±1时−1＋1＝0；n＝0得1；n＝±2得5，因此有2个。",
+          "id": "math-06-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 6,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-07",
+      "title": "平方根、立方根与实数",
+      "unit": "数与式",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "正数有两个互为相反数的平方根，算术平方根取非负值；负数没有实数平方根，但有负的立方根。√(a²)等于a的绝对值。无理数是无限不循环小数。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "二次根式先检查被开方数非负，分母另须非零。估算根式先夹在相邻整数的平方之间；化简时把完全平方因子提出。不能把√(a＋b)拆为√a＋√b。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：2＜√7＜3，所以√(√7−3)²＝3−√7。√12＋√27＝2√3＋3√3＝5√3。平方根定义、根式化简与符号判断要同时使用。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "16的平方根是？",
+          "options": [
+            "−4",
+            "8",
+            "±4",
+            "4"
+          ],
+          "answer": 2,
+          "explanation": "平方等于16的数有4和−4；算术平方根才只有4。",
+          "id": "math-07-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "√18−√8等于？",
+          "options": [
+            "√10",
+            "5√2",
+            "2",
+            "√2"
+          ],
+          "answer": 3,
+          "explanation": "化简为3√2−2√2＝√2，不能将被开方数直接相减。",
+          "id": "math-07-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "式子√(x−1)/(x−3)有意义的条件是？",
+          "options": [
+            "x≥1且x≠3",
+            "x＞1",
+            "x≥1",
+            "x≠3"
+          ],
+          "answer": 0,
+          "explanation": "根式要求x−1≥0，分母要求x−3≠0，两条件必须同时满足。",
+          "id": "math-07-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "√(2−√5)²等于？",
+          "options": [
+            "√5＋2",
+            "√5−2",
+            "2−√5",
+            "3"
+          ],
+          "answer": 1,
+          "explanation": "√5＞2，故2−√5为负，其绝对值是√5−2。",
+          "id": "math-07-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "√50位于哪两个相邻整数之间？",
+          "options": [
+            "8和9",
+            "5和6",
+            "7和8",
+            "6和7"
+          ],
+          "answer": 2,
+          "explanation": "49＜50＜64，所以7＜√50＜8。",
+          "id": "math-07-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "整数a使√(a＋2)与√(7−a)都有意义，且√(a＋2)为整数，a有几个可能值？",
+          "options": [
+            "3",
+            "5",
+            "10",
+            "4"
+          ],
+          "answer": 3,
+          "explanation": "定义域−2≤a≤7，a＋2可取0、1、4、9，对应a＝−2、−1、2、7，共4个。",
+          "id": "math-07-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 7,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-08",
+      "title": "整式运算与恒等变形",
+      "unit": "数与式",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "同类项的字母和对应指数必须相同。合并只加减系数。幂运算、平方差和完全平方公式是恒等式，对所有使表达式有意义的数成立。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "乘积与乘方分清：(aᵐ)ⁿ＝aᵐⁿ，aᵐaⁿ＝aᵐ⁺ⁿ。完全平方公式的中间项不能漏。整体代入能减少未知量，把已知的和或差当作整体。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：已知a＋b＝5，ab＝4，则a²＋b²＝(a＋b)²−2ab＝17。不必先解出a、b。验证恒等式可展开，但发现错误用一个反例即可。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "3a²b与−5ab²是否为同类项？",
+          "options": [
+            "是，字母相同即可",
+            "是，次数相同即可",
+            "只有a＝b时才是同类项",
+            "不是，字母指数不同"
+          ],
+          "answer": 3,
+          "explanation": "同类项由形式决定，a和b各自的指数不同，不能合并。",
+          "id": "math-08-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "(2x²)³÷x²（x≠0）等于？",
+          "options": [
+            "8x⁴",
+            "6x⁴",
+            "8x⁶",
+            "2x⁴"
+          ],
+          "answer": 0,
+          "explanation": "先得8x⁶，再除以x²得8x⁴。",
+          "id": "math-08-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "(x−3)²−(x＋3)(x−3)化简为？",
+          "options": [
+            "−6x",
+            "−6x＋18",
+            "18",
+            "6x−18"
+          ],
+          "answer": 1,
+          "explanation": "展开得x²−6x＋9−(x²−9)＝−6x＋18。",
+          "id": "math-08-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "a＋b＝7，ab＝10，则a²＋b²等于？",
+          "options": [
+            "39",
+            "69",
+            "29",
+            "49"
+          ],
+          "answer": 2,
+          "explanation": "a²＋b²＝(a＋b)²−2ab＝49−20＝29。",
+          "id": "math-08-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "若(x＋a)(x−2)展开后一次项系数为3，则常数项为？",
+          "options": [
+            "10",
+            "−6",
+            "6",
+            "−10"
+          ],
+          "answer": 3,
+          "explanation": "一次项系数a−2＝3，得a＝5，常数项为−2a＝−10。",
+          "id": "math-08-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "已知a＋b＝3，a²＋b²＝5，则(a−b)²等于？",
+          "options": [
+            "1",
+            "4",
+            "9",
+            "14"
+          ],
+          "answer": 0,
+          "explanation": "由9＝5＋2ab得ab＝2，再用(a−b)²＝5−2ab＝1。",
+          "id": "math-08-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 8,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-09",
+      "title": "因式分解与整体思想",
+      "unit": "数与式",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "因式分解把多项式化为几个整式的积。先提公因式，再看平方差、完全平方或分组。结果中每个因式要分解到指定范围内不能再分。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "多项式等于零时，可由积为零推出至少一个因式为零；不能对和式直接分别令零。字母整体替换能暴露平方差结构。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：(x＋1)²−9＝(x−2)(x＋4)。若该式为0，则x＝2或−4。分解后展开复核符号，尤其是提负号时各项都要变号。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "2x²−8的因式分解结果是？",
+          "options": [
+            "2(x−2)(x＋2)",
+            "2(x−4)(x＋4)",
+            "(2x−2)(x＋2)",
+            "2(x−2)²"
+          ],
+          "answer": 0,
+          "explanation": "先提2，再对x²−4用平方差公式。",
+          "id": "math-09-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "x²−6x＋9等于？",
+          "options": [
+            "(x−3)(x＋3)",
+            "(x−3)²",
+            "(x＋3)²",
+            "(x−9)(x＋1)"
+          ],
+          "answer": 1,
+          "explanation": "常数项9且中间项−6x，符合完全平方公式。",
+          "id": "math-09-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "已知x＋y＝4，x−y＝3，则x²−y²等于？",
+          "options": [
+            "1",
+            "25",
+            "12",
+            "7"
+          ],
+          "answer": 2,
+          "explanation": "x²−y²＝(x＋y)(x−y)＝4×3＝12。",
+          "id": "math-09-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "若(x−1)²＝16，则x的所有解是？",
+          "options": [
+            "5或−5",
+            "只有5",
+            "3或−3",
+            "5或−3"
+          ],
+          "answer": 3,
+          "explanation": "x−1＝±4，分别得5和−3。",
+          "id": "math-09-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "计算101²−99²，最简便的正确结果是？",
+          "options": [
+            "400",
+            "4",
+            "200",
+            "40000"
+          ],
+          "answer": 0,
+          "explanation": "平方差为(101−99)(101＋99)＝2×200＝400。",
+          "id": "math-09-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "整数x满足x²−5x＋6≤0，且x²−4≠0，x只能为？",
+          "options": [
+            "无整数解",
+            "3",
+            "2",
+            "2或3"
+          ],
+          "answer": 1,
+          "explanation": "前式分解为(x−2)(x−3)≤0，得2≤x≤3；后式排除±2，只剩3。",
+          "id": "math-09-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 9,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-10",
+      "title": "分式与二次根式综合",
+      "unit": "数与式",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "分式分母不能为零。约分只能约去分子、分母的公因式，不能约去和式的一项。二次根式乘除也须注意被开方数和分母的条件。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "化简前先记录原式限制，化简后限制仍保留。通分用最简公分母，分子加减时整体加括号。代入求值要避开原分母为零的点。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：(x²−4)/(x−2)＝x＋2，但原式要求x≠2。若求x＝2时原式值，应答无意义，不能把化简结果4当原式的值。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "(x²−9)/(x−3)化简及条件正确的是？",
+          "options": [
+            "x＋3，x≠−3",
+            "x＋3，x≠3",
+            "x＋3，所有实数",
+            "x−3，x≠3"
+          ],
+          "answer": 1,
+          "explanation": "分子分解为(x−3)(x＋3)，约分后原限制x≠3仍保留。",
+          "id": "math-10-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "1/x＋1/(x＋1)等于？",
+          "options": [
+            "1/(x(x＋1))",
+            "(x＋2)/(x(x＋1))",
+            "(2x＋1)/(x(x＋1))",
+            "2/(2x＋1)"
+          ],
+          "answer": 2,
+          "explanation": "通分后分子为x＋1＋x＝2x＋1；x≠0、−1。",
+          "id": "math-10-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "(x−1)/(x＋2)的值为0，则x等于？",
+          "options": [
+            "−2",
+            "0",
+            "−1",
+            "1"
+          ],
+          "answer": 3,
+          "explanation": "分子为0且分母不为0，x＝1时分母3符合。",
+          "id": "math-10-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "已知x＝√3＋1，求x²−2x的值。",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "2√3"
+          ],
+          "answer": 0,
+          "explanation": "x²−2x＝(x−1)²−1＝3−1＝2。",
+          "id": "math-10-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "将1/(√5−2)的分母有理化，结果是？",
+          "options": [
+            "5＋2√5",
+            "√5＋2",
+            "√5−2",
+            "1/3"
+          ],
+          "answer": 1,
+          "explanation": "分子分母同乘√5＋2，分母变成5−4＝1。",
+          "id": "math-10-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "先化简(x²−4)/(x−2)，再取满足x²＝4的x代入原式，所有有意义的值为？",
+          "options": [
+            "0和4",
+            "都无意义",
+            "只有0",
+            "只有4"
+          ],
+          "answer": 2,
+          "explanation": "x＝±2，但原分母排除2，仅x＝−2允许，原式值0。",
+          "id": "math-10-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 10,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-11",
+      "title": "一元一次方程与分式方程",
+      "unit": "方程与不等式",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "方程变形要保持解集：两边同加减，或同乘除非零数。分式方程去分母后必须验根，排除使原分母为零的解。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "去括号注意负号；去分母要乘到每一项。含参数方程Ax＝B分三种：A≠0唯一解；A＝0、B≠0无解；A＝B＝0有无数解。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：2/(x−1)＝1解得x＝3，代回原式成立。若去分母得到x＝1，因原分母为零应舍去，不能称其为原方程解。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "解方程3(x−2)＝2x＋1，x等于？",
+          "options": [
+            "−7",
+            "1",
+            "7",
+            "5"
+          ],
+          "answer": 2,
+          "explanation": "展开3x−6＝2x＋1，移项得x＝7。",
+          "id": "math-11-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "解方程(x−1)/2−(x＋1)/3＝1，x等于？",
+          "options": [
+            "7",
+            "5",
+            "−11",
+            "11"
+          ],
+          "answer": 3,
+          "explanation": "同乘6得3x−3−2x−2＝6，故x＝11。",
+          "id": "math-11-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "方程2/(x−1)＝3/(x＋1)的解是？",
+          "options": [
+            "5",
+            "−5",
+            "1",
+            "无解"
+          ],
+          "answer": 0,
+          "explanation": "交叉相乘得2x＋2＝3x−3，x＝5，不使分母为0。",
+          "id": "math-11-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "方程(x＋1)/(x−1)＝2/(x−1)的解是？",
+          "options": [
+            "任意实数",
+            "无解",
+            "1",
+            "−1"
+          ],
+          "answer": 1,
+          "explanation": "去分母得x＋1＝2，即x＝1，但原式分母为0，故无解。",
+          "id": "math-11-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "关于x的方程(a−2)x＝a−2何时有无数个解？",
+          "options": [
+            "a≠2",
+            "所有a",
+            "a＝2",
+            "a＝0"
+          ],
+          "answer": 2,
+          "explanation": "a＝2时变为0x＝0，对所有实数x成立。",
+          "id": "math-11-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "方程(x＋m)/(x−1)＝2的解为正数且有意义，m范围为？",
+          "options": [
+            "m＜2",
+            "m≤2且m≠1",
+            "m＞2",
+            "m＜2且m≠1"
+          ],
+          "answer": 3,
+          "explanation": "去分母得x＝2−m。正数要求m＜2，原分母要求x≠1即m≠1。",
+          "id": "math-11-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 11,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-12",
+      "title": "二元一次方程组与建模",
+      "unit": "方程与不等式",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "二元一次方程组的解须同时满足两个方程。代入消元和加减消元把两个未知数转化为一个。实际问题先定义未知数及单位，再按不同数量关系列式。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "系数成比例不一定有无数解：还要常数项同样成比例。方程有代数解后还要检查正数、整数、容量等实际约束。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：2x＋y＝9、x−y＝3，相加得3x＝12，x＝4、y＝1。把解代入两式复核，可避免只满足其中一个关系。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "方程组x＋y＝7、x−y＝1的解为？",
+          "options": [
+            "x＝3，y＝4",
+            "x＝5，y＝2",
+            "x＝1，y＝6",
+            "x＝4，y＝3"
+          ],
+          "answer": 3,
+          "explanation": "两式相加得2x＝8，再代回得y＝3。",
+          "id": "math-12-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "方程组2x＋3y＝13、x−y＝−1的解为？",
+          "options": [
+            "x＝2，y＝3",
+            "x＝3，y＝2",
+            "x＝1，y＝4",
+            "x＝4，y＝1"
+          ],
+          "answer": 0,
+          "explanation": "由x＝y−1代入得5y−2＝13，y＝3、x＝2。",
+          "id": "math-12-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "成人票30元、学生票20元，买10张共240元。成人票几张？",
+          "options": [
+            "5",
+            "4",
+            "6",
+            "3"
+          ],
+          "answer": 1,
+          "explanation": "设成人x张，30x＋20(10−x)＝240，得x＝4。",
+          "id": "math-12-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "方程组x＋2y＝3、2x＋4y＝7的解的情况是？",
+          "options": [
+            "无数个解",
+            "只有零解",
+            "无解",
+            "唯一解"
+          ],
+          "answer": 2,
+          "explanation": "第一式乘2左边与第二式相同，右边却6≠7，矛盾。",
+          "id": "math-12-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "方程组ax＋2y＝4、2x＋4y＝8有无数解，则a等于？",
+          "options": [
+            "2",
+            "4",
+            "0",
+            "1"
+          ],
+          "answer": 3,
+          "explanation": "第二式须为第一式的2倍，故2a＝2，a＝1。",
+          "id": "math-12-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "方程组x＋y＝6、2x＋y＝m的解都为正整数，整数m有几个？",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "4"
+          ],
+          "answer": 0,
+          "explanation": "x＝m−6，y＝12−m。两者正整数要求6＜m＜12，m＝7至11共5个。",
+          "id": "math-12-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 12,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-13",
+      "title": "不等式组与整数解",
+      "unit": "方程与不等式",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "不等式两边乘除负数时必须改变不等号方向。不等式组求公共部分，并区分开端点和闭端点。实际问题中的至少、至多对应含等号。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "先逐个解，再在数轴上取交集。给定整数解个数时用相邻整数卡住参数边界。不要把只有一个整数解误读为只有一个实数解。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：−2x＜6得到x＞−3，与x≤1合并为−3＜x≤1，整数解为−2、−1、0、1。严格不等号端点不能选。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "解不等式−3x＋2≥8，得到？",
+          "options": [
+            "x≤−2",
+            "x≥−2",
+            "x≤2",
+            "x≥2"
+          ],
+          "answer": 0,
+          "explanation": "−3x≥6，除以−3须反向，得x≤−2。",
+          "id": "math-13-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "不等式组x＞−2、2x≤6的整数解有几个？",
+          "options": [
+            "3",
+            "5",
+            "4",
+            "6"
+          ],
+          "answer": 1,
+          "explanation": "交集−2＜x≤3，整数为−1、0、1、2、3，共5个。",
+          "id": "math-13-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "购票每张12元，另付固定服务费5元，预算不超过100元。最多购几张？",
+          "options": [
+            "9",
+            "6",
+            "7",
+            "8"
+          ],
+          "answer": 2,
+          "explanation": "12n＋5≤100，n≤95/12，整数最大7。",
+          "id": "math-13-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "不等式组x＞a、x≤3恰有整数解2、3，则a的范围是？",
+          "options": [
+            "1＜a≤2",
+            "2≤a＜3",
+            "a＜2",
+            "1≤a＜2"
+          ],
+          "answer": 3,
+          "explanation": "需排除1，即a≥1；又要包含2，即a＜2。",
+          "id": "math-13-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "关于x的不等式组x≥2、x＜m无解，m应满足？",
+          "options": [
+            "m≤2",
+            "m＜2",
+            "m≥2",
+            "m＞2"
+          ],
+          "answer": 0,
+          "explanation": "上界m不大于2时不存在x；m＝2也因严格小于而无解。",
+          "id": "math-13-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "不等式组x＞a、x≤a＋2恰有整数解1、2，a范围为？",
+          "options": [
+            "只有a＝0",
+            "0≤a＜1",
+            "−1＜a≤0",
+            "0＜a≤1"
+          ],
+          "answer": 1,
+          "explanation": "排除0并包含1要求0≤a＜1；此时a＋2包含2但不到3，恰好1、2。",
+          "id": "math-13-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 13,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-14",
+      "title": "一元二次方程与根的判别",
+      "unit": "方程与不等式",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "一元二次方程ax²＋bx＋c＝0要求a≠0。判别式Δ＝b²−4ac决定实根个数；有实根时根和为−b/a、根积为c/a。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "优先观察因式分解，不能直接除以含x的因式而丢根。参数题先检查二次项系数，再使用判别式；实际问题还要舍去不合实际的根。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：x(x−3)＝0有x＝0和3，不能两边除以x。已知两根和5、积6，则两根平方和为25−12＝13。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "x²−5x＋6＝0的解是？",
+          "options": [
+            "−1和−6",
+            "2和3",
+            "−2和−3",
+            "1和6"
+          ],
+          "answer": 1,
+          "explanation": "因式分解为(x−2)(x−3)＝0。",
+          "id": "math-14-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "x²−4x＋k＝0有两个相等实根，则k为？",
+          "options": [
+            "2",
+            "16",
+            "4",
+            "−4"
+          ],
+          "answer": 2,
+          "explanation": "Δ＝16−4k＝0，得k＝4。",
+          "id": "math-14-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "x²＋2x＋5＝0的实根情况是？",
+          "options": [
+            "两个相等实根",
+            "两个不等实根",
+            "一个实根为0",
+            "无实根"
+          ],
+          "answer": 3,
+          "explanation": "Δ＝4−20＝−16＜0，故无实根。",
+          "id": "math-14-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "x²−3x−1＝0的两根为a、b，a²＋b²等于？",
+          "options": [
+            "11",
+            "7",
+            "9",
+            "1"
+          ],
+          "answer": 0,
+          "explanation": "a＋b＝3，ab＝−1，所以平方和为9＋2＝11。",
+          "id": "math-14-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "方程(x−2)(x＋1)＝x−2的所有解是？",
+          "options": [
+            "−1和2",
+            "0和2",
+            "只有0",
+            "只有2"
+          ],
+          "answer": 1,
+          "explanation": "移项提公因式得(x−2)x＝0，不能约去x−2。",
+          "id": "math-14-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "方程x²−(m＋1)x＋m＝0有两个不同的正实根，m范围为？",
+          "options": [
+            "m＞1",
+            "m≠1",
+            "m＞0且m≠1",
+            "m≥0"
+          ],
+          "answer": 2,
+          "explanation": "分解为(x−1)(x−m)＝0，根1、m；正数需m＞0，不同需m≠1。",
+          "id": "math-14-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 14,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-15",
+      "title": "方程应用：增长、行程与工程",
+      "unit": "方程与不等式",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "增长率连续作用要乘(1＋r)，不能把两次增长率直接相加。行程用路程＝速度×时间；工程把总量设为1，效率相加。所有未知量都要标单位。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "先找等量关系再列方程，注意往返速度不同、时间相加。经济问题区分售价、成本、利润与利润率。解后检查正负、整数和题目规定的范围。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：成本80元，按成本利润率25%定价，售价为80×1.25＝100元；若再打九折，利润为10元，并不是利润率仍25%。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "产量100件连续两次以相同比例增长后为121件，每次增长率为？",
+          "options": [
+            "11%",
+            "20%",
+            "10%",
+            "21%"
+          ],
+          "answer": 2,
+          "explanation": "100(1＋r)²＝121，增长时1＋r＝1.1，得r＝0.1。",
+          "id": "math-15-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "甲单独做需6天，乙单独做需3天，合作完成同一工作需？",
+          "options": [
+            "4.5天",
+            "3天",
+            "9天",
+            "2天"
+          ],
+          "answer": 3,
+          "explanation": "总效率为1/6＋1/3＝1/2，时间为2天。",
+          "id": "math-15-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "去程速度40千米/时、返程60千米/时，往返同一路段，平均速度为？",
+          "options": [
+            "48千米/时",
+            "50千米/时",
+            "45千米/时",
+            "52千米/时"
+          ],
+          "answer": 0,
+          "explanation": "设单程120千米，总路程240，总时间3＋2＝5，平均48。",
+          "id": "math-15-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "长方形周长20厘米，面积24平方厘米，长边为？",
+          "options": [
+            "12厘米",
+            "6厘米",
+            "4厘米",
+            "8厘米"
+          ],
+          "answer": 1,
+          "explanation": "两边和10、积24，为4和6，长边6。",
+          "id": "math-15-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "成本80元的商品标价100元，打九折售出，按成本算利润率为？",
+          "options": [
+            "20%",
+            "25%",
+            "12.5%",
+            "10%"
+          ],
+          "answer": 2,
+          "explanation": "售价90、利润10，利润率10/80＝12.5%。",
+          "id": "math-15-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "两人合作需4天，甲独做比乙独做少6天。甲独做需要？",
+          "options": [
+            "8天",
+            "10天",
+            "12天",
+            "6天"
+          ],
+          "answer": 3,
+          "explanation": "设甲x天、乙x＋6天，1/x＋1/(x＋6)＝1/4，得x²−2x−24＝0，正根6。",
+          "id": "math-15-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 15,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-16",
+      "title": "平面直角坐标系与距离",
+      "unit": "函数",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "点的位置由有序数对确定。到x轴距离是纵坐标绝对值，到y轴距离是横坐标绝对值。同一水平线或竖直线的距离可直接用坐标差。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "平移对每个点施加同样增量；关于轴对称只改变一个坐标的符号。两点间距离一般用勾股定理，坐标不等于距离。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：A(−2,3)右移5、下移1到(3,2)；关于y轴对称到(2,3)。A到原点的距离为√13，不是横纵坐标直接相加。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "点(−3,4)位于第几象限？",
+          "options": [
+            "第一象限",
+            "第三象限",
+            "第四象限",
+            "第二象限"
+          ],
+          "answer": 3,
+          "explanation": "横负纵正，位于第二象限。",
+          "id": "math-16-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "点(−3,4)到x轴的距离为？",
+          "options": [
+            "4",
+            "3",
+            "5",
+            "−4"
+          ],
+          "answer": 0,
+          "explanation": "到x轴的垂直距离为纵坐标的绝对值4。",
+          "id": "math-16-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "A(1,−2)左移3、上移5后坐标为？",
+          "options": [
+            "(3,−2)",
+            "(−2,3)",
+            "(4,3)",
+            "(−2,−7)"
+          ],
+          "answer": 1,
+          "explanation": "横坐标1−3＝−2，纵坐标−2＋5＝3。",
+          "id": "math-16-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "A(−1,2)、B(3,5)，AB长为？",
+          "options": [
+            "4",
+            "√17",
+            "5",
+            "7"
+          ],
+          "answer": 2,
+          "explanation": "横差4、纵差3，勾股得√(16＋9)＝5。",
+          "id": "math-16-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "点P(a−1,2a＋4)在x轴上，则P坐标为？",
+          "options": [
+            "(0,6)",
+            "(−2,0)",
+            "(3,0)",
+            "(−3,0)"
+          ],
+          "answer": 3,
+          "explanation": "在x轴上纵坐标0，a＝−2，横坐标a−1＝−3。",
+          "id": "math-16-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "P(a,2a−3)到两坐标轴距离相等，且在第四象限，P为？",
+          "options": [
+            "(1,−1)",
+            "(3,3)",
+            "(−1,−5)",
+            "不存在"
+          ],
+          "answer": 0,
+          "explanation": "等距给出a＝3或1，对应(3,3)与(1,−1)，再由第四象限条件筛选(1,−1)。",
+          "id": "math-16-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 16,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-17",
+      "title": "一次函数与图象交点",
+      "unit": "函数",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "一次函数y＝kx＋b中k≠0，k决定增减，b是与y轴交点的纵坐标。两直线交点同时满足两个表达式，可转化为方程组。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "从点求函数要代入坐标。比较函数值可求差或先求交点，再判断交点两侧的高低。自变量范围须同时满足实际限制。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：直线过(0,2)、(2,6)，b＝2且2k＋2＝6，得y＝2x＋2。与y＝−x＋5相交于(1,4)，在x＞1时前者较大。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "直线y＝−2x＋3与y轴交点为？",
+          "options": [
+            "(0,3)",
+            "(3,0)",
+            "(0,−2)",
+            "(1.5,0)"
+          ],
+          "answer": 0,
+          "explanation": "令x＝0得到y＝3。",
+          "id": "math-17-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "一次函数经过(1,3)、(3,7)，表达式为？",
+          "options": [
+            "y＝2x−1",
+            "y＝2x＋1",
+            "y＝x＋2",
+            "y＝3x"
+          ],
+          "answer": 1,
+          "explanation": "斜率为(7−3)/(3−1)＝2，代入得截距1。",
+          "id": "math-17-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "y＝2x−1与y＝−x＋5交点的横坐标是？",
+          "options": [
+            "1",
+            "−2",
+            "2",
+            "3"
+          ],
+          "answer": 2,
+          "explanation": "令2x−1＝−x＋5，得3x＝6，x＝2。",
+          "id": "math-17-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "何时2x−1＞−x＋5？",
+          "options": [
+            "x＜2",
+            "x≥2",
+            "x＜3",
+            "x＞2"
+          ],
+          "answer": 3,
+          "explanation": "移项为3x＞6，严格不等号不含交点。",
+          "id": "math-17-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "函数y＝−3x＋2在−1≤x≤2上的最大值为？",
+          "options": [
+            "5",
+            "−4",
+            "2",
+            "8"
+          ],
+          "answer": 0,
+          "explanation": "斜率负，随x增大而减小，最大值在x＝−1，得5。",
+          "id": "math-17-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "两函数y＝2x＋a、y＝−x＋3在0≤x≤2上，前者始终不小于后者，则a满足？",
+          "options": [
+            "a＞−3",
+            "a≥3",
+            "a≥−3",
+            "a≤3"
+          ],
+          "answer": 1,
+          "explanation": "两式之差3x＋a−3在区间内最小于x＝0，故a−3≥0，a≥3。",
+          "id": "math-17-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 17,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-18",
+      "title": "反比例函数与面积关系",
+      "unit": "函数",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "反比例函数y＝k/x，k≠0、x≠0。每一点的坐标乘积都为k。同一象限内k＞0时递减，k＜0时递增；不能不分象限比较。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "点向两轴作垂线所成矩形面积为绝对值k，与原点所成直角三角形面积为绝对值k的一半。与直线交点问题常化为二次方程。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：点(2,−3)在图象上，k＝−6。该点及其横轴投影与原点围成三角形面积3。横坐标变为3，纵坐标为−2。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "反比例函数经过(−2,3)，k为？",
+          "options": [
+            "1.5",
+            "−6",
+            "6",
+            "−1.5"
+          ],
+          "answer": 1,
+          "explanation": "k＝xy＝−2×3＝−6。",
+          "id": "math-18-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "y＝12/x上横坐标为3的点，其纵坐标为？",
+          "options": [
+            "36",
+            "−4",
+            "4",
+            "9"
+          ],
+          "answer": 2,
+          "explanation": "代入x＝3，y＝4。",
+          "id": "math-18-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "P在y＝−8/x上，P到两轴投影形成的矩形面积为？",
+          "options": [
+            "4",
+            "−8",
+            "16",
+            "8"
+          ],
+          "answer": 3,
+          "explanation": "矩形边长为两坐标绝对值，面积为绝对值xy＝8。",
+          "id": "math-18-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "直线y＝x与y＝9/x的交点个数为？",
+          "options": [
+            "2",
+            "1",
+            "0",
+            "3"
+          ],
+          "answer": 0,
+          "explanation": "x²＝9，x＝±3都不为0，对应两个交点。",
+          "id": "math-18-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "在y＝6/x上，A、B都在第一象限且xA＜xB，则？",
+          "options": [
+            "无法判断",
+            "yA＞yB",
+            "yA＜yB",
+            "yA＝yB"
+          ],
+          "answer": 1,
+          "explanation": "正比例常数的反比例函数在第一象限内递减。",
+          "id": "math-18-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "P在y＝12/x第一象限支上，且P到x轴距离是到y轴距离的3倍，则P坐标为？",
+          "options": [
+            "(−2,−6)",
+            "(3,4)",
+            "(2,6)",
+            "(6,2)"
+          ],
+          "answer": 2,
+          "explanation": "第一象限两距离分别y、x，y＝3x，与xy＝12联立得x²＝4，x＝2、y＝6。",
+          "id": "math-18-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 18,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-19",
+      "title": "二次函数图象与最值",
+      "unit": "函数",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "二次函数y＝a(x−h)²＋k中a≠0，顶点(h,k)，对称轴x＝h。开口向上时顶点最小，向下时顶点最大，但限定区间时还须检查顶点是否在区间内。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "配方把一般式变成顶点式。与x轴交点用y＝0求根；图象关于对称轴成对。区间最大最小不能一律取顶点，要比较端点及区间内顶点。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：y＝x²−4x＋1＝(x−2)²−3，顶点(2,−3)。在0≤x≤1上函数递减，最小值是x＝1时的−2，而不是−3。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "y＝(x＋2)²−3的顶点为？",
+          "options": [
+            "(−2,3)",
+            "(2,3)",
+            "(−2,−3)",
+            "(2,−3)"
+          ],
+          "answer": 2,
+          "explanation": "顶点式x−h＝x＋2，故h＝−2、k＝−3。",
+          "id": "math-19-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "y＝−2(x−1)²＋5的最大值为？",
+          "options": [
+            "−2",
+            "1",
+            "不存在",
+            "5"
+          ],
+          "answer": 3,
+          "explanation": "开口向下，平方项最大为0，在x＝1时取得最大值5。",
+          "id": "math-19-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "y＝x²−6x＋5的对称轴为？",
+          "options": [
+            "x＝3",
+            "x＝−3",
+            "y＝3",
+            "x＝5"
+          ],
+          "answer": 0,
+          "explanation": "配方为(x−3)²−4，对称轴x＝3。",
+          "id": "math-19-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "y＝x²−4x＋3与x轴交点横坐标为？",
+          "options": [
+            "2和3",
+            "1和3",
+            "−1和−3",
+            "0和4"
+          ],
+          "answer": 1,
+          "explanation": "因式分解为(x−1)(x−3)，零点为1、3。",
+          "id": "math-19-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "y＝(x−2)²在0≤x≤1上的最小值为？",
+          "options": [
+            "4",
+            "2",
+            "1",
+            "0"
+          ],
+          "answer": 2,
+          "explanation": "区间在对称轴左侧，函数递减，在右端点1取得最小值1。",
+          "id": "math-19-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "y＝(x−1)²在−1≤x≤3上的最小值、最大值分别为？",
+          "options": [
+            "0和9",
+            "1和4",
+            "1和9",
+            "0和4"
+          ],
+          "answer": 3,
+          "explanation": "顶点x＝1在区间内，最小0；两个端点距1都为2，最大4。",
+          "id": "math-19-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 19,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-20",
+      "title": "二次函数参数与恒成立",
+      "unit": "函数",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "参数改变图象位置、开口和交点。恒成立指对范围内每一个自变量均成立，常转化为最小值不小于0或最大值不大于0。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "先配方，再判断顶点与区间的位置；必要时分参数讨论。交点数、严格不等式与相切条件要区分。两根处于指定区间不能仅检查判别式。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：x²−2x＋m≥0对所有实数x成立，配成(x−1)²＋m−1，最小值m−1≥0，得m≥1。若要求处处大于0，则m＞1。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "y＝x²−2x＋m的最小值为3，则m等于？",
+          "options": [
+            "3",
+            "2",
+            "1",
+            "4"
+          ],
+          "answer": 3,
+          "explanation": "配方为(x−1)²＋m−1，最小值m−1＝3，得4。",
+          "id": "math-20-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "x²＋4x＋k≥0对所有实数x成立，则k满足？",
+          "options": [
+            "k≥4",
+            "k≤4",
+            "k＞4",
+            "k≥−4"
+          ],
+          "answer": 0,
+          "explanation": "配方(x＋2)²＋k−4，最低值非负要求k≥4。",
+          "id": "math-20-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "y＝x²与直线y＝m有两个不同交点，则m满足？",
+          "options": [
+            "m＝0",
+            "m＞0",
+            "m≥0",
+            "m＜0"
+          ],
+          "answer": 1,
+          "explanation": "x²＝m在m＞0时有±√m两解，m＝0仅一个交点。",
+          "id": "math-20-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "y＝(x−a)²在0≤x≤2上能取到0，则a满足？",
+          "options": [
+            "a≥2",
+            "所有实数",
+            "0≤a≤2",
+            "a≤0"
+          ],
+          "answer": 2,
+          "explanation": "平方为0仅当x＝a，故a须位于给定区间。",
+          "id": "math-20-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "抛物线y＝ax²＋bx＋c过(1,0)、(3,0)、(0,3)，则a为？",
+          "options": [
+            "−1",
+            "3",
+            "1/3",
+            "1"
+          ],
+          "answer": 3,
+          "explanation": "设y＝a(x−1)(x−3)，代入(0,3)得3a＝3，a＝1。",
+          "id": "math-20-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "函数y＝(x−m)²在0≤x≤2上严格随x增大而减小，m应满足？",
+          "options": [
+            "m≥2",
+            "m＞2",
+            "m≤0",
+            "0＜m＜2"
+          ],
+          "answer": 0,
+          "explanation": "整个区间须在对称轴左侧或以轴为右端，m＝2时任意x1＜x2≤2仍有y1＞y2，故包含2。",
+          "id": "math-20-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 20,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-21",
+      "title": "函数应用与方案选择",
+      "unit": "函数",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "函数模型要同时给出表达式与自变量范围。固定费加变动费常用一次函数，面积与利润常用二次函数。模型的最优值必须满足价格、整数、容量等限制。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "比较方案先找到费用相等的临界点，再判断两侧。利润等于每件利润乘销量，不是售价乘销量。预测不能脱离题设假设无限外推。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：甲方案20＋2x元，乙方案5x元，相等时x＝20/3。若x为整数，x≤6选甲并不正确：代x＝0甲更贵，所以x≤6选乙，x≥7选甲。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "出租车起步价10元含3千米，超出部分每千米2元，行驶8千米费用为？",
+          "options": [
+            "20元",
+            "26元",
+            "16元",
+            "10元"
+          ],
+          "answer": 0,
+          "explanation": "超出5千米，费用10＋2×5＝20元。",
+          "id": "math-21-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "甲收费30＋2x元，乙收费5x元，x≥0，两方案相同费用时x为？",
+          "options": [
+            "30",
+            "10",
+            "6",
+            "15"
+          ],
+          "answer": 1,
+          "explanation": "30＋2x＝5x，得x＝10。",
+          "id": "math-21-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "上一题中x＞10时，哪种方案更便宜？",
+          "options": [
+            "始终相同",
+            "无法判断",
+            "甲",
+            "乙"
+          ],
+          "answer": 2,
+          "explanation": "甲减乙＝30−3x，x＞10时为负，甲便宜。",
+          "id": "math-21-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "围成周长40米的长方形，最大面积为？",
+          "options": [
+            "80平方米",
+            "200平方米",
+            "400平方米",
+            "100平方米"
+          ],
+          "answer": 3,
+          "explanation": "两边和20，设一边x，面积x(20−x)＝100−(x−10)²，最大100。",
+          "id": "math-21-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "每件成本10元，售价p元时销量为40−p件，10≤p≤40。最大总利润为？",
+          "options": [
+            "225元",
+            "400元",
+            "300元",
+            "100元"
+          ],
+          "answer": 0,
+          "explanation": "利润(p−10)(40−p)＝225−(p−25)²，p＝25在范围内，最大225。",
+          "id": "math-21-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "商品成本10元，售价p元时销量40−p，且售价不得超过22元、不得低于成本。最大利润为？",
+          "options": [
+            "240元",
+            "216元",
+            "225元",
+            "200元"
+          ],
+          "answer": 1,
+          "explanation": "利润为225−(p−25)²，在10≤p≤22上递增，取p＝22，利润12×18＝216。",
+          "id": "math-21-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 21,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-22",
+      "title": "相交线、平行线与多边形",
+      "unit": "几何基础",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "对顶角相等，邻补角和为180°。平行线给出同位角、内错角相等及同旁内角互补；反过来这些条件也可用于判定平行。n边形内角和为(n−2)×180°。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "分清性质与判定的逻辑方向。多边形外角和取每顶点同向的一个外角，恒为360°。角平分线与平行线结合时先把大角表示出来再分半。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：两平行线同旁内角为3x与2x，3x＋2x＝180°得x＝36°。正多边形每个外角30°，边数360÷30＝12。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "一个角为65°，它的邻补角为？",
+          "options": [
+            "125°",
+            "115°",
+            "65°",
+            "25°"
+          ],
+          "answer": 1,
+          "explanation": "邻补角和180°，得180−65＝115°。",
+          "id": "math-22-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "两平行线被截，同旁内角之一为110°，另一角为？",
+          "options": [
+            "55°",
+            "80°",
+            "70°",
+            "110°"
+          ],
+          "answer": 2,
+          "explanation": "平行线同旁内角互补，另一角70°。",
+          "id": "math-22-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "一个多边形内角和为900°，它有几条边？",
+          "options": [
+            "5",
+            "6",
+            "8",
+            "7"
+          ],
+          "answer": 3,
+          "explanation": "(n−2)180＝900，n＝7。",
+          "id": "math-22-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "正多边形一个外角为24°，边数为？",
+          "options": [
+            "15",
+            "12",
+            "24",
+            "10"
+          ],
+          "answer": 0,
+          "explanation": "同向外角和360°，边数360/24＝15。",
+          "id": "math-22-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "两条不同直线被第三条直线所截，哪项足以判定两直线平行？",
+          "options": [
+            "有一个角为60°",
+            "一对内错角相等",
+            "一对对顶角相等",
+            "一对邻补角互补"
+          ],
+          "answer": 1,
+          "explanation": "内错角相等可判平行；对顶角相等和邻补角互补不要求两线平行。",
+          "id": "math-22-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "一个正多边形内角是外角的4倍，边数为？",
+          "options": [
+            "12",
+            "5",
+            "10",
+            "8"
+          ],
+          "answer": 2,
+          "explanation": "内外角互补，5份共180°，外角36°，边数360/36＝10。",
+          "id": "math-22-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 22,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-23",
+      "title": "三角形基本关系与反例",
+      "unit": "几何基础",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "三角形任意两边之和大于第三边，内角和180°，外角等于不相邻的两个内角之和。最大边对应最大角。分类时直角、等腰等条件可能重叠。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "第三边范围为两边差的绝对值与两边和之间，端点不取。求整数个数时先写严格范围。角度关系应联立总和，不能凭示意图猜。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：两边为3、5，第三边x满足2＜x＜8，若为整数可取3至7。等腰三角形两种已知边不一定唯一确定腰，要分别检验能否组成三角形。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "三角形两内角为45°、65°，第三角为？",
+          "options": [
+            "110°",
+            "60°",
+            "70°",
+            "80°"
+          ],
+          "answer": 2,
+          "explanation": "内角和180°，第三角180−45−65＝70°。",
+          "id": "math-23-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "三边长2、3、x，其中x为整数，x有几个可能值？",
+          "options": [
+            "4",
+            "5",
+            "2",
+            "3"
+          ],
+          "answer": 3,
+          "explanation": "1＜x＜5，整数x＝2、3、4，共3个。",
+          "id": "math-23-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "一个三角形的外角为120°，不相邻内角之一为50°，另一内角为？",
+          "options": [
+            "70°",
+            "60°",
+            "50°",
+            "130°"
+          ],
+          "answer": 0,
+          "explanation": "外角等于两不相邻内角和，另一角120−50＝70°。",
+          "id": "math-23-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "等腰三角形两条边长分别3和7，周长为？",
+          "options": [
+            "无法组成三角形",
+            "17",
+            "13",
+            "13或17"
+          ],
+          "answer": 1,
+          "explanation": "若腰3则3＋3＜7不成立；只能腰7、底3，周长17。",
+          "id": "math-23-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "三角形三角之比1∶2∶3，它是什么三角形？",
+          "options": [
+            "钝角三角形",
+            "等边三角形",
+            "直角三角形",
+            "锐角三角形"
+          ],
+          "answer": 2,
+          "explanation": "每份30°，三角30°、60°、90°，为直角三角形。",
+          "id": "math-23-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "等腰三角形一个外角为100°，顶角所有可能值为？",
+          "options": [
+            "只有80°",
+            "只有20°",
+            "100°或40°",
+            "80°或20°"
+          ],
+          "answer": 3,
+          "explanation": "对应内角80°；若它是顶角则顶角80°，若是底角则顶角180−160＝20°。",
+          "id": "math-23-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 23,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-24",
+      "title": "全等三角形与证明链",
+      "unit": "几何基础",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "全等判定可用SSS、SAS、ASA、AAS，直角三角形可用斜边直角边HL。两边及非夹角相等一般不足，三个角相等只保证相似。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "写证明先列已知、公共边与角关系，再选匹配的判定。对应顶点顺序决定对应边。证线段相等可把线段放进两个三角形中。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：AB＝AC，D为BC中点，AD公共，BD＝CD，因此△ABD与△ACD由SSS全等，推出∠BAD＝∠CAD。这是先全等、后得到角相等，不能倒用。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "以下哪组条件一定能判定一般三角形全等？",
+          "options": [
+            "三组对应角相等",
+            "两边及非夹角相等",
+            "只有一边一角相等",
+            "三组对应边相等"
+          ],
+          "answer": 3,
+          "explanation": "SSS成立；AAA仅相似，SSA一般不能判全等。",
+          "id": "math-24-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "AB＝AC，D为BC中点，用AD证△ABD≌△ACD，最直接判定是？",
+          "options": [
+            "SSS",
+            "AAA",
+            "HL",
+            "只有两边不能判"
+          ],
+          "answer": 0,
+          "explanation": "AB＝AC、BD＝CD、AD公共，三边分别相等。",
+          "id": "math-24-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "若△ABC≌△DEF，对应顺序如所写，则BC对应哪边？",
+          "options": [
+            "AB",
+            "EF",
+            "DE",
+            "DF"
+          ],
+          "answer": 1,
+          "explanation": "顶点A对D、B对E、C对F，所以BC对应EF。",
+          "id": "math-24-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "两直角三角形斜边分别相等，另有一条直角边分别相等，能否判全等？",
+          "options": [
+            "只能判相似",
+            "必须再给另一直角边",
+            "能，用HL",
+            "不能"
+          ],
+          "answer": 2,
+          "explanation": "直角三角形符合斜边直角边判定。",
+          "id": "math-24-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "证明中已知AB＝DE、AC＝DF，还需哪一角相等可直接用SAS？",
+          "options": [
+            "∠ABC＝∠DEF",
+            "∠ACB＝∠DFE",
+            "∠ABC＝∠DFE",
+            "∠BAC＝∠EDF"
+          ],
+          "answer": 3,
+          "explanation": "SAS要求两已知边的夹角相等，即A角和D角。",
+          "id": "math-24-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "AB＝AC，D、E在BC内部且BD＝CE。哪条证明AD＝AE的思路正确？",
+          "options": [
+            "△ABD与△ACE由SAS全等",
+            "仅由AD与AE共端点可知等长",
+            "由BD＝CE直接推出AD＝AE而无需其他条件",
+            "仅由AB＝AC可知AD平分顶角"
+          ],
+          "answer": 0,
+          "explanation": "AB＝AC，等腰底角∠ABD＝∠ACE，且BD＝CE，SAS判△ABD≌△ACE，得AD＝AE。",
+          "id": "math-24-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 24,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-25",
+      "title": "等腰、直角三角形与中位线",
+      "unit": "几何基础",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "等腰三角形等边对等角，顶角平分线、底边中线、底边高重合。直角三角形斜边中线等于斜边一半。三角形中位线平行第三边且等于其一半。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "使用三线合一前确认所对的是等腰三角形底边。直角三角形的30°角对边等于斜边一半。中点信息常引出中位线或斜边中线。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：直角△ABC的斜边AB＝10，M为AB中点，则CM＝5。若另知∠A＝30°，其对边BC＝5；两个5来源不同，应分别说明。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "等腰三角形顶角40°，底角为？",
+          "options": [
+            "70°",
+            "40°",
+            "80°",
+            "60°"
+          ],
+          "answer": 0,
+          "explanation": "两底角相等，均为(180−40)/2＝70°。",
+          "id": "math-25-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "直角三角形斜边12，斜边中线长为？",
+          "options": [
+            "√6",
+            "6",
+            "12",
+            "3"
+          ],
+          "answer": 1,
+          "explanation": "直角三角形斜边中线等于斜边一半。",
+          "id": "math-25-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "三角形两边中点连线长4，第三边长为？",
+          "options": [
+            "2",
+            "16",
+            "8",
+            "4"
+          ],
+          "answer": 2,
+          "explanation": "中位线等于第三边一半，第三边为8。",
+          "id": "math-25-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "等腰三角形一个内角为100°，另两角为？",
+          "options": [
+            "100°和−20°",
+            "50°和30°",
+            "无法确定",
+            "40°和40°"
+          ],
+          "answer": 3,
+          "explanation": "100°不能为底角，否则两底角和超180°，只能为顶角。",
+          "id": "math-25-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "直角三角形30°角所对直角边为5，斜边为？",
+          "options": [
+            "10",
+            "5√3",
+            "5",
+            "15"
+          ],
+          "answer": 0,
+          "explanation": "30°角对边是斜边一半，故斜边10。",
+          "id": "math-25-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "等腰三角形底边为6、腰长为x，周长不超过16且x为整数，x有几个值？",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": 1,
+          "explanation": "成三角形需2x＞6即x＞3；周长6＋2x≤16即x≤5，所以x＝4、5两个值。",
+          "id": "math-25-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 25,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-26",
+      "title": "勾股定理与空间路径",
+      "unit": "几何基础",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "直角三角形两直角边平方和等于斜边平方。逆定理要求先找最长边，再验证其平方等于其余两边平方和。几何路径可通过展开转到平面。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "不能对任意三角形直接套勾股。折叠、梯子与长方体路径题先明确直角三角形及边对应；最短路径需比较所有允许路线，不只算一条。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：长方形长8宽6，对角线10。梯子长10，脚距墙6，则顶高8；脚再外移2后高变6，下降2而非“脚移多少就降多少”的一般规律。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "直角三角形直角边6、8，斜边为？",
+          "options": [
+            "12",
+            "10",
+            "14",
+            "√28"
+          ],
+          "answer": 1,
+          "explanation": "斜边平方36＋64＝100，故长10。",
+          "id": "math-26-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "三边为5、12、13的三角形属于？",
+          "options": [
+            "钝角三角形",
+            "无法判断",
+            "直角三角形",
+            "等边三角形"
+          ],
+          "answer": 2,
+          "explanation": "最长边13，5²＋12²＝13²，逆定理判直角。",
+          "id": "math-26-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "梯子长13米，脚离墙5米，顶端离地多高？",
+          "options": [
+            "8米",
+            "18米",
+            "√194米",
+            "12米"
+          ],
+          "answer": 3,
+          "explanation": "墙地垂直，顶高√(169−25)＝12。",
+          "id": "math-26-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "长方形边长3、4，对角线中点到任一顶点距离为？",
+          "options": [
+            "2.5",
+            "5",
+            "3.5",
+            "2"
+          ],
+          "answer": 0,
+          "explanation": "对角线长5，长方形对角线互相平分，中点到端点2.5。",
+          "id": "math-26-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "直角三角形斜边10、一直角边6，面积为？",
+          "options": [
+            "80",
+            "24",
+            "30",
+            "48"
+          ],
+          "answer": 1,
+          "explanation": "另一直角边8，面积6×8/2＝24。",
+          "id": "math-26-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "矩形纸片长8宽6，两对角线交O。以O为圆心、半径r作圆，要求四顶点在圆上，则r及圆面积为？",
+          "options": [
+            "4和16π",
+            "3和9π",
+            "5和25π",
+            "10和100π"
+          ],
+          "answer": 2,
+          "explanation": "对角线长10且互相平分，O到各顶点5，圆面积25π；不能把整条对角线当半径。",
+          "id": "math-26-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 26,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-27",
+      "title": "平行四边形的性质与判定",
+      "unit": "四边形",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "平行四边形两组对边分别平行且相等，对角相等，邻角互补，对角线互相平分。判定可用两组对边分别平行或相等、一组对边平行且相等、对角线互相平分。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "“一组对边平行，另一组相等”不能直接判定，等腰梯形可作反例。面积用底乘对应高；斜边长度一般不是高。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：两条对角线AC、BD交于O，若AO＝CO且BO＝DO，可判ABCD为平行四边形；只有AO＝CO还不够。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "平行四边形一内角65°，邻角为？",
+          "options": [
+            "25°",
+            "130°",
+            "115°",
+            "65°"
+          ],
+          "answer": 2,
+          "explanation": "相邻内角互补，得115°。",
+          "id": "math-27-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "平行四边形对角线AC＝10，交点O到A的距离为？",
+          "options": [
+            "10",
+            "2.5",
+            "无法确定",
+            "5"
+          ],
+          "answer": 3,
+          "explanation": "对角线互相平分，AO＝AC/2＝5。",
+          "id": "math-27-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "哪项足以判定一个简单四边形为平行四边形？",
+          "options": [
+            "两条对角线互相平分",
+            "两条对角线相等",
+            "一组对边平行另一组相等",
+            "仅一组对角相等"
+          ],
+          "answer": 0,
+          "explanation": "对角线互相平分是判定条件，其余单独均不足。",
+          "id": "math-27-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "平行四边形底8、高3、邻边5，面积为？",
+          "options": [
+            "30",
+            "24",
+            "40",
+            "12"
+          ],
+          "answer": 1,
+          "explanation": "面积底乘对应高，为8×3＝24。",
+          "id": "math-27-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "ABCD为平行四边形，AB＝6、BC＝4，周长为？",
+          "options": [
+            "24",
+            "16",
+            "20",
+            "10"
+          ],
+          "answer": 2,
+          "explanation": "对边相等，周长2(6＋4)＝20。",
+          "id": "math-27-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "平行四边形ABCD中E为AB中点，面积为40，则△DEC面积为？",
+          "options": [
+            "10",
+            "30",
+            "40",
+            "20"
+          ],
+          "answer": 3,
+          "explanation": "以DC为底，E在与DC平行的AB上，高与平行四边形相同，三角形面积为一半20，中点条件不改变结论。",
+          "id": "math-27-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 27,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-28",
+      "title": "矩形、菱形与正方形",
+      "unit": "四边形",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "矩形有直角且对角线相等；菱形四边相等且对角线垂直；它们的对角线都互相平分。正方形兼具两者性质。一般四边形不能只凭对角线垂直且相等便判正方形。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "判定特例先有平行四边形基础再补条件，或直接使用完整的边角条件。菱形面积等于两对角线乘积的一半，原因是四个直角三角形拼合。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：菱形对角线6和8，半对角线3和4，边长5、面积24。对角线长度是整条而不是各半段，公式不要再多除一次2。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "矩形边长6、8，其对角线长为？",
+          "options": [
+            "14",
+            "7",
+            "√28",
+            "10"
+          ],
+          "answer": 3,
+          "explanation": "勾股得√(36＋64)＝10。",
+          "id": "math-28-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "菱形两条对角线长6、8，面积为？",
+          "options": [
+            "24",
+            "48",
+            "14",
+            "12"
+          ],
+          "answer": 0,
+          "explanation": "面积为6×8/2＝24。",
+          "id": "math-28-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "上一题菱形的周长为？",
+          "options": [
+            "40",
+            "20",
+            "28",
+            "24"
+          ],
+          "answer": 1,
+          "explanation": "半对角线3、4构成直角三角形，边长5，周长20。",
+          "id": "math-28-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "平行四边形对角线相等，必为哪种图形？",
+          "options": [
+            "正方形",
+            "等边三角形",
+            "矩形",
+            "菱形"
+          ],
+          "answer": 2,
+          "explanation": "平行四边形对角线相等可判矩形，但不能保证邻边相等。",
+          "id": "math-28-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "一个菱形有一个直角，必为？",
+          "options": [
+            "非正方形矩形",
+            "一般梯形",
+            "无法判断",
+            "正方形"
+          ],
+          "answer": 3,
+          "explanation": "菱形已有四边相等，再有直角即正方形。",
+          "id": "math-28-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "矩形周长28、对角线10，则面积为？",
+          "options": [
+            "48",
+            "24",
+            "49",
+            "50"
+          ],
+          "answer": 0,
+          "explanation": "设边a、b，有a＋b＝14，a²＋b²＝100；2ab＝196−100＝96，所以面积48。",
+          "id": "math-28-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 28,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-29",
+      "title": "相似三角形与比例",
+      "unit": "相似与三角函数",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "相似三角形对应角相等、对应边成比例。判定可用两角、两边比例及夹角、三边比例。周长比等于相似比，面积比是相似比的平方。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "先写对应顶点，避免边比颠倒。测高题需要同时成立的光照或视线条件；平行线产生的相似可将不可测距离化为可测比例。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：两相似三角形边长比2∶3，面积比4∶9。大三角形面积45，小三角形20，不是45×2/3。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "两相似三角形对应边比3∶5，周长比为？",
+          "options": [
+            "3∶5",
+            "9∶25",
+            "5∶3",
+            "1∶1"
+          ],
+          "answer": 0,
+          "explanation": "周长按同一倍数缩放，因此周长比等于边比3∶5。",
+          "id": "math-29-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "两相似三角形对应边比2∶3，面积比为？",
+          "options": [
+            "3∶2",
+            "4∶9",
+            "2∶3",
+            "8∶27"
+          ],
+          "answer": 1,
+          "explanation": "面积比为相似比平方。",
+          "id": "math-29-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "小三角形面积8，大三角形面积18，若相似，则小大对应边比为？",
+          "options": [
+            "3∶2",
+            "8∶18",
+            "2∶3",
+            "4∶9"
+          ],
+          "answer": 2,
+          "explanation": "面积比4∶9，开平方得到2∶3。",
+          "id": "math-29-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "同一时刻竖直杆高2米影长3米，树影长12米，树高为？",
+          "options": [
+            "18米",
+            "6米",
+            "4米",
+            "8米"
+          ],
+          "answer": 3,
+          "explanation": "相同光线与水平地面构成相似三角形，树高/12＝2/3，得8。",
+          "id": "math-29-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "△ABC中D在AB、E在AC，DE∥BC，AD/AB＝1/3，则DE/BC为？",
+          "options": [
+            "1/3",
+            "1/2",
+            "1/9",
+            "2/3"
+          ],
+          "answer": 0,
+          "explanation": "△ADE与△ABC相似，对应边比均1/3。",
+          "id": "math-29-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "△ABC中DE∥BC，D在AB、E在AC，AD∶DB＝2∶1。四边形DBCE面积15，则△ABC面积为？",
+          "options": [
+            "45",
+            "27",
+            "33.75",
+            "22.5"
+          ],
+          "answer": 1,
+          "explanation": "小大全边比AD/AB＝2/3，面积比4/9，四边形占5/9；总面积15×9/5＝27。",
+          "id": "math-29-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 29,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-30",
+      "title": "锐角三角函数与测量",
+      "unit": "相似与三角函数",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "直角三角形中sin为对边比斜边，cos为邻边比斜边，tan为对边比邻边。先确定所研究的锐角，再找对边邻边。坡度通常是竖直高度与水平距离之比。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "仰角从水平视线起算；仪器离地高度最后要加回。30°、45°、60°值应与几何关系相互验证。结果的单位、合理范围都要检查。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：站在离楼水平10米处测得仰角45°，眼高1.5米，则楼高10tan45°＋1.5＝11.5米。不能把10米斜距误作水平距。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "直角三角形某锐角的对边3、邻边4，则tan该角等于？",
+          "options": [
+            "4/5",
+            "3/4",
+            "4/3",
+            "3/5"
+          ],
+          "answer": 1,
+          "explanation": "tan定义为对边/邻边，得3/4。",
+          "id": "math-30-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "sin30°＋cos60°等于？",
+          "options": [
+            "1/2",
+            "2",
+            "1",
+            "√3"
+          ],
+          "answer": 2,
+          "explanation": "两者均为1/2，相加1。",
+          "id": "math-30-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "斜坡水平延伸12米、升高5米，坡度为？",
+          "options": [
+            "5∶13",
+            "12∶5",
+            "12∶13",
+            "5∶12"
+          ],
+          "answer": 3,
+          "explanation": "坡度定义为高度与水平距离之比5∶12。",
+          "id": "math-30-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "梯子与水平地面成60°，梯长10米，梯顶高度为？",
+          "options": [
+            "5√3米",
+            "5米",
+            "10√3米",
+            "10米"
+          ],
+          "answer": 0,
+          "explanation": "高度为斜边乘sin60°＝10×√3/2＝5√3。",
+          "id": "math-30-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "距楼水平20米，仰角45°，观测点离地1.6米，楼高为？",
+          "options": [
+            "40米",
+            "21.6米",
+            "20米",
+            "18.4米"
+          ],
+          "answer": 1,
+          "explanation": "楼顶高于观测点20米，加观测点高度得21.6米。",
+          "id": "math-30-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "同一水平线上向塔走近10米，仰角由30°变60°，忽略眼高。塔高为？",
+          "options": [
+            "5米",
+            "15米",
+            "5√3米",
+            "10√3米"
+          ],
+          "answer": 2,
+          "explanation": "设近处距离d，塔高h＝d√3，远处h＝(d＋10)/√3。联立3d＝d＋10得d＝5，h＝5√3。",
+          "id": "math-30-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 30,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-31",
+      "title": "圆的弦、圆心角与圆周角",
+      "unit": "圆",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "同圆或等圆中，等弧、等弦、等圆心角互相对应。同弧所对圆周角等于圆心角的一半，直径所对圆周角为90°。圆心到弦的垂线平分弦。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "先确定角所对的弧是否同一条；圆周角顶点不能在所对弧内部混用结论。垂径定理常与勾股结合，得到半弦、弦心距、半径的直角三角形。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：半径5，圆心到弦距离3，则半弦√(25−9)＝4，整弦8。圆心角80°所对同一条弧的圆周角40°。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "同弧所对圆心角100°，圆周角为？",
+          "options": [
+            "200°",
+            "80°",
+            "50°",
+            "100°"
+          ],
+          "answer": 2,
+          "explanation": "同弧圆周角等于圆心角一半。",
+          "id": "math-31-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "AB为圆的直径，C为圆上另一点，则∠ACB为？",
+          "options": [
+            "45°",
+            "60°",
+            "180°",
+            "90°"
+          ],
+          "answer": 3,
+          "explanation": "直径所对圆周角为直角。",
+          "id": "math-31-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "圆半径5，圆心到弦距离4，弦长为？",
+          "options": [
+            "6",
+            "3",
+            "8",
+            "10"
+          ],
+          "answer": 0,
+          "explanation": "半弦√(25−16)＝3，整弦6。",
+          "id": "math-31-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "同一圆中两弦长度相等，以下必然成立的是？",
+          "options": [
+            "两弦交于圆心",
+            "两弦到圆心距离相等",
+            "两弦互相平行",
+            "两弦互相垂直"
+          ],
+          "answer": 1,
+          "explanation": "等弦对应等弦心距；平行、垂直均不必然。",
+          "id": "math-31-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "圆内接四边形ABCD的∠A＝70°，则∠C为？",
+          "options": [
+            "35°",
+            "140°",
+            "110°",
+            "70°"
+          ],
+          "answer": 2,
+          "explanation": "圆内接四边形对角互补，C＝180−70＝110°。",
+          "id": "math-31-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "圆半径5，平行的两条弦长度分别6和8，则两弦距离所有可能值为？",
+          "options": [
+            "只有1",
+            "只有7",
+            "2或14",
+            "1或7"
+          ],
+          "answer": 3,
+          "explanation": "两弦距圆心分别√(25−9)＝4和√(25−16)＝3，同侧相距1，异侧相距7，须分两种位置。",
+          "id": "math-31-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 31,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-32",
+      "title": "圆的切线与位置关系",
+      "unit": "圆",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "直线与圆相交、相切、相离，分别对应圆心到直线距离小于、等于、大于半径。切线垂直于过切点的半径。从圆外同一点引出的两条切线段相等。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "证明切线常先连圆心与疑似切点，证半径与直线垂直；若不知道切点，要作圆心到直线的垂线并证距离等于半径。先确认点在圆上。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：OP＝13、半径OT＝5，PT切圆于T，OT⊥PT，故PT＝√(169−25)＝12。OP是斜边，不是切线段。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "圆半径4，圆心到直线距离为4，该直线与圆？",
+          "options": [
+            "相交于两点",
+            "相离",
+            "重合",
+            "相切"
+          ],
+          "answer": 3,
+          "explanation": "距离等于半径时相切。",
+          "id": "math-32-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "PA、PB是从P引出的两条切线，PA＝7，则PB为？",
+          "options": [
+            "7",
+            "14",
+            "3.5",
+            "无法确定"
+          ],
+          "answer": 0,
+          "explanation": "同一圆外点引出的两切线段相等。",
+          "id": "math-32-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "OP＝10，圆半径6，PT切圆于T，则PT长为？",
+          "options": [
+            "√136",
+            "8",
+            "4",
+            "16"
+          ],
+          "answer": 1,
+          "explanation": "OT垂直PT，勾股得PT＝√(100−36)＝8。",
+          "id": "math-32-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "已知A在圆O上，要证明直线l为过A的切线，充分条件为？",
+          "options": [
+            "l经过O",
+            "l与另一条弦平行",
+            "OA⊥l",
+            "OA∥l"
+          ],
+          "answer": 2,
+          "explanation": "过半径外端且垂直于半径的直线为切线。",
+          "id": "math-32-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "两圆半径分别3和2，圆心距5，两圆关系为？",
+          "options": [
+            "内切",
+            "相交",
+            "外离",
+            "外切"
+          ],
+          "answer": 3,
+          "explanation": "圆心距等于半径和3＋2，故外切。",
+          "id": "math-32-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "圆O半径3，PA、PB为切线且∠APB＝60°，则OP长为？",
+          "options": [
+            "6",
+            "3√3",
+            "3",
+            "2√3"
+          ],
+          "answer": 0,
+          "explanation": "OP平分两切线夹角，直角△OAP中∠APO＝30°，对边OA＝3为斜边OP一半，得6。",
+          "id": "math-32-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 32,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-33",
+      "title": "弧长、扇形与圆锥",
+      "unit": "圆",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "n度圆心角对应弧长nπr/180，扇形面积nπr²/360，也等于弧长乘半径的一半。圆锥侧面展开为扇形，扇形半径是母线，弧长等于底面周长。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "把度数比例与长度、面积各自对应。圆锥的高、母线、底面半径构成直角三角形。总表面积还要加底面，不能与侧面积混淆。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：底面半径3、母线5的圆锥侧面积πrl＝15π，底面积9π，总表面积24π；高为4。展开扇形角为360×3/5＝216°。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "半径6的圆中60°圆心角所对弧长为？",
+          "options": [
+            "2π",
+            "6π",
+            "π",
+            "12π"
+          ],
+          "answer": 0,
+          "explanation": "弧长60×π×6/180＝2π。",
+          "id": "math-33-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "半径6、圆心角60°的扇形面积为？",
+          "options": [
+            "36π",
+            "6π",
+            "12π",
+            "3π"
+          ],
+          "answer": 1,
+          "explanation": "面积60×π×36/360＝6π。",
+          "id": "math-33-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "圆锥底面半径3、母线5，侧面积为？",
+          "options": [
+            "24π",
+            "25π",
+            "15π",
+            "9π"
+          ],
+          "answer": 2,
+          "explanation": "侧面积πrl＝15π，不含底面。",
+          "id": "math-33-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "上一题圆锥展开的扇形圆心角为？",
+          "options": [
+            "120°",
+            "180°",
+            "300°",
+            "216°"
+          ],
+          "answer": 3,
+          "explanation": "弧长为6π，展开圆周长10π，占3/5，角为216°。",
+          "id": "math-33-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "圆锥底面半径5、高12，则母线为？",
+          "options": [
+            "13",
+            "17",
+            "7",
+            "√119"
+          ],
+          "answer": 0,
+          "explanation": "母线为直角三角形斜边，√(25＋144)＝13。",
+          "id": "math-33-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "扇形半径6、圆心角120°，围成圆锥侧面，则圆锥底面半径与高分别为？",
+          "options": [
+            "4和2√5",
+            "2和4√2",
+            "2和6",
+            "3和3√3"
+          ],
+          "answer": 1,
+          "explanation": "弧长4π＝底面周长2πr，r＝2；母线6，勾股得高√(36−4)＝4√2。",
+          "id": "math-33-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 33,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-34",
+      "title": "轴对称、平移与旋转",
+      "unit": "变换与作图",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "平移、旋转、轴对称都保持长度和角度。轴对称连对应点的线段被对称轴垂直平分；旋转中心到对应点距离相等，夹角为旋转角。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "折叠就是轴对称。求折线路径最短可反射一个端点把折线拉直，但交点必须位于允许线段。旋转题先对应点，再用等距、等角构建全等。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：P(2,1)绕原点逆时针90°到(−1,2)。求A、B经x轴一点的最短路，可把其中一点关于x轴对称后连接；若A、B在轴同侧，这条线会穿过轴。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "点(2,−3)关于x轴对称的点为？",
+          "options": [
+            "(3,2)",
+            "(2,3)",
+            "(−2,−3)",
+            "(−2,3)"
+          ],
+          "answer": 1,
+          "explanation": "关于x轴对称横坐标不变、纵坐标变号。",
+          "id": "math-34-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "点(2,1)绕原点逆时针旋转90°后为？",
+          "options": [
+            "(−2,−1)",
+            "(1,2)",
+            "(−1,2)",
+            "(1,−2)"
+          ],
+          "answer": 2,
+          "explanation": "逆时针90°变换为(x,y)→(−y,x)。",
+          "id": "math-34-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "线段AB关于直线l折叠后A与B重合，则l为？",
+          "options": [
+            "经过A的任意直线",
+            "AB所在直线",
+            "与AB平行的直线",
+            "AB的垂直平分线"
+          ],
+          "answer": 3,
+          "explanation": "折叠对应点连线被折痕垂直平分。",
+          "id": "math-34-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "A(0,2)、B(4,2)，P在x轴上，AP＋PB最小值为？",
+          "options": [
+            "4√2",
+            "4",
+            "8",
+            "2√2"
+          ],
+          "answer": 0,
+          "explanation": "反射A到(0,−2)，到B距离√(16＋16)＝4√2，连线与x轴相交于允许点。",
+          "id": "math-34-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "哪个图形既是轴对称图形又是中心对称图形？",
+          "options": [
+            "等边三角形",
+            "矩形",
+            "一般非等腰三角形",
+            "一般非矩形平行四边形"
+          ],
+          "answer": 1,
+          "explanation": "矩形有两条对称轴且绕中心180°重合；等边三角形无中心对称。",
+          "id": "math-34-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "A(0,2)、B(6,4)，P限定在x轴线段0≤x≤1上。AP＋PB最小时P为？",
+          "options": [
+            "(2,0)",
+            "(3,0)",
+            "(1,0)",
+            "(0,0)"
+          ],
+          "answer": 2,
+          "explanation": "反射A到(0,−2)，连接B与x轴交于(2,0)，但不在允许范围；距离和在0≤x≤1向该交点方向递减，最小在右端点(1,0)。",
+          "id": "math-34-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 34,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-35",
+      "title": "尺规作图与几何论证",
+      "unit": "变换与作图",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "尺规作图的直尺不带刻度，圆规用于复制距离。基本作图包括垂直平分线、角平分线、过点作垂线和复制角。作图正确性应由几何性质证明。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "等距点轨迹很关键：到线段两端等距的点在垂直平分线上；角内到两边距离相等的点在角平分线上。作图痕迹不是证明，必须说明等距或全等如何得出。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：以A、B为圆心、相同且大于AB一半的半径画弧交于P、Q，PA＝PB、QA＝QB，因此PQ为AB垂直平分线。半径过小会没有交点。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "到A、B两点距离相等的点的集合是？",
+          "options": [
+            "以A为圆心的圆",
+            "AB的中点一个点",
+            "AB的垂直平分线",
+            "AB所在直线"
+          ],
+          "answer": 2,
+          "explanation": "线段垂直平分线上的点等距，反过来也成立。",
+          "id": "math-35-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "作线段垂直平分线时，两端为圆心的等半径应满足？",
+          "options": [
+            "等于线段全长的一半即可得两个交点",
+            "小于线段长度的一半",
+            "任意正数都能得两个交点",
+            "大于线段长度的一半"
+          ],
+          "answer": 3,
+          "explanation": "要有两个交点，等半径之和须大于圆心距。",
+          "id": "math-35-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "角内一点到两边的垂直距离相等，则此点位于？",
+          "options": [
+            "角平分线上",
+            "角的一边上",
+            "任意位置",
+            "两边中点连线上"
+          ],
+          "answer": 0,
+          "explanation": "角平分线逆性质，前提是点在角内且距离为垂距。",
+          "id": "math-35-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "三角形三边垂直平分线的交点到三个顶点距离？",
+          "options": [
+            "等于三边长",
+            "相等",
+            "一般不等",
+            "都为0"
+          ],
+          "answer": 1,
+          "explanation": "它是外心，由两两等距推出到三个顶点等距。",
+          "id": "math-35-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "证明命题错误，最充分的方式是？",
+          "options": [
+            "只说未见过",
+            "检验三个成立例子",
+            "给出满足条件而结论不成立的一个反例",
+            "画一张看起来不像的草图"
+          ],
+          "answer": 2,
+          "explanation": "反例必须符合全部前提，并违反结论，一个即可否定全称命题。",
+          "id": "math-35-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "A(0,0)、B(4,0)，点P在直线y＝x＋1上且PA＝PB，P坐标为？",
+          "options": [
+            "(2,1)",
+            "(3,4)",
+            "(1,2)",
+            "(2,3)"
+          ],
+          "answer": 3,
+          "explanation": "等距点在AB垂直平分线x＝2上，与y＝x＋1交于(2,3)。",
+          "id": "math-35-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 35,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-36",
+      "title": "投影、视图与展开图",
+      "unit": "空间观念",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "正投影按指定方向观察，前后被遮挡的棱可能重合。主视图、左视图、俯视图分别反映不同的两维尺寸。展开图折回时要检查面的邻接和相对关系。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "立方块堆叠用每个底面格子的高度表示：主视图取同列前后高度最大值，左视图取同排左右最大值。由视图反推数量时常有多种摆法，要区分最少和最多。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：底面2×2的堆高，前排为1、2，后排为3、1，则总数7；从前看左右两列最高为3、2。主视图高度不能直接相加当成立方块总数。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "圆柱轴线竖直，从正上方正投影看是？",
+          "options": [
+            "长方形",
+            "三角形",
+            "梯形",
+            "圆"
+          ],
+          "answer": 3,
+          "explanation": "俯视时上下圆面重合，轮廓为圆。",
+          "id": "math-36-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "长方体长4、宽3、高2，俯视图面积为？",
+          "options": [
+            "12",
+            "8",
+            "6",
+            "24"
+          ],
+          "answer": 0,
+          "explanation": "俯视图反映长和宽，面积4×3＝12。",
+          "id": "math-36-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "立方块堆底面2×2，前排高度1、2，后排3、1，总块数为？",
+          "options": [
+            "8",
+            "7",
+            "5",
+            "6"
+          ],
+          "answer": 1,
+          "explanation": "把每一格的高度相加，1＋2＋3＋1＝7。",
+          "id": "math-36-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "上一题从前向后看，主视图左右两列高度依次为？",
+          "options": [
+            "4、3",
+            "3、1",
+            "3、2",
+            "1、2"
+          ],
+          "answer": 2,
+          "explanation": "同列前后取最高：左max(1,3)＝3，右max(2,1)＝2。",
+          "id": "math-36-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "一个立方体有几对相对面？",
+          "options": [
+            "6",
+            "4",
+            "2",
+            "3"
+          ],
+          "answer": 3,
+          "explanation": "6个面两两配成前后、左右、上下3对。",
+          "id": "math-36-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "四格2×2底面每格至少放1个方块。从前看两列最高均2，从左看两排最高也均2。方块总数最少为？",
+          "options": [
+            "6",
+            "4",
+            "5",
+            "8"
+          ],
+          "answer": 0,
+          "explanation": "每列每排都需一个高度2的位置，用对角两格为2、另两格为1即可共6；只升高一格不能覆盖两行两列。",
+          "id": "math-36-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 36,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-37",
+      "title": "抽样调查与统计图表",
+      "unit": "统计",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "总体、个体、样本、样本容量要区分。抽样应尽量随机且有代表性，样本大不自动消除偏差。条形图比较数量，折线图显示变化，扇形图显示占比。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "频率为频数除以总数，扇形圆心角为频率乘360°。用样本估计总体要说明近似性质，不能把局部便利样本当全部人群。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：随机抽100人有35人选A，估计2000人中约700人选A。若仅在A社团门口调查，即使人数100也可能明显偏高。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "抽查全校2000名学生中的100人视力，样本容量是？",
+          "options": [
+            "100",
+            "2000",
+            "100人的视力数据这一整体",
+            "一名学生"
+          ],
+          "answer": 0,
+          "explanation": "样本容量是数量，不带单位，等于100。",
+          "id": "math-37-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "扇形统计图某部分占25%，圆心角为？",
+          "options": [
+            "120°",
+            "90°",
+            "25°",
+            "45°"
+          ],
+          "answer": 1,
+          "explanation": "360°×25%＝90°。",
+          "id": "math-37-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "随机抽80件产品有4件次品，估计1000件中次品约？",
+          "options": [
+            "40件",
+            "80件",
+            "50件",
+            "4件"
+          ],
+          "answer": 2,
+          "explanation": "样本次品率4/80＝5%，估计1000×5%＝50。",
+          "id": "math-37-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "哪种调查最适合普查？",
+          "options": [
+            "检测灯泡使用寿命",
+            "调查全国居民周睡眠时长",
+            "检测一大批罐头的内部品质",
+            "检查即将发射的卫星各关键部件"
+          ],
+          "answer": 3,
+          "explanation": "关键部件须逐件检查；破坏性试验及巨大总体宜抽样。",
+          "id": "math-37-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "只在篮球社调查全校最喜欢的运动，主要问题是？",
+          "options": [
+            "样本代表性不足",
+            "样本容量一定为0",
+            "无法计算比例",
+            "统计图不能画"
+          ],
+          "answer": 0,
+          "explanation": "调查对象偏向篮球爱好者，抽样机制有偏。",
+          "id": "math-37-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "随机样本中A类占30%，扇形图B类角144°，其余C类共60人。样本容量为？",
+          "options": [
+            "240",
+            "200",
+            "150",
+            "180"
+          ],
+          "answer": 1,
+          "explanation": "B占144/360＝40%，C占30%；60/0.3＝200，需先补足总比例。",
+          "id": "math-37-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 37,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-38",
+      "title": "平均数、中位数与加权评价",
+      "unit": "统计",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "平均数利用全部数据，易受极端值影响；中位数反映排序中间位置；众数是出现次数最多的数据，可能不唯一。加权平均数的权重须对应正确并统一尺度。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "人数不同的两组不能简单平均两组均值。偶数个数据的中位数取中间两数平均。中位数或众数不一定存在于原数据中：中位数偶数时可能不在。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：1、2、2、3、12的均值4，中位数2、众数2。最后一项变大，均值增加，但中位数与众数可能不变。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "数据2、3、3、4、8的平均数为？",
+          "options": [
+            "20",
+            "4",
+            "3",
+            "5"
+          ],
+          "answer": 1,
+          "explanation": "和20，除以5得4。",
+          "id": "math-38-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "数据1、2、5、8的中位数为？",
+          "options": [
+            "2",
+            "4",
+            "3.5",
+            "5"
+          ],
+          "answer": 2,
+          "explanation": "排序后中间两数2、5，均值3.5。",
+          "id": "math-38-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "数据1、2、2、3、3、4的众数是？",
+          "options": [
+            "只有2",
+            "只有3",
+            "没有众数",
+            "2和3"
+          ],
+          "answer": 3,
+          "explanation": "2、3出现次数同为最多的2次，所以两个众数。",
+          "id": "math-38-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "平时80分占30%，考试90分占70%，总评为？",
+          "options": [
+            "87",
+            "85",
+            "83",
+            "89"
+          ],
+          "answer": 0,
+          "explanation": "加权平均80×0.3＋90×0.7＝87。",
+          "id": "math-38-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "甲组10人均分80，乙组20人均分86，合并均分为？",
+          "options": [
+            "82",
+            "84",
+            "83",
+            "85"
+          ],
+          "answer": 1,
+          "explanation": "总分800＋1720＝2520，总人数30，均分84。",
+          "id": "math-38-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "5个数据均值6，中位数5；删去一个最大值14，剩下4个数据均值为？",
+          "options": [
+            "6",
+            "不能确定",
+            "4",
+            "5"
+          ],
+          "answer": 2,
+          "explanation": "原总和5×6＝30，删14后总和16，除以4得4；中位数条件与本问无关。",
+          "id": "math-38-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 38,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-39",
+      "title": "方差、极差与四分位数",
+      "unit": "统计",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "极差为最大值减最小值。方差是各数据与均值差的平方的平均，衡量离散程度。平移不改变方差，全部乘k会使方差乘k²。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "比较稳定性应在同一量纲下看方差，不把平均数大小当波动大小。本课四分位数约定：排序后分别取下半组、上半组中位数；奇数项时先去掉总体中位数。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：1、3、5均值3，方差(4＋0＋4)/3＝8/3。全部加10后方差不变；全部乘2后方差变为32/3。四分位距是Q3−Q1。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "数据3、5、8、10的极差为？",
+          "options": [
+            "3",
+            "6.5",
+            "7",
+            "10"
+          ],
+          "answer": 2,
+          "explanation": "最大10减最小3，得7。",
+          "id": "math-39-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "数据1、2、3的方差为？",
+          "options": [
+            "1",
+            "2",
+            "1/3",
+            "2/3"
+          ],
+          "answer": 3,
+          "explanation": "均值2，偏差平方和1＋0＋1＝2，除以3。",
+          "id": "math-39-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "一组数据方差为4，每个数据加5，方差变为？",
+          "options": [
+            "4",
+            "9",
+            "20",
+            "25"
+          ],
+          "answer": 0,
+          "explanation": "平移保持每项与均值的差，方差不变。",
+          "id": "math-39-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "一组数据方差为4，每项乘3，方差变为？",
+          "options": [
+            "16",
+            "36",
+            "12",
+            "7"
+          ],
+          "answer": 1,
+          "explanation": "偏差乘3，平方乘9，方差4×9＝36。",
+          "id": "math-39-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "甲乙均分相同，甲方差2、乙方差5，哪组更稳定？",
+          "options": [
+            "一样稳定",
+            "不能比较均分相同的数据",
+            "甲",
+            "乙"
+          ],
+          "answer": 2,
+          "explanation": "在同一量纲下方差较小更稳定。",
+          "id": "math-39-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "甲数据为1、3、5，乙每项为甲对应项的2倍再加1。乙均值与方差为？",
+          "options": [
+            "7和16/3",
+            "6和32/3",
+            "7和8/3",
+            "7和32/3"
+          ],
+          "answer": 3,
+          "explanation": "甲均值3、方差8/3；线性变换2x＋1使均值7，方差乘4成为32/3。",
+          "id": "math-39-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 39,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-40",
+      "title": "随机事件与简单概率",
+      "unit": "概率",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "随机事件可能发生也可能不发生。等可能且有限结果时，概率为有利结果数除以全部结果数；要先验证结果确实等可能。概率0至1之间，频率是实验数据。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "互斥结果才能直接相加。对立事件概率和为1。大量重复试验频率可趋于稳定，但有限试验频率不必等于理论概率，也不保证下一次补偿。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：均匀骰子掷出大于4的概率2/6＝1/3。连续几次没出6，不会使下一次出6的概率变大，仍为1/6。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "掷一枚均匀骰子，点数为偶数的概率为？",
+          "options": [
+            "1/3",
+            "2/3",
+            "1/6",
+            "1/2"
+          ],
+          "answer": 3,
+          "explanation": "偶数2、4、6共3种，全部6种，概率3/6。",
+          "id": "math-40-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "袋中3红2蓝同样大小球，随机取1球，取蓝概率为？",
+          "options": [
+            "2/5",
+            "3/5",
+            "1/2",
+            "2/3"
+          ],
+          "answer": 0,
+          "explanation": "5个等可能球中2个蓝球，得2/5。",
+          "id": "math-40-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "某事件概率0.3，其对立事件概率为？",
+          "options": [
+            "0",
+            "0.7",
+            "0.3",
+            "1.3"
+          ],
+          "answer": 1,
+          "explanation": "对立事件概率和1，故为0.7。",
+          "id": "math-40-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "均匀硬币连续5次正面，第6次正面的概率为？",
+          "options": [
+            "0",
+            "1",
+            "1/2",
+            "1/6"
+          ],
+          "answer": 2,
+          "explanation": "独立抛掷不因过去结果改变概率。",
+          "id": "math-40-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "抛均匀骰子，点数小于7是什么事件？",
+          "options": [
+            "不可能事件",
+            "概率1/2的事件",
+            "无法判断",
+            "必然事件"
+          ],
+          "answer": 3,
+          "explanation": "所有可能点数1至6均小于7。",
+          "id": "math-40-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "袋中3红、若干蓝球，每球等可能。取红概率1/3，加入3蓝球后取红概率为？",
+          "options": [
+            "1/4",
+            "1/3",
+            "1/2",
+            "1/6"
+          ],
+          "answer": 0,
+          "explanation": "原总数3÷(1/3)＝9，加入3后总12，红仍3，概率3/12＝1/4。",
+          "id": "math-40-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 40,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-41",
+      "title": "列表、树状图与不放回抽取",
+      "unit": "概率",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "两步随机试验可列表或画树状图，保证不遗漏不重复。放回与不放回改变第二步可能结果；有序结果与无序组合的计数方式不能混用。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "区分至少一个、恰好一个、都满足。至少一个常用1减一个也没有。每条路径是否等概率取决于每一步条件，不能看到树叶就一律等分。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：2红1蓝不放回取两球，同红概率2/3×1/2＝1/3；若每次放回则为(2/3)²＝4/9。改变抽样方式会改变答案。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "两枚均匀硬币同时抛，恰一枚正面的概率为？",
+          "options": [
+            "1/2",
+            "1/4",
+            "3/4",
+            "1"
+          ],
+          "answer": 0,
+          "explanation": "四种等可能有序结果中正反、反正两种符合。",
+          "id": "math-41-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "抛两枚均匀骰子，点数和为7的概率为？",
+          "options": [
+            "1/3",
+            "1/6",
+            "1/12",
+            "7/36"
+          ],
+          "answer": 1,
+          "explanation": "和7的有序对6个，总36个，概率1/6。",
+          "id": "math-41-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "袋中2红1蓝，不放回取2球，都红概率为？",
+          "options": [
+            "2/3",
+            "1/2",
+            "1/3",
+            "4/9"
+          ],
+          "answer": 2,
+          "explanation": "第一红2/3，第二红1/2，相乘1/3。",
+          "id": "math-41-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "上一题改为每次取后放回，都红概率为？",
+          "options": [
+            "1/3",
+            "2/9",
+            "2/3",
+            "4/9"
+          ],
+          "answer": 3,
+          "explanation": "两次红概率均2/3，独立相乘得4/9。",
+          "id": "math-41-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "两枚均匀硬币至少一枚正面的概率为？",
+          "options": [
+            "3/4",
+            "1/2",
+            "1/4",
+            "1"
+          ],
+          "answer": 0,
+          "explanation": "对立为两枚反面，概率1/4，所以至少一正为3/4。",
+          "id": "math-41-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "袋中3红2蓝，不放回抽2球。已知第一球为红，第二球为蓝的概率为？",
+          "options": [
+            "3/10",
+            "1/2",
+            "2/5",
+            "3/5"
+          ],
+          "answer": 1,
+          "explanation": "条件已确定第一红，剩2红2蓝共4，第二蓝概率2/4；不能再乘第一红概率。",
+          "id": "math-41-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 41,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-42",
+      "title": "统计推断与实验决策",
+      "unit": "统计与概率综合",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "统计结论应同时考虑中心、波动、样本代表性和实际目的。相关不等于因果。实验比较要尽量控制其他条件，抽样误差和测量误差要区分。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "根据样本估计总体只给合理估计，不作确定承诺。不同分母的百分比不能直接加；分组后趋势和总体趋势可能不同，需回到人数与总量。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：甲10人合格9人，乙100人合格80人，合并合格率89/110，而不是(90%＋80%)/2。先把比例还原为人数再合并。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "甲班20人中15人达标，乙班30人中21人达标，合并达标率为？",
+          "options": [
+            "70%",
+            "72%",
+            "72.5%",
+            "75%"
+          ],
+          "answer": 1,
+          "explanation": "合计36/50＝72%，不能直接平均两班百分比。",
+          "id": "math-42-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "两个训练方案平均成绩相同，若重视稳定发挥，优先选？",
+          "options": [
+            "最大值较大者",
+            "最小样本量者",
+            "方差较小者",
+            "方差较大者"
+          ],
+          "answer": 2,
+          "explanation": "稳定性由波动衡量，同量纲下方差小更稳定。",
+          "id": "math-42-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "随机抽100人有60人支持某方案，估计1000人中支持者约？",
+          "options": [
+            "恰好600人且无误差",
+            "60人",
+            "至少900人",
+            "600人"
+          ],
+          "answer": 3,
+          "explanation": "样本比例0.6用于估计约600，不能保证精确等于。",
+          "id": "math-42-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "观察到学习时间长者成绩较高，能否仅据此证明时间增加必然提高成绩？",
+          "options": [
+            "不能，可能有其他影响因素",
+            "能，相关就是因果",
+            "能，样本超过2人即可",
+            "不能，因为二者必无关系"
+          ],
+          "answer": 0,
+          "explanation": "相关关系不能单独排除基础能力、方法等因素。",
+          "id": "math-42-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "抛硬币1000次有510次正面，这次正面频率为？",
+          "options": [
+            "510",
+            "0.51",
+            "0.5",
+            "0.49"
+          ],
+          "answer": 1,
+          "explanation": "频率为实际次数510/1000＝0.51，与理论概率概念不同。",
+          "id": "math-42-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "甲组10人中9人合格，乙组90人中63人合格。若从全部100人均匀随机选1人，选到合格者概率为？",
+          "options": [
+            "0.90",
+            "0.70",
+            "0.72",
+            "0.80"
+          ],
+          "answer": 2,
+          "explanation": "合格总数9＋63＝72，总数100，概率0.72；不能平均两组90%和70%。",
+          "id": "math-42-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 42,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-43",
+      "title": "动点与函数图象综合",
+      "unit": "综合强化",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "动点问题先以时间或位置设变量，明确运动区间；面积、距离随点跨过关键位置时可能分段。图象拐点往往对应运动状态或几何形态改变。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "先画起点、转折点、终点，再逐段列式。速度单位统一；两点相向、同向分别用速度和、速度差。函数公式正确但超出运动范围仍不成立。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：P以每秒2单位从0到6，用时3秒；到位置2的距离为绝对值(2t−2)，0≤t≤3，在t＝1处由减转增。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "P从0出发以每秒2单位向右，到6停止，运动时间范围为？",
+          "options": [
+            "0≤t≤6",
+            "0≤t≤2",
+            "0≤t≤3",
+            "t≥0无上界"
+          ],
+          "answer": 2,
+          "explanation": "到终点时间6/2＝3秒。",
+          "id": "math-43-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "上一题P到数轴上2点的距离在何时最小？",
+          "options": [
+            "t＝2",
+            "t＝3",
+            "t＝0",
+            "t＝1"
+          ],
+          "answer": 3,
+          "explanation": "P位置2t，等于2时t＝1，距离为0。",
+          "id": "math-43-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "长方形长6宽4，P沿长边从一端移动，AP＝x，以AP为底且高4的三角形面积为？",
+          "options": [
+            "2x",
+            "4x",
+            "6x",
+            "24−x"
+          ],
+          "answer": 0,
+          "explanation": "面积底乘高的一半，x×4/2＝2x，0≤x≤6。",
+          "id": "math-43-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "甲乙相距20，同向运动，甲在后速度5、乙速度3，追上需要？",
+          "options": [
+            "20",
+            "10",
+            "4",
+            "2.5"
+          ],
+          "answer": 1,
+          "explanation": "相对速度5−3＝2，时间20/2＝10。",
+          "id": "math-43-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "P以单位速度从A走到B再原路返回，AB＝4，到A距离图象呈？",
+          "options": [
+            "始终不变",
+            "先减后增",
+            "先线性增至4再线性减至0",
+            "始终增加"
+          ],
+          "answer": 2,
+          "explanation": "去程距离从0增4，返程从4减0，转折在t＝4。",
+          "id": "math-43-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "正方形边长4，P在AB上、Q在BC上且AP＝BQ＝x，△PBQ面积最大为？",
+          "options": [
+            "4",
+            "8",
+            "16",
+            "2"
+          ],
+          "answer": 3,
+          "explanation": "PB＝4−x、BQ＝x且夹角90°，面积x(4−x)/2＝2−(x−2)²/2，最大2。",
+          "id": "math-43-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 43,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-44",
+      "title": "几何动点与存在性分类",
+      "unit": "综合强化",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "问“是否存在”或“所有位置”时，不能只画一种图。等腰要讨论哪两边为腰；直角要讨论哪个顶点为直角；点在直线、射线、线段上允许范围不同。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "先列有限的结构分类，再用距离平方或角度条件求解，最后排除退化三角形、重复点和范围外解。坐标法可减少视觉猜测。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：A(0,0)、B(4,0)，P在直线x＝1上。若∠APB＝90°，由PA²＋PB²＝AB²得到2y²＋10＝16，y＝±√3，两点都要保留。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "A(0,0)、B(4,0)，P在直线x＝2上且不在x轴，则一定有？",
+          "options": [
+            "PA＝AB",
+            "PB＝AB",
+            "∠APB＝90°",
+            "PA＝PB"
+          ],
+          "answer": 3,
+          "explanation": "x＝2是AB的垂直平分线，所以PA＝PB。",
+          "id": "math-44-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "A(0,0)、B(4,0)、P(2,y)，要使∠APB＝90°，y为？",
+          "options": [
+            "±2",
+            "只有2",
+            "±4",
+            "0"
+          ],
+          "answer": 0,
+          "explanation": "PA²＋PB²＝2(4＋y²)＝16，y²＝4，正负都符合。",
+          "id": "math-44-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "A(0,0)、B(4,0)，P在x轴上，能否形成非退化三角形ABP？",
+          "options": [
+            "只有P在AB内才行",
+            "不能",
+            "能，只要P≠A、B",
+            "只有P在AB外才行"
+          ],
+          "answer": 1,
+          "explanation": "三点共线，面积始终0，不能构成非退化三角形。",
+          "id": "math-44-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "线段长为2、5、x，要组成等腰三角形，x为？",
+          "options": [
+            "2或5",
+            "3",
+            "5",
+            "2"
+          ],
+          "answer": 2,
+          "explanation": "等腰候选x＝2或5，2＋2＜5排除2，只剩5。",
+          "id": "math-44-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "A(0,0)、B(6,0)，P在y轴上且PA＝PB，是否存在？",
+          "options": [
+            "存在P(0,3)",
+            "存在P(0,−3)",
+            "任意P都满足",
+            "不存在"
+          ],
+          "answer": 3,
+          "explanation": "PA²＝y²，PB²＝36＋y²，永不相等；等距点须在x＝3上。",
+          "id": "math-44-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "P在线段AB上，AB＝10，要使PA∶PB＝2∶3，则PA为？",
+          "options": [
+            "4",
+            "6",
+            "5",
+            "20/3"
+          ],
+          "answer": 0,
+          "explanation": "内分总份数5，PA占2份，10×2/5＝4。",
+          "id": "math-44-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 44,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-45",
+      "title": "新定义阅读与迁移",
+      "unit": "综合强化",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "新定义题不靠记新名词，先把定义翻译为可检验的等式、不等式或几何关系。所有条件须同时满足。先算具体例，再推一般结论，注意定义域与方向。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "同一符号在新定义下不一定满足普通运算律。反向求输入要完整求解并验条件。带“任意”“存在”的命题量词不同，一个例子不能证明任意。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：定义a★b＝a＋2b，则1★3＝7，3★1＝5，因此一般不满足交换律。求a★2＝8得到a＝4，而不是按普通乘法求。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "定义a★b＝a＋2b，则2★3为？",
+          "options": [
+            "8",
+            "6",
+            "7",
+            "12"
+          ],
+          "answer": 0,
+          "explanation": "严格代定义2＋2×3＝8。",
+          "id": "math-45-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "沿用a★b＝a＋2b，x★2＝9，则x为？",
+          "options": [
+            "11",
+            "5",
+            "4.5",
+            "7"
+          ],
+          "answer": 1,
+          "explanation": "x＋4＝9，得x＝5。",
+          "id": "math-45-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "定义a◇b＝(a−b)²，则哪项恒成立？",
+          "options": [
+            "a◇a＝a",
+            "a◇0＝a",
+            "a◇b＝b◇a",
+            "a◇b＝a²−b²"
+          ],
+          "answer": 2,
+          "explanation": "交换a、b使差变号，平方不变；其他不恒成立。",
+          "id": "math-45-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "定义点P为A、B的“近点”：PA≤PB。A＝−2、B＝4在数轴上，则近点范围为？",
+          "options": [
+            "x≥1",
+            "−2≤x≤4",
+            "x＜1",
+            "x≤1"
+          ],
+          "answer": 3,
+          "explanation": "边界为中点1，靠A一侧满足，等距端点也包含。",
+          "id": "math-45-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "定义f(x)在x≥0时等于x²，x＜0时等于−x，f(−3)＋f(2)为？",
+          "options": [
+            "7",
+            "13",
+            "1",
+            "−5"
+          ],
+          "answer": 0,
+          "explanation": "分段判断：f(−3)＝3，f(2)＝4，相加7。",
+          "id": "math-45-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "定义“合格数”为整数n且n²＜10，合格数共有几个？",
+          "options": [
+            "9",
+            "7",
+            "6",
+            "3"
+          ],
+          "answer": 1,
+          "explanation": "−√10＜n＜√10，整数为−3至3，共7个，零也符合。",
+          "id": "math-45-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 45,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-46",
+      "title": "参数分类与临界条件",
+      "unit": "综合强化",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "参数题先找结构发生变化的位置：二次项系数为0、判别式为0、交点到达端点、长度为0、分母为0。临界值本身是否取到，要回到原条件。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "分类须不重不漏。解出候选范围后逐个检查等号、退化与定义域。含参数的除法只在分母非零分支可做，不能先除后忘了零的情况。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：ax＝a，a≠0时x＝1；a＝0时任意x。若除以a只得到1，就漏掉了零参数分支。线圆相切和相交两点的边界同样需要区分。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "方程ax＝a，当a＝0时解为？",
+          "options": [
+            "只有0",
+            "任意实数",
+            "只有1",
+            "无解"
+          ],
+          "answer": 1,
+          "explanation": "代入变成0＝0，对所有x成立。",
+          "id": "math-46-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "方程x²−2x＋m＝0有两个不同实根，则m为？",
+          "options": [
+            "m＞1",
+            "m＝1",
+            "m＜1",
+            "m≤1"
+          ],
+          "answer": 2,
+          "explanation": "Δ＝4−4m＞0，得m＜1；等号时重根不符合。",
+          "id": "math-46-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "两边为3和5，第三边t构成非退化三角形的范围是？",
+          "options": [
+            "2≤t≤8",
+            "t＞2",
+            "t＜8",
+            "2＜t＜8"
+          ],
+          "answer": 3,
+          "explanation": "三角形两边差小于第三边且第三边小于两边和，端点退化不取。",
+          "id": "math-46-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "圆半径5，直线到圆心距离d，与圆有两个交点，则？",
+          "options": [
+            "0≤d＜5",
+            "0＜d≤5",
+            "d＝5",
+            "d＞5"
+          ],
+          "answer": 0,
+          "explanation": "距离非负且小于半径；d＝0的直径所在直线也交两点。",
+          "id": "math-46-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "函数y＝(x−a)²在区间[0,2]上最小值恰为0，a的范围为？",
+          "options": [
+            "a≥2",
+            "[0,2]",
+            "(0,2)",
+            "a≤0"
+          ],
+          "answer": 1,
+          "explanation": "顶点在闭区间内即可，两端点也能取得0。",
+          "id": "math-46-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "分式方程去分母后得x＝m，而原分母为x−2，要使该候选根有意义必须？",
+          "options": [
+            "m＜2",
+            "m＝2",
+            "m≠2",
+            "m＞2"
+          ],
+          "answer": 2,
+          "explanation": "只需候选不使分母为0，因此m不能为2，还应检验原等式。",
+          "id": "math-46-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 46,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-47",
+      "title": "最优方案与综合实践",
+      "unit": "综合强化",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "建模先明确目标、约束、单位和可选变量，再选择线性、二次或几何模型。连续最优点可能不符合整数要求，需要比较相邻整数；实际限制优先于公式。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "方案比较必须使用同一口径：总成本、单位成本、容量、预算不能混用。数学模型只在题设假设内有效，最后解释结果及实施条件。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：两种车分别载4人和7人，安排车辆的最少费用不是简单选每座便宜者，还须满足人数与可用车辆数。先列整数约束，再有限枚举。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "长方形用20米围栏围三边，另一边靠墙。垂直墙的边为x，面积最大为？",
+          "options": [
+            "25平方米",
+            "40平方米",
+            "50平方米",
+            "100平方米"
+          ],
+          "answer": 2,
+          "explanation": "沿墙边20−2x，面积20x−2x²＝50−2(x−5)²，最大50。",
+          "id": "math-47-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "每箱装6件，需装至少50件，最少箱数为？",
+          "options": [
+            "8",
+            "10",
+            "7",
+            "9"
+          ],
+          "answer": 3,
+          "explanation": "6n≥50，整数n≥9，不能四舍五入成8。",
+          "id": "math-47-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "利润P＝−(n−4.4)²＋20，n为整数且1≤n≤6，最优n为？",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "3"
+          ],
+          "answer": 0,
+          "explanation": "离4.4最近的允许整数4，使平方项最小；4.4本身不允许。",
+          "id": "math-47-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "甲店单价10元，乙店单价9元另加运费15元。买整数n件且n＞0，乙更便宜最少需？",
+          "options": [
+            "10件",
+            "16件",
+            "15件",
+            "14件"
+          ],
+          "answer": 1,
+          "explanation": "9n＋15＜10n，n＞15，最少16件；15件时相同。",
+          "id": "math-47-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "一项方案成本C＝30＋5x，收入R＝8x，x为非负整数，至少不亏时最小x为？",
+          "options": [
+            "6",
+            "0",
+            "10",
+            "11"
+          ],
+          "answer": 2,
+          "explanation": "不亏R≥C，3x≥30，最小10；若要求盈利才需11。",
+          "id": "math-47-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "水箱每分钟进水3升、同时出水1升，原有10升，容量30升，多久首次装满？",
+          "options": [
+            "20分钟",
+            "5分钟",
+            "30分钟",
+            "10分钟"
+          ],
+          "answer": 3,
+          "explanation": "净增加2升/分，还需20升，所以10分钟，达到容量后模型改变。",
+          "id": "math-47-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 47,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-48",
+      "title": "几何综合证明与面积",
+      "unit": "综合强化",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "综合几何把中点、平行、等长、垂直等条件连成证明链。面积法可在不知道具体边长时求比例；同高三角形面积比等于底边比。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "辅助线应服务目标：求长度可作高构造直角三角形，证角可找全等或同弧圆周角，求面积可拆分或补形。每个结论都要标明来源。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：△ABC中D在BC且BD∶DC＝2∶3，△ABD与△ADC同高，面积比2∶3。若再有DE∥AC，△BDE与△BCA相似，则面积比是边比的平方，不能混用。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "△ABC面积30，D为BC中点，则△ABD面积为？",
+          "options": [
+            "10",
+            "20",
+            "7.5",
+            "15"
+          ],
+          "answer": 3,
+          "explanation": "两三角形同高且底边相等，各占总面积一半。",
+          "id": "math-48-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "△ABC中BD∶DC＝2∶3，D在BC上，△ABD面积12，则△ABC面积为？",
+          "options": [
+            "30",
+            "18",
+            "24",
+            "36"
+          ],
+          "answer": 0,
+          "explanation": "ABD占总面积2/5，总面积12×5/2＝30。",
+          "id": "math-48-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "△ABC中D、E分别为AB、AC中点，△ADE面积6，则△ABC面积为？",
+          "options": [
+            "48",
+            "24",
+            "12",
+            "18"
+          ],
+          "answer": 1,
+          "explanation": "相似比1/2、面积比1/4，所以总面积24。",
+          "id": "math-48-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "矩形ABCD中AB＝8、BC＝6，两对角线交O，则△AOB面积为？",
+          "options": [
+            "6",
+            "48",
+            "12",
+            "24"
+          ],
+          "answer": 2,
+          "explanation": "矩形面积48，两对角线分为4个等面积三角形，各12。",
+          "id": "math-48-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "直角△ABC中∠C＝90°，AC＝6、BC＝8，C到AB的高为？",
+          "options": [
+            "5",
+            "6",
+            "8",
+            "4.8"
+          ],
+          "answer": 3,
+          "explanation": "AB＝10，面积24＝10h/2，h＝4.8。",
+          "id": "math-48-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "等腰△ABC中AB＝AC，D、E分别在AB、AC上且AD＝AE，要证明BE＝CD，可用哪组全等？",
+          "options": [
+            "△ABE与△ACD，SAS",
+            "△ABD与△ACE，AAA",
+            "△BCE与△CBD，只有一边",
+            "无需条件任意两线段都相等"
+          ],
+          "answer": 0,
+          "explanation": "AB＝AC、AE＝AD，∠BAE＝∠CAD为同一顶角，SAS全等，得BE＝CD。",
+          "id": "math-48-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 48,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-49",
+      "title": "函数、方程与几何综合",
+      "unit": "综合强化",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "同一个问题可在图象交点、方程根、函数不等式之间转换。几何面积常通过坐标差表达，参数限制由正长度、点在线段上等条件产生。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "先列函数式与变量范围，再找交点或面积表达式。交点坐标必须同时满足两式。几何长度取绝对值，不能把负坐标当负长度。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：y＝x²与y＝2x交于x＝0、2。两图象之间竖直距离在0≤x≤2上是2x−x²＝1−(x−1)²，最大1。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "y＝x²与y＝3x相交的横坐标为？",
+          "options": [
+            "0和3",
+            "只有3",
+            "−3和3",
+            "0和−3"
+          ],
+          "answer": 0,
+          "explanation": "x²＝3x，即x(x−3)＝0，保留零根。",
+          "id": "math-49-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "在0≤x≤3上，3x−x²的最大值为？",
+          "options": [
+            "3/2",
+            "9/4",
+            "3",
+            "9"
+          ],
+          "answer": 1,
+          "explanation": "配方9/4−(x−3/2)²，顶点在区间内，最大9/4。",
+          "id": "math-49-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "直线y＝−x＋4与坐标轴围成三角形面积为？",
+          "options": [
+            "4",
+            "12",
+            "8",
+            "16"
+          ],
+          "answer": 2,
+          "explanation": "截距均4，直角三角形面积4×4/2＝8。",
+          "id": "math-49-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "P在第一象限且在y＝6/x上，H是P到x轴的垂足，O是原点，△OPH面积为？",
+          "options": [
+            "6",
+            "12",
+            "随P改变",
+            "3"
+          ],
+          "answer": 3,
+          "explanation": "取P、其x轴投影和O，面积xy/2＝6/2＝3。",
+          "id": "math-49-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "抛物线y＝x²−2x−3在x轴下方时，x范围为？",
+          "options": [
+            "−1＜x＜3",
+            "x＜−1或x＞3",
+            "−1≤x≤3",
+            "0＜x＜3"
+          ],
+          "answer": 0,
+          "explanation": "零点−1、3，开口向上，两根之间函数值为负，端点不含。",
+          "id": "math-49-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "点P(x,y)在y＝−x＋6第一象限部分，以OP坐标构成的矩形面积最大为？",
+          "options": [
+            "6",
+            "9",
+            "18",
+            "36"
+          ],
+          "answer": 1,
+          "explanation": "面积xy＝x(6−x)＝9−(x−3)²，在0＜x＜6中x＝3取9。",
+          "id": "math-49-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 49,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
+    },
+    {
+      "id": "review-50",
+      "title": "综合验收与解题审查",
+      "unit": "综合强化",
+      "materials": [
+        {
+          "title": "知识与适用条件",
+          "text": "验收同时检查计算、函数、几何、概率和逻辑，不以猜对选项替代过程。先独立完成，再逐题归类错误：概念、运算、条件遗漏、图形判断或表达。"
+        },
+        {
+          "title": "解题方法与易错点",
+          "text": "复核次序：定义域和单位→列式→计算→所有分支→回代→结论范围。每道题至少写关键等式和理由；错题隔日重做时遮住答案，解释错选项为什么不成立。"
+        },
+        {
+          "title": "讲解例题与迁移",
+          "text": "例：三角形内切圆半径r可用面积S与半周长s求：S＝rs，因为连接内心与三个顶点，三个小三角形的高均为r。直角边3、4、斜边5时，S＝6、s＝6，故r＝1。几何图看起来相等不能代替证明，需先列条件再核对。"
+        }
+      ],
+      "questions": [
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "计算√49−(−2)²＋2⁻¹，结果为？",
+          "options": [
+            "3",
+            "7/2",
+            "23/2",
+            "5/2"
+          ],
+          "answer": 1,
+          "explanation": "√49＝7、(−2)²＝4、2⁻¹＝1/2，总为7/2。",
+          "id": "math-50-1",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 0,
+          "text": "方程x²−x−6＝0的两根中，满足x＞0的是？",
+          "options": [
+            "2",
+            "6",
+            "3",
+            "−2"
+          ],
+          "answer": 2,
+          "explanation": "因式分解(x−3)(x＋2)＝0，正根3。",
+          "id": "math-50-2",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "函数y＝x²−4x＋7在全体实数上的最小值为？",
+          "options": [
+            "7",
+            "−1",
+            "2",
+            "3"
+          ],
+          "answer": 3,
+          "explanation": "配方(x−2)²＋3，最小3。",
+          "id": "math-50-3",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 1,
+          "text": "直角三角形斜边13、一直角边5，其内切圆半径为？",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 0,
+          "explanation": "另一直角边12；面积30、半周长15，内切圆半径＝面积/半周长＝2。",
+          "id": "math-50-4",
+          "origin": "original_practice"
+        },
+        {
+          "level": "巩固",
+          "point": 2,
+          "text": "袋中2红2蓝，不放回取2球，颜色不同概率为？",
+          "options": [
+            "3/4",
+            "2/3",
+            "1/2",
+            "1/3"
+          ],
+          "answer": 1,
+          "explanation": "先红后蓝与先蓝后红两种，每种(2/4)(2/3)＝1/3，总2/3。",
+          "id": "math-50-5",
+          "origin": "original_practice"
+        },
+        {
+          "level": "挑战",
+          "point": 2,
+          "text": "某解答把(x−1)(x＋2)＝0两边除以x−1，只得x＝−2，错误是？",
+          "options": [
+            "两个因式不能相乘",
+            "应除以x＋2且无其他根",
+            "遗漏x＝1这一根",
+            "−2不是根"
+          ],
+          "answer": 2,
+          "explanation": "当x＝1时除数为0，不能直接约去，原方程有1和−2两个根。",
+          "id": "math-50-6",
+          "origin": "original_practice"
+        }
+      ],
+      "day": 50,
+      "prerequisites": "已学过本专题初中基础知识；先阅读本课材料，必要时回查前序课。"
     }
   ],
-  "revision": "2026-10-10-depth",
+  "revision": "2026-10-10-full-review",
   "referenceNotes": {
     "sourceDirectory": "用户提供的北京中考/北京中考-数学",
     "documents": [
@@ -523,5 +5683,15 @@
     ],
     "use": "参考数轴信息推理、新定义理解、分类讨论与边界意识，降到当前初一前五课范围编写原创题；不声称为中考原题或原题难度。",
     "limitations": "部分Word公式和图形未完整提取，仅采用可明确读取的文字考点，不据缺失公式重建原题。"
+  },
+  "scope": {
+    "mode": "topic_review",
+    "days": 50,
+    "questions": 300,
+    "audience": "已完成初中数学基础学习的学生，不作为三年新授课替代品。",
+    "standard": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220510531636118932.pdf",
+    "assessment": "原创四选一题，PPT中需补解题过程；答案解析供家长审阅。覆盖主要内容领域，不等于北京中考完整题型模拟卷。",
+    "time": "通常每天30分钟；综合专题有困难时可安排额外订正日，不按日历强行跳课。",
+    "limitations": "几何均提供文字条件，学生应自行作图；含作图与证明依据辨析，尚不替代实际尺规操作及开放式证明的人工评阅。"
   }
 }

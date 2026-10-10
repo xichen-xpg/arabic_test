@@ -54,17 +54,17 @@ export function validatePptx(buffer, title) {
 export function createMathServer({ dbPath, token, origin, from, apiKey, now = Date.now, sendEmail }) {
   if (!token || token.length < 16 || !origin || !from || !apiKey) throw new Error('请配置MATH_ACCESS_TOKEN（至少16字符）、ALLOWED_ORIGIN、MAIL_FROM、RESEND_API_KEY。');
   const db = new DatabaseSync(dbPath);
-  db.exec('CREATE TABLE IF NOT EXISTS days (date TEXT PRIMARY KEY, data TEXT NOT NULL)');
-  const load = date => { const row = db.prepare('SELECT data FROM days WHERE date=?').get(date); return row ? JSON.parse(row.data) : null; };
-  const save = state => db.prepare('INSERT INTO days VALUES (?,?) ON CONFLICT(date) DO UPDATE SET data=excluded.data').run(state.date, JSON.stringify(state));
+  db.exec('CREATE TABLE IF NOT EXISTS days_redo_20261010 (date TEXT PRIMARY KEY, data TEXT NOT NULL)');
+  const load = date => { const row = db.prepare('SELECT data FROM days_redo_20261010 WHERE date=?').get(date); return row ? JSON.parse(row.data) : null; };
+  const save = state => db.prepare('INSERT INTO days_redo_20261010 VALUES (?,?) ON CONFLICT(date) DO UPDATE SET data=excluded.data').run(state.date, JSON.stringify(state));
   const publicState = state => state && ({ date: state.date, id: state.id, lessonIndex: state.lessonIndex, title: state.title, startedAt: state.startedAt, deadline: state.startedAt + LIMIT_MS, sentAt: state.sentAt || null, onTime: !!state.sentAt && state.sentAt - state.startedAt <= LIMIT_MS, emailId: state.emailId || null });
-  const history = () => db.prepare('SELECT data FROM days ORDER BY date DESC').all().map(row => publicState(JSON.parse(row.data)));
+  const history = () => db.prepare('SELECT data FROM days_redo_20261010 ORDER BY date DESC').all().map(row => publicState(JSON.parse(row.data)));
   const today = () => {
     const date = dayKey(now());
     const state = load(date);
-    const last = db.prepare('SELECT data FROM days ORDER BY date DESC LIMIT 1').get();
+    const last = db.prepare('SELECT data FROM days_redo_20261010 ORDER BY date DESC LIMIT 1').get();
     const lessonIndex = state?.lessonIndex ?? (last ? JSON.parse(last.data).lessonIndex + 1 : 0);
-    return { date, lessonIndex, lesson: curriculum.lessons[lessonIndex] || null, state: publicState(state), history: history(), serverNow: now() };
+    return { date, courseRun: 'redo-20261010', lessonIndex, lesson: curriculum.lessons[lessonIndex] || null, state: publicState(state), history: history(), serverNow: now() };
   };
   const locks = new Set();
   const deliver = sendEmail || (async (body, key) => {
@@ -107,7 +107,7 @@ export function createMathServer({ dbPath, token, origin, from, apiKey, now = Da
       }
       if (req.method === 'POST' && route === '/submit') {
         const id = req.headers['x-assignment-id'];
-        const row = db.prepare('SELECT data FROM days WHERE json_extract(data,\'$.id\')=?').get(String(id || ''));
+        const row = db.prepare('SELECT data FROM days_redo_20261010 WHERE json_extract(data,\'$.id\')=?').get(String(id || ''));
         if (!row) fail('请先下载作业再提交。', 409);
         let state = JSON.parse(row.data);
         if (state.sentAt) { reply(200, { ...publicState(state), serverNow: now() }); return; }

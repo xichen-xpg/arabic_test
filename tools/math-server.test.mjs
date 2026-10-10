@@ -82,6 +82,32 @@ test('Dubai date boundary', () => {
   assert.equal(dayKey(Date.parse('2026-10-05T19:59:59Z')), '2026-10-05');
   assert.equal(dayKey(Date.parse('2026-10-05T20:00:00Z')), '2026-10-06');
 });
+
+test('new course starts at lesson one while preserving the legacy assignment table', async () => {
+  const { DatabaseSync } = await import('node:sqlite');
+  const { fileURLToPath } = await import('node:url');
+  fs.mkdirSync(new URL('../.math-test/', import.meta.url), { recursive: true });
+  const file = fileURLToPath(new URL(`../.math-test/legacy-${Date.now()}.sqlite`, import.meta.url));
+  const old = new DatabaseSync(file);
+  old.exec('CREATE TABLE days (date TEXT PRIMARY KEY, data TEXT NOT NULL)');
+  old.prepare('INSERT INTO days VALUES (?, ?)').run('2026-10-10', JSON.stringify({ date: '2026-10-10', lessonIndex: 4, id: 'old', sentAt: 1 }));
+  old.close();
+  const server = createMathServer({ dbPath: file, token, origin, from: 'fake@example.com', apiKey: 'fake', now: () => Date.parse('2026-10-10T08:00:00Z'), sendEmail: async () => ({ id: 'fake' }) });
+  await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+  try {
+    const response = await fetch(`http://127.0.0.1:${server.address().port}/today`, { headers: { Authorization: `Bearer ${token}` } });
+    const plan = await response.json();
+    assert.equal(plan.lessonIndex, 0);
+    assert.equal(plan.courseRun, 'redo-20261010');
+    assert.deepEqual(plan.history, []);
+  } finally {
+    await new Promise(resolve => server.close(resolve));
+    const check = new DatabaseSync(file);
+    assert.equal(check.prepare('SELECT COUNT(*) AS n FROM days').get().n, 1);
+    check.close();
+    fs.unlinkSync(file);
+  }
+});
 test('server restart restores start time from SQLite', async () => {
   const folder = new URL('../.math-test/', import.meta.url);
   fs.mkdirSync(folder, { recursive: true });
