@@ -33,7 +33,7 @@ test('auth, daily sequence, persistent start, fixed recipient, duplicate send', 
   const f = await setup(t, async body => { mail = body; return { id: 'id-1' }; });
   assert.equal((await f.request('/today', { headers: { Authorization: 'Bearer wrong' } })).status, 401);
   assert.equal((await f.request('/today', { headers: { Origin: 'https://evil.example' } })).status, 403);
-  assert.equal((await f.request('/today')).data.lesson.id, 'positive-negative');
+  assert.equal((await f.request('/today')).data.lesson.id, 'review-01');
   const first = (await f.request('/start', { method: 'POST' })).data;
   f.advance(10000);
   assert.equal((await f.request('/start', { method: 'POST' })).data.startedAt, first.startedAt);
@@ -44,7 +44,7 @@ test('auth, daily sequence, persistent start, fixed recipient, duplicate send', 
   assert.deepEqual(mail.to, ['xichen.app@gmail.com']); assert.equal(mail.subject, first.title);
   await f.request('/submit', opts); assert.equal(f.calls(), 1);
   f.advance(86400000 * 4);
-  assert.equal((await f.request('/today')).data.lesson.id, 'rational-numbers');
+  assert.equal((await f.request('/today')).data.lesson.id, 'review-02');
 });
 test('invalid file and wrong assignment do not send; exact deadline accepted', async t => {
   const f = await setup(t);
@@ -98,7 +98,7 @@ test('new course starts at lesson one while preserving the legacy assignment tab
     const response = await fetch(`http://127.0.0.1:${server.address().port}/today`, { headers: { Authorization: `Bearer ${token}` } });
     const plan = await response.json();
     assert.equal(plan.lessonIndex, 0);
-    assert.equal(plan.courseRun, 'redo-20261010');
+    assert.equal(plan.courseRun, 'topics-20261010');
     assert.deepEqual(plan.history, []);
   } finally {
     await new Promise(resolve => server.close(resolve));

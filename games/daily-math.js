@@ -2,7 +2,7 @@
   const $ = id => document.getElementById(id);
   let lesson, state = null, connected = false, busy = false, offset = 0;
   const reportKey = 'math:reports';
-  const downloadKey = 'math:downloads:redo-20261010';
+  const downloadKey = 'math:downloads:topics-20261010';
   const today = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Dubai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
   function localPlan() {
     const records = JSON.parse(localStorage.getItem(downloadKey) || '{}');
@@ -71,7 +71,7 @@
   async function connect() {
     connected = false; tick();
     const plan = await api('/today');
-    if (plan.courseRun !== 'redo-20261010') throw new Error('自动发信服务尚未更新到重做课程。可先直接下载，服务更新后再连接。');
+    if (plan.courseRun !== 'topics-20261010') throw new Error('自动发信服务尚未更新到重做课程。可先直接下载，服务更新后再连接。');
     lesson = plan.lesson; state = plan.state;
     // Keep an unfinished assignment across midnight in this browser session.
     const activeId = sessionStorage.getItem('math:active');
@@ -83,16 +83,16 @@
     sessionStorage.setItem('math:access', $('accessCode').value);
     $('connection').open = false;
     $('lessonMeta').textContent = `${state?.date || plan.date} · ${lesson?.questions.length || 0} 道单选题 · 30分钟`;
-    notice(lesson ? '已连接。先阅读材料，点击下载后开始计时。' : '已完成全部50课中考专题复习。');
+    notice(lesson ? '已连接。先阅读材料，点击下载后开始计时。' : '已完成全部45课中考专题复习。');
     draw();
   }
   let bank;
   try {
-    const response = await fetch('../data/math/lessons.json?v=20261010-full-review');
+    const response = await fetch('../data/math/lessons.json?v=20261010-topic-review');
     if (!response.ok) throw new Error('学习材料加载失败。');
     bank = await response.json(); localPlan(); draw();
     if ($('apiBase').value && $('accessCode').value) await connect();
-    else notice(lesson ? '直接点击下载即可，无需登录或连接服务。答完后将PPTX作为邮件附件发送。' : '全部50课已下载完，可按需复习保存的PPT。');
+    else notice(lesson ? '直接点击下载即可，无需登录或连接服务。答完后将PPTX作为邮件附件发送。' : '全部45课已下载完，可按需复习保存的PPT。');
   } catch (error) { notice(error.message); }
   $('connectForm').addEventListener('submit', async event => {
     event.preventDefault(); if (busy) return; busy = true; tick();

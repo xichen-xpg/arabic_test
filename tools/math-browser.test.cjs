@@ -34,22 +34,22 @@ const staticServer = http.createServer((req, res) => {
     const errors = []; page.on('pageerror', error => errors.push(error.message));
     await page.goto(`${site}/games/daily-math.html`);
     await page.waitForSelector('#materials article');
-    assert.equal(await page.locator('#lessonTitle').textContent(), '正数和负数');
-    assert.ok(await page.evaluate(() => localStorage.getItem('math:reports:before-20261010')));
+    assert.equal(await page.locator('#lessonTitle').textContent(), '实数与数轴综合');
+    assert.ok(await page.evaluate(() => localStorage.getItem('math:reports:before-topics-20261010')));
     assert.equal(await page.locator('#download').isDisabled(), false);
     assert.equal(await page.locator('#submitForm').isVisible(), false);
     const directPromise = page.waitForEvent('download');
     await page.click('#download');
     const direct = await directPromise;
-    assert.match(direct.suggestedFilename(), /^\d{8}_正数和负数\.pptx$/);
-    const directState = await page.evaluate(() => JSON.parse(localStorage.getItem('math:downloads:redo-20261010')));
+    assert.match(direct.suggestedFilename(), /^\d{8}_实数与数轴综合\.pptx$/);
+    const directState = await page.evaluate(() => JSON.parse(localStorage.getItem('math:downloads:topics-20261010')));
     const mailHref = await page.locator('#emailLink').getAttribute('href');
     assert.ok(mailHref.startsWith('mailto:xichen.app@gmail.com?subject='));
-    assert.ok(decodeURIComponent(mailHref).includes('正数和负数'));
+    assert.ok(decodeURIComponent(mailHref).includes('实数与数轴综合'));
     assert.equal(mailCount, 0);
     await page.reload();
     await page.waitForFunction(() => !document.querySelector('#download').disabled);
-    assert.deepEqual(await page.evaluate(() => JSON.parse(localStorage.getItem('math:downloads:redo-20261010'))), directState);
+    assert.deepEqual(await page.evaluate(() => JSON.parse(localStorage.getItem('math:downloads:topics-20261010'))), directState);
     assert.deepEqual(await page.evaluate(() => JSON.parse(localStorage.getItem('arabic-test:daily-checkins'))), { '2026-01-01': ['daily-chinese'] });
     await page.locator('#connection summary').click();
     await page.fill('#apiBase', `http://127.0.0.1:${api.address().port}`);
@@ -59,7 +59,7 @@ const staticServer = http.createServer((req, res) => {
     const downloadPromise = page.waitForEvent('download');
     await page.click('#download');
     const download = await downloadPromise;
-    assert.match(download.suggestedFilename(), /^\d{8}_正数和负数\.pptx$/);
+    assert.match(download.suggestedFilename(), /^\d{8}_实数与数轴综合\.pptx$/);
     const file = path.join(output, download.suggestedFilename());
     await download.saveAs(file);
     validatePptx(fs.readFileSync(file), path.basename(file, '.pptx'));
@@ -119,7 +119,7 @@ const staticServer = http.createServer((req, res) => {
     await page.waitForURL('**/games/daily-math.html');
     await page.waitForSelector('#materials article');
     assert.deepEqual(errors, []);
-    console.log('PASS: connection, PPT download, reload timer, all 50 lesson decks, email, calendar.', file);
+    console.log('PASS: connection, PPT download, reload timer, all 45 lesson decks, email, calendar.', file);
   } finally {
     await browser?.close();
     await new Promise(resolve => api.close(resolve));

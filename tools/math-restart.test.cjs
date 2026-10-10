@@ -19,7 +19,7 @@ test('course restart clears only math check-ins once and preserves old records',
   vm.runInContext(source, context);
   assert.deepEqual(JSON.parse(storage.getItem('arabic-test:daily-checkins'))['2026-10-09'], ['daily-english', 'daily-chinese']);
   assert.equal(storage.getItem('math:reports'), null);
-  assert.ok(storage.getItem('math:reports:before-20261010'));
+  assert.ok(storage.getItem('math:reports:before-topics-20261010'));
   assert.ok(storage.getItem('math:downloads'));
   storage.setItem('math:reports', '{"new":true}');
   storage.setItem('arabic-test:daily-checkins', '{"2026-10-10":["daily-math"]}');

@@ -8,8 +8,13 @@ from pathlib import Path
 root = Path(__file__).resolve().parents[1]
 bank = json.loads((root / 'data/math/lessons.json').read_text(encoding='utf-8'))
 lessons = bank['lessons']
-assert len(lessons) == 50
-assert sum(len(l['questions']) for l in lessons) == 300
+assert len(lessons) == 45
+assert [lesson['title'] for lesson in lessons[:5]] == [
+    '实数与数轴综合', '实数运算与估算', '整式运算与整体代入',
+    '因式分解与方程思想', '分式与二次根式综合',
+]
+assert not any(lesson['title'] in ['正数和负数', '有理数', '数轴', '相反数', '绝对值'] for lesson in lessons)
+assert sum(len(l['questions']) for l in lessons) == 270
 ids, prompts = set(), set()
 for day, lesson in enumerate(lessons, 1):
     assert lesson['day'] == day
@@ -29,13 +34,13 @@ for day, lesson in enumerate(lessons, 1):
         assert all(marker not in str(q) for marker in ['TODO', '\ufffd', '待补充'])
 
 def check(day, question, expected):
-    q = lessons[day - 1]['questions'][question - 1]
+    q = lessons[(1 if day == 6 else day - 6)]['questions'][question - 1]
     actual = q['options'][q['answer']]
     assert actual == str(expected), (day, question, actual, expected)
 
 # Independent enumeration and formulas, separate from curriculum authoring.
 check(6, 6, sum((-1) ** n + n * n == 0 for n in range(-2, 3)))
-check(7, 6, sum(math.isqrt(a + 2) ** 2 == a + 2 for a in range(-2, 8)))
+assert [a for a in range(-2, 8) if math.isqrt(a + 2) ** 2 == a + 2] == [-2, -1, 2, 7]
 check(8, 6, 2 * 5 - 3 ** 2)
 check(9, 6, next(x for x in range(-10, 11) if x*x-5*x+6 <= 0 and x*x-4 != 0))
 check(12, 6, sum(m-6 > 0 and 12-m > 0 for m in range(-10, 20)))
@@ -63,13 +68,15 @@ check(49, 2, F(9,4))
 check(50, 1, F(7)-4+F(1,2))
 check(50, 4, F(5*12,2)/F(5+12+13,2))
 check(50, 5, F(2,4)*F(2,3)*2)
-# Verify less trivial location/branch calculations without relying on options.
-assert [x for x in range(-10,20) if x > -2 and abs(x+2) == 2*abs(x-4)] == [2,10]
-assert [x for x in range(-10,11) if abs(x+1)+abs(x-3)==4] == [-1,0,1,2,3]
+# Independently verify the integrated opening lesson and retained branch problems.
+first = lessons[0]['questions']
+assert [q['options'][q['answer']] for q in first] == ['3个，−3', '0', '−2', 'a＋b＜0', '2', '−2、−1、2、7']
+assert [x for x in range(-10,11) if abs(x-1)==3 and x < math.sqrt(5)] == [-2]
+assert [x for x in range(-10,11) if abs(x+1)+abs(x-3)==4 and x*x>1] == [2,3]
 assert [a for a in range(-10,11) if abs(a)==abs(2*a-3) and a>0 and 2*a-3<0] == [1]
-assert min(abs(x+3)+abs(x-1)+abs(x-5) for x in range(-10,11)) == 8
+assert math.floor(math.sqrt(50)) == 7
 assert sorted({abs(4-3), 4+3}) == [1,7]
-print('PASS: 50 lessons, 300 distinct prompts; IDs, options, references and material indices.')
-print('PASS: 28 independently calculated answers plus 5 branch/location checks.')
+print('PASS: 45 lessons, 270 distinct prompts; IDs, options, references and material indices.')
+print('PASS: 27 independently calculated answers plus 5 branch/location checks.')
 print('Answer distribution:', dict(Counter(q['answer'] for l in lessons for q in l['questions'])))
 print('This verifies structure and selected mathematics; full teacher review remains valuable.')
