@@ -59,13 +59,16 @@
     current();notice('');
   } catch(error) {notice(error.message);}
   $('download').addEventListener('click',async()=>{
-    if (busy || !day) return;busy=true;tick();notice('正在准备真题图片并生成合并PPT…');
+    if (busy) return;
+    const date=StudySession.today();
+    if (!preview) current();
+    if (!day) return;busy=true;tick();notice('正在准备真题图片并生成合并PPT…');
     try {
       // Loading and generation failures must not consume a day or start a timer.
       const images=await StudyPpt.prepare(bank,day);
-      const title=filename();const ppt=StudyPpt.create(bank,day,title,images);
+      const title=`${state?.date || date}_PPT作业_第${day.day}天`;const ppt=StudyPpt.create(bank,day,title,images);
       const blob=await ppt.write({outputType:'blob',compression:true});
-      if (!preview) state=StudySession.start(localStorage);
+      if (!preview) state=StudySession.start(localStorage,date);
       const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`${title}.pptx`;a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);
       draw();notice(preview?'复习PPT已下载。':'PPT已下载，计时开始。');
     } catch(error) {notice(error.message);}

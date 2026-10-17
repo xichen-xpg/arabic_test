@@ -6,7 +6,6 @@
     const records = read(storage);
     const latest = Object.keys(records).sort().at(-1);
     const active = latest && records[latest];
-    if (active && !active.finishedAt) return { day:active.day, state:active };
     if (records[date]) return { day:records[date].day, state:records[date] };
     return { day:active ? active.day + 1 : 1, state:null };
   }
