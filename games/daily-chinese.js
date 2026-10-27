@@ -3,7 +3,7 @@
   const today=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Dubai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
   const date=today(),key='exam-reading:sessions:v1';
   try {
-    const response=await fetch('../data/exam-study/bank.json?v=20261027-ordered');
+    const response=await fetch('../data/exam-study/bank.json?v=20261027-six-subjects');
     if(!response.ok)throw new Error('阅读题库加载失败，请刷新重试。');
     const bank=await response.json(),records=JSON.parse(localStorage.getItem(key)||'{}');
     const last=Object.keys(records).sort().at(-1);

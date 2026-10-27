@@ -17,6 +17,7 @@ OUT = ROOT / 'data/exam-study'
 legacy.OUT = OUT
 legacy.STYLE += '\narticle{max-width:100%}'
 ORDER = ['chinese','math','english','physics','chemistry','biology','politics','history','geography']
+PPT_SUBJECTS = {'math','english','physics','chemistry','biology','history'}
 NAMES = {v:k for k,v in SUBJECTS.items()}
 NAMES['politics']='道德与法治'
 
@@ -145,6 +146,7 @@ def build():
         sources.append(dict(id=paper_id,subject=sid,paper=str(Path(record['source']).relative_to(ROOT)),
                             sha256=record['sha256'],answer=str(Path(solution['source']).relative_to(ROOT)),answerSha256=solution['sha256']))
         for index,g in enumerate(selection['groups']):
+            if g['kind']=='ppt' and sid not in PPT_SUBJECTS:continue
             key=f'{sid}-{paper_id}-{index+1:02d}'
             numbers=g['numbers'];label=g['label']
             number_label='、'.join(map(str,numbers))
@@ -162,7 +164,7 @@ def build():
           for i in range(max(map(len,queues.values())))]
     for i in range(max(map(len,reading_queues.values()))):
         readings.extend(reading_queues[s][i] for s in ORDER if i<len(reading_queues[s]))
-    bank=dict(version='all-exams-20261027',minutes=60,subjects=[dict(id=s,name=NAMES[s],count=len(queues[s])) for s in ORDER],
+    bank=dict(version='all-exams-20261027-six-subjects',minutes=60,subjects=[dict(id=s,name=NAMES[s],count=len(queues[s])) for s in ORDER],
               questions=questions,days=days,sources=sources,readings=readings,duplicates=duplicates)
     (OUT/'bank.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(dict(papers=len(papers),questions=len(questions),readings=len(readings),days=len(days),subjects=bank['subjects']),ensure_ascii=False),flush=True)

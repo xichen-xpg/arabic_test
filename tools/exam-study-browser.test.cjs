@@ -18,7 +18,8 @@ const server=http.createServer((req,res)=>{
     await home.locator('.calendar-day.today .calendar-source').first().waitFor();
     assert.deepEqual(await home.locator('.calendar-day.today .calendar-source-name').allTextContents(),['PPT','英语','阅读','阿语','古诗词']);
     await page.goto(base+'/games/daily-study.html');await page.waitForSelector('#tasks .subject');
-    assert.equal(await page.locator('#tasks .subject').count(),9);
+    assert.equal(await page.locator('#tasks .subject').count(),6);
+    assert.deepEqual(await page.locator('#tasks .subject h2').allTextContents(),['数学','英语','物理','化学','生物','历史']);
     assert.equal(await page.locator('#daySelect option').count(),bank.days.length);
     assert.doesNotMatch(await page.locator('#tasks').textContent(),/知识点讲解|例子推演|易错点|重点题组/);
     await page.evaluate(()=>localStorage.setItem('daily-study:sessions:v1',JSON.stringify({'2026-01-01':{day:20}})));
@@ -50,7 +51,7 @@ const server=http.createServer((req,res)=>{
         const files=Object.keys(zip.files).filter(p=>/^ppt\/slides\/slide\d+\.xml$/.test(p));let bad=[];
         for(const file of files){
           const xml=await zip.file(file).async('string'),doc=new DOMParser().parseFromString(xml,'application/xml');
-          if(!xml.includes('我的答案与依据')||/【答案】|【解析】|知识点讲解|例子推演/.test(xml))bad.push(file);
+          if(!xml.includes('我的答案与依据')||/【答案】|【解析】|知识点讲解|例子推演|语文|政治|道德与法治|地理/.test(xml))bad.push(file);
           for(const tag of ['p:pic','p:sp'])for(const shape of doc.getElementsByTagName(tag)){
             const off=shape.getElementsByTagName('a:off')[0],ext=shape.getElementsByTagName('a:ext')[0];if(!off||!ext)continue;
             const x=+off.getAttribute('x'),right=x+ +ext.getAttribute('cx'),bottom=+off.getAttribute('y')+ +ext.getAttribute('cy');

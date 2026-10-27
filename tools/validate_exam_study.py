@@ -6,6 +6,7 @@ from lxml import html
 from PIL import Image
 from inspect_exam_documents import ROOT
 from select_exam_questions import QUESTION, question_spans
+from build_exam_study import PPT_SUBJECTS
 
 assert not QUESTION.match('题 2 分）')
 assert QUESTION.match('(多选）16．选择题')[1]=='16'
@@ -15,6 +16,7 @@ assert question_spans(['1. question','61.7 62.4','2. next'],0,3)==[(1,0,2),(2,2,
 root=ROOT/'data/exam-study'
 bank=json.loads((root/'bank.json').read_text(encoding='utf-8'))
 assert len(bank['subjects'])==9
+assert {q['subject'] for q in bank['questions'].values()}==PPT_SUBJECTS
 scheduled=[]
 for day in bank['days']:
     subjects=[bank['questions'][t['id']]['subject'] for t in day['tasks']]
@@ -47,6 +49,6 @@ for q in list(bank['questions'].values())+bank['readings']:
         for img in doc.xpath('//img'):assets.add((path.parent/img.get('src')).resolve())
 for asset in assets:
     with Image.open(asset) as image:image.verify()
-assert {q['paper'] for q in bank['questions'].values()}=={s['id'] for s in bank['sources']}
+assert {q['paper'] for q in bank['questions'].values()}=={s['id'] for s in bank['sources'] if s['subject'] in PPT_SUBJECTS}
 assert {q['subject'] for q in bank['readings']}=={'chinese','english','physics','chemistry','biology'}
 print(f"Validated {len(bank['sources'])} papers, {len(bank['questions'])} PPT groups, {len(bank['readings'])} reading groups, {len(bank['days'])} days, {len(assets)} source images")

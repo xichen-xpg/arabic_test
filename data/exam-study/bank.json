@@ -1,11 +1,11 @@
 {
-  "version": "all-exams-20261027",
+  "version": "all-exams-20261027-six-subjects",
   "minutes": 60,
   "subjects": [
     {
       "id": "chinese",
       "name": "语文",
-      "count": 24
+      "count": 0
     },
     {
       "id": "math",
@@ -35,7 +35,7 @@
     {
       "id": "politics",
       "name": "道德与法治",
-      "count": 28
+      "count": 0
     },
     {
       "id": "history",
@@ -45,906 +45,10 @@
     {
       "id": "geography",
       "name": "地理",
-      "count": 64
+      "count": 0
     }
   ],
   "questions": {
-    "chinese-5c1aca4e4792dfe5-01": {
-      "id": "chinese-5c1aca4e4792dfe5-01",
-      "subject": "chinese",
-      "topic": "基础选择题",
-      "source": "2015年北京市中考语文试题 · 基础选择题 第1、2、3、4、5、6、8题",
-      "paper": "5c1aca4e4792dfe5",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        8
-      ],
-      "ranges": [
-        [
-          2,
-          4
-        ],
-        [
-          4,
-          6
-        ],
-        [
-          8,
-          10
-        ],
-        [
-          10,
-          15
-        ],
-        [
-          15,
-          17
-        ],
-        [
-          17,
-          20
-        ],
-        [
-          20,
-          27
-        ],
-        [
-          27,
-          32
-        ],
-        [
-          32,
-          37
-        ],
-        [
-          40,
-          42
-        ],
-        [
-          42,
-          44
-        ]
-      ],
-      "question": "questions/chinese-5c1aca4e4792dfe5-01.html",
-      "answer": "answers/5c1aca4e4792dfe5.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-5c1aca4e4792dfe5-01.png",
-          "width": 2000,
-          "height": 1525
-        }
-      ]
-    },
-    "chinese-5c1aca4e4792dfe5-02": {
-      "id": "chinese-5c1aca4e4792dfe5-02",
-      "subject": "chinese",
-      "topic": "默写",
-      "source": "2015年北京市中考语文试题 · 默写 第9题",
-      "paper": "5c1aca4e4792dfe5",
-      "numbers": [
-        9
-      ],
-      "ranges": [
-        [
-          46,
-          50
-        ]
-      ],
-      "question": "questions/chinese-5c1aca4e4792dfe5-02.html",
-      "answer": "answers/5c1aca4e4792dfe5.html#q9",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-5c1aca4e4792dfe5-02.png",
-          "width": 1000,
-          "height": 204
-        }
-      ]
-    },
-    "chinese-9d90d101a0a2f6ed-01": {
-      "id": "chinese-9d90d101a0a2f6ed-01",
-      "subject": "chinese",
-      "topic": "基础选择题",
-      "source": "2016年北京市中考语文试题 · 基础选择题 第2题",
-      "paper": "9d90d101a0a2f6ed",
-      "numbers": [
-        2
-      ],
-      "ranges": [
-        [
-          13,
-          15
-        ],
-        [
-          15,
-          20
-        ],
-        [
-          20,
-          25
-        ],
-        [
-          25,
-          29
-        ]
-      ],
-      "question": "questions/chinese-9d90d101a0a2f6ed-01.html",
-      "answer": "answers/9d90d101a0a2f6ed.html#q2",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-9d90d101a0a2f6ed-01.png",
-          "width": 1000,
-          "height": 863
-        }
-      ]
-    },
-    "chinese-9d90d101a0a2f6ed-02": {
-      "id": "chinese-9d90d101a0a2f6ed-02",
-      "subject": "chinese",
-      "topic": "默写",
-      "source": "2016年北京市中考语文试题 · 默写 第3题",
-      "paper": "9d90d101a0a2f6ed",
-      "numbers": [
-        3
-      ],
-      "ranges": [
-        [
-          29,
-          33
-        ]
-      ],
-      "question": "questions/chinese-9d90d101a0a2f6ed-02.html",
-      "answer": "answers/9d90d101a0a2f6ed.html#q3",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-9d90d101a0a2f6ed-02.png",
-          "width": 1000,
-          "height": 171
-        }
-      ]
-    },
-    "chinese-e8fee4cd10e81d82-01": {
-      "id": "chinese-e8fee4cd10e81d82-01",
-      "subject": "chinese",
-      "topic": "基础选择题",
-      "source": "2017年北京市中考语文试题 · 基础选择题 第1、2题",
-      "paper": "e8fee4cd10e81d82",
-      "numbers": [
-        1,
-        2
-      ],
-      "ranges": [
-        [
-          5,
-          6
-        ],
-        [
-          7,
-          12
-        ],
-        [
-          12,
-          13
-        ],
-        [
-          17,
-          22
-        ]
-      ],
-      "question": "questions/chinese-e8fee4cd10e81d82-01.html",
-      "answer": "answers/e8fee4cd10e81d82.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-e8fee4cd10e81d82-01.png",
-          "width": 1000,
-          "height": 1087
-        }
-      ]
-    },
-    "chinese-e8fee4cd10e81d82-02": {
-      "id": "chinese-e8fee4cd10e81d82-02",
-      "subject": "chinese",
-      "topic": "默写",
-      "source": "2017年北京市中考语文试题 · 默写 第3题",
-      "paper": "e8fee4cd10e81d82",
-      "numbers": [
-        3
-      ],
-      "ranges": [
-        [
-          37,
-          43
-        ]
-      ],
-      "question": "questions/chinese-e8fee4cd10e81d82-02.html",
-      "answer": "answers/e8fee4cd10e81d82.html#q3",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-e8fee4cd10e81d82-02.png",
-          "width": 1000,
-          "height": 276
-        }
-      ]
-    },
-    "chinese-ebab0139512719ad-01": {
-      "id": "chinese-ebab0139512719ad-01",
-      "subject": "chinese",
-      "topic": "基础选择题",
-      "source": "2018年北京市中考语文试题 · 基础选择题 第2、3、4、5题",
-      "paper": "ebab0139512719ad",
-      "numbers": [
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          5,
-          6
-        ],
-        [
-          7,
-          9
-        ],
-        [
-          9,
-          14
-        ],
-        [
-          14,
-          17
-        ],
-        [
-          17,
-          19
-        ],
-        [
-          19,
-          22
-        ],
-        [
-          24,
-          29
-        ],
-        [
-          30,
-          35
-        ],
-        [
-          35,
-          45
-        ]
-      ],
-      "question": "questions/chinese-ebab0139512719ad-01.html",
-      "answer": "answers/ebab0139512719ad.html#q2",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-ebab0139512719ad-01.png",
-          "width": 2000,
-          "height": 1414
-        }
-      ]
-    },
-    "chinese-ebab0139512719ad-02": {
-      "id": "chinese-ebab0139512719ad-02",
-      "subject": "chinese",
-      "topic": "默写",
-      "source": "2018年北京市中考语文试题 · 默写 第6、7题",
-      "paper": "ebab0139512719ad",
-      "numbers": [
-        6,
-        7
-      ],
-      "ranges": [
-        [
-          46,
-          49
-        ]
-      ],
-      "question": "questions/chinese-ebab0139512719ad-02.html",
-      "answer": "answers/ebab0139512719ad.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-ebab0139512719ad-02.png",
-          "width": 1000,
-          "height": 133
-        }
-      ]
-    },
-    "chinese-9821f525f036e579-01": {
-      "id": "chinese-9821f525f036e579-01",
-      "subject": "chinese",
-      "topic": "基础选择题",
-      "source": "2019年北京市中考语文试题 · 基础选择题 第1题",
-      "paper": "9821f525f036e579",
-      "numbers": [
-        1
-      ],
-      "ranges": [
-        [
-          2,
-          3
-        ],
-        [
-          3,
-          9
-        ],
-        [
-          10,
-          13
-        ],
-        [
-          15,
-          20
-        ],
-        [
-          20,
-          36
-        ]
-      ],
-      "question": "questions/chinese-9821f525f036e579-01.html",
-      "answer": "answers/9821f525f036e579.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-9821f525f036e579-01.png",
-          "width": 2000,
-          "height": 1528
-        }
-      ]
-    },
-    "chinese-9821f525f036e579-03": {
-      "id": "chinese-9821f525f036e579-03",
-      "subject": "chinese",
-      "topic": "默写",
-      "source": "2019年北京市中考语文试题 · 默写 第2题",
-      "paper": "9821f525f036e579",
-      "numbers": [
-        2
-      ],
-      "ranges": [
-        [
-          37,
-          42
-        ]
-      ],
-      "question": "questions/chinese-9821f525f036e579-03.html",
-      "answer": "answers/9821f525f036e579.html#q2",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-9821f525f036e579-03.png",
-          "width": 1000,
-          "height": 496
-        }
-      ]
-    },
-    "chinese-42d208e2cbebf314-01": {
-      "id": "chinese-42d208e2cbebf314-01",
-      "subject": "chinese",
-      "topic": "基础选择题",
-      "source": "2020年北京市中考语文试题 · 基础选择题 第1、2、3题",
-      "paper": "42d208e2cbebf314",
-      "numbers": [
-        1,
-        2,
-        3
-      ],
-      "ranges": [
-        [
-          9,
-          10
-        ],
-        [
-          10,
-          13
-        ],
-        [
-          13,
-          15
-        ],
-        [
-          15,
-          18
-        ],
-        [
-          19,
-          26
-        ],
-        [
-          26,
-          29
-        ],
-        [
-          29,
-          31
-        ]
-      ],
-      "question": "questions/chinese-42d208e2cbebf314-01.html",
-      "answer": "answers/42d208e2cbebf314.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-42d208e2cbebf314-01.png",
-          "width": 2000,
-          "height": 1032
-        }
-      ]
-    },
-    "chinese-42d208e2cbebf314-02": {
-      "id": "chinese-42d208e2cbebf314-02",
-      "subject": "chinese",
-      "topic": "默写",
-      "source": "2020年北京市中考语文试题 · 默写 第6题",
-      "paper": "42d208e2cbebf314",
-      "numbers": [
-        6
-      ],
-      "ranges": [
-        [
-          35,
-          39
-        ]
-      ],
-      "question": "questions/chinese-42d208e2cbebf314-02.html",
-      "answer": "answers/42d208e2cbebf314.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-42d208e2cbebf314-02.png",
-          "width": 1000,
-          "height": 238
-        }
-      ]
-    },
-    "chinese-d83b227edf6e5eae-01": {
-      "id": "chinese-d83b227edf6e5eae-01",
-      "subject": "chinese",
-      "topic": "基础选择题",
-      "source": "2021年北京市中考语文试题 · 基础选择题 第2、3题",
-      "paper": "d83b227edf6e5eae",
-      "numbers": [
-        2,
-        3
-      ],
-      "ranges": [
-        [
-          8,
-          9
-        ],
-        [
-          19,
-          23
-        ],
-        [
-          23,
-          26
-        ],
-        [
-          26,
-          29
-        ],
-        [
-          31,
-          36
-        ]
-      ],
-      "question": "questions/chinese-d83b227edf6e5eae-01.html",
-      "answer": "answers/d83b227edf6e5eae.html#q2",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-d83b227edf6e5eae-01.png",
-          "width": 1000,
-          "height": 1177
-        }
-      ]
-    },
-    "chinese-d83b227edf6e5eae-02": {
-      "id": "chinese-d83b227edf6e5eae-02",
-      "subject": "chinese",
-      "topic": "默写",
-      "source": "2021年北京市中考语文试题 · 默写 第5题",
-      "paper": "d83b227edf6e5eae",
-      "numbers": [
-        5
-      ],
-      "ranges": [
-        [
-          39,
-          43
-        ]
-      ],
-      "question": "questions/chinese-d83b227edf6e5eae-02.html",
-      "answer": "answers/d83b227edf6e5eae.html#q5",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-d83b227edf6e5eae-02.png",
-          "width": 1000,
-          "height": 238
-        }
-      ]
-    },
-    "chinese-08d34bb24ba54d27-01": {
-      "id": "chinese-08d34bb24ba54d27-01",
-      "subject": "chinese",
-      "topic": "基础选择题",
-      "source": "2022年北京市中考语文真题 · 基础选择题 第2、3、4题",
-      "paper": "08d34bb24ba54d27",
-      "numbers": [
-        2,
-        3,
-        4
-      ],
-      "ranges": [
-        [
-          9,
-          10
-        ],
-        [
-          11,
-          13
-        ],
-        [
-          13,
-          18
-        ],
-        [
-          18,
-          24
-        ],
-        [
-          22,
-          24
-        ],
-        [
-          24,
-          28
-        ]
-      ],
-      "question": "questions/chinese-08d34bb24ba54d27-01.html",
-      "answer": "answers/08d34bb24ba54d27.html#q2",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-08d34bb24ba54d27-01.png",
-          "width": 1000,
-          "height": 1348
-        }
-      ]
-    },
-    "chinese-08d34bb24ba54d27-03": {
-      "id": "chinese-08d34bb24ba54d27-03",
-      "subject": "chinese",
-      "topic": "默写",
-      "source": "2022年北京市中考语文真题 · 默写 第7题",
-      "paper": "08d34bb24ba54d27",
-      "numbers": [
-        7
-      ],
-      "ranges": [
-        [
-          34,
-          47
-        ]
-      ],
-      "question": "questions/chinese-08d34bb24ba54d27-03.html",
-      "answer": "answers/08d34bb24ba54d27.html#q7",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-08d34bb24ba54d27-03.png",
-          "width": 1000,
-          "height": 576
-        }
-      ]
-    },
-    "chinese-b828b11e920698ff-01": {
-      "id": "chinese-b828b11e920698ff-01",
-      "subject": "chinese",
-      "topic": "基础选择题",
-      "source": "2023年北京市中考语文真题 · 基础选择题 第2、3、4、6题",
-      "paper": "b828b11e920698ff",
-      "numbers": [
-        2,
-        3,
-        4,
-        6
-      ],
-      "ranges": [
-        [
-          4,
-          5
-        ],
-        [
-          8,
-          13
-        ],
-        [
-          13,
-          21
-        ],
-        [
-          21,
-          26
-        ],
-        [
-          26,
-          28
-        ],
-        [
-          29,
-          31
-        ],
-        [
-          31,
-          38
-        ]
-      ],
-      "question": "questions/chinese-b828b11e920698ff-01.html",
-      "answer": "answers/b828b11e920698ff.html#q2",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-b828b11e920698ff-01.png",
-          "width": 2000,
-          "height": 954
-        }
-      ]
-    },
-    "chinese-b828b11e920698ff-03": {
-      "id": "chinese-b828b11e920698ff-03",
-      "subject": "chinese",
-      "topic": "默写",
-      "source": "2023年北京市中考语文真题 · 默写 第8题",
-      "paper": "b828b11e920698ff",
-      "numbers": [
-        8
-      ],
-      "ranges": [
-        [
-          41,
-          53
-        ]
-      ],
-      "question": "questions/chinese-b828b11e920698ff-03.html",
-      "answer": "answers/b828b11e920698ff.html#q8",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-b828b11e920698ff-03.png",
-          "width": 1000,
-          "height": 505
-        }
-      ]
-    },
-    "chinese-80d4d2061fc70ea4-01": {
-      "id": "chinese-80d4d2061fc70ea4-01",
-      "subject": "chinese",
-      "topic": "基础选择题",
-      "source": "2024年北京市中考语文真题 · 基础选择题 第2、4、5、7题",
-      "paper": "80d4d2061fc70ea4",
-      "numbers": [
-        2,
-        4,
-        5,
-        7
-      ],
-      "ranges": [
-        [
-          3,
-          4
-        ],
-        [
-          7,
-          14
-        ],
-        [
-          18,
-          20
-        ],
-        [
-          20,
-          25
-        ],
-        [
-          29,
-          31
-        ]
-      ],
-      "question": "questions/chinese-80d4d2061fc70ea4-01.html",
-      "answer": "answers/80d4d2061fc70ea4.html#q2",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-80d4d2061fc70ea4-01.png",
-          "width": 1000,
-          "height": 1034
-        }
-      ]
-    },
-    "chinese-80d4d2061fc70ea4-03": {
-      "id": "chinese-80d4d2061fc70ea4-03",
-      "subject": "chinese",
-      "topic": "默写",
-      "source": "2024年北京市中考语文真题 · 默写 第8题",
-      "paper": "80d4d2061fc70ea4",
-      "numbers": [
-        8
-      ],
-      "ranges": [
-        [
-          33,
-          45
-        ]
-      ],
-      "question": "questions/chinese-80d4d2061fc70ea4-03.html",
-      "answer": "answers/80d4d2061fc70ea4.html#q8",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-80d4d2061fc70ea4-03.png",
-          "width": 1000,
-          "height": 640
-        }
-      ]
-    },
-    "chinese-2eba54d1ce9499fb-01": {
-      "id": "chinese-2eba54d1ce9499fb-01",
-      "subject": "chinese",
-      "topic": "基础选择题",
-      "source": "2025年北京市中考语文真题 · 基础选择题 第2、3、4、5题",
-      "paper": "2eba54d1ce9499fb",
-      "numbers": [
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          9,
-          10
-        ],
-        [
-          13,
-          17
-        ],
-        [
-          17,
-          22
-        ],
-        [
-          22,
-          25
-        ],
-        [
-          25,
-          29
-        ]
-      ],
-      "question": "questions/chinese-2eba54d1ce9499fb-01.html",
-      "answer": "answers/2eba54d1ce9499fb.html#q2",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-2eba54d1ce9499fb-01.png",
-          "width": 1000,
-          "height": 1192
-        }
-      ]
-    },
-    "chinese-2eba54d1ce9499fb-02": {
-      "id": "chinese-2eba54d1ce9499fb-02",
-      "subject": "chinese",
-      "topic": "默写",
-      "source": "2025年北京市中考语文真题 · 默写 第8题",
-      "paper": "2eba54d1ce9499fb",
-      "numbers": [
-        8
-      ],
-      "ranges": [
-        [
-          34,
-          39
-        ]
-      ],
-      "question": "questions/chinese-2eba54d1ce9499fb-02.html",
-      "answer": "answers/2eba54d1ce9499fb.html#q8",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-2eba54d1ce9499fb-02.png",
-          "width": 1000,
-          "height": 242
-        }
-      ]
-    },
-    "chinese-522b19c93d767054-01": {
-      "id": "chinese-522b19c93d767054-01",
-      "subject": "chinese",
-      "topic": "基础选择题",
-      "source": "2026年北京市中考语文试题 · 基础选择题 第2、3、4、6题",
-      "paper": "522b19c93d767054",
-      "numbers": [
-        2,
-        3,
-        4,
-        6
-      ],
-      "ranges": [
-        [
-          3,
-          4
-        ],
-        [
-          13,
-          22
-        ],
-        [
-          22,
-          24
-        ],
-        [
-          24,
-          30
-        ],
-        [
-          33,
-          35
-        ]
-      ],
-      "question": "questions/chinese-522b19c93d767054-01.html",
-      "answer": "answers/522b19c93d767054.html#q2",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-522b19c93d767054-01.png",
-          "width": 1000,
-          "height": 1133
-        }
-      ]
-    },
-    "chinese-522b19c93d767054-03": {
-      "id": "chinese-522b19c93d767054-03",
-      "subject": "chinese",
-      "topic": "默写",
-      "source": "2026年北京市中考语文试题 · 默写 第8题",
-      "paper": "522b19c93d767054",
-      "numbers": [
-        8
-      ],
-      "ranges": [
-        [
-          38,
-          48
-        ]
-      ],
-      "question": "questions/chinese-522b19c93d767054-03.html",
-      "answer": "answers/522b19c93d767054.html#q8",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/chinese-522b19c93d767054-03.png",
-          "width": 1000,
-          "height": 497
-        }
-      ]
-    },
     "math-648ed4292d3dbf78-01": {
       "id": "math-648ed4292d3dbf78-01",
       "subject": "math",
@@ -10813,858 +9917,6 @@
         }
       ]
     },
-    "politics-c4b172e74efdb9ad-01": {
-      "id": "politics-c4b172e74efdb9ad-01",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2018年北京市中考政治试题 · 选择题 第1、2、3、4、5题",
-      "paper": "c4b172e74efdb9ad",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          3,
-          21
-        ]
-      ],
-      "question": "questions/politics-c4b172e74efdb9ad-01.html",
-      "answer": "answers/c4b172e74efdb9ad.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-c4b172e74efdb9ad-01.png",
-          "width": 1000,
-          "height": 1228
-        }
-      ]
-    },
-    "politics-c4b172e74efdb9ad-02": {
-      "id": "politics-c4b172e74efdb9ad-02",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2018年北京市中考政治试题 · 选择题 第6、7、8、9、10题",
-      "paper": "c4b172e74efdb9ad",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          8,
-          9
-        ],
-        [
-          21,
-          45
-        ]
-      ],
-      "question": "questions/politics-c4b172e74efdb9ad-02.html",
-      "answer": "answers/c4b172e74efdb9ad.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-c4b172e74efdb9ad-02.png",
-          "width": 2000,
-          "height": 1142
-        }
-      ]
-    },
-    "politics-c4b172e74efdb9ad-03": {
-      "id": "politics-c4b172e74efdb9ad-03",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2018年北京市中考政治试题 · 选择题 第11、12、13、14、15题",
-      "paper": "c4b172e74efdb9ad",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          8,
-          9
-        ],
-        [
-          45,
-          69
-        ]
-      ],
-      "question": "questions/politics-c4b172e74efdb9ad-03.html",
-      "answer": "answers/c4b172e74efdb9ad.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-c4b172e74efdb9ad-03.png",
-          "width": 2000,
-          "height": 917
-        }
-      ]
-    },
-    "politics-c4b172e74efdb9ad-04": {
-      "id": "politics-c4b172e74efdb9ad-04",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2018年北京市中考政治试题 · 选择题 第16、17、18、19、20题",
-      "paper": "c4b172e74efdb9ad",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          8,
-          9
-        ],
-        [
-          69,
-          99
-        ]
-      ],
-      "question": "questions/politics-c4b172e74efdb9ad-04.html",
-      "answer": "answers/c4b172e74efdb9ad.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-c4b172e74efdb9ad-04.png",
-          "width": 2000,
-          "height": 1068
-        }
-      ]
-    },
-    "politics-14ebda3345a27c84-01": {
-      "id": "politics-14ebda3345a27c84-01",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2019年北京市中考政治试题 · 选择题 第1、2、3、4、5题",
-      "paper": "14ebda3345a27c84",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          2,
-          29
-        ]
-      ],
-      "question": "questions/politics-14ebda3345a27c84-01.html",
-      "answer": "answers/14ebda3345a27c84.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-14ebda3345a27c84-01.png",
-          "width": 2000,
-          "height": 836
-        }
-      ]
-    },
-    "politics-14ebda3345a27c84-02": {
-      "id": "politics-14ebda3345a27c84-02",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2019年北京市中考政治试题 · 选择题 第6、7、8、9、10题",
-      "paper": "14ebda3345a27c84",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          29,
-          61
-        ]
-      ],
-      "question": "questions/politics-14ebda3345a27c84-02.html",
-      "answer": "answers/14ebda3345a27c84.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-14ebda3345a27c84-02.png",
-          "width": 2000,
-          "height": 988
-        }
-      ]
-    },
-    "politics-14ebda3345a27c84-03": {
-      "id": "politics-14ebda3345a27c84-03",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2019年北京市中考政治试题 · 选择题 第11、12、13、14、15题",
-      "paper": "14ebda3345a27c84",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          61,
-          87
-        ]
-      ],
-      "question": "questions/politics-14ebda3345a27c84-03.html",
-      "answer": "answers/14ebda3345a27c84.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-14ebda3345a27c84-03.png",
-          "width": 1000,
-          "height": 1450
-        }
-      ]
-    },
-    "politics-14ebda3345a27c84-04": {
-      "id": "politics-14ebda3345a27c84-04",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2019年北京市中考政治试题 · 选择题 第16、17、18、19、20题",
-      "paper": "14ebda3345a27c84",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          87,
-          115
-        ]
-      ],
-      "question": "questions/politics-14ebda3345a27c84-04.html",
-      "answer": "answers/14ebda3345a27c84.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-14ebda3345a27c84-04.png",
-          "width": 2000,
-          "height": 971
-        }
-      ]
-    },
-    "politics-debad3658c0ef872-01": {
-      "id": "politics-debad3658c0ef872-01",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2020年北京市中考政治试题 · 选择题 第1、2、3、4、5题",
-      "paper": "debad3658c0ef872",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          3,
-          28
-        ]
-      ],
-      "question": "questions/politics-debad3658c0ef872-01.html",
-      "answer": "answers/debad3658c0ef872.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-debad3658c0ef872-01.png",
-          "width": 1000,
-          "height": 1530
-        }
-      ]
-    },
-    "politics-debad3658c0ef872-02": {
-      "id": "politics-debad3658c0ef872-02",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2020年北京市中考政治试题 · 选择题 第6、7、8、9、10题",
-      "paper": "debad3658c0ef872",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          28,
-          59
-        ]
-      ],
-      "question": "questions/politics-debad3658c0ef872-02.html",
-      "answer": "answers/debad3658c0ef872.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-debad3658c0ef872-02.png",
-          "width": 2000,
-          "height": 1282
-        }
-      ]
-    },
-    "politics-debad3658c0ef872-03": {
-      "id": "politics-debad3658c0ef872-03",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2020年北京市中考政治试题 · 选择题 第11、12、13、14、15题",
-      "paper": "debad3658c0ef872",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          59,
-          84
-        ]
-      ],
-      "question": "questions/politics-debad3658c0ef872-03.html",
-      "answer": "answers/debad3658c0ef872.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-debad3658c0ef872-03.png",
-          "width": 1000,
-          "height": 1449
-        }
-      ]
-    },
-    "politics-debad3658c0ef872-04": {
-      "id": "politics-debad3658c0ef872-04",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2020年北京市中考政治试题 · 选择题 第16、17、18、19、20题",
-      "paper": "debad3658c0ef872",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          84,
-          115
-        ]
-      ],
-      "question": "questions/politics-debad3658c0ef872-04.html",
-      "answer": "answers/debad3658c0ef872.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-debad3658c0ef872-04.png",
-          "width": 2000,
-          "height": 1055
-        }
-      ]
-    },
-    "politics-86aeadc0a0571bd9-01": {
-      "id": "politics-86aeadc0a0571bd9-01",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2021年北京市中考政治试题 · 选择题 第1、2、3、4、5题",
-      "paper": "86aeadc0a0571bd9",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          4,
-          24
-        ]
-      ],
-      "question": "questions/politics-86aeadc0a0571bd9-01.html",
-      "answer": "answers/86aeadc0a0571bd9.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-86aeadc0a0571bd9-01.png",
-          "width": 1000,
-          "height": 1500
-        }
-      ]
-    },
-    "politics-86aeadc0a0571bd9-02": {
-      "id": "politics-86aeadc0a0571bd9-02",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2021年北京市中考政治试题 · 选择题 第6、7、8、9、10题",
-      "paper": "86aeadc0a0571bd9",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          24,
-          47
-        ]
-      ],
-      "question": "questions/politics-86aeadc0a0571bd9-02.html",
-      "answer": "answers/86aeadc0a0571bd9.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-86aeadc0a0571bd9-02.png",
-          "width": 2000,
-          "height": 922
-        }
-      ]
-    },
-    "politics-86aeadc0a0571bd9-03": {
-      "id": "politics-86aeadc0a0571bd9-03",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2021年北京市中考政治试题 · 选择题 第11、12、13、14、15题",
-      "paper": "86aeadc0a0571bd9",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          47,
-          79
-        ]
-      ],
-      "question": "questions/politics-86aeadc0a0571bd9-03.html",
-      "answer": "answers/86aeadc0a0571bd9.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-86aeadc0a0571bd9-03.png",
-          "width": 2000,
-          "height": 1131
-        }
-      ]
-    },
-    "politics-fe315854022e80db-01": {
-      "id": "politics-fe315854022e80db-01",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2022年北京市中考政治真题 · 选择题 第1、2、3、4、5题",
-      "paper": "fe315854022e80db",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          6,
-          30
-        ]
-      ],
-      "question": "questions/politics-fe315854022e80db-01.html",
-      "answer": "answers/fe315854022e80db.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-fe315854022e80db-01.png",
-          "width": 1000,
-          "height": 1532
-        }
-      ]
-    },
-    "politics-fe315854022e80db-02": {
-      "id": "politics-fe315854022e80db-02",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2022年北京市中考政治真题 · 选择题 第6、7、8、9、10题",
-      "paper": "fe315854022e80db",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          30,
-          50
-        ]
-      ],
-      "question": "questions/politics-fe315854022e80db-02.html",
-      "answer": "answers/fe315854022e80db.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-fe315854022e80db-02.png",
-          "width": 1000,
-          "height": 1108
-        }
-      ]
-    },
-    "politics-fe315854022e80db-03": {
-      "id": "politics-fe315854022e80db-03",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2022年北京市中考政治真题 · 选择题 第11、12、13、14、15题",
-      "paper": "fe315854022e80db",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          50,
-          77
-        ]
-      ],
-      "question": "questions/politics-fe315854022e80db-03.html",
-      "answer": "answers/fe315854022e80db.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-fe315854022e80db-03.png",
-          "width": 2000,
-          "height": 1138
-        }
-      ]
-    },
-    "politics-ff15240cff091867-01": {
-      "id": "politics-ff15240cff091867-01",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2023年北京市中考政治真题 · 选择题 第1、2、3、4、5题",
-      "paper": "ff15240cff091867",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          9,
-          31
-        ]
-      ],
-      "question": "questions/politics-ff15240cff091867-01.html",
-      "answer": "answers/ff15240cff091867.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-ff15240cff091867-01.png",
-          "width": 1000,
-          "height": 1274
-        }
-      ]
-    },
-    "politics-ff15240cff091867-02": {
-      "id": "politics-ff15240cff091867-02",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2023年北京市中考政治真题 · 选择题 第6、7、8、9、10题",
-      "paper": "ff15240cff091867",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          31,
-          55
-        ]
-      ],
-      "question": "questions/politics-ff15240cff091867-02.html",
-      "answer": "answers/ff15240cff091867.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-ff15240cff091867-02.png",
-          "width": 1000,
-          "height": 1381
-        }
-      ]
-    },
-    "politics-ff15240cff091867-03": {
-      "id": "politics-ff15240cff091867-03",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2023年北京市中考政治真题 · 选择题 第11、12、13、14、15题",
-      "paper": "ff15240cff091867",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          55,
-          82
-        ]
-      ],
-      "question": "questions/politics-ff15240cff091867-03.html",
-      "answer": "answers/ff15240cff091867.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-ff15240cff091867-03.png",
-          "width": 2000,
-          "height": 1190
-        }
-      ]
-    },
-    "politics-4b0a90b649b2316a-01": {
-      "id": "politics-4b0a90b649b2316a-01",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2024年北京市中考政治真题 · 选择题 第1、2、3、4、5题",
-      "paper": "4b0a90b649b2316a",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          10,
-          34
-        ]
-      ],
-      "question": "questions/politics-4b0a90b649b2316a-01.html",
-      "answer": "answers/4b0a90b649b2316a.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-4b0a90b649b2316a-01.png",
-          "width": 1000,
-          "height": 1419
-        }
-      ]
-    },
-    "politics-4b0a90b649b2316a-02": {
-      "id": "politics-4b0a90b649b2316a-02",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2024年北京市中考政治真题 · 选择题 第6、7、8、9、10题",
-      "paper": "4b0a90b649b2316a",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          34,
-          64
-        ]
-      ],
-      "question": "questions/politics-4b0a90b649b2316a-02.html",
-      "answer": "answers/4b0a90b649b2316a.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-4b0a90b649b2316a-02.png",
-          "width": 2000,
-          "height": 869
-        }
-      ]
-    },
-    "politics-4b0a90b649b2316a-03": {
-      "id": "politics-4b0a90b649b2316a-03",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2024年北京市中考政治真题 · 选择题 第11、12、13、14、15题",
-      "paper": "4b0a90b649b2316a",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          64,
-          91
-        ]
-      ],
-      "question": "questions/politics-4b0a90b649b2316a-03.html",
-      "answer": "answers/4b0a90b649b2316a.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-4b0a90b649b2316a-03.png",
-          "width": 1000,
-          "height": 1455
-        }
-      ]
-    },
-    "politics-153ef1e74e019299-01": {
-      "id": "politics-153ef1e74e019299-01",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2025年北京市中考道德与法治真题 · 选择题 第11、12、13、14、15题",
-      "paper": "153ef1e74e019299",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          14,
-          37
-        ]
-      ],
-      "question": "questions/politics-153ef1e74e019299-01.html",
-      "answer": "answers/153ef1e74e019299.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-153ef1e74e019299-01.png",
-          "width": 2000,
-          "height": 873
-        }
-      ]
-    },
-    "politics-153ef1e74e019299-02": {
-      "id": "politics-153ef1e74e019299-02",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2025年北京市中考道德与法治真题 · 选择题 第16、17、18、19、20题",
-      "paper": "153ef1e74e019299",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          37,
-          66
-        ]
-      ],
-      "question": "questions/politics-153ef1e74e019299-02.html",
-      "answer": "answers/153ef1e74e019299.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-153ef1e74e019299-02.png",
-          "width": 1000,
-          "height": 1574
-        }
-      ]
-    },
-    "politics-25790609783d29d6-01": {
-      "id": "politics-25790609783d29d6-01",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2026年北京市中考道德与法治真题 · 选择题 第11、12、13、14、15题",
-      "paper": "25790609783d29d6",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          15,
-          40
-        ]
-      ],
-      "question": "questions/politics-25790609783d29d6-01.html",
-      "answer": "answers/25790609783d29d6.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-25790609783d29d6-01.png",
-          "width": 1000,
-          "height": 1384
-        }
-      ]
-    },
-    "politics-25790609783d29d6-02": {
-      "id": "politics-25790609783d29d6-02",
-      "subject": "politics",
-      "topic": "选择题",
-      "source": "2026年北京市中考道德与法治真题 · 选择题 第16、17、18、19、20题",
-      "paper": "25790609783d29d6",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          40,
-          71
-        ]
-      ],
-      "question": "questions/politics-25790609783d29d6-02.html",
-      "answer": "answers/25790609783d29d6.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/politics-25790609783d29d6-02.png",
-          "width": 2000,
-          "height": 1090
-        }
-      ]
-    },
     "history-b259b232b5e54a50-01": {
       "id": "history-b259b232b5e54a50-01",
       "subject": "history",
@@ -13332,2083 +11584,12 @@
           "height": 276
         }
       ]
-    },
-    "geography-a9989e10a89a0533-01": {
-      "id": "geography-a9989e10a89a0533-01",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2018年北京市中考地理真题 · 选择题 第1、2、3、4、5题",
-      "paper": "a9989e10a89a0533",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          6,
-          22
-        ]
-      ],
-      "question": "questions/geography-a9989e10a89a0533-01.html",
-      "answer": "answers/a9989e10a89a0533.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-a9989e10a89a0533-01.png",
-          "width": 1000,
-          "height": 908
-        }
-      ]
-    },
-    "geography-a9989e10a89a0533-02": {
-      "id": "geography-a9989e10a89a0533-02",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2018年北京市中考地理真题 · 选择题 第6、7、8、9、10题",
-      "paper": "a9989e10a89a0533",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          13,
-          14
-        ],
-        [
-          22,
-          41
-        ]
-      ],
-      "question": "questions/geography-a9989e10a89a0533-02.html",
-      "answer": "answers/a9989e10a89a0533.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-a9989e10a89a0533-02.png",
-          "width": 1000,
-          "height": 1457
-        }
-      ]
-    },
-    "geography-a9989e10a89a0533-03": {
-      "id": "geography-a9989e10a89a0533-03",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2018年北京市中考地理真题 · 选择题 第11、12、13、14、15题",
-      "paper": "a9989e10a89a0533",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          32,
-          33
-        ],
-        [
-          41,
-          58
-        ]
-      ],
-      "question": "questions/geography-a9989e10a89a0533-03.html",
-      "answer": "answers/a9989e10a89a0533.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-a9989e10a89a0533-03.png",
-          "width": 2000,
-          "height": 867
-        }
-      ]
-    },
-    "geography-a9989e10a89a0533-04": {
-      "id": "geography-a9989e10a89a0533-04",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2018年北京市中考地理真题 · 选择题 第16、17、18、19、20题",
-      "paper": "a9989e10a89a0533",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          52,
-          53
-        ],
-        [
-          58,
-          79
-        ]
-      ],
-      "question": "questions/geography-a9989e10a89a0533-04.html",
-      "answer": "answers/a9989e10a89a0533.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-a9989e10a89a0533-04.png",
-          "width": 2000,
-          "height": 873
-        }
-      ]
-    },
-    "geography-a9989e10a89a0533-05": {
-      "id": "geography-a9989e10a89a0533-05",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2018年北京市中考地理真题 · 选择题 第21、22、23、24、25题",
-      "paper": "a9989e10a89a0533",
-      "numbers": [
-        21,
-        22,
-        23,
-        24,
-        25
-      ],
-      "ranges": [
-        [
-          73,
-          74
-        ],
-        [
-          79,
-          109
-        ]
-      ],
-      "question": "questions/geography-a9989e10a89a0533-05.html",
-      "answer": "answers/a9989e10a89a0533.html#q21",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-a9989e10a89a0533-05.png",
-          "width": 2000,
-          "height": 1100
-        }
-      ]
-    },
-    "geography-a9989e10a89a0533-06": {
-      "id": "geography-a9989e10a89a0533-06",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2018年北京市中考地理真题 · 选择题 第26、27、28、29、30题",
-      "paper": "a9989e10a89a0533",
-      "numbers": [
-        26,
-        27,
-        28,
-        29,
-        30
-      ],
-      "ranges": [
-        [
-          108,
-          133
-        ]
-      ],
-      "question": "questions/geography-a9989e10a89a0533-06.html",
-      "answer": "answers/a9989e10a89a0533.html#q26",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-a9989e10a89a0533-06.png",
-          "width": 1000,
-          "height": 1584
-        }
-      ]
-    },
-    "geography-a9989e10a89a0533-07": {
-      "id": "geography-a9989e10a89a0533-07",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2018年北京市中考地理真题 · 选择题 第31、32、33、34、35题",
-      "paper": "a9989e10a89a0533",
-      "numbers": [
-        31,
-        32,
-        33,
-        34,
-        35
-      ],
-      "ranges": [
-        [
-          127,
-          128
-        ],
-        [
-          133,
-          154
-        ]
-      ],
-      "question": "questions/geography-a9989e10a89a0533-07.html",
-      "answer": "answers/a9989e10a89a0533.html#q31",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-a9989e10a89a0533-07.png",
-          "width": 2000,
-          "height": 955
-        }
-      ]
-    },
-    "geography-a9989e10a89a0533-08": {
-      "id": "geography-a9989e10a89a0533-08",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2018年北京市中考地理真题 · 选择题 第36、37、38、39、40题",
-      "paper": "a9989e10a89a0533",
-      "numbers": [
-        36,
-        37,
-        38,
-        39,
-        40
-      ],
-      "ranges": [
-        [
-          148,
-          149
-        ],
-        [
-          154,
-          178
-        ]
-      ],
-      "question": "questions/geography-a9989e10a89a0533-08.html",
-      "answer": "answers/a9989e10a89a0533.html#q36",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-a9989e10a89a0533-08.png",
-          "width": 2000,
-          "height": 1104
-        }
-      ]
-    },
-    "geography-bd7ee8c7b24db374-01": {
-      "id": "geography-bd7ee8c7b24db374-01",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2019年北京市中考地理真题 · 选择题 第1、2、3、4、5题",
-      "paper": "bd7ee8c7b24db374",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          2,
-          19
-        ]
-      ],
-      "question": "questions/geography-bd7ee8c7b24db374-01.html",
-      "answer": "answers/bd7ee8c7b24db374.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-bd7ee8c7b24db374-01.png",
-          "width": 1000,
-          "height": 1217
-        }
-      ]
-    },
-    "geography-bd7ee8c7b24db374-02": {
-      "id": "geography-bd7ee8c7b24db374-02",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2019年北京市中考地理真题 · 选择题 第6、7、8、9、10题",
-      "paper": "bd7ee8c7b24db374",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          7,
-          9
-        ],
-        [
-          19,
-          36
-        ]
-      ],
-      "question": "questions/geography-bd7ee8c7b24db374-02.html",
-      "answer": "answers/bd7ee8c7b24db374.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-bd7ee8c7b24db374-02.png",
-          "width": 2000,
-          "height": 1046
-        }
-      ]
-    },
-    "geography-bd7ee8c7b24db374-03": {
-      "id": "geography-bd7ee8c7b24db374-03",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2019年北京市中考地理真题 · 选择题 第11、12、13、14、15题",
-      "paper": "bd7ee8c7b24db374",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          31,
-          33
-        ],
-        [
-          36,
-          59
-        ]
-      ],
-      "question": "questions/geography-bd7ee8c7b24db374-03.html",
-      "answer": "answers/bd7ee8c7b24db374.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-bd7ee8c7b24db374-03.png",
-          "width": 2000,
-          "height": 1080
-        }
-      ]
-    },
-    "geography-bd7ee8c7b24db374-04": {
-      "id": "geography-bd7ee8c7b24db374-04",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2019年北京市中考地理真题 · 选择题 第16、17、18、19、20题",
-      "paper": "bd7ee8c7b24db374",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          55,
-          57
-        ],
-        [
-          59,
-          82
-        ]
-      ],
-      "question": "questions/geography-bd7ee8c7b24db374-04.html",
-      "answer": "answers/bd7ee8c7b24db374.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-bd7ee8c7b24db374-04.png",
-          "width": 2000,
-          "height": 1217
-        }
-      ]
-    },
-    "geography-bd7ee8c7b24db374-05": {
-      "id": "geography-bd7ee8c7b24db374-05",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2019年北京市中考地理真题 · 选择题 第21、22、23、24、25题",
-      "paper": "bd7ee8c7b24db374",
-      "numbers": [
-        21,
-        22,
-        23,
-        24,
-        25
-      ],
-      "ranges": [
-        [
-          80,
-          100
-        ]
-      ],
-      "question": "questions/geography-bd7ee8c7b24db374-05.html",
-      "answer": "answers/bd7ee8c7b24db374.html#q21",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-bd7ee8c7b24db374-05.png",
-          "width": 1000,
-          "height": 1407
-        }
-      ]
-    },
-    "geography-bd7ee8c7b24db374-06": {
-      "id": "geography-bd7ee8c7b24db374-06",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2019年北京市中考地理真题 · 选择题 第26、27、28、29、30题",
-      "paper": "bd7ee8c7b24db374",
-      "numbers": [
-        26,
-        27,
-        28,
-        29,
-        30
-      ],
-      "ranges": [
-        [
-          90,
-          92
-        ],
-        [
-          100,
-          119
-        ]
-      ],
-      "question": "questions/geography-bd7ee8c7b24db374-06.html",
-      "answer": "answers/bd7ee8c7b24db374.html#q26",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-bd7ee8c7b24db374-06.png",
-          "width": 2000,
-          "height": 1295
-        }
-      ]
-    },
-    "geography-bd7ee8c7b24db374-07": {
-      "id": "geography-bd7ee8c7b24db374-07",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2019年北京市中考地理真题 · 选择题 第31、32、33、34、35题",
-      "paper": "bd7ee8c7b24db374",
-      "numbers": [
-        31,
-        32,
-        33,
-        34,
-        35
-      ],
-      "ranges": [
-        [
-          117,
-          138
-        ]
-      ],
-      "question": "questions/geography-bd7ee8c7b24db374-07.html",
-      "answer": "answers/bd7ee8c7b24db374.html#q31",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-bd7ee8c7b24db374-07.png",
-          "width": 2000,
-          "height": 931
-        }
-      ]
-    },
-    "geography-bd7ee8c7b24db374-08": {
-      "id": "geography-bd7ee8c7b24db374-08",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2019年北京市中考地理真题 · 选择题 第36、37、38、39、40题",
-      "paper": "bd7ee8c7b24db374",
-      "numbers": [
-        36,
-        37,
-        38,
-        39,
-        40
-      ],
-      "ranges": [
-        [
-          128,
-          130
-        ],
-        [
-          138,
-          158
-        ]
-      ],
-      "question": "questions/geography-bd7ee8c7b24db374-08.html",
-      "answer": "answers/bd7ee8c7b24db374.html#q36",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-bd7ee8c7b24db374-08.png",
-          "width": 2000,
-          "height": 975
-        }
-      ]
-    },
-    "geography-9557c998be4ad6b0-01": {
-      "id": "geography-9557c998be4ad6b0-01",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2020年北京市中考地理试题 · 选择题 第1、2、3、4、5题",
-      "paper": "9557c998be4ad6b0",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          4,
-          23
-        ]
-      ],
-      "question": "questions/geography-9557c998be4ad6b0-01.html",
-      "answer": "answers/9557c998be4ad6b0.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-9557c998be4ad6b0-01.png",
-          "width": 1000,
-          "height": 1362
-        }
-      ]
-    },
-    "geography-9557c998be4ad6b0-02": {
-      "id": "geography-9557c998be4ad6b0-02",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2020年北京市中考地理试题 · 选择题 第6、7、8、9、10题",
-      "paper": "9557c998be4ad6b0",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          14,
-          16
-        ],
-        [
-          23,
-          46
-        ]
-      ],
-      "question": "questions/geography-9557c998be4ad6b0-02.html",
-      "answer": "answers/9557c998be4ad6b0.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-9557c998be4ad6b0-02.png",
-          "width": 2000,
-          "height": 1093
-        }
-      ]
-    },
-    "geography-9557c998be4ad6b0-03": {
-      "id": "geography-9557c998be4ad6b0-03",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2020年北京市中考地理试题 · 选择题 第11、12、13、14、15题",
-      "paper": "9557c998be4ad6b0",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          41,
-          43
-        ],
-        [
-          46,
-          65
-        ]
-      ],
-      "question": "questions/geography-9557c998be4ad6b0-03.html",
-      "answer": "answers/9557c998be4ad6b0.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-9557c998be4ad6b0-03.png",
-          "width": 2000,
-          "height": 834
-        }
-      ]
-    },
-    "geography-9557c998be4ad6b0-04": {
-      "id": "geography-9557c998be4ad6b0-04",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2020年北京市中考地理试题 · 选择题 第16、17、18、19、20题",
-      "paper": "9557c998be4ad6b0",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          56,
-          58
-        ],
-        [
-          65,
-          84
-        ]
-      ],
-      "question": "questions/geography-9557c998be4ad6b0-04.html",
-      "answer": "answers/9557c998be4ad6b0.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-9557c998be4ad6b0-04.png",
-          "width": 2000,
-          "height": 1132
-        }
-      ]
-    },
-    "geography-9557c998be4ad6b0-05": {
-      "id": "geography-9557c998be4ad6b0-05",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2020年北京市中考地理试题 · 选择题 第21、22、23、24、25题",
-      "paper": "9557c998be4ad6b0",
-      "numbers": [
-        21,
-        22,
-        23,
-        24,
-        25
-      ],
-      "ranges": [
-        [
-          80,
-          81
-        ],
-        [
-          84,
-          103
-        ]
-      ],
-      "question": "questions/geography-9557c998be4ad6b0-05.html",
-      "answer": "answers/9557c998be4ad6b0.html#q21",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-9557c998be4ad6b0-05.png",
-          "width": 2000,
-          "height": 988
-        }
-      ]
-    },
-    "geography-9557c998be4ad6b0-06": {
-      "id": "geography-9557c998be4ad6b0-06",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2020年北京市中考地理试题 · 选择题 第26、27、28、29、30题",
-      "paper": "9557c998be4ad6b0",
-      "numbers": [
-        26,
-        27,
-        28,
-        29,
-        30
-      ],
-      "ranges": [
-        [
-          101,
-          127
-        ]
-      ],
-      "question": "questions/geography-9557c998be4ad6b0-06.html",
-      "answer": "answers/9557c998be4ad6b0.html#q26",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-9557c998be4ad6b0-06.png",
-          "width": 2000,
-          "height": 930
-        }
-      ]
-    },
-    "geography-9557c998be4ad6b0-07": {
-      "id": "geography-9557c998be4ad6b0-07",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2020年北京市中考地理试题 · 选择题 第31、32、33、34、35题",
-      "paper": "9557c998be4ad6b0",
-      "numbers": [
-        31,
-        32,
-        33,
-        34,
-        35
-      ],
-      "ranges": [
-        [
-          115,
-          117
-        ],
-        [
-          127,
-          150
-        ]
-      ],
-      "question": "questions/geography-9557c998be4ad6b0-07.html",
-      "answer": "answers/9557c998be4ad6b0.html#q31",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-9557c998be4ad6b0-07.png",
-          "width": 2000,
-          "height": 1038
-        }
-      ]
-    },
-    "geography-9557c998be4ad6b0-08": {
-      "id": "geography-9557c998be4ad6b0-08",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2020年北京市中考地理试题 · 选择题 第36、37、38、39、40题",
-      "paper": "9557c998be4ad6b0",
-      "numbers": [
-        36,
-        37,
-        38,
-        39,
-        40
-      ],
-      "ranges": [
-        [
-          145,
-          147
-        ],
-        [
-          150,
-          166
-        ]
-      ],
-      "question": "questions/geography-9557c998be4ad6b0-08.html",
-      "answer": "answers/9557c998be4ad6b0.html#q36",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-9557c998be4ad6b0-08.png",
-          "width": 1000,
-          "height": 1319
-        }
-      ]
-    },
-    "geography-6c7742238d0b3f48-01": {
-      "id": "geography-6c7742238d0b3f48-01",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2021年北京市中考地理真题 · 选择题 第1、2、3、4、5题",
-      "paper": "6c7742238d0b3f48",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          3,
-          30
-        ]
-      ],
-      "question": "questions/geography-6c7742238d0b3f48-01.html",
-      "answer": "answers/6c7742238d0b3f48.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-6c7742238d0b3f48-01.png",
-          "width": 2000,
-          "height": 1140
-        }
-      ]
-    },
-    "geography-6c7742238d0b3f48-02": {
-      "id": "geography-6c7742238d0b3f48-02",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2021年北京市中考地理真题 · 选择题 第6、7、8、9、10题",
-      "paper": "6c7742238d0b3f48",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          28,
-          53
-        ]
-      ],
-      "question": "questions/geography-6c7742238d0b3f48-02.html",
-      "answer": "answers/6c7742238d0b3f48.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-6c7742238d0b3f48-02.png",
-          "width": 2000,
-          "height": 847
-        }
-      ]
-    },
-    "geography-6c7742238d0b3f48-03": {
-      "id": "geography-6c7742238d0b3f48-03",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2021年北京市中考地理真题 · 选择题 第11、12、13、14、15题",
-      "paper": "6c7742238d0b3f48",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          41,
-          43
-        ],
-        [
-          53,
-          81
-        ]
-      ],
-      "question": "questions/geography-6c7742238d0b3f48-03.html",
-      "answer": "answers/6c7742238d0b3f48.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-6c7742238d0b3f48-03.png",
-          "width": 2000,
-          "height": 1220
-        }
-      ]
-    },
-    "geography-6c7742238d0b3f48-04": {
-      "id": "geography-6c7742238d0b3f48-04",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2021年北京市中考地理真题 · 选择题 第16、17、18、19、20题",
-      "paper": "6c7742238d0b3f48",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          74,
-          76
-        ],
-        [
-          81,
-          107
-        ]
-      ],
-      "question": "questions/geography-6c7742238d0b3f48-04.html",
-      "answer": "answers/6c7742238d0b3f48.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-6c7742238d0b3f48-04.png",
-          "width": 2000,
-          "height": 1434
-        }
-      ]
-    },
-    "geography-6c7742238d0b3f48-05": {
-      "id": "geography-6c7742238d0b3f48-05",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2021年北京市中考地理真题 · 选择题 第21、22、23、24、25题",
-      "paper": "6c7742238d0b3f48",
-      "numbers": [
-        21,
-        22,
-        23,
-        24,
-        25
-      ],
-      "ranges": [
-        [
-          105,
-          130
-        ]
-      ],
-      "question": "questions/geography-6c7742238d0b3f48-05.html",
-      "answer": "answers/6c7742238d0b3f48.html#q21",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-6c7742238d0b3f48-05.png",
-          "width": 2000,
-          "height": 898
-        }
-      ]
-    },
-    "geography-a0297149bc8f911b-01": {
-      "id": "geography-a0297149bc8f911b-01",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2022年北京市中考地理真题 · 选择题 第1、2、3、4、5题",
-      "paper": "a0297149bc8f911b",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          3,
-          19
-        ]
-      ],
-      "question": "questions/geography-a0297149bc8f911b-01.html",
-      "answer": "answers/a0297149bc8f911b.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-a0297149bc8f911b-01.png",
-          "width": 2000,
-          "height": 969
-        }
-      ]
-    },
-    "geography-a0297149bc8f911b-02": {
-      "id": "geography-a0297149bc8f911b-02",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2022年北京市中考地理真题 · 选择题 第6、7、8、9、10题",
-      "paper": "a0297149bc8f911b",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          14,
-          16
-        ],
-        [
-          19,
-          40
-        ]
-      ],
-      "question": "questions/geography-a0297149bc8f911b-02.html",
-      "answer": "answers/a0297149bc8f911b.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-a0297149bc8f911b-02.png",
-          "width": 2000,
-          "height": 1310
-        }
-      ]
-    },
-    "geography-a0297149bc8f911b-03": {
-      "id": "geography-a0297149bc8f911b-03",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2022年北京市中考地理真题 · 选择题 第11、12、13、14、15题",
-      "paper": "a0297149bc8f911b",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          35,
-          37
-        ],
-        [
-          40,
-          59
-        ]
-      ],
-      "question": "questions/geography-a0297149bc8f911b-03.html",
-      "answer": "answers/a0297149bc8f911b.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-a0297149bc8f911b-03.png",
-          "width": 2000,
-          "height": 1211
-        }
-      ]
-    },
-    "geography-a0297149bc8f911b-04": {
-      "id": "geography-a0297149bc8f911b-04",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2022年北京市中考地理真题 · 选择题 第16、17、18、19、20题",
-      "paper": "a0297149bc8f911b",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          55,
-          57
-        ],
-        [
-          59,
-          76
-        ]
-      ],
-      "question": "questions/geography-a0297149bc8f911b-04.html",
-      "answer": "answers/a0297149bc8f911b.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-a0297149bc8f911b-04.png",
-          "width": 2000,
-          "height": 1061
-        }
-      ]
-    },
-    "geography-a0297149bc8f911b-05": {
-      "id": "geography-a0297149bc8f911b-05",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2022年北京市中考地理真题 · 选择题 第21、22、23、24、25题",
-      "paper": "a0297149bc8f911b",
-      "numbers": [
-        21,
-        22,
-        23,
-        24,
-        25
-      ],
-      "ranges": [
-        [
-          71,
-          73
-        ],
-        [
-          76,
-          92
-        ]
-      ],
-      "question": "questions/geography-a0297149bc8f911b-05.html",
-      "answer": "answers/a0297149bc8f911b.html#q21",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-a0297149bc8f911b-05.png",
-          "width": 1000,
-          "height": 1594
-        }
-      ]
-    },
-    "geography-39d5911b1d3f63b2-01": {
-      "id": "geography-39d5911b1d3f63b2-01",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2023年北京市中考地理真题 · 选择题 第1、2、3、4、5题",
-      "paper": "39d5911b1d3f63b2",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          4,
-          23
-        ]
-      ],
-      "question": "questions/geography-39d5911b1d3f63b2-01.html",
-      "answer": "answers/39d5911b1d3f63b2.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-39d5911b1d3f63b2-01.png",
-          "width": 2000,
-          "height": 933
-        }
-      ]
-    },
-    "geography-39d5911b1d3f63b2-02": {
-      "id": "geography-39d5911b1d3f63b2-02",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2023年北京市中考地理真题 · 选择题 第6、7、8、9、10题",
-      "paper": "39d5911b1d3f63b2",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          18,
-          20
-        ],
-        [
-          23,
-          42
-        ]
-      ],
-      "question": "questions/geography-39d5911b1d3f63b2-02.html",
-      "answer": "answers/39d5911b1d3f63b2.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-39d5911b1d3f63b2-02.png",
-          "width": 2000,
-          "height": 1042
-        }
-      ]
-    },
-    "geography-39d5911b1d3f63b2-03": {
-      "id": "geography-39d5911b1d3f63b2-03",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2023年北京市中考地理真题 · 选择题 第11、12、13、14、15题",
-      "paper": "39d5911b1d3f63b2",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          40,
-          60
-        ]
-      ],
-      "question": "questions/geography-39d5911b1d3f63b2-03.html",
-      "answer": "answers/39d5911b1d3f63b2.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-39d5911b1d3f63b2-03.png",
-          "width": 1000,
-          "height": 1468
-        }
-      ]
-    },
-    "geography-39d5911b1d3f63b2-04": {
-      "id": "geography-39d5911b1d3f63b2-04",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2023年北京市中考地理真题 · 选择题 第16、17、18、19、20题",
-      "paper": "39d5911b1d3f63b2",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          52,
-          54
-        ],
-        [
-          60,
-          78
-        ]
-      ],
-      "question": "questions/geography-39d5911b1d3f63b2-04.html",
-      "answer": "answers/39d5911b1d3f63b2.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-39d5911b1d3f63b2-04.png",
-          "width": 2000,
-          "height": 1205
-        }
-      ]
-    },
-    "geography-39d5911b1d3f63b2-05": {
-      "id": "geography-39d5911b1d3f63b2-05",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2023年北京市中考地理真题 · 选择题 第21、22、23、24、25题",
-      "paper": "39d5911b1d3f63b2",
-      "numbers": [
-        21,
-        22,
-        23,
-        24,
-        25
-      ],
-      "ranges": [
-        [
-          73,
-          75
-        ],
-        [
-          78,
-          96
-        ]
-      ],
-      "question": "questions/geography-39d5911b1d3f63b2-05.html",
-      "answer": "answers/39d5911b1d3f63b2.html#q21",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-39d5911b1d3f63b2-05.png",
-          "width": 2000,
-          "height": 1096
-        }
-      ]
-    },
-    "geography-93a9fa54cf2e2bfb-01": {
-      "id": "geography-93a9fa54cf2e2bfb-01",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2024年北京市房山区初中学业水平考试地理试卷 · 选择题 第1、2、3、4、5题",
-      "paper": "93a9fa54cf2e2bfb",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          10,
-          28
-        ]
-      ],
-      "question": "questions/geography-93a9fa54cf2e2bfb-01.html",
-      "answer": "answers/93a9fa54cf2e2bfb.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-93a9fa54cf2e2bfb-01.png",
-          "width": 2000,
-          "height": 827
-        }
-      ]
-    },
-    "geography-93a9fa54cf2e2bfb-02": {
-      "id": "geography-93a9fa54cf2e2bfb-02",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2024年北京市房山区初中学业水平考试地理试卷 · 选择题 第6、7、8、9、10题",
-      "paper": "93a9fa54cf2e2bfb",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          26,
-          45
-        ]
-      ],
-      "question": "questions/geography-93a9fa54cf2e2bfb-02.html",
-      "answer": "answers/93a9fa54cf2e2bfb.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-93a9fa54cf2e2bfb-02.png",
-          "width": 2000,
-          "height": 1267
-        }
-      ]
-    },
-    "geography-93a9fa54cf2e2bfb-03": {
-      "id": "geography-93a9fa54cf2e2bfb-03",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2024年北京市房山区初中学业水平考试地理试卷 · 选择题 第11、12、13、14、15题",
-      "paper": "93a9fa54cf2e2bfb",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          43,
-          59
-        ]
-      ],
-      "question": "questions/geography-93a9fa54cf2e2bfb-03.html",
-      "answer": "answers/93a9fa54cf2e2bfb.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-93a9fa54cf2e2bfb-03.png",
-          "width": 1000,
-          "height": 1147
-        }
-      ]
-    },
-    "geography-93a9fa54cf2e2bfb-04": {
-      "id": "geography-93a9fa54cf2e2bfb-04",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2024年北京市房山区初中学业水平考试地理试卷 · 选择题 第16、17、18、19、20题",
-      "paper": "93a9fa54cf2e2bfb",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          55,
-          57
-        ],
-        [
-          59,
-          74
-        ]
-      ],
-      "question": "questions/geography-93a9fa54cf2e2bfb-04.html",
-      "answer": "answers/93a9fa54cf2e2bfb.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-93a9fa54cf2e2bfb-04.png",
-          "width": 1000,
-          "height": 1341
-        }
-      ]
-    },
-    "geography-47ed3940a085213c-01": {
-      "id": "geography-47ed3940a085213c-01",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2024年北京市顺义区初中学业水平考试地理试卷 · 选择题 第1、2、3、4、5题",
-      "paper": "47ed3940a085213c",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          11,
-          33
-        ]
-      ],
-      "question": "questions/geography-47ed3940a085213c-01.html",
-      "answer": "answers/47ed3940a085213c.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-47ed3940a085213c-01.png",
-          "width": 2000,
-          "height": 1277
-        }
-      ]
-    },
-    "geography-47ed3940a085213c-02": {
-      "id": "geography-47ed3940a085213c-02",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2024年北京市顺义区初中学业水平考试地理试卷 · 选择题 第6、7、8、9、10题",
-      "paper": "47ed3940a085213c",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          28,
-          30
-        ],
-        [
-          33,
-          57
-        ]
-      ],
-      "question": "questions/geography-47ed3940a085213c-02.html",
-      "answer": "answers/47ed3940a085213c.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-47ed3940a085213c-02.png",
-          "width": 2000,
-          "height": 1185
-        }
-      ]
-    },
-    "geography-47ed3940a085213c-03": {
-      "id": "geography-47ed3940a085213c-03",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2024年北京市顺义区初中学业水平考试地理试卷 · 选择题 第11、12、13、14、15题",
-      "paper": "47ed3940a085213c",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          55,
-          74
-        ]
-      ],
-      "question": "questions/geography-47ed3940a085213c-03.html",
-      "answer": "answers/47ed3940a085213c.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-47ed3940a085213c-03.png",
-          "width": 2000,
-          "height": 1024
-        }
-      ]
-    },
-    "geography-47ed3940a085213c-04": {
-      "id": "geography-47ed3940a085213c-04",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2024年北京市顺义区初中学业水平考试地理试卷 · 选择题 第16、17、18、19、20题",
-      "paper": "47ed3940a085213c",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          69,
-          71
-        ],
-        [
-          74,
-          91
-        ]
-      ],
-      "question": "questions/geography-47ed3940a085213c-04.html",
-      "answer": "answers/47ed3940a085213c.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-47ed3940a085213c-04.png",
-          "width": 2000,
-          "height": 927
-        }
-      ]
-    },
-    "geography-333d1aa1bc0a2098-01": {
-      "id": "geography-333d1aa1bc0a2098-01",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2025年北京市延庆区中考地理试卷 · 选择题 第1、2、3、4、5题",
-      "paper": "333d1aa1bc0a2098",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          2,
-          26
-        ]
-      ],
-      "question": "questions/geography-333d1aa1bc0a2098-01.html",
-      "answer": "answers/333d1aa1bc0a2098.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-333d1aa1bc0a2098-01.png",
-          "width": 2000,
-          "height": 1200
-        }
-      ]
-    },
-    "geography-333d1aa1bc0a2098-02": {
-      "id": "geography-333d1aa1bc0a2098-02",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2025年北京市延庆区中考地理试卷 · 选择题 第6、7、8、9、10题",
-      "paper": "333d1aa1bc0a2098",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          18,
-          20
-        ],
-        [
-          26,
-          46
-        ]
-      ],
-      "question": "questions/geography-333d1aa1bc0a2098-02.html",
-      "answer": "answers/333d1aa1bc0a2098.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-333d1aa1bc0a2098-02.png",
-          "width": 2000,
-          "height": 1205
-        }
-      ]
-    },
-    "geography-333d1aa1bc0a2098-03": {
-      "id": "geography-333d1aa1bc0a2098-03",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2025年北京市延庆区中考地理试卷 · 选择题 第11、12、13、14、15题",
-      "paper": "333d1aa1bc0a2098",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          41,
-          43
-        ],
-        [
-          46,
-          71
-        ]
-      ],
-      "question": "questions/geography-333d1aa1bc0a2098-03.html",
-      "answer": "answers/333d1aa1bc0a2098.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-333d1aa1bc0a2098-03.png",
-          "width": 2000,
-          "height": 1286
-        }
-      ]
-    },
-    "geography-333d1aa1bc0a2098-04": {
-      "id": "geography-333d1aa1bc0a2098-04",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2025年北京市延庆区中考地理试卷 · 选择题 第16、17、18、19、20题",
-      "paper": "333d1aa1bc0a2098",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          69,
-          96
-        ]
-      ],
-      "question": "questions/geography-333d1aa1bc0a2098-04.html",
-      "answer": "answers/333d1aa1bc0a2098.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-333d1aa1bc0a2098-04.png",
-          "width": 2000,
-          "height": 1398
-        }
-      ]
-    },
-    "geography-333d1aa1bc0a2098-05": {
-      "id": "geography-333d1aa1bc0a2098-05",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2025年北京市延庆区中考地理试卷 · 选择题 第21、22、23、24、25题",
-      "paper": "333d1aa1bc0a2098",
-      "numbers": [
-        21,
-        22,
-        23,
-        24,
-        25
-      ],
-      "ranges": [
-        [
-          94,
-          115
-        ]
-      ],
-      "question": "questions/geography-333d1aa1bc0a2098-05.html",
-      "answer": "answers/333d1aa1bc0a2098.html#q21",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-333d1aa1bc0a2098-05.png",
-          "width": 1000,
-          "height": 1555
-        }
-      ]
-    },
-    "geography-d8224d243f2020da-01": {
-      "id": "geography-d8224d243f2020da-01",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2025年北京市石景山区中考地理试卷 · 选择题 第1、2、3、4、5题",
-      "paper": "d8224d243f2020da",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          2,
-          23
-        ]
-      ],
-      "question": "questions/geography-d8224d243f2020da-01.html",
-      "answer": "answers/d8224d243f2020da.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-d8224d243f2020da-01.png",
-          "width": 2000,
-          "height": 1096
-        }
-      ]
-    },
-    "geography-d8224d243f2020da-02": {
-      "id": "geography-d8224d243f2020da-02",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2025年北京市石景山区中考地理试卷 · 选择题 第6、7、8、9、10题",
-      "paper": "d8224d243f2020da",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          21,
-          45
-        ]
-      ],
-      "question": "questions/geography-d8224d243f2020da-02.html",
-      "answer": "answers/d8224d243f2020da.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-d8224d243f2020da-02.png",
-          "width": 2000,
-          "height": 1299
-        }
-      ]
-    },
-    "geography-d8224d243f2020da-03": {
-      "id": "geography-d8224d243f2020da-03",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2025年北京市石景山区中考地理试卷 · 选择题 第11、12、13、14、15题",
-      "paper": "d8224d243f2020da",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          40,
-          42
-        ],
-        [
-          45,
-          70
-        ]
-      ],
-      "question": "questions/geography-d8224d243f2020da-03.html",
-      "answer": "answers/d8224d243f2020da.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-d8224d243f2020da-03.png",
-          "width": 2000,
-          "height": 1383
-        }
-      ]
-    },
-    "geography-d8224d243f2020da-04": {
-      "id": "geography-d8224d243f2020da-04",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2025年北京市石景山区中考地理试卷 · 选择题 第16、17、18、19、20题",
-      "paper": "d8224d243f2020da",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          68,
-          91
-        ]
-      ],
-      "question": "questions/geography-d8224d243f2020da-04.html",
-      "answer": "answers/d8224d243f2020da.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-d8224d243f2020da-04.png",
-          "width": 1000,
-          "height": 1583
-        }
-      ]
-    },
-    "geography-f0a6e33d4c782970-01": {
-      "id": "geography-f0a6e33d4c782970-01",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2025年北京西城区初中学业水平考试地理试卷 · 选择题 第1、2、3、4、5题",
-      "paper": "f0a6e33d4c782970",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          8,
-          33
-        ]
-      ],
-      "question": "questions/geography-f0a6e33d4c782970-01.html",
-      "answer": "answers/f0a6e33d4c782970.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-f0a6e33d4c782970-01.png",
-          "width": 2000,
-          "height": 948
-        }
-      ]
-    },
-    "geography-f0a6e33d4c782970-02": {
-      "id": "geography-f0a6e33d4c782970-02",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2025年北京西城区初中学业水平考试地理试卷 · 选择题 第6、7、8、9、10题",
-      "paper": "f0a6e33d4c782970",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          31,
-          53
-        ]
-      ],
-      "question": "questions/geography-f0a6e33d4c782970-02.html",
-      "answer": "answers/f0a6e33d4c782970.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-f0a6e33d4c782970-02.png",
-          "width": 2000,
-          "height": 1057
-        }
-      ]
-    },
-    "geography-f0a6e33d4c782970-03": {
-      "id": "geography-f0a6e33d4c782970-03",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2025年北京西城区初中学业水平考试地理试卷 · 选择题 第11、12、13、14、15题",
-      "paper": "f0a6e33d4c782970",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          48,
-          50
-        ],
-        [
-          53,
-          74
-        ]
-      ],
-      "question": "questions/geography-f0a6e33d4c782970-03.html",
-      "answer": "answers/f0a6e33d4c782970.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-f0a6e33d4c782970-03.png",
-          "width": 2000,
-          "height": 1273
-        }
-      ]
-    },
-    "geography-f0a6e33d4c782970-04": {
-      "id": "geography-f0a6e33d4c782970-04",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2025年北京西城区初中学业水平考试地理试卷 · 选择题 第16、17、18、19、20题",
-      "paper": "f0a6e33d4c782970",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          69,
-          71
-        ],
-        [
-          74,
-          98
-        ]
-      ],
-      "question": "questions/geography-f0a6e33d4c782970-04.html",
-      "answer": "answers/f0a6e33d4c782970.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-f0a6e33d4c782970-04.png",
-          "width": 2000,
-          "height": 1250
-        }
-      ]
-    },
-    "geography-cf878cdf351e2239-01": {
-      "id": "geography-cf878cdf351e2239-01",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2026年北京平谷区初中学业合格考试地理试卷 · 选择题 第1、2、3、4、5题",
-      "paper": "cf878cdf351e2239",
-      "numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "ranges": [
-        [
-          11,
-          29
-        ]
-      ],
-      "question": "questions/geography-cf878cdf351e2239-01.html",
-      "answer": "answers/cf878cdf351e2239.html#q1",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-cf878cdf351e2239-01.png",
-          "width": 1000,
-          "height": 1427
-        }
-      ]
-    },
-    "geography-cf878cdf351e2239-02": {
-      "id": "geography-cf878cdf351e2239-02",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2026年北京平谷区初中学业合格考试地理试卷 · 选择题 第6、7、8、9、10题",
-      "paper": "cf878cdf351e2239",
-      "numbers": [
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          22,
-          24
-        ],
-        [
-          29,
-          47
-        ]
-      ],
-      "question": "questions/geography-cf878cdf351e2239-02.html",
-      "answer": "answers/cf878cdf351e2239.html#q6",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-cf878cdf351e2239-02.png",
-          "width": 2000,
-          "height": 865
-        }
-      ]
-    },
-    "geography-cf878cdf351e2239-03": {
-      "id": "geography-cf878cdf351e2239-03",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2026年北京平谷区初中学业合格考试地理试卷 · 选择题 第11、12、13、14、15题",
-      "paper": "cf878cdf351e2239",
-      "numbers": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "ranges": [
-        [
-          40,
-          42
-        ],
-        [
-          47,
-          66
-        ]
-      ],
-      "question": "questions/geography-cf878cdf351e2239-03.html",
-      "answer": "answers/cf878cdf351e2239.html#q11",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-cf878cdf351e2239-03.png",
-          "width": 2000,
-          "height": 990
-        }
-      ]
-    },
-    "geography-cf878cdf351e2239-04": {
-      "id": "geography-cf878cdf351e2239-04",
-      "subject": "geography",
-      "topic": "选择题",
-      "source": "2026年北京平谷区初中学业合格考试地理试卷 · 选择题 第16、17、18、19、20题",
-      "paper": "cf878cdf351e2239",
-      "numbers": [
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "ranges": [
-        [
-          61,
-          63
-        ],
-        [
-          66,
-          84
-        ]
-      ],
-      "question": "questions/geography-cf878cdf351e2239-04.html",
-      "answer": "answers/cf878cdf351e2239.html#q16",
-      "kind": "ppt",
-      "pages": [
-        {
-          "src": "pages/geography-cf878cdf351e2239-04.png",
-          "width": 1000,
-          "height": 1535
-        }
-      ]
     }
   },
   "days": [
     {
       "day": 1,
       "tasks": [
-        {
-          "id": "chinese-5c1aca4e4792dfe5-01"
-        },
         {
           "id": "math-648ed4292d3dbf78-01"
         },
@@ -15425,22 +11606,13 @@
           "id": "biology-a0a1bddd2b24cfeb-01"
         },
         {
-          "id": "politics-c4b172e74efdb9ad-01"
-        },
-        {
           "id": "history-b259b232b5e54a50-01"
-        },
-        {
-          "id": "geography-a9989e10a89a0533-01"
         }
       ]
     },
     {
       "day": 2,
       "tasks": [
-        {
-          "id": "chinese-5c1aca4e4792dfe5-02"
-        },
         {
           "id": "math-648ed4292d3dbf78-02"
         },
@@ -15457,22 +11629,13 @@
           "id": "biology-a0a1bddd2b24cfeb-02"
         },
         {
-          "id": "politics-c4b172e74efdb9ad-02"
-        },
-        {
           "id": "history-b259b232b5e54a50-02"
-        },
-        {
-          "id": "geography-a9989e10a89a0533-02"
         }
       ]
     },
     {
       "day": 3,
       "tasks": [
-        {
-          "id": "chinese-9d90d101a0a2f6ed-01"
-        },
         {
           "id": "math-648ed4292d3dbf78-03"
         },
@@ -15489,22 +11652,13 @@
           "id": "biology-a0a1bddd2b24cfeb-03"
         },
         {
-          "id": "politics-c4b172e74efdb9ad-03"
-        },
-        {
           "id": "history-b259b232b5e54a50-03"
-        },
-        {
-          "id": "geography-a9989e10a89a0533-03"
         }
       ]
     },
     {
       "day": 4,
       "tasks": [
-        {
-          "id": "chinese-9d90d101a0a2f6ed-02"
-        },
         {
           "id": "math-648ed4292d3dbf78-04"
         },
@@ -15521,22 +11675,13 @@
           "id": "biology-a0a1bddd2b24cfeb-04"
         },
         {
-          "id": "politics-c4b172e74efdb9ad-04"
-        },
-        {
           "id": "history-b259b232b5e54a50-04"
-        },
-        {
-          "id": "geography-a9989e10a89a0533-04"
         }
       ]
     },
     {
       "day": 5,
       "tasks": [
-        {
-          "id": "chinese-e8fee4cd10e81d82-01"
-        },
         {
           "id": "math-648ed4292d3dbf78-05"
         },
@@ -15553,22 +11698,13 @@
           "id": "biology-a0a1bddd2b24cfeb-05"
         },
         {
-          "id": "politics-14ebda3345a27c84-01"
-        },
-        {
           "id": "history-b259b232b5e54a50-05"
-        },
-        {
-          "id": "geography-a9989e10a89a0533-05"
         }
       ]
     },
     {
       "day": 6,
       "tasks": [
-        {
-          "id": "chinese-e8fee4cd10e81d82-02"
-        },
         {
           "id": "math-648ed4292d3dbf78-06"
         },
@@ -15585,22 +11721,13 @@
           "id": "biology-a0a1bddd2b24cfeb-06"
         },
         {
-          "id": "politics-14ebda3345a27c84-02"
-        },
-        {
           "id": "history-6f148db57698615e-01"
-        },
-        {
-          "id": "geography-a9989e10a89a0533-06"
         }
       ]
     },
     {
       "day": 7,
       "tasks": [
-        {
-          "id": "chinese-ebab0139512719ad-01"
-        },
         {
           "id": "math-648ed4292d3dbf78-07"
         },
@@ -15617,22 +11744,13 @@
           "id": "biology-a0a1bddd2b24cfeb-07"
         },
         {
-          "id": "politics-14ebda3345a27c84-03"
-        },
-        {
           "id": "history-6f148db57698615e-02"
-        },
-        {
-          "id": "geography-a9989e10a89a0533-07"
         }
       ]
     },
     {
       "day": 8,
       "tasks": [
-        {
-          "id": "chinese-ebab0139512719ad-02"
-        },
         {
           "id": "math-648ed4292d3dbf78-08"
         },
@@ -15649,22 +11767,13 @@
           "id": "biology-a0a1bddd2b24cfeb-08"
         },
         {
-          "id": "politics-14ebda3345a27c84-04"
-        },
-        {
           "id": "history-6f148db57698615e-03"
-        },
-        {
-          "id": "geography-a9989e10a89a0533-08"
         }
       ]
     },
     {
       "day": 9,
       "tasks": [
-        {
-          "id": "chinese-9821f525f036e579-01"
-        },
         {
           "id": "math-648ed4292d3dbf78-09"
         },
@@ -15681,22 +11790,13 @@
           "id": "biology-4bd29b726dd2cc0f-01"
         },
         {
-          "id": "politics-debad3658c0ef872-01"
-        },
-        {
           "id": "history-6f148db57698615e-04"
-        },
-        {
-          "id": "geography-bd7ee8c7b24db374-01"
         }
       ]
     },
     {
       "day": 10,
       "tasks": [
-        {
-          "id": "chinese-9821f525f036e579-03"
-        },
         {
           "id": "math-648ed4292d3dbf78-10"
         },
@@ -15713,22 +11813,13 @@
           "id": "biology-4bd29b726dd2cc0f-02"
         },
         {
-          "id": "politics-debad3658c0ef872-02"
-        },
-        {
           "id": "history-6f148db57698615e-05"
-        },
-        {
-          "id": "geography-bd7ee8c7b24db374-02"
         }
       ]
     },
     {
       "day": 11,
       "tasks": [
-        {
-          "id": "chinese-42d208e2cbebf314-01"
-        },
         {
           "id": "math-648ed4292d3dbf78-11"
         },
@@ -15745,22 +11836,13 @@
           "id": "biology-4bd29b726dd2cc0f-03"
         },
         {
-          "id": "politics-debad3658c0ef872-03"
-        },
-        {
           "id": "history-7ca4054ea6589524-01"
-        },
-        {
-          "id": "geography-bd7ee8c7b24db374-03"
         }
       ]
     },
     {
       "day": 12,
       "tasks": [
-        {
-          "id": "chinese-42d208e2cbebf314-02"
-        },
         {
           "id": "math-648ed4292d3dbf78-12"
         },
@@ -15777,22 +11859,13 @@
           "id": "biology-f0f7ef58dbe9f125-01"
         },
         {
-          "id": "politics-debad3658c0ef872-04"
-        },
-        {
           "id": "history-7ca4054ea6589524-02"
-        },
-        {
-          "id": "geography-bd7ee8c7b24db374-04"
         }
       ]
     },
     {
       "day": 13,
       "tasks": [
-        {
-          "id": "chinese-d83b227edf6e5eae-01"
-        },
         {
           "id": "math-648ed4292d3dbf78-13"
         },
@@ -15806,22 +11879,13 @@
           "id": "biology-f0f7ef58dbe9f125-02"
         },
         {
-          "id": "politics-86aeadc0a0571bd9-01"
-        },
-        {
           "id": "history-7ca4054ea6589524-03"
-        },
-        {
-          "id": "geography-bd7ee8c7b24db374-05"
         }
       ]
     },
     {
       "day": 14,
       "tasks": [
-        {
-          "id": "chinese-d83b227edf6e5eae-02"
-        },
         {
           "id": "math-648ed4292d3dbf78-14"
         },
@@ -15835,22 +11899,13 @@
           "id": "biology-f0f7ef58dbe9f125-03"
         },
         {
-          "id": "politics-86aeadc0a0571bd9-02"
-        },
-        {
           "id": "history-7ca4054ea6589524-04"
-        },
-        {
-          "id": "geography-bd7ee8c7b24db374-06"
         }
       ]
     },
     {
       "day": 15,
       "tasks": [
-        {
-          "id": "chinese-08d34bb24ba54d27-01"
-        },
         {
           "id": "math-648ed4292d3dbf78-15"
         },
@@ -15864,22 +11919,13 @@
           "id": "biology-565336982576bdfb-01"
         },
         {
-          "id": "politics-86aeadc0a0571bd9-03"
-        },
-        {
           "id": "history-7ca4054ea6589524-05"
-        },
-        {
-          "id": "geography-bd7ee8c7b24db374-07"
         }
       ]
     },
     {
       "day": 16,
       "tasks": [
-        {
-          "id": "chinese-08d34bb24ba54d27-03"
-        },
         {
           "id": "math-5eafd41a2e8e16fe-01"
         },
@@ -15893,22 +11939,13 @@
           "id": "biology-565336982576bdfb-02"
         },
         {
-          "id": "politics-fe315854022e80db-01"
-        },
-        {
           "id": "history-7ca4054ea6589524-06"
-        },
-        {
-          "id": "geography-bd7ee8c7b24db374-08"
         }
       ]
     },
     {
       "day": 17,
       "tasks": [
-        {
-          "id": "chinese-b828b11e920698ff-01"
-        },
         {
           "id": "math-5eafd41a2e8e16fe-02"
         },
@@ -15922,22 +11959,13 @@
           "id": "biology-565336982576bdfb-03"
         },
         {
-          "id": "politics-fe315854022e80db-02"
-        },
-        {
           "id": "history-7aad4b8f256f0590-01"
-        },
-        {
-          "id": "geography-9557c998be4ad6b0-01"
         }
       ]
     },
     {
       "day": 18,
       "tasks": [
-        {
-          "id": "chinese-b828b11e920698ff-03"
-        },
         {
           "id": "math-5eafd41a2e8e16fe-03"
         },
@@ -15951,22 +11979,13 @@
           "id": "biology-c445f84e3117b258-01"
         },
         {
-          "id": "politics-fe315854022e80db-03"
-        },
-        {
           "id": "history-7aad4b8f256f0590-02"
-        },
-        {
-          "id": "geography-9557c998be4ad6b0-02"
         }
       ]
     },
     {
       "day": 19,
       "tasks": [
-        {
-          "id": "chinese-80d4d2061fc70ea4-01"
-        },
         {
           "id": "math-5eafd41a2e8e16fe-04"
         },
@@ -15980,22 +11999,13 @@
           "id": "biology-c445f84e3117b258-02"
         },
         {
-          "id": "politics-ff15240cff091867-01"
-        },
-        {
           "id": "history-7aad4b8f256f0590-03"
-        },
-        {
-          "id": "geography-9557c998be4ad6b0-03"
         }
       ]
     },
     {
       "day": 20,
       "tasks": [
-        {
-          "id": "chinese-80d4d2061fc70ea4-03"
-        },
         {
           "id": "math-5eafd41a2e8e16fe-05"
         },
@@ -16009,22 +12019,13 @@
           "id": "biology-c445f84e3117b258-03"
         },
         {
-          "id": "politics-ff15240cff091867-02"
-        },
-        {
           "id": "history-7aad4b8f256f0590-04"
-        },
-        {
-          "id": "geography-9557c998be4ad6b0-04"
         }
       ]
     },
     {
       "day": 21,
       "tasks": [
-        {
-          "id": "chinese-2eba54d1ce9499fb-01"
-        },
         {
           "id": "math-5eafd41a2e8e16fe-06"
         },
@@ -16038,22 +12039,13 @@
           "id": "biology-c445f84e3117b258-04"
         },
         {
-          "id": "politics-ff15240cff091867-03"
-        },
-        {
           "id": "history-7aad4b8f256f0590-05"
-        },
-        {
-          "id": "geography-9557c998be4ad6b0-05"
         }
       ]
     },
     {
       "day": 22,
       "tasks": [
-        {
-          "id": "chinese-2eba54d1ce9499fb-02"
-        },
         {
           "id": "math-5eafd41a2e8e16fe-07"
         },
@@ -16067,22 +12059,13 @@
           "id": "biology-c445f84e3117b258-05"
         },
         {
-          "id": "politics-4b0a90b649b2316a-01"
-        },
-        {
           "id": "history-7aad4b8f256f0590-06"
-        },
-        {
-          "id": "geography-9557c998be4ad6b0-06"
         }
       ]
     },
     {
       "day": 23,
       "tasks": [
-        {
-          "id": "chinese-522b19c93d767054-01"
-        },
         {
           "id": "math-5eafd41a2e8e16fe-08"
         },
@@ -16096,22 +12079,13 @@
           "id": "biology-ddfd36c4a0ae81ae-01"
         },
         {
-          "id": "politics-4b0a90b649b2316a-02"
-        },
-        {
           "id": "history-af6cca9569089d6b-01"
-        },
-        {
-          "id": "geography-9557c998be4ad6b0-07"
         }
       ]
     },
     {
       "day": 24,
       "tasks": [
-        {
-          "id": "chinese-522b19c93d767054-03"
-        },
         {
           "id": "math-5eafd41a2e8e16fe-09"
         },
@@ -16125,13 +12099,7 @@
           "id": "biology-ddfd36c4a0ae81ae-02"
         },
         {
-          "id": "politics-4b0a90b649b2316a-03"
-        },
-        {
           "id": "history-af6cca9569089d6b-02"
-        },
-        {
-          "id": "geography-9557c998be4ad6b0-08"
         }
       ]
     },
@@ -16151,13 +12119,7 @@
           "id": "biology-ddfd36c4a0ae81ae-03"
         },
         {
-          "id": "politics-153ef1e74e019299-01"
-        },
-        {
           "id": "history-af6cca9569089d6b-03"
-        },
-        {
-          "id": "geography-6c7742238d0b3f48-01"
         }
       ]
     },
@@ -16177,13 +12139,7 @@
           "id": "biology-ddfd36c4a0ae81ae-04"
         },
         {
-          "id": "politics-153ef1e74e019299-02"
-        },
-        {
           "id": "history-af6cca9569089d6b-04"
-        },
-        {
-          "id": "geography-6c7742238d0b3f48-02"
         }
       ]
     },
@@ -16203,13 +12159,7 @@
           "id": "biology-ddfd36c4a0ae81ae-05"
         },
         {
-          "id": "politics-25790609783d29d6-01"
-        },
-        {
           "id": "history-af6cca9569089d6b-05"
-        },
-        {
-          "id": "geography-6c7742238d0b3f48-03"
         }
       ]
     },
@@ -16229,13 +12179,7 @@
           "id": "biology-636cfc1e7b4c95fb-01"
         },
         {
-          "id": "politics-25790609783d29d6-02"
-        },
-        {
           "id": "history-af6cca9569089d6b-06"
-        },
-        {
-          "id": "geography-6c7742238d0b3f48-04"
         }
       ]
     },
@@ -16256,9 +12200,6 @@
         },
         {
           "id": "history-2f9e1d5b6e20b658-01"
-        },
-        {
-          "id": "geography-6c7742238d0b3f48-05"
         }
       ]
     },
@@ -16279,9 +12220,6 @@
         },
         {
           "id": "history-2f9e1d5b6e20b658-02"
-        },
-        {
-          "id": "geography-a0297149bc8f911b-01"
         }
       ]
     },
@@ -16302,9 +12240,6 @@
         },
         {
           "id": "history-2f9e1d5b6e20b658-03"
-        },
-        {
-          "id": "geography-a0297149bc8f911b-02"
         }
       ]
     },
@@ -16325,9 +12260,6 @@
         },
         {
           "id": "history-2f9e1d5b6e20b658-04"
-        },
-        {
-          "id": "geography-a0297149bc8f911b-03"
         }
       ]
     },
@@ -16348,9 +12280,6 @@
         },
         {
           "id": "history-a08eb786c8c7d1e8-01"
-        },
-        {
-          "id": "geography-a0297149bc8f911b-04"
         }
       ]
     },
@@ -16371,9 +12300,6 @@
         },
         {
           "id": "history-a08eb786c8c7d1e8-02"
-        },
-        {
-          "id": "geography-a0297149bc8f911b-05"
         }
       ]
     },
@@ -16394,9 +12320,6 @@
         },
         {
           "id": "history-a08eb786c8c7d1e8-03"
-        },
-        {
-          "id": "geography-39d5911b1d3f63b2-01"
         }
       ]
     },
@@ -16417,9 +12340,6 @@
         },
         {
           "id": "history-a08eb786c8c7d1e8-04"
-        },
-        {
-          "id": "geography-39d5911b1d3f63b2-02"
         }
       ]
     },
@@ -16440,9 +12360,6 @@
         },
         {
           "id": "history-92bdda18a6ae381b-01"
-        },
-        {
-          "id": "geography-39d5911b1d3f63b2-03"
         }
       ]
     },
@@ -16463,9 +12380,6 @@
         },
         {
           "id": "history-92bdda18a6ae381b-02"
-        },
-        {
-          "id": "geography-39d5911b1d3f63b2-04"
         }
       ]
     },
@@ -16486,9 +12400,6 @@
         },
         {
           "id": "history-92bdda18a6ae381b-03"
-        },
-        {
-          "id": "geography-39d5911b1d3f63b2-05"
         }
       ]
     },
@@ -16509,9 +12420,6 @@
         },
         {
           "id": "history-92bdda18a6ae381b-04"
-        },
-        {
-          "id": "geography-93a9fa54cf2e2bfb-01"
         }
       ]
     },
@@ -16532,9 +12440,6 @@
         },
         {
           "id": "history-32335dfd67df2417-01"
-        },
-        {
-          "id": "geography-93a9fa54cf2e2bfb-02"
         }
       ]
     },
@@ -16555,9 +12460,6 @@
         },
         {
           "id": "history-32335dfd67df2417-02"
-        },
-        {
-          "id": "geography-93a9fa54cf2e2bfb-03"
         }
       ]
     },
@@ -16578,9 +12480,6 @@
         },
         {
           "id": "history-32335dfd67df2417-03"
-        },
-        {
-          "id": "geography-93a9fa54cf2e2bfb-04"
         }
       ]
     },
@@ -16601,9 +12500,6 @@
         },
         {
           "id": "history-32335dfd67df2417-04"
-        },
-        {
-          "id": "geography-47ed3940a085213c-01"
         }
       ]
     },
@@ -16624,9 +12520,6 @@
         },
         {
           "id": "history-f33c094815211bfe-01"
-        },
-        {
-          "id": "geography-47ed3940a085213c-02"
         }
       ]
     },
@@ -16644,9 +12537,6 @@
         },
         {
           "id": "history-f33c094815211bfe-02"
-        },
-        {
-          "id": "geography-47ed3940a085213c-03"
         }
       ]
     },
@@ -16664,9 +12554,6 @@
         },
         {
           "id": "history-f33c094815211bfe-03"
-        },
-        {
-          "id": "geography-47ed3940a085213c-04"
         }
       ]
     },
@@ -16681,9 +12568,6 @@
         },
         {
           "id": "history-f33c094815211bfe-04"
-        },
-        {
-          "id": "geography-333d1aa1bc0a2098-01"
         }
       ]
     },
@@ -16698,9 +12582,6 @@
         },
         {
           "id": "history-9d02340bc4b71a77-01"
-        },
-        {
-          "id": "geography-333d1aa1bc0a2098-02"
         }
       ]
     },
@@ -16715,9 +12596,6 @@
         },
         {
           "id": "history-9d02340bc4b71a77-02"
-        },
-        {
-          "id": "geography-333d1aa1bc0a2098-03"
         }
       ]
     },
@@ -16732,9 +12610,6 @@
         },
         {
           "id": "history-9d02340bc4b71a77-03"
-        },
-        {
-          "id": "geography-333d1aa1bc0a2098-04"
         }
       ]
     },
@@ -16749,9 +12624,6 @@
         },
         {
           "id": "history-9d02340bc4b71a77-04"
-        },
-        {
-          "id": "geography-333d1aa1bc0a2098-05"
         }
       ]
     },
@@ -16766,9 +12638,6 @@
         },
         {
           "id": "history-6af8c0c6a849fa91-01"
-        },
-        {
-          "id": "geography-d8224d243f2020da-01"
         }
       ]
     },
@@ -16783,9 +12652,6 @@
         },
         {
           "id": "history-6af8c0c6a849fa91-02"
-        },
-        {
-          "id": "geography-d8224d243f2020da-02"
         }
       ]
     },
@@ -16800,9 +12666,6 @@
         },
         {
           "id": "history-6af8c0c6a849fa91-03"
-        },
-        {
-          "id": "geography-d8224d243f2020da-03"
         }
       ]
     },
@@ -16817,9 +12680,6 @@
         },
         {
           "id": "history-6af8c0c6a849fa91-04"
-        },
-        {
-          "id": "geography-d8224d243f2020da-04"
         }
       ]
     },
@@ -16828,9 +12688,6 @@
       "tasks": [
         {
           "id": "math-ee3a918d56efd1dc-12"
-        },
-        {
-          "id": "geography-f0a6e33d4c782970-01"
         }
       ]
     },
@@ -16839,9 +12696,6 @@
       "tasks": [
         {
           "id": "math-ee3a918d56efd1dc-13"
-        },
-        {
-          "id": "geography-f0a6e33d4c782970-02"
         }
       ]
     },
@@ -16850,9 +12704,6 @@
       "tasks": [
         {
           "id": "math-ee3a918d56efd1dc-14"
-        },
-        {
-          "id": "geography-f0a6e33d4c782970-03"
         }
       ]
     },
@@ -16861,9 +12712,6 @@
       "tasks": [
         {
           "id": "math-ee3a918d56efd1dc-15"
-        },
-        {
-          "id": "geography-f0a6e33d4c782970-04"
         }
       ]
     },
@@ -16872,9 +12720,6 @@
       "tasks": [
         {
           "id": "math-ab458c5ead3a09bd-01"
-        },
-        {
-          "id": "geography-cf878cdf351e2239-01"
         }
       ]
     },
@@ -16883,9 +12728,6 @@
       "tasks": [
         {
           "id": "math-ab458c5ead3a09bd-02"
-        },
-        {
-          "id": "geography-cf878cdf351e2239-02"
         }
       ]
     },
@@ -16894,9 +12736,6 @@
       "tasks": [
         {
           "id": "math-ab458c5ead3a09bd-03"
-        },
-        {
-          "id": "geography-cf878cdf351e2239-03"
         }
       ]
     },
@@ -16905,9 +12744,6 @@
       "tasks": [
         {
           "id": "math-ab458c5ead3a09bd-04"
-        },
-        {
-          "id": "geography-cf878cdf351e2239-04"
         }
       ]
     },
