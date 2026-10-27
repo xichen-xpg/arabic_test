@@ -48,6 +48,12 @@ for q in list(bank['questions'].values())+bank['readings']:
         if kind=='answer' and q['kind']=='ppt':
             assert filename==f'answers/{q["id"]}.html'
             assert [int(n) for n in doc.xpath('//section/@data-question')]==q['numbers'],q['source']
+            if q['subject']=='english':
+                assert '完形填空' not in doc.text_content(),q['source']
+                if q['paper']=='7d2d946f4b37f01f':
+                    assert 'The Phone Call' not in doc.text_content()
+                    assert q['numbers']==list(range(21,31))
+                    assert '未附这组题的答案与解析' in doc.text_content()
         if '#' in q[kind]:assert doc.xpath('//*[@id="'+q[kind].split('#')[1]+'"]'),q['source']
         for img in doc.xpath('//img'):assets.add((path.parent/img.get('src')).resolve())
 for asset in assets:

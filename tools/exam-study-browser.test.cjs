@@ -23,7 +23,7 @@ const server=http.createServer((req,res)=>{
     assert.equal(await page.locator('#daySelect option').count(),bank.days.length);
     for(let i=0;i<bank.days[0].tasks.length;i++){
       const q=bank.questions[bank.days[0].tasks[i].id];
-      assert.equal(await page.locator('#tasks .lesson details a').nth(i).getAttribute('href'),'../data/exam-study/'+q.answer);
+      assert.equal(await page.locator('#tasks .lesson details a').nth(i).getAttribute('href'),'../data/exam-study/'+q.answer+'?v='+bank.version);
       assert.equal(q.answer,`answers/${q.id}.html`);
     }
     await page.locator('#tasks .lesson details summary').first().click();

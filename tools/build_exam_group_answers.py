@@ -5,7 +5,7 @@ from copy import deepcopy
 from difflib import SequenceMatcher
 from lxml import html, etree
 from inspect_exam_documents import ROOT, inventory
-from select_exam_questions import document, question_spans
+from select_exam_questions import document, question_spans, sections
 
 def normalized(text):
     return re.sub(r'[^\w\u4e00-\u9fff]', '', text)[:180]
@@ -23,6 +23,7 @@ def build():
         spans=question_spans(texts,first,len(texts))
         doc=html.parse(str(root/'answers'/f'{source["id"]}.html'))
         article=doc.find('.//article');nodes=list(article)
+        section_starts=[a for a,b,name in sections([node.text_content() for node in nodes],'english') if name!='其他'] if source['subject']=='english' else []
         candidates={}
         for i,node in enumerate(nodes):
             if node.tag=='a' and re.fullmatch(r'q\d+',node.get('id','')) and i+1<len(nodes):
@@ -59,14 +60,19 @@ def build():
                 if n not in matches:continue
                 start=matches[n][0]
                 end=min((index for number,(index,score) in matches.items() if index>start),default=len(nodes))
+                end=min([end]+[index for index in section_starts if index>start])
                 section=etree.SubElement(content,'section',attrib={'data-question':str(n),'id':f'q{n}'})
                 for node in nodes[start+1:end]:
                     if node.tag!='a':section.append(deepcopy(node))
             path=f'answers/{q["id"]}.html'
+            if q['subject']=='english' and not re.search('答案|解析|分析|考点|解答',''.join(s.text_content() for s in content.findall('section'))):
+                note=html.Element('p')
+                note.text='本地原文件未附这组题的答案与解析。以下仅保留对应的单项填空题目。'
+                content.insert(1,note)
             (root/path).write_text('<!doctype html>\n'+html.tostring(output,encoding='unicode'),encoding='utf-8')
             q['answer']=path
     if problems:raise ValueError('Ambiguous solution boundaries: '+json.dumps(problems,ensure_ascii=False))
-    bank['version']='all-exams-20261027-group-answers'
+    bank['version']='all-exams-20261028-answer-boundaries'
     (root/'bank.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f'Created {len(bank["questions"])} matching question-group solution pages',flush=True)
 

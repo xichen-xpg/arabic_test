@@ -25,20 +25,21 @@
       const h=document.createElement('h2');h.textContent=subject.name;article.append(h);
       day.tasks.filter(t=>bank.questions[t.id].subject===subject.id).forEach(task=>{
         const q=bank.questions[task.id],p=document.createElement('p');
+        const answerUrl=`../data/exam-study/${q.answer}?v=${bank.version}`;
         const lesson=document.createElement('section');lesson.className='lesson';
         p.textContent=q.topic;
         lesson.append(p);
         lesson.append(link(q.source,`../data/exam-study/${q.question}`));
         for(const image of q.pages){const img=document.createElement('img');img.src=`../data/exam-study/${image.src}`;img.alt=q.source;img.loading='lazy';img.style.cssText='display:block;max-width:100%;height:auto;margin:12px 0';lesson.append(img);}
         const solution=document.createElement('details'),summary=document.createElement('summary');summary.textContent='原卷答案与解析';
-        solution.append(summary,link('查看本题组解析',`../data/exam-study/${q.answer}`));
+        solution.append(summary,link('查看本题组解析',answerUrl));
         solution.addEventListener('toggle',()=>{
           if(!solution.open || solution.querySelector('iframe'))return;
-          const frame=document.createElement('iframe');frame.src=`../data/exam-study/${q.answer}`;frame.title=q.source+' · 对应解析';
+          const frame=document.createElement('iframe');frame.src=answerUrl;frame.title=q.source+' · 对应解析';
           frame.style.cssText='display:block;width:100%;height:650px;border:0;margin-top:12px';solution.append(frame);
         });
         lesson.append(solution);article.append(lesson);
-        const answer=document.createElement('p');answer.append(link(q.source,`../data/exam-study/${q.answer}`));$('answers').append(answer);
+        const answer=document.createElement('p');answer.append(link(q.source,answerUrl));$('answers').append(answer);
       });
       $('tasks').append(article);
     });
