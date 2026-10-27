@@ -1,5 +1,5 @@
 (function (root) {
-  const key = 'daily-study:sessions:v1';
+  const key = 'daily-study:sessions:all-exams-v1';
   const today = () => new Intl.DateTimeFormat('en-CA', { timeZone:'Asia/Dubai', year:'numeric', month:'2-digit', day:'2-digit' }).format(new Date());
   function read(storage) { return JSON.parse(storage.getItem(key) || '{}'); }
   function plan(storage, date = today()) {
@@ -9,10 +9,10 @@
     if (records[date]) return { day:records[date].day, state:records[date] };
     return { day:active ? active.day + 1 : 1, state:null };
   }
-  function start(storage, date = today(), now = Date.now()) {
+  function start(storage, date = today(), now = Date.now(), totalDays = Infinity) {
     const selected = plan(storage,date);
     if (selected.state) return selected.state;
-    if (selected.day > 45) throw new Error('45天练习已完成，可从课程目录复习。');
+    if (selected.day > totalDays) throw new Error('本轮真题已完成，可从课程目录复习。');
     const record = { day:selected.day, date, startedAt:now, deadline:now+3600000, completed:{}, interruptions:0 };
     const records=read(storage); records[date]=record; storage.setItem(key,JSON.stringify(records));
     return record;

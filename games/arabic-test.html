@@ -1886,16 +1886,18 @@
     function dailyProgressSummaries(dateKey) {
       const byDate = dailyProgressBySource(dateKey);
       const completed = new Set(loadCheckins()[dateKey] || []);
-      let study;
-      try { study = JSON.parse(localStorage.getItem("daily-study:sessions:v1") || "{}")[dateKey]; } catch { /* Keep other records available. */ }
+      let study, legacyStudy;
+      try {
+        legacyStudy = JSON.parse(localStorage.getItem("daily-study:sessions:v1") || "{}")[dateKey];
+        study = JSON.parse(localStorage.getItem("daily-study:sessions:all-exams-v1") || "{}")[dateKey] || legacyStudy;
+      } catch { /* Keep other records available. */ }
       const english = englishScheduler.summary(dateKey);
       const arabic = arabicScheduler.summary(dateKey);
       if (dateKey !== localDateKey() && !study && !completed.size && !Object.keys(byDate).length && !english && !arabic) return [];
-      const pptSubjects = ["math","english","physics","chemistry","biology","politics","history","geography"];
       return [
-        { source:"daily-study", label:"PPT", done:pptSubjects.every(id=>!!study?.completed?.[id]) },
+        { source:"daily-study", label:"PPT", done:!!study?.finishedAt },
         { source:englishSourceKey, label:"英语", done:!!english?.done || completed.has(englishSourceKey) },
-        { source:"daily-chinese", label:"阅读", done:completed.has("daily-chinese") || (dateKey < localDateKey() && !!study?.completed?.chinese) },
+        { source:"daily-chinese", label:"阅读", done:completed.has("daily-chinese") || (dateKey < localDateKey() && !!legacyStudy?.completed?.chinese) },
         { source:dailyArabicSourceKey, label:"阿语", done:!!arabic?.done || completed.has(dailyArabicSourceKey) },
         { source:poemSourceKey, label:"古诗词", done:completed.has(poemSourceKey) }
       ].map(item=>({...item,checkOnly:true}));
