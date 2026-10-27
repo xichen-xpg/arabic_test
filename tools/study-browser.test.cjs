@@ -136,7 +136,7 @@ const server=http.createServer((req,res)=>{
             if(off && ext && (+off.getAttribute('y') + +ext.getAttribute('cy') > 6858000 || +off.getAttribute('x') + +ext.getAttribute('cx')>12192000))overflow.push(p);
           }
         }
-        const expectedSequence=d.tasks.flatMap(t=>['concept','example',...b.questions[t.id].pages.map(()=> 'question'),'answer']);
+        const expectedSequence=d.tasks.flatMap(t=>['concept','example','question']);
         const completeTeaching=d.tasks.every((t,i)=>{
           const q=b.questions[t.id];
           return teaching[2*i].includes(q.teaching.concept) && teaching[2*i].includes(q.teaching.method)
@@ -144,7 +144,7 @@ const server=http.createServer((req,res)=>{
             && teaching[2*i+1].includes(q.teaching.exampleLabel);
         });
         return {bytes:[1,9,20,45].includes(n)?bytes:null,size:Math.floor(bytes.length*.75),slides:paths.length,answers,leak,overflow,
-          completeTeaching,sequence,expectedSequence,expected:2+d.tasks.reduce((n,t)=>n+b.questions[t.id].pages.length+3,0)};
+          completeTeaching,sequence,expectedSequence,expected:2+d.tasks.length*3};
       },day);
       assert.equal(result.slides,result.expected);assert.equal(result.answers,10);assert.equal(result.leak,false);assert.deepEqual(result.overflow,[]);
       assert.equal(result.completeTeaching,true);assert.deepEqual(result.sequence,result.expectedSequence);
