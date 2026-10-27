@@ -21,6 +21,15 @@ const server=http.createServer((req,res)=>{
     assert.equal(await page.locator('#tasks .subject').count(),6);
     assert.deepEqual(await page.locator('#tasks .subject h2').allTextContents(),['数学','英语','物理','化学','生物','历史']);
     assert.equal(await page.locator('#daySelect option').count(),bank.days.length);
+    for(let i=0;i<bank.days[0].tasks.length;i++){
+      const q=bank.questions[bank.days[0].tasks[i].id];
+      assert.equal(await page.locator('#tasks .lesson details a').nth(i).getAttribute('href'),'../data/exam-study/'+q.answer);
+      assert.equal(q.answer,`answers/${q.id}.html`);
+    }
+    await page.locator('#tasks .lesson details summary').first().click();
+    const solution=page.frameLocator('#tasks .lesson iframe').first();
+    await solution.locator('section[data-question]').first().waitFor();
+    assert.deepEqual(await solution.locator('section[data-question]').evaluateAll(nodes=>nodes.map(n=>Number(n.dataset.question))),bank.questions[bank.days[0].tasks[0].id].numbers);
     assert.doesNotMatch(await page.locator('#tasks').textContent(),/知识点讲解|例子推演|易错点|重点题组/);
     await page.evaluate(()=>localStorage.setItem('daily-study:sessions:v1',JSON.stringify({'2026-01-01':{day:20}})));
     await page.route('**/data/exam-study/pages/*.png',r=>r.abort());

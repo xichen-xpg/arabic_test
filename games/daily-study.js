@@ -31,7 +31,13 @@
         lesson.append(link(q.source,`../data/exam-study/${q.question}`));
         for(const image of q.pages){const img=document.createElement('img');img.src=`../data/exam-study/${image.src}`;img.alt=q.source;img.loading='lazy';img.style.cssText='display:block;max-width:100%;height:auto;margin:12px 0';lesson.append(img);}
         const solution=document.createElement('details'),summary=document.createElement('summary');summary.textContent='原卷答案与解析';
-        solution.append(summary,link('打开本卷解析（按原题号核对）',`../data/exam-study/${q.answer}`));lesson.append(solution);article.append(lesson);
+        solution.append(summary,link('查看本题组解析',`../data/exam-study/${q.answer}`));
+        solution.addEventListener('toggle',()=>{
+          if(!solution.open || solution.querySelector('iframe'))return;
+          const frame=document.createElement('iframe');frame.src=`../data/exam-study/${q.answer}`;frame.title=q.source+' · 对应解析';
+          frame.style.cssText='display:block;width:100%;height:650px;border:0;margin-top:12px';solution.append(frame);
+        });
+        lesson.append(solution);article.append(lesson);
         const answer=document.createElement('p');answer.append(link(q.source,`../data/exam-study/${q.answer}`));$('answers').append(answer);
       });
       $('tasks').append(article);
@@ -45,7 +51,7 @@
   }
   function current() {const p=StudySession.plan(localStorage);day=bank.days[p.day-1];state=p.state;preview=false;draw();}
   try {
-    const response=await fetch('../data/exam-study/bank.json?v=20261027-six-subjects');
+    const response=await fetch('../data/exam-study/bank.json?v=20261027-group-answers');
     if (!response.ok) throw new Error('题库加载失败，请刷新。');bank=await response.json();
     for (const d of bank.days) {const option=document.createElement('option');option.value=d.day;option.textContent=`第${d.day}天`; $('daySelect').append(option);}
     current();notice('');

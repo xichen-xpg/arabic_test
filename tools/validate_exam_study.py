@@ -45,6 +45,9 @@ for q in list(bank['questions'].values())+bank['readings']:
         filename=q[kind].split('#')[0];path=root/filename
         doc=html.fromstring(path.read_text(encoding='utf-8'))
         if kind=='question':assert '【答案】' not in doc.text_content() and '【解析】' not in doc.text_content(),q['source']
+        if kind=='answer' and q['kind']=='ppt':
+            assert filename==f'answers/{q["id"]}.html'
+            assert [int(n) for n in doc.xpath('//section/@data-question')]==q['numbers'],q['source']
         if '#' in q[kind]:assert doc.xpath('//*[@id="'+q[kind].split('#')[1]+'"]'),q['source']
         for img in doc.xpath('//img'):assets.add((path.parent/img.get('src')).resolve())
 for asset in assets:

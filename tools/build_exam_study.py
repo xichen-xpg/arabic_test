@@ -167,6 +167,8 @@ def build():
     bank=dict(version='all-exams-20261027-six-subjects',minutes=60,subjects=[dict(id=s,name=NAMES[s],count=len(queues[s])) for s in ORDER],
               questions=questions,days=days,sources=sources,readings=readings,duplicates=duplicates)
     (OUT/'bank.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2),encoding='utf-8')
+    from build_exam_group_answers import build as build_group_answers
+    build_group_answers()
     print(json.dumps(dict(papers=len(papers),questions=len(questions),readings=len(readings),days=len(days),subjects=bank['subjects']),ensure_ascii=False),flush=True)
 
 if __name__=='__main__':build()
