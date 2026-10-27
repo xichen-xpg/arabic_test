@@ -905,7 +905,7 @@
           <button id="todayButton" class="secondary" type="button">今天</button>
           <button id="nextMonthButton" class="ghost" type="button" aria-label="下个月">&gt;</button>
           <nav class="study-links" aria-label="学习项目">
-            <a class="checkin-link" href="games/daily-study.html">PPT</a>
+            <a class="checkin-link" href="games/daily-study.html?v=20261027-six-subjects">PPT</a>
             <a class="checkin-link" href="#english">英语</a>
             <a class="checkin-link" href="games/daily-chinese.html">阅读</a>
             <a id="practiceLink" class="checkin-link" href="#arabic">阿语</a>
@@ -3271,7 +3271,7 @@
       const page = elements.categorySelect.value;
       if (["page:daily-chinese", "page:daily-math", "page:daily-study"].includes(page)) {
         elements.categorySelect.value = "source:daily-arabic";
-        window.location.href = `games/${page.slice(5)}.html`;
+        window.location.href = `games/${page.slice(5)}.html${page==='page:daily-study'?'?v=20261027-six-subjects':''}`;
         return;
       }
       pool = [];

@@ -51,7 +51,7 @@
   }
   function current() {const p=StudySession.plan(localStorage);day=bank.days[p.day-1];state=p.state;preview=false;draw();}
   try {
-    const response=await fetch('../data/exam-study/bank.json?v=20261027-group-answers');
+    const response=await fetch('../data/exam-study/bank.json?v=20261027-group-answers',{cache:'no-store'});
     if (!response.ok) throw new Error('题库加载失败，请刷新。');bank=await response.json();
     for (const d of bank.days) {const option=document.createElement('option');option.value=d.day;option.textContent=`第${d.day}天`; $('daySelect').append(option);}
     current();notice('');
