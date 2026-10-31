@@ -1,0 +1,10 @@
+const work = {
+  "title": "登幽州台歌",
+  "author": "陈子昂",
+  "fullText": [
+    "前不见古人，后不见来者。",
+    "念天地之悠悠，独怆然而涕下。"
+  ]
+};
+
+export default work;

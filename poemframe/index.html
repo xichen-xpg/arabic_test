@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>每日古诗文海报</title>
+  <style>
+    body { margin: 0; background: #eeeae2; color: #252825; font-family: "Microsoft YaHei", sans-serif; }
+    nav { max-width: 800px; margin: 20px auto; display: flex; gap: 20px; padding: 0 16px; align-items: center; }
+    a { color: #365b4d; } button { font: inherit; padding: 8px 16px; cursor: pointer; }
+    main { max-width: 800px; margin: auto; }
+    .page { box-sizing: border-box; min-height: 480px; background: #fff; padding: 32px 48px; border-top: 4px solid #566e60; }
+    .date { color: #687368; font-size: 14px; } h1 { font: bold 30px/1.5 "KaiTi", serif; margin: 20px 0 8px; }
+    #text { white-space: pre-wrap; font: 25px/1.9 "KaiTi", "SimSun", serif; }
+    #poster { display: block; width: 100%; height: auto; } #poster[hidden], .page[hidden] { display: none; }
+    #status { padding: 0 16px; font-size: 14px; line-height: 1.7; }
+    @media(max-width:600px) { .page { padding: 24px; } #text { font-size: 22px; } }
+    @media print { body { background: white; } nav, #status { display: none; } main { max-width: none; } .page { border: 0; } }
+  </style>
+</head>
+<body>
+  <nav><a href="../games/arabic-test.html#poems">返回每日一首</a><button id="print" type="button">打印海报</button></nav>
+  <main>
+    <article class="page" id="original"><p class="date" id="date"></p><h1 id="title"></h1><p id="author"></p><p id="text"></p></article>
+    <img id="poster" hidden alt="今日古诗文水墨海报">
+    <p id="status" role="status">正在检查今日水墨海报…</p>
+  </main>
+  <script src="../games/daily-poems.js?v=20261031-expanded74"></script>
+  <script src="../games/poem-schedule.js"></script>
+  <script>
+    const date = PoemSchedule.today();
+    const work = dailyPoemWorks[PoemSchedule.indexForDate(date, dailyPoemWorks.length)];
+    document.querySelector('#date').textContent = `每日一首 · ${date}`;
+    document.querySelector('#title').textContent = work.title;
+    document.querySelector('#author').textContent = work.author;
+    document.querySelector('#text').textContent = work.fullText.join('\n');
+    document.querySelector('#print').addEventListener('click', () => window.print());
+    async function loadPoster() {
+      try {
+        const response = await fetch('daily-poem.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error('missing');
+        const poster = await response.json();
+        if (poster.date !== date || poster.title !== work.title || poster.author !== work.author || JSON.stringify(poster.fullText) !== JSON.stringify(work.fullText)) throw new Error('outdated');
+        const image = document.querySelector('#poster');
+        image.src = `每日古诗词.png?date=${encodeURIComponent(date)}&v=${encodeURIComponent(poster.generatedAt || work.title)}`;
+        await image.decode();
+        image.hidden = false;
+        document.querySelector('#original').hidden = true;
+        document.querySelector('#status').textContent = `今日水墨海报 · ${date} · ${work.title}`;
+      } catch {
+        document.querySelector('#status').textContent = '今日水墨海报尚未生成，当前展示可打印的今日原文。';
+      }
+    }
+    loadPoster();
+  </script>
+</body>
+</html>

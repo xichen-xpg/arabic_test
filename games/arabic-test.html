@@ -712,6 +712,8 @@
       .calendar-date{font-size:11px}
     }
     #poemPrintContent { display: none; }
+    .poem-poster-link { display: none; }
+    .poem-mode .poem-poster-link { display: inline-flex; }
     @media print {
       body { background: white; color: black; }
       .app { display: none !important; }
@@ -741,6 +743,7 @@
             <option value="source:daily-poems">每日一首</option>
           </select>
           <button id="printPoemButton" class="ghost" type="button" hidden>打印本页</button>
+          <a class="checkin-link poem-poster-link" href="poemframe/index.html" target="_blank" rel="noopener">今日海报</a>
           <a id="checkinLink" class="checkin-link" href="#checkin">每日打卡</a>
         </div>
 
@@ -810,7 +813,8 @@
 
   <script src="games/math-restart.js"></script>
   <script src="games/daily-arabic.js?v=20260930newest2"></script>
-  <script src="games/daily-poems.js"></script>
+  <script src="games/daily-poems.js?v=20261031-expanded74"></script>
+  <script src="games/poem-schedule.js"></script>
   <script src="games/daily-english.js?v=20260921mixed"></script>
   <script src="games/english-scheduler.js?v=20261031arabicrepair"></script>
   <script src="games/english-test.js?v=20261031studyfix"></script>
@@ -2486,7 +2490,7 @@
     function dailyPoemQuestions(dateKey = dubaiDateKey()) {
       if (poemQuestionsByDate[dateKey]) return poemQuestionsByDate[dateKey];
       if (!poemWorks.length) return [];
-      const index = positiveModulo(daysBetween(poemRotationStartKey, dateKey), poemWorks.length);
+      const index = PoemSchedule.indexForDate(dateKey, poemWorks.length);
       poemQuestionsByDate[dateKey] = [buildPoemQuestion(poemWorks[index], index, index, dateKey)];
       return poemQuestionsByDate[dateKey];
     }

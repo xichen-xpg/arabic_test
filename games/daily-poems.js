@@ -277,5 +277,230 @@ window.dailyPoemWorks = [
       "浩荡离愁白日斜，吟鞭东指即天涯。落红不是无情物，化作春泥更护花。"
     ],
     "sourceFile": "052.己亥杂诗.js"
+  },
+  {
+    "title": "登鹳雀楼", "author": "王之涣", "genre": "诗",
+    "fullText": ["白日依山尽，黄河入海流。", "欲穷千里目，更上一层楼。"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/登鸛雀樓_(王之渙)"
+  },
+  {
+    "title": "相思", "author": "王维", "genre": "诗",
+    "fullText": ["红豆生南国，春来发几枝。", "愿君多采撷，此物最相思。"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/相思"
+  },
+  {
+    "title": "鹿柴", "author": "王维", "genre": "诗",
+    "fullText": ["空山不见人，但闻人语响。", "返景入深林，复照青苔上。"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/鹿柴_(王維)"
+  },
+  {
+    "title": "竹里馆", "author": "王维", "genre": "诗",
+    "fullText": ["独坐幽篁里，弹琴复长啸。", "深林人不知，明月来相照。"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/輞川集_(王維)/竹里館"
+  },
+  {
+    "title": "问刘十九", "author": "白居易", "genre": "诗",
+    "fullText": ["绿蚁新醅酒，红泥小火炉。", "晚来天欲雪，能饮一杯无？"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/問劉十九"
+  },
+  {
+    "title": "静夜思", "author": "李白", "genre": "诗",
+    "fullText": ["床前明月光，疑是地上霜。", "举头望明月，低头思故乡。"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/靜夜思#唐詩三百首"
+  },
+  {
+    "title": "乐游原", "author": "李商隐", "genre": "诗",
+    "fullText": ["向晚意不适，驱车登古原。", "夕阳无限好，只是近黄昏。"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/登樂游原"
+  },
+  {
+    "title": "八阵图", "author": "杜甫", "genre": "诗",
+    "fullText": ["功盖三分国，名成八阵图。", "江流石不转，遗恨失吞吴。"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/八陣圖"
+  },
+  {
+    "title": "宿建德江", "author": "孟浩然", "genre": "诗",
+    "fullText": ["移舟泊烟渚，日暮客愁新。", "野旷天低树，江清月近人。"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/宿建德江"
+  },
+  {
+    "title": "春晓", "author": "孟浩然", "genre": "诗",
+    "fullText": ["春眠不觉晓，处处闻啼鸟。", "夜来风雨声，花落知多少。"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/春曉_(孟浩然)"
+  },
+  {
+    "title": "江雪", "author": "柳宗元", "genre": "诗",
+    "fullText": ["千山鸟飞绝，万径人踪灭。", "孤舟蓑笠翁，独钓寒江雪。"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/江雪"
+  },
+  {
+    "title": "寻隐者不遇", "author": "贾岛", "genre": "诗",
+    "fullText": ["松下问童子，言师采药去。", "只在此山中，云深不知处。"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/尋隱者不遇"
+  },
+  {
+    "title": "送灵澈上人", "author": "刘长卿", "genre": "诗",
+    "fullText": ["苍苍竹林寺，杳杳钟声晚。", "荷笠带夕阳，青山独归远。"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/送靈澈"
+  },
+  {
+    "title": "如梦令·常记溪亭日暮", "author": "李清照", "genre": "词",
+    "fullText": ["常记溪亭日暮，沉醉不知归路。", "兴尽晚回舟，误入藕花深处。", "争渡，争渡，惊起一滩鸥鹭。"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_3e33bfbb8f79.aspx"
+  },
+  {
+    "title": "如梦令·昨夜雨疏风骤", "author": "李清照", "genre": "词",
+    "fullText": ["昨夜雨疏风骤，浓睡不消残酒。", "试问卷帘人，却道海棠依旧。", "知否，知否？应是绿肥红瘦。"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_3ffd5d0653a9.aspx"
+  },
+  {
+    "title": "忆江南·江南好", "author": "白居易", "genre": "词",
+    "fullText": ["江南好，风景旧曾谙。", "日出江花红胜火，春来江水绿如蓝。", "能不忆江南？"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_6ad0636b01a9.aspx"
+  },
+  {
+    "title": "卜算子·咏梅", "author": "陆游", "genre": "词",
+    "fullText": ["驿外断桥边，寂寞开无主。", "已是黄昏独自愁，更着风和雨。", "无意苦争春，一任群芳妒。", "零落成泥碾作尘，只有香如故。"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_2523dc7baa84.aspx"
+  },
+  {
+    "title": "卜算子·我住长江头", "author": "李之仪", "genre": "词",
+    "fullText": ["我住长江头，君住长江尾。", "日日思君不见君，共饮长江水。", "此水几时休，此恨何时已。", "只愿君心似我心，定不负相思意。"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_d096804a25ff.aspx"
+  },
+  {
+    "title": "长相思·山一程", "author": "纳兰性德", "genre": "词",
+    "fullText": ["山一程，水一程，身向榆关那畔行，夜深千帐灯。", "风一更，雪一更，聒碎乡心梦不成，故园无此声。"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_0a4d69889c65.aspx"
+  },
+  {
+    "title": "论语·学而（学而时习之章）", "author": "《论语》", "genre": "文",
+    "fullText": ["子曰：“学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知而不愠，不亦君子乎？”"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_ff31b4d1afd6.aspx"
+  },
+  {
+    "title": "论语·学而（吾日三省吾身章）", "author": "《论语》", "genre": "文",
+    "fullText": ["曾子曰：“吾日三省吾身：为人谋而不忠乎？与朋友交而不信乎？传不习乎？”"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_ff31b4d1afd6.aspx"
+  },
+  {
+    "title": "论语·述而（三人行章）", "author": "《论语》", "genre": "文",
+    "fullText": ["子曰：“三人行，必有我师焉。择其善者而从之，其不善者而改之。”"],
+    "sourceUrl": "https://ctext.org/lunyu-zhushu/shu-er/zhs"
+  },
+  {
+    "title": "道德经·第六章", "author": "老子", "genre": "文",
+    "fullText": ["谷神不死，是谓玄牝。", "玄牝之门，是谓天地根。", "绵绵若存，用之不勤。"],
+    "sourceUrl": "https://m.gushiwen.cn/shiwenv_2e4d27f169b7.aspx"
+  },
+  {
+    "title": "道德经·第十一章", "author": "老子", "genre": "文",
+    "fullText": ["三十辐共一毂，当其无，有车之用。", "埏埴以为器，当其无，有器之用。", "凿户牖以为室，当其无，有室之用。", "故有之以为利，无之以为用。"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_8c22c690f14b.aspx"
+  },
+  {
+    "title": "王戎不取道旁李", "author": "刘义庆", "genre": "文",
+    "fullText": ["王戎七岁，尝与诸小儿游。看道边李树多子折枝，诸儿竞走取之，唯戎不动。", "人问之，答曰：“树在道边而多子，此必苦李。”取之，信然。"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_cfeddc2459c2.aspx"
+  },
+  {
+    "title": "徐孺子赏月", "author": "刘义庆", "genre": "文",
+    "fullText": ["徐孺子年九岁，尝月下戏。", "人语之曰：“若令月中无物，当极明邪？”", "徐曰：“不然，譬如人眼中有瞳子，无此必不明。”"],
+    "sourceUrl": "https://www.cngwzj.com/gushi/NanBeiChao/87090/"
+  },
+  {
+    "title": "宋史·司马光传（节选）", "author": "脱脱等", "genre": "文", "excerpt": true,
+    "fullText": ["群儿戏于庭，一儿登瓮，足跌没水中。", "众皆弃去，光持石击瓮破之，水迸，儿得活。"],
+    "sourceUrl": "https://lywgyxx.szftedu.cn/xkjc/yw/202209/U020220910609538372130.pdf"
+  },
+  {
+    "title": "师说（节选）", "author": "韩愈", "genre": "文", "excerpt": true,
+    "fullText": ["古之学者必有师。师者，所以传道受业解惑也。", "人非生而知之者，孰能无惑？惑而不从师，其为惑也，终不解矣。"],
+    "sourceUrl": "https://www.gushiwen.cn/GuShiWen_de14d6f28c.aspx"
+  },
+  {
+    "title": "记承天寺夜游（节选）", "author": "苏轼", "genre": "文", "excerpt": true,
+    "fullText": ["庭下如积水空明，水中藻、荇交横，盖竹柏影也。", "何夜无月？何处无竹柏？但少闲人如吾两人者耳。"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_221828a8f12d.aspx"
+  },
+  {
+    "title": "兰亭集序（节选）", "author": "王羲之", "genre": "文", "excerpt": true,
+    "fullText": ["永和九年，岁在癸丑，暮春之初，会于会稽山阴之兰亭，修禊事也。", "群贤毕至，少长咸集。"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/蘭亭集序"
+  },
+  {
+    "title": "小石潭记（节选）", "author": "柳宗元", "genre": "文", "excerpt": true,
+    "fullText": ["潭中鱼可百许头，皆若空游无所依，日光下澈，影布石上。", "佁然不动，俶尔远逝，往来翕忽，似与游者相乐。"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_1ab58966cf83.aspx"
+  },
+  {
+    "title": "与朱元思书（节选）", "author": "吴均", "genre": "文", "excerpt": true,
+    "fullText": ["风烟俱净，天山共色。从流飘荡，任意东西。", "自富阳至桐庐一百许里，奇山异水，天下独绝。"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_b992d3699612.aspx"
+  },
+  {
+    "title": "醉翁亭记（节选）", "author": "欧阳修", "genre": "文", "excerpt": true,
+    "fullText": ["若夫日出而林霏开，云归而岩穴暝，晦明变化者，山间之朝暮也。"],
+    "sourceUrl": "https://www.gushiwen.cn/GuShiWen_9d089cc843.aspx"
+  },
+  {
+    "title": "庄子·逍遥游（节选）", "author": "庄子", "genre": "文", "excerpt": true,
+    "fullText": ["北冥有鱼，其名为鲲。鲲之大，不知其几千里也；化而为鸟，其名为鹏。", "鹏之背，不知其几千里也；怒而飞，其翼若垂天之云。"],
+    "sourceUrl": "https://www.gushiwen.cn/mingju/juv_7681a9c438de.aspx"
+  },
+  {
+    "title": "孟子·鱼我所欲也（节选）", "author": "孟子及其弟子", "genre": "文", "excerpt": true,
+    "fullText": ["鱼，我所欲也；熊掌，亦我所欲也。二者不可得兼，舍鱼而取熊掌者也。", "生，亦我所欲也；义，亦我所欲也。二者不可得兼，舍生而取义者也。"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_740f1087a38c.aspx"
+  },
+  {
+    "title": "礼记·学记（节选）", "author": "《礼记》", "genre": "文", "excerpt": true,
+    "fullText": ["是故学然后知不足，教然后知困。", "知不足，然后能自反也；知困，然后能自强也。", "故曰“教学相长”也。"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_b85acee19435.aspx"
+  },
+  {
+    "title": "沙扬娜拉·赠日本女郎", "author": "徐志摩", "genre": "现代诗",
+    "fullText": ["最是那一低头的温柔，", "像一朵水莲花不胜凉风的娇羞，", "道一声珍重，道一声珍重，", "那一声珍重里有蜜甜的忧愁——", "沙扬娜拉！"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/沙揚娜拉#十八"
+  },
+  {
+    "title": "偶然（节选）", "author": "徐志摩", "genre": "现代诗", "excerpt": true,
+    "fullText": ["我是天空里的一片云，", "偶尔投影在你的波心——", "你不必讶异，", "更无须欢喜——", "在转瞬间消灭了踪影。"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/偶然"
+  },
+  {
+    "title": "雪花的快乐（节选）", "author": "徐志摩", "genre": "现代诗", "excerpt": true,
+    "fullText": ["假如我是一朵雪花，", "翩翩的在半空里潇洒，", "我一定认清我的方向——", "飞扬，飞扬，飞扬——", "这地面上有我的方向。"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/雪花的快樂"
+  },
+  {
+    "title": "细雨", "author": "朱自清", "genre": "现代诗",
+    "fullText": ["东风里，", "掠过我脸边，", "星呀星的细雨，", "是春天的绒毛呢。"],
+    "sourceUrl": "https://www.shiku.org/shiku/xs/zhuziqing/zhuzq25.htm"
+  },
+  {
+    "title": "教我如何不想她（节选）", "author": "刘半农", "genre": "现代诗", "excerpt": true,
+    "fullText": ["天上飘着些微云，", "地上吹着些微风。", "啊！", "微风吹动了我头发，", "教我如何不想她？"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/教我如何不想她"
+  },
+  {
+    "title": "红烛（节选）", "author": "闻一多", "genre": "现代诗", "excerpt": true,
+    "fullText": ["红烛啊！", "这样红的烛！", "诗人啊！", "吐出你的心来比，", "可是一般颜色？"],
+    "sourceUrl": "https://zh.wikisource.org/wiki/紅燭#紅燭"
+  },
+  {
+    "title": "题西林壁", "author": "苏轼", "genre": "诗",
+    "fullText": ["横看成岭侧成峰，远近高低各不同。", "不识庐山真面目，只缘身在此山中。"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_f2f5469a6044.aspx"
+  },
+  {
+    "title": "清平乐·村居", "author": "辛弃疾", "genre": "词",
+    "fullText": ["茅檐低小，溪上青青草。醉里吴音相媚好，白发谁家翁媪？", "大儿锄豆溪东，中儿正织鸡笼。最喜小儿亡赖，溪头卧剥莲蓬。"],
+    "sourceUrl": "https://www.gushiwen.cn/shiwenv_03e80e28a0c2.aspx"
+  },
+  {
+    "title": "乡愁（节选）", "author": "余光中", "genre": "现代诗", "excerpt": true,
+    "fullText": ["小时候", "乡愁是一枚小小的邮票", "我在这头", "母亲在那头"],
+    "sourceUrl": "https://www.chinawriter.com.cn/n1/2018/1018/c404018-30347750.html"
   }
 ];

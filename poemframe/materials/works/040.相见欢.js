@@ -1,0 +1,9 @@
+const work = {
+  "title": "相见欢",
+  "author": "李煜",
+  "fullText": [
+    "无言独上西楼，月如钩。寂寞梧桐深院锁清秋。剪不断，理还乱，是离愁。别是一般滋味在心头。"
+  ]
+};
+
+export default work;

@@ -1,0 +1,15 @@
+{
+  "name": "poemframe",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:daily-poem": "node scripts/generate_daily_poem_image.js"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
