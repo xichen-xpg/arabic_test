@@ -160,6 +160,50 @@ const server = http.createServer((req, res) => {
     assert.deepEqual(await page.evaluate(() => Object.keys(arabicScheduler.load().records).sort()), partial);
     assert.equal(await page.evaluate(() => arabicScheduler.summary().review), partial.length);
     assert.equal(await page.evaluate(() => arabicScheduler.summary().done), false);
+    // Reproduce a 21-question day: only the short last page was passed.
+    await page.evaluate(() => {
+      localStorage.removeItem(arabicStorageKey);
+      const plan = arabicScheduler.plan();
+      const state = arabicScheduler.load();
+      const day = state.days[localDateKey()];
+      const review = arabicLearningBank.find(word => !word.dialogueId && !plan.fresh.includes(word.id));
+      day.review = [review.id];
+      day.completed = day.fresh.slice(0, 4);
+      for (const id of [...day.completed, review.id]) state.records[id] = { stage: 0, due: localDateKey(), lastCompleted: localDateKey() };
+      day.test = { passed: 2, completed: [2, 5], times: { 2: 2250, 5: 1950 } };
+      arabicScheduler.save(state);
+      arabicScheduler.startTest(Date.now(), 1);
+      const row = arabicScheduler.plan().test.active.rows[0];
+      arabicScheduler.answerTest(0, row.options.find(id => id !== row.id));
+      arabicScheduler.selectTest(0);
+      arabicPractice.replay = null;
+      arabicPractice.relearning = false;
+      arabicPractice.draw();
+    });
+    const overview = panel.locator('.english-overview-row');
+    assert.equal(await overview.count(), 6);
+    // Even an unattempted page must be learnable, before testing it.
+    assert.equal(await overview.nth(0).getByRole('button', { name: '学习', exact: true }).isEnabled(), true);
+    await overview.nth(0).getByRole('button', { name: '学习', exact: true }).click();
+    assert.equal(await panel.locator('.english-task').isVisible(), true);
+    assert.equal(await panel.locator('.english-test').isVisible(), false);
+    assert.equal(await page.evaluate(() => arabicPractice.replay.queue.length), 10);
+    assert.equal(await page.evaluate(() => arabicPractice.current.id === arabicScheduler.questions()[0].id), true);
+    // A failed page and the return-to-study button must both open its learning task.
+    await overview.nth(1).getByRole('button', { name: '学习', exact: true }).click();
+    assert.equal(await page.evaluate(() => arabicPractice.relearning), true);
+    assert.equal(await page.evaluate(() => arabicPractice.replay), null);
+    assert.equal(await panel.locator('.english-task').isVisible(), true);
+    await overview.nth(1).getByRole('button', { name: '测试', exact: true }).click();
+    await panel.getByRole('button', { name: '返回单词练习', exact: true }).click();
+    assert.equal(await panel.locator('.english-task').isVisible(), true);
+    assert.equal(await panel.locator('.english-test').isVisible(), false);
+    assert.equal(await page.evaluate(() => arabicPractice.relearning), true);
+    // The final page really contains one question; other study pages still have ten.
+    await overview.nth(2).getByRole('button', { name: '学习', exact: true }).click();
+    assert.equal(await page.evaluate(() => arabicPractice.replay.queue.length), 1);
+    await overview.nth(0).getByRole('button', { name: '学习', exact: true }).click();
+    assert.equal(await page.evaluate(() => arabicPractice.replay.queue.length), 10);
     assert.deepEqual(errors, []);
     console.log("Arabic checks passed: 20/10 plan, six timed tests, failed-page study, Arabic audio/input, examples, check-in/flag, independent saves, legacy import, mobile.");
     await context.close();

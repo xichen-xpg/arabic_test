@@ -48,10 +48,9 @@
           if (this.ensureDate()) return;
           this.saveDraft();
           scheduler.selectTest(index);
-          if (scheduler.testStudyWords().length) { this.relearning = true; this.draw(); return; }
-          this.relearning = false;
+          this.relearning = scheduler.testStudyWords().length > 0;
           const pages = scheduler.testSummary().pages;
-          this.replay = { date: scheduler.clock(), queue: scheduler.questions().slice((index % pages) * 10, (index % pages + 1) * 10).map(word => word.id), testIndex: index };
+          this.replay = this.relearning ? null : { date: scheduler.clock(), queue: scheduler.questions().slice((index % pages) * 10, (index % pages + 1) * 10).map(word => word.id), testIndex: index };
           this.draw();
           this.el.task.scrollIntoView({ block: "start" });
           return;
@@ -72,7 +71,12 @@
       this.el["open-test"].addEventListener("click", () => {
         this.openTest();
       });
-      this.el["back-study"].addEventListener("click", () => this.draw());
+      this.el["back-study"].addEventListener("click", () => {
+        this.replay = null;
+        this.relearning = scheduler.testStudyWords().length > 0;
+        this.draw();
+        if (this.current) this.el.task.scrollIntoView({ block: "start" });
+      });
       this.el.restart.addEventListener("click", () => {
         if (this.ensureDate()) return;
         this.replay = { date: this.scheduler.clock(), queue: this.scheduler.questions().map(word => word.id) };
