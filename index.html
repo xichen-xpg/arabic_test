@@ -24,18 +24,8 @@
 
     .layout {
       display: grid;
-      grid-template-columns: minmax(260px, .38fr) minmax(680px, 1fr);
-      gap: 10px;
+      grid-template-columns: minmax(0, 1fr);
       min-height: calc(100vh - 20px);
-      transition: grid-template-columns .22s ease;
-    }
-
-    .layout.practice-mode {
-      grid-template-columns: minmax(240px, .32fr) minmax(720px, 1fr);
-    }
-
-    .layout.game-mode {
-      grid-template-columns: minmax(720px, 1fr) minmax(360px, .42fr);
     }
 
     .pane {
@@ -48,314 +38,24 @@
       background: #fff;
     }
 
-    .game-pane {
-      padding-top: 46px;
-      background: #07111f;
-    }
-
-    .game-tabs {
-      position: absolute;
-      inset: 0 0 auto 0;
-      z-index: 1;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      min-height: 46px;
-      padding: 6px;
-      border-bottom: 1px solid rgba(215, 222, 232, .22);
-      background: rgba(7, 17, 31, .94);
-    }
-
-    .game-tab {
-      min-height: 34px;
-      padding: 7px 11px;
-      border: 1px solid rgba(255, 255, 255, .18);
-      border-radius: 8px;
-      background: rgba(255, 255, 255, .08);
-      color: #dbeafe;
-      font: inherit;
-      font-size: 13px;
-      font-weight: 900;
-      cursor: pointer;
-    }
-
-    .game-tab.active {
-      border-color: #ffc857;
-      background: #ffc857;
-      color: #261a00;
-    }
-
     iframe {
       display: block;
       width: 100%;
-      height: calc(100vh - 20px);
-      min-height: 620px;
+      height: calc(100dvh - 20px);
+      min-height: 0;
       border: 0;
       background: #fff;
     }
 
-    @media (max-width: 980px) {
-      .shell {
-        height: auto;
-      }
-
-      .layout,
-      .layout.practice-mode,
-      .layout.game-mode {
-        grid-template-columns: 1fr;
-        min-height: 0;
-      }
-
-      .pane {
-        min-height: 0;
-      }
-
-      .game-pane {
-        padding-top: 46px;
-      }
-
-      iframe {
-        height: 640px;
-      }
-
-      .game-pane iframe {
-        height: 594px;
-      }
-    }
-    .layout.home-mode{grid-template-columns:minmax(0,1fr)}
-    .layout.home-mode .game-pane{display:none}
-    .layout.home-mode iframe{height:calc(100dvh - 20px);min-height:0}
   </style>
 </head>
 <body>
   <main class="shell">
-    <section class="layout home-mode">
-      <section class="pane game-pane">
-        <nav class="game-tabs" aria-label="选择游戏">
-          <button class="game-tab active" type="button" data-game="shooter">雷电</button>
-          <button class="game-tab" type="button" data-game="bubble">水泡 PK</button>
-          <button class="game-tab" type="button" data-game="pikachu">Pikachu</button>
-        </nav>
-        <iframe id="mainGameFrame" title="game" src="games/space-shooter.html?v=20260710start-layout"></iframe>
-      </section>
+    <section class="layout">
       <aside class="pane">
-        <iframe id="arabicFrame" title="每日学习打卡" src="games/arabic-test.html?v=20261027sixsubjects#checkin" allow="autoplay"></iframe>
+        <iframe id="arabicFrame" title="每日学习打卡" src="games/arabic-test.html?v=20261031studyonly#checkin" allow="autoplay"></iframe>
       </aside>
     </section>
   </main>
-
-  <script>
-    const mainGameFrame = document.querySelector("#mainGameFrame");
-    const layout = document.querySelector(".layout");
-    const gameTabs = Array.from(document.querySelectorAll(".game-tab"));
-    let latestArabicMetrics = null;
-    let activeGameSource = "games/space-shooter.html?v=20260710start-layout";
-    let sharedLifeSpent = 0;
-    const sharedCompletedTokens = new Set();
-    const dailyLifeStorageKey = "arabic-game:daily-life";
-    let activeDailyLifeDate = "";
-    const gameSourceMap = {
-      shooter: "games/space-shooter.html?v=20260710start-layout",
-      bubble: "games/bubble-battle.html",
-      pikachu: "games/pikachu-volleyball/zh/index.html?v=20260614life"
-    };
-    const pikachuControlCodes = new Set([
-      "ArrowLeft",
-      "ArrowRight",
-      "ArrowUp",
-      "ArrowDown",
-      "Space"
-    ]);
-
-    function localDateKey(date = new Date()) {
-      const parts = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Dubai", year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(date);
-      const values = Object.fromEntries(parts.map(part => [part.type, part.value]));
-      return `${values.year}-${values.month}-${values.day}`;
-    }
-
-    function loadDailyLifeState() {
-      activeDailyLifeDate = localDateKey();
-      try {
-        const parsed = JSON.parse(localStorage.getItem(dailyLifeStorageKey) || "{}");
-        if (!parsed || parsed.date !== activeDailyLifeDate) return;
-        sharedLifeSpent = Math.max(0, Number(parsed.spent || 0));
-        if (Array.isArray(parsed.tokens)) {
-          parsed.tokens.forEach((token) => sharedCompletedTokens.add(token));
-        }
-      } catch {
-        sharedLifeSpent = 0;
-        sharedCompletedTokens.clear();
-      }
-    }
-
-    function ensureDailyLifeDate() {
-      const today = localDateKey();
-      if (!activeDailyLifeDate) {
-        activeDailyLifeDate = today;
-      }
-      if (activeDailyLifeDate !== today) {
-        activeDailyLifeDate = today;
-        sharedLifeSpent = 0;
-        sharedCompletedTokens.clear();
-        latestArabicMetrics = null;
-        saveDailyLifeState();
-      }
-    }
-
-    function saveDailyLifeState() {
-      localStorage.setItem(dailyLifeStorageKey, JSON.stringify({
-        date: activeDailyLifeDate || localDateKey(),
-        spent: sharedLifeSpent,
-        tokens: [...sharedCompletedTokens]
-      }));
-    }
-
-    function forwardArabicMetrics() {
-      if (!latestArabicMetrics) return;
-      mainGameFrame.contentWindow?.postMessage({
-        type: "hub:arabic-metrics",
-        payload: latestArabicMetrics
-      }, "*");
-    }
-
-    function setLayoutMode(mode) {
-      const gameMode = mode === "game";
-      layout.classList.toggle("game-mode", gameMode);
-      layout.classList.toggle("practice-mode", !gameMode);
-    }
-
-    function sharedLives() {
-      ensureDailyLifeDate();
-      return Math.max(0, sharedCompletedTokens.size - sharedLifeSpent);
-    }
-
-    function syncSharedLifeMetrics(payload = latestArabicMetrics || {}) {
-      ensureDailyLifeDate();
-      const completedTokens = Array.isArray(payload.completedTokens) ? payload.completedTokens : [];
-      completedTokens.forEach((token) => sharedCompletedTokens.add(token));
-      sharedLifeSpent = Math.min(sharedCompletedTokens.size, sharedLifeSpent);
-      saveDailyLifeState();
-      const sourceTotalQuestions = Number(payload.sourceTotalQuestions || payload.totalQuestions || 0);
-      const totalQuestions = Number(payload.allTotalQuestions || payload.totalQuestions || 0);
-      const completedQuestions = Number(payload.completedQuestions || 0);
-      latestArabicMetrics = {
-        ...payload,
-        completedTokens: [...sharedCompletedTokens],
-        lives: sharedLives(),
-        sharedLives: sharedLives(),
-        totalQuestions,
-        sourceTotalQuestions,
-        allTotalQuestions: totalQuestions,
-        sourceCompleted: sourceTotalQuestions > 0 && completedQuestions >= sourceTotalQuestions
-      };
-      return latestArabicMetrics;
-    }
-
-    function selectGameSource(requested) {
-      activeGameSource = Object.values(gameSourceMap).includes(requested)
-        ? requested
-        : gameSourceMap.shooter;
-      const activeKey = Object.entries(gameSourceMap).find(([, src]) => src === activeGameSource)?.[0] || "shooter";
-      gameTabs.forEach((tab) => {
-        tab.classList.toggle("active", tab.dataset.game === activeKey);
-      });
-      mainGameFrame.src = activeGameSource;
-    }
-
-    document.querySelector("#arabicFrame").addEventListener("load", () => {
-      const frame = document.querySelector("#arabicFrame");
-      const location = frame.contentWindow.location;
-      const practice = location.pathname.endsWith('/arabic-test.html') && ['#practice','#english','#arabic','#poems'].includes(location.hash);
-      layout.classList.toggle('home-mode', !practice);
-    });
-    window.addEventListener("message", (event) => {
-      if (event.origin === window.location.origin && event.source === document.querySelector("#arabicFrame").contentWindow && event.data?.type === "study:view") {
-        layout.classList.toggle("home-mode", !event.data.practice);
-        return;
-      }
-      if (event.data?.type === "hub:pikachu-key") {
-        forwardPikachuKey(event.data.payload);
-        return;
-      }
-
-      if (event.data?.type === "arabic-test:metrics") {
-        latestArabicMetrics = syncSharedLifeMetrics(event.data.payload);
-        forwardArabicMetrics();
-        if (latestArabicMetrics.event === "question-loaded") {
-          setLayoutMode("practice");
-        }
-        return;
-      }
-
-      if (event.data?.type === "game:life-spent") {
-        ensureDailyLifeDate();
-        const amount = Math.max(1, Number(event.data.payload?.amount || 1));
-        sharedLifeSpent = Math.min(sharedCompletedTokens.size, sharedLifeSpent + amount);
-        saveDailyLifeState();
-        syncSharedLifeMetrics();
-        forwardArabicMetrics();
-        if (sharedLives() <= 0) {
-          setLayoutMode("practice");
-        }
-        return;
-      }
-
-      if (event.data?.type === "game:start") {
-        setLayoutMode("game");
-        return;
-      }
-
-      if (event.data?.type === "hub:select-game") {
-        const requested = event.data.payload?.src || "";
-        selectGameSource(requested);
-      }
-    });
-
-    mainGameFrame.addEventListener("load", () => {
-      forwardArabicMetrics();
-      window.setTimeout(forwardArabicMetrics, 600);
-      window.setTimeout(forwardArabicMetrics, 1600);
-    });
-
-    function isPikachuActive() {
-      return mainGameFrame.src.toLowerCase().includes("pikachu-volleyball");
-    }
-
-    function forwardPikachuKey(payload) {
-      if (!isPikachuActive() || !pikachuControlCodes.has(payload?.code)) return;
-      mainGameFrame.contentWindow?.postMessage({
-        type: "hub:pikachu-key",
-        payload
-      }, "*");
-    }
-
-    function handlePikachuControl(event, isDown) {
-      if (!pikachuControlCodes.has(event.code)) return;
-      forwardPikachuKey({
-        code: event.code,
-        isDown
-      });
-    }
-
-    loadDailyLifeState();
-    setLayoutMode("practice");
-    syncSharedLifeMetrics({
-      game: "arabic-test",
-      event: "daily-life-restored",
-      completedTokens: [...sharedCompletedTokens],
-      completedQuestions: sharedCompletedTokens.size,
-      totalQuestions: 0,
-      sourceTotalQuestions: 0,
-      allTotalQuestions: 0,
-      sourceCompleted: false
-    });
-    window.addEventListener("keydown", (event) => handlePikachuControl(event, true));
-    window.addEventListener("keyup", (event) => handlePikachuControl(event, false));
-    gameTabs.forEach((tab) => {
-      tab.addEventListener("click", () => {
-        selectGameSource(gameSourceMap[tab.dataset.game]);
-      });
-    });
-  </script>
 </body>
 </html>
