@@ -72,6 +72,34 @@ function assertPairs(scheduler, ids) {
   });
 }
 
+test('Arabic material updates replace missing saved questions without ending learning early', () => {
+  const scheduler = dialogueScheduler();
+  const state = scheduler.load();
+  const date = scheduler.clock();
+  state.records['single-0'] = { stage: 2, due: '2026-11-02', lastCompleted: date };
+  state.days[date] = {
+    date, review: [], fresh: ['single-0', 'single-1', 'removed-old-sentence'],
+    completed: ['single-0'], failed: [], retry: [], drafts: {},
+    dailyLimit: 30, newLimit: 20, reviewLimit: 10,
+    test: { passed: 0, active: { index: 0, rows: [{ id: 'removed-old-sentence' }] } }
+  };
+  scheduler.save(state);
+  assert.equal(scheduler.next().id, 'single-1');
+  scheduler.complete('single-1');
+  assert.ok(scheduler.next(), 'a removed sentence must not end the day after one question');
+  const repaired = scheduler.plan();
+  assert.equal(repaired.fresh.length, 20);
+  assert.ok(repaired.completed.includes('single-0'));
+  assert.ok(repaired.completed.includes('single-1'));
+  assert.equal(scheduler.load().records['single-0'].stage, 2);
+  assert.ok(!repaired.fresh.includes('removed-old-sentence'));
+  assert.equal(repaired.test.active, undefined);
+  assertPairs(scheduler, scheduler.questions().map(word => word.id));
+  const saved = JSON.stringify(scheduler.load());
+  scheduler.plan();
+  assert.equal(JSON.stringify(scheduler.load()), saved, 'repair runs once');
+});
+
 test('dialogues stay together across review/new quotas, learning retries and both test directions', () => {
   const scheduler = dialogueScheduler();
   const state = scheduler.load();

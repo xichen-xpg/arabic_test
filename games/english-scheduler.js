@@ -105,6 +105,29 @@
       const state = this.load();
       if (state.days[date]) {
         const existing = state.days[date];
+        if (create && this.languageCode === 'ar' && [...existing.review, ...existing.fresh].some(id => !this.words.has(id))) {
+          // Sentence edits change text-based IDs. Repair today's obsolete plan,
+          // retaining completed current material and leaving historical days alone.
+          const valid = ids => ids.filter(id => this.words.has(id));
+          const due = Object.entries(state.records)
+            .filter(([id, record]) => this.words.has(id) && record.due <= date && !existing.completed.includes(id))
+            .sort((a, b) => Number(b[1].trouble) - Number(a[1].trouble) || a[1].due.localeCompare(b[1].due) || a[0].localeCompare(b[0]));
+          const retainedFresh = valid(existing.fresh);
+          existing.review = this.selectGroups([...valid(existing.review), ...due.map(([id]) => id)],
+            Math.max(REVIEW_LIMIT, valid(existing.review).length), new Set(retainedFresh));
+          existing.fresh = this.selectGroups([...retainedFresh, ...this.bank.filter(word => !state.records[word.id]).map(word => word.id)],
+            Math.max(NEW_LIMIT, retainedFresh.length), new Set(existing.review));
+          const scheduled = new Set([...existing.review, ...existing.fresh]);
+          for (const key of ['completed', 'failed', 'retry']) existing[key] = existing[key].filter(id => scheduled.has(id));
+          existing.drafts = Object.fromEntries(Object.entries(existing.drafts).filter(([id]) => scheduled.has(id)));
+          existing.test = existing.test?.checkedIn ? { passed: 0, checkedIn: true, checkedInWords: valid(existing.test.checkedInWords || [...existing.completed]) } : { passed: 0 };
+          delete existing.testTiming;
+          existing.dailyLimit = DAILY_LIMIT;
+          existing.newLimit = NEW_LIMIT;
+          existing.reviewLimit = REVIEW_LIMIT;
+          existing.deferred = due.filter(([id]) => !scheduled.has(id)).length;
+          this.save(state);
+        }
         if (create && !existing.test) { existing.test = { passed: 0 }; this.save(state); }
         // Keep started plans stable: test page indices refer to their original words.
         const started = existing.completed.length || existing.failed.length || existing.retry.length || Object.keys(existing.drafts).length ||
