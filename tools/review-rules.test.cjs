@@ -107,3 +107,35 @@ test('Arabic materials are short independent sentences without question-answer g
     assert.equal(new Set(normalized).size, bank.length);
   }
 });
+
+test('Arabic restart starts with 15, then random five unseen sentences and earlier-date reviews', () => {
+  const base = setup('ar');
+  let date = '2026-10-31';
+  const scheduler = new Scheduler(base.bank, base.storage, () => date, {
+    languageCode: 'ar', newLimit: 5, reviewLimit: 10,
+    firstDay: date, firstDayNewLimit: 15, randomNew: true
+  });
+  const random = Math.random;
+  Math.random = () => 0;
+  try {
+    const first = scheduler.plan();
+    assert.equal(first.fresh.length, 15);
+    assert.equal(first.review.length, 0);
+    assert.equal(new Set(first.fresh).size, 15);
+    assert.notDeepEqual(first.fresh, base.bank.slice(0, 15).map(word => word.id));
+    const saved = JSON.stringify(scheduler.load());
+    scheduler.plan();
+    assert.equal(JSON.stringify(scheduler.load()), saved);
+    first.fresh.forEach(id => scheduler.complete(id));
+    date = '2026-11-01';
+    const second = scheduler.plan();
+    assert.equal(second.fresh.length, 5);
+    assert.equal(second.review.length, 10);
+    assert.ok(second.fresh.every(id => !first.fresh.includes(id)));
+    assert.ok(second.review.every(id => first.fresh.includes(id)));
+    assert.ok(second.review.every(id => scheduler.load().records[id].lastCompleted < date));
+    scheduler.complete(second.fresh[0]);
+    assert.ok(!scheduler.plan().review.includes(second.fresh[0]));
+    assert.equal(scheduler.load().days['2026-10-31'].newLimit, 15);
+  } finally { Math.random = random; }
+});

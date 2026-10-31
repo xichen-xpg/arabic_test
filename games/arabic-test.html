@@ -816,7 +816,7 @@
   <script src="games/daily-poems.js?v=20261031-expanded74"></script>
   <script src="games/poem-schedule.js"></script>
   <script src="games/daily-english.js?v=20260921mixed"></script>
-  <script src="games/english-scheduler.js?v=20261031sentences"></script>
+  <script src="games/english-scheduler.js?v=20261031restart"></script>
   <script src="games/english-test.js?v=20261031studyfix"></script>
   <script src="games/english-practice.js?v=20261031keyaudio"></script>
   <script>
@@ -1210,11 +1210,12 @@
     const dailyArabicSourceKey = "daily-arabic";
     const englishSourceKey = "daily-english";
     const englishScheduler = new EnglishLearning.Scheduler(window.dailyEnglishQuestionBank, localStorage);
-    const arabicStorageKey = "arabic-test:arabic-learning:v1";
-    const arabicLearningBank = [...dailyArabicBank].reverse().concat([...allQuestions].reverse()).filter((word, index, bank) => bank.findIndex(item => item.ar === word.ar) === index)
+    const arabicStorageKey = "arabic-test:arabic-learning:restart-20261031:v1";
+    const arabicLearningBank = [...dailyArabicBank].filter((word, index, bank) => bank.findIndex(item => item.ar === word.ar) === index)
       .map(word => ({ ...word, id: word.id?.startsWith("arabic:") ? word.id : `arabic:${word.ar}`, word: word.ar, phonetic: word.rom, source: dailyArabicSourceKey }));
     const arabicScheduler = new EnglishLearning.Scheduler(arabicLearningBank, localStorage, EnglishLearning.today,
-      { storageKey: arabicStorageKey, languageName: "阿语", languageCode: "ar", newLimit: 5, reviewLimit: 10, independentSentences: true });
+      { storageKey: arabicStorageKey, languageName: "阿语", languageCode: "ar", newLimit: 5, reviewLimit: 10, independentSentences: true,
+        firstDay: "2026-10-31", firstDayNewLimit: 15, randomNew: true });
     const dailyArabicRotationStartKey = "2026-09-03";
     const dailyArabicNewCount = 3;
     const dailyArabicRecentDays = 5;
@@ -1522,30 +1523,14 @@
     const dailyProgressStorageKey = "arabic-test:daily-progress";
     let calendarMonth = new Date();
     let practiceDate = dubaiDateKey();
-    // Import completed legacy words once without changing the old progress or check-in saves.
+    // Start a separate Arabic plan; keep all old learning records untouched.
     if (!localStorage.getItem(arabicStorageKey)) {
-      const state = arabicScheduler.load();
-      const progress = loadDailyProgress();
+      arabicScheduler.save(arabicScheduler.load());
       const checkins = loadCheckins();
-      const dates = [...new Set([...Object.keys(progress), ...Object.keys(checkins)])].sort();
-      for (const date of dates) {
-        if (date > localDateKey()) continue;
-        const checkedIn = checkins[date]?.includes(dailyArabicSourceKey);
-        const indexes = progress[date]?.[dailyArabicSourceKey] || [];
-        if (!checkedIn && !indexes.length) continue;
-        const words = dailyArabicQuestions(date);
-        for (const index of checkedIn ? words.map((_, i) => i) : indexes) {
-          const word = words[index];
-          const id = word && `arabic:${word.ar}`;
-          if (arabicScheduler.words.has(id)) state.records[id] = { stage: 0, due: EnglishLearning.addDays(date, 1), lastCompleted: date, trouble: false };
-        }
-      }
-      arabicScheduler.save(state);
-      if (checkins[localDateKey()]?.includes(dailyArabicSourceKey)) {
-        arabicScheduler.plan();
-        const saved = arabicScheduler.load();
-        saved.days[localDateKey()].test.checkedIn = true;
-        arabicScheduler.save(saved);
+      const today = localDateKey();
+      if (checkins[today]?.includes(dailyArabicSourceKey)) {
+        checkins[today] = checkins[today].filter(source => source !== dailyArabicSourceKey);
+        saveCheckins(checkins);
       }
     }
     const englishPractice = new EnglishPractice(document.querySelector("#englishPanel"), englishScheduler, (eventName) => {

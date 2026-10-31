@@ -38,6 +38,9 @@
       this.languageCode = options.languageCode || "en-GB";
       this.reviewLimit = options.reviewLimit ?? REVIEW_LIMIT;
       this.newLimit = options.newLimit ?? NEW_LIMIT;
+      this.firstDay = options.firstDay;
+      this.firstDayNewLimit = options.firstDayNewLimit ?? this.newLimit;
+      this.randomNew = options.randomNew || false;
       this.independentSentences = options.independentSentences || false;
       this.words = new Map(bank.map(word => [word.id, word]));
       this.dialogues = new Map();
@@ -108,7 +111,7 @@
       });
     }
     plan(date = this.clock(), create = date === this.clock()) {
-      const NEW_LIMIT = this.newLimit;
+      const NEW_LIMIT = date === this.firstDay ? this.firstDayNewLimit : this.newLimit;
       const REVIEW_LIMIT = this.reviewLimit;
       const DAILY_LIMIT = NEW_LIMIT + REVIEW_LIMIT;
       const state = this.load();
@@ -261,7 +264,14 @@
       const review = this.selectGroups(due.map(([id]) => id), REVIEW_LIMIT);
       const reviewText = new Set(review.map(id => normalize(this.words.get(id).word || id, 'word')));
       const excluded = new Set(this.bank.filter(word => reviewText.has(normalize(word.word || word.id, 'word'))).map(word => word.id));
-      const fresh = this.selectGroups(this.bank.filter(word => !state.records[word.id]).map(word => word.id), NEW_LIMIT, excluded);
+      const candidates = this.bank.filter(word => !state.records[word.id]).map(word => word.id);
+      if (this.randomNew) {
+        for (let i = candidates.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [candidates[i], candidates[j]] = [candidates[j], candidates[i]];
+        }
+      }
+      const fresh = this.selectGroups(candidates, NEW_LIMIT, excluded);
       const plan = { date, review, fresh, completed: [], failed: [], retry: [], drafts: {}, deferred: Math.max(0, due.length - review.length), dailyLimit: DAILY_LIMIT, newLimit: NEW_LIMIT, reviewLimit: REVIEW_LIMIT };
       plan.test = { passed: 0 };
       if (this.independentSentences) plan.orderVersion = 'independent-v1';
