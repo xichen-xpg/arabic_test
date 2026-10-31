@@ -23,6 +23,13 @@
     const typed = normalize(answer, "zh");
     return Boolean(typed) && [meaning, ...meaning.split(/[；;，,、/／|\n]+/)].some(part => normalize(part, "zh") === typed);
   }
+  function sentenceKind(value = '') {
+    return /[?？؟]\s*$/.test(value) ? 'question' : /[!！]\s*$/.test(value) ? 'exclamation' : 'statement';
+  }
+  function testOptionText(value, reference) {
+    const ending = reference.match(/[。.!！?？؟]+\s*$/)?.[0].trim() || '';
+    return value.replace(/[。.!！?？؟]+\s*$/, '').trimEnd() + ending;
+  }
   function exampleParts(word) {
     const index = word.mixedExample.indexOf(word.word);
     return [{ text: word.mixedExample.slice(0, index), lang: "zh-CN" }, { text: word.word, lang: "en-GB" },
@@ -72,6 +79,29 @@
         selected.push(...group);
       }
       return selected;
+    }
+    testRows(ids, reverse) {
+      const shuffle = values => {
+        for (let i = values.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [values[i], values[j]] = [values[j], values[i]];
+        }
+        return values;
+      };
+      return ids.map(id => {
+        const word = this.words.get(id);
+        const field = reverse ? 'word' : 'zh';
+        const seen = new Set([normalize(word[field], 'word')]);
+        const choices = shuffle(this.bank.filter(item => item.id !== id && item.zh !== word.zh && item.word !== word.word &&
+          sentenceKind(item[field]) === sentenceKind(word[field])))
+          .filter(item => {
+            const text = normalize(item[field], 'word');
+            if (seen.has(text)) return false;
+            seen.add(text);
+            return true;
+          }).slice(0, 3);
+        return { id, options: shuffle([id, ...choices.map(item => item.id)]) };
+      });
     }
     load() {
       try {
@@ -255,6 +285,13 @@
           existing.orderVersion = 'independent-v1';
           this.save(state);
         }
+        const active = existing.test?.active;
+        if (create && active && !active.failed && active.choiceVersion !== 1) {
+          const pages = Math.ceil((existing.review.length + existing.fresh.length) / 10);
+          active.rows = this.testRows(active.rows.map(row => row.id), active.index >= pages);
+          active.choiceVersion = 1;
+          this.save(state);
+        }
         return existing;
       }
       if (!create) return null;
@@ -369,21 +406,8 @@
       const pages = Math.ceil(summary.total / 10);
       const reverse = index >= pages;
       const ids = this.planIds(plan).slice((index % pages) * 10, (index % pages + 1) * 10);
-      const shuffle = values => {
-        for (let i = values.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [values[i], values[j]] = [values[j], values[i]];
-        }
-        return values;
-      };
-      test.active = { index, startedAt: now, deadline: now + 25000, answers: {}, failed: false, rows: ids.map(id => {
-        const word = this.words.get(id);
-        const field = reverse ? "word" : "zh";
-        const seen = new Set([word[field]]);
-        const choices = shuffle(this.bank.filter(item => item.id !== id && item.zh !== word.zh && item.word !== word.word))
-          .filter(item => { if (seen.has(item[field])) return false; seen.add(item[field]); return true; }).slice(0, 3);
-        return { id, options: shuffle([id, ...choices.map(item => item.id)]) };
-      }) };
+      test.active = { index, startedAt: now, deadline: now + 25000, answers: {}, failed: false,
+        choiceVersion: 1, rows: this.testRows(ids, reverse) };
       plan.test = test;
       this.save(state);
     }
@@ -463,7 +487,7 @@
           ? plan.completed.length === plan.fresh.length + plan.review.length : Boolean(plan.test?.checkedIn) || this.testSummary(date, create).done };
     }
   }
-  const api = { Scheduler, today, normalize, matchesMeaning, exampleParts, addDays, STORAGE_KEY, INTERVALS, DAILY_LIMIT, NEW_LIMIT, REVIEW_LIMIT };
+  const api = { Scheduler, today, normalize, matchesMeaning, sentenceKind, testOptionText, exampleParts, addDays, STORAGE_KEY, INTERVALS, DAILY_LIMIT, NEW_LIMIT, REVIEW_LIMIT };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.EnglishLearning = api;
 })(typeof window !== "undefined" ? window : globalThis);

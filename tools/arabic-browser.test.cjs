@@ -91,9 +91,18 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.evaluate(() => arabicScheduler.plan().test.active.deadline - arabicScheduler.plan().test.active.startedAt), 25000);
     assert.match(await panel.locator(".english-test-title").innerText(), /阿语选中文/);
     assert.equal(await panel.locator("th").first().getAttribute("dir"), "rtl");
+    const optionRows = await panel.locator('tr').evaluateAll(rows => rows.map(row => ({
+      prompt: row.querySelector('th').textContent,
+      options: [...row.querySelectorAll('button')].map(button => button.textContent)
+    })));
+    for (const row of optionRows) {
+      assert.equal(row.options.length, 4);
+      assert.ok(row.options.every(text => /[?？؟]$/.test(text) === /[?？؟]$/.test(row.prompt)));
+      assert.equal(new Set(row.options.map(text => text.match(/[。.!！?？؟]+$/)?.[0] || '')).size, 1);
+    }
     const wrong = await page.evaluate(() => {
       const row = arabicScheduler.plan().test.active.rows[0];
-      return arabicScheduler.words.get(row.options.find(id => id !== row.id)).zh;
+      return EnglishLearning.testOptionText(arabicScheduler.words.get(row.options.find(id => id !== row.id)).zh, arabicScheduler.words.get(row.id).zh);
     });
     await panel.locator("tr").first().getByRole("button", { name: wrong, exact: true }).click();
     assert.equal(await panel.locator(".english-test-table").count(), 0);
