@@ -11,6 +11,12 @@
     legend { line-height: 1.7; font-weight: 700; }
     input[type="radio"] { display: inline; width: auto; margin-right: 8px; }
     .feedback { color: #0f766e; }
+    #readingPrintContent { display: none; }
+    @media print {
+      body, main { background: white; color: black; max-width: none; padding: 0; }
+      nav, button, #notice, #materials, #assignment { display: none !important; }
+      #readingPrintContent { display: block; }
+    }
   </style>
 </head>
 <body>
@@ -18,10 +24,12 @@
     <nav><a href="arabic-test.html#practice">返回练习</a><a href="arabic-test.html#checkin">每日打卡</a></nav>
     <header><p class="eyebrow">阅读</p><h1 id="readingTitle">阅读作答</h1><p id="readingMeta"></p>
       <p>阅读文章并作答。</p>
+      <button id="printReadingButton" type="button" disabled>打印本页</button>
 
     </header>
     <p id="notice" role="status">正在加载题库…</p>
     <section id="materials" aria-label="阅读原文"><article><p id="readingText"></p></article></section>
+    <section id="readingPrintContent"></section>
     <form id="assignment" class="assignment" hidden>
       <h2>按原题号作答</h2>
       <div id="questions"></div>

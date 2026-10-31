@@ -814,9 +814,16 @@
       .calendar-source{font-size:9px;gap:1px}.calendar-source-name{overflow:visible}
       .calendar-date{font-size:11px}
     }
+    #poemPrintContent { display: none; }
+    @media print {
+      body { background: white; color: black; }
+      .app { display: none !important; }
+      #poemPrintContent { display: block; white-space: pre-wrap; font: 18pt/2 serif; }
+    }
   </style>
 </head>
 <body>
+  <article id="poemPrintContent"></article>
   <main class="app">
     <section class="topbar" aria-label="游戏信息">
       <div class="title">
@@ -834,13 +841,14 @@
             <option value="source:daily-english">英语</option>
             <option value="page:daily-study">PPT</option>
             <option value="page:daily-chinese">阅读</option>
-            <option value="source:daily-poems">古诗词</option>
+            <option value="source:daily-poems">每日一首</option>
           </select>
           <select id="gameSelect" class="select game-select" aria-label="选择游戏">
             <option value="games/space-shooter.html">雷电</option>
             <option value="games/bubble-battle.html">水泡 PK</option>
             <option value="games/pikachu-volleyball/zh/index.html?v=20260614life">Pikachu</option>
           </select>
+          <button id="printPoemButton" class="ghost" type="button" hidden>打印本页</button>
           <a id="checkinLink" class="checkin-link" href="#checkin">每日打卡</a>
         </div>
 
@@ -909,7 +917,7 @@
             <a class="checkin-link" href="#english">英语</a>
             <a class="checkin-link" href="games/daily-chinese.html">阅读</a>
             <a id="practiceLink" class="checkin-link" href="#arabic">阿语</a>
-            <a class="checkin-link" href="#poems">古诗词</a>
+            <a class="checkin-link" href="#poems">每日一首</a>
           </nav>
         </div>
       </div>
@@ -1329,12 +1337,7 @@
     const dailyArabicQuestionsByDate = {};
     const poemRotationStartKey = "2026-05-20";
     const poemSourceKey = "daily-poems";
-    const dailyPoemRecentCount = 2;
-    const dailyPoemReviewCount = 1;
-    const dailyPoemRandomMaxChars = 80;
-    const dailyPoemSelectionVersion = 2;
     const poemQuestionsByDate = {};
-    const dailyPoemSelectionStorageKey = "arabic-test:daily-poem-selections";
     const poemDraftStorageKey = "arabic-test:poem-drafts";
 
     const sourceConfig = {
@@ -1355,7 +1358,7 @@
         puzzleImages: []
       },
       [poemSourceKey]: {
-        label: "每日古诗词",
+        label: "每日一首",
         puzzleImages: []
       }
     };
@@ -1899,7 +1902,7 @@
         { source:englishSourceKey, label:"英语", done:!!english?.done || completed.has(englishSourceKey) },
         { source:"daily-chinese", label:"阅读", done:completed.has("daily-chinese") || (dateKey < localDateKey() && !!legacyStudy?.completed?.chinese) },
         { source:dailyArabicSourceKey, label:"阿语", done:!!arabic?.done || completed.has(dailyArabicSourceKey) },
-        { source:poemSourceKey, label:"古诗词", done:completed.has(poemSourceKey) }
+        { source:poemSourceKey, label:"每日一首", done:completed.has(poemSourceKey) }
       ].map(item=>({...item,checkOnly:true}));
     }
 
@@ -2473,10 +2476,6 @@
       return (work.fullText || []).join("\n").replace(/\n{3,}/g, "\n\n").trim();
     }
 
-    function poemHanCharCount(work) {
-      return Array.from(poemText(work)).filter(isHanChar).length;
-    }
-
     function poemHintLines(question = current) {
       if (!isPoemQuestion(question)) return [];
       return (question.fullText || [])
@@ -2608,93 +2607,20 @@
       return dailyArabicQuestionsByDate[dateKey];
     }
 
-    function loadDailyPoemSelections() {
-      try {
-        const parsed = JSON.parse(localStorage.getItem(dailyPoemSelectionStorageKey) || "{}");
-        return parsed && typeof parsed === "object" ? parsed : {};
-      } catch {
-        return {};
-      }
-    }
-
-    function saveDailyPoemSelections(selections) {
-      localStorage.setItem(dailyPoemSelectionStorageKey, JSON.stringify(selections));
-    }
-
-    function usedReviewPoemIndexes(selections, currentDateKey) {
-      const used = new Set();
-      Object.entries(selections).forEach(([dateKey, selection]) => {
-        if (dateKey === currentDateKey || !selection || !Array.isArray(selection.reviewIndexes)) return;
-        selection.reviewIndexes.forEach((index) => {
-          if (Number.isInteger(index)) used.add(index);
-        });
-      });
-      return used;
-    }
-
-    function validStoredPoemSelection(selection, recentIndexes, reviewPoolIndexes) {
-      if (!selection ||
-        selection.version !== dailyPoemSelectionVersion ||
-        !Array.isArray(selection.recentIndexes) ||
-        !Array.isArray(selection.reviewIndexes)) return false;
-      if (selection.recentIndexes.length !== recentIndexes.length) return false;
-      if (selection.reviewIndexes.length > dailyPoemReviewCount) return false;
-      if (!selection.recentIndexes.every((index, position) => index === recentIndexes[position])) return false;
-      const reviewPoolSet = new Set(reviewPoolIndexes);
-      const uniqueReviews = new Set(selection.reviewIndexes);
-      return uniqueReviews.size === selection.reviewIndexes.length &&
-        selection.reviewIndexes.every((index) => Number.isInteger(index) && reviewPoolSet.has(index));
-    }
-
-    function dailyPoemSelection(dateKey, recentIndexes, reviewPoolIndexes) {
-      const selections = loadDailyPoemSelections();
-      const stored = selections[dateKey];
-      if (validStoredPoemSelection(stored, recentIndexes, reviewPoolIndexes)) {
-        return stored;
-      }
-
-      const usedReviews = usedReviewPoemIndexes(selections, dateKey);
-      const candidateIndexes = reviewPoolIndexes.filter((index) => !usedReviews.has(index));
-      const reviewIndexes = seededShuffle(candidateIndexes, `poem-review:${dateKey}`)
-        .slice(0, Math.min(dailyPoemReviewCount, candidateIndexes.length));
-      const selection = {
-        version: dailyPoemSelectionVersion,
-        recentIndexes,
-        reviewIndexes
-      };
-      selections[dateKey] = selection;
-      saveDailyPoemSelections(selections);
-      return selection;
-    }
-
     function dailyPoemQuestions(dateKey = dubaiDateKey()) {
       if (poemQuestionsByDate[dateKey]) return poemQuestionsByDate[dateKey];
       if (!poemWorks.length) return [];
-
-      const dayIndex = daysBetween(poemRotationStartKey, dateKey);
-      const todayIndex = positiveModulo(dayIndex, poemWorks.length);
-      const recentIndexes = [];
-      for (let offset = 0; offset < Math.min(dailyPoemRecentCount, Math.max(0, dayIndex) + 1); offset += 1) {
-        const index = positiveModulo(dayIndex - offset, poemWorks.length);
-        if (!recentIndexes.includes(index)) recentIndexes.push(index);
-      }
-
-      const historicalIndexes = [];
-      const seen = new Set(recentIndexes);
-      const historyLength = Math.max(0, dayIndex);
-      for (let offset = 0; offset < historyLength; offset += 1) {
-        const index = positiveModulo(offset, poemWorks.length);
-        if (!seen.has(index) && poemHanCharCount(poemWorks[index]) <= dailyPoemRandomMaxChars) {
-          seen.add(index);
-          historicalIndexes.push(index);
-        }
-      }
-
-      const selection = dailyPoemSelection(dateKey, recentIndexes, historicalIndexes);
-      poemQuestionsByDate[dateKey] = [...selection.recentIndexes, ...selection.reviewIndexes]
-        .map((index) => buildPoemQuestion(poemWorks[index], index, todayIndex, dateKey));
+      const index = positiveModulo(daysBetween(poemRotationStartKey, dateKey), poemWorks.length);
+      poemQuestionsByDate[dateKey] = [buildPoemQuestion(poemWorks[index], index, index, dateKey)];
       return poemQuestionsByDate[dateKey];
     }
+
+    document.querySelector("#printPoemButton").addEventListener("click", () => {
+      const poem = dailyPoemQuestions()[0];
+      if (!poem) return;
+      document.querySelector("#poemPrintContent").textContent = `每日一首 · ${dubaiDateKey()}\n${poem.title}\n${poem.author}\n\n${poem.ar}`;
+      window.print();
+    });
 
     function sourceQuestions(source) {
       if (source === englishSourceKey) return englishScheduler.questions();
@@ -2891,6 +2817,7 @@
 
     function drawQuestion() {
       if (ensurePracticeDate()) return;
+      document.querySelector("#printPoemButton").hidden = !isPoemSource();
       const english = activeSource() === englishSourceKey;
       const arabic = activeSource() === dailyArabicSourceKey;
       englishPractice.test.hide();
@@ -2912,6 +2839,7 @@
         (english ? englishPractice : arabicPractice).draw();
         return;
       }
+      if (isPoemSource()) document.querySelector("#practiceDescription").textContent = "每日一首，按顺序点击汉字默写正文。";
       const pending = incompleteQuestions();
       const available = pending.length ? pending : activeQuestions();
       const pendingTodayPoem = isPoemSource() && pending.find((item) => item.todayPoem);

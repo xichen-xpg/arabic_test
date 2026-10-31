@@ -16,7 +16,7 @@ const server=http.createServer((req,res)=>{
     await page.goto(base+'/index.html');
     const home=page.frameLocator('#arabicFrame');
     await home.locator('.calendar-day.today .calendar-source').first().waitFor();
-    assert.deepEqual(await home.locator('.calendar-day.today .calendar-source-name').allTextContents(),['PPT','英语','阅读','阿语','古诗词']);
+    assert.deepEqual(await home.locator('.calendar-day.today .calendar-source-name').allTextContents(),['PPT','英语','阅读','阿语','每日一首']);
     await page.goto(base+'/games/daily-study.html');await page.waitForSelector('#tasks .subject');
     assert.equal(await page.locator('#tasks .subject').count(),6);
     assert.deepEqual(await page.locator('#tasks .subject h2').allTextContents(),['数学','英语','物理','化学','生物','历史']);

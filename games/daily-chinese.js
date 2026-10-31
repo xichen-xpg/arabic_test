@@ -18,6 +18,17 @@
     $('notice').textContent='阅读原卷材料，按原题号作答，再核对原卷解析。';
     const frame=document.createElement('iframe');frame.src='../data/exam-study/'+reading.question;frame.title='原卷阅读材料与题目';
     frame.style.cssText='width:100%;height:700px;border:1px solid #d7dee8;background:white';
+    frame.addEventListener('load',()=>{
+      const doc=frame.contentDocument;
+      if(!doc?.body)return;
+      $('readingPrintContent').replaceChildren(...Array.from(doc.body.childNodes,node=>node.cloneNode(true)));
+      doc.querySelectorAll('style').forEach(node=>{
+        const style=document.createElement('style');style.textContent='@media print {'+node.textContent+'}';$('readingPrintContent').prepend(style);
+      });
+      $('readingPrintContent').querySelectorAll('img').forEach(image=>image.src=new URL(image.getAttribute('src'),doc.baseURI).href);
+      $('printReadingButton').disabled=false;
+    });
+    $('printReadingButton').addEventListener('click',()=>window.print());
     $('readingText').replaceWith(frame);
     const label=document.createElement('label');label.htmlFor='readingAnswer';label.textContent='我的答案（按原题号填写）';
     const input=document.createElement('textarea');input.id='readingAnswer';input.rows=10;input.required=true;input.value=state.answer;input.style.cssText='display:block;width:100%;box-sizing:border-box;font:inherit;margin:12px 0';
