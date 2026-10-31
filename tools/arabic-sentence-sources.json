@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-31",
+  "language": "Modern Standard Arabic",
+  "addedSentences": 60,
+  "authorship": "Original learning sentences, not copied course text. Chinese translations and simplified pronunciation guides were written for this game. Pronunciation guides omit grammatical case endings; direct address defaults to masculine singular.",
+  "references": [
+    {
+      "url": "https://learning.aljazeera.net/en/lessons/level/beginner",
+      "usage": "Beginner topic reference: daily routines, family, introductions and learning situations."
+    },
+    {
+      "url": "https://madinaharabic.com/free-content",
+      "usage": "Reference for beginner reading resource selection. No text or audio copied."
+    }
+  ],
+  "scope": "Append sentence material only. Preserve existing entries, exercise types and learning progress. Avoid person/object substitution batches."
+}

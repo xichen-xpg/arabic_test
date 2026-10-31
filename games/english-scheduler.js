@@ -38,11 +38,63 @@
       this.languageCode = options.languageCode || "en-GB";
       this.reviewLimit = options.reviewLimit ?? REVIEW_LIMIT;
       this.words = new Map(bank.map(word => [word.id, word]));
+      this.dialogues = new Map();
+      for (const word of bank.filter(word => word.dialogueId)) {
+        if (!this.dialogues.has(word.dialogueId)) this.dialogues.set(word.dialogueId, []);
+        this.dialogues.get(word.dialogueId).push(word.id);
+      }
+      for (const ids of this.dialogues.values()) ids.sort((a, b) => this.words.get(a).dialogueOrder - this.words.get(b).dialogueOrder);
+    }
+    group(id) { return this.dialogues.get(this.words.get(id)?.dialogueId) || [id]; }
+    planIds(plan) {
+      const ids = [...plan.review, ...plan.fresh];
+      if (!this.dialogues.size) return ids;
+      // Pairs first keeps both turns on the same ten-question test page.
+      const pairs = [], singles = [], seen = new Set();
+      for (const id of ids) {
+        if (seen.has(id)) continue;
+        const group = this.group(id).filter(member => ids.includes(member));
+        group.forEach(member => seen.add(member));
+        (group.length > 1 ? pairs : singles).push(...group);
+      }
+      return [...pairs, ...singles];
+    }
+    selectGroups(candidates, limit, excluded = new Set()) {
+      const selected = [];
+      for (const id of candidates) {
+        const group = this.group(id);
+        if (group.some(member => excluded.has(member) || selected.includes(member)) || selected.length + group.length > limit) continue;
+        selected.push(...group);
+      }
+      return selected;
     }
     load() {
       try {
         const value = JSON.parse(this.storage.getItem(this.storageKey));
-        if (value?.version === 1 && value.records && value.days) return value;
+        if (value?.version === 1 && value.records && value.days) {
+          let changed = false;
+          for (const ids of this.dialogues.values()) {
+            const legacy = `arabic:${this.words.get(ids[0]).legacyAr}`;
+            if (value.records[legacy]) {
+              for (const id of ids) value.records[id] ||= { ...value.records[legacy] };
+              delete value.records[legacy];
+              changed = true;
+            }
+            for (const plan of Object.values(value.days)) {
+              if (![...plan.review, ...plan.fresh].includes(legacy)) continue;
+              for (const key of ['review', 'fresh', 'completed', 'failed', 'retry']) {
+                plan[key] = [...new Set((plan[key] || []).flatMap(id => id === legacy ? ids : [id]))];
+              }
+              delete plan.drafts?.[legacy];
+              // Old test rows referred to the combined sentence; retain learning progress.
+              plan.test = { passed: 0 };
+              delete plan.testTiming;
+              changed = true;
+            }
+          }
+          if (changed) this.save(value);
+          return value;
+        }
       } catch { /* An absent or damaged save starts a fresh plan. */ }
       return { version: 1, records: {}, days: {} };
     }
@@ -122,6 +174,10 @@
           existing.dailyLimit = DAILY_LIMIT;
           existing.newLimit = NEW_LIMIT;
           existing.reviewLimit = REVIEW_LIMIT;
+          if (this.dialogues.size) {
+            existing.review = this.selectGroups(existing.review, REVIEW_LIMIT);
+            existing.fresh = this.selectGroups(existing.fresh, NEW_LIMIT, new Set(existing.review));
+          }
           existing.deferred = Object.entries(state.records)
             .filter(([id, record]) => this.words.has(id) && record.due <= date && !existing.review.includes(id) && !completed.has(id)).length;
           this.save(state);
@@ -132,8 +188,8 @@
       const due = Object.entries(state.records)
         .filter(([id, record]) => this.words.has(id) && record.due <= date)
         .sort((a, b) => Number(b[1].trouble) - Number(a[1].trouble) || a[1].due.localeCompare(b[1].due) || a[0].localeCompare(b[0]));
-      const review = due.slice(0, REVIEW_LIMIT).map(([id]) => id);
-      const fresh = this.bank.filter(word => !state.records[word.id]).slice(0, NEW_LIMIT).map(word => word.id);
+      const review = this.selectGroups(due.map(([id]) => id), REVIEW_LIMIT);
+      const fresh = this.selectGroups(this.bank.filter(word => !state.records[word.id]).map(word => word.id), NEW_LIMIT, new Set(review));
       const plan = { date, review, fresh, completed: [], failed: [], retry: [], drafts: {}, deferred: Math.max(0, due.length - review.length), dailyLimit: DAILY_LIMIT, newLimit: NEW_LIMIT, reviewLimit: REVIEW_LIMIT };
       plan.test = { passed: 0 };
       state.days[date] = plan;
@@ -142,12 +198,13 @@
     }
     questions(date = this.clock(), create = date === this.clock()) {
       const plan = this.plan(date, create);
-      return plan ? [...plan.review, ...plan.fresh].map(id => this.words.get(id)) : [];
+      return plan ? this.planIds(plan).map(id => this.words.get(id)) : [];
     }
     next() {
       const plan = this.plan();
-      const remaining = [...plan.review, ...plan.fresh].filter(id => !plan.completed.includes(id));
-      return this.words.get(remaining.find(id => !plan.retry.includes(id)) || plan.retry.find(id => remaining.includes(id))) || null;
+      const remaining = this.planIds(plan).filter(id => !plan.completed.includes(id));
+      const retry = id => this.group(id).some(member => plan.retry.includes(member));
+      return this.words.get(remaining.find(id => !retry(id)) || remaining[0]) || null;
     }
     draft(id, draft) {
       const state = this.load();
@@ -228,7 +285,7 @@
       if (test.active && (!test.active.failed || this.testStudyWords().length)) return;
       const pages = Math.ceil(summary.total / 10);
       const reverse = index >= pages;
-      const ids = [...plan.review, ...plan.fresh].slice((index % pages) * 10, (index % pages + 1) * 10);
+      const ids = this.planIds(plan).slice((index % pages) * 10, (index % pages + 1) * 10);
       const shuffle = values => {
         for (let i = values.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
@@ -261,7 +318,7 @@
     }
     syncTestLearning() {
       const plan = this.plan();
-      const ids = [...plan.review, ...plan.fresh];
+      const ids = this.planIds(plan);
       const summary = this.testSummary();
       const passedWords = summary.completed.flatMap(index => ids.slice((index % summary.pages) * 10, (index % summary.pages + 1) * 10));
       const learned = new Set([...(plan.test?.checkedIn ? [...(plan.test.checkedInWords || ids), ...passedWords] : passedWords), ...(plan.test?.active?.learned || [])]);

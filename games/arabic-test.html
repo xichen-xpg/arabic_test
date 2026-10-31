@@ -1324,8 +1324,8 @@
     const englishSourceKey = "daily-english";
     const englishScheduler = new EnglishLearning.Scheduler(window.dailyEnglishQuestionBank, localStorage);
     const arabicStorageKey = "arabic-test:arabic-learning:v1";
-    const arabicLearningBank = [...dailyArabicBank].reverse().concat([...allQuestions].reverse()).filter((word, index, bank) => bank.findIndex(item => item.ar === word.ar) === index)
-      .map(word => ({ ...word, id: `arabic:${word.ar}`, word: word.ar, phonetic: word.rom, source: dailyArabicSourceKey }));
+    const arabicLearningBank = [...dailyArabicBank].reverse().concat([...allQuestions].reverse()).filter((word, index, bank) => bank.findIndex(item => item.ar === word.ar && item.dialogueId === word.dialogueId) === index)
+      .map(word => ({ ...word, id: word.dialogueId ? `arabic:${word.dialogueId}:${word.dialogueOrder}` : `arabic:${word.ar}`, word: word.ar, phonetic: word.rom, source: dailyArabicSourceKey }));
     const arabicScheduler = new EnglishLearning.Scheduler(arabicLearningBank, localStorage, EnglishLearning.today,
       { storageKey: arabicStorageKey, languageName: "阿语", languageCode: "ar", reviewLimit: 10 });
     const dailyArabicRotationStartKey = "2026-09-03";

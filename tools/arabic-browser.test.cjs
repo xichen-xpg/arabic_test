@@ -41,19 +41,22 @@ const server = http.createServer((req, res) => {
     assert.match(await panel.locator(".english-progress").innerText(), /新词 0\/20 · 复习 0\/0/);
     assert.equal(await panel.locator(".english-input").getAttribute("dir"), "rtl");
     const selection = await page.evaluate(() => ({
-      expected: [...new Set([...dailyArabicBank].reverse().map(word => `arabic:${word.ar}`))].slice(0, 20),
+      expected: [...dailyArabicBank].filter(word => word.dialogueId).reduce((groups, word) => {
+        (groups[word.dialogueId] ||= []).push(word);
+        return groups;
+      }, {}),
       actual: arabicScheduler.plan().fresh,
       lastWord: dailyArabicBank[dailyArabicBank.length - 1].ar,
       firstWord: arabicLearningBank[0].ar
     }));
-    assert.deepEqual(selection.actual, selection.expected);
+    const expectedPairs = Object.values(selection.expected).reverse().slice(0, 10)
+      .flatMap(group => group.sort((a, b) => a.dialogueOrder - b.dialogueOrder).map(word => `arabic:${word.dialogueId}:${word.dialogueOrder}`));
+    assert.deepEqual(selection.actual, expectedPairs);
     assert.equal(selection.firstWord, selection.lastWord);
-    const added = await page.evaluate(() => dailyArabicBank.filter(word => word.exampleAr));
-    assert.equal(added.length, 13);
-    assert.equal(new Set(added.map(word => word.exampleAr)).size, 13);
-    assert.equal(new Set(added.map(word => word.exampleZh)).size, 13);
-    assert.ok(added.every(word => word.exampleAr && word.exampleZh));
-    assert.equal(await page.evaluate(() => arabicLearningBank.filter(word => word.exampleAr).length), 13);
+    const added = await page.evaluate(() => dailyArabicBank.filter(word => word.dialogueId));
+    assert.equal(added.length, 104);
+    assert.ok(added.every(word => word.ar && word.zh && word.rom && !word.zh.includes("甲：") && !word.zh.includes("乙：")));
+    assert.equal(await page.evaluate(() => arabicLearningBank.filter(word => word.dialogueId).length), 104);
     await page.evaluate(() => {
       const state = arabicScheduler.load();
       delete state.days[localDateKey()];

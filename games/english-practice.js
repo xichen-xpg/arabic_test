@@ -288,7 +288,10 @@
       } else if (this.replay) {
         if (this.replay.testIndex !== undefined && !this.wrong) this.scheduler.complete(this.current.id);
         this.replay.queue.shift();
-        if (this.wrong) this.replay.queue.push(this.current.id);
+        if (this.wrong) {
+          const group = this.scheduler.group(this.current.id).filter(id => id === this.current.id || this.replay.queue.includes(id));
+          this.replay.queue = this.replay.queue.filter(id => !group.includes(id)).concat(group);
+        }
         result = this.wrong ? "retry" : "replayed";
       } else {
         result = this.scheduler.complete(this.current.id, this.wrong);
