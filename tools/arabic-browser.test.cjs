@@ -91,6 +91,12 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.evaluate(() => arabicScheduler.plan().test.active.deadline - arabicScheduler.plan().test.active.startedAt), 25000);
     assert.match(await panel.locator(".english-test-title").innerText(), /阿语选中文/);
     assert.equal(await panel.locator("th").first().getAttribute("dir"), "rtl");
+    const testOrder = await page.evaluate(() => ({
+      study: arabicScheduler.questions().slice(0, 10).map(word => word.id),
+      test: arabicScheduler.plan().test.active.rows.map(row => row.id)
+    }));
+    assert.deepEqual([...testOrder.test].sort(), [...testOrder.study].sort());
+    assert.notDeepEqual(testOrder.test, testOrder.study);
     const optionRows = await panel.locator('tr').evaluateAll(rows => rows.map(row => ({
       prompt: row.querySelector('th').textContent,
       options: [...row.querySelectorAll('button')].map(button => button.textContent)

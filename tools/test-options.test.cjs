@@ -39,18 +39,38 @@ test('active saved tests upgrade their options without resetting answers or time
   scheduler.startTest(1000, 0);
   const state = scheduler.load();
   const active = state.days[scheduler.clock()].test.active;
+  const rowIndex = active.rows.findIndex(row => row.id === 'word-0');
   delete active.choiceVersion;
-  active.rows[0].options = ['word-0', 'word-8', 'word-9', 'word-10'];
-  active.answers[0] = 'word-0';
+  active.rows[rowIndex].options = ['word-0', 'word-8', 'word-9', 'word-10'];
+  active.answers[rowIndex] = 'word-0';
   scheduler.save(state);
   const upgraded = scheduler.plan().test.active;
   assert.equal(upgraded.choiceVersion, 1);
   assert.equal(upgraded.deadline, 26000);
-  assert.equal(upgraded.answers[0], 'word-0');
-  assert.ok(upgraded.rows[0].options.every(id => sentenceKind(scheduler.words.get(id).zh) === 'question'));
+  assert.equal(upgraded.answers[rowIndex], 'word-0');
+  assert.ok(upgraded.rows[rowIndex].options.every(id => sentenceKind(scheduler.words.get(id).zh) === 'question'));
   const saved = JSON.stringify(scheduler.load());
   scheduler.plan();
   assert.equal(JSON.stringify(scheduler.load()), saved);
+});
+
+test('test question order is shuffled within each page, stable on reload, and answers follow the shuffled rows', () => {
+  const scheduler = fixture();
+  const original = scheduler.questions().map(word => word.id);
+  const pages = scheduler.testSummary().pages;
+  for (let index = 0; index < pages * 2; index++) {
+    scheduler.startTest(1000, index);
+    const rows = scheduler.plan().test.active.rows;
+    const expected = original.slice(index % pages * 10, (index % pages + 1) * 10);
+    const actual = rows.map(row => row.id);
+    assert.deepEqual([...actual].sort(), [...expected].sort());
+    if (rows.length > 1) assert.notDeepEqual(actual, expected);
+    scheduler.startTest(2000, index);
+    assert.deepEqual(scheduler.plan().test.active.rows.map(row => row.id), actual);
+    rows.forEach((row, i) => assert.equal(scheduler.answerTest(i, row.id, 2001), i === rows.length - 1 ? 'passed' : 'correct'));
+  }
+  assert.equal(scheduler.testSummary().done, true);
+  assert.equal(scheduler.plan().completed.length, original.length);
 });
 
 test('displayed option endings follow the answer without changing stored material', () => {

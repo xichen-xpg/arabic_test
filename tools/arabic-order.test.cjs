@@ -124,7 +124,8 @@ test('dialogues stay together across review/new quotas, learning retries and bot
   const pages = scheduler.testSummary().pages;
   for (let page = 0; page < pages * 2; page++) {
     scheduler.startTest(1000, page);
-    assertPairs(scheduler, scheduler.plan().test.active.rows.map(row => row.id));
+    const expected = scheduler.questions().slice(page % pages * 10, (page % pages + 1) * 10).map(word => word.id);
+    assert.deepEqual(scheduler.plan().test.active.rows.map(row => row.id).sort(), expected.sort());
   }
 });
 

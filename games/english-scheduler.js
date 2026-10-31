@@ -406,8 +406,14 @@
       const pages = Math.ceil(summary.total / 10);
       const reverse = index >= pages;
       const ids = this.planIds(plan).slice((index % pages) * 10, (index % pages + 1) * 10);
+      const rows = this.testRows(ids, reverse);
+      for (let i = rows.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [rows[i], rows[j]] = [rows[j], rows[i]];
+      }
+      if (rows.length > 1 && rows.every((row, i) => row.id === ids[i])) rows.push(rows.shift());
       test.active = { index, startedAt: now, deadline: now + 25000, answers: {}, failed: false,
-        choiceVersion: 1, rows: this.testRows(ids, reverse) };
+        choiceVersion: 1, rows };
       plan.test = test;
       this.save(state);
     }
