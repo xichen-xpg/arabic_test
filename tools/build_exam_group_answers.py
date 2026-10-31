@@ -67,12 +67,12 @@ def build():
             path=f'answers/{q["id"]}.html'
             if q['subject']=='english' and not re.search('答案|解析|分析|考点|解答',''.join(s.text_content() for s in content.findall('section'))):
                 note=html.Element('p')
-                note.text='本地原文件未附这组题的答案与解析。以下仅保留对应的单项填空题目。'
+                note.text=f'本地原文件未附这组题的答案与解析。以下仅保留对应的{q["topic"]}题目。'
                 content.insert(1,note)
             (root/path).write_text('<!doctype html>\n'+html.tostring(output,encoding='unicode'),encoding='utf-8')
             q['answer']=path
     if problems:raise ValueError('Ambiguous solution boundaries: '+json.dumps(problems,ensure_ascii=False))
-    bank['version']='all-exams-20261028-answer-boundaries'
+    bank['version']='all-exams-20261031-single-reading'
     (root/'bank.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f'Created {len(bank["questions"])} matching question-group solution pages',flush=True)
 

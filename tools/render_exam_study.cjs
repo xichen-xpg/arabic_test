@@ -10,6 +10,7 @@ const root=path.resolve(__dirname,'../data/exam-study');
   try {
     let count=0;
     for(const q of Object.values(bank.questions)){
+      if(process.argv.includes('--missing') && q.pages?.every(p=>fs.existsSync(path.join(root,p.src))))continue;
       await page.setViewportSize({width:1000,height:900});
       await page.goto(pathToFileURL(path.join(root,q.question)).href);
       await page.evaluate(async()=>{

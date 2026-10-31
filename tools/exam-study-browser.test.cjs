@@ -52,7 +52,9 @@ const server=http.createServer((req,res)=>{
     await page.evaluate(n=>{localStorage.setItem(StudySession.key,JSON.stringify({[StudySession.today()]:{day:n,date:StudySession.today(),startedAt:Date.now(),deadline:Date.now()+3600000,completed:{},interruptions:0}}))},last.day);
     await page.reload();await page.waitForSelector('#tasks .subject');assert.equal(await page.locator('#tasks .subject').count(),last.tasks.length);
     await page.check('#checks input');await page.click('#completion button');assert.match(await page.locator('#result').textContent(),/已完成/);
-    for(const n of [...new Set([1,12,24,bank.days.length])]){
+    const clozeDays=bank.days.filter(d=>d.tasks.some(t=>bank.questions[t.id].topic==='完形填空')).map(d=>d.day);
+    assert.equal(clozeDays.length,12);
+    for(const n of [...new Set([1,12,24,bank.days.length,...clozeDays])]){
       const result=await page.evaluate(async n=>{
         const b=await(await fetch('../data/exam-study/bank.json')).json(),d=b.days[n-1];
         const images=await StudyPpt.prepare(b,d),ppt=StudyPpt.create(b,d,`第${n}天`,images);

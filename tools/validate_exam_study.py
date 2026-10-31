@@ -29,6 +29,20 @@ for subject in bank['subjects']:
     assert actual==[q['id'] for q in items]
     assert len(actual)==subject['count']
 assert len(bank['days'])==max(s['count'] for s in bank['subjects'])
+cloze=[q for q in bank['questions'].values() if q['topic']=='完形填空']
+assert {q['paper'] for q in cloze}=={s['id'] for s in bank['sources'] if s['subject']=='english'}
+assert len(cloze)==len({q['paper'] for q in cloze})
+for q in cloze:
+    assert q['subject']=='english' and len(q['ranges'])==1 and q['numbers'],q['source']
+    day=next(d for d in bank['days'] if any(t['id']==q['id'] for t in d['tasks']))
+    assert [t['id'] for t in day['tasks'] if bank['questions'][t['id']]['subject']=='english']==[q['id']]
+english_readings=[q for q in bank['readings'] if q['subject']=='english']
+assert len(english_readings)==63
+for source in [s for s in bank['sources'] if s['subject']=='english']:
+    readings=[q for q in english_readings if q['paper']==source['id']]
+    assert len(readings)==(6 if any(year in source['paper'] for year in ('2015','2016','2017')) else 5)
+    numbers=[n for q in readings for n in q['numbers']]
+    assert len(numbers)==len(set(numbers)),source['paper']
 assets=set()
 for q in list(bank['questions'].values())+bank['readings']:
     assert q['ranges'] and all(a<b for a,b in q['ranges'])
@@ -45,12 +59,15 @@ for q in list(bank['questions'].values())+bank['readings']:
         filename=q[kind].split('#')[0];path=root/filename
         doc=html.fromstring(path.read_text(encoding='utf-8'))
         if kind=='question':assert '【答案】' not in doc.text_content() and '【解析】' not in doc.text_content(),q['source']
+        if kind=='question' and q in english_readings:
+            letters=[p.text_content().strip() for p in doc.xpath('//article/p') if p.text_content().strip() in ('A','B','C','D')]
+            assert len(letters)<=1,q['source']
         if kind=='answer' and q['kind']=='ppt':
             assert filename==f'answers/{q["id"]}.html'
             assert [int(n) for n in doc.xpath('//section/@data-question')]==q['numbers'],q['source']
             if q['subject']=='english':
-                assert '完形填空' not in doc.text_content(),q['source']
-                if q['paper']=='7d2d946f4b37f01f':
+                if q['topic']!='完形填空':assert '完形填空' not in doc.text_content(),q['source']
+                if q['paper']=='7d2d946f4b37f01f' and q['topic']=='单项填空':
                     assert 'The Phone Call' not in doc.text_content()
                     assert q['numbers']==list(range(21,31))
                     assert '未附这组题的答案与解析' in doc.text_content()

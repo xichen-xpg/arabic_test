@@ -77,6 +77,34 @@ def question_spans(texts, start, end):
     return [(n,i,starts[k+1][0] if k+1<len(starts) else end)
             for k,(i,n) in enumerate(starts)]
 
+def split_english_reading(record, group):
+    """Keep each passage and its own questions together, including matching tasks."""
+    _,texts=document(record)
+    start,end=group['ranges'][0]
+    # The 2020 Word source omits all four passage letters.
+    if record['sha256'].startswith('4b7e07c8f30fc68f') and start==52:
+        starts=[start,65,90,110]
+    else:
+        letters=[i for i in range(start,end) if re.fullmatch(r'\s*[A-D]\s*',texts[i])]
+        starts=[start]+[i for i in letters if texts[i].strip()!='A'] if letters else [start]
+    # The 2018 source has no numbered heading before its final reading expression.
+    starts+= [i for i in range(start+1,end) if re.match(r'^\s*阅读短文',texts[i])
+              and any(re.match(r'^\s*\d{1,2}\s*[.．、]',texts[j]) for j in range(start,i))]
+    starts=sorted(set(starts))
+    parts=[]
+    for k,a in enumerate(starts):
+        b=starts[k+1] if k+1<len(starts) else end
+        b=next((i for i in range(a,b) if texts[i].strip()=='第二部分'),b)
+        # Keep the instructions for matching tasks with their table and questions.
+        while b>a and re.match(r'^\s*[（(]二[）)]',texts[b-1]):b-=1
+        numbers=[]
+        for i in range(a,b):
+            match=re.match(r'^\s*(\d{1,2})(?:\s*[.．、]|\s+(?=[A-Za-z]))',texts[i])
+            if match:numbers.append(int(match[1]))
+            else:numbers.extend(int(n) for n in re.findall(r'_{2,}(\d{1,2})_{2,}',texts[i]))
+        parts.append(dict(kind='reading',label=group['label'],ranges=[[a,b]],numbers=list(dict.fromkeys(numbers))))
+    return parts
+
 def select(record):
     sid=SUBJECTS[record['subject'].split('-')[-1]]
     body,texts=document(record)
@@ -95,6 +123,7 @@ def select(record):
         qs=question_spans(texts,start,end)
         if sid=='english':
             if name in ('单项填空','单项选择'):add('ppt','单项填空',[(start,end)],[n for n,a,b in qs])
+            elif name=='完形填空':add('ppt','完形填空',[(start,end)],[n for n,a,b in qs])
             elif name.startswith('阅读') and (qs or end-start>4):add('reading',name,[(start,end)],[n for n,a,b in qs])
         elif sid=='chinese':
             if name.startswith(('基础','古诗文')):

@@ -1,5 +1,5 @@
 {
-  "version": "all-exams-20261028-answer-boundaries",
+  "version": "all-exams-20261031-single-reading",
   "minutes": 60,
   "subjects": [
     {
@@ -15,7 +15,7 @@
     {
       "id": "english",
       "name": "英语",
-      "count": 12
+      "count": 24
     },
     {
       "id": "physics",
@@ -5004,6 +5004,41 @@
         }
       ]
     },
+    "english-7d2d946f4b37f01f-cloze": {
+      "id": "english-7d2d946f4b37f01f-cloze",
+      "subject": "english",
+      "topic": "完形填空",
+      "source": "2015年北京市中考英语试题 · 完形填空 第31、32、33、34、35、36、37、38、39、40题",
+      "paper": "7d2d946f4b37f01f",
+      "numbers": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "ranges": [
+        [
+          89,
+          109
+        ]
+      ],
+      "question": "questions/english-7d2d946f4b37f01f-cloze.html",
+      "answer": "answers/english-7d2d946f4b37f01f-cloze.html",
+      "kind": "ppt",
+      "pages": [
+        {
+          "src": "pages/english-7d2d946f4b37f01f-cloze.png",
+          "width": 2000,
+          "height": 903
+        }
+      ]
+    },
     "english-abddbd850bc5fe7e-01": {
       "id": "english-abddbd850bc5fe7e-01",
       "subject": "english",
@@ -5039,6 +5074,41 @@
         }
       ]
     },
+    "english-abddbd850bc5fe7e-cloze": {
+      "id": "english-abddbd850bc5fe7e-cloze",
+      "subject": "english",
+      "topic": "完形填空",
+      "source": "2016年北京市中考英语试题 · 完形填空 第31、32、33、34、35、36、37、38、39、40题",
+      "paper": "abddbd850bc5fe7e",
+      "numbers": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "ranges": [
+        [
+          46,
+          74
+        ]
+      ],
+      "question": "questions/english-abddbd850bc5fe7e-cloze.html",
+      "answer": "answers/english-abddbd850bc5fe7e-cloze.html",
+      "kind": "ppt",
+      "pages": [
+        {
+          "src": "pages/english-abddbd850bc5fe7e-cloze.png",
+          "width": 2000,
+          "height": 863
+        }
+      ]
+    },
     "english-7e396023fd8e57cf-01": {
       "id": "english-7e396023fd8e57cf-01",
       "subject": "english",
@@ -5071,6 +5141,41 @@
           "src": "pages/english-7e396023fd8e57cf-01.png",
           "width": 1000,
           "height": 1073
+        }
+      ]
+    },
+    "english-7e396023fd8e57cf-cloze": {
+      "id": "english-7e396023fd8e57cf-cloze",
+      "subject": "english",
+      "topic": "完形填空",
+      "source": "2017年北京市中考英语试题 · 完形填空 第11、12、13、14、15、16、17、18、19、20题",
+      "paper": "7e396023fd8e57cf",
+      "numbers": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "ranges": [
+        [
+          85,
+          128
+        ]
+      ],
+      "question": "questions/english-7e396023fd8e57cf-cloze.html",
+      "answer": "answers/english-7e396023fd8e57cf-cloze.html",
+      "kind": "ppt",
+      "pages": [
+        {
+          "src": "pages/english-7e396023fd8e57cf-cloze.png",
+          "width": 2000,
+          "height": 1178
         }
       ]
     },
@@ -5111,6 +5216,39 @@
         }
       ]
     },
+    "english-5605142d417617f0-cloze": {
+      "id": "english-5605142d417617f0-cloze",
+      "subject": "english",
+      "topic": "完形填空",
+      "source": "2018年北京市中考英语试题 · 完形填空 第13、14、15、16、17、18、19、20题",
+      "paper": "5605142d417617f0",
+      "numbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "ranges": [
+        [
+          35,
+          54
+        ]
+      ],
+      "question": "questions/english-5605142d417617f0-cloze.html",
+      "answer": "answers/english-5605142d417617f0-cloze.html",
+      "kind": "ppt",
+      "pages": [
+        {
+          "src": "pages/english-5605142d417617f0-cloze.png",
+          "width": 1000,
+          "height": 1507
+        }
+      ]
+    },
     "english-1bf4da774ba7f09b-01": {
       "id": "english-1bf4da774ba7f09b-01",
       "subject": "english",
@@ -5145,6 +5283,39 @@
           "src": "pages/english-1bf4da774ba7f09b-01.png",
           "width": 1000,
           "height": 1219
+        }
+      ]
+    },
+    "english-1bf4da774ba7f09b-cloze": {
+      "id": "english-1bf4da774ba7f09b-cloze",
+      "subject": "english",
+      "topic": "完形填空",
+      "source": "2019年北京市中考英语试题 · 完形填空 第13、14、15、16、17、18、19、20题",
+      "paper": "1bf4da774ba7f09b",
+      "numbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "ranges": [
+        [
+          36,
+          55
+        ]
+      ],
+      "question": "questions/english-1bf4da774ba7f09b-cloze.html",
+      "answer": "answers/english-1bf4da774ba7f09b-cloze.html",
+      "kind": "ppt",
+      "pages": [
+        {
+          "src": "pages/english-1bf4da774ba7f09b-cloze.png",
+          "width": 1000,
+          "height": 1496
         }
       ]
     },
@@ -5185,6 +5356,39 @@
         }
       ]
     },
+    "english-4b7e07c8f30fc68f-cloze": {
+      "id": "english-4b7e07c8f30fc68f-cloze",
+      "subject": "english",
+      "topic": "完形填空",
+      "source": "2020年北京市中考英语试题 · 完形填空 第13、14、15、16、17、18、19、20题",
+      "paper": "4b7e07c8f30fc68f",
+      "numbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "ranges": [
+        [
+          37,
+          52
+        ]
+      ],
+      "question": "questions/english-4b7e07c8f30fc68f-cloze.html",
+      "answer": "answers/english-4b7e07c8f30fc68f-cloze.html",
+      "kind": "ppt",
+      "pages": [
+        {
+          "src": "pages/english-4b7e07c8f30fc68f-cloze.png",
+          "width": 1000,
+          "height": 1369
+        }
+      ]
+    },
     "english-64e675732d62a0b8-01": {
       "id": "english-64e675732d62a0b8-01",
       "subject": "english",
@@ -5219,6 +5423,39 @@
           "src": "pages/english-64e675732d62a0b8-01.png",
           "width": 1000,
           "height": 1257
+        }
+      ]
+    },
+    "english-64e675732d62a0b8-cloze": {
+      "id": "english-64e675732d62a0b8-cloze",
+      "subject": "english",
+      "topic": "完形填空",
+      "source": "2021年北京市中考英语试题 · 完形填空 第13、14、15、16、17、18、19、20题",
+      "paper": "64e675732d62a0b8",
+      "numbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "ranges": [
+        [
+          38,
+          64
+        ]
+      ],
+      "question": "questions/english-64e675732d62a0b8-cloze.html",
+      "answer": "answers/english-64e675732d62a0b8-cloze.html",
+      "kind": "ppt",
+      "pages": [
+        {
+          "src": "pages/english-64e675732d62a0b8-cloze.png",
+          "width": 2000,
+          "height": 841
         }
       ]
     },
@@ -5259,6 +5496,39 @@
         }
       ]
     },
+    "english-cd2aa04fac9b27c1-cloze": {
+      "id": "english-cd2aa04fac9b27c1-cloze",
+      "subject": "english",
+      "topic": "完形填空",
+      "source": "2022年北京市中考英语真题 · 完形填空 第13、14、15、16、17、18、19、20题",
+      "paper": "cd2aa04fac9b27c1",
+      "numbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "ranges": [
+        [
+          35,
+          59
+        ]
+      ],
+      "question": "questions/english-cd2aa04fac9b27c1-cloze.html",
+      "answer": "answers/english-cd2aa04fac9b27c1-cloze.html",
+      "kind": "ppt",
+      "pages": [
+        {
+          "src": "pages/english-cd2aa04fac9b27c1-cloze.png",
+          "width": 1000,
+          "height": 1589
+        }
+      ]
+    },
     "english-c8f28991f1992a04-01": {
       "id": "english-c8f28991f1992a04-01",
       "subject": "english",
@@ -5293,6 +5563,39 @@
           "src": "pages/english-c8f28991f1992a04-01.png",
           "width": 1000,
           "height": 1219
+        }
+      ]
+    },
+    "english-c8f28991f1992a04-cloze": {
+      "id": "english-c8f28991f1992a04-cloze",
+      "subject": "english",
+      "topic": "完形填空",
+      "source": "2023年北京市中考英语真题 · 完形填空 第13、14、15、16、17、18、19、20题",
+      "paper": "c8f28991f1992a04",
+      "numbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "ranges": [
+        [
+          35,
+          60
+        ]
+      ],
+      "question": "questions/english-c8f28991f1992a04-cloze.html",
+      "answer": "answers/english-c8f28991f1992a04-cloze.html",
+      "kind": "ppt",
+      "pages": [
+        {
+          "src": "pages/english-c8f28991f1992a04-cloze.png",
+          "width": 1000,
+          "height": 1598
         }
       ]
     },
@@ -5333,6 +5636,39 @@
         }
       ]
     },
+    "english-5c87c9e9adfdc61a-cloze": {
+      "id": "english-5c87c9e9adfdc61a-cloze",
+      "subject": "english",
+      "topic": "完形填空",
+      "source": "2024年北京市中考英语真题 · 完形填空 第13、14、15、16、17、18、19、20题",
+      "paper": "5c87c9e9adfdc61a",
+      "numbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "ranges": [
+        [
+          41,
+          62
+        ]
+      ],
+      "question": "questions/english-5c87c9e9adfdc61a-cloze.html",
+      "answer": "answers/english-5c87c9e9adfdc61a-cloze.html",
+      "kind": "ppt",
+      "pages": [
+        {
+          "src": "pages/english-5c87c9e9adfdc61a-cloze.png",
+          "width": 1000,
+          "height": 1556
+        }
+      ]
+    },
     "english-89ccd9c82a747e07-01": {
       "id": "english-89ccd9c82a747e07-01",
       "subject": "english",
@@ -5370,6 +5706,39 @@
         }
       ]
     },
+    "english-89ccd9c82a747e07-cloze": {
+      "id": "english-89ccd9c82a747e07-cloze",
+      "subject": "english",
+      "topic": "完形填空",
+      "source": "2025年北京市中考英语真题 · 完形填空 第13、14、15、16、17、18、19、20题",
+      "paper": "89ccd9c82a747e07",
+      "numbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "ranges": [
+        [
+          40,
+          61
+        ]
+      ],
+      "question": "questions/english-89ccd9c82a747e07-cloze.html",
+      "answer": "answers/english-89ccd9c82a747e07-cloze.html",
+      "kind": "ppt",
+      "pages": [
+        {
+          "src": "pages/english-89ccd9c82a747e07-cloze.png",
+          "width": 2000,
+          "height": 908
+        }
+      ]
+    },
     "english-19def9f9ef7d2629-01": {
       "id": "english-19def9f9ef7d2629-01",
       "subject": "english",
@@ -5404,6 +5773,39 @@
           "src": "pages/english-19def9f9ef7d2629-01.png",
           "width": 1000,
           "height": 1211
+        }
+      ]
+    },
+    "english-19def9f9ef7d2629-cloze": {
+      "id": "english-19def9f9ef7d2629-cloze",
+      "subject": "english",
+      "topic": "完形填空",
+      "source": "2026年北京市中考英语试题 · 完形填空 第13、14、15、16、17、18、19、20题",
+      "paper": "19def9f9ef7d2629",
+      "numbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "ranges": [
+        [
+          34,
+          50
+        ]
+      ],
+      "question": "questions/english-19def9f9ef7d2629-cloze.html",
+      "answer": "answers/english-19def9f9ef7d2629-cloze.html",
+      "kind": "ppt",
+      "pages": [
+        {
+          "src": "pages/english-19def9f9ef7d2629-cloze.png",
+          "width": 1000,
+          "height": 1427
         }
       ]
     },
@@ -11617,7 +12019,7 @@
           "id": "math-648ed4292d3dbf78-02"
         },
         {
-          "id": "english-abddbd850bc5fe7e-01"
+          "id": "english-7d2d946f4b37f01f-cloze"
         },
         {
           "id": "physics-0a7e660fe0460d89-02"
@@ -11640,7 +12042,7 @@
           "id": "math-648ed4292d3dbf78-03"
         },
         {
-          "id": "english-7e396023fd8e57cf-01"
+          "id": "english-abddbd850bc5fe7e-01"
         },
         {
           "id": "physics-0a7e660fe0460d89-03"
@@ -11663,7 +12065,7 @@
           "id": "math-648ed4292d3dbf78-04"
         },
         {
-          "id": "english-5605142d417617f0-01"
+          "id": "english-abddbd850bc5fe7e-cloze"
         },
         {
           "id": "physics-0a7e660fe0460d89-04"
@@ -11686,7 +12088,7 @@
           "id": "math-648ed4292d3dbf78-05"
         },
         {
-          "id": "english-1bf4da774ba7f09b-01"
+          "id": "english-7e396023fd8e57cf-01"
         },
         {
           "id": "physics-eddf9a5a47f0cf3e-01"
@@ -11709,7 +12111,7 @@
           "id": "math-648ed4292d3dbf78-06"
         },
         {
-          "id": "english-4b7e07c8f30fc68f-01"
+          "id": "english-7e396023fd8e57cf-cloze"
         },
         {
           "id": "physics-eddf9a5a47f0cf3e-02"
@@ -11732,7 +12134,7 @@
           "id": "math-648ed4292d3dbf78-07"
         },
         {
-          "id": "english-64e675732d62a0b8-01"
+          "id": "english-5605142d417617f0-01"
         },
         {
           "id": "physics-eddf9a5a47f0cf3e-03"
@@ -11755,7 +12157,7 @@
           "id": "math-648ed4292d3dbf78-08"
         },
         {
-          "id": "english-cd2aa04fac9b27c1-01"
+          "id": "english-5605142d417617f0-cloze"
         },
         {
           "id": "physics-eddf9a5a47f0cf3e-04"
@@ -11778,7 +12180,7 @@
           "id": "math-648ed4292d3dbf78-09"
         },
         {
-          "id": "english-c8f28991f1992a04-01"
+          "id": "english-1bf4da774ba7f09b-01"
         },
         {
           "id": "physics-93f311377e6e4b7a-01"
@@ -11801,7 +12203,7 @@
           "id": "math-648ed4292d3dbf78-10"
         },
         {
-          "id": "english-5c87c9e9adfdc61a-01"
+          "id": "english-1bf4da774ba7f09b-cloze"
         },
         {
           "id": "physics-93f311377e6e4b7a-02"
@@ -11824,7 +12226,7 @@
           "id": "math-648ed4292d3dbf78-11"
         },
         {
-          "id": "english-89ccd9c82a747e07-01"
+          "id": "english-4b7e07c8f30fc68f-01"
         },
         {
           "id": "physics-93f311377e6e4b7a-03"
@@ -11847,7 +12249,7 @@
           "id": "math-648ed4292d3dbf78-12"
         },
         {
-          "id": "english-19def9f9ef7d2629-01"
+          "id": "english-4b7e07c8f30fc68f-cloze"
         },
         {
           "id": "physics-93f311377e6e4b7a-04"
@@ -11870,6 +12272,9 @@
           "id": "math-648ed4292d3dbf78-13"
         },
         {
+          "id": "english-64e675732d62a0b8-01"
+        },
+        {
           "id": "physics-93f311377e6e4b7a-05"
         },
         {
@@ -11888,6 +12293,9 @@
       "tasks": [
         {
           "id": "math-648ed4292d3dbf78-14"
+        },
+        {
+          "id": "english-64e675732d62a0b8-cloze"
         },
         {
           "id": "physics-93f311377e6e4b7a-06"
@@ -11910,6 +12318,9 @@
           "id": "math-648ed4292d3dbf78-15"
         },
         {
+          "id": "english-cd2aa04fac9b27c1-01"
+        },
+        {
           "id": "physics-b5393b0b9bfa1276-01"
         },
         {
@@ -11928,6 +12339,9 @@
       "tasks": [
         {
           "id": "math-5eafd41a2e8e16fe-01"
+        },
+        {
+          "id": "english-cd2aa04fac9b27c1-cloze"
         },
         {
           "id": "physics-b5393b0b9bfa1276-02"
@@ -11950,6 +12364,9 @@
           "id": "math-5eafd41a2e8e16fe-02"
         },
         {
+          "id": "english-c8f28991f1992a04-01"
+        },
+        {
           "id": "physics-b5393b0b9bfa1276-03"
         },
         {
@@ -11968,6 +12385,9 @@
       "tasks": [
         {
           "id": "math-5eafd41a2e8e16fe-03"
+        },
+        {
+          "id": "english-c8f28991f1992a04-cloze"
         },
         {
           "id": "physics-b5393b0b9bfa1276-04"
@@ -11990,6 +12410,9 @@
           "id": "math-5eafd41a2e8e16fe-04"
         },
         {
+          "id": "english-5c87c9e9adfdc61a-01"
+        },
+        {
           "id": "physics-b5393b0b9bfa1276-05"
         },
         {
@@ -12008,6 +12431,9 @@
       "tasks": [
         {
           "id": "math-5eafd41a2e8e16fe-05"
+        },
+        {
+          "id": "english-5c87c9e9adfdc61a-cloze"
         },
         {
           "id": "physics-a4c968c6d4a95412-01"
@@ -12030,6 +12456,9 @@
           "id": "math-5eafd41a2e8e16fe-06"
         },
         {
+          "id": "english-89ccd9c82a747e07-01"
+        },
+        {
           "id": "physics-a4c968c6d4a95412-02"
         },
         {
@@ -12048,6 +12477,9 @@
       "tasks": [
         {
           "id": "math-5eafd41a2e8e16fe-07"
+        },
+        {
+          "id": "english-89ccd9c82a747e07-cloze"
         },
         {
           "id": "physics-a4c968c6d4a95412-03"
@@ -12070,6 +12502,9 @@
           "id": "math-5eafd41a2e8e16fe-08"
         },
         {
+          "id": "english-19def9f9ef7d2629-01"
+        },
+        {
           "id": "physics-a4c968c6d4a95412-04"
         },
         {
@@ -12088,6 +12523,9 @@
       "tasks": [
         {
           "id": "math-5eafd41a2e8e16fe-09"
+        },
+        {
+          "id": "english-19def9f9ef7d2629-cloze"
         },
         {
           "id": "physics-666562e115f886e6-01"
@@ -14584,39 +15022,31 @@
       ],
       "question": "questions/chinese-5c1aca4e4792dfe5-03.html",
       "answer": "answers/5c1aca4e4792dfe5.html#q10",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-5c1aca4e4792dfe5-03"
     },
     {
-      "id": "english-7d2d946f4b37f01f-02",
+      "id": "english-7d2d946f4b37f01f-02-passage-1",
       "subject": "english",
       "topic": "阅读下列",
-      "source": "2015年北京市中考英语试题 · 阅读下列 第41、42、43、44、45、46、47、48、49、50、51、53、54、55题",
+      "source": "2015年北京市中考英语试题 · 阅读下列 第1篇 第41、42、43、44题",
       "paper": "7d2d946f4b37f01f",
       "numbers": [
         41,
         42,
         43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51,
-        53,
-        54,
-        55
+        44
       ],
       "ranges": [
         [
           110,
-          189
+          123
         ]
       ],
-      "question": "questions/english-7d2d946f4b37f01f-02.html",
+      "question": "questions/english-7d2d946f4b37f01f-02-passage-1.html",
       "answer": "answers/7d2d946f4b37f01f.html#q41",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "english-7d2d946f4b37f01f-02"
     },
     {
       "id": "physics-0a7e660fe0460d89-05",
@@ -14635,7 +15065,8 @@
       ],
       "question": "questions/physics-0a7e660fe0460d89-05.html",
       "answer": "answers/0a7e660fe0460d89.html#q41",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "physics-0a7e660fe0460d89-05"
     },
     {
       "id": "chemistry-04614786fa007a2c-05",
@@ -14654,7 +15085,8 @@
       ],
       "question": "questions/chemistry-04614786fa007a2c-05.html",
       "answer": "answers/04614786fa007a2c.html#q29",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chemistry-04614786fa007a2c-05"
     },
     {
       "id": "biology-a0a1bddd2b24cfeb-09",
@@ -14673,7 +15105,8 @@
       ],
       "question": "questions/biology-a0a1bddd2b24cfeb-09.html",
       "answer": "answers/a0a1bddd2b24cfeb.html#q45",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "biology-a0a1bddd2b24cfeb-09"
     },
     {
       "id": "chinese-5c1aca4e4792dfe5-04",
@@ -14693,24 +15126,31 @@
       ],
       "question": "questions/chinese-5c1aca4e4792dfe5-04.html",
       "answer": "answers/5c1aca4e4792dfe5.html#q11",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-5c1aca4e4792dfe5-04"
     },
     {
-      "id": "english-7d2d946f4b37f01f-03",
+      "id": "english-7d2d946f4b37f01f-02-passage-2",
       "subject": "english",
-      "topic": "阅读短文",
-      "source": "2015年北京市中考英语试题 · 阅读短文",
+      "topic": "阅读下列",
+      "source": "2015年北京市中考英语试题 · 阅读下列 第2篇 第45、46、47、48题",
       "paper": "7d2d946f4b37f01f",
-      "numbers": [],
+      "numbers": [
+        45,
+        46,
+        47,
+        48
+      ],
       "ranges": [
         [
-          189,
-          213
+          123,
+          144
         ]
       ],
-      "question": "questions/english-7d2d946f4b37f01f-03.html",
-      "answer": "answers/7d2d946f4b37f01f.html",
-      "kind": "reading"
+      "question": "questions/english-7d2d946f4b37f01f-02-passage-2.html",
+      "answer": "answers/7d2d946f4b37f01f.html#q45",
+      "kind": "reading",
+      "parentId": "english-7d2d946f4b37f01f-02"
     },
     {
       "id": "physics-eddf9a5a47f0cf3e-05",
@@ -14729,7 +15169,8 @@
       ],
       "question": "questions/physics-eddf9a5a47f0cf3e-05.html",
       "answer": "answers/eddf9a5a47f0cf3e.html#q39",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "physics-eddf9a5a47f0cf3e-05"
     },
     {
       "id": "chemistry-9c29817bc38f766b-05",
@@ -14748,7 +15189,8 @@
       ],
       "question": "questions/chemistry-9c29817bc38f766b-05.html",
       "answer": "answers/9c29817bc38f766b.html#q30",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chemistry-9c29817bc38f766b-05"
     },
     {
       "id": "biology-4bd29b726dd2cc0f-04",
@@ -14767,7 +15209,8 @@
       ],
       "question": "questions/biology-4bd29b726dd2cc0f-04.html",
       "answer": "answers/4bd29b726dd2cc0f.html#q20",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "biology-4bd29b726dd2cc0f-04"
     },
     {
       "id": "chinese-5c1aca4e4792dfe5-05",
@@ -14788,7 +15231,314 @@
       ],
       "question": "questions/chinese-5c1aca4e4792dfe5-05.html",
       "answer": "answers/5c1aca4e4792dfe5.html#q13",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-5c1aca4e4792dfe5-05"
+    },
+    {
+      "id": "english-7d2d946f4b37f01f-02-passage-3",
+      "subject": "english",
+      "topic": "阅读下列",
+      "source": "2015年北京市中考英语试题 · 阅读下列 第3篇 第49、50、51题",
+      "paper": "7d2d946f4b37f01f",
+      "numbers": [
+        49,
+        50,
+        51
+      ],
+      "ranges": [
+        [
+          144,
+          167
+        ]
+      ],
+      "question": "questions/english-7d2d946f4b37f01f-02-passage-3.html",
+      "answer": "answers/7d2d946f4b37f01f.html#q49",
+      "kind": "reading",
+      "parentId": "english-7d2d946f4b37f01f-02"
+    },
+    {
+      "id": "physics-eddf9a5a47f0cf3e-06",
+      "subject": "physics",
+      "topic": "科普阅读",
+      "source": "2016年北京市中考物理试题 · 科普阅读 第40题",
+      "paper": "eddf9a5a47f0cf3e",
+      "numbers": [
+        40
+      ],
+      "ranges": [
+        [
+          161,
+          189
+        ]
+      ],
+      "question": "questions/physics-eddf9a5a47f0cf3e-06.html",
+      "answer": "answers/eddf9a5a47f0cf3e.html#q40",
+      "kind": "reading",
+      "parentId": "physics-eddf9a5a47f0cf3e-06"
+    },
+    {
+      "id": "chemistry-d3505408337a8782-05",
+      "subject": "chemistry",
+      "topic": "科普阅读",
+      "source": "2017年北京市中考化学真题 · 科普阅读 第28题",
+      "paper": "d3505408337a8782",
+      "numbers": [
+        28
+      ],
+      "ranges": [
+        [
+          102,
+          125
+        ]
+      ],
+      "question": "questions/chemistry-d3505408337a8782-05.html",
+      "answer": "answers/d3505408337a8782.html#q28",
+      "kind": "reading",
+      "parentId": "chemistry-d3505408337a8782-05"
+    },
+    {
+      "id": "biology-f0f7ef58dbe9f125-04",
+      "subject": "biology",
+      "topic": "科普阅读",
+      "source": "2019年北京市中考生物试题 · 科普阅读 第20题",
+      "paper": "f0f7ef58dbe9f125",
+      "numbers": [
+        20
+      ],
+      "ranges": [
+        [
+          89,
+          99
+        ]
+      ],
+      "question": "questions/biology-f0f7ef58dbe9f125-04.html",
+      "answer": "answers/f0f7ef58dbe9f125.html#q20",
+      "kind": "reading",
+      "parentId": "biology-f0f7ef58dbe9f125-04"
+    },
+    {
+      "id": "chinese-9d90d101a0a2f6ed-03",
+      "subject": "chinese",
+      "topic": "文言文阅读",
+      "source": "2016年北京市中考语文试题 · 文言文阅读 第4题",
+      "paper": "9d90d101a0a2f6ed",
+      "numbers": [
+        4
+      ],
+      "ranges": [
+        [
+          33,
+          53
+        ]
+      ],
+      "question": "questions/chinese-9d90d101a0a2f6ed-03.html",
+      "answer": "answers/9d90d101a0a2f6ed.html#q4",
+      "kind": "reading",
+      "parentId": "chinese-9d90d101a0a2f6ed-03"
+    },
+    {
+      "id": "english-7d2d946f4b37f01f-02-passage-4",
+      "subject": "english",
+      "topic": "阅读下列",
+      "source": "2015年北京市中考英语试题 · 阅读下列 第4篇 第53、54、55题",
+      "paper": "7d2d946f4b37f01f",
+      "numbers": [
+        53,
+        54,
+        55
+      ],
+      "ranges": [
+        [
+          167,
+          189
+        ]
+      ],
+      "question": "questions/english-7d2d946f4b37f01f-02-passage-4.html",
+      "answer": "answers/7d2d946f4b37f01f.html#q53",
+      "kind": "reading",
+      "parentId": "english-7d2d946f4b37f01f-02"
+    },
+    {
+      "id": "physics-93f311377e6e4b7a-07",
+      "subject": "physics",
+      "topic": "科普阅读",
+      "source": "2017年北京市中考物理试题 · 科普阅读 第43题",
+      "paper": "93f311377e6e4b7a",
+      "numbers": [
+        43
+      ],
+      "ranges": [
+        [
+          177,
+          201
+        ]
+      ],
+      "question": "questions/physics-93f311377e6e4b7a-07.html",
+      "answer": "answers/93f311377e6e4b7a.html#q43",
+      "kind": "reading",
+      "parentId": "physics-93f311377e6e4b7a-07"
+    },
+    {
+      "id": "chemistry-b66d0780d42ebd3f-04",
+      "subject": "chemistry",
+      "topic": "科普阅读",
+      "source": "2018年北京市中考化学真题 · 科普阅读 第16题",
+      "paper": "b66d0780d42ebd3f",
+      "numbers": [
+        16
+      ],
+      "ranges": [
+        [
+          53,
+          70
+        ]
+      ],
+      "question": "questions/chemistry-b66d0780d42ebd3f-04.html",
+      "answer": "answers/b66d0780d42ebd3f.html#q16",
+      "kind": "reading",
+      "parentId": "chemistry-b66d0780d42ebd3f-04"
+    },
+    {
+      "id": "biology-565336982576bdfb-04",
+      "subject": "biology",
+      "topic": "科普阅读",
+      "source": "2020年北京市中考生物试题 · 科普阅读 第20题",
+      "paper": "565336982576bdfb",
+      "numbers": [
+        20
+      ],
+      "ranges": [
+        [
+          103,
+          119
+        ]
+      ],
+      "question": "questions/biology-565336982576bdfb-04.html",
+      "answer": "answers/565336982576bdfb.html#q20",
+      "kind": "reading",
+      "parentId": "biology-565336982576bdfb-04"
+    },
+    {
+      "id": "chinese-9d90d101a0a2f6ed-04",
+      "subject": "chinese",
+      "topic": "名著阅读",
+      "source": "2016年北京市中考语文试题 · 名著阅读 第5、6、7题",
+      "paper": "9d90d101a0a2f6ed",
+      "numbers": [
+        5,
+        6,
+        7
+      ],
+      "ranges": [
+        [
+          53,
+          71
+        ]
+      ],
+      "question": "questions/chinese-9d90d101a0a2f6ed-04.html",
+      "answer": "answers/9d90d101a0a2f6ed.html#q5",
+      "kind": "reading",
+      "parentId": "chinese-9d90d101a0a2f6ed-04"
+    },
+    {
+      "id": "english-7d2d946f4b37f01f-03",
+      "subject": "english",
+      "topic": "阅读短文",
+      "source": "2015年北京市中考英语试题 · 阅读短文",
+      "paper": "7d2d946f4b37f01f",
+      "numbers": [],
+      "ranges": [
+        [
+          189,
+          213
+        ]
+      ],
+      "question": "questions/english-7d2d946f4b37f01f-03.html",
+      "answer": "answers/7d2d946f4b37f01f.html",
+      "kind": "reading",
+      "parentId": "english-7d2d946f4b37f01f-03"
+    },
+    {
+      "id": "physics-b5393b0b9bfa1276-06",
+      "subject": "physics",
+      "topic": "科普阅读",
+      "source": "2018年北京市中考物理试题 · 科普阅读 第32题",
+      "paper": "b5393b0b9bfa1276",
+      "numbers": [
+        32
+      ],
+      "ranges": [
+        [
+          154,
+          169
+        ]
+      ],
+      "question": "questions/physics-b5393b0b9bfa1276-06.html",
+      "answer": "answers/b5393b0b9bfa1276.html#q32",
+      "kind": "reading",
+      "parentId": "physics-b5393b0b9bfa1276-06"
+    },
+    {
+      "id": "chemistry-9902ec2a782b3be2-04",
+      "subject": "chemistry",
+      "topic": "科普阅读",
+      "source": "2019年北京市中考化学真题 · 科普阅读 第16题",
+      "paper": "9902ec2a782b3be2",
+      "numbers": [
+        16
+      ],
+      "ranges": [
+        [
+          56,
+          77
+        ]
+      ],
+      "question": "questions/chemistry-9902ec2a782b3be2-04.html",
+      "answer": "answers/9902ec2a782b3be2.html#q16",
+      "kind": "reading",
+      "parentId": "chemistry-9902ec2a782b3be2-04"
+    },
+    {
+      "id": "biology-c445f84e3117b258-06",
+      "subject": "biology",
+      "topic": "科普阅读",
+      "source": "2021年北京市中考生物试题 · 科普阅读 第32题",
+      "paper": "c445f84e3117b258",
+      "numbers": [
+        32
+      ],
+      "ranges": [
+        [
+          145,
+          160
+        ]
+      ],
+      "question": "questions/biology-c445f84e3117b258-06.html",
+      "answer": "answers/c445f84e3117b258.html#q32",
+      "kind": "reading",
+      "parentId": "biology-c445f84e3117b258-06"
+    },
+    {
+      "id": "chinese-9d90d101a0a2f6ed-05",
+      "subject": "chinese",
+      "topic": "现代文阅读",
+      "source": "2016年北京市中考语文试题 · 现代文阅读 第8、9、10题",
+      "paper": "9d90d101a0a2f6ed",
+      "numbers": [
+        8,
+        9,
+        10
+      ],
+      "ranges": [
+        [
+          71,
+          131
+        ]
+      ],
+      "question": "questions/chinese-9d90d101a0a2f6ed-05.html",
+      "answer": "answers/9d90d101a0a2f6ed.html#q8",
+      "kind": "reading",
+      "parentId": "chinese-9d90d101a0a2f6ed-05"
     },
     {
       "id": "english-7d2d946f4b37f01f-04",
@@ -14811,315 +15561,8 @@
       ],
       "question": "questions/english-7d2d946f4b37f01f-04.html",
       "answer": "answers/7d2d946f4b37f01f.html#q61",
-      "kind": "reading"
-    },
-    {
-      "id": "physics-eddf9a5a47f0cf3e-06",
-      "subject": "physics",
-      "topic": "科普阅读",
-      "source": "2016年北京市中考物理试题 · 科普阅读 第40题",
-      "paper": "eddf9a5a47f0cf3e",
-      "numbers": [
-        40
-      ],
-      "ranges": [
-        [
-          161,
-          189
-        ]
-      ],
-      "question": "questions/physics-eddf9a5a47f0cf3e-06.html",
-      "answer": "answers/eddf9a5a47f0cf3e.html#q40",
-      "kind": "reading"
-    },
-    {
-      "id": "chemistry-d3505408337a8782-05",
-      "subject": "chemistry",
-      "topic": "科普阅读",
-      "source": "2017年北京市中考化学真题 · 科普阅读 第28题",
-      "paper": "d3505408337a8782",
-      "numbers": [
-        28
-      ],
-      "ranges": [
-        [
-          102,
-          125
-        ]
-      ],
-      "question": "questions/chemistry-d3505408337a8782-05.html",
-      "answer": "answers/d3505408337a8782.html#q28",
-      "kind": "reading"
-    },
-    {
-      "id": "biology-f0f7ef58dbe9f125-04",
-      "subject": "biology",
-      "topic": "科普阅读",
-      "source": "2019年北京市中考生物试题 · 科普阅读 第20题",
-      "paper": "f0f7ef58dbe9f125",
-      "numbers": [
-        20
-      ],
-      "ranges": [
-        [
-          89,
-          99
-        ]
-      ],
-      "question": "questions/biology-f0f7ef58dbe9f125-04.html",
-      "answer": "answers/f0f7ef58dbe9f125.html#q20",
-      "kind": "reading"
-    },
-    {
-      "id": "chinese-9d90d101a0a2f6ed-03",
-      "subject": "chinese",
-      "topic": "文言文阅读",
-      "source": "2016年北京市中考语文试题 · 文言文阅读 第4题",
-      "paper": "9d90d101a0a2f6ed",
-      "numbers": [
-        4
-      ],
-      "ranges": [
-        [
-          33,
-          53
-        ]
-      ],
-      "question": "questions/chinese-9d90d101a0a2f6ed-03.html",
-      "answer": "answers/9d90d101a0a2f6ed.html#q4",
-      "kind": "reading"
-    },
-    {
-      "id": "english-abddbd850bc5fe7e-02",
-      "subject": "english",
-      "topic": "阅读下列",
-      "source": "2016年北京市中考英语试题 · 阅读下列 第41、42、43、44、45、46、47、48、49、50、51、52、53、54、55题",
-      "paper": "abddbd850bc5fe7e",
-      "numbers": [
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51,
-        52,
-        53,
-        54,
-        55
-      ],
-      "ranges": [
-        [
-          75,
-          158
-        ]
-      ],
-      "question": "questions/english-abddbd850bc5fe7e-02.html",
-      "answer": "answers/abddbd850bc5fe7e.html#q41",
-      "kind": "reading"
-    },
-    {
-      "id": "physics-93f311377e6e4b7a-07",
-      "subject": "physics",
-      "topic": "科普阅读",
-      "source": "2017年北京市中考物理试题 · 科普阅读 第43题",
-      "paper": "93f311377e6e4b7a",
-      "numbers": [
-        43
-      ],
-      "ranges": [
-        [
-          177,
-          201
-        ]
-      ],
-      "question": "questions/physics-93f311377e6e4b7a-07.html",
-      "answer": "answers/93f311377e6e4b7a.html#q43",
-      "kind": "reading"
-    },
-    {
-      "id": "chemistry-b66d0780d42ebd3f-04",
-      "subject": "chemistry",
-      "topic": "科普阅读",
-      "source": "2018年北京市中考化学真题 · 科普阅读 第16题",
-      "paper": "b66d0780d42ebd3f",
-      "numbers": [
-        16
-      ],
-      "ranges": [
-        [
-          53,
-          70
-        ]
-      ],
-      "question": "questions/chemistry-b66d0780d42ebd3f-04.html",
-      "answer": "answers/b66d0780d42ebd3f.html#q16",
-      "kind": "reading"
-    },
-    {
-      "id": "biology-565336982576bdfb-04",
-      "subject": "biology",
-      "topic": "科普阅读",
-      "source": "2020年北京市中考生物试题 · 科普阅读 第20题",
-      "paper": "565336982576bdfb",
-      "numbers": [
-        20
-      ],
-      "ranges": [
-        [
-          103,
-          119
-        ]
-      ],
-      "question": "questions/biology-565336982576bdfb-04.html",
-      "answer": "answers/565336982576bdfb.html#q20",
-      "kind": "reading"
-    },
-    {
-      "id": "chinese-9d90d101a0a2f6ed-04",
-      "subject": "chinese",
-      "topic": "名著阅读",
-      "source": "2016年北京市中考语文试题 · 名著阅读 第5、6、7题",
-      "paper": "9d90d101a0a2f6ed",
-      "numbers": [
-        5,
-        6,
-        7
-      ],
-      "ranges": [
-        [
-          53,
-          71
-        ]
-      ],
-      "question": "questions/chinese-9d90d101a0a2f6ed-04.html",
-      "answer": "answers/9d90d101a0a2f6ed.html#q5",
-      "kind": "reading"
-    },
-    {
-      "id": "english-abddbd850bc5fe7e-03",
-      "subject": "english",
-      "topic": "阅读短文",
-      "source": "2016年北京市中考英语试题 · 阅读短文 第59、60题",
-      "paper": "abddbd850bc5fe7e",
-      "numbers": [
-        59,
-        60
-      ],
-      "ranges": [
-        [
-          158,
-          168
-        ]
-      ],
-      "question": "questions/english-abddbd850bc5fe7e-03.html",
-      "answer": "answers/abddbd850bc5fe7e.html#q59",
-      "kind": "reading"
-    },
-    {
-      "id": "physics-b5393b0b9bfa1276-06",
-      "subject": "physics",
-      "topic": "科普阅读",
-      "source": "2018年北京市中考物理试题 · 科普阅读 第32题",
-      "paper": "b5393b0b9bfa1276",
-      "numbers": [
-        32
-      ],
-      "ranges": [
-        [
-          154,
-          169
-        ]
-      ],
-      "question": "questions/physics-b5393b0b9bfa1276-06.html",
-      "answer": "answers/b5393b0b9bfa1276.html#q32",
-      "kind": "reading"
-    },
-    {
-      "id": "chemistry-9902ec2a782b3be2-04",
-      "subject": "chemistry",
-      "topic": "科普阅读",
-      "source": "2019年北京市中考化学真题 · 科普阅读 第16题",
-      "paper": "9902ec2a782b3be2",
-      "numbers": [
-        16
-      ],
-      "ranges": [
-        [
-          56,
-          77
-        ]
-      ],
-      "question": "questions/chemistry-9902ec2a782b3be2-04.html",
-      "answer": "answers/9902ec2a782b3be2.html#q16",
-      "kind": "reading"
-    },
-    {
-      "id": "biology-c445f84e3117b258-06",
-      "subject": "biology",
-      "topic": "科普阅读",
-      "source": "2021年北京市中考生物试题 · 科普阅读 第32题",
-      "paper": "c445f84e3117b258",
-      "numbers": [
-        32
-      ],
-      "ranges": [
-        [
-          145,
-          160
-        ]
-      ],
-      "question": "questions/biology-c445f84e3117b258-06.html",
-      "answer": "answers/c445f84e3117b258.html#q32",
-      "kind": "reading"
-    },
-    {
-      "id": "chinese-9d90d101a0a2f6ed-05",
-      "subject": "chinese",
-      "topic": "现代文阅读",
-      "source": "2016年北京市中考语文试题 · 现代文阅读 第8、9、10题",
-      "paper": "9d90d101a0a2f6ed",
-      "numbers": [
-        8,
-        9,
-        10
-      ],
-      "ranges": [
-        [
-          71,
-          131
-        ]
-      ],
-      "question": "questions/chinese-9d90d101a0a2f6ed-05.html",
-      "answer": "answers/9d90d101a0a2f6ed.html#q8",
-      "kind": "reading"
-    },
-    {
-      "id": "english-abddbd850bc5fe7e-04",
-      "subject": "english",
-      "topic": "阅读短文",
-      "source": "2016年北京市中考英语试题 · 阅读短文 第61、62、63、64、65题",
-      "paper": "abddbd850bc5fe7e",
-      "numbers": [
-        61,
-        62,
-        63,
-        64,
-        65
-      ],
-      "ranges": [
-        [
-          168,
-          182
-        ]
-      ],
-      "question": "questions/english-abddbd850bc5fe7e-04.html",
-      "answer": "answers/abddbd850bc5fe7e.html#q61",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "english-7d2d946f4b37f01f-04"
     },
     {
       "id": "physics-a4c968c6d4a95412-05",
@@ -15138,7 +15581,8 @@
       ],
       "question": "questions/physics-a4c968c6d4a95412-05.html",
       "answer": "answers/a4c968c6d4a95412.html#q33",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "physics-a4c968c6d4a95412-05"
     },
     {
       "id": "chemistry-aae4ad4c898fb339-04",
@@ -15157,7 +15601,8 @@
       ],
       "question": "questions/chemistry-aae4ad4c898fb339-04.html",
       "answer": "answers/aae4ad4c898fb339.html#q16",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chemistry-aae4ad4c898fb339-04"
     },
     {
       "id": "biology-ddfd36c4a0ae81ae-06",
@@ -15176,7 +15621,8 @@
       ],
       "question": "questions/biology-ddfd36c4a0ae81ae-06.html",
       "answer": "answers/ddfd36c4a0ae81ae.html#q32",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "biology-ddfd36c4a0ae81ae-06"
     },
     {
       "id": "chinese-e8fee4cd10e81d82-03",
@@ -15198,40 +15644,31 @@
       ],
       "question": "questions/chinese-e8fee4cd10e81d82-03.html",
       "answer": "answers/e8fee4cd10e81d82.html#q4",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-e8fee4cd10e81d82-03"
     },
     {
-      "id": "english-7e396023fd8e57cf-02",
+      "id": "english-abddbd850bc5fe7e-02-passage-1",
       "subject": "english",
       "topic": "阅读下列",
-      "source": "2017年北京市中考英语试题 · 阅读下列 第21、22、23、24、25、26、27、28、29、30、31、32、33、34、35题",
-      "paper": "7e396023fd8e57cf",
+      "source": "2016年北京市中考英语试题 · 阅读下列 第1篇 第41、42、43、44题",
+      "paper": "abddbd850bc5fe7e",
       "numbers": [
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
+        41,
+        42,
+        43,
+        44
       ],
       "ranges": [
         [
-          129,
-          217
+          75,
+          88
         ]
       ],
-      "question": "questions/english-7e396023fd8e57cf-02.html",
-      "answer": "answers/7e396023fd8e57cf.html#q21",
-      "kind": "reading"
+      "question": "questions/english-abddbd850bc5fe7e-02-passage-1.html",
+      "answer": "answers/abddbd850bc5fe7e.html#q41",
+      "kind": "reading",
+      "parentId": "english-abddbd850bc5fe7e-02"
     },
     {
       "id": "physics-666562e115f886e6-05",
@@ -15250,7 +15687,8 @@
       ],
       "question": "questions/physics-666562e115f886e6-05.html",
       "answer": "answers/666562e115f886e6.html#q32",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "physics-666562e115f886e6-05"
     },
     {
       "id": "chemistry-32940b1fce815823-06",
@@ -15269,7 +15707,8 @@
       ],
       "question": "questions/chemistry-32940b1fce815823-06.html",
       "answer": "answers/32940b1fce815823.html#q29",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chemistry-32940b1fce815823-06"
     },
     {
       "id": "biology-636cfc1e7b4c95fb-06",
@@ -15288,7 +15727,8 @@
       ],
       "question": "questions/biology-636cfc1e7b4c95fb-06.html",
       "answer": "answers/636cfc1e7b4c95fb.html#q32",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "biology-636cfc1e7b4c95fb-06"
     },
     {
       "id": "chinese-e8fee4cd10e81d82-04",
@@ -15309,24 +15749,31 @@
       ],
       "question": "questions/chinese-e8fee4cd10e81d82-04.html",
       "answer": "answers/e8fee4cd10e81d82.html#q8",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-e8fee4cd10e81d82-04"
     },
     {
-      "id": "english-7e396023fd8e57cf-03",
+      "id": "english-abddbd850bc5fe7e-02-passage-2",
       "subject": "english",
-      "topic": "阅读短文",
-      "source": "2017年北京市中考英语试题 · 阅读短文",
-      "paper": "7e396023fd8e57cf",
-      "numbers": [],
+      "topic": "阅读下列",
+      "source": "2016年北京市中考英语试题 · 阅读下列 第2篇 第45、46、47、48题",
+      "paper": "abddbd850bc5fe7e",
+      "numbers": [
+        45,
+        46,
+        47,
+        48
+      ],
       "ranges": [
         [
-          217,
-          228
+          88,
+          111
         ]
       ],
-      "question": "questions/english-7e396023fd8e57cf-03.html",
-      "answer": "answers/7e396023fd8e57cf.html",
-      "kind": "reading"
+      "question": "questions/english-abddbd850bc5fe7e-02-passage-2.html",
+      "answer": "answers/abddbd850bc5fe7e.html#q45",
+      "kind": "reading",
+      "parentId": "english-abddbd850bc5fe7e-02"
     },
     {
       "id": "physics-6d14eb29eda33627-04",
@@ -15345,7 +15792,8 @@
       ],
       "question": "questions/physics-6d14eb29eda33627-04.html",
       "answer": "answers/6d14eb29eda33627.html#q24",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "physics-6d14eb29eda33627-04"
     },
     {
       "id": "chemistry-4446ef91cd9452d8-06",
@@ -15364,7 +15812,8 @@
       ],
       "question": "questions/chemistry-4446ef91cd9452d8-06.html",
       "answer": "answers/4446ef91cd9452d8.html#q30",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chemistry-4446ef91cd9452d8-06"
     },
     {
       "id": "biology-deea2683307ef4e4-06",
@@ -15383,7 +15832,8 @@
       ],
       "question": "questions/biology-deea2683307ef4e4-06.html",
       "answer": "answers/deea2683307ef4e4.html#q30",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "biology-deea2683307ef4e4-06"
     },
     {
       "id": "chinese-e8fee4cd10e81d82-05",
@@ -15410,30 +15860,31 @@
       ],
       "question": "questions/chinese-e8fee4cd10e81d82-05.html",
       "answer": "answers/e8fee4cd10e81d82.html#q11",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-e8fee4cd10e81d82-05"
     },
     {
-      "id": "english-7e396023fd8e57cf-04",
+      "id": "english-abddbd850bc5fe7e-02-passage-3",
       "subject": "english",
-      "topic": "阅读短文",
-      "source": "2017年北京市中考英语试题 · 阅读短文 第41、42、43、44、45题",
-      "paper": "7e396023fd8e57cf",
+      "topic": "阅读下列",
+      "source": "2016年北京市中考英语试题 · 阅读下列 第3篇 第49、50、51、52题",
+      "paper": "abddbd850bc5fe7e",
       "numbers": [
-        41,
-        42,
-        43,
-        44,
-        45
+        49,
+        50,
+        51,
+        52
       ],
       "ranges": [
         [
-          228,
-          250
+          111,
+          137
         ]
       ],
-      "question": "questions/english-7e396023fd8e57cf-04.html",
-      "answer": "answers/7e396023fd8e57cf.html#q41",
-      "kind": "reading"
+      "question": "questions/english-abddbd850bc5fe7e-02-passage-3.html",
+      "answer": "answers/abddbd850bc5fe7e.html#q49",
+      "kind": "reading",
+      "parentId": "english-abddbd850bc5fe7e-02"
     },
     {
       "id": "physics-0baf3dc06f153136-04",
@@ -15452,7 +15903,8 @@
       ],
       "question": "questions/physics-0baf3dc06f153136-04.html",
       "answer": "answers/0baf3dc06f153136.html#q25",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "physics-0baf3dc06f153136-04"
     },
     {
       "id": "chemistry-53c248fa7c10f534-06",
@@ -15471,7 +15923,8 @@
       ],
       "question": "questions/chemistry-53c248fa7c10f534-06.html",
       "answer": "answers/53c248fa7c10f534.html#q29",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chemistry-53c248fa7c10f534-06"
     },
     {
       "id": "biology-707cfd98a7e36c83-06",
@@ -15490,7 +15943,8 @@
       ],
       "question": "questions/biology-707cfd98a7e36c83-06.html",
       "answer": "answers/707cfd98a7e36c83.html#q30",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "biology-707cfd98a7e36c83-06"
     },
     {
       "id": "chinese-ebab0139512719ad-03",
@@ -15514,43 +15968,30 @@
       ],
       "question": "questions/chinese-ebab0139512719ad-03.html",
       "answer": "answers/ebab0139512719ad.html#q8",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-ebab0139512719ad-03"
     },
     {
-      "id": "english-5605142d417617f0-02",
+      "id": "english-abddbd850bc5fe7e-02-passage-4",
       "subject": "english",
       "topic": "阅读下列",
-      "source": "2018年北京市中考英语试题 · 阅读下列 第21、22、23、24、25、26、27、28、29、30、31、32、33、34、35、36、37、38题",
-      "paper": "5605142d417617f0",
+      "source": "2016年北京市中考英语试题 · 阅读下列 第4篇 第53、54、55题",
+      "paper": "abddbd850bc5fe7e",
       "numbers": [
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38
+        53,
+        54,
+        55
       ],
       "ranges": [
         [
-          54,
-          154
+          137,
+          158
         ]
       ],
-      "question": "questions/english-5605142d417617f0-02.html",
-      "answer": "answers/5605142d417617f0.html#q21",
-      "kind": "reading"
+      "question": "questions/english-abddbd850bc5fe7e-02-passage-4.html",
+      "answer": "answers/abddbd850bc5fe7e.html#q53",
+      "kind": "reading",
+      "parentId": "english-abddbd850bc5fe7e-02"
     },
     {
       "id": "physics-8628ad6660093033-04",
@@ -15569,7 +16010,8 @@
       ],
       "question": "questions/physics-8628ad6660093033-04.html",
       "answer": "answers/8628ad6660093033.html#q26",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "physics-8628ad6660093033-04"
     },
     {
       "id": "chemistry-aa3ee6ec4dca53f3-06",
@@ -15588,7 +16030,8 @@
       ],
       "question": "questions/chemistry-aa3ee6ec4dca53f3-06.html",
       "answer": "answers/aa3ee6ec4dca53f3.html#q29",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chemistry-aa3ee6ec4dca53f3-06"
     },
     {
       "id": "chinese-ebab0139512719ad-04",
@@ -15607,38 +16050,29 @@
       ],
       "question": "questions/chinese-ebab0139512719ad-04.html",
       "answer": "answers/ebab0139512719ad.html#q14",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-ebab0139512719ad-04"
     },
     {
-      "id": "english-1bf4da774ba7f09b-02",
+      "id": "english-abddbd850bc5fe7e-03",
       "subject": "english",
-      "topic": "阅读下列",
-      "source": "2019年北京市中考英语试题 · 阅读下列 第21、22、23、24、25、26、27、28、29、30、31、32、33题",
-      "paper": "1bf4da774ba7f09b",
+      "topic": "阅读短文",
+      "source": "2016年北京市中考英语试题 · 阅读短文 第59、60题",
+      "paper": "abddbd850bc5fe7e",
       "numbers": [
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33
+        59,
+        60
       ],
       "ranges": [
         [
-          56,
-          133
+          158,
+          168
         ]
       ],
-      "question": "questions/english-1bf4da774ba7f09b-02.html",
-      "answer": "answers/1bf4da774ba7f09b.html#q21",
-      "kind": "reading"
+      "question": "questions/english-abddbd850bc5fe7e-03.html",
+      "answer": "answers/abddbd850bc5fe7e.html#q59",
+      "kind": "reading",
+      "parentId": "english-abddbd850bc5fe7e-03"
     },
     {
       "id": "physics-1518d3cd650a052a-04",
@@ -15657,7 +16091,8 @@
       ],
       "question": "questions/physics-1518d3cd650a052a-04.html",
       "answer": "answers/1518d3cd650a052a.html#q24",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "physics-1518d3cd650a052a-04"
     },
     {
       "id": "chemistry-198211c6c4c88c9e-06",
@@ -15676,7 +16111,8 @@
       ],
       "question": "questions/chemistry-198211c6c4c88c9e-06.html",
       "answer": "answers/198211c6c4c88c9e.html#q29",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chemistry-198211c6c4c88c9e-06"
     },
     {
       "id": "chinese-ebab0139512719ad-05",
@@ -15703,30 +16139,32 @@
       ],
       "question": "questions/chinese-ebab0139512719ad-05.html",
       "answer": "answers/ebab0139512719ad.html#q15",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-ebab0139512719ad-05"
     },
     {
-      "id": "english-1bf4da774ba7f09b-03",
+      "id": "english-abddbd850bc5fe7e-04",
       "subject": "english",
       "topic": "阅读短文",
-      "source": "2019年北京市中考英语试题 · 阅读短文 第34、35、36、37、38题",
-      "paper": "1bf4da774ba7f09b",
+      "source": "2016年北京市中考英语试题 · 阅读短文 第61、62、63、64、65题",
+      "paper": "abddbd850bc5fe7e",
       "numbers": [
-        34,
-        35,
-        36,
-        37,
-        38
+        61,
+        62,
+        63,
+        64,
+        65
       ],
       "ranges": [
         [
-          133,
-          150
+          168,
+          182
         ]
       ],
-      "question": "questions/english-1bf4da774ba7f09b-03.html",
-      "answer": "answers/1bf4da774ba7f09b.html#q34",
-      "kind": "reading"
+      "question": "questions/english-abddbd850bc5fe7e-04.html",
+      "answer": "answers/abddbd850bc5fe7e.html#q61",
+      "kind": "reading",
+      "parentId": "english-abddbd850bc5fe7e-04"
     },
     {
       "id": "physics-86544d6befc8b2ee-04",
@@ -15745,7 +16183,8 @@
       ],
       "question": "questions/physics-86544d6befc8b2ee-04.html",
       "answer": "answers/86544d6befc8b2ee.html#q24",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "physics-86544d6befc8b2ee-04"
     },
     {
       "id": "chemistry-7f4648055d328899-06",
@@ -15764,7 +16203,8 @@
       ],
       "question": "questions/chemistry-7f4648055d328899-06.html",
       "answer": "answers/7f4648055d328899.html#q27",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chemistry-7f4648055d328899-06"
     },
     {
       "id": "chinese-9821f525f036e579-02",
@@ -15785,38 +16225,31 @@
       ],
       "question": "questions/chinese-9821f525f036e579-02.html",
       "answer": "answers/9821f525f036e579.html#q2",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-9821f525f036e579-02"
     },
     {
-      "id": "english-4b7e07c8f30fc68f-02",
+      "id": "english-7e396023fd8e57cf-02-passage-1",
       "subject": "english",
       "topic": "阅读下列",
-      "source": "2020年北京市中考英语试题 · 阅读下列 第21、22、23、24、25、26、27、28、29、30、31、32、33题",
-      "paper": "4b7e07c8f30fc68f",
+      "source": "2017年北京市中考英语试题 · 阅读下列 第1篇 第21、22、23、24题",
+      "paper": "7e396023fd8e57cf",
       "numbers": [
         21,
         22,
         23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33
+        24
       ],
       "ranges": [
         [
-          52,
-          138
+          129,
+          145
         ]
       ],
-      "question": "questions/english-4b7e07c8f30fc68f-02.html",
-      "answer": "answers/4b7e07c8f30fc68f.html#q21",
-      "kind": "reading"
+      "question": "questions/english-7e396023fd8e57cf-02-passage-1.html",
+      "answer": "answers/7e396023fd8e57cf.html#q21",
+      "kind": "reading",
+      "parentId": "english-7e396023fd8e57cf-02"
     },
     {
       "id": "physics-02189dee2c5ea3a2-04",
@@ -15835,7 +16268,8 @@
       ],
       "question": "questions/physics-02189dee2c5ea3a2-04.html",
       "answer": "answers/02189dee2c5ea3a2.html#q24",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "physics-02189dee2c5ea3a2-04"
     },
     {
       "id": "chemistry-241c7a57da698a24-06",
@@ -15854,7 +16288,8 @@
       ],
       "question": "questions/chemistry-241c7a57da698a24-06.html",
       "answer": "answers/241c7a57da698a24.html#q29",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chemistry-241c7a57da698a24-06"
     },
     {
       "id": "chinese-9821f525f036e579-04",
@@ -15873,30 +16308,31 @@
       ],
       "question": "questions/chinese-9821f525f036e579-04.html",
       "answer": "answers/9821f525f036e579.html#q5",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-9821f525f036e579-04"
     },
     {
-      "id": "english-4b7e07c8f30fc68f-03",
+      "id": "english-7e396023fd8e57cf-02-passage-2",
       "subject": "english",
-      "topic": "阅读短文",
-      "source": "2020年北京市中考英语试题 · 阅读短文 第34、35、36、37、38题",
-      "paper": "4b7e07c8f30fc68f",
+      "topic": "阅读下列",
+      "source": "2017年北京市中考英语试题 · 阅读下列 第2篇 第25、26、27、28题",
+      "paper": "7e396023fd8e57cf",
       "numbers": [
-        34,
-        35,
-        36,
-        37,
-        38
+        25,
+        26,
+        27,
+        28
       ],
       "ranges": [
         [
-          138,
-          155
+          145,
+          173
         ]
       ],
-      "question": "questions/english-4b7e07c8f30fc68f-03.html",
-      "answer": "answers/4b7e07c8f30fc68f.html#q34",
-      "kind": "reading"
+      "question": "questions/english-7e396023fd8e57cf-02-passage-2.html",
+      "answer": "answers/7e396023fd8e57cf.html#q25",
+      "kind": "reading",
+      "parentId": "english-7e396023fd8e57cf-02"
     },
     {
       "id": "chinese-9821f525f036e579-05",
@@ -15917,38 +16353,30 @@
       ],
       "question": "questions/chinese-9821f525f036e579-05.html",
       "answer": "answers/9821f525f036e579.html#q6",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-9821f525f036e579-05"
     },
     {
-      "id": "english-64e675732d62a0b8-02",
+      "id": "english-7e396023fd8e57cf-02-passage-3",
       "subject": "english",
-      "topic": "阅读理解",
-      "source": "2021年北京市中考英语试题 · 阅读理解 第21、22、23、24、25、26、27、28、29、30、31、32、33题",
-      "paper": "64e675732d62a0b8",
+      "topic": "阅读下列",
+      "source": "2017年北京市中考英语试题 · 阅读下列 第3篇 第29、30、31题",
+      "paper": "7e396023fd8e57cf",
       "numbers": [
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
         29,
         30,
-        31,
-        32,
-        33
+        31
       ],
       "ranges": [
         [
-          64,
-          143
+          173,
+          193
         ]
       ],
-      "question": "questions/english-64e675732d62a0b8-02.html",
-      "answer": "answers/64e675732d62a0b8.html#q21",
-      "kind": "reading"
+      "question": "questions/english-7e396023fd8e57cf-02-passage-3.html",
+      "answer": "answers/7e396023fd8e57cf.html#q29",
+      "kind": "reading",
+      "parentId": "english-7e396023fd8e57cf-02"
     },
     {
       "id": "chinese-42d208e2cbebf314-03",
@@ -15971,30 +16399,31 @@
       ],
       "question": "questions/chinese-42d208e2cbebf314-03.html",
       "answer": "answers/42d208e2cbebf314.html#q7",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-42d208e2cbebf314-03"
     },
     {
-      "id": "english-64e675732d62a0b8-03",
+      "id": "english-7e396023fd8e57cf-02-passage-4",
       "subject": "english",
-      "topic": "阅读表达",
-      "source": "2021年北京市中考英语试题 · 阅读表达 第34、35、36、37、38题",
-      "paper": "64e675732d62a0b8",
+      "topic": "阅读下列",
+      "source": "2017年北京市中考英语试题 · 阅读下列 第4篇 第32、33、34、35题",
+      "paper": "7e396023fd8e57cf",
       "numbers": [
+        32,
+        33,
         34,
-        35,
-        36,
-        37,
-        38
+        35
       ],
       "ranges": [
         [
-          143,
-          161
+          193,
+          217
         ]
       ],
-      "question": "questions/english-64e675732d62a0b8-03.html",
-      "answer": "answers/64e675732d62a0b8.html#q34",
-      "kind": "reading"
+      "question": "questions/english-7e396023fd8e57cf-02-passage-4.html",
+      "answer": "answers/7e396023fd8e57cf.html#q32",
+      "kind": "reading",
+      "parentId": "english-7e396023fd8e57cf-02"
     },
     {
       "id": "chinese-42d208e2cbebf314-04",
@@ -16013,38 +16442,32 @@
       ],
       "question": "questions/chinese-42d208e2cbebf314-04.html",
       "answer": "answers/42d208e2cbebf314.html#q12",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-42d208e2cbebf314-04"
     },
     {
-      "id": "english-cd2aa04fac9b27c1-02",
+      "id": "english-7e396023fd8e57cf-03",
       "subject": "english",
-      "topic": "阅读理解",
-      "source": "2022年北京市中考英语真题 · 阅读理解 第21、22、23、24、25、26、27、28、29、30、31、32、33题",
-      "paper": "cd2aa04fac9b27c1",
+      "topic": "阅读短文",
+      "source": "2017年北京市中考英语试题 · 阅读短文 第36、37、38、39、40题",
+      "paper": "7e396023fd8e57cf",
       "numbers": [
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33
+        36,
+        37,
+        38,
+        39,
+        40
       ],
       "ranges": [
         [
-          59,
-          140
+          217,
+          228
         ]
       ],
-      "question": "questions/english-cd2aa04fac9b27c1-02.html",
-      "answer": "answers/cd2aa04fac9b27c1.html#q21",
-      "kind": "reading"
+      "question": "questions/english-7e396023fd8e57cf-03.html",
+      "answer": "answers/7e396023fd8e57cf.html",
+      "kind": "reading",
+      "parentId": "english-7e396023fd8e57cf-03"
     },
     {
       "id": "chinese-42d208e2cbebf314-05",
@@ -16071,30 +16494,32 @@
       ],
       "question": "questions/chinese-42d208e2cbebf314-05.html",
       "answer": "answers/42d208e2cbebf314.html#q13",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-42d208e2cbebf314-05"
     },
     {
-      "id": "english-cd2aa04fac9b27c1-03",
+      "id": "english-7e396023fd8e57cf-04",
       "subject": "english",
-      "topic": "阅读表达",
-      "source": "2022年北京市中考英语真题 · 阅读表达 第34、35、36、37、38题",
-      "paper": "cd2aa04fac9b27c1",
+      "topic": "阅读短文",
+      "source": "2017年北京市中考英语试题 · 阅读短文 第41、42、43、44、45题",
+      "paper": "7e396023fd8e57cf",
       "numbers": [
-        34,
-        35,
-        36,
-        37,
-        38
+        41,
+        42,
+        43,
+        44,
+        45
       ],
       "ranges": [
         [
-          140,
-          159
+          228,
+          250
         ]
       ],
-      "question": "questions/english-cd2aa04fac9b27c1-03.html",
-      "answer": "answers/cd2aa04fac9b27c1.html#q34",
-      "kind": "reading"
+      "question": "questions/english-7e396023fd8e57cf-04.html",
+      "answer": "answers/7e396023fd8e57cf.html#q41",
+      "kind": "reading",
+      "parentId": "english-7e396023fd8e57cf-04"
     },
     {
       "id": "chinese-d83b227edf6e5eae-03",
@@ -16117,38 +16542,30 @@
       ],
       "question": "questions/chinese-d83b227edf6e5eae-03.html",
       "answer": "answers/d83b227edf6e5eae.html#q6",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-d83b227edf6e5eae-03"
     },
     {
-      "id": "english-c8f28991f1992a04-02",
+      "id": "english-5605142d417617f0-02-passage-1",
       "subject": "english",
-      "topic": "阅读理解",
-      "source": "2023年北京市中考英语真题 · 阅读理解 第21、22、23、24、25、26、27、28、29、30、31、32、33题",
-      "paper": "c8f28991f1992a04",
+      "topic": "阅读下列",
+      "source": "2018年北京市中考英语试题 · 阅读下列 第1篇 第21、22、23题",
+      "paper": "5605142d417617f0",
       "numbers": [
         21,
         22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33
+        23
       ],
       "ranges": [
         [
-          60,
-          135
+          54,
+          73
         ]
       ],
-      "question": "questions/english-c8f28991f1992a04-02.html",
-      "answer": "answers/c8f28991f1992a04.html#q21",
-      "kind": "reading"
+      "question": "questions/english-5605142d417617f0-02-passage-1.html",
+      "answer": "answers/5605142d417617f0.html#q21",
+      "kind": "reading",
+      "parentId": "english-5605142d417617f0-02"
     },
     {
       "id": "chinese-d83b227edf6e5eae-04",
@@ -16167,29 +16584,30 @@
       ],
       "question": "questions/chinese-d83b227edf6e5eae-04.html",
       "answer": "answers/d83b227edf6e5eae.html#q11",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-d83b227edf6e5eae-04"
     },
     {
-      "id": "english-c8f28991f1992a04-03",
+      "id": "english-5605142d417617f0-02-passage-2",
       "subject": "english",
-      "topic": "阅读表达",
-      "source": "2023年北京市中考英语真题 · 阅读表达 第34、35、36、37题",
-      "paper": "c8f28991f1992a04",
+      "topic": "阅读下列",
+      "source": "2018年北京市中考英语试题 · 阅读下列 第2篇 第24、25、26题",
+      "paper": "5605142d417617f0",
       "numbers": [
-        34,
-        35,
-        36,
-        37
+        24,
+        25,
+        26
       ],
       "ranges": [
         [
-          135,
-          154
+          73,
+          89
         ]
       ],
-      "question": "questions/english-c8f28991f1992a04-03.html",
-      "answer": "answers/c8f28991f1992a04.html#q34",
-      "kind": "reading"
+      "question": "questions/english-5605142d417617f0-02-passage-2.html",
+      "answer": "answers/5605142d417617f0.html#q24",
+      "kind": "reading",
+      "parentId": "english-5605142d417617f0-02"
     },
     {
       "id": "chinese-d83b227edf6e5eae-05",
@@ -16216,35 +16634,30 @@
       ],
       "question": "questions/chinese-d83b227edf6e5eae-05.html",
       "answer": "answers/d83b227edf6e5eae.html#q12",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-d83b227edf6e5eae-05"
     },
     {
-      "id": "english-5c87c9e9adfdc61a-02",
+      "id": "english-5605142d417617f0-02-passage-3",
       "subject": "english",
-      "topic": "阅读理解",
-      "source": "2024年北京市中考英语真题 · 阅读理解 第24、25、26、27、28、29、30、31、32、33题",
-      "paper": "5c87c9e9adfdc61a",
+      "topic": "阅读下列",
+      "source": "2018年北京市中考英语试题 · 阅读下列 第3篇 第27、28、29题",
+      "paper": "5605142d417617f0",
       "numbers": [
-        24,
-        25,
-        26,
         27,
         28,
-        29,
-        30,
-        31,
-        32,
-        33
+        29
       ],
       "ranges": [
         [
-          62,
-          133
+          89,
+          108
         ]
       ],
-      "question": "questions/english-5c87c9e9adfdc61a-02.html",
-      "answer": "answers/5c87c9e9adfdc61a.html#q24",
-      "kind": "reading"
+      "question": "questions/english-5605142d417617f0-02-passage-3.html",
+      "answer": "answers/5605142d417617f0.html#q27",
+      "kind": "reading",
+      "parentId": "english-5605142d417617f0-02"
     },
     {
       "id": "chinese-08d34bb24ba54d27-02",
@@ -16268,29 +16681,31 @@
       ],
       "question": "questions/chinese-08d34bb24ba54d27-02.html",
       "answer": "answers/08d34bb24ba54d27.html#q7",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-08d34bb24ba54d27-02"
     },
     {
-      "id": "english-5c87c9e9adfdc61a-03",
+      "id": "english-5605142d417617f0-02-passage-4",
       "subject": "english",
-      "topic": "阅读表达",
-      "source": "2024年北京市中考英语真题 · 阅读表达 第34、35、36、37题",
-      "paper": "5c87c9e9adfdc61a",
+      "topic": "阅读下列",
+      "source": "2018年北京市中考英语试题 · 阅读下列 第4篇 第30、31、32、33题",
+      "paper": "5605142d417617f0",
       "numbers": [
-        34,
-        35,
-        36,
-        37
+        30,
+        31,
+        32,
+        33
       ],
       "ranges": [
         [
-          133,
-          148
+          108,
+          136
         ]
       ],
-      "question": "questions/english-5c87c9e9adfdc61a-03.html",
-      "answer": "answers/5c87c9e9adfdc61a.html#q34",
-      "kind": "reading"
+      "question": "questions/english-5605142d417617f0-02-passage-4.html",
+      "answer": "answers/5605142d417617f0.html#q30",
+      "kind": "reading",
+      "parentId": "english-5605142d417617f0-02"
     },
     {
       "id": "chinese-08d34bb24ba54d27-04",
@@ -16309,35 +16724,32 @@
       ],
       "question": "questions/chinese-08d34bb24ba54d27-04.html",
       "answer": "answers/08d34bb24ba54d27.html#q13",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-08d34bb24ba54d27-04"
     },
     {
-      "id": "english-89ccd9c82a747e07-02",
+      "id": "english-5605142d417617f0-02-passage-5",
       "subject": "english",
-      "topic": "阅读理解",
-      "source": "2025年北京市中考英语真题 · 阅读理解 第24、25、26、27、28、29、30、31、32、33题",
-      "paper": "89ccd9c82a747e07",
+      "topic": "阅读下列",
+      "source": "2018年北京市中考英语试题 · 阅读下列 第5篇 第34、35、36、37、38题",
+      "paper": "5605142d417617f0",
       "numbers": [
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33
+        34,
+        35,
+        36,
+        37,
+        38
       ],
       "ranges": [
         [
-          61,
-          125
+          136,
+          154
         ]
       ],
-      "question": "questions/english-89ccd9c82a747e07-02.html",
-      "answer": "answers/89ccd9c82a747e07.html#q24",
-      "kind": "reading"
+      "question": "questions/english-5605142d417617f0-02-passage-5.html",
+      "answer": "answers/5605142d417617f0.html#q34",
+      "kind": "reading",
+      "parentId": "english-5605142d417617f0-02"
     },
     {
       "id": "chinese-08d34bb24ba54d27-05",
@@ -16365,29 +16777,30 @@
       ],
       "question": "questions/chinese-08d34bb24ba54d27-05.html",
       "answer": "answers/08d34bb24ba54d27.html#q14",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-08d34bb24ba54d27-05"
     },
     {
-      "id": "english-89ccd9c82a747e07-03",
+      "id": "english-1bf4da774ba7f09b-02-passage-1",
       "subject": "english",
-      "topic": "阅读表达",
-      "source": "2025年北京市中考英语真题 · 阅读表达 第34、35、36、37题",
-      "paper": "89ccd9c82a747e07",
+      "topic": "阅读下列",
+      "source": "2019年北京市中考英语试题 · 阅读下列 第1篇 第21、22、23题",
+      "paper": "1bf4da774ba7f09b",
       "numbers": [
-        34,
-        35,
-        36,
-        37
+        21,
+        22,
+        23
       ],
       "ranges": [
         [
-          125,
-          140
+          56,
+          67
         ]
       ],
-      "question": "questions/english-89ccd9c82a747e07-03.html",
-      "answer": "answers/89ccd9c82a747e07.html#q34",
-      "kind": "reading"
+      "question": "questions/english-1bf4da774ba7f09b-02-passage-1.html",
+      "answer": "answers/1bf4da774ba7f09b.html#q21",
+      "kind": "reading",
+      "parentId": "english-1bf4da774ba7f09b-02"
     },
     {
       "id": "chinese-b828b11e920698ff-02",
@@ -16411,35 +16824,30 @@
       ],
       "question": "questions/chinese-b828b11e920698ff-02.html",
       "answer": "answers/b828b11e920698ff.html#q8",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-b828b11e920698ff-02"
     },
     {
-      "id": "english-19def9f9ef7d2629-02",
+      "id": "english-1bf4da774ba7f09b-02-passage-2",
       "subject": "english",
-      "topic": "阅读理解",
-      "source": "2026年北京市中考英语试题 · 阅读理解 第24、25、26、27、28、29、30、31、32、33题",
-      "paper": "19def9f9ef7d2629",
+      "topic": "阅读下列",
+      "source": "2019年北京市中考英语试题 · 阅读下列 第2篇 第24、25、26题",
+      "paper": "1bf4da774ba7f09b",
       "numbers": [
         24,
         25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33
+        26
       ],
       "ranges": [
         [
-          50,
-          124
+          67,
+          89
         ]
       ],
-      "question": "questions/english-19def9f9ef7d2629-02.html",
-      "answer": "answers/19def9f9ef7d2629.html#q24",
-      "kind": "reading"
+      "question": "questions/english-1bf4da774ba7f09b-02-passage-2.html",
+      "answer": "answers/1bf4da774ba7f09b.html#q24",
+      "kind": "reading",
+      "parentId": "english-1bf4da774ba7f09b-02"
     },
     {
       "id": "chinese-b828b11e920698ff-04",
@@ -16458,29 +16866,30 @@
       ],
       "question": "questions/chinese-b828b11e920698ff-04.html",
       "answer": "answers/b828b11e920698ff.html#q14",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-b828b11e920698ff-04"
     },
     {
-      "id": "english-19def9f9ef7d2629-03",
+      "id": "english-1bf4da774ba7f09b-02-passage-3",
       "subject": "english",
-      "topic": "阅读表达",
-      "source": "2026年北京市中考英语试题 · 阅读表达 第34、35、36、37题",
-      "paper": "19def9f9ef7d2629",
+      "topic": "阅读下列",
+      "source": "2019年北京市中考英语试题 · 阅读下列 第3篇 第27、28、29题",
+      "paper": "1bf4da774ba7f09b",
       "numbers": [
-        34,
-        35,
-        36,
-        37
+        27,
+        28,
+        29
       ],
       "ranges": [
         [
-          124,
-          138
+          89,
+          108
         ]
       ],
-      "question": "questions/english-19def9f9ef7d2629-03.html",
-      "answer": "answers/19def9f9ef7d2629.html#q34",
-      "kind": "reading"
+      "question": "questions/english-1bf4da774ba7f09b-02-passage-3.html",
+      "answer": "answers/1bf4da774ba7f09b.html#q27",
+      "kind": "reading",
+      "parentId": "english-1bf4da774ba7f09b-02"
     },
     {
       "id": "chinese-b828b11e920698ff-05",
@@ -16508,7 +16917,31 @@
       ],
       "question": "questions/chinese-b828b11e920698ff-05.html",
       "answer": "answers/b828b11e920698ff.html#q15",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-b828b11e920698ff-05"
+    },
+    {
+      "id": "english-1bf4da774ba7f09b-02-passage-4",
+      "subject": "english",
+      "topic": "阅读下列",
+      "source": "2019年北京市中考英语试题 · 阅读下列 第4篇 第30、31、32、33题",
+      "paper": "1bf4da774ba7f09b",
+      "numbers": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "ranges": [
+        [
+          108,
+          133
+        ]
+      ],
+      "question": "questions/english-1bf4da774ba7f09b-02-passage-4.html",
+      "answer": "answers/1bf4da774ba7f09b.html#q30",
+      "kind": "reading",
+      "parentId": "english-1bf4da774ba7f09b-02"
     },
     {
       "id": "chinese-80d4d2061fc70ea4-02",
@@ -16532,7 +16965,32 @@
       ],
       "question": "questions/chinese-80d4d2061fc70ea4-02.html",
       "answer": "answers/80d4d2061fc70ea4.html#q8",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-80d4d2061fc70ea4-02"
+    },
+    {
+      "id": "english-1bf4da774ba7f09b-03",
+      "subject": "english",
+      "topic": "阅读短文",
+      "source": "2019年北京市中考英语试题 · 阅读短文 第34、35、36、37、38题",
+      "paper": "1bf4da774ba7f09b",
+      "numbers": [
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "ranges": [
+        [
+          133,
+          150
+        ]
+      ],
+      "question": "questions/english-1bf4da774ba7f09b-03.html",
+      "answer": "answers/1bf4da774ba7f09b.html#q34",
+      "kind": "reading",
+      "parentId": "english-1bf4da774ba7f09b-03"
     },
     {
       "id": "chinese-80d4d2061fc70ea4-04",
@@ -16551,7 +17009,30 @@
       ],
       "question": "questions/chinese-80d4d2061fc70ea4-04.html",
       "answer": "answers/80d4d2061fc70ea4.html#q14",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-80d4d2061fc70ea4-04"
+    },
+    {
+      "id": "english-4b7e07c8f30fc68f-02-passage-1",
+      "subject": "english",
+      "topic": "阅读下列",
+      "source": "2020年北京市中考英语试题 · 阅读下列 第1篇 第21、22、23题",
+      "paper": "4b7e07c8f30fc68f",
+      "numbers": [
+        21,
+        22,
+        23
+      ],
+      "ranges": [
+        [
+          52,
+          65
+        ]
+      ],
+      "question": "questions/english-4b7e07c8f30fc68f-02-passage-1.html",
+      "answer": "answers/4b7e07c8f30fc68f.html#q21",
+      "kind": "reading",
+      "parentId": "english-4b7e07c8f30fc68f-02"
     },
     {
       "id": "chinese-80d4d2061fc70ea4-05",
@@ -16579,7 +17060,30 @@
       ],
       "question": "questions/chinese-80d4d2061fc70ea4-05.html",
       "answer": "answers/80d4d2061fc70ea4.html#q15",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-80d4d2061fc70ea4-05"
+    },
+    {
+      "id": "english-4b7e07c8f30fc68f-02-passage-2",
+      "subject": "english",
+      "topic": "阅读下列",
+      "source": "2020年北京市中考英语试题 · 阅读下列 第2篇 第24、25、26题",
+      "paper": "4b7e07c8f30fc68f",
+      "numbers": [
+        24,
+        25,
+        26
+      ],
+      "ranges": [
+        [
+          65,
+          90
+        ]
+      ],
+      "question": "questions/english-4b7e07c8f30fc68f-02-passage-2.html",
+      "answer": "answers/4b7e07c8f30fc68f.html#q24",
+      "kind": "reading",
+      "parentId": "english-4b7e07c8f30fc68f-02"
     },
     {
       "id": "chinese-2eba54d1ce9499fb-03",
@@ -16602,7 +17106,30 @@
       ],
       "question": "questions/chinese-2eba54d1ce9499fb-03.html",
       "answer": "answers/2eba54d1ce9499fb.html#q9",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-2eba54d1ce9499fb-03"
+    },
+    {
+      "id": "english-4b7e07c8f30fc68f-02-passage-3",
+      "subject": "english",
+      "topic": "阅读下列",
+      "source": "2020年北京市中考英语试题 · 阅读下列 第3篇 第27、28、29题",
+      "paper": "4b7e07c8f30fc68f",
+      "numbers": [
+        27,
+        28,
+        29
+      ],
+      "ranges": [
+        [
+          90,
+          110
+        ]
+      ],
+      "question": "questions/english-4b7e07c8f30fc68f-02-passage-3.html",
+      "answer": "answers/4b7e07c8f30fc68f.html#q27",
+      "kind": "reading",
+      "parentId": "english-4b7e07c8f30fc68f-02"
     },
     {
       "id": "chinese-2eba54d1ce9499fb-04",
@@ -16621,7 +17148,31 @@
       ],
       "question": "questions/chinese-2eba54d1ce9499fb-04.html",
       "answer": "answers/2eba54d1ce9499fb.html#q14",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-2eba54d1ce9499fb-04"
+    },
+    {
+      "id": "english-4b7e07c8f30fc68f-02-passage-4",
+      "subject": "english",
+      "topic": "阅读下列",
+      "source": "2020年北京市中考英语试题 · 阅读下列 第4篇 第30、31、32、33题",
+      "paper": "4b7e07c8f30fc68f",
+      "numbers": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "ranges": [
+        [
+          110,
+          138
+        ]
+      ],
+      "question": "questions/english-4b7e07c8f30fc68f-02-passage-4.html",
+      "answer": "answers/4b7e07c8f30fc68f.html#q30",
+      "kind": "reading",
+      "parentId": "english-4b7e07c8f30fc68f-02"
     },
     {
       "id": "chinese-2eba54d1ce9499fb-05",
@@ -16649,7 +17200,32 @@
       ],
       "question": "questions/chinese-2eba54d1ce9499fb-05.html",
       "answer": "answers/2eba54d1ce9499fb.html#q15",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-2eba54d1ce9499fb-05"
+    },
+    {
+      "id": "english-4b7e07c8f30fc68f-03",
+      "subject": "english",
+      "topic": "阅读短文",
+      "source": "2020年北京市中考英语试题 · 阅读短文 第34、35、36、37、38题",
+      "paper": "4b7e07c8f30fc68f",
+      "numbers": [
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "ranges": [
+        [
+          138,
+          155
+        ]
+      ],
+      "question": "questions/english-4b7e07c8f30fc68f-03.html",
+      "answer": "answers/4b7e07c8f30fc68f.html#q34",
+      "kind": "reading",
+      "parentId": "english-4b7e07c8f30fc68f-03"
     },
     {
       "id": "chinese-522b19c93d767054-02",
@@ -16673,7 +17249,30 @@
       ],
       "question": "questions/chinese-522b19c93d767054-02.html",
       "answer": "answers/522b19c93d767054.html#q8",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-522b19c93d767054-02"
+    },
+    {
+      "id": "english-64e675732d62a0b8-02-passage-1",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2021年北京市中考英语试题 · 阅读理解 第1篇 第21、22、23题",
+      "paper": "64e675732d62a0b8",
+      "numbers": [
+        21,
+        22,
+        23
+      ],
+      "ranges": [
+        [
+          64,
+          78
+        ]
+      ],
+      "question": "questions/english-64e675732d62a0b8-02-passage-1.html",
+      "answer": "answers/64e675732d62a0b8.html#q21",
+      "kind": "reading",
+      "parentId": "english-64e675732d62a0b8-02"
     },
     {
       "id": "chinese-522b19c93d767054-04",
@@ -16692,7 +17291,30 @@
       ],
       "question": "questions/chinese-522b19c93d767054-04.html",
       "answer": "answers/522b19c93d767054.html#q14",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-522b19c93d767054-04"
+    },
+    {
+      "id": "english-64e675732d62a0b8-02-passage-2",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2021年北京市中考英语试题 · 阅读理解 第2篇 第24、25、26题",
+      "paper": "64e675732d62a0b8",
+      "numbers": [
+        24,
+        25,
+        26
+      ],
+      "ranges": [
+        [
+          78,
+          92
+        ]
+      ],
+      "question": "questions/english-64e675732d62a0b8-02-passage-2.html",
+      "answer": "answers/64e675732d62a0b8.html#q24",
+      "kind": "reading",
+      "parentId": "english-64e675732d62a0b8-02"
     },
     {
       "id": "chinese-522b19c93d767054-05",
@@ -16720,7 +17342,638 @@
       ],
       "question": "questions/chinese-522b19c93d767054-05.html",
       "answer": "answers/522b19c93d767054.html#q15",
-      "kind": "reading"
+      "kind": "reading",
+      "parentId": "chinese-522b19c93d767054-05"
+    },
+    {
+      "id": "english-64e675732d62a0b8-02-passage-3",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2021年北京市中考英语试题 · 阅读理解 第3篇 第27、28、29题",
+      "paper": "64e675732d62a0b8",
+      "numbers": [
+        27,
+        28,
+        29
+      ],
+      "ranges": [
+        [
+          92,
+          117
+        ]
+      ],
+      "question": "questions/english-64e675732d62a0b8-02-passage-3.html",
+      "answer": "answers/64e675732d62a0b8.html#q27",
+      "kind": "reading",
+      "parentId": "english-64e675732d62a0b8-02"
+    },
+    {
+      "id": "english-64e675732d62a0b8-02-passage-4",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2021年北京市中考英语试题 · 阅读理解 第4篇 第30、31、32、33题",
+      "paper": "64e675732d62a0b8",
+      "numbers": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "ranges": [
+        [
+          117,
+          141
+        ]
+      ],
+      "question": "questions/english-64e675732d62a0b8-02-passage-4.html",
+      "answer": "answers/64e675732d62a0b8.html#q30",
+      "kind": "reading",
+      "parentId": "english-64e675732d62a0b8-02"
+    },
+    {
+      "id": "english-64e675732d62a0b8-03",
+      "subject": "english",
+      "topic": "阅读表达",
+      "source": "2021年北京市中考英语试题 · 阅读表达 第34、35、36、37、38题",
+      "paper": "64e675732d62a0b8",
+      "numbers": [
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "ranges": [
+        [
+          143,
+          161
+        ]
+      ],
+      "question": "questions/english-64e675732d62a0b8-03.html",
+      "answer": "answers/64e675732d62a0b8.html#q34",
+      "kind": "reading",
+      "parentId": "english-64e675732d62a0b8-03"
+    },
+    {
+      "id": "english-cd2aa04fac9b27c1-02-passage-1",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2022年北京市中考英语真题 · 阅读理解 第1篇 第21、22、23题",
+      "paper": "cd2aa04fac9b27c1",
+      "numbers": [
+        21,
+        22,
+        23
+      ],
+      "ranges": [
+        [
+          59,
+          75
+        ]
+      ],
+      "question": "questions/english-cd2aa04fac9b27c1-02-passage-1.html",
+      "answer": "answers/cd2aa04fac9b27c1.html#q21",
+      "kind": "reading",
+      "parentId": "english-cd2aa04fac9b27c1-02"
+    },
+    {
+      "id": "english-cd2aa04fac9b27c1-02-passage-2",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2022年北京市中考英语真题 · 阅读理解 第2篇 第24、25、26题",
+      "paper": "cd2aa04fac9b27c1",
+      "numbers": [
+        24,
+        25,
+        26
+      ],
+      "ranges": [
+        [
+          75,
+          91
+        ]
+      ],
+      "question": "questions/english-cd2aa04fac9b27c1-02-passage-2.html",
+      "answer": "answers/cd2aa04fac9b27c1.html#q24",
+      "kind": "reading",
+      "parentId": "english-cd2aa04fac9b27c1-02"
+    },
+    {
+      "id": "english-cd2aa04fac9b27c1-02-passage-3",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2022年北京市中考英语真题 · 阅读理解 第3篇 第27、28、29题",
+      "paper": "cd2aa04fac9b27c1",
+      "numbers": [
+        27,
+        28,
+        29
+      ],
+      "ranges": [
+        [
+          91,
+          108
+        ]
+      ],
+      "question": "questions/english-cd2aa04fac9b27c1-02-passage-3.html",
+      "answer": "answers/cd2aa04fac9b27c1.html#q27",
+      "kind": "reading",
+      "parentId": "english-cd2aa04fac9b27c1-02"
+    },
+    {
+      "id": "english-cd2aa04fac9b27c1-02-passage-4",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2022年北京市中考英语真题 · 阅读理解 第4篇 第30、31、32、33题",
+      "paper": "cd2aa04fac9b27c1",
+      "numbers": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "ranges": [
+        [
+          108,
+          138
+        ]
+      ],
+      "question": "questions/english-cd2aa04fac9b27c1-02-passage-4.html",
+      "answer": "answers/cd2aa04fac9b27c1.html#q30",
+      "kind": "reading",
+      "parentId": "english-cd2aa04fac9b27c1-02"
+    },
+    {
+      "id": "english-cd2aa04fac9b27c1-03",
+      "subject": "english",
+      "topic": "阅读表达",
+      "source": "2022年北京市中考英语真题 · 阅读表达 第34、35、36、37、38题",
+      "paper": "cd2aa04fac9b27c1",
+      "numbers": [
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "ranges": [
+        [
+          140,
+          159
+        ]
+      ],
+      "question": "questions/english-cd2aa04fac9b27c1-03.html",
+      "answer": "answers/cd2aa04fac9b27c1.html#q34",
+      "kind": "reading",
+      "parentId": "english-cd2aa04fac9b27c1-03"
+    },
+    {
+      "id": "english-c8f28991f1992a04-02-passage-1",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2023年北京市中考英语真题 · 阅读理解 第1篇 第21、22、23题",
+      "paper": "c8f28991f1992a04",
+      "numbers": [
+        21,
+        22,
+        23
+      ],
+      "ranges": [
+        [
+          60,
+          75
+        ]
+      ],
+      "question": "questions/english-c8f28991f1992a04-02-passage-1.html",
+      "answer": "answers/c8f28991f1992a04.html#q21",
+      "kind": "reading",
+      "parentId": "english-c8f28991f1992a04-02"
+    },
+    {
+      "id": "english-c8f28991f1992a04-02-passage-2",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2023年北京市中考英语真题 · 阅读理解 第2篇 第24、25、26题",
+      "paper": "c8f28991f1992a04",
+      "numbers": [
+        24,
+        25,
+        26
+      ],
+      "ranges": [
+        [
+          76,
+          96
+        ]
+      ],
+      "question": "questions/english-c8f28991f1992a04-02-passage-2.html",
+      "answer": "answers/c8f28991f1992a04.html#q24",
+      "kind": "reading",
+      "parentId": "english-c8f28991f1992a04-02"
+    },
+    {
+      "id": "english-c8f28991f1992a04-02-passage-3",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2023年北京市中考英语真题 · 阅读理解 第3篇 第27、28、29题",
+      "paper": "c8f28991f1992a04",
+      "numbers": [
+        27,
+        28,
+        29
+      ],
+      "ranges": [
+        [
+          96,
+          112
+        ]
+      ],
+      "question": "questions/english-c8f28991f1992a04-02-passage-3.html",
+      "answer": "answers/c8f28991f1992a04.html#q27",
+      "kind": "reading",
+      "parentId": "english-c8f28991f1992a04-02"
+    },
+    {
+      "id": "english-c8f28991f1992a04-02-passage-4",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2023年北京市中考英语真题 · 阅读理解 第4篇 第30、31、32、33题",
+      "paper": "c8f28991f1992a04",
+      "numbers": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "ranges": [
+        [
+          112,
+          133
+        ]
+      ],
+      "question": "questions/english-c8f28991f1992a04-02-passage-4.html",
+      "answer": "answers/c8f28991f1992a04.html#q30",
+      "kind": "reading",
+      "parentId": "english-c8f28991f1992a04-02"
+    },
+    {
+      "id": "english-c8f28991f1992a04-03",
+      "subject": "english",
+      "topic": "阅读表达",
+      "source": "2023年北京市中考英语真题 · 阅读表达 第34、35、36、37题",
+      "paper": "c8f28991f1992a04",
+      "numbers": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "ranges": [
+        [
+          135,
+          154
+        ]
+      ],
+      "question": "questions/english-c8f28991f1992a04-03.html",
+      "answer": "answers/c8f28991f1992a04.html#q34",
+      "kind": "reading",
+      "parentId": "english-c8f28991f1992a04-03"
+    },
+    {
+      "id": "english-5c87c9e9adfdc61a-02-passage-1",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2024年北京市中考英语真题 · 阅读理解 第1篇 第21、22、23题",
+      "paper": "5c87c9e9adfdc61a",
+      "numbers": [
+        21,
+        22,
+        23
+      ],
+      "ranges": [
+        [
+          62,
+          71
+        ]
+      ],
+      "question": "questions/english-5c87c9e9adfdc61a-02-passage-1.html",
+      "answer": "answers/5c87c9e9adfdc61a.html",
+      "kind": "reading",
+      "parentId": "english-5c87c9e9adfdc61a-02"
+    },
+    {
+      "id": "english-5c87c9e9adfdc61a-02-passage-2",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2024年北京市中考英语真题 · 阅读理解 第2篇 第24、25、26题",
+      "paper": "5c87c9e9adfdc61a",
+      "numbers": [
+        24,
+        25,
+        26
+      ],
+      "ranges": [
+        [
+          72,
+          89
+        ]
+      ],
+      "question": "questions/english-5c87c9e9adfdc61a-02-passage-2.html",
+      "answer": "answers/5c87c9e9adfdc61a.html#q24",
+      "kind": "reading",
+      "parentId": "english-5c87c9e9adfdc61a-02"
+    },
+    {
+      "id": "english-5c87c9e9adfdc61a-02-passage-3",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2024年北京市中考英语真题 · 阅读理解 第3篇 第27、28、29题",
+      "paper": "5c87c9e9adfdc61a",
+      "numbers": [
+        27,
+        28,
+        29
+      ],
+      "ranges": [
+        [
+          89,
+          110
+        ]
+      ],
+      "question": "questions/english-5c87c9e9adfdc61a-02-passage-3.html",
+      "answer": "answers/5c87c9e9adfdc61a.html#q27",
+      "kind": "reading",
+      "parentId": "english-5c87c9e9adfdc61a-02"
+    },
+    {
+      "id": "english-5c87c9e9adfdc61a-02-passage-4",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2024年北京市中考英语真题 · 阅读理解 第4篇 第30、31、32、33题",
+      "paper": "5c87c9e9adfdc61a",
+      "numbers": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "ranges": [
+        [
+          110,
+          131
+        ]
+      ],
+      "question": "questions/english-5c87c9e9adfdc61a-02-passage-4.html",
+      "answer": "answers/5c87c9e9adfdc61a.html#q30",
+      "kind": "reading",
+      "parentId": "english-5c87c9e9adfdc61a-02"
+    },
+    {
+      "id": "english-5c87c9e9adfdc61a-03",
+      "subject": "english",
+      "topic": "阅读表达",
+      "source": "2024年北京市中考英语真题 · 阅读表达 第34、35、36、37题",
+      "paper": "5c87c9e9adfdc61a",
+      "numbers": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "ranges": [
+        [
+          133,
+          148
+        ]
+      ],
+      "question": "questions/english-5c87c9e9adfdc61a-03.html",
+      "answer": "answers/5c87c9e9adfdc61a.html#q34",
+      "kind": "reading",
+      "parentId": "english-5c87c9e9adfdc61a-03"
+    },
+    {
+      "id": "english-89ccd9c82a747e07-02-passage-1",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2025年北京市中考英语真题 · 阅读理解 第1篇 第21、22、23题",
+      "paper": "89ccd9c82a747e07",
+      "numbers": [
+        21,
+        22,
+        23
+      ],
+      "ranges": [
+        [
+          61,
+          68
+        ]
+      ],
+      "question": "questions/english-89ccd9c82a747e07-02-passage-1.html",
+      "answer": "answers/89ccd9c82a747e07.html",
+      "kind": "reading",
+      "parentId": "english-89ccd9c82a747e07-02"
+    },
+    {
+      "id": "english-89ccd9c82a747e07-02-passage-2",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2025年北京市中考英语真题 · 阅读理解 第2篇 第24、25、26题",
+      "paper": "89ccd9c82a747e07",
+      "numbers": [
+        24,
+        25,
+        26
+      ],
+      "ranges": [
+        [
+          69,
+          90
+        ]
+      ],
+      "question": "questions/english-89ccd9c82a747e07-02-passage-2.html",
+      "answer": "answers/89ccd9c82a747e07.html#q24",
+      "kind": "reading",
+      "parentId": "english-89ccd9c82a747e07-02"
+    },
+    {
+      "id": "english-89ccd9c82a747e07-02-passage-3",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2025年北京市中考英语真题 · 阅读理解 第3篇 第27、28、29题",
+      "paper": "89ccd9c82a747e07",
+      "numbers": [
+        27,
+        28,
+        29
+      ],
+      "ranges": [
+        [
+          90,
+          106
+        ]
+      ],
+      "question": "questions/english-89ccd9c82a747e07-02-passage-3.html",
+      "answer": "answers/89ccd9c82a747e07.html#q27",
+      "kind": "reading",
+      "parentId": "english-89ccd9c82a747e07-02"
+    },
+    {
+      "id": "english-89ccd9c82a747e07-02-passage-4",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2025年北京市中考英语真题 · 阅读理解 第4篇 第30、31、32、33题",
+      "paper": "89ccd9c82a747e07",
+      "numbers": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "ranges": [
+        [
+          106,
+          123
+        ]
+      ],
+      "question": "questions/english-89ccd9c82a747e07-02-passage-4.html",
+      "answer": "answers/89ccd9c82a747e07.html#q30",
+      "kind": "reading",
+      "parentId": "english-89ccd9c82a747e07-02"
+    },
+    {
+      "id": "english-89ccd9c82a747e07-03",
+      "subject": "english",
+      "topic": "阅读表达",
+      "source": "2025年北京市中考英语真题 · 阅读表达 第34、35、36、37题",
+      "paper": "89ccd9c82a747e07",
+      "numbers": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "ranges": [
+        [
+          125,
+          140
+        ]
+      ],
+      "question": "questions/english-89ccd9c82a747e07-03.html",
+      "answer": "answers/89ccd9c82a747e07.html#q34",
+      "kind": "reading",
+      "parentId": "english-89ccd9c82a747e07-03"
+    },
+    {
+      "id": "english-19def9f9ef7d2629-02-passage-1",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2026年北京市中考英语试题 · 阅读理解 第1篇 第21、22、23题",
+      "paper": "19def9f9ef7d2629",
+      "numbers": [
+        21,
+        22,
+        23
+      ],
+      "ranges": [
+        [
+          50,
+          60
+        ]
+      ],
+      "question": "questions/english-19def9f9ef7d2629-02-passage-1.html",
+      "answer": "answers/19def9f9ef7d2629.html",
+      "kind": "reading",
+      "parentId": "english-19def9f9ef7d2629-02"
+    },
+    {
+      "id": "english-19def9f9ef7d2629-02-passage-2",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2026年北京市中考英语试题 · 阅读理解 第2篇 第24、25、26题",
+      "paper": "19def9f9ef7d2629",
+      "numbers": [
+        24,
+        25,
+        26
+      ],
+      "ranges": [
+        [
+          61,
+          81
+        ]
+      ],
+      "question": "questions/english-19def9f9ef7d2629-02-passage-2.html",
+      "answer": "answers/19def9f9ef7d2629.html#q24",
+      "kind": "reading",
+      "parentId": "english-19def9f9ef7d2629-02"
+    },
+    {
+      "id": "english-19def9f9ef7d2629-02-passage-3",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2026年北京市中考英语试题 · 阅读理解 第3篇 第27、28、29题",
+      "paper": "19def9f9ef7d2629",
+      "numbers": [
+        27,
+        28,
+        29
+      ],
+      "ranges": [
+        [
+          81,
+          102
+        ]
+      ],
+      "question": "questions/english-19def9f9ef7d2629-02-passage-3.html",
+      "answer": "answers/19def9f9ef7d2629.html#q27",
+      "kind": "reading",
+      "parentId": "english-19def9f9ef7d2629-02"
+    },
+    {
+      "id": "english-19def9f9ef7d2629-02-passage-4",
+      "subject": "english",
+      "topic": "阅读理解",
+      "source": "2026年北京市中考英语试题 · 阅读理解 第4篇 第30、31、32、33题",
+      "paper": "19def9f9ef7d2629",
+      "numbers": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "ranges": [
+        [
+          102,
+          122
+        ]
+      ],
+      "question": "questions/english-19def9f9ef7d2629-02-passage-4.html",
+      "answer": "answers/19def9f9ef7d2629.html#q30",
+      "kind": "reading",
+      "parentId": "english-19def9f9ef7d2629-02"
+    },
+    {
+      "id": "english-19def9f9ef7d2629-03",
+      "subject": "english",
+      "topic": "阅读表达",
+      "source": "2026年北京市中考英语试题 · 阅读表达 第34、35、36、37题",
+      "paper": "19def9f9ef7d2629",
+      "numbers": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "ranges": [
+        [
+          124,
+          138
+        ]
+      ],
+      "question": "questions/english-19def9f9ef7d2629-03.html",
+      "answer": "answers/19def9f9ef7d2629.html#q34",
+      "kind": "reading",
+      "parentId": "english-19def9f9ef7d2629-03"
     }
   ],
   "duplicates": [
@@ -16728,5 +17981,104 @@
       "kept": "北京中考\\北京中考-地理\\2020年北京市中考地理试题（空白卷）.docx",
       "duplicate": "北京中考\\北京中考-地理\\2020年北京市中考地理真题（空白卷） .doc"
     }
+  ],
+  "readingLegacyIds": [
+    "chinese-5c1aca4e4792dfe5-03",
+    "english-7d2d946f4b37f01f-02",
+    "physics-0a7e660fe0460d89-05",
+    "chemistry-04614786fa007a2c-05",
+    "biology-a0a1bddd2b24cfeb-09",
+    "chinese-5c1aca4e4792dfe5-04",
+    "english-7d2d946f4b37f01f-03",
+    "physics-eddf9a5a47f0cf3e-05",
+    "chemistry-9c29817bc38f766b-05",
+    "biology-4bd29b726dd2cc0f-04",
+    "chinese-5c1aca4e4792dfe5-05",
+    "english-7d2d946f4b37f01f-04",
+    "physics-eddf9a5a47f0cf3e-06",
+    "chemistry-d3505408337a8782-05",
+    "biology-f0f7ef58dbe9f125-04",
+    "chinese-9d90d101a0a2f6ed-03",
+    "english-abddbd850bc5fe7e-02",
+    "physics-93f311377e6e4b7a-07",
+    "chemistry-b66d0780d42ebd3f-04",
+    "biology-565336982576bdfb-04",
+    "chinese-9d90d101a0a2f6ed-04",
+    "english-abddbd850bc5fe7e-03",
+    "physics-b5393b0b9bfa1276-06",
+    "chemistry-9902ec2a782b3be2-04",
+    "biology-c445f84e3117b258-06",
+    "chinese-9d90d101a0a2f6ed-05",
+    "english-abddbd850bc5fe7e-04",
+    "physics-a4c968c6d4a95412-05",
+    "chemistry-aae4ad4c898fb339-04",
+    "biology-ddfd36c4a0ae81ae-06",
+    "chinese-e8fee4cd10e81d82-03",
+    "english-7e396023fd8e57cf-02",
+    "physics-666562e115f886e6-05",
+    "chemistry-32940b1fce815823-06",
+    "biology-636cfc1e7b4c95fb-06",
+    "chinese-e8fee4cd10e81d82-04",
+    "english-7e396023fd8e57cf-03",
+    "physics-6d14eb29eda33627-04",
+    "chemistry-4446ef91cd9452d8-06",
+    "biology-deea2683307ef4e4-06",
+    "chinese-e8fee4cd10e81d82-05",
+    "english-7e396023fd8e57cf-04",
+    "physics-0baf3dc06f153136-04",
+    "chemistry-53c248fa7c10f534-06",
+    "biology-707cfd98a7e36c83-06",
+    "chinese-ebab0139512719ad-03",
+    "english-5605142d417617f0-02",
+    "physics-8628ad6660093033-04",
+    "chemistry-aa3ee6ec4dca53f3-06",
+    "chinese-ebab0139512719ad-04",
+    "english-1bf4da774ba7f09b-02",
+    "physics-1518d3cd650a052a-04",
+    "chemistry-198211c6c4c88c9e-06",
+    "chinese-ebab0139512719ad-05",
+    "english-1bf4da774ba7f09b-03",
+    "physics-86544d6befc8b2ee-04",
+    "chemistry-7f4648055d328899-06",
+    "chinese-9821f525f036e579-02",
+    "english-4b7e07c8f30fc68f-02",
+    "physics-02189dee2c5ea3a2-04",
+    "chemistry-241c7a57da698a24-06",
+    "chinese-9821f525f036e579-04",
+    "english-4b7e07c8f30fc68f-03",
+    "chinese-9821f525f036e579-05",
+    "english-64e675732d62a0b8-02",
+    "chinese-42d208e2cbebf314-03",
+    "english-64e675732d62a0b8-03",
+    "chinese-42d208e2cbebf314-04",
+    "english-cd2aa04fac9b27c1-02",
+    "chinese-42d208e2cbebf314-05",
+    "english-cd2aa04fac9b27c1-03",
+    "chinese-d83b227edf6e5eae-03",
+    "english-c8f28991f1992a04-02",
+    "chinese-d83b227edf6e5eae-04",
+    "english-c8f28991f1992a04-03",
+    "chinese-d83b227edf6e5eae-05",
+    "english-5c87c9e9adfdc61a-02",
+    "chinese-08d34bb24ba54d27-02",
+    "english-5c87c9e9adfdc61a-03",
+    "chinese-08d34bb24ba54d27-04",
+    "english-89ccd9c82a747e07-02",
+    "chinese-08d34bb24ba54d27-05",
+    "english-89ccd9c82a747e07-03",
+    "chinese-b828b11e920698ff-02",
+    "english-19def9f9ef7d2629-02",
+    "chinese-b828b11e920698ff-04",
+    "english-19def9f9ef7d2629-03",
+    "chinese-b828b11e920698ff-05",
+    "chinese-80d4d2061fc70ea4-02",
+    "chinese-80d4d2061fc70ea4-04",
+    "chinese-80d4d2061fc70ea4-05",
+    "chinese-2eba54d1ce9499fb-03",
+    "chinese-2eba54d1ce9499fb-04",
+    "chinese-2eba54d1ce9499fb-05",
+    "chinese-522b19c93d767054-02",
+    "chinese-522b19c93d767054-04",
+    "chinese-522b19c93d767054-05"
   ]
 }

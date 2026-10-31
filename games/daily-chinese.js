@@ -3,13 +3,22 @@
   const today=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Dubai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
   const date=today(),key='exam-reading:sessions:v1';
   try {
-    const response=await fetch('../data/exam-study/bank.json?v=20261027-six-subjects');
+    const response=await fetch('../data/exam-study/bank.json?v=20261031-single-reading');
     if(!response.ok)throw new Error('阅读题库加载失败，请刷新重试。');
     const bank=await response.json(),records=JSON.parse(localStorage.getItem(key)||'{}');
+    Object.values(records).forEach(record=>{
+      const id=record.readingId || bank.readingLegacyIds?.[record.index];
+      if(!id)return;
+      const matches=bank.readings.map((reading,index)=>reading.id===id || reading.parentId===id ? index : -1).filter(index=>index>=0);
+      if(!matches.length)return;
+      record.index=record.submitted ? matches.at(-1) : matches[0];
+      record.readingId=bank.readings[record.index].id;
+    });
     const last=Object.keys(records).sort().at(-1);
     const state=records[date]||{index:last?records[last].index+1:0,answer:'',submitted:false};
     const reading=bank.readings[state.index];
     if(!reading){$('notice').textContent='已完成全部'+bank.readings.length+'组原卷阅读。';return;}
+    state.readingId=reading.id;
     const save=()=>{const latest=JSON.parse(localStorage.getItem(key)||'{}');latest[date]=state;localStorage.setItem(key,JSON.stringify(latest));};
     save();
     $('readingTitle').textContent=reading.source;

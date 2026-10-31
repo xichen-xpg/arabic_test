@@ -11,7 +11,7 @@ from lxml import etree as ET
 from PIL import Image, UnidentifiedImageError
 import build_daily_study as legacy
 from inspect_exam_documents import ROOT, CACHE, inventory
-from select_exam_questions import SUBJECTS, QUESTION, select, load_body
+from select_exam_questions import SUBJECTS, QUESTION, select, load_body, split_english_reading
 
 OUT = ROOT / 'data/exam-study'
 legacy.OUT = OUT
@@ -109,6 +109,7 @@ def vectors(records):
         subprocess.run(['powershell','-NoProfile','-ExecutionPolicy','Bypass','-File',str(ROOT/'tools/render_exam_vectors.ps1'),'-Manifest',str(manifest)],check=True)
 
 def build():
+    previous=json.loads((OUT/'bank.json').read_text(encoding='utf-8')) if (OUT/'bank.json').exists() else {}
     records=inventory()
     missing=[r['source'] for r in records if not Path(r['docx']).exists()]
     if missing:raise ValueError(f'{len(missing)} documents still need conversion')
@@ -139,33 +140,46 @@ def build():
         paper_id=record['sha256'][:16];sid=selection['subject'];name=identity(record['source'])
         solution_path=f'answers/{paper_id}.html'
         parts=[]
+        answer_numbers=set()
         for node in answers.body:
             t=legacy.plain(node);match=QUESTION.match(t)
+            if match:answer_numbers.add(int(match[1]))
             parts.append((f'<a id="q{match[1]}"></a>' if match else '')+answers.render(node))
         legacy.save_html(OUT/solution_path,name+' 原卷解析',''.join(parts))
         sources.append(dict(id=paper_id,subject=sid,paper=str(Path(record['source']).relative_to(ROOT)),
                             sha256=record['sha256'],answer=str(Path(solution['source']).relative_to(ROOT)),answerSha256=solution['sha256']))
-        for index,g in enumerate(selection['groups']):
+        index=0
+        for g in selection['groups']:
+            cloze=sid=='english' and g['label']=='完形填空'
+            if not cloze:index+=1
             if g['kind']=='ppt' and sid not in PPT_SUBJECTS:continue
-            key=f'{sid}-{paper_id}-{index+1:02d}'
-            numbers=g['numbers'];label=g['label']
-            number_label='、'.join(map(str,numbers))
-            title=f'{name} · {label}'+(f' 第{number_label}题' if numbers else '')
-            path=f'questions/{key}.html'
-            content=exam.html(g['ranges'])
-            if '【解析】' in content or '【答案】' in content:raise ValueError('Solution leaked into question: '+title)
-            legacy.save_html(OUT/path,title,content)
-            item=dict(id=key,subject=sid,topic=label,source=title,paper=paper_id,numbers=numbers,ranges=g['ranges'],
-                      question=path,answer=solution_path+(f'#q{numbers[0]}' if numbers else ''),kind=g['kind'])
-            if g['kind']=='ppt':questions[key]=item;queues[sid].append(key)
-            else:reading_queues[sid].append(item)
+            key=f'{sid}-{paper_id}-cloze' if cloze else f'{sid}-{paper_id}-{index:02d}'
+            parent_key=key
+            reading_parts=split_english_reading(record,g) if sid=='english' and g['kind']=='reading' else [g]
+            for part_index,part in enumerate(reading_parts):
+                key=parent_key+f'-passage-{part_index+1}' if len(reading_parts)>1 else parent_key
+                numbers=part['numbers'];label=part['label']
+                number_label='、'.join(map(str,numbers))
+                title=f'{name} · {label}'+(f' 第{part_index+1}篇' if len(reading_parts)>1 else '')+(f' 第{number_label}题' if numbers else '')
+                path=f'questions/{key}.html'
+                content=exam.html(part['ranges'])
+                if '【解析】' in content or '【答案】' in content:raise ValueError('Solution leaked into question: '+title)
+                legacy.save_html(OUT/path,title,content)
+                item=dict(id=key,subject=sid,topic=label,source=title,paper=paper_id,numbers=numbers,ranges=part['ranges'],
+                      question=path,answer=solution_path+(f'#q{numbers[0]}' if numbers and numbers[0] in answer_numbers else ''),kind=part['kind'])
+                if g['kind']=='reading':item['parentId']=parent_key
+                old=previous.get('questions',{}).get(key,{})
+                if old.get('ranges')==item['ranges'] and 'pages' in old:item['pages']=old['pages']
+                if g['kind']=='ppt':questions[key]=item;queues[sid].append(key)
+                else:reading_queues[sid].append(item)
         print(name,len(selection['groups']),flush=True)
     days=[dict(day=i+1,tasks=[dict(id=queues[s][i]) for s in ORDER if i<len(queues[s])])
           for i in range(max(map(len,queues.values())))]
     for i in range(max(map(len,reading_queues.values()))):
         readings.extend(reading_queues[s][i] for s in ORDER if i<len(reading_queues[s]))
     bank=dict(version='all-exams-20261027-six-subjects',minutes=60,subjects=[dict(id=s,name=NAMES[s],count=len(queues[s])) for s in ORDER],
-              questions=questions,days=days,sources=sources,readings=readings,duplicates=duplicates)
+              questions=questions,days=days,sources=sources,readings=readings,duplicates=duplicates,
+              readingLegacyIds=previous.get('readingLegacyIds',[q['id'] for q in previous.get('readings',[])]))
     (OUT/'bank.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2),encoding='utf-8')
     from build_exam_group_answers import build as build_group_answers
     build_group_answers()

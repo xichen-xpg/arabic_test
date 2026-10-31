@@ -30,9 +30,23 @@ const server = http.createServer((req, res) => {
     await page.emulateMedia({ media: 'screen' });
     await page.reload();
     assert.equal(await page.evaluate(() => dailyPoemQuestions()[0].title), plan.title);
+    const bank = JSON.parse(fs.readFileSync(path.join(root, 'data/exam-study/bank.json'), 'utf8'));
+    const legacyIndex = bank.readingLegacyIds.findIndex(id => id.startsWith('english-'));
+    await page.evaluate(index => {
+      const date = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Dubai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+      localStorage.setItem('exam-reading:sessions:v1', JSON.stringify({ [date]: { index, answer: 'Saved reading answer', submitted: false } }));
+    }, legacyIndex);
     await page.goto(base + '/games/daily-chinese.html');
     await page.waitForFunction(() => !document.querySelector('#printReadingButton').disabled);
     const original = await page.locator('#materials iframe').evaluate(frame => frame.contentDocument.querySelector('article').textContent);
+    const passageLetters = await page.locator('#materials iframe').evaluate(frame => Array.from(frame.contentDocument.querySelectorAll('article > p'), p => p.textContent.trim()).filter(text => /^[A-D]$/.test(text)));
+    assert.deepEqual(passageLetters, ['A']);
+    assert.equal(await page.inputValue('#readingAnswer'), 'Saved reading answer');
+    const readingId = await page.evaluate(() => Object.values(JSON.parse(localStorage.getItem('exam-reading:sessions:v1')))[0].readingId);
+    assert.equal(readingId, bank.readings.find(q => q.parentId === bank.readingLegacyIds[legacyIndex]).id);
+    await page.reload();
+    await page.waitForFunction(() => !document.querySelector('#printReadingButton').disabled);
+    assert.equal(await page.evaluate(() => Object.values(JSON.parse(localStorage.getItem('exam-reading:sessions:v1')))[0].readingId), readingId);
     assert.equal(await page.locator('#readingPrintContent article').textContent(), original);
     await page.click('#printReadingButton');
     assert.equal(await page.evaluate(() => window.printCalls), 1);

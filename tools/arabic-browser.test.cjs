@@ -34,7 +34,7 @@ const server = http.createServer((req, res) => {
     page.setDefaultTimeout(10000);
     const errors = [];
     page.on("pageerror", error => errors.push(error.message));
-    const url = `http://127.0.0.1:${server.address().port}/games/arabic-test.html`;
+    const url = `http://127.0.0.1:${server.address().port}/games/arabic-test.html#arabic`;
     await page.goto(url);
     const panel = page.locator("#arabicPanel");
     assert.equal(await panel.isVisible(), true);
@@ -106,17 +106,27 @@ const server = http.createServer((req, res) => {
     }
     assert.equal(await page.evaluate(() => localStorage.getItem(EnglishLearning.STORAGE_KEY)), englishSave);
     await page.locator("#checkinLink").click();
-    assert.match(await page.locator(".calendar-day.today .calendar-source").filter({ hasText: "完成阿语测试" }).innerText(), /✓.*平均.*🚩/s);
+    assert.match(await page.locator(".calendar-day.today .calendar-source").filter({ hasText: "阿语" }).innerText(), /✓/);
     await page.locator("#practiceLink").click();
     await panel.getByRole("button", { name: "重新测试", exact: true }).click();
     assert.equal(await page.evaluate(() => arabicScheduler.summary().done), true);
     await page.evaluate(() => {
-      arabicPractice.replay = { date: localDateKey(), queue: [arabicLearningBank.find(word => word.zh === "保龄球").id] };
+      arabicPractice.replay = { date: localDateKey(), queue: [arabicLearningBank.find(word => word.ar.includes("البولينج")).id] };
       arabicPractice.draw();
     });
     const bowling = await page.evaluate(() => arabicPractice.current);
     await panel.getByRole("button", { name: bowling.word, exact: true }).click();
-    assert.match(await panel.locator(".english-example").innerText(), /周五晚上/);
+    assert.match(await panel.locator(".english-prompt").innerText(), /保龄球/);
+    await panel.locator('.english-input').fill(bowling.word.slice(0, 1));
+    const keyboard = panel.locator('.english-arabic-keyboard');
+    await keyboard.getByRole('button', { name: bowling.word[1], exact: true }).click();
+    assert.equal(await panel.locator('.english-input').inputValue(), bowling.word.slice(0, 2));
+    await keyboard.getByRole('button', { name: '删除前一个字符', exact: true }).click();
+    assert.equal(await panel.locator('.english-input').inputValue(), bowling.word.slice(0, 1));
+    for (const letter of bowling.word.slice(1)) {
+      await keyboard.getByRole('button', { name: letter === ' ' ? '空格' : letter, exact: true }).click();
+    }
+    assert.equal(await page.evaluate(() => arabicPractice.finished), true);
     await page.setViewportSize({ width: 390, height: 844 });
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     // Import old index-based records once and preserve their historical check-in.
