@@ -38,6 +38,8 @@ const server = http.createServer((req, res) => {
     await page.goto(url);
     const panel = page.locator("#arabicPanel");
     assert.equal(await panel.isVisible(), true);
+    assert.equal(await panel.locator('.english-arabic-keyboard').isVisible(), true);
+    assert.ok(await panel.locator('.english-arabic-keyboard button:disabled').count() > 30);
     assert.match(await panel.locator(".english-progress").innerText(), /新词 0\/20 · 复习 0\/0/);
     assert.equal(await panel.locator(".english-input").getAttribute("dir"), "rtl");
     const selection = await page.evaluate(() => ({

@@ -25,11 +25,11 @@
               <button class="secondary english-speak-word" type="button">🔊 单词发音</button>
             </div>
             <label>输入${this.scheduler.languageName}单词<input class="english-input" lang="en" dir="ltr" type="text" spellcheck="false" autocomplete="off" autocapitalize="none"></label>
-            ${this.requireChinese ? "" : '<p class="english-note">可直接打字，也可点击下方阿语键盘，两种方式可以混合使用。</p><div class="english-arabic-keyboard soft-keyboard" aria-label="阿语虚拟键盘"></div>'}
             <label ${this.requireChinese ? "" : "hidden"}>输入中文释义（多个释义任选一个）<input class="english-chinese-input" lang="zh-CN" type="text" autocomplete="off" disabled></label>
             <p class="english-note">${this.requireChinese ? "英文拼对后自动进入中文输入框；中文答对后按回车进入下一词。" : "阿语拼对后完成本词，按回车进入下一词。"}</p>
             <details class="english-credit"><summary>词条来源</summary><p></p><a target="_blank" rel="noopener" href="games/english-sources.html">查看题库选词规则与来源</a></details>
           </div>
+          ${this.requireChinese ? "" : '<p class="english-note">阿语虚拟键盘：选对答案后，可直接打字或点击按键，两种方式可以混合使用。</p><div class="english-arabic-keyboard soft-keyboard" aria-label="阿语虚拟键盘"></div>'}
         </div>
         <section class="english-test" hidden></section>
         <p class="english-feedback feedback" aria-live="polite"></p>
@@ -122,6 +122,7 @@
         const button = document.createElement('button');
         button.type = 'button';
         button.className = `soft-key${letter === ' ' ? ' space' : ''}`;
+        button.disabled = true;
         button.textContent = letter === ' ' ? '空格' : letter === 'Backspace' ? '⌫' : letter === 'Enter' ? '下一题 ↵' : letter;
         button.setAttribute('aria-label', letter === 'Backspace' ? '删除前一个字符' : button.textContent);
         button.addEventListener('pointerdown', event => event.preventDefault());
@@ -143,6 +144,12 @@
         });
         keyboard.append(button);
       }
+    }
+    updateArabicKeyboard() {
+      if (this.requireChinese) return;
+      this.container.querySelectorAll('.english-arabic-keyboard button').forEach(button => {
+        button.disabled = button.textContent === '下一题 ↵' ? !this.finished : !this.selected || this.finished;
+      });
     }
     openTest(index) {
       if (this.ensureDate()) return;
@@ -245,6 +252,7 @@
       this.chineseInput.readOnly = false;
       this.chineseInput.disabled = this.lastValidInput.toLowerCase() !== this.current.word.toLowerCase();
       this.el.entry.hidden = !this.selected;
+      this.updateArabicKeyboard();
       this.el["choice-entry"].hidden = this.selected;
       this.el["choice-number"].value = "";
       this.renderChoices();
@@ -290,6 +298,7 @@
             button.classList.add("correct");
             this.el.choices.querySelectorAll("button").forEach(choice => { choice.disabled = true; });
             this.el.entry.hidden = false;
+            this.updateArabicKeyboard();
             this.el["choice-entry"].hidden = true;
             this.el.feedback.textContent = `选对了，请完整输入这个${this.scheduler.languageName}单词。`;
             this.el.input.focus();
@@ -334,6 +343,7 @@
         result = this.scheduler.complete(this.current.id, this.wrong);
       }
       this.finished = true;
+      this.updateArabicKeyboard();
       this.chineseInput.readOnly = true;
       this.el.input.readOnly = true;
       this.el.next.hidden = false;
