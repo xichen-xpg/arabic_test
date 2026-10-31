@@ -20,10 +20,11 @@ test('Arabic virtual keys share typed input, cursor editing, validation and comp
     }
   };
   let completed = 0, drafts = 0, next = 0;
+  const spoken = [];
   Object.assign(practice, {
     container: { querySelector: () => ({ append: button => buttons.push(button) }) },
     el: { input }, current: { word: 'أين هو؟' }, selected: true, finished: false, requireChinese: false,
-    lastValidInput: '', ensureDate: () => false, saveDraft: () => drafts++,
+    lastValidInput: '', ensureDate: () => false, saveDraft: () => drafts++, speakKey: letter => spoken.push(letter),
     completeAnswer() { completed++; this.finished = true; }, draw: () => next++
   });
   practice.renderArabicKeyboard();
@@ -62,4 +63,5 @@ test('Arabic virtual keys share typed input, cursor editing, validation and comp
   assert.equal(next, 1);
   assert.ok(buttons.some(button => button.textContent === 'ؤ'));
   assert.ok(buttons.some(button => button.textContent === '.'));
+  assert.deepEqual(spoken, ['ي', 'ن', 'ن', 'و'], 'only accepted virtual letters play audio, not typing, punctuation, deletion or rejected input');
 });

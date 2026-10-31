@@ -357,7 +357,7 @@ test("started plans retain word order, test progress and check-in records", () =
 test("a review-heavy existing plan migrates to 20 new plus 30 pending reviews", () => {
   const f = fixture();
   const state = f.scheduler.load();
-  for (let i = 0; i < 50; i++) state.records[`word-${i}`] = { stage: 0, due: "2026-09-09", trouble: false };
+  for (let i = 0; i < 50; i++) state.records[`word-${i}`] = { stage: 0, due: "2026-09-09", lastCompleted: "2026-09-08", trouble: false };
   state.days["2026-09-09"] = { date: "2026-09-09", review: f.bank.slice(0, 50).map(word => word.id), fresh: [], completed: [], failed: [], retry: [], drafts: {}, deferred: 0, dailyLimit: 50, newLimit: 30 };
   f.scheduler.save(state);
   const upgraded = f.scheduler.plan();
@@ -370,7 +370,7 @@ test("Arabic keeps its separate 10-review limit", () => {
   const f = fixture(100);
   const scheduler = new Scheduler(f.bank, f.storage, f.scheduler.clock, { reviewLimit: 10 });
   const state = scheduler.load();
-  for (let i = 0; i < 40; i++) state.records[`word-${i}`] = { stage: 0, due: scheduler.clock(), trouble: false };
+  for (let i = 0; i < 40; i++) state.records[`word-${i}`] = { stage: 0, due: scheduler.clock(), lastCompleted: addDays(scheduler.clock(), -1), trouble: false };
   scheduler.save(state);
   assert.equal(scheduler.plan().review.length, 10);
   assert.equal(scheduler.plan().fresh.length, 20);
@@ -381,7 +381,7 @@ test("today's started English plan expands without losing completed tests", () =
   const f = fixture(100);
   const old = new Scheduler(f.bank, f.storage, f.scheduler.clock, { reviewLimit: 10 });
   const state = old.load();
-  for (let i = 0; i < 40; i++) state.records[`word-${i}`] = { stage: 0, due: old.clock(), trouble: false };
+  for (let i = 0; i < 40; i++) state.records[`word-${i}`] = { stage: 0, due: old.clock(), lastCompleted: addDays(old.clock(), -1), trouble: false };
   old.save(state);
   const plan = old.plan();
   old.complete(plan.review[0]);

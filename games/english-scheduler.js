@@ -37,6 +37,8 @@
       this.languageName = options.languageName || "英文";
       this.languageCode = options.languageCode || "en-GB";
       this.reviewLimit = options.reviewLimit ?? REVIEW_LIMIT;
+      this.newLimit = options.newLimit ?? NEW_LIMIT;
+      this.independentSentences = options.independentSentences || false;
       this.words = new Map(bank.map(word => [word.id, word]));
       this.dialogues = new Map();
       for (const word of bank.filter(word => word.dialogueId)) {
@@ -99,18 +101,26 @@
       return { version: 1, records: {}, days: {} };
     }
     save(state) { this.storage.setItem(this.storageKey, JSON.stringify(state)); }
+    previouslyLearned(id, state, date) {
+      return this.group(id).every(member => {
+        const record = state.records[member];
+        return record && record.lastCompleted < date;
+      });
+    }
     plan(date = this.clock(), create = date === this.clock()) {
+      const NEW_LIMIT = this.newLimit;
       const REVIEW_LIMIT = this.reviewLimit;
       const DAILY_LIMIT = NEW_LIMIT + REVIEW_LIMIT;
       const state = this.load();
       if (state.days[date]) {
         const existing = state.days[date];
+        const previousNewLimit = existing.newLimit;
         if (create && this.languageCode === 'ar' && [...existing.review, ...existing.fresh].some(id => !this.words.has(id))) {
           // Sentence edits change text-based IDs. Repair today's obsolete plan,
           // retaining completed current material and leaving historical days alone.
           const valid = ids => ids.filter(id => this.words.has(id));
           const due = Object.entries(state.records)
-            .filter(([id, record]) => this.words.has(id) && record.due <= date && !existing.completed.includes(id))
+            .filter(([id, record]) => this.words.has(id) && record.due <= date && this.previouslyLearned(id, state, date) && !existing.completed.includes(id))
             .sort((a, b) => Number(b[1].trouble) - Number(a[1].trouble) || a[1].due.localeCompare(b[1].due) || a[0].localeCompare(b[0]));
           const retainedFresh = valid(existing.fresh);
           existing.review = this.selectGroups([...valid(existing.review), ...due.map(([id]) => id)],
@@ -140,7 +150,7 @@
           const completed = test.completed || Array.from({ length: test.passed || 0 }, (_, i) => i);
           const checkedIn = test.checkedIn || completed.length === oldPages * 2;
           const due = Object.entries(state.records)
-            .filter(([id, record]) => this.words.has(id) && record.due <= date && !oldIds.includes(id))
+            .filter(([id, record]) => this.words.has(id) && record.due <= date && this.previouslyLearned(id, state, date) && !oldIds.includes(id))
             .sort((a, b) => Number(b[1].trouble) - Number(a[1].trouble) || a[1].due.localeCompare(b[1].due) || a[0].localeCompare(b[0]));
           existing.review.push(...due.slice(0, Math.max(0, REVIEW_LIMIT - existing.review.length)).map(([id]) => id));
           const ids = [...existing.review, ...existing.fresh];
@@ -180,7 +190,7 @@
           existing.fresh = existing.fresh.slice(0, NEW_LIMIT);
           const scheduled = new Set([...existing.review, ...existing.fresh]);
           const due = Object.entries(state.records)
-            .filter(([id, record]) => this.words.has(id) && record.due <= date && !scheduled.has(id) && !completed.has(id))
+            .filter(([id, record]) => this.words.has(id) && record.due <= date && this.previouslyLearned(id, state, date) && !scheduled.has(id) && !completed.has(id))
             .sort((a, b) => Number(b[1].trouble) - Number(a[1].trouble) || a[1].due.localeCompare(b[1].due) || a[0].localeCompare(b[0]));
           for (const [id] of due) {
             if (existing.review.length >= REVIEW_LIMIT) break;
@@ -202,19 +212,59 @@
             existing.fresh = this.selectGroups(existing.fresh, NEW_LIMIT, new Set(existing.review));
           }
           existing.deferred = Object.entries(state.records)
-            .filter(([id, record]) => this.words.has(id) && record.due <= date && !existing.review.includes(id) && !completed.has(id)).length;
+            .filter(([id, record]) => this.words.has(id) && record.due <= date && this.previouslyLearned(id, state, date) && !existing.review.includes(id) && !completed.has(id)).length;
+          this.save(state);
+        }
+        if (create) {
+          const completed = new Set(existing.completed);
+          const freshText = new Set(existing.fresh.map(id => normalize(this.words.get(id)?.word || id, 'word')));
+          const validReview = existing.review.filter(id => !freshText.has(normalize(this.words.get(id)?.word || id, 'word')) &&
+            (completed.has(id) || this.previouslyLearned(id, state, date)));
+          const quotaChanged = this.languageCode === 'ar' && previousNewLimit !== NEW_LIMIT;
+          if (quotaChanged || validReview.length !== existing.review.length) {
+            const oldIds = this.planIds(existing);
+            if (quotaChanged) {
+              const retained = [...new Set(existing.fresh.filter(id => this.group(id).some(member => completed.has(member) || existing.drafts[member])).flatMap(id => this.group(id)))];
+              const selected = this.selectGroups(retained, Math.max(NEW_LIMIT, retained.length));
+              existing.fresh = selected.concat(this.selectGroups(existing.fresh, Math.max(0, NEW_LIMIT - selected.length), new Set(selected)));
+            }
+            const candidates = Object.entries(state.records)
+              .filter(([id, record]) => this.words.has(id) && record.due <= date && this.previouslyLearned(id, state, date))
+              .sort((a, b) => Number(b[1].trouble) - Number(a[1].trouble) || a[1].due.localeCompare(b[1].due) || a[0].localeCompare(b[0]));
+            existing.review = this.selectGroups([...validReview, ...candidates.map(([id]) => id)], REVIEW_LIMIT, new Set(existing.fresh));
+            const scheduled = new Set([...existing.review, ...existing.fresh]);
+            for (const key of ['failed', 'retry']) existing[key] = existing[key].filter(id => scheduled.has(id));
+            existing.drafts = Object.fromEntries(Object.entries(existing.drafts).filter(([id]) => scheduled.has(id)));
+            existing.newLimit = NEW_LIMIT;
+            existing.dailyLimit = DAILY_LIMIT;
+            if (JSON.stringify(oldIds) !== JSON.stringify(this.planIds(existing))) {
+              existing.test = existing.test?.checkedIn ? { passed: 0, checkedIn: true, checkedInWords: oldIds } : { passed: 0 };
+              delete existing.testTiming;
+            }
+            this.save(state);
+          }
+        }
+        if (create && this.independentSentences && existing.orderVersion !== 'independent-v1') {
+          // Removing dialogue grouping can change test page membership.
+          const checkedIn = existing.test?.checkedIn;
+          existing.test = checkedIn ? { passed: 0, checkedIn: true, checkedInWords: existing.completed.slice() } : { passed: 0 };
+          delete existing.testTiming;
+          existing.orderVersion = 'independent-v1';
           this.save(state);
         }
         return existing;
       }
       if (!create) return null;
       const due = Object.entries(state.records)
-        .filter(([id, record]) => this.words.has(id) && record.due <= date)
+        .filter(([id, record]) => this.words.has(id) && record.due <= date && this.previouslyLearned(id, state, date))
         .sort((a, b) => Number(b[1].trouble) - Number(a[1].trouble) || a[1].due.localeCompare(b[1].due) || a[0].localeCompare(b[0]));
       const review = this.selectGroups(due.map(([id]) => id), REVIEW_LIMIT);
-      const fresh = this.selectGroups(this.bank.filter(word => !state.records[word.id]).map(word => word.id), NEW_LIMIT, new Set(review));
+      const reviewText = new Set(review.map(id => normalize(this.words.get(id).word || id, 'word')));
+      const excluded = new Set(this.bank.filter(word => reviewText.has(normalize(word.word || word.id, 'word'))).map(word => word.id));
+      const fresh = this.selectGroups(this.bank.filter(word => !state.records[word.id]).map(word => word.id), NEW_LIMIT, excluded);
       const plan = { date, review, fresh, completed: [], failed: [], retry: [], drafts: {}, deferred: Math.max(0, due.length - review.length), dailyLimit: DAILY_LIMIT, newLimit: NEW_LIMIT, reviewLimit: REVIEW_LIMIT };
       plan.test = { passed: 0 };
+      if (this.independentSentences) plan.orderVersion = 'independent-v1';
       state.days[date] = plan;
       this.save(state);
       return plan;
@@ -393,8 +443,9 @@
       const plan = this.plan(date, create);
       if (!plan) return null;
       const count = ids => ids.filter(id => plan.completed.includes(id)).length;
-      const deferred = date === this.clock() ? Object.entries(this.load().records)
-        .filter(([id, record]) => this.words.has(id) && record.due <= date && !plan.review.includes(id) && !plan.completed.includes(id)).length : plan.deferred;
+      const state = this.load();
+      const deferred = date === this.clock() ? Object.entries(state.records)
+        .filter(([id, record]) => this.words.has(id) && record.due <= date && this.previouslyLearned(id, state, date) && !plan.review.includes(id) && !plan.completed.includes(id)).length : plan.deferred;
       return { fresh: plan.fresh.length, review: plan.review.length, freshDone: count(plan.fresh), reviewDone: count(plan.review),
         total: plan.fresh.length + plan.review.length, completed: plan.completed.length, deferred,
         learningDone: plan.completed.length === plan.fresh.length + plan.review.length,

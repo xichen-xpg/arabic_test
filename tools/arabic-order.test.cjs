@@ -104,9 +104,9 @@ test('dialogues stay together across review/new quotas, learning retries and bot
   const scheduler = dialogueScheduler();
   const state = scheduler.load();
   // Nine ordinary reviews plus a due answer; its question is not independently due.
-  for (let i = 0; i < 9; i++) state.records[`single-${i}`] = { stage: 0, due: '2026-10-30' };
-  state.records['pair-0-1'] = { stage: 0, due: '2026-10-29' };
-  state.records['pair-0-0'] = { stage: 0, due: '2026-11-02' };
+  for (let i = 0; i < 9; i++) state.records[`single-${i}`] = { stage: 0, due: '2026-10-30', lastCompleted: '2026-10-29' };
+  state.records['pair-0-1'] = { stage: 0, due: '2026-10-29', lastCompleted: '2026-10-28' };
+  state.records['pair-0-0'] = { stage: 0, due: '2026-11-02', lastCompleted: '2026-10-28' };
   scheduler.save(state);
   const plan = scheduler.plan();
   assert.ok(plan.review.length <= 10);

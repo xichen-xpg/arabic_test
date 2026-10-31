@@ -40,25 +40,21 @@ const server = http.createServer((req, res) => {
     assert.equal(await panel.isVisible(), true);
     assert.equal(await panel.locator('.english-arabic-keyboard').isVisible(), true);
     assert.ok(await panel.locator('.english-arabic-keyboard button:disabled').count() > 30);
-    assert.match(await panel.locator(".english-progress").innerText(), /新词 0\/20 · 复习 0\/0/);
+    assert.match(await panel.locator(".english-progress").innerText(), /新词 0\/5 · 复习 0\/0/);
     assert.equal(await panel.locator(".english-input").getAttribute("dir"), "rtl");
     const selection = await page.evaluate(() => ({
-      expected: [...dailyArabicBank].filter(word => word.dialogueId).reduce((groups, word) => {
-        (groups[word.dialogueId] ||= []).push(word);
-        return groups;
-      }, {}),
+      expected: [...dailyArabicBank].reverse().slice(0, 5).map(word => word.id || `arabic:${word.ar}`),
       actual: arabicScheduler.plan().fresh,
       lastWord: dailyArabicBank[dailyArabicBank.length - 1].ar,
+      single: arabicLearningBank.find(word => !word.dialogueId).id,
       firstWord: arabicLearningBank[0].ar
     }));
-    const expectedPairs = Object.values(selection.expected).reverse().slice(0, 10)
-      .flatMap(group => group.sort((a, b) => a.dialogueOrder - b.dialogueOrder).map(word => `arabic:${word.dialogueId}:${word.dialogueOrder}`));
-    assert.deepEqual(selection.actual, expectedPairs);
+    assert.deepEqual(selection.actual, selection.expected);
     assert.equal(selection.firstWord, selection.lastWord);
-    const added = await page.evaluate(() => dailyArabicBank.filter(word => word.dialogueId));
-    assert.equal(added.length, 104);
-    assert.ok(added.every(word => word.ar && word.zh && word.rom && !word.zh.includes("甲：") && !word.zh.includes("乙：")));
-    assert.equal(await page.evaluate(() => arabicLearningBank.filter(word => word.dialogueId).length), 104);
+    const added = await page.evaluate(() => dailyArabicBank);
+    assert.equal(added.length, 351);
+    assert.ok(added.every(word => word.ar && word.zh && word.rom && !word.dialogueId && !word.zh.includes("甲：") && !word.zh.includes("乙：")));
+    assert.equal(await page.evaluate(() => arabicScheduler.dialogues.size), 0);
     await page.evaluate(() => {
       const state = arabicScheduler.load();
       delete state.days[localDateKey()];
@@ -69,8 +65,8 @@ const server = http.createServer((req, res) => {
       arabicScheduler.save(state);
       arabicPractice.draw();
     });
-    assert.match(await panel.locator(".english-progress").innerText(), /新词 0\/20 · 复习 0\/10/);
-    assert.equal(await panel.locator(".english-overview-row").count(), 6);
+    assert.match(await panel.locator(".english-progress").innerText(), /新词 0\/5 · 复习 0\/10/);
+    assert.equal(await panel.locator(".english-overview-row").count(), 4);
     const englishSave = await page.evaluate(() => localStorage.getItem(EnglishLearning.STORAGE_KEY));
     await panel.getByRole("button", { name: "开始测试", exact: true }).click();
     assert.equal(await page.evaluate(() => arabicScheduler.plan().test.active.deadline - arabicScheduler.plan().test.active.startedAt), 25000);
@@ -93,18 +89,18 @@ const server = http.createServer((req, res) => {
       await panel.locator(".english-input").press("Enter");
     }
     assert.deepEqual((await page.evaluate(() => testSpeech.slice(-2))).map(part => part.lang), ["ar", "zh-CN"]);
-    for (let index = 0; index < 6; index++) {
+    for (let index = 0; index < 4; index++) {
       await panel.locator(".english-test-start").click();
       const answers = await page.evaluate(() => {
         const active = arabicScheduler.plan().test.active;
-        return active.rows.map(row => arabicScheduler.words.get(row.id)[active.index >= 3 ? "word" : "zh"]);
+        return active.rows.map(row => arabicScheduler.words.get(row.id)[active.index >= 2 ? "word" : "zh"]);
       });
-      assert.match(await panel.locator(".english-test-title").innerText(), index < 3 ? /阿语选中文/ : /中文选阿语/);
+      assert.match(await panel.locator(".english-test-title").innerText(), index < 2 ? /阿语选中文/ : /中文选阿语/);
       for (let row = 0; row < answers.length; row++) {
         await panel.locator("tr").nth(row).getByRole("button", { name: answers[row], exact: true }).click();
       }
-      assert.equal(await page.evaluate(() => arabicScheduler.summary().done), index === 5);
-      assert.equal(await page.evaluate(() => loadCheckins()[localDateKey()]?.includes(dailyArabicSourceKey) || false), index === 5);
+      assert.equal(await page.evaluate(() => arabicScheduler.summary().done), index === 3);
+      assert.equal(await page.evaluate(() => loadCheckins()[localDateKey()]?.includes(dailyArabicSourceKey) || false), index === 3);
     }
     assert.equal(await page.evaluate(() => localStorage.getItem(EnglishLearning.STORAGE_KEY)), englishSave);
     await page.locator("#checkinLink").click();
@@ -119,6 +115,11 @@ const server = http.createServer((req, res) => {
     const bowling = await page.evaluate(() => arabicPractice.current);
     await panel.getByRole("button", { name: bowling.word, exact: true }).click();
     assert.match(await panel.locator(".english-prompt").innerText(), /保龄球/);
+    assert.equal(await page.evaluate(() => arabicPractice.speakKey === speakKeySound), true);
+    await page.evaluate(() => {
+      window.testKeySounds = [];
+      arabicPractice.speakKey = letter => { window.testKeySounds.push(letter); };
+    });
     await panel.locator('.english-input').fill(bowling.word.slice(0, 1));
     const keyboard = panel.locator('.english-arabic-keyboard');
     await keyboard.getByRole('button', { name: bowling.word[1], exact: true }).click();
@@ -129,6 +130,7 @@ const server = http.createServer((req, res) => {
       await keyboard.getByRole('button', { name: letter === ' ' ? '空格' : letter, exact: true }).click();
     }
     assert.equal(await page.evaluate(() => arabicPractice.finished), true);
+    assert.deepEqual(await page.evaluate(() => testKeySounds), [bowling.word[1], ...bowling.word.slice(1)].filter(letter => /^\p{L}$/u.test(letter)));
     await page.setViewportSize({ width: 390, height: 844 });
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     // Import old index-based records once and preserve their historical check-in.
@@ -144,7 +146,7 @@ const server = http.createServer((req, res) => {
     const saved = await page.evaluate(() => arabicScheduler.load());
     for (const id of legacy.ids) assert.ok(saved.records[id]);
     assert.equal(await page.evaluate(() => arabicScheduler.summary().review), 10);
-    assert.equal(await page.evaluate(() => arabicScheduler.summary().fresh), 20);
+    assert.equal(await page.evaluate(() => arabicScheduler.summary().fresh), 5);
     assert.equal(await page.evaluate(date => dailyProgressSummaries(date).find(s => s.source === dailyArabicSourceKey).done, legacy.yesterday), true);
     await page.reload();
     assert.deepEqual(await page.evaluate(() => arabicScheduler.load().records), saved.records);
@@ -162,6 +164,7 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.evaluate(() => arabicScheduler.summary().done), false);
     // Reproduce a 21-question day: only the short last page was passed.
     await page.evaluate(() => {
+      arabicScheduler.newLimit = 20;
       localStorage.removeItem(arabicStorageKey);
       const plan = arabicScheduler.plan();
       const state = arabicScheduler.load();
@@ -170,6 +173,7 @@ const server = http.createServer((req, res) => {
       day.review = [review.id];
       day.completed = day.fresh.slice(0, 4);
       for (const id of [...day.completed, review.id]) state.records[id] = { stage: 0, due: localDateKey(), lastCompleted: localDateKey() };
+      state.records[review.id].lastCompleted = EnglishLearning.addDays(localDateKey(), -1);
       day.test = { passed: 2, completed: [2, 5], times: { 2: 2250, 5: 1950 } };
       arabicScheduler.save(state);
       arabicScheduler.startTest(Date.now(), 1);
@@ -205,7 +209,7 @@ const server = http.createServer((req, res) => {
     await overview.nth(0).getByRole('button', { name: '学习', exact: true }).click();
     assert.equal(await page.evaluate(() => arabicPractice.replay.queue.length), 10);
     assert.deepEqual(errors, []);
-    console.log("Arabic checks passed: 20/10 plan, six timed tests, failed-page study, Arabic audio/input, examples, check-in/flag, independent saves, legacy import, mobile.");
+    console.log("Arabic checks passed: 5/10 plan, four timed tests, failed-page study, Arabic audio/input, check-in, independent saves, legacy import, mobile and legacy 21-question navigation.");
     await context.close();
   } finally {
     await browser?.close();

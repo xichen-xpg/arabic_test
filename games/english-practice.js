@@ -1,12 +1,13 @@
 (function () {
   "use strict";
   class EnglishPractice {
-    constructor(container, scheduler, onChange, ensureDate) {
+    constructor(container, scheduler, onChange, ensureDate, speakKey = () => {}) {
       this.container = container;
       this.scheduler = scheduler;
       this.requireChinese = scheduler.languageCode !== "ar";
       this.onChange = onChange;
       this.ensureDate = ensureDate;
+      this.speakKey = speakKey;
       container.innerHTML = `
         <p class="english-progress" aria-live="polite"></p>
         <section class="english-overview" aria-label="今日测试记录"></section>
@@ -142,8 +143,10 @@
           let start = input.selectionStart ?? input.value.length;
           const end = input.selectionEnd ?? start;
           if (letter === 'Backspace' && start === end) start = Math.max(0, start - 1);
+          const previous = input.value;
           input.setRangeText(letter === 'Backspace' ? '' : letter, start, end, 'end');
           this.updateInput();
+          if (input.value !== previous && /^\p{L}$/u.test(letter)) this.speakKey?.(letter);
           input.focus({ preventScroll: true });
         });
         keyboard.append(button);

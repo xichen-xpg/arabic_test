@@ -812,13 +812,13 @@
   </main>
 
   <script src="games/math-restart.js"></script>
-  <script src="games/daily-arabic.js?v=20261031short"></script>
+  <script src="games/daily-arabic.js?v=20261031sentences"></script>
   <script src="games/daily-poems.js?v=20261031-expanded74"></script>
   <script src="games/poem-schedule.js"></script>
   <script src="games/daily-english.js?v=20260921mixed"></script>
-  <script src="games/english-scheduler.js?v=20261031arabicrepair"></script>
+  <script src="games/english-scheduler.js?v=20261031sentences"></script>
   <script src="games/english-test.js?v=20261031studyfix"></script>
-  <script src="games/english-practice.js?v=20261031studyfix"></script>
+  <script src="games/english-practice.js?v=20261031keyaudio"></script>
   <script>
     const questions = [
       { category: "基础问候", zh: "你好", ar: "مرحبا", rom: "marhaban" },
@@ -827,13 +827,13 @@
       { category: "基础问候", zh: "谢谢光临", ar: "شكرا لزيارتكم", rom: "shukran liziyaratikum" },
       { category: "基础问候", zh: "谢谢", ar: "شكرا", rom: "shukran" },
 
-      { category: "餐厅常用句子", zh: "菜单上有什么？", ar: "ماذا يوجد في القائمة؟", rom: "madha yujad fi al-qa'imah" },
-      { category: "餐厅常用句子", zh: "你想点什么？", ar: "ماذا تريد أن تطلب؟", rom: "madha turid an tatlub" },
+      { category: "餐厅常用句子", zh: "今天吃什么？", ar: "ما الطعام اليوم؟", rom: "ma at-ta'am al-yawm" },
+      { category: "餐厅常用句子", zh: "你点什么？", ar: "ماذا تطلب؟", rom: "madha tatlub" },
       { category: "餐厅常用句子", zh: "你最推荐什么？", ar: "ماذا توصي؟", rom: "madha tusi" },
       { category: "餐厅常用句子", zh: "这个很好吃", ar: "هذا لذيذ", rom: "hadha ladhidh" },
       { category: "餐厅常用句子", zh: "我喜欢这个", ar: "أنا أحب هذا", rom: "ana uhibb hadha" },
-      { category: "餐厅常用句子", zh: "我在餐厅读菜单", ar: "أقرأ قائمة الطعام في المطعم", rom: "aqrau qaimata t taami filmatami" },
-      { category: "餐厅常用句子", zh: "服务员给我菜单", ar: "يعطيني النادل قائمة الطعام", rom: "yu tunnun nadilu qaimata t taami" },
+      { category: "餐厅常用句子", zh: "我读菜单。", ar: "أقرأ القائمة.", rom: "aqra al-qa'ima" },
+      { category: "餐厅常用句子", zh: "服务员拿着菜单。", ar: "القائمة مع النادل.", rom: "al-qa'ima ma'a an-nadil" },
 
       { category: "餐厅方位介词", zh: "在上面 = on", ar: "على", rom: "ala" },
       { category: "餐厅方位介词", zh: "在……之间 = between", ar: "بين", rom: "bayna" },
@@ -1039,7 +1039,7 @@
       { category: "Best Friend - 常用句子", zh: "他很高。", ar: "هو طويل", rom: "huwa taweel" },
       { category: "Best Friend - 常用句子", zh: "她有黑色头发。", ar: "لديها شعر أسود", rom: "ladayha sha'r aswad" },
       { category: "Best Friend - 常用句子", zh: "我们一起玩。", ar: "نحن نلعب معا", rom: "nahnu nal'ab ma'an" },
-      { category: "Best Friend - 常用句子", zh: "你最好的朋友是谁？", ar: "من هو أفضل صديق لك؟", rom: "man huwa afdal sadeeq laka" },
+      { category: "Best Friend - 常用句子", zh: "你的朋友是谁？", ar: "من صديقك؟", rom: "man sadiquk" },
       { category: "Best Friend - 常用句子", zh: "她叫什么名字？", ar: "ما اسمها؟", rom: "ma ismuha" },
       { category: "Best Friend - 常用句子", zh: "她几岁？", ar: "كم عمرها؟", rom: "kam umruha" },
       { category: "Best Friend - 常用句子", zh: "她什么时候生日？", ar: "متى عيد ميلادها؟", rom: "mata eed meeladiha" },
@@ -1053,7 +1053,7 @@
       { category: "Best Friend - 常用句子", zh: "你呢？", ar: "وأنت؟", rom: "wa anta" },
       { category: "Best Friend - 常用句子", zh: "很好，谢谢", ar: "بخير شكرا", rom: "bikhayr shukran" },
       { category: "Best Friend - 常用句子", zh: "你的学校是什么？", ar: "ما اسم مدرستك؟", rom: "ma ism madrasatika" },
-      { category: "Best Friend - 常用句子", zh: "我在 Yas America Academy", ar: "أنا في أكاديمية ياس أمريكا", rom: "ana fi yas america academy" },
+      { category: "Best Friend - 常用句子", zh: "我的学校是 Yas America Academy", ar: "مدرستي أكاديمية ياس أمريكا", rom: "madrasati akadimiyyat yas amrika" },
       { category: "Best Friend - 常用句子", zh: "你的班级是什么？", ar: "ما صفك؟", rom: "ma saffuka" },
       { category: "Best Friend - 常用句子", zh: "我在 Scorpion 班", ar: "أنا في صف سكوربيون", rom: "ana fi saff scorpion" },
       { category: "Best Friend - 常用句子", zh: "我在 Hawksbill 班", ar: "أنا في صف هوكسبيل", rom: "ana fi saff hawksbill" },
@@ -1062,19 +1062,19 @@
       { category: "Best Friend - 常用句子", zh: "我十岁", ar: "عمري عشر سنوات", rom: "umri ashr sanawat" },
       { category: "Best Friend - 常用句子", zh: "你叫什么名字？", ar: "ما اسمك؟", rom: "ma ismuka" },
       { category: "Best Friend - 常用句子", zh: "你最喜欢的颜色是什么？", ar: "ما لونك المفضل؟", rom: "ma lawnuka al-mufaddal" },
-      { category: "Best Friend - 常用句子", zh: "我最喜欢绿色", ar: "لوني المفضل هو الأخضر", rom: "lawni al-mufaddal huwa al-akhdar" },
+      { category: "Best Friend - 常用句子", zh: "我喜欢绿色。", ar: "أحب الأخضر.", rom: "uhibb al-akhdar" },
       { category: "Best Friend - 常用句子", zh: "你昨天干什么了？", ar: "ماذا فعلت أمس؟", rom: "madha fa'alta ams" },
-      { category: "Best Friend - 常用句子", zh: "我去了游乐园。", ar: "ذهبت إلى مدينة الملاهي", rom: "dhahabtu ila madinat al-malahi" },
-      { category: "Best Friend - 常用句子", zh: "我最喜欢的餐厅是 3fils。", ar: "مطعمي المفضل هو 3fils", rom: "matami al-mufaddal huwa 3fils" },
+      { category: "Best Friend - 常用句子", zh: "我去了游乐园。", ar: "زرت الملاهي.", rom: "zurt al-malahi" },
+      { category: "Best Friend - 常用句子", zh: "我喜欢3fils餐厅。", ar: "أحب مطعم 3fils.", rom: "uhibb mat'am 3fils" },
       { category: "Best Friend - 常用句子", zh: "我喜欢吃 sushi。", ar: "أحب أكل السوشي", rom: "uhibb akl as-sushi" },
-      { category: "Best Friend - 常用句子", zh: "我最喜欢的 ride 是 mat race。", ar: "لعبتي المفضلة هي mat race", rom: "lubati al-mufaddala hiya mat race" },
+      { category: "Best Friend - 常用句子", zh: "我喜欢mat race。", ar: "أحب mat race.", rom: "uhibb mat race" },
       { category: "Best Friend - 常用句子", zh: "我留在阿布扎比。", ar: "بقيت في أبوظبي.", rom: "baqaytu fi abu dhabi" },
-      { category: "Best Friend - 常用句子", zh: "我和家人一起去参观了博物馆。", ar: "زرت المتحف مع عائلتي", rom: "zurt al-mathaf maa ailati" },
-      { category: "Best Friend - 常用句子", zh: "我们在迪拜吃了火锅。", ar: "أكلنا الهوت بوت في دبي.", rom: "akalna al-hot pot fi dubai" },
-      { category: "Best Friend - 常用句子", zh: "我每天都很开心。", ar: "أنا سعيد كل يوم", rom: "ana saeed kull yawm" },
+      { category: "Best Friend - 常用句子", zh: "我参观了博物馆。", ar: "زرت المتحف.", rom: "zurt al-mathaf" },
+      { category: "Best Friend - 常用句子", zh: "我们吃了火锅。", ar: "أكلنا الهوت بوت.", rom: "akalna al-hot pot" },
+      { category: "Best Friend - 常用句子", zh: "我每天都很开心。", ar: "سعيد كل يوم.", rom: "sa'id kulla yawm" },
       { category: "Best Friend - 常用句子", zh: "我今天去游泳了。", ar: "ذهبت للسباحة اليوم.", rom: "dhahabtu lis-sibaha al-yawm" },
       { category: "Best Friend - 常用句子", zh: "这里很漂亮。", ar: "هنا جميل", rom: "huna jameel" },
-      { category: "Best Friend - 常用句子", zh: "我喜欢逛街买东西。", ar: "أحب التسوق وشراء الأشياء", rom: "uhibb at-tasawwuq wa shira al-ashya" },
+      { category: "Best Friend - 常用句子", zh: "我喜欢购物。", ar: "أحب التسوق.", rom: "uhibb at-tasawwuq" },
       { category: "Best Friend - 常用句子", zh: "我学会了乒乓球。", ar: "تعلمت تنس الطاولة", rom: "taallamtu tennis at-tawila" }
     ].map((item) => ({ ...item, source: "best-friend" }));
 
@@ -1211,10 +1211,10 @@
     const englishSourceKey = "daily-english";
     const englishScheduler = new EnglishLearning.Scheduler(window.dailyEnglishQuestionBank, localStorage);
     const arabicStorageKey = "arabic-test:arabic-learning:v1";
-    const arabicLearningBank = [...dailyArabicBank].reverse().concat([...allQuestions].reverse()).filter((word, index, bank) => bank.findIndex(item => item.ar === word.ar && item.dialogueId === word.dialogueId) === index)
-      .map(word => ({ ...word, id: word.dialogueId ? `arabic:${word.dialogueId}:${word.dialogueOrder}` : `arabic:${word.ar}`, word: word.ar, phonetic: word.rom, source: dailyArabicSourceKey }));
+    const arabicLearningBank = [...dailyArabicBank].reverse().concat([...allQuestions].reverse()).filter((word, index, bank) => bank.findIndex(item => item.ar === word.ar) === index)
+      .map(word => ({ ...word, id: word.id?.startsWith("arabic:") ? word.id : `arabic:${word.ar}`, word: word.ar, phonetic: word.rom, source: dailyArabicSourceKey }));
     const arabicScheduler = new EnglishLearning.Scheduler(arabicLearningBank, localStorage, EnglishLearning.today,
-      { storageKey: arabicStorageKey, languageName: "阿语", languageCode: "ar", reviewLimit: 10 });
+      { storageKey: arabicStorageKey, languageName: "阿语", languageCode: "ar", newLimit: 5, reviewLimit: 10, independentSentences: true });
     const dailyArabicRotationStartKey = "2026-09-03";
     const dailyArabicNewCount = 3;
     const dailyArabicRecentDays = 5;
@@ -1568,7 +1568,7 @@
       if (arabicScheduler.summary().done) markDailyCheckin(dailyArabicSourceKey);
       emitMetrics(eventName);
       if (window.location.hash === "#checkin") renderCalendar();
-    }, ensurePracticeDate);
+    }, ensurePracticeDate, speakKeySound);
 
     function localDateKey(date) {
       if (!date) return dubaiDateKey();
