@@ -43,8 +43,10 @@
       this.storageKey = options.storageKey || STORAGE_KEY;
       this.languageName = options.languageName || "英文";
       this.languageCode = options.languageCode || "en-GB";
+      this.testDurationMs = this.languageCode === "ar" ? 30000 : 25000;
       this.reviewLimit = options.reviewLimit ?? REVIEW_LIMIT;
       this.newLimit = options.newLimit ?? NEW_LIMIT;
+      this.limitChange = options.limitChange;
       this.firstDay = options.firstDay;
       this.firstDayNewLimit = options.firstDayNewLimit ?? this.newLimit;
       this.randomNew = options.randomNew || false;
@@ -141,8 +143,9 @@
       });
     }
     plan(date = this.clock(), create = date === this.clock()) {
-      const NEW_LIMIT = date === this.firstDay ? this.firstDayNewLimit : this.newLimit;
-      const REVIEW_LIMIT = this.reviewLimit;
+      const limits = this.limitChange && date >= this.limitChange.date ? this.limitChange : this;
+      const NEW_LIMIT = date === this.firstDay ? this.firstDayNewLimit : limits.newLimit;
+      const REVIEW_LIMIT = limits.reviewLimit;
       const DAILY_LIMIT = NEW_LIMIT + REVIEW_LIMIT;
       const state = this.load();
       if (state.days[date]) {
@@ -373,6 +376,7 @@
       const timing = latest && (!plan.testTiming || latest.totalMs / latest.pages < plan.testTiming.totalMs / plan.testTiming.pages) ? latest : plan.testTiming;
       const averageSeconds = timing ? timing.totalMs / timing.pages / 1000 : null;
       return { pages, passed: completed.length, completed, next, done, timing,
+        fastPage: Boolean(plan.test?.fastPage || [...Object.values(plan.test?.times || {}), ...Object.values(plan.test?.latestTimes || {})].some(ms => Number.isFinite(ms) && ms < 15000)),
         averageSeconds, fast: Boolean(timing && timing.pages > 0 && averageSeconds < 15) };
     }
     restartTest() {
@@ -412,7 +416,7 @@
         [rows[i], rows[j]] = [rows[j], rows[i]];
       }
       if (rows.length > 1 && rows.every((row, i) => row.id === ids[i])) rows.push(rows.shift());
-      test.active = { index, startedAt: now, deadline: now + 25000, answers: {}, failed: false,
+      test.active = { index, startedAt: now, deadline: now + this.testDurationMs, answers: {}, failed: false,
         choiceVersion: 1, rows };
       plan.test = test;
       this.save(state);
@@ -465,6 +469,7 @@
         test.lastTime = Number.isFinite(active.startedAt) ? Math.max(0, now - active.startedAt) : null;
         test.latestTimes = test.latestTimes || {};
         test.latestTimes[index] = test.lastTime;
+        if (Number.isFinite(test.lastTime) && test.lastTime < 15000) test.fastPage = true;
         test.passed = test.completed.length;
         if (test.attempts) delete test.attempts[index];
         const pages = Math.ceil((plan.review.length + plan.fresh.length) / 10) * 2;

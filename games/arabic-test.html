@@ -816,9 +816,9 @@
   <script src="games/daily-poems.js?v=20261031-expanded74"></script>
   <script src="games/poem-schedule.js"></script>
   <script src="games/daily-english.js?v=20260921mixed"></script>
-  <script src="games/english-scheduler.js?v=20261031testshuffle"></script>
-  <script src="games/english-test.js?v=20261031testoptions"></script>
-  <script src="games/english-practice.js?v=20261031keyaudio"></script>
+  <script src="games/english-scheduler.js?v=20261102quota30sflag"></script>
+  <script src="games/english-test.js?v=20261102meanings30s"></script>
+  <script src="games/english-practice.js?v=20261102meanings"></script>
   <script>
     const questions = [
       { category: "基础问候", zh: "你好", ar: "مرحبا", rom: "marhaban" },
@@ -1215,6 +1215,7 @@
       .map(word => ({ ...word, id: word.id?.startsWith("arabic:") ? word.id : `arabic:${word.ar}`, word: word.ar, phonetic: word.rom, source: dailyArabicSourceKey }));
     const arabicScheduler = new EnglishLearning.Scheduler(arabicLearningBank, localStorage, EnglishLearning.today,
       { storageKey: arabicStorageKey, languageName: "阿语", languageCode: "ar", newLimit: 5, reviewLimit: 10, independentSentences: true,
+        limitChange: { date: "2026-11-03", newLimit: 3, reviewLimit: 5 },
         firstDay: "2026-10-31", firstDayNewLimit: 15, randomNew: true });
     const dailyArabicRotationStartKey = "2026-09-03";
     const dailyArabicNewCount = 3;
@@ -1764,9 +1765,9 @@
       if (dateKey !== localDateKey() && !study && !completed.size && !Object.keys(byDate).length && !english && !arabic) return [];
       return [
         { source:"daily-study", label:"PPT", done:!!study?.finishedAt },
-        { source:englishSourceKey, label:"英语", done:!!english?.done || completed.has(englishSourceKey) },
+        { source:englishSourceKey, fastPage:englishScheduler.testSummary(dateKey, false)?.fastPage, label:"英语", done:!!english?.done || completed.has(englishSourceKey) },
         { source:"daily-chinese", label:"阅读", done:completed.has("daily-chinese") || (dateKey < localDateKey() && !!legacyStudy?.completed?.chinese) },
-        { source:dailyArabicSourceKey, label:"阿语", done:!!arabic?.done || completed.has(dailyArabicSourceKey) },
+        { source:dailyArabicSourceKey, fastPage:arabicScheduler.testSummary(dateKey, false)?.fastPage, label:"阿语", done:!!arabic?.done || completed.has(dailyArabicSourceKey) },
         { source:poemSourceKey, label:"每日一首", done:completed.has(poemSourceKey) }
       ].map(item=>({...item,checkOnly:true}));
     }
@@ -1812,7 +1813,8 @@
             item.title = summary.checkOnly ? `${summary.label}：${summary.done ? "已完成" : "未完成"}` : `${summary.label} ${summary.completedCount}/${summary.total}`;
             const name = document.createElement("span");
             name.className = "calendar-source-name";
-            name.textContent = summary.label;
+            name.textContent = summary.label + (summary.fastPage ? " 🚩" : "");
+            if (summary.fastPage) item.title += "；单页测试用时少于15秒";
             const count = document.createElement("span");
             count.className = "calendar-source-count";
             count.textContent = summary.checkOnly ? (summary.done ? "✓" : "○") : `${summary.done ? "✓ " : ""}${summary.completedCount}/${summary.total}`;

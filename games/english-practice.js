@@ -284,6 +284,13 @@
         button.lang = this.scheduler.languageCode;
         button.dir = this.scheduler.languageCode === "ar" ? "rtl" : "ltr";
         button.textContent = option.word;
+        if (this.scheduler.languageCode === "ar") {
+          const meaning = document.createElement("div");
+          meaning.lang = "zh-CN";
+          meaning.dir = "ltr";
+          meaning.textContent = option.zh;
+          button.append(meaning);
+        }
         const number = document.createElement("span");
         number.textContent = `${index + 1}. `;
         number.setAttribute("aria-hidden", "true");

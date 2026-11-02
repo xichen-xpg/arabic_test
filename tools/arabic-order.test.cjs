@@ -144,3 +144,69 @@ test('old combined dialogue progress migrates to both turns and invalidates old 
   assert.equal(migrated.days['2026-10-31'].test.passed, 0);
   assert.deepEqual(scheduler.load(), migrated);
 });
+
+
+test("Arabic quotas change on November 3 without changing November 2 progress", () => {
+  const bank = Array.from({ length: 40 }, (_, i) => ({ id: `quota-${i}`, word: `word ${i}`, zh: `meaning ${i}` }));
+  const data = new Map();
+  const storage = { getItem: key => data.get(key), setItem: (key, value) => data.set(key, value) };
+  let date = "2026-11-02";
+  const scheduler = new Scheduler(bank, storage, () => date, {
+    languageCode: "ar", newLimit: 5, reviewLimit: 10,
+    limitChange: { date: "2026-11-03", newLimit: 3, reviewLimit: 5 }
+  });
+  const state = scheduler.load();
+  for (const word of bank.slice(0, 12)) state.records[word.id] = { due: date, lastCompleted: "2026-11-01", stage: 0 };
+  scheduler.save(state);
+  const before = JSON.stringify(scheduler.plan());
+  assert.equal(scheduler.plan().fresh.length, 5);
+  assert.equal(scheduler.plan().review.length, 10);
+  date = "2026-11-03";
+  assert.equal(scheduler.plan().fresh.length, 3);
+  assert.equal(scheduler.plan().review.length, 5);
+  assert.equal(JSON.stringify(scheduler.plan("2026-11-02", false)), before);
+});
+
+
+test("Arabic test pages allow 30 seconds while English retains 25 seconds", () => {
+  for (const [languageCode, duration] of [["ar", 30000], ["en-GB", 25000]]) {
+    const bank = Array.from({ length: 10 }, (_, i) => ({ id: `timer-${i}`, word: `word ${i}`, zh: `meaning ${i}` }));
+    const data = new Map();
+    const storage = { getItem: key => data.get(key), setItem: (key, value) => data.set(key, value) };
+    const scheduler = new Scheduler(bank, storage, () => "2026-11-02", { languageCode });
+    scheduler.startTest(1000);
+    const active = scheduler.plan().test.active;
+    assert.equal(active.deadline, 1000 + duration);
+    const row = active.rows[0];
+    assert.notEqual(scheduler.answerTest(0, row.id, active.deadline - 1), "failed");
+    scheduler.answerTest(1, active.rows[1].id, active.deadline);
+    assert.equal(scheduler.plan().test.active.failed, true);
+  }
+});
+
+
+test("a single passed page below 15 seconds earns a calendar flag", () => {
+  for (const duration of [14999, 15000, 20000]) {
+    const data = new Map();
+    const storage = { getItem: key => data.get(key), setItem: (key, value) => data.set(key, value) };
+    const bank = Array.from({ length: 12 }, (_, i) => ({ id: `flag-${i}`, word: `word ${i}`, zh: `meaning ${i}` }));
+    const scheduler = new Scheduler(bank, storage, () => "2026-11-02", { languageCode: "ar" });
+    scheduler.startTest(1000);
+    scheduler.plan().test.active.rows.forEach((row, i) => scheduler.answerTest(i, row.id, 1000 + duration));
+    assert.equal(scheduler.testSummary().done, false);
+    assert.equal(scheduler.testSummary().fastPage, duration < 15000);
+    const reloaded = new Scheduler(bank, storage, () => "2026-11-02", { languageCode: "ar" });
+    assert.equal(reloaded.testSummary().fastPage, duration < 15000);
+  }
+});
+
+
+test("calendar flags and test duration text are connected to the scheduler", () => {
+  const html = fs.readFileSync(require.resolve("../games/arabic-test.html"), "utf8");
+  assert.match(html, /fastPage:englishScheduler\.testSummary\(dateKey, false\)\?\.fastPage/);
+  assert.match(html, /fastPage:arabicScheduler\.testSummary\(dateKey, false\)\?\.fastPage/);
+  assert.ok(html.includes("\u{1f6a9}"));
+  const ui = fs.readFileSync(require.resolve("../games/english-test.js"), "utf8");
+  assert.ok(ui.includes('${seconds}'));
+  assert.doesNotMatch(ui, /25/);
+});

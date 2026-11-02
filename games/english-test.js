@@ -52,6 +52,7 @@
     }
     draw() {
       this.hide();
+      const seconds = this.scheduler.testDurationMs / 1000;
       this.container.hidden = false;
       const summary = this.scheduler.testSummary();
       const active = this.scheduler.plan().test?.active;
@@ -59,7 +60,7 @@
         const needsStudy = this.scheduler.testStudyWords().length > 0;
         this.container.innerHTML = `<button class="secondary english-test-start" type="button"></button>`;
         const button = this.container.querySelector("button");
-        button.textContent = needsStudy ? "重新学习本页单词" : "重做本页（25 秒）";
+        button.textContent = needsStudy ? "重新学习本页单词" : `重做本页（${seconds} 秒）`;
         button.addEventListener("click", () => {
           if (this.ensureDate()) return;
           if (needsStudy) this.onChange("test-relearn-required");
@@ -69,7 +70,7 @@
         return;
       }
       this.container.innerHTML = `<h3 class="english-test-title"></h3>
-        <p class="english-note">25秒内全部选对。答错或超时后，复习再试。</p>
+        <p class="english-note">${seconds}秒内全部选对。答错或超时后，复习再试。</p>
         <p class="english-test-clock" role="timer"></p>
         <div class="english-test-scroll"><table class="english-test-table"><tbody></tbody></table></div>
         <p class="english-test-feedback" role="status"></p>
@@ -124,6 +125,13 @@
           button.dir = reverse && this.scheduler.languageCode === "ar" ? "rtl" : "ltr";
           const field = reverse ? 'word' : 'zh';
           button.textContent = EnglishLearning.testOptionText(this.scheduler.words.get(id)[field], this.scheduler.words.get(row.id)[field]);
+          if (reverse && this.scheduler.languageCode === "ar") {
+            const meaning = document.createElement("div");
+            meaning.lang = "zh-CN";
+            meaning.dir = "ltr";
+            meaning.textContent = this.scheduler.words.get(id).zh;
+            button.append(meaning);
+          }
           button.disabled = active.failed || Boolean(active.answers[index]);
           if (active.answers[index] === id) button.className = id === row.id ? "correct" : "wrong";
           button.addEventListener("click", () => {
