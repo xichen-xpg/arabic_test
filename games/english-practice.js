@@ -290,6 +290,7 @@
           meaning.dir = "ltr";
           meaning.textContent = option.zh;
           button.append(meaning);
+          button.append(ArabicWordMeanings.render(option.word));
         }
         const number = document.createElement("span");
         number.textContent = `${index + 1}. `;

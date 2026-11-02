@@ -719,6 +719,9 @@
       .app { display: none !important; }
       #poemPrintContent { display: block; white-space: pre-wrap; font: 18pt/2 serif; }
     }
+    .arabic-choice-meanings { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 6px; }
+    .arabic-choice-word { display: inline-flex; flex-direction: column; align-items: center; padding: 3px 6px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px; line-height: 1.5; }
+    .arabic-choice-word [lang="zh-CN"] { font-size: 12px; font-weight: normal; }
   </style>
 </head>
 <body>
@@ -817,8 +820,9 @@
   <script src="games/poem-schedule.js"></script>
   <script src="games/daily-english.js?v=20260921mixed"></script>
   <script src="games/english-scheduler.js?v=20261102quota30sflag"></script>
-  <script src="games/english-test.js?v=20261102meanings30s"></script>
-  <script src="games/english-practice.js?v=20261102meanings"></script>
+  <script src="games/arabic-word-meanings.js?v=20261102words"></script>
+  <script src="games/english-test.js?v=20261102wordmeanings"></script>
+  <script src="games/english-practice.js?v=20261102wordmeanings"></script>
   <script>
     const questions = [
       { category: "基础问候", zh: "你好", ar: "مرحبا", rom: "marhaban" },
@@ -1628,6 +1632,7 @@
     }
 
     function wordMeaning(word) {
+      if (ArabicWordMeanings.meanings[word]) return ArabicWordMeanings.meanings[word];
       if (arabicWordMeanings[word]) return arabicWordMeanings[word];
 
       const exactMatch = allQuestions.find((item) => normalizeArabicWord(item.ar) === word);

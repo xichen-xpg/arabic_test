@@ -131,6 +131,7 @@
             meaning.dir = "ltr";
             meaning.textContent = this.scheduler.words.get(id).zh;
             button.append(meaning);
+            button.append(ArabicWordMeanings.render(this.scheduler.words.get(id).word));
           }
           button.disabled = active.failed || Boolean(active.answers[index]);
           if (active.answers[index] === id) button.className = id === row.id ? "correct" : "wrong";
