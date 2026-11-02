@@ -126,11 +126,6 @@
           const field = reverse ? 'word' : 'zh';
           button.textContent = EnglishLearning.testOptionText(this.scheduler.words.get(id)[field], this.scheduler.words.get(row.id)[field]);
           if (reverse && this.scheduler.languageCode === "ar" && active.answers[index] === row.id) {
-            const meaning = document.createElement("div");
-            meaning.lang = "zh-CN";
-            meaning.dir = "ltr";
-            meaning.textContent = this.scheduler.words.get(id).zh;
-            button.append(meaning);
             button.append(ArabicWordMeanings.render(this.scheduler.words.get(id).word));
           }
           button.disabled = active.failed || Boolean(active.answers[index]);

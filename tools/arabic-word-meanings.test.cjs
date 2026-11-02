@@ -41,7 +41,9 @@ test('word meanings reveal only after choosing the correct answer', () => {
   const practice = fs.readFileSync(require.resolve('../games/english-practice.js'), 'utf8');
   const exam = fs.readFileSync(require.resolve('../games/english-test.js'), 'utf8');
   assert.match(practice, /if \(this.scheduler.languageCode === "ar" && this.selected\)/);
-  assert.match(practice, /choice.append\(meaning, ArabicWordMeanings.render\(options\[optionIndex\].word\)\)/);
+  assert.match(practice, /choice.append\(ArabicWordMeanings.render\(options\[optionIndex\].word\)\)/);
+  assert.doesNotMatch(practice, /meaning.textContent = option.zh/);
+  assert.doesNotMatch(exam, /meaning.textContent = this.scheduler.words.get\(id\).zh/);
   assert.match(exam, /if \(reverse && this.scheduler.languageCode === "ar" && active.answers\[index\] === row.id\)/);
 });
 

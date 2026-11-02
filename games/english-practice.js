@@ -285,11 +285,6 @@
         button.dir = this.scheduler.languageCode === "ar" ? "rtl" : "ltr";
         button.textContent = option.word;
         if (this.scheduler.languageCode === "ar" && this.selected) {
-          const meaning = document.createElement("div");
-          meaning.lang = "zh-CN";
-          meaning.dir = "ltr";
-          meaning.textContent = option.zh;
-          button.append(meaning);
           button.append(ArabicWordMeanings.render(option.word));
         }
         const number = document.createElement("span");
@@ -312,11 +307,7 @@
             this.selected = true;
             if (this.scheduler.languageCode === "ar") {
               this.el.choices.querySelectorAll("button").forEach((choice, optionIndex) => {
-                const meaning = document.createElement("div");
-                meaning.lang = "zh-CN";
-                meaning.dir = "ltr";
-                meaning.textContent = options[optionIndex].zh;
-                choice.append(meaning, ArabicWordMeanings.render(options[optionIndex].word));
+                choice.append(ArabicWordMeanings.render(options[optionIndex].word));
               });
             }
             button.classList.add("correct");
