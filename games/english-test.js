@@ -125,13 +125,13 @@
           button.dir = reverse && this.scheduler.languageCode === "ar" ? "rtl" : "ltr";
           const field = reverse ? 'word' : 'zh';
           button.textContent = EnglishLearning.testOptionText(this.scheduler.words.get(id)[field], this.scheduler.words.get(row.id)[field]);
-          if (reverse && this.scheduler.languageCode === "ar") {
+          if (reverse && this.scheduler.languageCode === "ar" && active.answers[index] === row.id) {
             const meaning = document.createElement("div");
             meaning.lang = "zh-CN";
             meaning.dir = "ltr";
             meaning.textContent = this.scheduler.words.get(id).zh;
             button.append(meaning);
-            button.append(ArabicWordMeanings.render(this.scheduler.words.get(id).word, active.answers[index] === row.id));
+            button.append(ArabicWordMeanings.render(this.scheduler.words.get(id).word));
           }
           button.disabled = active.failed || Boolean(active.answers[index]);
           if (active.answers[index] === id) button.className = id === row.id ? "correct" : "wrong";

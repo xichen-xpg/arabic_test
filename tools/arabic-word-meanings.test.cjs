@@ -40,7 +40,44 @@ test('each Arabic word renders with its own Chinese meaning in RTL order', () =>
 test('word meanings reveal only after choosing the correct answer', () => {
   const practice = fs.readFileSync(require.resolve('../games/english-practice.js'), 'utf8');
   const exam = fs.readFileSync(require.resolve('../games/english-test.js'), 'utf8');
-  assert.match(practice, /render\(option.word, this.selected\)/);
-  assert.match(practice, /this.selected = true;\s*this.el.choices.querySelectorAll\(".arabic-choice-meanings"\)/);
-  assert.match(exam, /render\(this.scheduler.words.get\(id\).word, active.answers\[index\] === row.id\)/);
+  assert.match(practice, /if \(this.scheduler.languageCode === "ar" && this.selected\)/);
+  assert.match(practice, /choice.append\(meaning, ArabicWordMeanings.render\(options\[optionIndex\].word\)\)/);
+  assert.match(exam, /if \(reverse && this.scheduler.languageCode === "ar" && active.answers\[index\] === row.id\)/);
+});
+
+test('practice renders no Chinese in options before selection or after a wrong click', () => {
+  const context = fixture();
+  function element() {
+    return {
+      children: [], textContent: '', classList: { add() {} },
+      append(...nodes) { this.children.push(...nodes); },
+      prepend(node) { this.children.unshift(node); },
+      replaceChildren() { this.children = []; },
+      setAttribute() {}, focus() {},
+      addEventListener(type, handler) { this[type] = handler; },
+      querySelectorAll() { return this.children; }
+    };
+  }
+  context.document.createElement = element;
+  vm.runInContext(fs.readFileSync(require.resolve('../games/english-practice.js'), 'utf8'), context);
+  const practice = Object.create(context.window.EnglishPractice.prototype);
+  const bank = Array.from(context.window.dailyArabicQuestionBank.slice(0, 4), (word, id) => ({ ...word, word: word.ar, id }));
+  Object.assign(practice, {
+    current: bank[0], selected: false,
+    scheduler: { languageCode: 'ar', bank, mistake() {} },
+    el: Object.fromEntries(['choices', 'feedback', 'choice-number', 'entry', 'choice-entry', 'input'].map(key => [key, element()])),
+    ensureDate: () => false, speak() {}, saveDraft() {}, updateArabicKeyboard() {}
+  });
+  const hasChinese = node => /\p{Script=Han}/u.test(node.textContent) || node.children.some(hasChinese);
+  practice.renderChoices();
+  assert.equal(practice.el.choices.children.some(hasChinese), false);
+  const correct = practice.el.choices.children.find(button => button.textContent === bank[0].word);
+  const wrong = practice.el.choices.children.find(button => button !== correct);
+  wrong.click();
+  assert.equal(practice.el.choices.children.some(hasChinese), false);
+  correct.click();
+  assert.equal(practice.el.choices.children.every(hasChinese), true);
+  assert.equal(practice.el.choices.children.every(button => button.children.some(child => child.className === 'arabic-choice-meanings')), true);
+  practice.renderChoices();
+  assert.equal(practice.el.choices.children.every(hasChinese), true);
 });
