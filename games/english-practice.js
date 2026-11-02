@@ -290,7 +290,7 @@
           meaning.dir = "ltr";
           meaning.textContent = option.zh;
           button.append(meaning);
-          button.append(ArabicWordMeanings.render(option.word));
+          button.append(ArabicWordMeanings.render(option.word, this.selected));
         }
         const number = document.createElement("span");
         number.textContent = `${index + 1}. `;
@@ -310,6 +310,7 @@
             this.el["choice-number"].focus();
           } else {
             this.selected = true;
+            this.el.choices.querySelectorAll(".arabic-choice-meanings").forEach(meanings => { meanings.hidden = false; });
             button.classList.add("correct");
             this.el.choices.querySelectorAll("button").forEach(choice => { choice.disabled = true; });
             this.el.entry.hidden = false;

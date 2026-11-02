@@ -517,9 +517,10 @@
     "العربة": "推车",
     "المدخل": "入口"
   };
-  function render(text) {
+  function render(text, visible = true) {
     const list = document.createElement("div");
     list.className = "arabic-choice-meanings";
+    list.hidden = !visible;
     list.dir = "rtl";
     for (const word of arabicWords(text)) {
       const card = document.createElement("span");

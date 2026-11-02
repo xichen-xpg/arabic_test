@@ -30,7 +30,17 @@ test('each Arabic word renders with its own Chinese meaning in RTL order', () =>
   assert.equal(list.children[0].children[0].textContent, 'أريد');
   assert.equal(list.children[0].children[1].textContent, '我想要');
   assert.equal(list.children[1].children[1].textContent, '水');
+  assert.equal(context.window.ArabicWordMeanings.render('أريد ماء.', false).hidden, true);
+  assert.equal(context.window.ArabicWordMeanings.render('أريد ماء.', true).hidden, false);
   for (const file of ['english-practice.js', 'english-test.js']) {
     assert.match(fs.readFileSync(require.resolve(`../games/${file}`), 'utf8'), /button\.append\(ArabicWordMeanings\.render\(/);
   }
+});
+
+test('word meanings reveal only after choosing the correct answer', () => {
+  const practice = fs.readFileSync(require.resolve('../games/english-practice.js'), 'utf8');
+  const exam = fs.readFileSync(require.resolve('../games/english-test.js'), 'utf8');
+  assert.match(practice, /render\(option.word, this.selected\)/);
+  assert.match(practice, /this.selected = true;\s*this.el.choices.querySelectorAll\(".arabic-choice-meanings"\)/);
+  assert.match(exam, /render\(this.scheduler.words.get\(id\).word, active.answers\[index\] === row.id\)/);
 });
