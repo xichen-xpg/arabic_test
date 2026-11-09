@@ -125,9 +125,6 @@
           button.dir = reverse && this.scheduler.languageCode === "ar" ? "rtl" : "ltr";
           const field = reverse ? 'word' : 'zh';
           button.textContent = EnglishLearning.testOptionText(this.scheduler.words.get(id)[field], this.scheduler.words.get(row.id)[field]);
-          if (reverse && this.scheduler.languageCode === "ar" && active.answers[index] === row.id) {
-            button.append(ArabicWordMeanings.render(this.scheduler.words.get(id).word));
-          }
           button.disabled = active.failed || Boolean(active.answers[index]);
           if (active.answers[index] === id) button.className = id === row.id ? "correct" : "wrong";
           button.addEventListener("click", () => {
