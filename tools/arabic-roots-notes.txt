@@ -1,0 +1,16 @@
+阿语例句词根素材说明
+
+games/daily-arabic.js 中每条素材的 roots 与原句词序一一对应。
+word 是句中原词形；root 是用空格分隔的根字母，非词干、原形或读音。
+root: null 配合 note 表示虚词、代词、固定副词、专名或外来词；不表示遗漏。
+外来词采用保守标注，即使部分现代词典按字母设置检索词根，也不据此断言其为阿语派生词。
+这是供查看的教学标注初稿，并非对全部词形逐条词典认证；有多种词源分析的 سنوات 已另加说明。
+本次仅添加素材字段，现有练习界面尚未显示该字段。
+
+参考资料：
+Root and verb system（根字母、词型及三/四字母词根）：
+https://res.cloudinary.com/bloomsbury-online-resources/raw/upload/RGP/W/Wightwick-and-Gaafar/Additional%20reference/MasteringArabicRootandVerbSystem.pdf
+开罗阿拉伯语科学院词典，سمو（اسم 的分析）：
+https://www.arabicacademy.gov.eg/ar/search_engine/roots/سمو
+开罗阿拉伯语科学院，سنة / يد / فم 的省略根字母说明：
+https://www.arabicacademy.gov.eg/ar/items/النسب_إلى_ما_حُذِفت_لامُه_أو_النسب_إلى_سَنَة_ويد_وفم
