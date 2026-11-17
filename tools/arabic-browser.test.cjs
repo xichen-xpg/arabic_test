@@ -117,6 +117,10 @@ const server = http.createServer((req, res) => {
     for (let i = 0; i < 10; i++) {
       const word = await page.evaluate(() => arabicPractice.current);
       await panel.getByRole("button", { name: word.word, exact: true }).click();
+      for (const item of word.roots.filter(item => item.root)) {
+        assert.equal(await panel.locator('.english-entry').isHidden(), true);
+        await panel.locator('.english-root-input').fill(item.root);
+      }
       await panel.locator(".english-input").fill(word.word);
       assert.equal(await panel.locator(".english-chinese-input").isHidden(), true);
       assert.equal(await page.evaluate(() => arabicPractice.finished), true);
@@ -148,6 +152,9 @@ const server = http.createServer((req, res) => {
     });
     const bowling = await page.evaluate(() => arabicPractice.current);
     await panel.getByRole("button", { name: bowling.word, exact: true }).click();
+    for (const item of bowling.roots.filter(item => item.root)) {
+      await panel.locator('.english-root-input').fill(item.root);
+    }
     assert.match(await panel.locator(".english-prompt").innerText(), /保龄球/);
     assert.equal(await page.evaluate(() => arabicPractice.speakKey === speakKeySound), true);
     await page.evaluate(() => {

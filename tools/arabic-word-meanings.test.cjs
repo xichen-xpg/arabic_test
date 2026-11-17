@@ -67,7 +67,8 @@ test('practice renders no Chinese in options before selection or after a wrong c
   Object.assign(practice, {
     current: bank[0], selected: false,
     scheduler: { languageCode: 'ar', bank, mistake() {} },
-    el: Object.fromEntries(['choices', 'feedback', 'choice-number', 'entry', 'choice-entry', 'input'].map(key => [key, element()])),
+    el: Object.fromEntries(['choices', 'feedback', 'choice-number', 'entry', 'choice-entry', 'input', 'root-entry', 'root-input', 'root-prompt', 'root-progress'].map(key => [key, element()])),
+    rootItems: bank[0].roots.filter(item => item.root), rootIndex: 0,
     ensureDate: () => false, speak() {}, saveDraft() {}, updateArabicKeyboard() {}
   });
   const hasChinese = node => /\p{Script=Han}/u.test(node.textContent) || node.children.some(hasChinese);

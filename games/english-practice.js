@@ -13,19 +13,24 @@
         <section class="english-overview" aria-label="今日测试记录"></section>
         <button class="secondary english-open-test" type="button">开始测试</button>
         <button class="secondary english-back-study" type="button" hidden>返回单词练习</button>
-        <p class="english-note">选对后输入${this.scheduler.languageName}单词${this.requireChinese ? "，再输入一个中文释义" : ""}。</p>
+        <p class="english-note">${this.requireChinese ? "选对后输入英文单词，再输入一个中文释义。" : "选对后逐个输入词根，再输入阿语整句。"}</p>
         <div class="english-task">
           <p class="english-kind question-label"></p>
           <p class="english-prompt chinese"></p>
           <div class="english-choices choices" aria-label="${this.scheduler.languageName}单词选项"></div>
           <label class="english-choice-entry">输入 1–4，按回车选择<input class="english-choice-number" type="text" inputmode="numeric" maxlength="1" autocomplete="off" aria-label="选项编号"></label>
+          <div class="english-root-entry" hidden>
+            <p class="english-root-prompt" dir="rtl" lang="ar"></p>
+            <label>输入词根（字母间可加空格）<input class="english-root-input" lang="ar" dir="rtl" type="text" spellcheck="false" autocomplete="off"></label>
+            <p class="english-root-progress english-note" aria-live="polite"></p>
+          </div>
           <div class="english-entry" hidden>
             <p class="english-example"></p>
             <p class="english-word"></p>
             <div class="actions">
               <button class="secondary english-speak-word" type="button">🔊 单词发音</button>
             </div>
-            <label>输入${this.scheduler.languageName}单词<input class="english-input" lang="en" dir="ltr" type="text" spellcheck="false" autocomplete="off" autocapitalize="none"></label>
+            <label>输入${this.requireChinese ? "英文单词" : "阿语整句"}<input class="english-input" lang="en" dir="ltr" type="text" spellcheck="false" autocomplete="off" autocapitalize="none"></label>
             <label ${this.requireChinese ? "" : "hidden"}>输入中文释义（多个释义任选一个）<input class="english-chinese-input" lang="zh-CN" type="text" autocomplete="off" disabled></label>
             <p class="english-note">${this.requireChinese ? "英文拼对后自动进入中文输入框；中文答对后按回车进入下一词。" : "阿语拼对后完成本词，按回车进入下一词。"}</p>
             <details class="english-credit"><summary>词条来源</summary><p></p><a target="_blank" rel="noopener" href="games/english-sources.html">查看题库选词规则与来源</a></details>
@@ -64,7 +69,7 @@
         if (event === "test-page-passed" || event === "test-updated" && scheduler.plan().test.active?.failed) this.container.querySelector(".english-overview").scrollIntoView({ block: "start" });
         onChange(event);
       }, ensureDate);
-      for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "input", "feedback", "next", "restart", "task", "audio-status", "credit", "open-test", "back-study", "choice-entry", "choice-number", "example"]) {
+      for (const name of ["progress", "kind", "prompt", "choices", "entry", "word", "input", "feedback", "next", "restart", "task", "audio-status", "credit", "open-test", "back-study", "choice-entry", "choice-number", "example", "root-entry", "root-prompt", "root-input", "root-progress"]) {
         this.el[name] = container.querySelector(`.english-${name}`);
       }
       container.querySelector(".english-speak-word").addEventListener("click", () => this.speak(this.current.word, this.current.zh));
@@ -84,6 +89,10 @@
         this.draw();
       });
       this.el.input.addEventListener("input", () => this.updateInput());
+      this.el["root-input"].addEventListener("input", event => {
+        if (!event.isComposing) this.updateRootInput();
+      });
+      this.el["root-input"].addEventListener("compositionend", () => this.updateRootInput());
       this.chineseInput.addEventListener("input", event => {
         this.saveDraft();
         if (!event.isComposing) this.completeAnswer();
@@ -135,19 +144,20 @@
           if (this.ensureDate() || !this.selected) return;
           if (letter === 'Enter') {
             if (this.finished) this.draw();
-            else this.el.input.focus({ preventScroll: true });
+            else (this.rootsPending() ? this.el["root-input"] : this.el.input).focus({ preventScroll: true });
             return;
           }
-          const input = this.el.input;
+          const input = this.rootsPending() ? this.el["root-input"] : this.el.input;
           if (this.finished || input.disabled || input.readOnly) return;
           let start = input.selectionStart ?? input.value.length;
           const end = input.selectionEnd ?? start;
           if (letter === 'Backspace' && start === end) start = Math.max(0, start - 1);
           const previous = input.value;
           input.setRangeText(letter === 'Backspace' ? '' : letter, start, end, 'end');
-          this.updateInput();
+          if (this.rootsPending()) this.updateRootInput();
+          else this.updateInput();
           if (input.value !== previous && /^\p{L}$/u.test(letter)) this.speakKey?.(letter);
-          input.focus({ preventScroll: true });
+          (this.rootsPending() ? this.el["root-input"] : this.el.input).focus({ preventScroll: true });
         });
         keyboard.append(button);
       }
@@ -157,6 +167,39 @@
       this.container.querySelectorAll('.english-arabic-keyboard button').forEach(button => {
         button.disabled = button.textContent === '下一题 ↵' ? !this.finished : !this.selected || this.finished;
       });
+    }
+    rootsPending() {
+      return !this.requireChinese && this.rootIndex < (this.rootItems?.length || 0);
+    }
+    showRootStage() {
+      if (this.requireChinese) return;
+      const pending = this.selected && this.rootsPending();
+      this.el["root-entry"].hidden = !pending;
+      this.el.entry.hidden = !this.selected || pending;
+      this.el.input.disabled = !this.selected || pending;
+      this.el["root-input"].disabled = !pending;
+      if (pending) {
+        const item = this.rootItems[this.rootIndex];
+        this.el["root-prompt"].textContent = `${item.word} ← ${item.root}`;
+        this.el["root-progress"].textContent = `词根 ${this.rootIndex + 1}/${this.rootItems.length}，输入上面的根字母。`;
+      }
+    }
+    updateRootInput() {
+      if (this.ensureDate() || !this.selected || this.finished || !this.rootsPending()) return;
+      const normalize = text => text.replace(/\s/g, "");
+      const input = this.el["root-input"];
+      const expected = normalize(this.rootItems[this.rootIndex].root);
+      const typed = normalize(input.value);
+      if (!expected.startsWith(typed)) {
+        this.el.feedback.textContent = "词根还不正确，请按提示输入根字母。";
+      } else if (typed === expected) {
+        this.rootIndex++;
+        input.value = "";
+        this.showRootStage();
+        this.el.feedback.textContent = this.rootsPending() ? "词根正确，请输入下一个词根。" : "词根全部正确，请输入阿语整句。";
+        (this.rootsPending() ? input : this.el.input).focus({ preventScroll: true });
+      }
+      this.saveDraft();
     }
     openTest(index) {
       if (this.ensureDate()) return;
@@ -182,7 +225,8 @@
     }
     saveDraft() {
       if (!this.current || this.finished || this.ensureDate() || this.replay || this.relearning) return;
-      this.scheduler.draft(this.current.id, { selected: this.selected, wrong: this.wrong, answer: this.el.input.value, chinese: this.chineseInput.value });
+      this.scheduler.draft(this.current.id, { selected: this.selected, wrong: this.wrong, answer: this.el.input.value, chinese: this.chineseInput.value,
+        rootIndex: this.rootIndex, rootAnswer: this.el["root-input"].value });
     }
     draw() {
       if (this.ensureDate()) return;
@@ -224,6 +268,9 @@
       const plan = this.scheduler.plan();
       const draft = this.replay || this.relearning ? {} : plan.drafts[this.current.id] || {};
       this.selected = Boolean(draft.selected);
+      this.rootItems = this.requireChinese ? [] : (this.current.roots || []).filter(item => item.root);
+      this.rootIndex = this.selected && Number.isInteger(draft.rootIndex) ? Math.max(0, Math.min(draft.rootIndex, this.rootItems.length)) : 0;
+      this.el["root-input"].value = draft.rootAnswer || "";
       this.wrong = Boolean(draft.wrong);
       this.el.kind.textContent = `${plan.fresh.includes(this.current.id) ? "新词" : "复习"}${plan.retry.includes(this.current.id) ? " · 错词再练" : ""} · ${this.current.category} · ${this.current.pos}`;
       if (this.replay) this.el.kind.textContent = `重新学习 · ${this.current.category} · ${this.current.pos}`;
@@ -259,11 +306,12 @@
       this.chineseInput.readOnly = false;
       this.chineseInput.disabled = this.lastValidInput.toLowerCase() !== this.current.word.toLowerCase();
       this.el.entry.hidden = !this.selected;
+      this.showRootStage();
       this.updateArabicKeyboard();
       this.el["choice-entry"].hidden = this.selected;
       this.el["choice-number"].value = "";
       this.renderChoices();
-      (this.selected ? !this.requireChinese || this.chineseInput.disabled ? this.el.input : this.chineseInput : this.el["choice-number"]).focus({ preventScroll: true });
+      (this.selected ? this.rootsPending() ? this.el["root-input"] : !this.requireChinese || this.chineseInput.disabled ? this.el.input : this.chineseInput : this.el["choice-number"]).focus({ preventScroll: true });
       if (!this.requireChinese && this.selected) this.updateInput();
       this.onChange("question-loaded");
     }
@@ -313,10 +361,11 @@
             button.classList.add("correct");
             this.el.choices.querySelectorAll("button").forEach(choice => { choice.disabled = true; });
             this.el.entry.hidden = false;
+            this.showRootStage();
             this.updateArabicKeyboard();
             this.el["choice-entry"].hidden = true;
-            this.el.feedback.textContent = `选对了，请完整输入这个${this.scheduler.languageName}单词。`;
-            this.el.input.focus();
+            this.el.feedback.textContent = this.rootsPending() ? "选对了，请先按提示输入词根。" : `选对了，请完整输入${this.requireChinese ? "这个英文单词" : "阿语整句（本句没有需要练习的词根）"}。`;
+            (this.rootsPending() ? this.el["root-input"] : this.el.input).focus();
           }
           this.saveDraft();
         });
@@ -324,7 +373,7 @@
       }
     }
     updateInput() {
-      if (this.ensureDate() || !this.current || !this.selected || this.finished) return;
+      if (this.ensureDate() || !this.current || !this.selected || this.finished || this.rootsPending()) return;
       const typed = this.el.input.value;
       if (!this.current.word.toLowerCase().startsWith(typed.toLowerCase())) {
         this.el.input.value = this.lastValidInput;
@@ -340,7 +389,7 @@
       this.el.feedback.textContent = `${this.scheduler.languageName}正确，请输入中文释义，多个释义任选一个即可。`;
     }
     completeAnswer() {
-      if (this.ensureDate() || !this.current || !this.selected || this.finished || this.requireChinese && this.chineseInput.disabled) return;
+      if (this.ensureDate() || !this.current || !this.selected || this.finished || this.rootsPending() || this.requireChinese && this.chineseInput.disabled) return;
       if (this.el.input.value.toLowerCase() !== this.current.word.toLowerCase() || this.requireChinese && !EnglishLearning.matchesMeaning(this.chineseInput.value, this.current.zh)) return;
       let result;
       if (this.relearning) {
